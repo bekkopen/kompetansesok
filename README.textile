@@ -1,0 +1,9 @@
+h2. Velkommen til Kompetansesøk
+
+* Hello
+* World
+
+|hvem|hva|hvor|
+|Aslak Johannessen|Kode|Vippetangen|
+|Aslak Hellesøy|Kode|Vippetangen|
+|Øystein Ellingbø|Kode|Vippetangen|
