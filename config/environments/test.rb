@@ -1,8 +1,5 @@
 # Settings specified here will take precedence over those in config/environment.rb
 
-config.gem "rspec", :version => ">= 1.1.11"
-config.gem "cucumber", :version => ">= 0.1.10"
-
 # The test environment is used exclusively to run your application's
 # test suite.  You never need to work with it otherwise.  Remember that
 # your test database is "scratch space" for the test suite and is wiped
@@ -23,3 +20,8 @@ config.action_controller.allow_forgery_protection    = false
 # The :test delivery method accumulates sent emails in the
 # ActionMailer::Base.deliveries array.
 config.action_mailer.delivery_method = :test
+
+# gems
+config.gem "rspec-rails", :version => ">= 1.1.11"
+config.gem "cucumber", :version => ">= 0.1.10"
+config.gem "webrat", :version => ">= 0.3.2"
