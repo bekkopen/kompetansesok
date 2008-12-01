@@ -15,14 +15,15 @@ Naar /^jeg importerer (\d+) filer$/ do |n|
   @importer.importer_til_fil(n.to_i)
 end
 
-Naar /^jeg parser (\d+) RDF fil$/ do |n|
+Naar /^jeg parser (\d+) RDF filer$/ do |n|
   @importer = Kompetansesok::Importerer.new(Rails.root + '/features/rdf')
-  @importer.importer_til_db(1)
+  @importer.importer_til_db(n.to_i)
 end
 
 Saa /^skal det ligge (\d+) RDF filer på disk$/ do |n|
   @importer.filer.length.should == n.to_i
 end
 
-Saa /^skal det ligge 3 kompetansemaal i basen$/ do
+Saa /^skal det ligge (\d+) kompetansemaal i basen$/ do |n|
+  pending "DO IT!"
 end

@@ -1,3 +1,7 @@
+<% if defined?(JRUBY_VERSION) %>
+<% require 'ext/mysql-connector-java-5.1.7-bin.jar' %>
+<% end %>
+
 development:
   adapter: mysql
   encoding: utf8
@@ -10,6 +14,13 @@ development:
   timeout: 5000
 
 test:
+<% if defined?(JRUBY_VERSION) %>
+  adapter: jdbc
+  username: root
+  password: 
+  url: jdbc:mysql://localhost/kompetansesok_test
+  driver: org.gjt.mm.mysql.Driver
+<% else %>
   adapter: mysql
   encoding: utf8
   database: kompetansesok_test
@@ -19,6 +30,7 @@ test:
   port: 3306
   pool: 5
   timeout: 5000
+<% end %>
 
 production:
   adapter: mysql

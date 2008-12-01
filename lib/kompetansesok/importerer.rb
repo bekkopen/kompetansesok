@@ -2,6 +2,7 @@ require 'fileutils'
 require 'open-uri'
 require 'rubygems'
 require 'feed_tools'
+JRuby.objectspace = true if defined?(JRUBY_VERSION)
 
 module Kompetansesok
   class Importerer
@@ -38,7 +39,7 @@ module Kompetansesok
       end
     end
 
-    def importer_til_db
+    def importer_til_db(n=nil)
       require 'java'
       Dir[File.dirname(__FILE__) + '/../ext/jena-2.5.6/*.jar'].each do |jar|
         require jar
@@ -50,12 +51,13 @@ module Kompetansesok
       kompetansemaal_property = model.getProperty(grep, 'kompetansemaalsett_har_kompetansemaal')
       title_property          = com.hp.hpl.jena.vocabulary.DC_11.title
 
-      filer.each do |rdf|
+      fa = n.nil? ? filer : filer[0...n]
+      fa.each do |rdf|
         fm = com.hp.hpl.jena.util.FileManager.get.open(rdf)
         model.read(fm, "")
       end
       model.listResourcesWithProperty(kompetansemaal_property).each do |res|
-        puts res.getProperty(title_property).string
+        #puts res.getProperty(title_property).string
       end
     end
 
