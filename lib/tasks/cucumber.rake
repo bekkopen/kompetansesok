@@ -1,7 +1,14 @@
 $:.unshift(RAILS_ROOT + '/vendor/plugins/cucumber/lib')
 require 'cucumber/rake/task'
 
-Cucumber::Rake::Task.new(:features) do |t|
-  t.cucumber_opts = "--format pretty"
+namespace :features do
+  Cucumber::Rake::Task.new(:import) do |t|
+    t.cucumber_opts = "--language no"
+  end
+
+  Cucumber::Rake::Task.new(:sok) do |t|
+    t.cucumber_opts = "--language no"
+  end
+
+  task :sok => 'db:test:prepare'
 end
-task :features => 'db:test:prepare'

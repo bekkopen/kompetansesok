@@ -6,3 +6,9 @@ Cucumber::Rails.use_transactional_fixtures
 
 # Comment out the next line if you're not using RSpec's matchers (should / should_not) in your steps.
 require 'cucumber/rails/rspec'
+
+module Cucumber::StepMethods
+  alias_method :Gitt, :Given
+  alias_method :Naar, :When
+  alias_method :Saa, :Then
+end
