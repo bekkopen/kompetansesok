@@ -24,6 +24,6 @@ Saa /^skal det ligge (\d+) RDF filer på disk$/ do |n|
   @importer.filer.length.should == n.to_i
 end
 
-Saa /^skal det ligge (\d+) kompetansemaal i basen$/ do |n|
+Saa /^skal det ligge (\d+) læreplaner i basen$/ do |n|
   pending "DO IT!"
 end

@@ -3,6 +3,13 @@
 <% end %>
 
 development:
+<% if defined?(JRUBY_VERSION) %>
+  adapter: jdbc
+  username: root
+  password: 
+  url: jdbc:mysql://localhost/kompetansesok_development
+  driver: org.gjt.mm.mysql.Driver
+<% else %>
   adapter: mysql
   encoding: utf8
   database: kompetansesok_development
@@ -12,6 +19,7 @@ development:
   port: 3306
   pool: 5
   timeout: 5000
+<% end %>
 
 test:
 <% if defined?(JRUBY_VERSION) %>

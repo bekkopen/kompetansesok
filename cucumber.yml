@@ -1,0 +1,4 @@
+# Kjøres kun med JRuby
+alt: --language no features
+# Kjøres med MRI eller JRuby
+app: --language no --exclude rdf_til_db --exclude rdf_til_fil

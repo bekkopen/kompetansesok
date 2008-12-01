@@ -7,4 +7,4 @@ Feature: Importere kompetansemaal fra RDF til database
   Scenario: Parse RDF filer
     Gitt at RDF filer er hentet til disk
     Når jeg parser 2 RDF filer
-    Så skal det ligge 3 kompetansemaal i basen
+    Så skal det ligge 3 læreplaner i basen

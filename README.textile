@@ -1,10 +1,26 @@
-h2. Velkommen til Kompetansesøk
+h1. Velkommen til Kompetansesøk
 
-h3. RDF og Jena
+h2. Automatiserte tester
+
+h3. Funksjonelle tester (Cucumber features)
+
+Kjør alle features:
+<pre>jruby -S rake cucumber:alt</pre>
+
+Kjør alle tester untatt import (raskere):
+<pre>rake cucumber:app</pre>
+
+Kjør spesifikk feature (eksempel):
+<pre>cucumber features/foo.feature:77 --language no</pre>
+<pre>jruby -S cucumber features/foo.feature:77 --language no</pre>
+
+Se "Cucumber dok":http://github.com/aslakhellesoy/cucumber/wikis for mer info.
+
+h2. RDF og Jena
 
 RDF data fra GREP parses med Jena. En bra introduksjon finnes "her":http://jena.sourceforge.net/tutorial/RDF_API/ 
 
-h3. Krav som ikke dekkes av Cucumber
+h2. Krav som ikke dekkes av Cucumber
 
 * K11 - MySQL
 * K63 - BDD
