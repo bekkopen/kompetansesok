@@ -1,9 +1,5 @@
 h2. Velkommen til Kompetansesøk
 
-* Hello
-* World
+h3. RDF og Jena
 
-|hvem|hva|hvor|
-|Aslak Johannessen|Kode|Vippetangen|
-|Aslak Hellesøy|Kode|Vippetangen|
-|Øystein Ellingbø|Kode|Vippetangen|
+RDF data fra GREP parses med Jena. En bra introduksjon finnes "her":http://jena.sourceforge.net/tutorial/RDF_API/ 

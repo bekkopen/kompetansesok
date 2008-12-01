@@ -7,3 +7,8 @@ Feature: Importere data fra GREP
     Og at det ikke ligger noen gamle importerte filer på disk
     Når jeg importerer 3 filer
     Så skal det ligge 3 RDF filer på disk
+    
+  Scenario: Parse RDF filer
+    Gitt at RDF filer er hentet til disk
+    Når jeg parser 1 RDF fil
+    Så skal det ligge 3 kompetansemaal i basen

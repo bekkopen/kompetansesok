@@ -1,0 +1,3 @@
+importerer = Kompetansesok::Importerer.new
+importerer.slett_filer
+importerer.importer_til_fil

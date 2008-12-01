@@ -8,10 +8,21 @@ Gitt /^at det ikke ligger noen gamle importerte filer på disk$/ do
   @importer.slett_filer
 end
 
+Gitt /^at RDF filer er hentet til disk$/ do
+end
+
 Naar /^jeg importerer (\d+) filer$/ do |n|
-  @importer.importer_filer(n.to_i)
+  @importer.importer_til_fil(n.to_i)
+end
+
+Naar /^jeg parser (\d+) RDF fil$/ do |n|
+  @importer = Kompetansesok::Importerer.new(Rails.root + '/features/rdf')
+  @importer.importer_til_db(1)
 end
 
 Saa /^skal det ligge (\d+) RDF filer på disk$/ do |n|
   @importer.filer.length.should == n.to_i
+end
+
+Saa /^skal det ligge 3 kompetansemaal i basen$/ do
 end
