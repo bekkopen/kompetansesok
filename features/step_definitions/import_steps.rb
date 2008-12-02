@@ -25,5 +25,5 @@ Saa /^skal det ligge (\d+) RDF filer på disk$/ do |n|
 end
 
 Saa /^skal det ligge (\d+) læreplaner i basen$/ do |n|
-  pending "DO IT!"
+  Laereplan.find(:all).length.should == n.to_i
 end

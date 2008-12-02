@@ -213,7 +213,7 @@
   <rdf:Description rdf:about="uuid:280bf2e4-1ed7-4a6c-a720-425f35226efb">
     <grep:tilhoerer_hovedomraade rdf:resource="uuid:2bd30a81-e4a9-439d-8706-161682c1e95b"/>
     <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"/>
-    <ns:title>utøve friluftsliv på en måte som er skånsom mot naturen</ns:title>
+    <ns:tite>utøve friluftsliv på en måte som er skånsom mot naturen</ns:title>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:e56834b4-635e-4dd8-9992-272e13bd1051">
