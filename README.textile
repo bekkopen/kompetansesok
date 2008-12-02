@@ -16,6 +16,18 @@ Kjør spesifikk feature (eksempel):
 
 Se "Cucumber dok":http://github.com/aslakhellesoy/cucumber/wikis for mer info.
 
+h2. Importere data fra GREP
+
+Import skjer i to steg. Først importeres RDF til lokal disk, deretter parses disse filene og importeres i lokal database.
+
+h3. Hente GREP filer
+
+<pre>jruby script/runner script/import/import_til_fil [DIR]</pre>
+
+h3. Importere lokale GREP filer inn i basen
+
+<pre>jruby script/runner script/import/import_til_db [DIR]</pre>
+
 h2. RDF og Jena
 
 RDF data fra GREP parses med Jena. En bra introduksjon finnes "her":http://jena.sourceforge.net/tutorial/RDF_API/ 

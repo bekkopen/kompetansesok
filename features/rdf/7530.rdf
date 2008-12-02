@@ -1,0 +1,226 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:ccdd912d-f353-4365-bf2a-58544fdfd382">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte korleis samisk visuell kultur skil seg frå andre visuelle kulturar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:794779bf-9c76-44ec-8618-6f3af2cd2ae1">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>gjøre rede for etablering av samiske kunstinstitusjoner på 1970-tallet og samisk kunstutvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9db37df6-a64c-40ec-81c9-bd6eb012b477">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte objekter fra samisk visuell kultur i forhold til tid, rom, sted, symbolbruk, teknikker, materialer og sammenheng med andre objekter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b98d4e1e-0bbe-414b-b5e1-4e124ab0ea59">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte forholdet mellom samisk visuell kultur og samfunnsutviklinga</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0c42dc27-e940-40a5-91d5-2a7a85a959fc">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7e21e336-e056-4aa1-a6e0-e098c10af7c5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>skape eigne kreative uttrykk med bakgrunn i kunnskap om den samiske visuelle kulturen, både den historiske kulturen og samtidskulturen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:20edca38-e75c-4ffc-9d8e-941faab40c9f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>undersøkje om og vurdere korleis samisk visuell kultur kjem til uttrykk i eit nærmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c938df03-04d1-43e6-99e2-a06031eb6ae4">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>undersøke om og vurdere hvordan samisk visuell kultur kommer til uttrykk i et nærmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ea3149ce-c0ed-4d0c-8900-61dd8a13ea34">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte forholdet mellom samisk visuell kultur og åndelegheit med utgangspunkt i objekt og former i naturen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:80cb3bcd-2923-40f2-b5d9-efa89f3f607f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7e21e336-e056-4aa1-a6e0-e098c10af7c5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>gjere greie for visuelle uttrykk og objekt frå samisk kultur gjennom tidene og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69fdca64-817e-483e-ab0c-6c4149de1ff5">
+    <grep:kode>FOR6-01</grep:kode>
+    <ns:title>Læreplan i samisk visuell kultur - valfritt programfag i studiespesialiserande utdanningsprogram, programområde for formgjevingsfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9c0cde6e-7288-4beb-9dee-7e8305355050">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>gjere greie for bruk og symbolikk i tradisjonelle samiske klede og i nye samiske klesuttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6163abb3-25f4-4e42-b5e4-0aa22ba0d053">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>gjere greie for etableringa av samiske kunstinstitusjonar i 1970-talet og samisk kunstutvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de710d49-f7b0-4f57-ac97-d7e929ebefe4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7e21e336-e056-4aa1-a6e0-e098c10af7c5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte objekt frå samisk visuell kultur med tanke på tid, rom, stad, symbolbruk, teknikkar, materiale og samanheng med andre objekt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:69fdca64-817e-483e-ab0c-6c4149de1ff5"/>
+    <ns:title>Samisk visuell kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:29867185-89c4-421c-843f-ddcdb217e614">
+    <ns:title>Samisk visuell kultur</ns:title>
+    <grep:kode>FOR6Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7e21e336-e056-4aa1-a6e0-e098c10af7c5">
+    <ns:title>Samiske visuelle uttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b2fc607d-3891-4af8-acce-59bb6ad40514">
+    <ns:title>Samisk visuell kultur og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7e81d144-36e4-42bb-b2ac-ebe77e11c46e">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte forholdet mellom samisk visuell kultur og samfunnsutviklingen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aa4ed1c6-2afb-4590-b68f-4fbe12159191">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>gjøre rede for visuelle uttrykk og objekter fra samisk kultur gjennom tidene og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5cfdcfad-77d2-4e86-9130-0577a83390c1">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte forholdet mellom samisk visuell kultur og åndelighet med utgangspunkt i objekter og former i naturen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:74babe53-f431-4e88-b5d1-618b476e822f">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>gjøre rede for bruk og symbolikk i tradisjonelle samiske klær og i nye samiske klesuttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d72d828d-8591-441f-9c83-fd92dd25801f">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>skape egne kreative uttrykk med bakgrunn i kunnskap om den samiske visuelle kulturen, både den historiske og samtidige kulturen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4cd71fcc-ccdd-4268-a869-e7b6cfd3dfbe">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70e3a8b4-2ac2-4db9-886d-e84e0d4492cf"/>
+    <ns:title>drøfte hvordan samisk visuell kultur skiller seg fra andre visuelle kulturer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

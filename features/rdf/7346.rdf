@@ -1,0 +1,215 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:608fe982-444d-4b33-aa49-4df2d01a95b8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>sette sammen et fortellerprogram for en spesifikk målgruppe</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ded12ab6-38b4-43b6-8e77-2ed19cc5ba89">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9638e876-a529-4996-bcb1-0aa0d2e31c6f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>drøfte sammenhenger mellom lek, drama og teater</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cce6c9bb-63fc-4955-8d05-7a6c55846d8c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>gjøre rede for fortellingen som pedagogisk metode</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba">
+    <ns:title>Fortellerkunst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:11593cbf-4465-4110-a203-53d746519be5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>legge til rette for en fortellersituasjon og gjennomføre den</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3295d6df-4371-4790-851d-f186bc6e57a2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>drøfte betydningen av fortellerkunst i ulike kulturer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c596026c-cbf5-4e33-9207-00b7be50f906">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9f5466d7-5a2d-4e34-9b4d-3eb63f9b689f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>planlegge, gjennomføre og vurdere drama- og teateraktiviteter for og med ulike målgrupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:20d12476-3352-4593-b548-0177f40ffe89">
+    <grep:kode>DRA4-01</grep:kode>
+    <ns:title>Læreplan i drama og samfunn - programfag i utdanningsprogram for musikk, dans, drama, programområde for drama</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f1f875c7-af1a-4983-99c4-a3f445b9e622">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9638e876-a529-4996-bcb1-0aa0d2e31c6f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>gjøre rede for et utvalg dramapedagogiske metoder, og beskrive hvordan de kan brukes</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:20d12476-3352-4593-b548-0177f40ffe89"/>
+    <ns:title>Drama og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:09bddb0e-84e3-4265-9a09-0ee31a7f350c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9638e876-a529-4996-bcb1-0aa0d2e31c6f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>drøfte dramafagets egenart og forankring i pedagogikk og teaterkunst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e258d028-7f52-404a-a4dd-687b9147b5d7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9f5466d7-5a2d-4e34-9b4d-3eb63f9b689f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>tilpasse og kombinere ulike dramapedagogiske metoder i arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9f5466d7-5a2d-4e34-9b4d-3eb63f9b689f">
+    <ns:title>Dramapedagogisk praksis</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:55027ec3-3b80-49bb-b07b-fcce899db4e0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9f5466d7-5a2d-4e34-9b4d-3eb63f9b689f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>gi og nyttiggjøre seg veiledning </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:50b8c752-1985-4401-accf-ae6ebd4e8abe">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9f5466d7-5a2d-4e34-9b4d-3eb63f9b689f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>reflektere over veiledning og lage et veiledningsdokument </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1eeae0b5-4de9-44bc-b7a5-f5d18921f58e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>bruke grunnleggende teknikker i fortellerkunst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:473d5f47-9711-4ef5-ba30-b100f7e12189">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e65b3dd6-42e5-44bf-8cee-64e501aeb6ba"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>gjøre rede for grunnleggende fortelleregenskaper </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de597ac5-473c-488f-bd11-aa5b6bac0531">
+    <ns:title>Drama og samfunn</ns:title>
+    <grep:kode>DRA4Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ee0e8571-9a52-497d-85e2-b78ba1fa175d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9638e876-a529-4996-bcb1-0aa0d2e31c6f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51eb59a4-2e3a-4d70-85cc-ce468bfa230a"/>
+    <ns:title>gjøre rede for grunnleggende begreper og retninger innen læringsteori og pedagogikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9638e876-a529-4996-bcb1-0aa0d2e31c6f">
+    <ns:title>Dramapedagogisk forståelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+</rdf:RDF>

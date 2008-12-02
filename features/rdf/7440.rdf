@@ -1,0 +1,364 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:4a0c528d-7311-438e-acf4-766d0608d894">
+    <ns:title>Råvarer og produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6e5c8727-908b-4843-bcf5-887cb6237431">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>drøfte bransjens rammebetingelser og bedriftens plass i samfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bd779c1a-317f-4a7d-b9ea-688c064af2a1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>slipe og vedlikeholde kniver og annet relevant verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0ed7cd2f-e930-49ca-87f1-5e7701d4a0f5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>drøfte sammenhenger mellom produktivitet, kvalitet og internt arbeidsmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5cdc4159-5325-467a-a8ea-2ac2727ddb6c">
+    <grep:kode>KSK3-01</grep:kode>
+    <ns:title>Læreplan i kjøttskjærerfaget Vg3 / opplæring i bedirft</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad7b187f-ebb4-4696-90fe-c3df937bfe78">
+    <ns:title>Kjøttskjærerfaget</ns:title>
+    <grep:kode>KSK3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:46e47e66-6edd-410f-99ad-502e79ad2810">
+    <ns:title>Bransje, bedrift og miljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8c2f70ed-22e8-4b47-b61f-faba227bd8ec">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>følge gjeldende regelverk og rutiner for hygienesoner, persontrafikk og vareflyt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e49bb1b3-7f9b-4245-bb7b-8443c617f023">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>ivareta krav til hygiene, produktivitet og kvalitet i arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b7c40224-afc5-4913-97bc-0e62474dd27b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>vurdere slakt og angi bruksområder ut fra kvalitetsklasser og fettgrupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ccced27e-ffc1-45c5-92e4-abd5bd3f0661">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>drøfte forholdet mellom markedets behov og en optimal skjæreøkonomi  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:13c8329a-88fc-42d8-a8b1-c8613e8c841c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>følge fastsatte rutiner i forbindelse med håndtering av særskilt risikofylt materiale</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c2bbbf3d-fdce-4413-8dad-d66d635116bd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>følge gjeldende regelverk for helse, miljø og sikkerhet og bruke verneutstyr</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a53553f9-d79b-4871-8651-a5d9133363f3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>skjære ned, stykke, utbeine, tilskjære, pusse og sortere slaktet etter gjeldende spesifikasjoner </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d532a81-3bc4-4b3e-a89d-fff83adff748">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>drive profesjonell kundebehandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:260d7414-b999-4e3a-bcc7-e9b528ac4306">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>følge kvalitetsstyringssystemer og iverksette korrigerende tiltak  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9c5fc3a4-3f6f-4bb1-b43b-426d4a4185bd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>følge gjeldende krav til sporing og merking </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:5cdc4159-5325-467a-a8ea-2ac2727ddb6c"/>
+    <ns:title>Etter Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0">
+    <ns:title>Hygiene og kvalitetsstyring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7e47d75-99d5-4dbc-b7af-042579aad182">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>forklare hvordan ulike sesongvariasjoner påvirker råstofftilgangen og produktetterspørselen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7ffdbc0f-98b8-45ae-9a7a-2c4f97354b00">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for slaktets oppbygning og hvordan bein, muskler, sener og fett er fordelt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1ccc38c7-e145-4f13-8141-c78e8c519f23">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>forklare den økonomiske og produksjonsmessige betydningen av standardisering </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a7065e02-fb8e-47e4-a8b5-90f265600b90">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for tilsynsmyndighetenes oppgaver og virkeområder i bedriften </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dcbb4ef1-36c3-4ffb-bbe4-d20cf21377b2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>delta i arbeid med å bekjempe insekter og andre skadedyr og følge rutinene på området</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8703ff40-3b19-4865-a1c1-374abcb7bbe6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for industri-, storkjøkken- og forbrukermarkedets behov for ulike produkter og tjenester</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e528bc59-ca51-4a6d-a0be-61691a8fc25b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>praktisere god personlig hygiene og produksjons- og næringsmiddelhygiene i henhold til gjeldende regelverk og kvalitetsstyringssystemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c62ea74a-eb77-421c-ab75-bf38dce52ef9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>beregne utbytteprosenten og verdien av de enkelte delene av slaktet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0a796e0e-3fa1-400e-8d41-3aff0891799d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>analysere og korrigere produksjonskjøttet til gitte standarder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d958c0b8-8899-4e66-b870-ba4fb3a79fee">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk om forbrukernes rettigheter og plikter, herunder regler om klageadgang</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cdd7c4d1-b992-4809-98c5-1325d4db53f8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjennomføre registreringer, forklare og analysere nøkkeltall og anvende nøkkeltall for optimal nedskjæring </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9a772354-a9c8-4776-b17b-7eccebf54563">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>forklare klassifiseringens betydning for prisfastsettelse av helt slakt og for rasjonell kjøttomsetning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5dc8040-0622-48c5-a994-e923b2e6ea03">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for kjøttets modnings- og mørningsprosesser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b5695437-b2ca-40eb-956f-bef715ee999c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>utføre arbeidet slik at minst mulig organisk materiale slippes ut i det ytre miljøet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3594636e-15e3-41ac-ad7e-162d85295716">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>skille mellom rene og urene arbeidsoperasjoner, foreta rutinemessig sterilisering av kniv og annet utstyr som berører rent kjøtt ved endring fra uren til ren arbeidsoperasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f226f655-ed07-4c13-9174-155a967148c8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>foreta nødvendige korrigerende tiltak under skjæreprosessen og hindre spredning av forurenset kjøtt og smittefarlig materiale</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:75cb1354-613c-4ee4-905b-91768029fa45">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>utføre arbeidet i tråd med ergonomiske prinsipper  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a8e0c0f3-434e-4d10-b6cb-3a38042bf41a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>vise godt håndlag ved føring av kniv og andre redskaper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2951ac47-0d41-4723-97df-667872d5ab69">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1a340d-3c7b-4d5d-b7e9-d7fca30dfea0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>følge rutiner for renhold, renholdskontroller og forebyggende vedlikehold av lokaler, maskiner og utstyr og gjøre rede for konsekvenser ved avvik </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:692c040b-76b4-48eb-b897-9dea044aed1b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>velge emballasje, pakkemetode og merking i henhold til gjeldende regelverk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a36f5191-aedd-4b9f-b83f-4a6a1ad165e7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for kjøttkontrollens ulike stempler og forklare slaktets bruksområde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9e3dec7e-6d9b-43b3-a668-31fab4f1282f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46e47e66-6edd-410f-99ad-502e79ad2810"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjøre rede for forbrukerkrav til produktmerking og matvaretrygghet og gjeldende regelverk for dette </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9aeb91c3-c5cd-4a73-b068-6cc654957687">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>gjennomføre mottakskontroll av slakt etter gjeldende spesifikasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:66d48326-470d-4721-a655-6b786c8cb986">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>behandle råvarer med avvikende kvalitet ut fra gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ee8a1248-3ae7-44b3-8f20-367bc0c9b341">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a0c528d-7311-438e-acf4-766d0608d894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e44d92f-55bd-4bd0-9d5d-3f1d66d5ef03"/>
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere nedskjæring og videreforedling av ulike typer slakt </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

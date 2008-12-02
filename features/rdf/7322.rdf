@@ -1,0 +1,470 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:b9207967-142f-49f4-a8c7-49b19c091f34">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:466f3a86-183e-449c-92ce-473782bf2b7e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gjere greie for hovudtrekk i formeiringa av planter og dyr, sett i samanheng med utviklinga av livet på jorda</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1e7d8739-30cc-45cc-9960-d80f1ba72f12">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:41c44f67-3a20-4036-b7f3-070a9448fbac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>samanlikne hovudtrekka og energiutbytet i aerob og anaerob nedbryting av glukose, og knyte energiomsetjing i celler til samansetjing av næringsstoff i kosthaldet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:59065e44-3dae-4a9e-abd8-0001a82179e8">
+    <grep:kode>BIO1-01</grep:kode>
+    <ns:title>Læreplan i biologi - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4d5cfb9a-59b4-42ae-bd4e-94926024ad43">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77c5f83f-6db4-4c64-b696-4eb6de769bbf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>beskrive mekanismar som hindrar genflyt mellom artar, og gjere greie for teoriar om korleis nye artar kan utviklast </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:efac3f27-ba7a-4e83-a461-48ee41f37c40">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:41c44f67-3a20-4036-b7f3-070a9448fbac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare korleis lysenergi kan overførast til kjemisk bunden energi i fotosyntesen, og korleis energien blir brukt til å produsere glukose</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a244b1d0-eee5-4be5-af0a-4685b9f82b20">
+    <ns:title>Cellebiologi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:94ef55ee-16dc-482f-ba23-12d3941e7363">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77c5f83f-6db4-4c64-b696-4eb6de769bbf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare korleis den genetiske samansetjinga i populasjonar blir endra gjennom mutasjonar, naturleg seleksjon, genetisk drift, genflyt, horisontal genoverføring og endring av kromosomtal </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:641ab53f-6a7a-44fa-9bef-1984d8792998">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f12d301-09e7-4258-829d-bf18db5bf1bf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>setje opp og teste hypotesar for kjønnsbunden og dihybrid arvegang med og utan kopling av gen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f3f6a2c-7244-48fd-8a27-f4eecececf60">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>diskutere på eit fagleg grunnlag etiske utfordringar innanfor biologisk forsking</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3dba6238-5740-4fe5-a68b-9c3f925547d9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a244b1d0-eee5-4be5-af0a-4685b9f82b20"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>forklare transport gjennom cellemembranen ved å bruke kunnskap om passive og aktive transportmekanismar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f55a7efc-9339-40f6-b1c7-af408345cd4a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77b77574-2b6b-4b2f-b40b-f911324de5d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gjere greie for korleis immunforsvaret og andre delar av infeksjonsforsvaret verkar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:af68ad0a-30e6-48d1-a891-ff0bd9712cee">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77c5f83f-6db4-4c64-b696-4eb6de769bbf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for grunntrekka i evolusjonsteorien og kva slag kunnskap han byggjer på</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a49bdbe9-c9c5-4964-be41-779f598ca48e">
+    <ns:title>Biologi 1</ns:title>
+    <grep:kode>BIO1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:14ae43b4-539c-4e95-b0c1-37862115cda0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>planleggje og gjennomføre undersøkingar i laboratorium frå alle hovudområda, rapportere frå arbeida med og utan digitale verktøy og peike på feilkjelder i undersøkingane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b9a359f-d69a-4628-bee8-221459b92ff5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a244b1d0-eee5-4be5-af0a-4685b9f82b20"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gjere greie for oppbygginga av eukaryote celler og forklare kva for funksjonar ulike delar i cellene har</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:31fa3f45-7402-4f59-80d3-cf2ae4bc0fea">
+    <ns:title>Bioteknologi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:844214f9-3181-4302-a087-68307fa46cf4">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:59065e44-3dae-4a9e-abd8-0001a82179e8"/>
+    <ns:title>Biologi 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9">
+    <ns:title>Den unge biologen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:52057d96-7563-4181-9801-86d632d3bbd8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>planleggje og gjennomføre undersøkingar i laboratorium frå alle hovudområda, rapportere frå arbeida med og utan digitale verktøy og peike på feilkjelder i undersøkingane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00ed1393-e6f4-4bc9-af20-9dc8e35a4346">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:41c44f67-3a20-4036-b7f3-070a9448fbac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for korleis ytre faktorar verkar inn på fotosyntesen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:56a76718-1ec6-46b6-8c67-a33016f72d63">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31fa3f45-7402-4f59-80d3-cf2ae4bc0fea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for framstilling av genetiske fingeravtrykk, og korleis dei kan brukast i rettsmedisin og i studium av slektskap mellom individ og grupper av organismar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c8c48e1-1fa5-4a98-a888-95ef9bda0c9f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:070a93eb-1390-4ac8-b93d-18457aeddf7b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>samle, bestemme og klassifisere ulike organismar og knyte opplysningar om levevis og tilpassingar til eit utval av organismane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07479d7b-0421-4294-ab45-70446e1b5443">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare kvifor publisering og fagleg kritikk er nødvendige prosessar i biologi som vitskap</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:070a93eb-1390-4ac8-b93d-18457aeddf7b">
+    <ns:title>Økologi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:41c44f67-3a20-4036-b7f3-070a9448fbac">
+    <ns:title>Energiomsetning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9cdb2dc0-e1bd-4fbe-bc95-8e7c3e41c696">
+    <ns:title>Biologi 2</ns:title>
+    <grep:kode>BIO1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a1f7b3a9-e226-4a02-9da8-f00455253674">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f12d301-09e7-4258-829d-bf18db5bf1bf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>samanlikne mitose og meiose med vekt på fordelinga av genmateriale i cellene som blir danna</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:584f2fc8-f3be-416e-94c9-37e5b6798119">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31fa3f45-7402-4f59-80d3-cf2ae4bc0fea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>formulere og drøfte problemstillingar kring bruk av gendiagnostikk og genterapi på menneske</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:caf6354f-017d-48b8-968f-bd95139bb108">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b0d182e1-ef0e-4027-b5d1-6f18bf95a7e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>forklare kva omgrepet biologisk mangfald omfattar, og drøfte spørsmål kring ansvaret for å ta vare på biologisk mangfald lokalt og globalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d23db51-a81a-4db6-9520-029e17064853">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:070a93eb-1390-4ac8-b93d-18457aeddf7b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for faktorar som regulerer vekst og storleik av populasjonar og forvalting av bestandar i eit berekraftig perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f0982d3c-c581-4b54-9b36-f08a66ff7f5a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:070a93eb-1390-4ac8-b93d-18457aeddf7b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for korleis energistraumen mellom trofiske nivå påverkar økosystemet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d9dbe177-ded2-4393-90da-1edc914c52c8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f12d301-09e7-4258-829d-bf18db5bf1bf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for transkripsjon og translasjon av gen og forklare korleis regulering av gen kan styre biologiske prosessar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3ec70b12-e040-4444-b395-fe2ac646e9ed">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b0d182e1-ef0e-4027-b5d1-6f18bf95a7e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gje døme på variasjon innanfor og mellom populasjonar av same art, og forklare kva denne variasjonen har å seie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:530840cb-78a7-4913-9091-405bf898e0e1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b0d182e1-ef0e-4027-b5d1-6f18bf95a7e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>forklare korleis biologisk mangfald heng saman med variasjon i habitat og nisjar i økosystema</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:37e2d683-d3e8-4d3d-a0c6-d9dd38dba0ca">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>trekkje ut informasjon frå biologiske tekstar, brosjyrar, aviser, bøker og frå Internett, og vurdere korleis informasjonen er underbygd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2f12d301-09e7-4258-829d-bf18db5bf1bf">
+    <ns:title>Genetikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d54a44d7-0d30-40a0-a3bf-b996b833f67a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>bruke animasjonar og simuleringsprogram til å vise fenomen og biologiske samanhengar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b0d182e1-ef0e-4027-b5d1-6f18bf95a7e3">
+    <ns:title>Biologisk mangfald</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:26a22fd6-12ca-4e8c-b850-8f15866ebc62">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31fa3f45-7402-4f59-80d3-cf2ae4bc0fea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for den biologiske verdien av stamceller, forklare prinsippa for reproduktiv og terapeutisk kloning og drøfte etiske sider ved val av ulike kjelder for stamceller</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:588e05f7-258a-45d3-ad98-1d65a23e292b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>drøfte miljøutfordringar lokalt og globalt med utgangspunkt i biologisk kunnskap
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9c4b196c-c7c8-455a-930c-cf41969d9ecd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f12d301-09e7-4258-829d-bf18db5bf1bf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare genetiske sjukdommar ved å bruke kunnskapar om arv og mutasjonar, og gjere greie for korleis samspelet mellom arv, miljø og livsstil kan påverke helsa hos menneska</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e78c08ee-7a2e-4980-ac15-bbe3f0b07561">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:466f3a86-183e-449c-92ce-473782bf2b7e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gje døme på og grunngje korleis åtferd som kjem av evolusjon, er ein del av tilpassinga til omgjevnadene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bb12723c-36f4-484c-94b5-d15c64562f0a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77c5f83f-6db4-4c64-b696-4eb6de769bbf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare korleis molekylærbiologi og genteknikkar gjev oss ny kunnskap om opphavet til artar og utviklinga av slektskapstre</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fee83ef6-8d0a-4f3a-8145-a995a4951fa6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f12d301-09e7-4258-829d-bf18db5bf1bf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare strukturen til DNA og korleis DNA blir kopiert før cellene deler seg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:04db7a11-562e-4b5a-b26b-26b320fd7148">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>observere og namngje nokre vanlege artar frå ulike biotopar og samanlikne dei med omsyn til fellestrekk og variasjon ved å bruke kunnskapar frå systematikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:466f3a86-183e-449c-92ce-473782bf2b7e">
+    <ns:title>Funksjon og tilpassing</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1daa7615-f36a-4dc7-9507-df68601850ed">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:466f3a86-183e-449c-92ce-473782bf2b7e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>samanlikne bygning og funksjon av organsystem hos ulike dyregrupper, med vekt på sirkulasjon, gassutveksling og utskiljing, sett i samanheng med tilpassing til ulike levevilkår</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a1734612-2e03-426b-9177-c98a1f4f3e79">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31fa3f45-7402-4f59-80d3-cf2ae4bc0fea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare korleis genmodifiserte organismar kan framstillast, drøfte korleis dette kan nyttast innanfor medisin, produksjon av mat og biologisk forsking, og kva følgjer dette kan ha for miljøet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:95f368ad-11c0-4a98-aaa8-2773afbb8008">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gjennomføre eit større feltarbeid og nytte biologiske metodar til å samle inn, kartleggje og utforske ulike typar organismar og leggje fram resultata frå undersøkingane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ef9dd302-9be9-4377-a0b5-0526c5121c9a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:466f3a86-183e-449c-92ce-473782bf2b7e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>forklare korleis opptak og transport av vatn og oppløyste stoff skjer hos planter, og diskutere kva slag tilpassing planter kan ha til ulike levevilkår</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9578dd59-d7ef-44f9-ba8a-8f11d0006596">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:41c44f67-3a20-4036-b7f3-070a9448fbac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare korleis enzym, ATP og andre kofaktorar verkar, og korleis aktiviteten til enzym blir regulert i celler og vev</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d3f86edb-2741-4083-940f-fa14420ac35c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77b77574-2b6b-4b2f-b40b-f911324de5d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>diskutere problemstillingar som gjeld organdonasjonar og medisinske kriterium for død</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0994a039-eb6b-4109-a48a-df59a261edb5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:070a93eb-1390-4ac8-b93d-18457aeddf7b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>forklare korleis økosystem kan endre seg over tid, og knyte det til klimaendring og andre miljøproblem</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f0e9204a-f6c2-469c-af80-339c165089f9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b0d182e1-ef0e-4027-b5d1-6f18bf95a7e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>forklare korleis ein art blir definert, og korleis det biologiske mangfaldet blir organisert i taksonomiske system</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c771acde-f757-4d6a-aa0e-088f7d5b0982">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>planleggje og gjennomføre eit større feltarbeid med ei undersøking av biotiske og abiotiske faktorar i eit økosystem, og vurdere og presentere resultata med og utan digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e20b1ce1-cdbf-4107-a4b2-afa8b941bc45">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:466f3a86-183e-449c-92ce-473782bf2b7e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>drøfte korleis ytre faktorar påverkar vekst og utvikling hos planter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96aca60e-66c5-4c89-95c8-5bbcf2fa1ff2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77c5f83f-6db4-4c64-b696-4eb6de769bbf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for teoriar for korleis livet på jorda har oppstått, og beskrive nokre hovudtrekk i korleis utviklinga av livet på jorda har gått føre seg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:77c5f83f-6db4-4c64-b696-4eb6de769bbf">
+    <ns:title>Evolusjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:68610963-7ff6-4c7a-8f03-c159b6620a0f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77b77574-2b6b-4b2f-b40b-f911324de5d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>samanlikne hormonsystemet og nervesystemet og forklare korleis desse systema blir påverka av ulike stoff</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:59065e44-3dae-4a9e-abd8-0001a82179e8"/>
+    <ns:title>Biologi 1</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d23d7f66-700b-48d6-8a82-f9ae956e678d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77b77574-2b6b-4b2f-b40b-f911324de5d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gjere greie for oppbygginga av og funksjonen til sentrale organsystem i kroppen, og drøfte årsaker til sjukdommar som har samanheng med livsstil</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:65d0c155-35c8-4161-bc9c-8d9c8ae7080d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f348477-331f-4944-91d3-9b7a95b06fa9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>finne fram til ny kunnskap i biologi frå ulike medium og vurdere informasjon og påstandar i media på eit fagleg grunnlag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:77b77574-2b6b-4b2f-b40b-f911324de5d6">
+    <ns:title>Fysiologien til mennesket</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c71f068-0662-410b-a9a5-375bd67b8f41">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:070a93eb-1390-4ac8-b93d-18457aeddf7b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:844214f9-3181-4302-a087-68307fa46cf4"/>
+    <ns:title>gjere greie for krinsløpet til karbonet og nitrogenet i eit økosystem, og korleis miljøgifter blir konsentrerte i næringskjeder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8068cd26-ec04-4562-82a7-fd60d5c5f2ea">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a244b1d0-eee5-4be5-af0a-4685b9f82b20"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26d612b0-0d5d-419f-a1bc-812beeb39de1"/>
+    <ns:title>gjere greie for oppbygginga og formeiringa til bakteriar og virus, og relatere det til prosessar i natur, industri og helsefagleg samanheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

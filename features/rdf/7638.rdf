@@ -1,0 +1,281 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:5702fe5e-a7d0-46d7-af69-cb404e667fa9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>bruke digitale verktøy i planlegging, gjennomføring og dokumentasjon av en naturbasert produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5c8e45d5-36a3-4684-ba46-b9d614c27bd7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>gjøre rede for prinsipielle forskjeller mellom økologiske og konvensjonelle driftsformer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3c3f4acb-40e0-4692-a065-027bdaccc332">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>utføre en produksjon etter prinsippene for økologisk drift etter gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c027f437-02ed-4c3a-84c4-77426391789b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>utføre arbeidsoppgaver i landbruk og gartnernæring ut fra produksjonens egenart, organismenes biologi og krav til stell</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e46a071-28d0-4256-9dcb-bb1ed3f4ce7c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>beskrive sentrale elementer i god økonomistyring og benytte dataverktøy til en enkel økonomisk oversikt for en naturbasert produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:22bb6899-7f89-4457-85be-27675bc2faaa">
+    <ns:title>Produksjon og tjenesteyting</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e7a0979a-53df-4460-b69d-fbe771fd061a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>foreslå miljøtiltak og energiøkonomiseringstiltak og vurdere alternative energikilder i landbruk og gartnernæring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:90ef67de-2080-433c-a33e-c6272f31be4a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>klargjøre bilag for regnskapsføring, tolke nøkkeltall og forklare betydningen av korrekt regnskapsføring i en virksomhet i landbruk og gartnernæring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ef98ca31-e368-494a-8f50-ba7c9cedbf76">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>vurdere risiko knyttet til naturbaserte arbeidsoppgaver og aktiviteter og arbeide i samsvar med gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:60ecd296-6b70-46d3-848c-b55c5086f85e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>foreslå nye produkter basert på lokale naturressurser og vurdere muligheter for etablering av ny virksomhet i samsvar med gjeldende regelverk, etiske og økologiske prinsipper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:560d40f2-b312-4e82-9ae6-ae49b7000891">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>utarbeide et helse-, miljø- og sikkerhetssystem knyttet til en naturbasert aktivitet eller produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a05185d-e7e9-4395-8db4-bd41022638f8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>utføre yrkesrelaterte aktiviteter i naturen under varierende forhold, vurdere risiko og ivareta egen sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:54551019-2db6-4568-be50-332649d9cfbe">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>foreslå tiltak for gjenbruk og flerbruk av ressurser i naturbaserte produksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:90f39e20-82b4-4f27-b95b-14af87e4af92">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>bruke og vedlikeholde kjøretøy, maskiner, bygninger og teknisk utstyr etter gjeldende forskrifter og standarder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:36b490c4-4452-426c-a2ff-d65ddd50f4ab">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>gjøre rede for eierskap og eieformer og beskrive tradisjoner som er knyttet til forvaltning av eiendommer med naturressurser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d885d17c-6766-4aee-95fa-91261945c3b3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>innhente og bruke informasjon fra faglitteratur, medier og offentlig forvaltning om en aktuell aktivitet eller produksjon i landbruks- og gartnernæring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9c57b21d-4c18-4d1c-936f-bdae6484acce">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>kartlegge naturtyper og vurdere muligheter for næringsdrift basert på lokale naturressurser, og gi eksempler på hvordan næringsutøvelsen påvirker lokalsamfunnet, miljøet og det biologiske mangfoldet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8075aae2-a09a-4059-9d34-2817de34f0b1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>gjøre rede for gangen i en bedriftsetablering og forklare hensikten med og innholdet i en forretningsplan</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5291a529-8c06-4695-a96f-686ef1398831">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:5d8d5724-2e46-4a60-a78a-868b821b4d73"/>
+    <ns:title>Forvaltning og drift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c3479093-3505-492f-9a6c-a0f2be556a4c">
+    <ns:title>Forvaltning og drift</ns:title>
+    <grep:kode>LGA2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d8d5724-2e46-4a60-a78a-868b821b4d73">
+    <grep:kode>LGA2-01</grep:kode>
+    <ns:title>Programområde for landbruk og gartnernæring - Læreplan i felles programfag vg2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:efb52557-7f7a-4993-a263-0b8e33146454">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>planlegge, gjennomføre og dokumentere arbeidsoppgaver i naturbaserte produksjoner og aktiviteter og vurdere utførelse, kvalitet og lønnsomhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1fe002d9-7ae5-4e2c-99f3-d96bac65b2b6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>vurdere arealbruken i et aktuelt område ut fra prinsipper for bærekraftig ressursforvaltning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c97c378-6e43-4547-aaa6-340348880338">
+    <ns:title>Produksjon og tjenesteyting</ns:title>
+    <grep:kode>LGA2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f">
+    <ns:title>Forvaltning og drift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f86c901-fc43-4275-bbb3-92220672653a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22bb6899-7f89-4457-85be-27675bc2faaa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff8826e-a979-481d-920e-6a9a8aacec72"/>
+    <ns:title>dokumentere kvaliteten av prosesser og produkter etter gjeldende sertifiseringsordninger for matkvalitet og miljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc876906-48ef-4b99-b3b8-16ab7826f99a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>klargjøre et valgt produkt for salg og gjøre rede for noen salgs- og omsetningsformer i landbruk og gartnernæring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:631b2b0c-f51b-4570-9970-1d1b50a367b7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>gi eksempler på krav kunder stiller til produktutvalg og kvalitet i landbruk og gartnernæring, og gjøre rede for hva profesjonell kundebehandling innebærer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:25968cea-0f4f-4554-95d2-035926f7120a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa94fea-575c-41a6-8c75-cd3f1bfb406f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5291a529-8c06-4695-a96f-686ef1398831"/>
+    <ns:title>gjøre rede for krav til profesjonell arbeidsledelse, planlegge en naturbasert arbeidsoppgave som skal utføres av flere personer, lede gjennomføringen og evaluere arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aff8826e-a979-481d-920e-6a9a8aacec72">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:5d8d5724-2e46-4a60-a78a-868b821b4d73"/>
+    <ns:title>Produksjon og tjenesteyting</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

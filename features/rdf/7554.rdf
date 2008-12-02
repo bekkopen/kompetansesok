@@ -1,0 +1,294 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:7706e4cb-ed27-4353-892b-56034a89adff">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>håndtere kundehenvendelser og reklamasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d322e420-1432-4784-92d4-2e64b85281fa">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>redegjøre for faremomentene som er knyttet til eksplosjonsfarlige områder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bd3180f1-a3ff-462d-ab94-63c31fc8813b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>redegjøre for problematikk knyttet til elektromagnetisk kompatibilitet (EMC)</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a2fc3e4-8845-4636-abbf-604b5f381c81">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>bruke verktøy og maskiner funksjonelt for å oppnå ønsket kvalitet og sikkerhet, uten å skade verktøy, personer eller materiell</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5be518da-71b2-4ac2-b138-f8dfd6854e6a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre dimensjonering og merking av komponenter, elektriske ledere og isolatorer i henhold til belastning, dynamiske krefter og nettsystemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:345cc92d-5b95-4649-879a-ae0917384045">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge, dokumentere og gjennomføre arbeid på tavler etter gjeldende regelverk og standarder </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d">
+    <ns:title>Montasje og produktsikkerhet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:50883942-d712-44d7-989f-7dfb5955d9a3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>redegjøre for en tavlebedrifts funksjon lokalt, nasjonalt og internasjonalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2c268784-53ca-4b70-9383-74c17ccab904">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge, montere og revidere tavler på anlegg etter gjeldende regelverk knyttet til sikkerhet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e9ff6762-7c7a-4efb-9102-687e3a222b89">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre bearbeiding, tilpassing og montasje av strømskinner med nødvendig kapping, hulltaking og bøying</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6997fd9-b917-4e98-9433-e9b90b7932b7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>dokumentere egen opplæring i montasje og produktsikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6ac885f2-ed44-4b0d-828d-efcbbdbb29bc">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre montasje av tavler og komponenter for ulike tetthetsgrader</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233">
+    <ns:title>Kontroll, revisjon og elsikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:72c23f67-b434-48af-a559-1f95a99d893c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>redegjøre for en tavlebedrifts opprinnelse og utvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d8138676-58b4-47b0-ba9f-f6b31ac4ac2b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre arbeidsprosesser for å oppnå effektiv bruk av tid og materiell</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5b1f6345-412b-46f2-b7b8-1bbea9f29e01">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre montasje av mekaniske og elektriske komponenter og enheter til en tavle</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c4eb6900-ed64-479b-a66d-68e700d83b89">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>gi brukerveiledning på komponenter og systemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:36c09251-7f3f-4a54-8f1e-e18f3f6baf4e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre forlegging og terminering av ledere med tilhørende momenttiltrekking </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fcebb194-aaf5-4138-8526-a7a52c22f303">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og gjennomføre bygging og merking av tavler som skal benyttes i ulike elektriske installasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:069b658d-7c03-445e-b31c-b0af63160286">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:d513c99b-c0e4-4b9a-91d0-37eab1cecd56"/>
+    <ns:title>Etter Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:55ec9ecf-126d-4d74-8b38-a25279532d4c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>dokumentere egen opplæring i kontroll, revisjon og elsikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc3dd536-f7f3-4cea-b83a-e45c659da40f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og utføre arbeidet i samsvar med gjeldende helse-, miljø- og sikkerhetskrav</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d513c99b-c0e4-4b9a-91d0-37eab1cecd56">
+    <grep:kode>TAV3-01</grep:kode>
+    <ns:title>Læreplan i tavlemontørfaget Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5bc981c0-0b09-4328-ba49-1acde1f66d52">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>velge elektrisk materiell ut fra funksjon og tekniske data </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b7fbd3d-5442-4b36-9f87-4370bc082f35">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge og utarbeide enkle skjemaer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f881b7a9-767d-4bee-959e-0fd4e4066561">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>planlegge, gjennomføre og dokumentere kontroll, funksjonstesting, feilsøking og feilretting av tavler i henhold til gjeldende regelverk, standarder og kontrolldokumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:73efb038-cc33-43e9-a288-8d849537e061">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>bygge tavler beregnet for ulike nettsystemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:52581ff4-bd94-4c6a-82f5-629417b86674">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>kontrollere og dokumentere utført arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:664a7d8b-b3a3-40b7-b0b2-fc1bf7cd5b7c">
+    <ns:title>Tavlemontørfaget</ns:title>
+    <grep:kode>TAV3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b77e75f2-bade-4b42-b874-1de7168bbbf5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>dimensjonere og montere beskyttelses- og utjevningsledere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:39a20157-07f8-42f8-ad8b-7ae43f9da0e0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad6959f8-52e2-418a-ab6f-1993b89c609d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>arbeide etter aktuell teknisk dokumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c113689f-9743-4303-ae18-5792eb126aef">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b3b91baf-6456-4f3b-abcd-646f519a2233"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:069b658d-7c03-445e-b31c-b0af63160286"/>
+    <ns:title>redegjøre for arbeidstakerens og arbeidsgiverens rettigheter og plikter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

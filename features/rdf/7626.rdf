@@ -1,0 +1,275 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:0d8dbbfa-ce9c-40a5-a3f7-6e3d00159679">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>innrede, møblere og style rom for ulike miljøer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f7b4236c-1b28-4b4d-bbf5-055229be7a76">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>dokumentere eget arbeid i forhold til målgruppe, funksjon, estetikk, stil og sammenheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c333033-b229-4185-9366-a43199bea5f7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>bruke ulike fargesystemer i eget interiørarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c82e9dc-a749-4cd3-959e-6ec855bb991a">
+    <ns:title>Interiørarbeid</ns:title>
+    <grep:kode>INT3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c976adfb-5e56-4be9-b0a8-e54b11bc79bd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>gjøre rede for og bruke prinsipper for belysning av rom </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:02ab7169-b0a2-4a55-96a0-54b286614cd0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>analysere og vurdere innhold og omfang av ulike interiøroppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:06e2992c-6d05-4d99-acb4-5e9418156dc8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>lage produkt- og materialkart med beskrivelser </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c4ead009-57a4-4bb4-9823-4ac8c9791719">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>presentere løsningsforslag visuelt og verbalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d44515a9-ad86-4ad6-8ea7-31521e2cc285">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>beregne material- og tidsforbruk og pris på eget interiørarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c1e6a82e-0138-42be-9207-74f62f64591b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>utarbeide forslag til interiørløsninger sammen med kunder og andre samarbeidspartnere </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854">
+    <ns:title>Presentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e4a7ae13-bb55-4959-b60e-3ff338de0e77">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>utnytte fargers psykologiske påvirkningskraft </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ca3218ec-5577-4c47-878a-b5ac65a3b206">
+    <grep:kode>INT3-01</grep:kode>
+    <ns:title>Programområde for interiør - læreplan i felles programfag Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b4b89e5b-e089-453c-ac1e-1565cae6bc77">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>gjøre rede for ulike trender i interiørfaget  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e6d92cf6-78be-4010-95b7-02fee6e2d2a5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>lage målsatte miljø-, arbeids- og presentasjonstegninger med beskrivelser samt lysplan</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db621432-6c8b-4399-8b99-d85e7cd417c1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>utføre interiøroppdrag og sette disse inn i en nasjonal og internasjonal kultur- og stilhistorisk sammenheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:414b8dc2-316b-435f-b7ae-93149e177c5c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>bruke kunnskaper om interiørfagets historie og utvikling i egne interiøroppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db173fd9-4b96-405e-986e-867c3edf87f5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>dokumentere og vurdere eget arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5937c5e-6651-4962-ab75-b31f1ebf148b">
+    <ns:title>Presentasjon</ns:title>
+    <grep:kode>INT3Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:40a44ffd-839a-4263-83ad-9ae464fca2c1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>bruke digitale verktøy, tegneutstyr, materialer og teknikker fagmessig </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:ca3218ec-5577-4c47-878a-b5ac65a3b206"/>
+    <ns:title>Interiørarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dc4abac2-78e2-4a0d-aaa7-877a0854be70">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>analysere kundebehov, veilede kunder og skissere interiørideer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:92099c4e-264b-4ddf-9058-532ed1f71e81">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>vise og forklare egen arbeidsprosess ved bruk av skisser, foto, digitale verktøy, tekst og illustrasjoner  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7">
+    <ns:title>Interiørarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a1724e7-7521-4afb-b23a-8f5e044b5e3f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68cfc9c5-7c51-4ef9-9503-c728b095c854"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8522112-4bf1-4041-870d-fd171514b6ae"/>
+    <ns:title>gjennomføre enkle markedsundersøkelser </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:21b7e3e1-0375-4511-89c2-db704add0c5b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>bruke ulike mediekanaler i markedsføring av interiørarbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8afda5be-381d-4656-baad-a478f58e2111">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>bruke faglitteratur, ulike medier og elementer fra naturen i arbeid med interiøroppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f8522112-4bf1-4041-870d-fd171514b6ae">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:ca3218ec-5577-4c47-878a-b5ac65a3b206"/>
+    <ns:title>Presentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8ddc637b-7064-425d-8ae7-d61171156a8c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a74d2516-f6c0-4704-b6d0-360b53e56de7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ea4600b-81e9-43a8-b0bf-c21b335570e9"/>
+    <ns:title>gjøre rede for og følge gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

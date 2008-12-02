@@ -1,0 +1,324 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:ad4e2509-4bdb-48dc-9c57-bc9a3aae6b5a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>bruke transportfaglige begreper ved nasjonale og internasjonale transportoppdrag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f90482a0-b73e-4e33-99c3-12e164fbed6b">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:b1ce807d-8876-47b2-bbc2-9d1fb2e086e1"/>
+    <ns:title>Bransjeteknikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0163e3f4-fa51-4f35-b44b-944d28e4d1b3">
+    <ns:title>Bransjeteknikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:75699617-7359-47c4-a86b-a46b0d406245">
+    <ns:title>Transport og logistikk</ns:title>
+    <grep:kode>TRL2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:b1ce807d-8876-47b2-bbc2-9d1fb2e086e1"/>
+    <ns:title>Transport og logistikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aa49b6e8-74e2-413a-af86-e6e8f6674ec7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>gjøre rede for vareflyten gjennom virksomheten og fram til sluttbrukerne</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cdee2072-31c6-4cdb-8839-71015d6385b6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>gjøre rede for kvalitetskrav næringen arbeider etter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c5109723-0c73-4cc5-b042-21475f667efa">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>planlegge og delta i  transportoppdrag i henhold til gjeldende lovverk for gods- og persontransport, og avslutte oppdraget med nødvendig dokumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f85a77b5-f9a7-48cf-b6a1-8ea88206afee">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>yte god service og kundebehandling ved å kartlegge kundens behov og ønsker, og betjene kunder før og under transportoppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fa39751a-7c3e-4f1d-b4f9-a8573b09ada3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0163e3f4-fa51-4f35-b44b-944d28e4d1b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f90482a0-b73e-4e33-99c3-12e164fbed6b"/>
+    <ns:title>planlegge og utføre håndtering av farlig gods ved transport i henhold til gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b948b4a-fdb4-4fed-9422-5a6b4c27198b">
+    <ns:title>Bransjeteknikk</ns:title>
+    <grep:kode>TRL2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:97b7878c-5e2f-4dee-92d9-1d7ead05ce56">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0163e3f4-fa51-4f35-b44b-944d28e4d1b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f90482a0-b73e-4e33-99c3-12e164fbed6b"/>
+    <ns:title>bruke og vedlikeholde vanlige tekniske hjelpemidler ved transport og logistikkoppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5d6604a-50ed-414b-baff-b52e7850f779">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>forklare hvordan transporttilbudet innen gjenvinning er bygget opp, og hvilke produkter som gjenvinnes
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028">
+    <ns:title>Transport og logistikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:968bbafa-2369-482f-b24c-6fcb42d9407d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>bruke tekniske og servicerelaterte hjelpemidler ved persontransport</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a8228d4c-f741-40e1-8bb1-a8ba8d68169c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0163e3f4-fa51-4f35-b44b-944d28e4d1b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f90482a0-b73e-4e33-99c3-12e164fbed6b"/>
+    <ns:title>utføre livreddende førstehjelp, sikre skadestedet ved trafikkulykker og slukke mindre branntilløp</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7d263bb7-4bd2-44a1-a301-9b15eb4991fb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>bruke ulike teknikker for sikker lasting og lossing av transportenheter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4058363d-53f5-4677-a79f-2e968aed4b7d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>bruke og behandle papirbasert og elektronisk fraktdokumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0bec7410-d892-4d9f-b72b-37f9b618a248">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>arbeide i henhold til de krav Internkontrollforskriften stiller til transport og logistikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:537d509b-18e8-4877-8658-c3653e278bac">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>gjøre rede for hvordan persontransportsystemer er bygd opp lokalt, regionalt og nasjonalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a969d009-4a16-4a2f-9e5f-eb7bd3237612">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>emballere og merke varer, og klargjøre varer for forsendelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b25cfd8c-4acc-43ac-b032-365358c42f95">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>beskrive næringens krav til ansatte og bedrifter og hvilke etiske normer næringen arbeider etter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:24e14117-9990-428e-a498-84841dae667b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0163e3f4-fa51-4f35-b44b-944d28e4d1b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f90482a0-b73e-4e33-99c3-12e164fbed6b"/>
+    <ns:title>håndtere og transportere varer med truck i henhold til gjeldende forskrifter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ae361dc2-d663-45aa-8287-5c7f0e522c43">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>vurdere hvilke faktorer som har betydning for prisfastsettelsen av transportoppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d1c4e83-719e-4d21-ad0d-2e9113c5174e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>gjøre rede for prosedyrer ved transport av varer og personer over landegrenser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f584b67-d676-46ef-813b-a9802915cef4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>sikre last etter gjeldende forskrifter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:afda5d80-06fe-421b-af2b-2af90b0217c2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>bruke enkle manuelle og elektroniske lagerstyringssystemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:59e79e0f-e7fa-4584-9176-4e434b8678e7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>gjøre rede for de mest sentrale forsikringsordningene for gods- og persontransport og for personell og utstyr</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:55bb0c58-27b0-4b62-9869-804309ff0b79">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>beskrive bransjens grunnelementer, utviklingstrekk og rolle i norsk samferdselspolitikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b6730dd5-e48d-481b-8ad5-7cce41ad8d8f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>bruke manuelle og elektroniske betalingssystemer innen gods- og persontransport</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:746a6b9f-c87f-4526-b81b-6af578b61966">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>begrunne disponeringen av økonomiske midler under et transportoppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e18f1f47-9f46-42e7-b508-637df43a0177">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>håndtere gods og betjene personer på en terminal</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e161e440-16c3-4c03-a13b-3669fd8d0533">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>forklare bruksområder for påbygg på lastebiler og busser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c0ed102d-abf2-4f34-9123-5d7677075130">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0163e3f4-fa51-4f35-b44b-944d28e4d1b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f90482a0-b73e-4e33-99c3-12e164fbed6b"/>
+    <ns:title>dokumentere gjennomført opplæring i obligatorisk sikkerhetskurs på bane og vei, og obligatoriske veiledningstimer for førerkort klasse B i henhold til gjeldende bestemmelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b1ce807d-8876-47b2-bbc2-9d1fb2e086e1">
+    <grep:kode>TRL2-01</grep:kode>
+    <ns:title>Programområde for transport og logistikk - Læreplan i felles programfag vg2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:32ee9a70-d17f-4324-8950-c9454ad7b8d1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>anvende og utnytte tele- og databaserte kommunikasjonssystemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e512e096-2c61-4bdc-9496-ae5bf6cf846a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8cfc0b9e-1ce8-40e3-a175-1130e30c3028"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6901f2a3-0b67-4ef9-9804-5af21cd71061"/>
+    <ns:title>gjøre rede for hvordan trafikksikkerheten kan ivaretas ved gjennomføring av transportoppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

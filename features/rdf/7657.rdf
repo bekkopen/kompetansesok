@@ -1,0 +1,256 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:d177d9ec-9f9f-459b-93b6-625bfcc37980">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>gjøre rede for økologiske forhold i områder som skal undersøkes </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c67c388b-40cd-45b9-b7e4-251b81b8ec79">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>velge og beskrive et økosystem ved hjelp av fagterminologi og på bakgrunn av observasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b202bb2-613b-4cdf-970b-847b089ac99d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>diskutere resultater og trekke konklusjoner ut fra resultatene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1e07e1d6-761e-4395-911f-d5d64423e097">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>klargjøre utstyr og hjelpemidler for feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cb958b45-21f8-46a4-b2e9-e0f488a64c53">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>vurdere og identifisere sterke og svake sider ved et gjennomført feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1fd47f66-4114-4a3e-a187-9d91a04e954d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>bruke og oppbevare manuelt og digitalt utstyr til bruk ved feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f23fe1ae-dbf8-4c33-bd01-e94910ac11a4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>dokumentere datainnsamlingen ved å føre feltjournal</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:512d8ce0-175d-490e-a2c2-437ce492eac5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>utføre datainnsamling i ett økosystem på land og ett i vann </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:47c94c29-9d61-405f-a013-bea29f1a6be0"/>
+    <ns:title>Etter Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:47c94c29-9d61-405f-a013-bea29f1a6be0">
+    <grep:kode>NAB5-01</grep:kode>
+    <ns:title>Programområde for studieforberedende Vg3 innen naturbruk - læreplan i feltarbeid i naturbruk - valgfritt programfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:160dc171-acdb-410c-8059-a7c4458bbab7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>planlegge feltarbeid i tråd med gjeldende regelverk for helse, miljø og sikkerhet og regelverk for ferdsel i natur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63950933-007d-4d38-b42a-7d32d08ad709">
+    <ns:title>Analyse og rapport</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7a62ea8-78ca-4746-b697-a03879266159">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>identifisere typiske arter og anslå utbredelse av truede arter og biotoper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ea7d85f1-4613-49ec-a5b2-6e3d31c3b2b0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>presentere resultater fra et feltarbeid, både muntlig og skriftlig og ved hjelp av digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dce4454f-7645-47eb-9d8f-2c1bef7c6dbb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>skrive en rapport fra et feltarbeid som redegjør for faglig grunnlag og metodevalg, og som har med en drøfting av resultater</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2132d3e1-39d8-4505-bb9e-f3c8d58a6693">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>katalogisere og systematisere data fra feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a5983cb1-9cf4-486f-be29-340d3f238add">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>vurdere risiko ved arbeid i felt, velge personlig utstyr og bekledning etter forholdene og ivareta sikkerheten for mennesker og miljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178">
+    <ns:title>Planlegging</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0cb35cf9-c359-45de-9ae7-9fedeb87d0fb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>presentere resultater fra et feltarbeid for oppdragsgiveren </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8ddfa037-4b2e-4fcd-ae21-3b91a544e947">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>merke og håndtere prøver fra feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01139f2f-01fe-40af-894b-85e7781275b8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>velge og formulere problemstillinger i forkant av et feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d092f333-d179-4e2a-9034-c3b0df4f083d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>velge utstyr og metoder til registrering av biotiske og abiotiske faktorer i et feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:279fc7ee-ca71-4a24-96f2-781db7847849">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63950933-007d-4d38-b42a-7d32d08ad709"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>bearbeide og analysere feltdata ved hjelp av digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fcc44b69-63f2-4507-a33c-9ceebc53d7ea">
+    <ns:title>Feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d72f2a2a-c18e-4264-9c76-810f31ae29f0">
+    <ns:title>Feltarbeid i naturbruk</ns:title>
+    <grep:kode>NAB5Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:582d853b-06d0-428e-b5dd-529a6ddc1bd9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee9bfe2d-7a28-495f-8d31-908fdbcd9178"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e440f3c-8cd3-45f7-bcff-700b71469f84"/>
+    <ns:title>drøfte etiske problemstillinger knyttet til feltarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

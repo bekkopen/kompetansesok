@@ -1,0 +1,385 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:f65fe6f0-db94-4cd4-81be-b0ce130b62d4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>utføre enkel undersøkelse, utføre akutte behandlingstiltak, reevaluere og overvåke pasienter </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c71cb588-09d2-46a7-8970-71388eb01763">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>utføre arbeidet i henhold til gjeldende regelverk og krav til profesjonell yrkesutøvelse </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:20613c2e-3049-4d2c-9453-fcad4fe58ff7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>drøfte trafikale situasjoner som har betydning for ambulansekjøringen </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7ed3d7a6-ee45-4801-8c88-82cecdcfd73a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>følge prosedyrer og retningslinjer for lagerhold, bruk, rengjøring, kontroll og vedlikehold av utstyr </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3a038e9a-e795-417f-93c3-75e7cdbc008c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere tegn på livløshet og iverksette nødvendige tiltak </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63d72c30-a9d9-498c-bd31-da92c7479813">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere ambulanseoppdrag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6f596a58-77b3-449b-a625-2db60c45e619">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere fysiske og psykiske behov hos pasienter og utføre nødvendige pleietiltak</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dcb8f90e-5d6d-41d0-94d6-b982fc1784c8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>observere medikamenters virkning i kroppen og håndtere medikamenter som brukes i ambulansetjenesten </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ed6845db-397f-4d11-8511-3322e9d517e3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>arbeide i team, samhandle og kommunisere med andre under ambulanseoppdrag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f815d303-ee2d-46d6-85a3-5173e05bec36">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>håndtere aggressive og truende personer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db">
+    <ns:title>Ambulansemedisin</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7bc64c7c-1057-4d98-80d7-fac1e123f93c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere tegn og symptomer på sykdommer og skader, forklare utvikling i kroppen som kan true barns vitale livsfunksjoner, og iverksette nødvendige tiltak </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c1cb4a27-8a06-4fa7-b489-efd20f13fef6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>utføre ambulanseoppdrag når pasienten er vanskelig tilgjengelig</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b3d44d14-7462-44f8-a5da-2bcafaf92716">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>kommunisere om pasienters tilstand, avgi systematiske rapporter og sørge for nødvendig dokumentasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1045b90d-58c4-42b1-955e-f9c0c8da331f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere tegn og symptomer på akutt sykdom, forklare utvikling i kroppen som kan true vitale livsfunksjoner, og iverksette nødvendige tiltak</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f1d9b56c-c1b8-42e2-8c4f-137b3e49bb97">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>håndtere situasjoner knyttet til døde pasienter </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:74af717b-c2e7-4e4f-a2f9-6cfaed130508">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>samhandle med politiet under skarpe oppdrag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac041eda-be3c-4e31-b59f-74a0fe9eb77f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>kommunisere med personer i en traumatisk og reaktiv krisesituasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:23eebc0e-6825-4052-ac6e-721df84d5849">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>forflytte og transportere pasienter på en sikker og omsorgsfull måte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:74971ae8-688c-4315-95cb-9056fa633bb5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>følge gjeldende prosedyrer for åstedsrapportering og innmelding av pasienter til mottakende ledd </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6eae090a-486d-4370-8ccf-982c1385adf0">
+    <ns:title>Ambulansefaget</ns:title>
+    <grep:kode>AMB3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:76ca01c0-fc01-43a8-80fa-eb727ec3c62d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>forebygge smittespredning og ivareta god hygiene under ambulanseoppdrag og på ambulansestasjonen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e7647c8d-a499-4d5f-afcc-f4bd95f9cd93">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>iverksette nødvendige tiltak ved akutte psykiske lidelser og samhandle med pasienter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:df15f050-d246-4e9e-9c54-04003817602b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere tegn og symptomer på sykdommer og skader, ta hensyn til utviklingen i kroppen hos eldre pasienter og iverksette nødvendige tiltak </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:25b73384-b402-47d4-a335-cd8b48d2e6cd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere fysiske og psykiske behov hos pasienter og utføre nødvendige pleietiltak</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:80a43532-6562-4d41-8cc8-2b410092d567">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>bruke moderne utstyr for kommunikasjon og navigasjon for å finne raskt fram til bestemmelsesstedet, og bruke dette utstyret til å kommunisere med og veilede andre </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:23f9dcf2-bbd1-43f4-9397-d13e61f8802a">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>kommunisere med personer i en traumatisk og reaktiv krisesituasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:053c8b03-31d5-4a7a-98ab-59e211b2bb4d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>følge prinsipper for organisering og ledelse på skadestedet og utføre arbeidsoppgaver som første ambulanseenhet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f7eae78-69c0-4b45-9222-848363a5e490">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>innhente og forstå pasientens sykehistorie, skademekanikk, symptomer og tegn på sykdom</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:304ba755-9767-463a-90fb-5a576be3435e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>samarbeide med kommunikasjonssentral og sykehus</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd6092a2-230f-4df6-8246-118afd6ebae5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere tegn og symptomer på tilstander som kan true vitale livsfunksjoner hos gravide og fødende, og iverksette nødvendige tiltak </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:71a1e79e-b07f-4b5a-9c49-b702cf53a16a">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>kommunisere om pasienters tilstand, avgi systematiske rapporter og sørge for nødvendig dokumentasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:fa92ae27-97fb-400d-8372-90d98378a022"/>
+    <ns:title>Etter Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d">
+    <ns:title>Grunnleggende helsefag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d2e8c08-beeb-4e5e-8c3e-79a68e2634a9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>samarbeide med luftambulansetjenesten og redningshelikopter under ambulanseoppdrag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:545caca4-4c14-4eee-b22c-382958a55b3f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>ivareta egen og andres helse og sikkerhet under og etter ambulanseoppdrag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:54670660-4cfc-42cf-9220-2722ffc751d6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>gjøre rede for hva ambulansens innredning og oppbygning betyr for sikkerhet og driftspålitelighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:295452da-4625-4eb8-95f1-22523b293691">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>følge ergonomiske prinsipper i yrkesutøvelsen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:830de231-6b56-411a-aa7b-6cf8a42dcedd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>følge gjeldende prosedyrer for ambulanseoppdrag forbundet med særlig risiko og redningstekniske behov</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f321a24a-2412-4186-bb86-69ed72cdcede">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>bruke kvalitetssystemer og utføre arbeidet i tråd med gjeldende regelverk for helse, miljø og sikkerhet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a2044a7-331c-4a4f-9fb4-ad2922fae9dd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>drøfte etiske dilemmaer knyttet til yrkesutøvelsen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2bbe2685-f43f-4e0f-9753-522db7f53fc2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>kommunisere med og vise profesjonell omsorg for pasienter og pårørende</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:200c06f6-87c6-4382-89d5-b8a605213666">
+    <ns:title>Ambulanseoperative emner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a9ba92ba-c865-40b2-a0b1-4c96c773fd13">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>identifisere tegn og symptomer på akutt skade, forklare utvikling i kroppen som kan true vitale livsfunksjoner, og iverksette nødvendige tiltak </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd235a93-fd28-4073-a091-2cd0680be92f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a3e0111-fa04-4433-a2a2-3cb4c17fe4db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>iverksette nødvendige tiltak ved ulike fysiske funksjonshemminger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:48b8f304-0e33-4c7c-810d-c971cb0a8f3b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ce715b3-efc5-499b-bb7f-6794ca18b54d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>følge medisinskfaglig veiledning og instrukser fra den ansvarlige legen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ce24d7ae-e3b8-4bb0-8808-1f0e1c67bfa2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:200c06f6-87c6-4382-89d5-b8a605213666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a4fc9e66-80ce-46c3-b755-71a79a4d9024"/>
+    <ns:title>drøfte hva arbeidsprosesser og samarbeid i ambulanseteamet betyr for sikkerheten under utrykningskjøring </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fa92ae27-97fb-400d-8372-90d98378a022">
+    <grep:kode>AMB3-01</grep:kode>
+    <ns:title>Læreplan i ambulansefaget Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

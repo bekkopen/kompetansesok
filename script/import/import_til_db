@@ -1,2 +1,2 @@
-importerer = Kompetansesok::Importerer.new
+importerer = Kompetansesok::Importerer.new(ARGV[0] || Rails.root + '/tmp/import', STDOUT)
 importerer.importer_til_db

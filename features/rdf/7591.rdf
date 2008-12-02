@@ -1,0 +1,385 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:90bc7bbc-8d61-4f55-b48f-b59fc118c148">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>håndtere legemiddelavfall i samsvar med gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0f8d6196-19e4-4c29-92a3-254544e812fe">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>framstille kremer, salver og flytende legemidler og dosere legemidler i henhold til prinsippene for god produksjonspraksis </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:03f18ec1-f309-472d-abd6-3e27670ef0c7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>bruke de vanligste prinsippene for varebestilling og vareflyt  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d7bbb06a-de5e-4769-9303-8613889966f3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>bruke relevante digitale verktøy i arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:13142211-8e8e-4997-850c-22c3e6f837aa">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>håndtere klager i samsvar med regelverket </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1ac99b14-8043-41a9-9b2e-56df6038ed78">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>beskrive kroppens opptak, fordeling, nedbryting og utskillelse av legemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:daf11fed-3847-41f0-b741-ae801c104c6c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>gjøre rede for bruk av utvalgte reseptpliktige legemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e1273eed-e082-4a32-b87d-1b6e0ff52088">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>formidle informasjon til kunder i ulike livssituasjoner og med ulike behov</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c871364-4d56-4f8d-9f10-285abe560976">
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <grep:kode>APO3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bc0bce4c-45f1-4559-9054-8e261e79d3a0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>gjøre rede for innholdet i det relevante regelverket om forbrukernes rettigheter og plikter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8f36b55e-019e-43b0-80aa-59a14a6a299b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>gjøre rede for folkemedisinsk tradisjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:362c293f-eb24-4a02-b6d3-99e40a71c7ed">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>kommunisere og samhandle med kunder, kollegaer og andre fagpersoner </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cdee4afb-7f29-4562-8ded-cd2215ad1cbe">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>anbefale hensiktsmessig legemiddelform og veilede i bruken av denne </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7fbb0698-8988-42c8-88dd-9cb0a433838d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>veilede om riktig legemiddelbruk og gi eksempler på årsaker til og konsekvenser av feil legemiddelbruk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b3cf5e1-feab-4abb-a2a9-e4ef5bbf1f47">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>informere om bruk av droger, naturlegemidler og naturmidler og håndtere andre alternative midler som selges i apotek</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0cd023e0-cb08-4be1-9112-aa6ee0da24dd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>veilede kunder i valg og bruk av apotekvarer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ed83a0b6-8e3b-4ba1-8e01-0a8fbcf385ee">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>yte service til kunder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:4a2d5f58-386d-493a-91a1-e4225c743a2e"/>
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ffe5c13f-db4d-4cad-919e-bf21837400b7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>tilvirke, omsette, markedsføre og kontrollere legemidler i tråd med gjeldende regelverk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:40417e8c-03ab-4f23-9037-1d0af7813202">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:4a2d5f58-386d-493a-91a1-e4225c743a2e"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b4151f99-3d03-4ef6-bee0-4438fdf94cc5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>utføre førstehjelp som er relevant for yrkesutøvelsen </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4a2d5f58-386d-493a-91a1-e4225c743a2e">
+    <grep:kode>APO3-01</grep:kode>
+    <ns:title>Programområde for apotekteknikk - læreplan i felles programfag Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b6621898-ee2b-4d9a-8ff7-3f655e82b6b6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>kontrollere og rydde på plass varer og legemidler etter aktuelle lagersystemer og gjeldende regler for oppbevaring </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7cb7c29d-1363-4408-a238-c61761a7424d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>drøfte yrkesetiske problemstillinger og utføre arbeidet i tråd med yrkesetiske retningslinjer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ce95c321-9e6f-432a-9edd-07670e817483">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>gjøre rede for legemidlers ulike virkningsmekanismer i kroppen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2dc4de6c-5a11-437e-b7ce-a6f3b6f45085">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>drøfte hva profesjonell yrkesutøvelse innebærer for apotekteknikeren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0ed633f5-e080-4933-b590-010519c918db">
+    <ns:title>Yrkesutøvelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ec795cb-4f60-417c-8d72-7dca55085d47">
+    <ns:title>Yrkesutøvelse</ns:title>
+    <grep:kode>APO3Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:677f5f62-535e-41bb-b944-50a77958e7bb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>bruke ATC-klassifikasjonssystemet i apotekarbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c36adc1e-8032-4fc2-b008-2dfc3ed48194">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>utføre arbeidet i tråd med ergonomiske prinsipper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:696fb2e9-816d-47eb-8c98-94652968ee0d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>veilede kunder om bruksområder for reseptfrie legemidlers virkning og aktuelle bivirkninger </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:40e6971f-2eda-4327-9225-02b937935327">
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:59ffcbc5-e56b-4723-8086-a834e353a0d7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>planlegge og gjennomføre tiltak i tråd med prinsippene for universell utforming</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9b73b05b-25a2-44b3-8978-8228651087f6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>følge gjeldende regelverk om taushetsplikt og personvern</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f77f3c40-2db6-4c19-bbce-76c786507a20">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>planlegge og gjennomføre kampanjeaktiviteter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe6ef53f-00bc-4707-a8c3-68dbf997b236">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>drøfte kjennetegn på profesjonell kundebehandling </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:881504f9-b419-4657-a980-e975cd467dd8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>beherske engelske faguttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e5616b05-8e41-4eac-bd82-ba554f22f4f2">
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:kode>APO3Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ddc90c98-60af-4aca-be89-355346688244">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>bruke ulike strategier for konflikthåndtering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f0fa299f-6658-4d5e-8bc9-1f324e4b0b63">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>registrere, klargjøre og utlevere reseptmedisin i samarbeid med farmasøyt og i henhold til gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b42e2b9a-b764-47b2-b30a-1ed748c62317">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>gjøre rede for hva et legemiddel er, og informere kunden om originalpreparat, synonympreparater og parallellimporterte legemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1b7f5e98-2694-42e6-96e5-f99518deeaf9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>utføre arbeidet i tråd med kvalitets- og internkontrollsystemet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7d0fba1d-b723-401c-88f4-126438cf2666">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:40e6971f-2eda-4327-9225-02b937935327"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01c70dea-308b-4662-b051-7d95fb3b91b0"/>
+    <ns:title>instruere kunder med spesielle behov i bruk av tekniske hjelpemidler og ulike sykepleieartikler </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:4a2d5f58-386d-493a-91a1-e4225c743a2e"/>
+    <ns:title>Yrkesutøvelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65">
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e8687d0-b216-464a-a16d-ed2c714461bb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dd8f55e-bf6e-4967-818f-71d82b19fb65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:40417e8c-03ab-4f23-9037-1d0af7813202"/>
+    <ns:title>drøfte apotekteknikerens rolle i det tverrfaglige samarbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:86e05e45-3071-4cc9-b1fc-de3296c479bb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>planlegge, gjennomføre, dokumentere og evaluere eget arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b70cfe25-0784-4647-9da3-e62a642ab543">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed633f5-e080-4933-b590-010519c918db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:caa0e2f8-cdb7-4ca8-a02d-ade916e551ff"/>
+    <ns:title>selge reseptfrie legemidler og handelsvarer basert på produktkunnskap og i samsvar med gjeldende regelverk og etiske retningslinjer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

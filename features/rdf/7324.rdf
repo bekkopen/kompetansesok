@@ -1,0 +1,288 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:0a0858d8-d450-47bd-923a-45ad19adf94c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>overflatebehandle glass med sandblåsing og silketrykking </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:46cb0890-2697-418c-b4d5-77bf6c176f45">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>gjøre rede for prinsippene for eldre innsettingsmetoder </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:88f522aa-afb0-48f0-8cd4-2200ee06182c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>lime glass med forskjellige limeteknikker for UV-lim, silikon og tokomponentlim</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ff6eef1-e35c-42a6-8849-cfd9f1f6a76b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>presentere egne produkter </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d38c71de-481b-47c1-bd0e-9ae43b6a6970">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>utføre håndverksarbeid i tråd med gjeldende regelverk for blyglasshåndverkerfaget og gjeldende regelverk for helse, miljø og sikkerhet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0dcbcdf0-3ca6-4c69-b5e8-c4eb47700cb3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>gjøre rede for egenskaper og begrensninger ved ulike glassmaterialer   </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ded55cda-536c-457f-8657-6bdd0b26c303">
+    <grep:kode>BLY3-01</grep:kode>
+    <ns:title>Læreplan i blyglasshåndverkerfaget - særløp Vg2 og Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1d0a69b0-e8a5-4de9-a234-25dde8752ea3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>demontere og håndtere glassarbeider til reparasjon og restaurering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:35441838-91ba-472a-a7a9-294a4cfd2f20">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>utføre reparasjoner på fastmonterte glassarbeider </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e">
+    <ns:title>Blyglassproduksjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9db2de81-1fbf-4366-ada7-d09dcf617a8d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>vurdere egen produksjon i blyglasshåndverkerfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:80afebd3-825a-420c-aeaf-156475429a6f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>skjære og bearbeide glass og plast    </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:82a9b81c-7ef4-4da8-bdff-82b8dc8a2e5d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>utføre nødvendig vedlikehold av verktøy, maskiner og utstyr for blyglasshåndverkerfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ce6e80d8-8e3d-4ce1-8b6c-558588132fa1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>lage skisser og anvende tekniske tegninger </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4683094f-5e08-49ea-be0d-13e83c5922e1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>restaurere og rehabilitere glassarbeider etter krav fra antikvarmyndigheter </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bcfc194d-448b-427e-877e-472678fd0d5f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>begrunne valg av materialer, verktøy og teknikker i blyglasshåndverkerfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:ded55cda-536c-457f-8657-6bdd0b26c303"/>
+    <ns:title>Etter Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6ada4eb0-bb4c-465d-ac47-07a7adad5ff0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>konkretisere og begrunne egne løsningsforslag i tråd med kundebehov i blyglasshåndverkerfaget </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7146e8ba-232b-4fa2-a246-dc4fd5c33581">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>forme, tone, male og brenne glass i ovn </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e5d8c494-c197-4574-937c-e10727c0ccb5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>gjøre rede for fagets historie og utvikling, og for hovedtrekk ved bransjen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4691c56a-79ad-4a5b-b7ed-f42918b14e10">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>gjøre rede for gjeldende regelverk for blyglasshåndverkerfaget og for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cef7318a-2642-4cc8-a674-759553950a35">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>markedsføre blyglassprodukter og tjenester</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c893757-41e1-428c-aa88-5f65637ea14c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>bruke materialer, verktøy og teknikker som er hensiktsmessige i blyglasshåndverkerfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:05fec4e4-8606-40d1-bd58-a744b9b0f9cc">
+    <ns:title>Blyglasshåndverkerfaget - særløp</ns:title>
+    <grep:kode>BLY3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6dae3ec-0850-4de5-a562-d23529051049">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>montere glassarbeider forsvarlig</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d5bd02c-61d5-42ec-a0a1-5dac66d599f7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>framstille innfatninger i egnede metaller og andre materialer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730">
+    <ns:title>Produktutvikling </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4a42235c-23ef-4d91-8c1f-da79b6d40c8b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>bruke ulike glasstyper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c9676b03-d697-4332-8560-bd8c8f2178bb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>beregne kostnader for valgte materialer og teknikker samt tidsforbruk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6c3d7613-f644-4fc0-a04c-e84576f1d5a5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9734b5d2-f0c1-44cf-86d9-e04ffc07b52e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>gjøre rede for ulike festemidler for glass</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9ae02747-f27e-450e-9c9e-5b54c924f3e3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec7376f-ffe7-4ef9-bb20-40cbf538f730"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:982c4d8a-ffc0-463f-afa4-8b475fe10982"/>
+    <ns:title>presentere eget arbeid med produktutvikling ved hjelp av digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

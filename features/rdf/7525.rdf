@@ -1,0 +1,294 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:14fc3b7d-3bcc-4369-8621-090588b32612">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for samisk dramatikk og teaterhistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd774d15-32b7-4cb6-9cac-6e2e0a6717cd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>bruke joikens vokalteknikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d">
+    <ns:title>Det orienterende</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9b52b7ca-9f76-42b9-b800-d615d15dd07c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>beskrive musikalske virkemidler hos samiske komponister og utøvere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01bc1bba-8eb0-4eff-9321-2c7cccf13e2f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>reflektere over hvordan mennesker erfarer og kommuniserer gjennom kroppsspråket</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c3bbf846-2590-4c9b-90e5-491ec5ce45c7">
+    <grep:kode>MUS9-01</grep:kode>
+    <ns:title>Læreplan i samisk musikk og scene - valgfritt programfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1283db4b-233b-44d2-9221-545c4826f161">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for ulike typer joik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5671085a-330e-4280-baeb-949ddaa3c667">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>framføre egne komposisjoner inspirert av joik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:39ec6b27-7a04-431d-bf6c-59235437cebb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for samisk dramatikk og teaterhistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac">
+    <ns:title>Det utøvende</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6e467213-f27f-46a2-9ed5-7305a4eeabe5">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>drøfte bruk av joik, bevegelse og drama i rituelle sammenhenger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:04996d3c-f9c3-4357-b4b9-35ad86394184">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>mestre ulike oppvarmings-, avspennings- og konsentrasjonsteknikker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e9c0fbe9-fce1-4a64-b24d-2815d45fc5c0">
+    <ns:title>Samisk musikk og scene</ns:title>
+    <grep:kode>MUS9Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9fae37e2-ea4b-435b-aa03-8f83b0e11879">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7ea2e5-56b1-4545-8343-71bcce6630f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>utvikle joik, bevegelse og drama til helhetlige sceniske uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07a6a431-dcaf-4f1d-b955-e78f8df19e66">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>bruke joik som utgangspunkt for improvisasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5c1d9b26-47c6-4ba1-b223-00d745ea6523">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for den tradisjonelle joikens funksjon i det samiske samfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b44a24f3-0bc2-4fa6-ae5d-10f027d2890a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>drøfte bruk av joik, bevegelse og drama i rituelle sammenhenger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dc7ea2e5-56b1-4545-8343-71bcce6630f5">
+    <ns:title>Det skapende</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ba134050-8c47-4993-9ac9-830c4ee2e736">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>joike et utvalg joiker fra ulike samiske områder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc5825cc-bd67-4e57-9f94-55ff164014d8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>analysere og vurdere sceniske framføringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:acbadd4a-34b3-4139-b0f9-08b51ce8780c">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>orientere seg i ulike urfolks musikk, danser, teater og ritualer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d6261e58-a993-4515-af22-a60d660d17c2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7ea2e5-56b1-4545-8343-71bcce6630f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>lage egne joiker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4d4a0fd9-6e35-43fc-b308-dc03f02fb05a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7ea2e5-56b1-4545-8343-71bcce6630f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>bruke joik som utgangspunkt for egne komposisjoner og arrangementer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b47ea9e9-126a-4723-938c-7349498f90a1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for utvikling og nyskaping innenfor samisk musikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d38aae80-103d-413f-b979-1810404fafaf">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>reflektere over hvordan mennesker erfarer og kommuniserer gjennom kroppsspråket</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:c3bbf846-2590-4c9b-90e5-491ec5ce45c7"/>
+    <ns:title>Samisk musikk og scene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b0f7c103-22e4-45e7-940f-53185f1b8636">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>orientere seg i ulike urfolks musikk, danser, teater og ritualer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4e7453be-9f82-4824-a9a4-109b0d275c5b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>formidle følelse, stemning og handlingsforløp gjennom fysisk uttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e1d46183-f721-4c88-83d0-be00dc8ce9b5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7ea2e5-56b1-4545-8343-71bcce6630f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>utforske og bruke kroppsspråket som et virkemiddel i scenisk formidling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f411c7e0-f1d4-46d9-831d-708026f191ef">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for fortellertradisjon og muntlige overføringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:789d0382-2a7b-4da5-9702-4a26da18b625">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7ea2e5-56b1-4545-8343-71bcce6630f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>utforske sitt personlige uttrykksregister</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:439ebda5-f4b2-4cdf-8ffd-0b7fd654ca0d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>analysere tonalitet og rytmikk i ulike typer joik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8397068f-d4d4-4340-a5b4-124dbba55d57">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd8fc8c2-930a-4de9-97f1-ae9e808b18ac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>lese, tolke og framføre samiske fortellinger og sagn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db919479-90ed-4184-8432-cb96de0e1785">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bbdf3910-e8da-4927-9e7b-a5282c10f31d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05fb9cd6-9967-46b1-9167-2f1a9c22e9b8"/>
+    <ns:title>gjøre rede for fortellertradisjon og muntlige overføringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

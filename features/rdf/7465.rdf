@@ -1,0 +1,402 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:99ba1e94-ab13-4f34-b350-373d62e4db9b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>omforme trigonometriske uttrykk av typen a sin kx + b cos kx , og bruke dem til å modellere periodiske fenomener</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d945f5ea-0fe8-4754-a549-4c2724653794">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>tolke det bestemte integralet i modeller av praktiske situasjoner og bruke det til å beregne arealer av plane områder og volumer av omdreiningslegemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:abfa3e9c-e857-4351-885c-f2a93a271e6f">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>beregne integraler av de sentrale funksjonene ved antiderivasjon og ved hjelp av variabelskifte, ved delbrøkoppspalting med lineære nevnere og ved delvis integrasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:58f7b3eb-458a-445e-adea-aa3afc96c5a7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>bruke førstederiverte og andrederiverte til å drøfte forløpet til funksjoner og tolke de deriverte i modeller av praktiske situasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69f751ff-3894-4715-a7b5-92d6e259e9e3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>utføre beregninger med tredimensjonale vektorer som er representert både geometrisk og på koordinatform</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:548f06b3-d629-43fb-974f-19a8954cebf8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>gjennomføre og gjøre rede for induksjonsbevis</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1754fd72-a1c0-46f5-a9d8-35bbd6c265a8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:edbceddb-adf5-4ec9-9c6a-fb9b1e4acf94"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>drøfte kombinatoriske problemer knyttet til ordnede utvalg med og uten tilbakelegging og uordnede utvalg uten tilbakelegging, og bruke dette til å utlede regler for beregning av sannsynlighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d2e7ed9-044b-4220-946b-4aa641a71665">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>tolke det bestemte integralet i modeller av praktiske situasjoner og bruke det til å beregne arealer av plane områder og volumer av omdreiningslegemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:19bf08ba-e17c-431b-8b3c-1737f428a3a9">
+    <ns:title>Matematikk R1</ns:title>
+    <grep:kode>MAT3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:714ab925-66cf-40b7-962c-e7becd2fd8a0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b1e0d9a2-09b6-4a91-874d-30e4b200ec5b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>løse differensiallikninger og tegne retningsdiagrammer og integralkurver, og tolke dem ved å bruke digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6889480e-0429-41e5-bc3a-e7b5533777e2">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>tolke det bestemte integralet i modeller av praktiske situasjoner og bruke det til å beregne arealer av plane områder og volumer av omdreiningslegemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bc4a27a7-91e8-4361-bcb8-0f2f76efce87">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b1e0d9a2-09b6-4a91-874d-30e4b200ec5b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>modellere praktiske situasjoner ved å omforme problemstillingen til en differensiallikning, løse den og tolke resultatet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b1e0d9a2-09b6-4a91-874d-30e4b200ec5b">
+    <ns:title>Differensiallikninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:618052c4-e30a-4b47-9113-1c0357b960b3">
+    <ns:title>Geometri</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:97931e1f-bcf2-4868-b4b5-751d4fd66cad">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>formulere en matematisk modell ved hjelp av sentrale funksjoner på grunnlag av observerte data, bearbeide modellen og drøfte resultat og framgangsmåte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:24798a19-4ffc-4ec6-8e2b-835ddd72590b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>bruke vektorfunksjoner med parameterframstilling for en kurve i planet, tegne kurven og derivere vektorfunksjonen for å finne fart og akselerasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:688acac6-c99e-4cbf-993d-04a7d0b29863">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>derivere sentrale funksjoner og bruke førstederiverte og andrederiverte til å drøfte slike funksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:da664abf-e5a0-4f81-bb2f-4d3938ff1af9">
+    <grep:kode>MAT3-01</grep:kode>
+    <ns:title>Læreplan i matematikk for realfag - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07dbbbf7-07b1-4fa4-85fa-34a6d1fcf363">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>gjøre rede for forskjellige bevis for Pytagoras’ setning, både matematisk og kulturhistorisk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:baf5f00f-8791-4c65-873d-7ca1f19b3c25">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>gjøre rede for definisjonen av bestemt integral som grense for en sum og ubestemt integral som antiderivert</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6f011ed-f81c-4f8c-a61f-89c460953927">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>regne med uendelige geometriske rekker med konstante og variable kvotienter, bestemme konvergensområdet for disse rekkene og presentere resultatene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c6ebb857-c3e4-40ea-8f62-d51763bca8a9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>bruke vektorregning til å finne liknings- og parameterframstillinger til linjer, plan og kuleflater</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:edbceddb-adf5-4ec9-9c6a-fb9b1e4acf94">
+    <ns:title>Kombinatorikk og sannsynlighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc8364e2-f4a7-4be1-88bb-8a4dabfdfc31">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>forenkle og løse lineære og kvadratiske likninger i trigonometriske uttrykk ved å bruke sammenhenger mellom de trigonometriske funksjonene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de6ff60c-b1b5-4990-a5d5-5ff8860857a3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:edbceddb-adf5-4ec9-9c6a-fb9b1e4acf94"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>gjøre rede for begrepene uavhengighet og betinget sannsynlighet, og utlede og anvende Bayes' setning på to hendelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a5bc41ae-4f4b-44fb-9169-e5fe18dc2938">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b1e0d9a2-09b6-4a91-874d-30e4b200ec5b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>løse lineære første ordens og separable differensiallikninger ved regning og gjøre rede for noen viktige bruksområder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:937fd13f-1af7-43a0-a294-a269895d27de">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>beregne og analysere lengder og vinkler til å avgjøre parallellitet og ortogonalitet ved å kombinere regneregler for vektorer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2c39dbed-36a0-4298-9143-02e225dfd10a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>formulere en matematisk modell ved hjelp av sentrale funksjoner på grunnlag av observerte data, bearbeide modellen og drøfte resultat og framgangsmåte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8086de50-bc22-43e8-af27-898e9d68812e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>faktorisere polynomer ved hjelp av nullpunkter og polynomdivisjon, og bruke dette til å løse likninger og ulikheter med polynomer og rasjonale uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9f1983cb-f994-48ea-94a7-7c6dfb26af23">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>finne og analysere rekursive og eksplisitte formler for tallmønstre med og uten digitale hjelpemidler, og gjennomføre og presentere enkle bevis knyttet til disse formlene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f2252812-259f-43ff-ab7b-652b46d6dc10">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>beregne integraler av de sentrale funksjonene ved antiderivasjon og ved hjelp av variabelskifte, ved delbrøkoppspalting med lineære nevnere og ved delvis integrasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c5b855f2-d98d-4054-8cc4-a457ac28e5c6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>tegne grafer til funksjoner med og uten digitale hjelpemidler, og tolke grunnleggende egenskaper til en funksjon ved hjelp av grafen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd">
+    <ns:title>Algebra</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:465989d2-ee11-42fa-83f4-c46d6946939d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>bruke og tolke skalar- og vektorproduktet i beregning av avstander, vinkler, areal og volum</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e12a3e68-7b24-47ae-aa04-fb1fbbf2d2b4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>utlede og bruke skjæringssetningene for høydene, halveringslinjene, midtnormalene og medianene i en trekant</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f17e0df5-9e4a-4fd4-9b64-dcb4d8e8a3ae">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>regne med vektorer i planet, både geometrisk som piler og analytisk på koordinatform</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7aeefdf3-ceca-408c-b80a-cd800a644229">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>beregne lengder, vinkler og arealer i legemer avgrenset av plan og kuleflater</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:da664abf-e5a0-4f81-bb2f-4d3938ff1af9"/>
+    <ns:title>Matematikk R1</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:05127cd5-700a-46f8-92e3-7b4e1a05d41a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>bruke linjer og sirkler som geometriske steder sammen med formlikhet og setningen om periferivinkler i geometriske resonnementer og beregninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a995d7db-4812-42a1-b7ca-71822978ac53">
+    <ns:title>Funksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b48de20-51f9-436a-b239-3ca84590fdce">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>gjøre rede for implikasjon og ekvivalens, og gjennomføre direkte og kontrapositive bevis
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:392e7c56-4a37-4bfa-aac5-645386c9cde0">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>formulere en matematisk modell ved hjelp av sentrale funksjoner på grunnlag av observerte data, bearbeide modellen og drøfte resultat og framgangsmåte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:78109019-8c8a-4cb2-9bbb-e78a1e5e5f45">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>omforme og forenkle sammensatte rasjonale funksjoner og andre symbolske uttrykk med og uten bruk av digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0aa70455-f78d-417f-8b0d-0aadabebeb19">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>finne likningen for horisontale og vertikale asymptoter til rasjonale funksjoner og tegne asymptotene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:22b28f80-36fc-46eb-bbc1-86a466664fe6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>utlede de grunnleggende regnereglene for logaritmer, og bruke dem og potensreglene til å forenkle uttrykk og løse likninger og ulikheter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:be78c23d-0ce1-41d6-8709-40dfc8fad9a9">
+    <ns:title>Matematikk R2</ns:title>
+    <grep:kode>MAT3Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd791e39-1968-447c-b8b0-2be5e79c0117">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>bruke formler for den deriverte til potens-, eksponential- og logaritmefunksjoner, og derivere summer, differanser, produkter, kvotienter og sammensetninger av disse funksjonene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01ccc5b0-dad2-4580-ab4b-d4c68fa0539e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>beregne integraler av de sentrale funksjonene ved antiderivasjon og ved hjelp av variabelskifte, ved delbrøkoppspalting med lineære nevnere og ved delvis integrasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0dd996c2-e1c9-4b98-badd-042961cd1643">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b1e0d9a2-09b6-4a91-874d-30e4b200ec5b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>løse andre ordens homogene differensiallikninger og bruke Newtons andre lov til å beskrive frie svingninger ved periodiske funksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2b99516c-110e-4df2-b156-a3f286df902c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a995d7db-4812-42a1-b7ca-71822978ac53"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>gjøre rede for begrepene grenseverdi, kontinuitet og deriverbarhet, og gi eksempler på funksjoner som ikke er kontinuerlige eller deriverbare</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:da664abf-e5a0-4f81-bb2f-4d3938ff1af9"/>
+    <ns:title>Matematikk R2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:11cb2cfa-88a4-4899-bba4-f49e948a0a8c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:474e3fb9-3154-42b5-9bc0-faab3755c0cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11d629ab-9be8-49fd-889c-2d5c0c4ab23b"/>
+    <ns:title>summere endelige rekker med og uten digitale hjelpemidler, utlede og bruke formlene for summen av de n første leddene i aritmetiske og geometriske rekker, og bruke dette til å løse praktiske problemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dbfdb753-93e2-458a-8f32-a239b79eaa7d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:618052c4-e30a-4b47-9113-1c0357b960b3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30e5aac0-4c1a-4d88-b48d-a0df1a740f5c"/>
+    <ns:title>utføre og analysere konstruksjoner definert av rette linjer, trekanter og sirkler i planet, med og uten bruk av dynamisk programvare</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,243 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:433ff3fe-c895-4226-8644-5986244a5365">
+    <ns:title>Musikkhistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9eda839d-0e84-48c2-a6b8-f95ebc9dd51a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>gjenkjenne og beskrive sentrale sjangrer, former og besetninger i musikk fra 1900 og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:923b9109-4928-4463-8ec0-34e0eb2ad7fd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>sette musikk fra 1900 og fram til i dag inn i en politisk, økonomisk, sosial og kulturell kontekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0ef03b0e-7a3e-4915-afcd-73a15813df77">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>beskrive hovedlinjene i musikkhistorien fra 1900 fram til i dag, med vekt på norsk og europeisk kunstmusikk, samisk musikk, norsk folkemusikk og rytmisk musikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:d5403b5f-97a9-4f21-b435-04ba0d2a2f5a"/>
+    <ns:title>Musikk i perspektiv 1</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1a9e63c8-716a-4652-8c9c-85ee4ccace74">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:494cbafd-41c4-4494-8c9f-aa00848035c1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>dokumentere kunnskap innen to valgte fordypningsemner gjennom muntlig og skriftlig presentasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:d5403b5f-97a9-4f21-b435-04ba0d2a2f5a"/>
+    <ns:title>Musikk i perspektiv 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c1ac0031-bef1-42da-ad9d-b7434d202fa8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>gjenkjenne og beskrive sentrale komposisjonstyper, former og besetninger i musikk fra middelalderen og fram til 1900</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d79f98d4-ef58-4837-a515-a2a509bde0f6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4dedfefe-59c8-4e05-b629-696e5ff51468"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>identifisere og beskrive musikkens elementer med utgangspunkt i eksempler fra musikkhistorien, auditivt og ved hjelp av notebilde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd4eaafe-d840-4118-a47b-5feeb7da0dd8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4dedfefe-59c8-4e05-b629-696e5ff51468"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>gjenkjenne sentrale instrumenter og besetningstyper i forskjellige musikalske sjangrer og epoker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d2945028-b975-421b-b84c-b06107627a29">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>dokumentere kunnskap om sentrale komponister, stilskapere, utøvere og et utvalg verk fra middelalderen og fram til 1900</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:beb291d8-cc9f-48bc-9637-f88be36d7758">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>drøfte karakteristiske trekk og stilistiske virkemidler i musikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a0a7d110-a07b-4a8c-be9c-63abefb6f521">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4dedfefe-59c8-4e05-b629-696e5ff51468"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>beherske ulike lytteteknikker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4a8c0b41-a152-4ae9-9d42-8c48e066ed29">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:494cbafd-41c4-4494-8c9f-aa00848035c1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>sammenligne og drøfte stiltrekk ved musikk fra ulike sjangrer eller stilarter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0a41648a-c5ab-4e96-9ab8-bdff98db56df">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:494cbafd-41c4-4494-8c9f-aa00848035c1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>beherske et relevant musikkfaglig begrepsapparat</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4dedfefe-59c8-4e05-b629-696e5ff51468">
+    <ns:title>Lyttetrening</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:86978620-690e-44c9-bbce-e127f8daefb6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>sette musikk fra middelalderen og fram til 1900 inn i en politisk, økonomisk, sosial og kulturell kontekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f0f34b60-4d5e-41a9-93d7-77e2f333641f">
+    <ns:title>Musikk i perspektiv 2</ns:title>
+    <grep:kode>MUS6Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5403b5f-97a9-4f21-b435-04ba0d2a2f5a">
+    <grep:kode>MUS6-01</grep:kode>
+    <ns:title>Læreplan i musikk i perspektiv, programfag i utdanningsprogram for musikk, dans, drama, programområde for musikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:53dbf8ad-efea-4ecd-b3ac-88def6dcfd40">
+    <ns:title>Musikk i perspektiv 1</ns:title>
+    <grep:kode>MUS6Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:86ea7c6f-754e-478f-8895-52cba6168eff">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>beskrive og reflektere over karakter og stilistiske virkemidler i musikk fra middelalderen og fram til 1900</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2f975f01-7809-4858-b790-57b417ec6184">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4dedfefe-59c8-4e05-b629-696e5ff51468"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>beskrive og reflektere over egen opplevelse av musikk fra ulike sjangrer og epoker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a837131-6de8-4f9c-a8cb-6ed150ab3e33">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ddb1d41-6a84-4943-9a53-64390434a3f9"/>
+    <ns:title>beskrive hovedlinjene i musikkhistorien fra middelalderen og fram til 1900, med vekt på norsk og europeisk kunstmusikk, samisk musikk og norsk folkemusikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:494cbafd-41c4-4494-8c9f-aa00848035c1">
+    <ns:title>Musikkhistorisk fordypning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:53be96c5-83ef-4f54-9707-d4ac84a161ec">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433ff3fe-c895-4226-8644-5986244a5365"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc64ff3a-34ac-4e13-9c89-1c32996fd3a8"/>
+    <ns:title>dokumentere kunnskap om sentrale komponister, stilskapere, utøvere og et utvalg verk fra 1900 og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

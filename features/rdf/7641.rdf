@@ -1,0 +1,344 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:0ba6c4a7-f3d4-4b64-a322-b3e756758fc9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>lede idémyldring, designprosess og teamarbeid og vurdere arbeidsprosessen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:569e4d84-ceeb-4c88-b331-889486dc1d3f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>bruke og drøfte lyddesign som virkemiddel og selvstendig uttrykksform</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:89b6482a-ad87-481f-9788-eb25232df762">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>utvikle og drøfte visuell identitet med logo, vignetter og grafiske virkemidler, som et ledd i en merkevarebyggingsprosess </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c8ad279f-1147-411a-8851-07fede961bf3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>produsere, redigere, drøfte og tilrettelegge ulike tekster for trykte og elektroniske medier </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e36ccaa0-868b-492d-a1c9-39b48a4d8a0c">
+    <grep:kode>MDE3-01</grep:kode>
+    <ns:title>Programområde for mediedesign - læreplan i felles programfag Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e36ccaa0-868b-492d-a1c9-39b48a4d8a0c"/>
+    <ns:title>Prosjektstyring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:706f026e-5967-4e70-acb7-a73ec6abe7be">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>drøfte kravspesifikasjoner og kostnader med kunde og underleverandør </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fce32c35-2476-4838-b12c-2a724ffa0779">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>utarbeide situasjonsbeskrivelse for et eksisterende produkt og vurdere konkurransesituasjonen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a9c7aca8-f67b-4e2e-a61f-37c500595ee3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>utarbeide og drøfte retningslinjer for merkevarebygging og markedstiltak </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:84808b6c-f8da-45a6-9118-bb24bce816c9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>drøfte prinsipper for konfliktløsning og tilrettelegge arbeidsmiljøet i tråd med gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2109cf0a-67da-4788-b21d-efd001314b3b">
+    <ns:title>Prosjektstyring</ns:title>
+    <grep:kode>MDE3Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:644ad69b-96c9-4f29-a334-1a0c58e025fc">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>vurdere effekten av et ferdig produsert medieprodukt </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:044f559a-88d2-4654-819c-915de97ed64d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>planlegge, idéutvikle, designe, produsere og vurdere markeds- og målgrupperettede medieprodukter </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5ae30a2f-ebf6-4fb8-bf0c-f96a0a7e9cbc">
+    <ns:title>Strategi og marked</ns:title>
+    <grep:kode>MDE3Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d32d6fd3-e6e1-463c-bc57-8040d7ff3b01">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>produsere tekst og tall som grafiske framstillinger og drøfte valg av løsninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8eca8e85-913d-4d4f-b3a6-247528a91811">
+    <ns:title>Design</ns:title>
+    <grep:kode>MDE3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e36ccaa0-868b-492d-a1c9-39b48a4d8a0c"/>
+    <ns:title>Strategi og marked</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0481eb76-822d-426d-837c-f9bf10a11a71">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>definere verdigrunnlaget og strategiske føringer for utvikling av design og kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:39daee51-e35d-499a-b88d-e2d8dba8f917">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>produsere og vurdere animasjoner og drøfte ulike animasjonsteknikker </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b">
+    <ns:title>Strategi og marked</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:208e4ac1-7da5-40b3-9a46-079b46909aea">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>bruke og drøfte presentasjonsteknikk i kundepresentasjoner og idésalg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ff522f73-89fc-4dbd-98ad-da3bac332b14">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>designe, produsere og drøfte passive, dynamiske og interaktive medieprodukter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:509a7206-483f-4589-81d0-54cfa41b4906">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>designe, produsere og vurdere medieprodukter ved bruk av komposisjonsprinsipper, symboler og dramaturgiske modeller og begrunne medieproduktets gjennomslagsevne</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01043e22-ab28-4cfe-a2ab-b1bc7d7ad2ff">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>gjøre rede for etablering av foretak, økonomistyring og drift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:31b95b79-546b-4190-9436-bd6742d8618d">
+    <ns:title>Prosjektstyring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e460349f-9f9f-4376-9de4-332e5b60a57e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>definere mål for oppgaven og beskrive produkt, konsept, marked, mål og målgrupper </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a0452532-83f9-4636-aa08-9556cb8d4b23">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>bruke og drøfte virkemidler fra ulike mediehistoriske epoker og tidsaktuelle sjangrer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e36ccaa0-868b-492d-a1c9-39b48a4d8a0c"/>
+    <ns:title>Design</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:505f1c05-2c99-446d-b96f-2d4a395f13ad">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>redegjøre for juridiske og etiske problemstillinger og drøfte disse med oppdragsgiveren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0424dc6b-97da-4782-ae32-1f98cf957df5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>gjøre rede for og anvende ulike illustrasjonsteknikker ut fra bruksområde og medieproduktenes uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:649e3ce6-677b-4d15-9f4c-3551dd20e795">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>gjøre rede for prinsipper for ett- og flerkameraproduksjoner og hva som skiller disse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:15218221-7b22-4dca-b248-b94896aeb3dd">
+    <ns:title>Design</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f53cafd6-0ab7-44ac-af02-b67a17cbb57e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>planlegge, lede, produsere, presentere og evaluere markedsrettede prosjekter innenfor tekst, lyd og bilde </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b9be057-aac8-4305-bcc1-f795c7b6e9a8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>indeksere og kategorisere digitalt materiell i arkiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:66a92eef-f826-4ab4-8ec0-6cb37d907352">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>bruke prinsipper for lyssetting ved design av medieprodukter og drøfte hvordan dette påvirker uttrykket</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ed822d78-1189-4a2c-893e-7958cdee5b82">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>lage og drøfte prosjektbeskrivelse og framdriftsplan på grunnlag av kundebrief</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01c48a44-e532-4a56-af80-38d5e4e85391">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>utvikle, drøfte og produsere reklame på grunnlag av trender og forbrukeratferd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b2d24611-94e9-46b4-a061-15cfab41ec98">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31b95b79-546b-4190-9436-bd6742d8618d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a2dfeba6-f97c-4409-9fab-4e9a7cc820ee"/>
+    <ns:title>prissette eget arbeid og lage budsjett og kundeavtale for et medieprosjekt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1fa6e4d4-41af-429a-b8f8-d5ae816cf4bd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db9d9286-f8aa-4c3a-ad59-475cd7fcc89b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7dbd9188-ad41-4de2-b87f-86a6b6e7b60c"/>
+    <ns:title>motta en brief, klarlegge oppgavens innhold og omfang og drøfte problemstillingene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:76401fc2-98dd-4296-b093-d0d02c5b2ffb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>designe og drøfte medieprodukter med tanke på etiske normer og juridiske regler </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f38d4cff-4d54-40f5-b88a-a85bfb7fc82d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15218221-7b22-4dca-b248-b94896aeb3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a282ec8d-853d-4421-aa7e-a25933f5c617"/>
+    <ns:title>bruke og drøfte typografi som virkemiddel og selvstendig komposisjonsform</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

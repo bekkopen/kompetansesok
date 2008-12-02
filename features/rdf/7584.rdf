@@ -1,0 +1,439 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:5f7b12de-68d8-4f57-a5e1-cb67ba19bddd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>planleggje utforming av skulptur og installasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:808c6bf4-5219-4ceb-8984-244bda635473">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke komposisjonsprinsipp for å visualisere inntrykk, idear og bodskapar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:056d1e8c-be49-4533-8310-393df5065e5f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>kombinere ulike materiale og teknikkar i arbeid med installasjonar og dekorative komposisjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:358a0a26-4082-4876-9004-3ff3c6e88de4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>presentere verk av sentrale biletkunstnarar i Noreg og andre land frå 1900-talet og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dc7ff72e-ccaf-4272-8ac4-c101735e7324">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>abstrahere naturformer til eigne komposisjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f9f9b96f-0a4a-4e02-ac11-1e3074bff3c1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>analysere kunstuttrykk i lys av religion, filosofi, mytologi og historie </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:cd1051b1-2614-4933-8d49-c6d0f5a01ce6"/>
+    <ns:title>Visuelle kunstfag 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:43fee651-88a3-49ca-ab79-eacea46cd22e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>utarbeide idéskisser til utsmykkingsoppdrag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aed2a3dc-8b73-4d81-b7bb-3bcc0535af43">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>framstille ulike biletuttrykk for illustrasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:341b9345-1b39-4181-ae79-096380edd2ba">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>setje kunstverk inn i ein samfunnsmessig og idéhistorisk samanheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cea69ba2-1de9-4f39-968c-56fd213c4826">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke fagterminologi i vurdering av fargekontrastar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:511ad617-0651-4304-9608-f9f89b22be93">
+    <ns:title>Teikning og farge</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bdc32a29-c05b-4cec-bf5d-59221bafe92e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>gjere greie for hovudtrekk i vestleg kunst før 1600 </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:734291ad-45cc-4a04-bf81-a1c8bbc077a2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>gjere greie for særtrekk, problemstillingar og verkemiddel i kunsthistoriske retningar, frå realismen og framover</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a0d0f82-0c3b-4729-8134-1e28601e9650">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>kjenne att formspråk, symbol og materialbruk i kunst, bilete og formuttrykk frå ulike kulturar i vår tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a4d77382-c345-4d25-99cf-34b15d561339">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke ulike maleteknikkar på ulike underlag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7529174e-32b4-4dd3-bf58-3a16a273e76a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>bruke valør, farge og form i frihandsteikning og maling for å få fram ulike uttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:49ab273a-97de-4d01-a324-b6222154d437">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>gjere greie for hovudtrekk i vestleg kunst frå 1600 til 1900</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1acf374e-6845-413c-9933-7f45530e4b27">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>gjere greie for ulike materiale, fargar og teknikkar som vart nytta i framstillinga av kunst før 1600</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16062295-220f-4ed0-abb6-17deb18dffc7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>kombinere fargar, former og materiale til eit tilsikta uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd8c053a-312f-4c10-b535-e19afacb7f32">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>forklare symbolverdien til fargar i ulike samanhengar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63ae12d9-96c8-4874-bb49-34451fc3d7db">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>gjere greie for prinsippet om det gylne snitt og bruke det i eige arbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b3b305b4-55bc-406c-b082-077596b3dc22">
+    <ns:title>Visuelle kunstfag 2</ns:title>
+    <grep:kode>FOR1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd2e0841-e6df-494c-9c8c-9cf144757da9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke ulike reiskapar og teknikkar for å få fram tekstur, rom, lys og skugge </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:cd1051b1-2614-4933-8d49-c6d0f5a01ce6"/>
+    <ns:title>Visuelle kunstfag 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b9621ce-3829-4086-8ad1-2d3b5c8c7d65">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>beherske fagterminologi i tolking og samanlikning av kunstuttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0b3c03f7-61b6-4d67-852e-f7c2107dbf0c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke ulike teiknereiskapar, materiale og teknikkar i arbeid med frihandsteikning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b85fc7bb-e374-41fa-91bf-5763c56263ff">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>bruke teikning og bygging av modell som utkast til større arbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:446977d8-e329-46e8-9770-5cd1a71b5850">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>velje materiale, reiskapar og teknikkar i todimensjonalt biletarbeid for å oppnå tilsikta verknader</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b58b3a85-d501-4e4f-9187-a4e35f61578d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>bruke anatomi, proporsjonar og fortkortingar i teikning av menneskekroppen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ef71eb0a-f426-49dc-8364-eefd0c02255d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke utsnitt, forenkling og positive og negative flater i arbeid med dekor og mønsterkomposisjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b4d55d3a-9edd-4ee7-b421-6ca93803c07a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>gjere greie for særtrekk ved ulike epokar på 1900-talet og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db15444c-d54e-41e6-b818-a02f71074e8c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>gje døme på biletkunst, dekor og symbol knytt til tradisjon, religion og politikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a424e155-0393-412f-9c92-8038959ec78b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>komponere eigne uttrykk med utgangspunkt i sentrale komposisjonsprinsipp</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe4b0d3b-cfb6-4be6-8465-0bb94e0caa88">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke varierte materiale, reiskapar og teknikkar i skapande arbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c49012b3-ff7a-4e8d-b62b-5acb2ec43ffd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>skape sjølvstendige uttrykk i ulike materiale med utgangspunkt i aktuelle hendingar lokalt, nasjonalt eller internasjonalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cae244e5-8157-42ec-96e8-c3fa4bd004f0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke harde, plastiske eller tekstile materiale i eige arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a9c33f23-a0f0-4b34-986a-c992b29ebdad">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>bruke ulike teiknereiskapar i arbeid med kroki</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2031e2c6-67e7-4476-b38c-b25af8b946b9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>bruke fotografi og informasjonsteknologi som utgangspunkt for registrering, idéskisser og biletnotat </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9bb0abcc-c612-4bc8-b5a3-38811b7a190f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>stilisere og bearbeide organisk og geometrisk form </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:287a9646-91e9-40a5-9d59-948d69b18b4a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke farge, valør og perspektiv for å oppnå illusjon av rom </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd1051b1-2614-4933-8d49-c6d0f5a01ce6">
+    <grep:kode>FOR1-01</grep:kode>
+    <ns:title>Læreplan i visuelle kunstfag - felles programfag i studieforberedende utdanningsprogram, programområde for formgjevingsfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8f4f238f-ffef-4b98-94f3-50496d917f70">
+    <ns:title>Visuelle kunstfag 1</ns:title>
+    <grep:kode>FOR1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e05c96cf-5bff-4b82-b341-374da24d793e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>gje døme på korleis kulturelle førebilete har hatt innverknad på skulptur og bilete frå 1600 til 1900 </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c">
+    <ns:title>Kunst og kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da">
+    <ns:title>Form og materiale</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9d06cde0-cd70-42db-b598-13eadd384a14">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>gjere greie for særtrekk og analysere verkemiddel i kunstverk før 1600 </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c819aa0b-7540-4d30-a5b4-4f4afcd72f4b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>organisere form og rom for å oppnå eit tilsikta uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d61aa763-e90f-426c-9872-036bb07b2190">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>modellere skulptur i plastisk materiale </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a8c77f2-a384-4960-a5ec-ba346f0c7531">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>bruke sentrale komposisjonsprinsipp og verkemiddel i arbeid med skulptur og installasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8d0ac327-11f4-4fbe-8b11-6916c2ce4825">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>bruke varierte materiale, reiskapar og teknikkar i arbeid med tredimensjonal form </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:cd1051b1-2614-4933-8d49-c6d0f5a01ce6"/>
+    <ns:title>Visuelle kunstfag 1 </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:11b44b8b-6ee5-4cba-a548-dcf47f68a43b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0abeda93-7464-4acf-8335-a6eedd2c07da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke ornament og symbol i eige arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:549ab59c-a026-4364-9f4a-0a114ca99443">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd7eeb2b-7894-4b07-a0aa-457b66eea9b6"/>
+    <ns:title>bruke og vurdere lys, fargesamansetjingar og fargeverknader i eige arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f4681300-7001-46e0-930d-d226d07eba5a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:065ead09-c896-47d6-b09c-b21ec021bdb6"/>
+    <ns:title>forklare korleis oppdragsgjevarar, laug og akademi har påverka utforminga av bilete og skulptur før 1600</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7c5517f-1b4f-4906-b922-a1633f257cfe">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a0d73c8-fe07-40e1-ad7f-3eedc83d849c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>presentere særtrekk ved kunsten til urfolk og samanhengen mellom samisk kunst og religion og politisk utvikling i samfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8f4b8140-438e-4e74-8cf9-c85a094f53f8">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:511ad617-0651-4304-9608-f9f89b22be93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e964d79-db18-4bca-b0d2-4a98f16738de"/>
+    <ns:title>bruke proporsjonar i arbeid med portrett, naturformer og gjenstandar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:633b24d9-1f8a-4baf-af3c-2d7fb36f04bb">
+    <ns:title>Visuelle kunstfag 3</ns:title>
+    <grep:kode>FOR1Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

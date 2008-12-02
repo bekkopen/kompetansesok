@@ -1,0 +1,320 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:6bdab108-9939-4257-a58c-320c695eb7d4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>rapportere og registrere feil og avvik ved materiale, råvarer og innstillingar av maskinar, verktøy og utstyr </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e356956a-7aa6-46a2-933a-6c5f5245b1ee">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>velje og bruke verktøy, utstyr, maskinar og arbeidsmetodar ut frå arbeidsoppgåve, standardar og prosedyrar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:917b39f8-3941-4655-9bbb-2a3fd11ef157">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>velje teknikk og utføre samanføyingar i samsvar med arbeidsoppgåver og materialtypar, og grunngi valet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:41cd67b4-03e3-4a96-9658-b58bfd4419bf">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>berekne kostnader knytte til materialforbruk og metodeval</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0">
+    <ns:title>Produktutvikling og produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6bbb8d90-81fe-4f84-a5a1-c55b4ef04afb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>gjennomføre dagleg vedlikehald av maskinar, verktøy og utstyr</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7cb60444-b350-46a0-847a-4e934c0424d5">
+    <ns:title>Dokumentasjon og kvalitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ce56b37f-c96e-46e4-9279-516cac6dd5b9">
+    <ns:title>Dokumentasjon og kvalitet</ns:title>
+    <grep:kode>IMS2Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:733b174b-3e5e-4d8d-92bf-7c7bde84d45a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>beskrive korleis eit møbel kan produserast med alternative teknikkar, materiale og samanføyingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:83e872f7-ea73-4dfd-9eb9-a5c58b1bcff7">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>teste og kontrollere produktidé og prosessar ved hjelp av visualisering og simulering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5e2b7a5c-012b-4400-951e-d97b1eb393bb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>komme med framlegg til endringar på teikningar og skjema som skal brukast i utviklinga av produkt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ab20226d-5964-445e-9169-7ed2eb876824">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>velje eigna materiale til framstiling av møbelprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:319a26df-1da7-4477-9d29-8ea239b44341">
+    <ns:title>Materiale og teknikkar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f6f2867c-abb9-4ccb-a6fa-9c5890ae37ab">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>vurdere risikoar knytte til bruk av materiale og teknikkar i møbelproduksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ca54a273-7e81-4da6-902a-8c1198002e61">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>bruke digitale verktøy i framstilling av to- og tredimensjonale skisser og teikningar av produkt og i framstilling av prosessflytskjema</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6e447011-3bc8-4635-bba7-e740a4239fec">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>utføre arbeidet i tråd med reglar for helse, miljø og tryggleik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e96120ed-6d97-4040-8924-48e393fc01a1"/>
+    <ns:title>Materiale og teknikkar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2993be4d-6f0c-4ed0-857d-692df0c66285">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>forklare samanhengane mellom val av teknikkar, materiale og produkteigenskapar, og gjere greie for utviklinga i norsk møbelproduksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dfbfa4fe-b35e-4824-9a2c-7183b0794ab3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>utforme eigen arbeidsplass med tanke på ergonomi, arbeidsteknikkar, utstyr og HMT</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:995ddc8c-3624-48c8-8048-5756fb4c0c52">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>definere kvaliteten av materiale og sluttprodukt, med godkjende avvik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e96120ed-6d97-4040-8924-48e393fc01a1"/>
+    <ns:title>Produktutvikling og produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:64203475-0356-4eca-a601-cc7e73e53885">
+    <ns:title>Materiale og teknikkar</ns:title>
+    <grep:kode>IMS2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e96120ed-6d97-4040-8924-48e393fc01a1"/>
+    <ns:title>Dokumentasjon og kvalitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c9ff875b-b945-452b-8ac7-15472a53286c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>kontrollere og utføre testar av ulike materiale og produkt etter bransjestandardar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:41eb5429-09dd-4119-ad6d-948890928c2a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>gjere greie for produkteigedom og produktrettar og korleis ein vernar seg mot kopiering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e96120ed-6d97-4040-8924-48e393fc01a1">
+    <grep:kode>IMS2-01</grep:kode>
+    <ns:title>Programområde for industriell møbelproduksjon - Læreplan i felles programfag vg2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6049d171-bfa4-422d-abf1-a2f4b6c754b0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>vurdere feil og avvik på materiale, råvarer og sluttprodukt i høve til bestemte kvalitetar og standardar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0b56b165-d731-4edf-aaec-a4a08295f2f5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>beskrive eigenskapar og bruksområde for ulike materiale</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:647685b8-1e72-40c8-920f-fa7734f31cde">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>overflatebehandle eit produkt i samsvar med spesifikasjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:27e87db0-5f2d-4a0b-997d-17820345f274">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>forklare korleis kostnader blir påverka av dei vala ein gjer av teknikkar, materiale og samanføyingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:90a8cc62-da86-4a88-9044-580205b4b5cd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>overføre teikningar og skisser til produksjonsutstyr, både manuelt og digitalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:28f82611-a6c5-4a20-8df1-afa5bd1e085e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>skissere og utforme produkt i tråd med trendar og ved hjelp av kreative metodar og teknikkar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:44c49241-e4c2-475c-9548-423ce68cf7e2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cb60444-b350-46a0-847a-4e934c0424d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d892e8f-f167-4ae1-856b-4eb46a79826c"/>
+    <ns:title>komme med framlegg til endringar på arbeidsbeskrivingar og prosedyrar som skal brukast i produksjon og prosessar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63961e47-0b11-4841-8f76-fff63fe0512b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>framstille møblar og interiørprodukt etter arbeidsbeskrivingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:95abc383-b255-444c-95a0-b1f494afad00">
+    <ns:title>Produktutvikling og produksjon</ns:title>
+    <grep:kode>IMS2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac583a73-9b76-48f0-8bcb-d821a7a70894">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ee313c3-8a27-48e9-b74e-89fa693956c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de3ca048-4a36-4a2d-8bc1-e68a65e08bec"/>
+    <ns:title>planleggje, visualisere og overvake produksjonsprosessar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bc01779e-172a-4a8a-b54e-60564aab3e11">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:319a26df-1da7-4477-9d29-8ea239b44341"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae498132-55ba-4197-b489-d44a42f7dd6e"/>
+    <ns:title>gjere greie for kva miljøpåverknad dei ulike materiale og prosessar har på det indre og ytre miljøet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

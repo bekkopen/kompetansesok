@@ -1,0 +1,198 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:36cfd754-5e77-4cd8-912d-6fe3583a02f0">
+    <grep:kode>MED6-01</grep:kode>
+    <ns:title>Programområde for studieforberedende Vg3 innen medier og kommunikasjon - læreplan i tekst - valgfritt programfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:98a06377-2991-49f8-adaf-6d1822234dcd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>lage tekstproduksjoner innenfor rammer for tidsbruk og økonomi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:68e1fd5c-4cbf-4b1b-b504-c1abb088a6d4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8ec8f7-8d4a-44f0-a790-501c7b3c5e0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>drøfte sentrale trekk ved ulike medietekstlige sjangrer og deres historiske utvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:24c22a06-341d-4d4d-9de8-47412cf1510e">
+    <ns:title>Tekst</ns:title>
+    <grep:kode>MED6Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7f8ec8f7-8d4a-44f0-a790-501c7b3c5e0b">
+    <ns:title>Tekstdesign</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0e705655-592a-456a-af26-0772ad1f39bc">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8ec8f7-8d4a-44f0-a790-501c7b3c5e0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>tilrettelegge og drøfte skriftlige tekster som inngår i sammensatte tekster for krysspublisering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a76aa9dd-58e4-48a5-832d-839b878cff23">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>analysere kilder kritisk ved hjelp av fagterminologi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f2ccf31f-a658-46cb-83c4-b154c5b4510d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>planlegge, produsere og vurdere skriftlige tekster i samspill med bilde og lyd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac7b4849-7b12-465e-b01d-7d5316f8e152">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>anvende fagterminologi i dokumentasjon og vurdering av tekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0798ad33-4062-4d50-a279-4607f82af4c1">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:36cfd754-5e77-4cd8-912d-6fe3583a02f0"/>
+    <ns:title>Tekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:26598ef4-4b56-4e9d-a9bd-b6071560c5d0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere tekster i ulike sjangrer for trykte, elektroniske og nye medier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b7261cbf-0d56-41a4-9178-9cdc7b2b0694">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8ec8f7-8d4a-44f0-a790-501c7b3c5e0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>lage og drøfte tekster som er karakteristiske for tidligere epoker basert på uttrykkshistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9e9702f3-ba2e-4b9b-aabe-c52ff3fc7af4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8ec8f7-8d4a-44f0-a790-501c7b3c5e0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>planlegge, bruke, vurdere og dokumentere ulike virkemidler for å forsterke et budskap, og begrunne valget av virkemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d914df5c-ac5a-4c82-8c10-0ea4a57ba571">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>redegjøre for etiske normer og gjeldende regelverk med helse-, miljø- og sikkerhetsbestemmelser, og drøfte hvordan disse er ivaretatt i egne og andres produksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9985b496-a48a-4718-803e-ba0b801acfce">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8ec8f7-8d4a-44f0-a790-501c7b3c5e0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0798ad33-4062-4d50-a279-4607f82af4c1"/>
+    <ns:title>redigere og vurdere egne og andres sammensatte tekster tilpasset ulike medier uten å endre budskapet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2fe94c71-a4f1-48f4-ac6d-16c67d04c969">
+    <ns:title>Tekstproduksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

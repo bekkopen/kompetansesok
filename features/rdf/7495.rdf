@@ -1,0 +1,387 @@
+<rdf:RDF
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+  <rdf:Description rdf:about="uuid:afc49b11-b360-49a1-9ff5-a1f71f04b4a4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a71d659-8ec7-451f-92c7-829262a48f9a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for etiske dilemmaer og utfordringer i regnskapsarbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6552fdab-90ba-4126-a470-749c1937f774">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>presentere bedriftsøkonomiske problemstillinger ved bruk av teoretiske modeller og vurdere modellenes muligheter og begrensninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3">
+    <ns:title>Markedstilpasning og produksjonsplanlegging</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8d22451d-6f05-40fc-b418-b1fbbd9606b5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>bruke digitale verktøy i økonomiske beregninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c1a33ed6-186c-4685-a60d-1c1370e1a965">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e97101b9-cc7a-4c92-929f-8c8a1f9bd103"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for hvordan lokale ressurser gir grunnlag for næringsvirksomhet og vurdere eventuelle interessekonflikter i forbindelse med ressursbruk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe41f458-4fdf-43cc-a7f0-053482b88563">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>føre og avslutte regnskap for ulike forretningstilfeller i handels- og servicebedrifter og foreta årsoppgjørsdisposisjoner i samsvar med gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3ab8af32-d4cd-4c53-8ecf-005af1e48c67">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e97101b9-cc7a-4c92-929f-8c8a1f9bd103"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>beskrive bedrifter med hensyn til næringstilknytning, foretaksform, interessenter, mål, arbeidsbetingelser og støtte- og hovedaktiviteter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:98598209-363b-40fb-b0cf-62eb7317c40b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>beregne aktuelle nøkkeltall</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c82a13dc-0ad0-4fdd-8409-17b13100e709">
+    <ns:title>Økonomi og ledelse</ns:title>
+    <grep:kode>NOK2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b16f517-e4a0-4046-9cbf-28b76e620b90">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6de52746-4a88-43ac-92e9-4920d2963bb9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for hvordan bedrifter kan øke endringsberedskapen gjennom kompetanseutvikling og organisasjonslæring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8fad9e7f-4660-4f20-8a1c-4796048aa18b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6de52746-4a88-43ac-92e9-4920d2963bb9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>utarbeide en hensiktmessig organisasjonsplan</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e033403e-7774-47e1-955a-886d5adde56c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e97101b9-cc7a-4c92-929f-8c8a1f9bd103"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for hovedtrekk i næringsutvikling i Norge og forklare årsaker til strukturendringer i et nasjonalt og internasjonalt perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b5e1307c-3f90-4afd-9a27-edf472ae6470">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:81046799-bcb8-412e-b442-d3e3c911df6e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for årsaker til at det kan oppstå avvik mellom bedriftsøkonomisk og samfunnsøkonomisk lønnsomhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e97101b9-cc7a-4c92-929f-8c8a1f9bd103">
+    <ns:title>Næringsliv og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2cef1e2d-aad8-4e81-95b2-9dfa14f61764">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>beregne finansieringskostnader, utarbeide forslag til finansiering av ulike prosjekter og begrunne valg av alternativer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:4a1ddad6-ee14-4f15-aec6-43aaa137415b"/>
+    <ns:title>Økonomistyring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4f59d5b8-2230-4ca8-a5a9-604cde48cf15">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>utarbeide og vurdere resultat- og likviditetsbudsjett for handels- og servicebedrifter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:4a1ddad6-ee14-4f15-aec6-43aaa137415b"/>
+    <ns:title>Økonomi og ledelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bb35c93b-81cf-451b-86f5-a1494170e293">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>foreta budsjettkontroll og vurdere avvik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:931e47d0-cdb9-48ba-b8b4-f71b5539ce6e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a71d659-8ec7-451f-92c7-829262a48f9a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for regnskapslovens krav til miljørapportering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db9ddad2-24f0-4fb5-9772-44840158c8cd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a71d659-8ec7-451f-92c7-829262a48f9a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>presentere og vurdere miljøtiltakene i en miljøsertifisert bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd6893fb-0eb2-4b21-9f0a-f71a4c708983">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:81046799-bcb8-412e-b442-d3e3c911df6e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for interessegrupper og drøfte hva som kan utløse interessekonflikter ved fastsettelse av bedrifters mål</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:81046799-bcb8-412e-b442-d3e3c911df6e">
+    <ns:title>Bedrift og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:30bce198-d84b-4292-925a-2457062e9625">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for hvordan profesjonelle administrative IKT-baserte verktøy kan brukes i økonomistyringen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aa61d52b-f06e-4ea6-b6c3-1f8345076c85">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>utarbeide investeringsanalyser, vurdere risiko, bedriftsøkonomisk lønnsomhet og samfunnsmessige virkninger av ulike alternativer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:84285792-d56b-41cb-afd8-77295f4e42ce">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a71d659-8ec7-451f-92c7-829262a48f9a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for krav som stilles til autorisasjon i forbindelse med regnskapsføring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5256e59e-8dcb-41b0-97b6-16e12e16f605">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6de52746-4a88-43ac-92e9-4920d2963bb9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for ledelse som funksjon og vurdere hvordan ulike måter å utøve lederskap på kan påvirke arbeidsmiljø, bedriftskultur og effektivitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c13e241-4db9-488f-90f8-0438006a1b8b">
+    <ns:title>Økonomistyring</ns:title>
+    <grep:kode>NOK2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b3fcbd9-c90a-451d-b362-1586cad0a71b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>vurdere lønnsomhet, likviditet og finansiering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:60ab719d-a070-4829-affc-90ec996878ee">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>budsjettere kapitalbehovet for investeringsprosjekter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6de52746-4a88-43ac-92e9-4920d2963bb9">
+    <ns:title>Organisasjon og ledelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0a71d659-8ec7-451f-92c7-829262a48f9a">
+    <ns:title>Etikk og miljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16964c2c-dfae-4869-bd70-7d3ac662b358">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for ulike kostnadstyper og hvordan de varierer med aktivitetsnivået i en bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4a1ddad6-ee14-4f15-aec6-43aaa137415b">
+    <grep:kode>NOK2-01</grep:kode>
+    <ns:title>Læreplan i næringslivsøkonomi - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d25d609-e2eb-4b44-a9a2-80cdabe2d9a3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>bestemme optimal markedstilpasning og gjøre rede for hva som skjer når forutsetningene endres</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:44e8e2b9-d69f-48e7-a414-8f277868e8d1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6de52746-4a88-43ac-92e9-4920d2963bb9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>diskutere hvilke utfordringer en bedrift kan ha i møte med ulike kulturer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c8d2861a-3403-4fb2-abb5-2f577b5aa4ce">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e97101b9-cc7a-4c92-929f-8c8a1f9bd103"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for hva innovasjon og entreprenørskap betyr for verdiskaping og sysselsetting i dagens samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bfe89801-0652-48f5-bd83-329e0af62d88">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:81046799-bcb8-412e-b442-d3e3c911df6e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for konsekvenser av den økonomiske globaliseringen og vurdere hva denne kan bety for enkeltmennesker, bedrifter og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cf4702c9-21f6-4da7-9fde-4879533c5eda">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a71d659-8ec7-451f-92c7-829262a48f9a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>gjøre rede for gjeldende regelverk knyttet til revisjon og revisors rolle i en bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:532b0023-9f3c-49bf-a206-23c01d5fe5e5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>forklare hvordan budsjettering inngår i økonomistyringen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:91210738-ff20-42e3-88d7-fc1902140a4f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for konkurransesituasjonen ved ulike markedsformer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:58cf8832-079e-4b24-bf85-f421840cb0da">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>utarbeide resultat- og balanserapporter for småforetak i samsvar med gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d">
+    <ns:title>Økonomistyring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c58e4397-a4eb-424f-a0b3-f2ca1854f86d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>utarbeide dekningspunktanalyser og vurdere aktuelle tallstørrelser som grunnlag for å bedre lønnsomheten</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:373ec7d8-444f-4221-bf71-f1008dada564">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6de52746-4a88-43ac-92e9-4920d2963bb9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for krav som stilles til HMS-arbeid i en bedrift og for hva som kjennetegner et godt fysisk og psykososialt arbeidsmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63ae2979-19dd-43a3-9bac-c95e9d55638b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76fd7460-8aea-45d1-8fdf-ee11a22f2b1d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a7633b4-5ad9-4136-b3aa-923e4c8886fd"/>
+    <ns:title>utarbeide produktkalkyler for handels- og servicebedrifter og begrunne valg av metode</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3293a460-9f78-4a1a-96a9-bf04b0d44fa2">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>forklare prisdifferensiering og beregne resultat ved bruk av prisdifferensiering som markedsstrategi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b64e38f0-8894-4f63-92e6-385a60ee8409">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>gjøre rede for forhold som påvirker etterspørselen etter et produkt og forklare sammenhengen mellom priselastisitet og grenseinntekt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f2401974-2cc2-4787-93fb-9ec855c4ebc1">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:81046799-bcb8-412e-b442-d3e3c911df6e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>drøfte bedrifters samfunnsansvar og gjøre rede for hvordan bedrifter integrerer samfunnsansvar i beslutningsgrunnlaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:024881b2-1a6a-49f4-a1a4-b2e740f39143">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bb98035-dc71-49be-adc5-e01564d3c2e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c18e744-894f-47f9-a207-5dc223db9c8b"/>
+    <ns:title>beregne og vurdere valg av produkter ved en knapp produksjonsfaktor </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalendClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>
