@@ -2,21 +2,21 @@
 
 <table>
   <tr>
+    <th>Uuid</th>
     <th>Kode</th>
-    <th>Tittle</th>
+    <th>Tittel</th>
+
   </tr>
 
 <% for laereplan in @laereplaner %>
   <tr>
+    <td><%=h laereplan.uuid %></td>
     <td><%=h laereplan.kode %></td>
-    <td><%=h laereplan.tittle %></td>
+    <td><%=h laereplan.tittel %></td>
     <td><%= link_to 'Show', laereplan %></td>
-    <td><%= link_to 'Edit', edit_laereplan_path(laereplan) %></td>
-    <td><%= link_to 'Destroy', laereplan, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New laereplan', new_laereplan_path %>
