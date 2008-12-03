@@ -10,15 +10,5 @@ class LaereplanerController < ApplicationController
     end
   end
 
-  # GET /laereplaner/1
-  # GET /laereplaner/1.xml
-  def show
-    @laereplan = Laereplan.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @laereplan }
-    end
-  end
-
+  
 end
