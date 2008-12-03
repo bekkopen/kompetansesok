@@ -18,11 +18,4 @@ ActiveRecord::Schema.define(:version => 20081202132227) do
     t.datetime "updated_at"
   end
 
-  create_table "leareplaner", :force => true do |t|
-    t.string   "kode"
-    t.string   "tittle"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
