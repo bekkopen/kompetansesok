@@ -9,20 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081202132227) do
+ActiveRecord::Schema.define(:version => 20081203133620) do
 
   create_table "laereplaner", :force => true do |t|
     t.string   "kode"
-    t.string   "tittle"
+    t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "leareplaner", :force => true do |t|
-    t.string   "kode"
-    t.string   "tittle"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "uuid"
   end
 
 end

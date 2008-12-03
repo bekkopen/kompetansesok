@@ -11,12 +11,9 @@ module Kompetansesok
       @model = com.hp.hpl.jena.rdf.model.ModelFactory.createDefaultModel
       @title_property          = com.hp.hpl.jena.vocabulary.DC_11.title
       @type_property           = com.hp.hpl.jena.vocabulary.RDF.type
-      @kode_property           = @model.getProperty(GREP_NS, 'kode')
-      @kompetansemaal_property = @model.getProperty(GREP_NS, 'kompetansemaalsett_har_kompetansemaal')
-      @laereplan_property      = "FINNE UT"
-      
-      @resource_literal        = com.hp.hpl.jena.vocabulary.RDF.object
-        
+      @kode_property                                = @model.getProperty(GREP_NS, 'kode')
+      @kompetansemaal_property                      = @model.getProperty(GREP_NS, 'kompetansemaalsett_har_kompetansemaal')
+      @kompetansemaalsett_etter_laereplan_property  = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_laereplan')        
     end
     
     def les_rdf_fil(rdf_fil)
@@ -42,13 +39,12 @@ module Kompetansesok
     end
     
     def laereplaner
-      @model.listResourcesWithProperty(@type_property).map do |r|
-        if r.hasLiteral(@resource_literal, "http://psi.udir.no/ontologi/laereplan") # virker ikke
-          {
-            :kode => r.getProperty(@kode_property).string,
-            :title => r.getProperty(@title_property).string
-          }
-        end
+      @model.listObjectsOfProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|
+        { 
+          :uuid => r.to_s,
+          :kode => r.getProperty(@kode_property).string,
+          :tittel => r.getProperty(@title_property).string
+        }
       end
     end
   end

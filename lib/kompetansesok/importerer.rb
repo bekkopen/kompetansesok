@@ -63,11 +63,11 @@ module Kompetansesok
       @out.puts if @out
       
       jena.laereplaner.each do |r|
-        if r.nil?
-          puts "fant ingen" if @out
-        else
-          @out.puts r[:title] if @out
-        end
+        Laereplan.create!(r)
+#          @out.puts r[:uuid] if @out
+#          @out.puts r[:kode] if @out
+#          @out.puts r[:title] if @out
+       
       end
     end
 
