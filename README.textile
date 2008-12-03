@@ -36,3 +36,40 @@ h2. Krav som ikke dekkes av Cucumber
 
 * K11 - MySQL
 * K63 - BDD
+
+h2. Sette opp miljø
+
+Sjekk uten krever følgende gems installert i både jruby og ruby for å kjøre
+tester. Dette er hva som er installert fra en blank ubuntu installasjon,
+men burde være likt for mange andre distiubsjoner
+* jruby fra svn, ikke apt-get i ubuntu
+* cucumber 1.11, må bygges fra siste checkout fra http://github.com/aslakhellesoy/cucumber/tarball/v0.1.11
+* debs;
+    * libmysqlclient15-dev
+    * mysql-server(remember empty root password)
+    * libxml2 og libxml2-dev
+    * libxslt-dev
+* gems i jruby og vanlig ruby gem;
+    * rake
+    * rails v2.2.2
+    * rspec
+    * activerecord-jdbc-adapter
+    * feedtools
+    * rspec-rails
+    * mysql
+    * nokogiri(se install nokogiri)
+
+Det var alt ;)
+
+h3. Install nokogiri
+
+Det ser ut til at nokogiri og webrat har problemer med jruby, måten jeg klarte
+å løse dette på er og installere nokogiri 1.0.6, det ser ut til at 1.0.7 er der
+problemene ligger;
+# aaronp-frex med ruby gem
+# installere jruby -S gem install -v=1.0.6 nokogiri
+# installere jruby -S gem install webrat
+
+
+
+
