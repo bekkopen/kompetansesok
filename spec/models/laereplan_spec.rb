@@ -4,7 +4,8 @@ describe Laereplan do
   before(:each) do
     @valid_attributes = {
       :kode => "value for kode",
-      :tittle => "value for tittle"
+      :tittel => "value for tittle",
+      :uuid => "en eller annen streng"
     }
   end
 
