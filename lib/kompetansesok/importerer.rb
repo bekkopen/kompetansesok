@@ -61,12 +61,10 @@ module Kompetansesok
         jena.les_rdf_fil(rdf_fil)
       end
       @out.puts if @out
-      
 
       importer_laereplaner(jena)
       importer_kompetansemaalsett(jena)
       importer_kompetansemaal(jena)
-
     end
 
     def filer
