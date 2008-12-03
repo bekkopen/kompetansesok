@@ -62,16 +62,30 @@ module Kompetansesok
       end
       @out.puts if @out
       
-      jena.laereplaner.each do |r|
-        Laereplan.create!(r)      
-      end
-      
-      
+      importer_laereplaner(jena)
+      importer_kompetansemaalsett(jena)
     end
 
     def filer
       Dir["#{@import_dir}/*.rdf"]
     end
-  end
+    
+    private
+    
+    def importer_laereplaner(jena)
+      laereplaner = jena.laereplaner || []
+      laereplaner.each do |r|
+        Laereplan.create!(r)      
+      end
+    end
   
+    def importer_kompetansemaalsett(jena)
+      maalsett = jena.kompetansemaalsett || []
+      maalsett.each do |r|
+        Kompetansemaalsett.create!(r)
+      end
+    end
+    
+  end
+ 
 end

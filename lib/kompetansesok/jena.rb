@@ -11,9 +11,9 @@ module Kompetansesok
       @model = com.hp.hpl.jena.rdf.model.ModelFactory.createDefaultModel
       @title_property          = com.hp.hpl.jena.vocabulary.DC_11.title
       @type_property           = com.hp.hpl.jena.vocabulary.RDF.type
-      @kode_property                                = @model.getProperty(GREP_NS, 'kode')
-      @kompetansemaal_property                      = @model.getProperty(GREP_NS, 'kompetansemaalsett_har_kompetansemaal')
-      @kompetansemaalsett_etter_laereplan_property  = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_laereplan')        
+      @kode_property                                  = @model.getProperty(GREP_NS, 'kode')
+      @kompetansemaalsett_har_kompetansemaal_property = @model.getProperty(GREP_NS, 'kompetansemaalsett_har_kompetansemaal')
+      @kompetansemaalsett_etter_laereplan_property    = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_laereplan')        
     end
     
     def les_rdf_fil(rdf_fil)
@@ -31,7 +31,7 @@ module Kompetansesok
     
     # Returnerer alle kompetansemaal som Array av Hash. Hver Hash er et key-value par med primitive verdier.
     def kompetansemaal
-      @model.listResourcesWithProperty(@kompetansemaal_property).map do |km|
+      @model.listResourcesWithProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |km|
         {
           :title => km.getProperty(@title_property).string
         }
@@ -43,6 +43,15 @@ module Kompetansesok
         { 
           :uuid => r.to_s,
           :kode => r.getProperty(@kode_property).string,
+          :tittel => r.getProperty(@title_property).string
+        }
+      end
+    end
+    
+    def kompetansemaalsett
+      @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
+        { 
+          :uuid => r.to_s,
           :tittel => r.getProperty(@title_property).string
         }
       end
