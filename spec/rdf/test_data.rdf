@@ -3,7 +3,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:ns="http://purl.org/dc/elements/1.1/" > 
+    xmlns:ns="http://purl.org/dc/elements/1.1/" >
   <rdf:Description rdf:about="uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e">
     <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg1"/>
     <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"/>
