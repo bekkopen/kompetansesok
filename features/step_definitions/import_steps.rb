@@ -34,6 +34,11 @@ Saa /^skal Kompetansemål eksistere i databasen$/ do
   kompetansemaal.should_not== nil
 end
 
+Saa /^Kompetansemål skal tilhøre Kompetansemålsett$/ do
+  kompetansemaal = Kompetansemaal.find :first
+  kompetansemaal.kompetansemaalsett.length.should >= 1
+end
+
 Saa /^skal det ligge minst (\d+) kompetansemålsett i basen$/ do |n|
   Kompetansemaalsett.find(:all).length.should >= n.to_i
 end
@@ -41,3 +46,4 @@ end
 Saa /^kompetansemålsettene skal tilhøre læreplaner$/ do
   Kompetansemaalsett.find(:first).laereplaner.length.should >= 1
 end
+

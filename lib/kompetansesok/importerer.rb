@@ -91,8 +91,11 @@ module Kompetansesok
 
     def importer_kompetansemaal(jena)
       kompetansemaal = jena.kompetansemaal || []
-      kompetansemaal.each do |i|
-        Kompetansemaal.create!(i)
+      kompetansemaal.each do |r|
+        kompetansemaalsett_uuid = r.delete(:kompetansemaalsett_uuid)
+        k = Kompetansemaal.new(r)
+        k.kompetansemaalsett << Kompetansemaalsett.find_by_uuid(kompetansemaalsett_uuid)
+        k.save!
       end
     end
     
