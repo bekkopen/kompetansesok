@@ -41,6 +41,21 @@ if defined?(JRUBY_VERSION)
       end
     end
 
+    describe "kompetansemaal" do
+      before(:each) do
+        @kompetansemaal = @jena.kompetansemaal[0]
+
+      end
+
+      it "should get uuid" do
+        @kompetansemaal[:uuid].should == "uuid:1d129f24-74f3-409b-b56f-57e36af7445c"
+      end
+
+      it "should get tittel" do
+        @kompetansemaal[:tittel].should == "praktisere dans fra ulike kulturer"
+      end
+
+    end
 
   end
 else

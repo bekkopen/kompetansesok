@@ -9,12 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081204093601) do
+ActiveRecord::Schema.define(:version => 20081204115521) do
 
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "tittel"
+    t.string   "uuid"
   end
 
   create_table "kompetansemaalsett", :force => true do |t|

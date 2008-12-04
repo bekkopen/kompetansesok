@@ -52,7 +52,7 @@ if defined?(JRUBY_VERSION)
 
     describe "import of kompetansemaal" do
       before :each do
-        kompetansemaal_array = [{:tittel => "dette er en tittel"}]
+        kompetansemaal_array = [{:tittel => "dette er en tittel", :uuid => "asas"}]
         @jena.should_receive(:kompetansemaal).and_return(kompetansemaal_array)
         @importerer.importer_til_db(1)
         @kompetansemaal = Kompetansemaal.find :first
@@ -60,6 +60,10 @@ if defined?(JRUBY_VERSION)
 
       it "should contain tittel" do
         @kompetansemaal.tittel.should == "dette er en tittel"
+      end
+
+      it "should contain uuid" do
+        @kompetansemaal.uuid.should == "asas"
       end
     end
   end
