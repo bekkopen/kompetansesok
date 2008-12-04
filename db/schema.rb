@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081204115521) do
+ActiveRecord::Schema.define(:version => 20081204121804) do
 
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
@@ -17,6 +17,16 @@ ActiveRecord::Schema.define(:version => 20081204115521) do
     t.string   "tittel"
     t.string   "uuid"
   end
+
+  create_table "kompetansemaal_kompetansemaalsett", :id => false, :force => true do |t|
+    t.integer  "kompetansemaal_id",     :null => false
+    t.integer  "kompetansemaalsett_id", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "kompetansemaal_kompetansemaalsett", ["kompetansemaal_id"], :name => "index_kompetansemaal_kompetansemaalsett_on_kompetansemaal_id"
+  add_index "kompetansemaal_kompetansemaalsett", ["kompetansemaalsett_id"], :name => "index_kompetansemaal_kompetansemaalsett_on_kompetansemaalsett_id"
 
   create_table "kompetansemaalsett", :force => true do |t|
     t.string   "uuid"
