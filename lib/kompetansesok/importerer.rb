@@ -65,7 +65,11 @@ module Kompetansesok
       jena.laereplaner.each do |r|
         Laereplan.create!(r)
       end
-      
+
+      jena.kompetansemaal.each do |r|
+        Kompetansemaal.create!(r)
+      end
+
       
     end
 

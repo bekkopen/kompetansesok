@@ -27,3 +27,8 @@ end
 Saa /^skal det ligge (\d+) læreplaner i basen$/ do |n|
   Laereplan.find(:all).length.should == n.to_i
 end
+
+Saa /^skal Kompetansemål eksistere i databasen$/ do
+  kompetansemaal = Kompetansemaal.find :first
+  kompetansemaal.should_not== nil
+end

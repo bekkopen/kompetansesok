@@ -33,7 +33,7 @@ module Kompetansesok
     def kompetansemaal
       @model.listResourcesWithProperty(@kompetansemaal_property).map do |km|
         {
-          :title => km.getProperty(@title_property).string
+          :tittel => km.getProperty(@title_property).string
         }
       end
     end
