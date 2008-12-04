@@ -13,4 +13,12 @@ describe Laereplan do
   it "should create a new instance given valid attributes" do
     Laereplan.create!(@valid_attributes)
   end
+  
+  describe "validation" do
+    it "should have unique uuid" do
+      Laereplan.create!(@valid_attributes)
+      invalid_laereplan = Laereplan.new(@valid_attributes)
+      invalid_laereplan.should_not be_valid
+    end
+  end
 end
