@@ -1,8 +1,4 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-
 
 describe Kompetansemaal do
   before(:each) do
@@ -10,7 +6,6 @@ describe Kompetansemaal do
       :tittel => "Kompetanse maal tittel",
       :uuid => "adfg"
     }
-
   end
 
   it "should accssept valid attributes" do
