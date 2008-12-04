@@ -24,17 +24,14 @@ Saa /^skal det ligge (\d+) RDF filer på disk$/ do |n|
   @importer.filer.length.should == n.to_i
 end
 
-Saa /^skal det ligge (\d+) (.*) i basen$/ do |n, klasse|
+Saa /^skal det ligge minst (\d+) (.*) i basen$/ do |n, klasse|
   klass = klasse.singularize.constantize
-  klass.count.should == n.to_i
+  klass.count.should >= n.to_i
 end
 
-Saa /^Kompetansemål skal tilhøre Kompetansemålsett$/ do
-  kompetansemaal = Kompetansemaal.find :first
-  kompetansemaal.kompetansemaalsett.length.should >= 1
+Saa /^(.*) skal tilhøre (.*)/ do |klasse, relasjonsklasse|
+  klass = klasse.singularize.constantize
+  relasjon = relasjonsklasse.pluralize.downcase.to_sym
+  instans = klass.find :first
+  instans.send(relasjon).length.should >= 1
 end
-
-Saa /^kompetansemålsettene skal tilhøre læreplaner$/ do
-  Kompetansemaalsett.find(:first).laereplaner.length.should >= 1
-end
-

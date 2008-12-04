@@ -52,6 +52,7 @@ if defined?(JRUBY_VERSION)
 
     describe "import of kompetansemaal" do
       before :each do
+        Kompetansemaalsett.stub!(:find_by_uuid).and_return(Kompetansemaalsett.new)
         kompetansemaal_array = [{:tittel => "dette er en tittel", :uuid => "asas"}]
         @jena.should_receive(:kompetansemaal).and_return(kompetansemaal_array)
         @importerer.importer_til_db(1)
