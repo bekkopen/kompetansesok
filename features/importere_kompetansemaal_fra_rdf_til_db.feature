@@ -7,5 +7,6 @@ Feature: Importere kompetansemål fra RDF til database
     Gitt at RDF filer er hentet til disk
     Når jeg parser 1 RDF filer
     Så skal Kompetansemål eksistere i databasen
+    Og Kompetansemål skal tilhøre Kompetansemålsett
 
 

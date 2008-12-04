@@ -65,6 +65,7 @@ if defined?(JRUBY_VERSION)
       it "should contain uuid" do
         @kompetansemaal.uuid.should == "asas"
       end
+   
     end
   end
 else

@@ -55,6 +55,10 @@ if defined?(JRUBY_VERSION)
         @kompetansemaal[:tittel].should == "praktisere dans fra ulike kulturer"
       end
 
+      it "should have kompetansemaallsett uuid" do
+        @kompetansemaal[:kompetansemaalsett_uuid].should == "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
+      end
+
     end
 
   end
