@@ -64,10 +64,6 @@ module Kompetansesok
       
       jena.laereplaner.each do |r|
         Laereplan.create!(r)
-#          @out.puts r[:uuid] if @out
-#          @out.puts r[:kode] if @out
-#          @out.puts r[:title] if @out
-       
       end
     end
 
