@@ -7,6 +7,7 @@ describe Kompetansesok::Importerer do
     @jena = mock(Kompetansesok::Jena)
     @jena.stub!(:les_rdf_fil)
     @jena.stub!(:laereplaner)
+    @jena.stub!(:kompetansemaalsett)
     Kompetansesok::Jena.stub!(:new).and_return(@jena)
   end
 
@@ -28,6 +29,23 @@ describe Kompetansesok::Importerer do
 
     it "should contain kode" do
       @laereplan.kode.should == "kode"
+    end
+  end
+  
+  describe "import of kompetansemaalsett" do
+    before :each do
+      @kompetansemaalsett = [{:uuid => "uuid", :tittel => "tittel"}]
+      @jena.should_receive(:kompetansemaalsett).and_return(@kompetansemaalsett)
+      @importerer.importer_til_db(1)
+      @kompetansemaalsett = Kompetansemaalsett.find :first
+    end
+    
+    it "should contain uuid" do
+      @kompetansemaalsett.uuid.should == "uuid"
+    end
+    
+    it "should contain tittel" do
+      @kompetansemaalsett.tittel.should == "tittel"
     end
   end
 end

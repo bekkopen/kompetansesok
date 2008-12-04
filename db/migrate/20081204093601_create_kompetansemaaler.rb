@@ -1,6 +1,6 @@
 class CreateKompetansemaaler < ActiveRecord::Migration
   def self.up
-    create_table :kompetansemaaler do |t|
+    create_table :kompetansemaal do |t|
 
       t.timestamps
       t.string :tittel
@@ -8,6 +8,6 @@ class CreateKompetansemaaler < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :kompetansemaaler
+    drop_table :kompetansemaal
   end
 end

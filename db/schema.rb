@@ -9,13 +9,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081204093601) do
+ActiveRecord::Schema.define(:version => 20081204102439) do
 
-  create_table "kompetansemaaler", :force => true do |t|
+  create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "tittel"
   end
+
+  create_table "kompetansemaalsett", :force => true do |t|
+    t.string   "uuid"
+    t.string   "tittel"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "kompetansemaalsett", ["uuid"], :name => "index_kompetansemaalsett_on_uuid"
+
+  create_table "kompetansemaalsett_laereplaner", :id => false, :force => true do |t|
+    t.integer  "kompetansemaalsett_id", :null => false
+    t.integer  "laereplan_id",          :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "kompetansemaalsett_laereplaner", ["kompetansemaalsett_id"], :name => "index_kompetansemaalsett_laereplaner_on_kompetansemaalsett_id"
+  add_index "kompetansemaalsett_laereplaner", ["laereplan_id"], :name => "index_kompetansemaalsett_laereplaner_on_laereplan_id"
 
   create_table "laereplaner", :force => true do |t|
     t.string   "kode"
