@@ -65,6 +65,8 @@ module Kompetansesok
       jena.laereplaner.each do |r|
         Laereplan.create!(r)
       end
+      
+      
     end
 
     def filer
