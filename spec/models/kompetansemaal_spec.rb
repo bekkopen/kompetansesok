@@ -14,7 +14,6 @@ describe Kompetansemaal do
 
   it "should accssept valid attributes" do
     @kompetansemaal = Kompetansemaal.create!(@validattribute)
-
   end
 end
 
