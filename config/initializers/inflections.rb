@@ -6,7 +6,7 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.plural(/$/, 'er')
   inflect.plural(/s$/i, 'er')
    
-  inflect.uncountable %w(kompetansemaalsett)
+  inflect.uncountable %w(kompetansemaalsett kompetansemaal)
   
   #inflect.singular
   #inflect.irregular

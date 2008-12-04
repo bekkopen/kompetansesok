@@ -61,9 +61,10 @@ module Kompetansesok
         jena.les_rdf_fil(rdf_fil)
       end
       @out.puts if @out
-      
+
       importer_laereplaner(jena)
       importer_kompetansemaalsett(jena)
+      importer_kompetansemaal(jena)
     end
 
     def filer
@@ -83,6 +84,13 @@ module Kompetansesok
       maalsett = jena.kompetansemaalsett || []
       maalsett.each do |r|
         Kompetansemaalsett.create!(r)
+      end
+    end
+
+    def importer_kompetansemaal(jena)
+      kompetansemaal = jena.kompetansemaal || []
+      kompetansemaal.each do |i|
+        Kompetansemaal.create!(i)
       end
     end
     
