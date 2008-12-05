@@ -1,5 +1,5 @@
 class Kompetansemaalsett < ActiveRecord::Base
-  belongs_to :laereplan
+  has_and_belongs_to_many :laereplan
 
   validates_uniqueness_of :uuid
 end

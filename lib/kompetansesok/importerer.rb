@@ -85,7 +85,7 @@ module Kompetansesok
       maalsett.each do |r|
         laereplan_uuid = r.delete(:laereplan_uuid)
         k = Kompetansemaalsett.new(r)
-        k.laereplan = Laereplan.find_by_uuid(laereplan_uuid)
+        k.laereplan << Laereplan.find_by_uuid(laereplan_uuid)
         k.save!
       end
     end

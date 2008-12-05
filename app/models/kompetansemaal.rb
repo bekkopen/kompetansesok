@@ -2,9 +2,9 @@ class Kompetansemaal < ActiveRecord::Base
   has_and_belongs_to_many :kompetansemaalsett
 
   validates_uniqueness_of :uuid
-
+  
   def laereplan
-    kompetansemaalsett.first.laereplan if not kompetansemaalsett.empty?
+    kompetansemaalsett.first.laereplan.first if not kompetansemaalsett.empty?
   end
 
   def laereplan_tittel

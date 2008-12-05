@@ -29,7 +29,7 @@ describe Kompetansemaal do
 
     it "should have laereplan" do
       @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
-      @kompetansemaalsett.laereplan = @laereplan
+      @kompetansemaalsett.laereplan << @laereplan
       @kompetansemaal.laereplan.should == @laereplan
     end
 
@@ -59,7 +59,7 @@ describe Kompetansemaal do
 
     it "should have laereplan_tittel from laereplan" do
       @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
-      @kompetansemaalsett.laereplan = @laereplan
+      @kompetansemaalsett.laereplan << @laereplan
       @laereplan.tittel = "tittel"
       @kompetansemaal.laereplan_tittel.should == "tittel"
     end
