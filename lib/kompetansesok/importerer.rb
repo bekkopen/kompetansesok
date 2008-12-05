@@ -83,7 +83,10 @@ module Kompetansesok
     def importer_kompetansemaalsett(jena)
       maalsett = jena.kompetansemaalsett || []
       maalsett.each do |r|
-        Kompetansemaalsett.create!(r)
+        laereplan_uuid = r.delete(:laereplan_uuid)
+        k = Kompetansemaalsett.new(r)
+        k.laereplan = Laereplan.find_by_uuid(laereplan_uuid)
+        k.save!
       end
     end
 

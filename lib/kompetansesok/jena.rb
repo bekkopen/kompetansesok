@@ -54,7 +54,8 @@ module Kompetansesok
       @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
         { 
           :uuid => r.to_s,
-          :tittel => r.getProperty(@title_property).string
+          :tittel => r.getProperty(@title_property).string,
+          :laereplan_uuid => r.getProperty(@kompetansemaalsett_etter_laereplan_property).resource.to_s
         }
       end
     end

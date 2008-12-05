@@ -8,3 +8,4 @@ Feature: Importere kompetansemålsett fra RDF til database
     Gitt at RDF filer er hentet til disk
     Når jeg parser 2 RDF filer
     Så skal det ligge minst 2 Kompetansemaalsett i basen
+    Og Kompetansemaalsett skal tilhøre Laereplan

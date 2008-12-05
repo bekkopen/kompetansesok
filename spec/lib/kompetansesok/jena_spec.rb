@@ -39,6 +39,10 @@ if defined?(JRUBY_VERSION)
       it "should get tittel" do
         @kompetansemaalsett[:tittel].should == "Aktivitetslære 1"
       end
+
+      it "should contain laereplan uuid" do
+          @kompetansemaalsett[:laereplan_uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
+      end
     end
 
     describe "kompetansemaal" do
