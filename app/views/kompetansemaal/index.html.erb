@@ -1,0 +1,27 @@
+<h1>Listing kompetansemaal</h1>
+
+<table>
+  <tr>
+    <th>Læreplan</th>
+    <th>Hovedområde</th>
+    <th>Kompetansemålsett</th>
+    <th>Trinn</th>
+    <th>Kompetansemålkode</th>
+    <th>Kompetansemål</th>
+  </tr>
+
+<% @kompetansemaal.each do |kompetansemaal| %>
+  <tr>
+    <td><%= kompetansemaal.laereplan_tittel %></td>
+    <td> </td>
+    <td> <%= kompetansemaal.kompetansemaalsett_tittel %></td>
+    <td> </td>
+    <td><%= kompetansemaal.kode %></td>
+    <td><%= kompetansemaal.tittel %></td>
+
+    
+  </tr>
+<% end %>
+</table>
+
+<br />

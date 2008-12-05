@@ -1,8 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
 
   map.resources :kompetansemaalsett
-
+  map.resources :kompetansemaal
   map.resources :laereplaner
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 
