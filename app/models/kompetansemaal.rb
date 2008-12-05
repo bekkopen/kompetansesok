@@ -4,13 +4,12 @@ class Kompetansemaal < ActiveRecord::Base
   validates_uniqueness_of :uuid
   
   def laereplan
-    kompetansemaalsett.first.laereplan.first if not kompetansemaalsett.empty?
+    kompetansemaalsett.first.laereplan if not kompetansemaalsett.empty?
   end
 
   def laereplan_tittel
     laereplan ? laereplan.tittel : ""
   end
-
 
   def kompetansemaalsett_tittel
     if kompetansemaalsett.empty?
@@ -18,6 +17,5 @@ class Kompetansemaal < ActiveRecord::Base
     else
       kompetansemaalsett.first.tittel
     end
-
   end
 end

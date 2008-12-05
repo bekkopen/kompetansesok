@@ -7,16 +7,25 @@ describe Kompetansemaalsett do
       :tittel => "value for tittel"
     }
   end
-
-  it "should create a new instance given valid attributes" do
-    Kompetansemaalsett.create!(@valid_attributes)
-  end
   
   describe "validation" do
+    it "should create a new instance given valid attributes" do
+      Kompetansemaalsett.create!(@valid_attributes)
+    end
+    
     it "should have unique uuid" do
       Kompetansemaalsett.create!(@valid_attributes)
       invalid_maalsett = Kompetansemaalsett.new(@valid_attributes)
       invalid_maalsett.should_not be_valid
     end
+    
   end
+  
+  it "should have a laereplan" do
+    k = Kompetansemaalsett.new(@valid_attributes)
+    l = Laereplan.new
+    k.laereplaner << l
+    k.laereplan.should == l
+  end
+  
 end
