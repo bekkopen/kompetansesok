@@ -21,11 +21,22 @@ describe Kompetansemaalsett do
     
   end
   
-  it "should have a laereplan" do
-    k = Kompetansemaalsett.new(@valid_attributes)
-    l = Laereplan.new
-    k.laereplaner << l
-    k.laereplan.should == l
+  describe "relationships" do
+    before :each do
+      @kompetansemaalsett = Kompetansemaalsett.new(@valid_attributes)
+    end
+    
+    it "should have a laereplan" do
+      laereplan = Laereplan.new
+      @kompetansemaalsett.laereplaner << laereplan
+      @kompetansemaalsett.laereplan.should == laereplan
+    end
+    
+    it "should have kompetansemaal" do
+      kompetansemaal = Kompetansemaal.new
+      @kompetansemaalsett.kompetansemaal << kompetansemaal
+      @kompetansemaalsett.kompetansemaal.should == [kompetansemaal]
+    end
   end
   
 end

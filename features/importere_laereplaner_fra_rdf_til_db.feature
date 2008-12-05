@@ -5,6 +5,5 @@ Feature: Importere læreplaner fra RDF til databasese
   
   # @K1 @K3 @K4 @K55.1
   Scenario: Parse læreplaner
-    Gitt at RDF filer er hentet til disk
-    Når jeg parser 2 RDF filer
-    Så skal det ligge minst 2 Laereplan i basen
+    Gitt at 2 RDF-filer er lastet i databasen
+    Så skal det ligge 2 Laereplan i basen
