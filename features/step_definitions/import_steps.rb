@@ -31,7 +31,7 @@ end
 
 Saa /^(.*) skal tilhøre (.*)/ do |klasse, relasjonsklasse|
   klass = klasse.singularize.constantize
-  relasjon = relasjonsklasse.pluralize.downcase.to_sym
+  relasjon = relasjonsklasse.singularize.downcase.to_sym
   instans = klass.find :first
-  instans.send(relasjon).length.should >= 1
+  instans.send(relasjon).should_not be_nil
 end

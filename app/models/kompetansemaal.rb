@@ -1,5 +1,5 @@
 class Kompetansemaal < ActiveRecord::Base
-  has_and_belongs_to_many :kompetansemaalsett
+  belongs_to :kompetansemaalsett
 
   validates_uniqueness_of :uuid
 end
