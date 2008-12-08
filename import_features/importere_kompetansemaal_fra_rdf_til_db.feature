@@ -4,8 +4,9 @@ Feature: Importere kompetansemål fra RDF til database
   Må en regelmessig jobb kunne importere kompetansemål RDF fra fil til database
 
   Scenario: Parse kompetansemål fra RDF
-    Gitt at 1 RDF-filer er lastet i databasen
-    Så skal det ligge 24 Kompetansemaal i basen
+    Gitt at RDF-filer er hentet til fil
+    Når 1 RDF-filer lastes inn i databasen
+    Så skal det ligge 38 Kompetansemaal i basen
     Og Kompetansemaal skal tilhøre Kompetansemaalsett
 
 

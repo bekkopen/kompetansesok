@@ -1,3 +1,3 @@
-alt: --language no features
-app: --language no --exclude rdf_til_db --exclude rdf_til_fil
+app:      --language no features
 autotest: --language no features
+import:   --language no --verbose import_features

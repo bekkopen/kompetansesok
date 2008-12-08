@@ -5,6 +5,7 @@ Feature: Importere kompetansemålsett fra RDF til database
 
   # @K1 @K3 @K4 @K55.1
   Scenario: Parse kompetansemaalsett
-    Gitt at 2 RDF-filer er lastet i databasen
-    Så skal det ligge 3 Kompetansemaalsett i basen
+    Gitt at RDF-filer er hentet til fil
+    Når 2 RDF-filer lastes inn i databasen
+    Så skal det ligge 4 Kompetansemaalsett i basen
     Og Kompetansemaalsett skal tilhøre Laereplan

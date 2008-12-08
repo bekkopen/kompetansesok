@@ -1,19 +1,27 @@
 require File.dirname(__FILE__) + '/../support/env'
 
+# Import til Fil
+
 Gitt /^at feed er tilgjengelig på Internett$/ do
-  @importer = Kompetansesok::Importerer.new(Rails.root + '/tmp/import')
+  @importerer = Kompetansesok::Importerer.new(Rails.root + '/tmp/import')
 end
 
-Gitt /^at det ikke ligger noen gamle importerte filer på disk$/ do
-  @importer.slett_filer
-end
-
-Naar /^jeg importerer (\d+) filer$/ do |n|
-  @importer.importer_til_fil(n.to_i)
+Naar /^jeg importerer (\d+) filer fra feeden til fil$/ do |n|
+  @importerer.importer_til_fil(n.to_i)
 end
 
 Saa /^skal det ligge (\d+) RDF filer på disk$/ do |n|
-  @importer.filer.length.should == n.to_i
+  @importerer.filer.length.should == n.to_i
+end
+
+# Import til DB
+
+Gitt /^at RDF\-filer er hentet til fil$/ do
+  @importerer = Kompetansesok::Importerer.new(Rails.root + '/features/rdf')
+end
+
+Naar /^(\d+) RDF\-filer lastes inn i databasen$/ do |n|
+  @importerer.importer_til_db(n.to_i)
 end
 
 Saa /^skal det ligge (\d+) (.*) i basen$/ do |n, klasse|

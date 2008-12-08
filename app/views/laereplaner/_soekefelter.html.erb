@@ -1,5 +1,5 @@
 <input id="laereplan_sok" class="ac" value="<%= @laereplan ? @laereplan.tittel : '' %>"/>
-<ul style="display:none;">
+<ul>
   <% @laereplaner.each do |laereplan| %>
     <li><%= link_to laereplan.tittel, laereplan_path(laereplan) %></li>
   <% end %>

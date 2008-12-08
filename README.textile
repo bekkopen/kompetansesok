@@ -4,11 +4,12 @@ h2. Automatiserte tester
 
 h3. Funksjonelle tester (Cucumber features)
 
-Kjør alle features:
-<pre>jruby -S rake cucumber:alt</pre>
+Kjør features for app:
+<pre>RAILS_ENV=test jruby script/import/import_til_db features/rdf
+rake cucumber:app</pre>
 
-Kjør alle tester untatt import (raskere):
-<pre>rake cucumber:app</pre>
+Kjør features for import:
+<pre>jruby -S rake features:import</pre>
 
 Kjør spesifikk feature (eksempel):
 <pre>cucumber features/foo.feature:77 --language no</pre>
@@ -20,19 +21,11 @@ h2. Importere data fra GREP
 
 Import skjer i to steg. Først importeres RDF til lokal disk, deretter parses disse filene og importeres i lokal database.
 
-h3. Hente GREP filer
+h3. Importere GREP filer
 
-<pre>jruby script/runner script/import/import_til_fil [DIR]</pre>
-
-h3. Importere lokale GREP filer inn i basen
-
-Mot development:
-
-<pre>RAILS_ENV=development jruby script/import/import_til_db features/rdf</pre>
-
-Mot test:
-
-<pre>RAILS_ENV=test jruby script/import/import_til_db features/rdf</pre>
+<pre>mkdir /tmp/kompetansesok
+jruby script/runner script/import/import_til_fil /tmp/kompetansesok
+jruby script/import/import_til_db /tmp/kompetansesok</pre>
 
 h2. RDF og Jena
 

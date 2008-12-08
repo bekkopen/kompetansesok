@@ -2,18 +2,20 @@ $:.unshift(RAILS_ROOT + '/vendor/plugins/cucumber/lib')
 begin
   require 'cucumber/rake/task'
 
-  namespace :cucumber do
+  namespace :features do
     desc "Cucumber features for import (JRuby)"
-    Cucumber::Rake::Task.new(:alt) do |t|
-      t.cucumber_opts = "--profile alt"
+    Cucumber::Rake::Task.new(:import) do |t|
+      t.cucumber_opts = "--profile import"
+      # TODO - dette burde ikke være nødvendig - fikse i Cucumber
+      t.feature_pattern = "import_features/**/*.feature"
+      t.step_pattern = "import_features/**/*.rb"
     end
-    task :alt => 'db:test:prepare'
+    task :import => 'db:test:prepare'
 
-    desc "Cucumber features for app (JRuby/MRI)"
+    desc "Cucumber features for app (MRI)"
     Cucumber::Rake::Task.new(:app) do |t|
       t.cucumber_opts = "--profile app"
     end
-    task :app => 'db:test:prepare'
   end
 rescue LoadError
   STDERR.puts "**** Ikke glem gem install cucumber ****"

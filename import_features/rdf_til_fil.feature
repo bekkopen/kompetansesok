@@ -6,6 +6,5 @@ Feature: Hente RDF fra Internett til fil
   # @K1 @K3 @K4 @K55.1
   Scenario: Hente ned et utvalg RDF fra Atom feed
     Gitt at feed er tilgjengelig på Internett
-    Og at det ikke ligger noen gamle importerte filer på disk
-    Når jeg importerer 3 filer
+    Når jeg importerer 3 filer fra feeden til fil
     Så skal det ligge 3 RDF filer på disk
