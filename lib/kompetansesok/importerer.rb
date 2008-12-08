@@ -19,15 +19,12 @@ module Kompetansesok
       @out = out
     end
     
-    def slett_filer
-      FileUtils.rm_rf(@import_dir)
-    end
-    
     # Henter +n+ RDF filer fra Atom feed på Internett og lagrer dem lokalt på disk.
     # Hvis +n+ == <tt>nil</tt> hentes alle RDF filer i Atom feeden.
     #
     # Filene som importeres kan senere importeres i databasen via #importer_til_db
     def importer_til_fil(n=nil)
+      FileUtils.rm_rf(@import_dir)
       FileUtils.mkdir_p(@import_dir)
 
       @out.puts("Leser Atom feed...") if @out
@@ -62,44 +59,19 @@ module Kompetansesok
       end
       @out.puts if @out
 
-      importer_laereplaner(jena)
-      importer_kompetansemaalsett(jena)
-      importer_kompetansemaal(jena)
+      ActiveRecord::Base.transaction do
+        Kompetansemaal.delete_all
+        Kompetansemaalsett.delete_all
+        Laereplan.delete_all
+
+        Laereplan.create!(jena.laereplaner)
+        Kompetansemaalsett.create!(jena.kompetansemaalsett)
+        Kompetansemaal.create!(jena.kompetansemaal)
+      end
     end
 
     def filer
       Dir["#{@import_dir}/*.rdf"]
     end
-    
-    private
-    
-    def importer_laereplaner(jena)
-      laereplaner = jena.laereplaner || []
-      laereplaner.each do |r|
-        Laereplan.create!(r)      
-      end
-    end
-  
-    def importer_kompetansemaalsett(jena)
-      maalsett = jena.kompetansemaalsett || []
-      maalsett.each do |r|
-        laereplan_uuid = r.delete(:laereplan_uuid)
-        k = Kompetansemaalsett.new(r)
-        k.laereplaner << Laereplan.find_by_uuid(laereplan_uuid)
-        k.save!
-      end
-    end
-
-    def importer_kompetansemaal(jena)
-      kompetansemaal = jena.kompetansemaal || []
-      kompetansemaal.each do |r|
-        kompetansemaalsett_uuid = r.delete(:kompetansemaalsett_uuid)
-        k = Kompetansemaal.new(r)
-        k.kompetansemaalsett << Kompetansemaalsett.find_by_uuid(kompetansemaalsett_uuid)
-        k.save!
-      end
-    end
-    
-  end
- 
+  end 
 end

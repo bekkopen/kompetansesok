@@ -1,4 +1,2 @@
-class KompetansemaalController < ApplicationController
-
-  
+class KompetansemaalController < ApplicationController  
 end

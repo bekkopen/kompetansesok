@@ -1,13 +1,2 @@
-<h1>Søk via læreplaner</h1>
 
-
-<table>
-  <tr>
-    <td>Læreplan:</td>
-    <td><%= select_tag('laereplaner', options_from_collection_for_select(@laereplaner, :id, :tittel)) %></td>
-  </tr>
-</table>
-
-
-<h2>Kompetansemål</h2>
-<%= render :partial => '/kompetansemaal/kompetansemaal' %>
+<%= render :partial => 'soekefelter' %>

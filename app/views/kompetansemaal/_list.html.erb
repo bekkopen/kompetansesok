@@ -1,0 +1,24 @@
+<table id='kompetansemaal'>
+  <thead>
+    <tr>
+      <th>Læreplan</th>
+      <th>Hovedområde</th>
+      <th>Kompetansemålsett</th>
+      <th>Trinn</th>
+      <th>Kompetansemålkode</th>
+      <th>Kompetansemål</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @kompetansemaal.each do |kompetansemaal| %>
+    <tr>
+      <td><%= kompetansemaal.laereplan_tittel %></td>
+      <td> </td>
+      <td> <%= kompetansemaal.kompetansemaalsett_tittel %></td>
+      <td> </td>
+      <td> </td>
+      <td><%= kompetansemaal.tittel %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

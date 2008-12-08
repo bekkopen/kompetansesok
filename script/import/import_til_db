@@ -1,2 +1,6 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../../config/boot'
+require File.dirname(__FILE__) + '/../../config/environment'
+
 importerer = Kompetansesok::Importerer.new(ARGV[0] || Rails.root + '/tmp/import', STDOUT)
 importerer.importer_til_db

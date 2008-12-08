@@ -1,10 +1,5 @@
 require File.dirname(__FILE__) + '/../support/env'
 
-Gitt /^at (\d+) RDF-filer er lastet i databasen$/ do |n|
-  @importer = Kompetansesok::Importerer.new(Rails.root + '/features/rdf')
-  @importer.importer_til_db(n.to_i)
-end
-
 Gitt /^at feed er tilgjengelig på Internett$/ do
   @importer = Kompetansesok::Importerer.new(Rails.root + '/tmp/import')
 end

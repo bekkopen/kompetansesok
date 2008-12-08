@@ -9,4 +9,8 @@ class Laereplan < ActiveRecord::Base
     end
     result.flatten.uniq
   end
+  
+  def to_param
+    uuid
+  end
 end

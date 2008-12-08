@@ -1,0 +1,5 @@
+<ul>
+  <% @laereplaner.each do |laereplan| %>
+    <li><%= link_to laereplan.tittel, laereplan_path(laereplan) %></li>
+  <% end %>
+</ul>
