@@ -1,21 +1,13 @@
-<h1>Listing laereplaner</h1>
+<h1>Søk via læreplaner</h1>
+
 
 <table>
   <tr>
-    <th>Uuid</th>
-    <th>Kode</th>
-    <th>Tittel</th>
-
+    <td>Læreplan:</td>
+    <td><%= select_tag('laereplaner', options_from_collection_for_select(@laereplaner, :id, :tittel)) %></td>
   </tr>
-
-<% for laereplan in @laereplaner %>
-  <tr>
-    <td><%=h laereplan.uuid %></td>
-    <td><%=h laereplan.kode %></td>
-    <td><%=h laereplan.tittel %></td>
-  </tr>
-<% end %>
 </table>
 
-<br />
 
+<h2>Kompetansemål</h2>
+<%= render :partial => '/kompetansemaal/kompetansemaal' %>

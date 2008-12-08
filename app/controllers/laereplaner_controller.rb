@@ -3,6 +3,7 @@ class LaereplanerController < ApplicationController
   # GET /laereplaner.xml
   def index
     @laereplaner = Laereplan.find(:all)
+    @kompetansemaal = []
 
     respond_to do |format|
       format.html # index.html.erb
