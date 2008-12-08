@@ -25,6 +25,7 @@ class Kompetansemaal < ActiveRecord::Base
 private
 
   def koble_kompetansemaalsett
-    kompetansemaalsett << Kompetansemaalsett.find_by_uuid(kompetansemaalsett_uuid)
+    r = Kompetansemaalsett.find_by_uuid(kompetansemaalsett_uuid)
+    kompetansemaalsett << r unless r.nil?
   end
 end

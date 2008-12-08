@@ -17,8 +17,9 @@ describe Laereplan do
     
     it "should have unique uuid" do
       Laereplan.create!(@valid_attributes)
-      invalid_laereplan = Laereplan.new(@valid_attributes)
-      invalid_laereplan.should_not be_valid
+      lambda do
+        Laereplan.create!(@valid_attributes)
+      end.should raise_error
     end
   end
   

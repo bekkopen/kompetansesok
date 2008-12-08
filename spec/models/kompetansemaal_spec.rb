@@ -8,15 +8,16 @@ describe Kompetansemaal do
     }
   end
 
-  it "should accssept valid attributes" do
-    @kompetansemaal = Kompetansemaal.create!(@validattribute)
-  end
-
   describe "validation" do
+    it "should accept valid attributes" do
+      @kompetansemaal = Kompetansemaal.create!(@validattribute)
+    end
+
     it "should have unique uuid" do
       Kompetansemaal.create!(@valid_attributes)
-      invalid_maal = Kompetansemaal.new(@valid_attributes)
-      invalid_maal.should_not be_valid
+      lambda do
+        Kompetansemaal.create!(@valid_attributes)
+      end.should raise_error
     end
   end
 

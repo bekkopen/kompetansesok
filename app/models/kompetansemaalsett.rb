@@ -13,6 +13,7 @@ class Kompetansemaalsett < ActiveRecord::Base
 private
 
   def koble_laereplan
-    laereplaner << Laereplan.find_by_uuid(laereplan_uuid)
+    r = Laereplan.find_by_uuid(laereplan_uuid)
+    laereplaner << r unless r.nil?
   end
 end

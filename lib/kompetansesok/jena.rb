@@ -37,7 +37,7 @@ module Kompetansesok
           :tittel => km.getProperty(@title_property).string,
           :kompetansemaalsett_uuid => km.getProperty(@kompetansemaalsett_har_kompetansemaal_property).resource.to_s
         }
-      end
+      end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
     def laereplaner
@@ -47,7 +47,7 @@ module Kompetansesok
           :kode => r.getProperty(@kode_property).string,
           :tittel => r.getProperty(@title_property).string
         }
-      end
+      end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
     def kompetansemaalsett
@@ -57,7 +57,7 @@ module Kompetansesok
           :tittel => r.getProperty(@title_property).string,
           :laereplan_uuid => r.getProperty(@kompetansemaalsett_etter_laereplan_property).resource.to_s
         }
-      end
+      end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
   end
   

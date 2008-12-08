@@ -52,20 +52,20 @@ if defined?(JRUBY_VERSION)
       end
 
       it "should get uuid" do
-        @kompetansemaal[:uuid].should == "uuid:1d129f24-74f3-409b-b56f-57e36af7445c"
+        @kompetansemaal[:uuid].should == "uuid:7d05a3ca-6195-47a9-b516-d1a78e624e0d"
       end
 
       it "should get tittel" do
-        @kompetansemaal[:tittel].should == "praktisere dans fra ulike kulturer"
+        @kompetansemaal[:tittel].should == "anvende regelverk i den enkelte idrettsaktivitet"
       end
 
       it "should have kompetansemaallsett uuid" do
-        @kompetansemaal[:kompetansemaalsett_uuid].should == "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
+        @kompetansemaal[:kompetansemaalsett_uuid].should == "uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"
       end
 
     end
 
   end
 else
-  puts " * jena_spec må kjøres med Jruby"
+  puts "jena_spec må kjøres med JRuby"
 end
