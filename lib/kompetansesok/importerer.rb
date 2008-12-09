@@ -71,7 +71,7 @@ module Kompetansesok
     end
 
     def filer
-      Dir["#{@import_dir}/*.rdf"]
+      Dir["#{@import_dir}/*.rdf"].sort
     end
   end 
 end

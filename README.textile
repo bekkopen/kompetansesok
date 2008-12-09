@@ -5,8 +5,8 @@ h2. Automatiserte tester
 h3. Funksjonelle tester (Cucumber features)
 
 Kjør features for app:
-<pre>RAILS_ENV=test jruby script/import/import_til_db features/rdf
-rake cucumber:app</pre>
+<pre>rake import:db
+rake features:app</pre>
 
 Kjør features for import:
 <pre>jruby -S rake features:import</pre>
