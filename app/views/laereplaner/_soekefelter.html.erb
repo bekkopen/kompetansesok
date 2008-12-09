@@ -1,9 +1,11 @@
+<%= label('laereplan_sok', 'Læreplan:') %>
 <input id="laereplan_sok" class="ac" value="<%= @laereplan ? @laereplan.tittel : '' %>"/>
-<ul>
-  <% @laereplaner.each do |laereplan| %>
-    <li><%= link_to laereplan.tittel, laereplan_path(laereplan) %></li>
-  <% end %>
-</ul>
+
+  <ul style="display:none">
+    <% @laereplaner.each do |laereplan| %>
+      <li><%= link_to laereplan.tittel, laereplan_path(laereplan) %></li>
+    <% end %>
+  </ul>
 
 <script type="text/javascript">
 var hrefs = {}
