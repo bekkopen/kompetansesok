@@ -4,11 +4,11 @@
 # (all these examples are active by default):
 ActiveSupport::Inflector.inflections do |inflect|
   inflect.plural(/$/, 'er')
-  inflect.plural(/s$/i, 'er')
+  inflect.plural(/e$/i, 'er')
   
   inflect.singular(/er$/, '')
    
   inflect.uncountable %w(kompetansemaalsett kompetansemaal)
   
-  #inflect.irregular
+  inflect.irregular 'hovedomraade','hovedomraader'
 end

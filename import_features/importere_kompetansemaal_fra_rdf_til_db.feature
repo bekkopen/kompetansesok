@@ -8,5 +8,6 @@ Feature: Importere kompetansemål fra RDF til database
     Når 1 RDF-filer lastes inn i databasen
     Så skal det ligge 38 Kompetansemaal i basen
     Og Kompetansemaal skal tilhøre Kompetansemaalsett
+    Og Kompetansemaal skal tilhøre Hovedomraade
 
 

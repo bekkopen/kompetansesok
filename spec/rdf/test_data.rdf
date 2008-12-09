@@ -11,7 +11,6 @@
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:7c5083cf-87e1-429b-9e6f-75e2faa6013e">
-    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2bd30a81-e4a9-439d-8706-161682c1e95b"/>
     <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"/>
     <ns:title>gjøre rede for lokale friluftslivstradisjoner</ns:title>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
