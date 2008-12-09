@@ -43,6 +43,10 @@ if defined?(JRUBY_VERSION)
       it "should contain laereplan uuid" do
         @kompetansemaalsett[:laereplan_uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
       end
+      
+      it "should contain trinn uuid" do
+        @kompetansemaalsett[:trinn_uuid].should == "http://psi.udir.no/laereplan/aarstrinn/vg1"
+      end
     end
     
     describe "hovedomraader" do
@@ -86,6 +90,20 @@ if defined?(JRUBY_VERSION)
         @kompetansemaal[:hovedomraade_uuid].should == "uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"
       end
 
+    end
+    
+    describe "trinn" do
+      before :each do
+        @trinn = @jena.trinn[0]
+      end
+      
+      it "should get uuid" do
+        @trinn[:uuid].should == "http://psi.udir.no/laereplan/aarstrinn/vg1"
+      end
+
+      it "should get tittel" do
+        @trinn[:tittel].should == "Videregående trinn 1"
+      end
     end
 
   end

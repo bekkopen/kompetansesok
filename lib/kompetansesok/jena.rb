@@ -15,6 +15,7 @@ module Kompetansesok
       @kompetansemaalsett_har_kompetansemaal_property = @model.getProperty(GREP_NS, 'kompetansemaalsett_har_kompetansemaal')
       @kompetansemaalsett_etter_laereplan_property    = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_laereplan')
       @tilhoerer_hovedomraade_property                = @model.getProperty(GREP_NS, 'tilhoerer_hovedomraade')
+      @kompetansemaalsett_etter_aarstrinn_property    = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_aarstrinn')
     end
     
     def les_rdf_fil(rdf_fil)
@@ -56,18 +57,32 @@ module Kompetansesok
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
+    # Kompetansemaalsett trenger ikke ha trinn
     def kompetansemaalsett
       @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
+        trinn_referanse = r.getProperty(@kompetansemaalsett_etter_aarstrinn_property)
+        trinn_uuid = trinn_referanse.resource.to_s unless trinn_referanse.nil?
+  
         { 
           :uuid => r.to_s,
           :tittel => r.getProperty(@title_property).string,
-          :laereplan_uuid => r.getProperty(@kompetansemaalsett_etter_laereplan_property).resource.to_s
+          :laereplan_uuid => r.getProperty(@kompetansemaalsett_etter_laereplan_property).resource.to_s,
+          :trinn_uuid => trinn_uuid || nil
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
     def hovedomraader
       @model.listObjectsOfProperty(@tilhoerer_hovedomraade_property). map do |r|
+        {
+          :uuid => r.to_s,
+          :tittel => r.getProperty(@title_property).string
+        }   
+      end.sort{|a, b| a[:tittel] <=> b[:tittel]}
+    end
+    
+    def trinn
+      @model.listObjectsOfProperty(@kompetansemaalsett_etter_aarstrinn_property). map do |r|
         {
           :uuid => r.to_s,
           :tittel => r.getProperty(@title_property).string

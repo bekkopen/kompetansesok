@@ -19,6 +19,14 @@ class Kompetansemaal < ActiveRecord::Base
     kompetansemaalsett.empty? ? "" : kompetansemaalsett.first.tittel
   end
   
+  def kompetansemaalsett_trinn
+    if(kompetansemaalsett.empty? || kompetansemaalsett.first.trinn.nil?)
+      ""
+    else
+      kompetansemaalsett.first.trinn.tittel
+    end
+  end
+  
   def hovedomraade_tittel
     hovedomraader.empty? ? "" : hovedomraader.first.tittel
   end

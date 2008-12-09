@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe Kompetansemaal do
   before(:each) do
     @vaidattribute = {
-      :tittel => "Kompetanse maal tittel",
+      :tittel => "Kompetansemaaltittel",
       :uuid => "adfg"
     }
   end
@@ -81,6 +81,12 @@ describe Kompetansemaal do
     it "should have a blank kompetansemaalsett_tittel if kompetansemaalsett is nil" do
       @kompetansemaal.should_receive(:kompetansemaalsett).and_return([])
       @kompetansemaal.kompetansemaalsett_tittel.should == ""
+    end
+    
+    it "should have kompetansemaalsett_trinn" do
+      @kompetansemaalsett.trinn = Trinn.new(:tittel => "trinntittel")
+      @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
+      @kompetansemaal.kompetansemaalsett_trinn.should == "trinntittel"
     end
     
     it "should have hovedomraade_tittel" do

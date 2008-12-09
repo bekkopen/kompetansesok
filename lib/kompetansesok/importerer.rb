@@ -64,7 +64,9 @@ module Kompetansesok
         Kompetansemaalsett.delete_all
         Hovedomraade.delete_all
         Laereplan.delete_all
-
+        Trinn.delete_all
+        
+        Trinn.create!(jena.trinn)
         Laereplan.create!(jena.laereplaner)
         Hovedomraade.create!(jena.hovedomraader)
         Kompetansemaalsett.create!(jena.kompetansemaalsett)
