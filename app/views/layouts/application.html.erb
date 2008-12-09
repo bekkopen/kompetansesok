@@ -4,76 +4,28 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <%= javascript_include_tag('jquery-1.2.6.min', 'jquery.autocomplete.min') %>
-    <%= stylesheet_link_tag('structure', 'udir', 'application', 'jquery.autocomplete') %>
+    <%= stylesheet_link_tag('screen') %>
     <title>Kompetansesøk</title>
   </head>
-	<body>
-		<div id="hovedgrid">
-			<div id="rammeTopp">
-				<img src="images/topLeftCorner.gif" alt="" width="30" height="30" />
-			</div>
-			<div id="rammeVenstre">
-				<div id="rammeHoyre">
-					<div id="hovedbakgrunn">
-						<div id="topBar">
-							<img src="images/logo.gif" alt="Utdanningsdirektoratet" />
-							<div id="sok" style="text-align:right">
-								<img src="images/searchBackground.gif" />
-							</div>
-						</div>
-						<div id="venstrekolonne">
-							<ul class="venstrenav">
-								<li class="start">Velg tema
-								</li>
-								<li>
-									<a href="#">Brukerundersøkelser</a>
-								</li>
-								<li>
-									<a href="#">Eksamen</a>
-								</li>
-							</ul>
-							<div id="kontaktinfo">
-								<h3>
-									Kontaktinformasjon
-								</h3>
-								<p>
-									Tlf: 23 30 12 00
-								</p>
-								<p>
-									Faks: 23 30 12 99
-								</p>
-								<p>
-									E-post: <a href="mailto:post@utdanningsdirektoratet.no">post@ utdanningsdirektoratet.no</a>
-								</p>
-							</div>
-							<div class="leftSpace">
-								&nbsp;
-							</div>
-						</div>
-						<div id="innhold">
-							<div id="hovedinnhold">
-								<%= yield %>
-							</div>
-						</div>
-						<div id="hoyrekolonne">
-							<div style="background-color:#ffffff;">
-								<div class="greplogo">
-									<img src="/images/grep.gif" border="0" alt="Grep logo" />
-								</div>
-							</div>
-						</div>
-						<div class="clearing">
-							&nbsp;
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="rammeBunn">
-				<img src="/images/udir/bottomLeftCorner.gif" alt="" width="30" height="32" />
-			</div>
-			<div id="kolofon">
-				Ansvarlig redaktør: Helge Lund&nbsp;&nbsp;&nbsp;Redaktør: Helene Sommerseth&nbsp;&nbsp;&nbsp;E-post til redaksjonen: <a href="mailto:redaksjonen@udir.no">redaksjonen@udir.no</a>
-			</div>
-		</div>
-	</body>
+  <body>
+	<div id="container">
+	  <div id="header">
+	  	<img src="/images/logo.gif" alt="udir logo">
+	  </div>
+	  <div id="branding_bar">
+		<img src="/images/searchBackground.gif" alt="backgroung image">
+	  </div>
+	  <div id="nav_container">
+	  	<ul id="nav_list">
+		  <li><a href="#">Søk 1</a></li>
+		  <li><a href="#">Søk 2</a></li>
+		  <li><a href="#">Søk 3</a></li>
+		  <li><a href="#">Avansert søk</a></li>
+		</ul>
+	  </div>
+	  <div id="content">
+	    <%= yield %>
+	  </div>
+	</div>
+  </body>
 </html>
