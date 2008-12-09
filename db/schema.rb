@@ -9,7 +9,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081205140509) do
+ActiveRecord::Schema.define(:version => 20081209083019) do
+
+  create_table "hovedomraader", :force => true do |t|
+    t.string   "uuid"
+    t.string   "tittel"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "hovedomraader", ["uuid"], :name => "index_hovedomraader_on_uuid"
+
+  create_table "hovedomraader_kompetansemaal", :id => false, :force => true do |t|
+    t.integer  "hovedomraade_id",   :null => false
+    t.integer  "kompetansemaal_id", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "hovedomraader_kompetansemaal", ["hovedomraade_id"], :name => "index_hovedomraader_kompetansemaal_on_hovedomraade_id"
+  add_index "hovedomraader_kompetansemaal", ["kompetansemaal_id"], :name => "index_hovedomraader_kompetansemaal_on_kompetansemaal_id"
 
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"

@@ -62,9 +62,11 @@ module Kompetansesok
       ActiveRecord::Base.transaction do
         Kompetansemaal.delete_all
         Kompetansemaalsett.delete_all
+        Hovedomraade.delete_all
         Laereplan.delete_all
 
         Laereplan.create!(jena.laereplaner)
+        Hovedomraade.create!(jena.hovedomraader)
         Kompetansemaalsett.create!(jena.kompetansemaalsett)
         Kompetansemaal.create!(jena.kompetansemaal)
       end

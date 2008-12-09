@@ -25,6 +25,7 @@ describe Kompetansemaal do
     before :each do
       @laereplan = Laereplan.new
       @kompetansemaalsett = Kompetansemaalsett.new
+      @hovedomraade = Hovedomraade.new
       @kompetansemaal = Kompetansemaal.new
     end
 
@@ -39,13 +40,14 @@ describe Kompetansemaal do
       @kompetansemaal.laereplan.should == nil
     end
 
-    it "should have kompetansemaalsett" do
-      @kompetansemaal.kompetansemaalsett.should be_empty
-    end
-
     it "should have a list of kompetansemaalsett" do
       @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
       @kompetansemaal.kompetansemaalsett.length == 1
+    end
+
+    it "should have a list of hovedomraader" do
+      @kompetansemaal.hovedomraader << @hovedomraade
+      @kompetansemaal.hovedomraader.length == 1
     end
 
   end
@@ -54,14 +56,15 @@ describe Kompetansemaal do
     before :each do
       @laereplan = Laereplan.new
       @kompetansemaalsett = Kompetansemaalsett.new
+      @hovedomraade = Hovedomraade.new
       @kompetansemaal = Kompetansemaal.new
     end
 
-    it "should have laereplan_tittel from laereplan" do
+    it "should have laereplan_tittel" do
       @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
       @kompetansemaalsett.laereplaner << @laereplan
-      @laereplan.tittel = "tittel"
-      @kompetansemaal.laereplan_tittel.should == "tittel"
+      @laereplan.tittel = "læreplantittel"
+      @kompetansemaal.laereplan_tittel.should == "læreplantittel"
     end
 
     it "should have a blank laereplan_tittel if laereplan is nil" do
@@ -69,15 +72,26 @@ describe Kompetansemaal do
       @kompetansemaal.laereplan_tittel.should == ""
     end
 
-    it "should have kompetansemaalsett_tittel from kompetansemaalsett" do
-      @kompetansemaalsett.tittel = "kompetansemaalsett tittel"
+    it "should have kompetansemaalsett_tittel" do
+      @kompetansemaalsett.tittel = "kompetansemålsettittel"
       @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
-      @kompetansemaal.kompetansemaalsett_tittel.should == "kompetansemaalsett tittel"
+      @kompetansemaal.kompetansemaalsett_tittel.should == "kompetansemålsettittel"
     end
 
     it "should have a blank kompetansemaalsett_tittel if kompetansemaalsett is nil" do
       @kompetansemaal.should_receive(:kompetansemaalsett).and_return([])
       @kompetansemaal.kompetansemaalsett_tittel.should == ""
+    end
+    
+    it "should have hovedomraade_tittel" do
+      @hovedomraade.tittel = "hovedområdetittel"
+      @kompetansemaal.hovedomraader << @hovedomraade
+      @kompetansemaal.hovedomraade_tittel.should == "hovedområdetittel"
+    end
+
+    it "should have a blank kompetansemaalsett_tittel if kompetansemaalsett is nil" do
+      @kompetansemaal.should_receive(:hovedomraader).and_return([])
+      @kompetansemaal.hovedomraade_tittel.should == ""
     end
 
   end

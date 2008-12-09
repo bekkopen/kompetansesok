@@ -41,14 +41,33 @@ if defined?(JRUBY_VERSION)
       end
 
       it "should contain laereplan uuid" do
-          @kompetansemaalsett[:laereplan_uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
+        @kompetansemaalsett[:laereplan_uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
       end
+    end
+    
+    describe "hovedomraader" do
+      before :each do
+        @hoovedomraade = @jena.hovedomraader[0]
+      end
+      
+      it "should get uuid" do
+        @hoovedomraade[:uuid].should == "uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"
+      end
+
+      it "should get tittel" do
+        @hoovedomraade[:tittel].should == "Basistrening"
+      end
+      
     end
 
     describe "kompetansemaal" do
       before(:each) do
-        @kompetansemaal = @jena.kompetansemaal[0]
-
+        @alle_kompetansemaal = @jena.kompetansemaal
+        @kompetansemaal = @alle_kompetansemaal[0]
+      end
+      
+      it "should get all kompetansemaal, with no duplicates" do
+        @alle_kompetansemaal.length.should == 38
       end
 
       it "should get uuid" do
@@ -61,6 +80,10 @@ if defined?(JRUBY_VERSION)
 
       it "should have kompetansemaallsett uuid" do
         @kompetansemaal[:kompetansemaalsett_uuid].should == "uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"
+      end
+      
+      it "should have hovedomraade uuid" do
+        @kompetansemaal[:hovedomraade_uuid].should == "uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"
       end
 
     end

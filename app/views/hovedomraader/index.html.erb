@@ -1,0 +1,17 @@
+<h1>Listing hovedomraader</h1>
+
+<table>
+  <tr>
+    <th>Uuid</th>
+    <th>Tittel</th>
+  </tr>
+
+<% for hovedomraade in @hovedomraader %>
+  <tr>
+    <td><%=h hovedomraade.uuid %></td>
+    <td><%=h hovedomraade.tittel %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
