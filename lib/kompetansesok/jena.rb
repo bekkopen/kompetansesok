@@ -32,17 +32,13 @@ module Kompetansesok
     end
     
     # Returnerer alle kompetansemaal som Array av Hash. Hver Hash er et key-value par med primitive verdier.
-    # Det finnes kompetansemaal uten hovedomraade
     def kompetansemaal
       @model.listResourcesWithProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
-        hovedomraade_referanse = r.getProperty(@tilhoerer_hovedomraade_property)
-        hovedomraade_uuid = hovedomraade_referanse.resource.to_s unless hovedomraade_referanse.nil?
-        
         {
           :uuid => r.to_s,
           :tittel => r.getProperty(@title_property).string,
-          :kompetansemaalsett_uuid => r.getProperty(@kompetansemaalsett_har_kompetansemaal_property).resource.to_s,
-          :hovedomraade_uuid => hovedomraade_uuid || nil
+          :kompetansemaalsett_uuids => get_uuids(r, @kompetansemaalsett_har_kompetansemaal_property),
+          :hovedomraade_uuids => get_uuids(r, @tilhoerer_hovedomraade_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -62,11 +58,11 @@ module Kompetansesok
       @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
         trinn_referanse = r.getProperty(@kompetansemaalsett_etter_aarstrinn_property)
         trinn_uuid = trinn_referanse.resource.to_s unless trinn_referanse.nil?
-  
+        
         { 
           :uuid => r.to_s,
           :tittel => r.getProperty(@title_property).string,
-          :laereplan_uuid => r.getProperty(@kompetansemaalsett_etter_laereplan_property).resource.to_s,
+          :laereplan_uuids => get_uuids(r, @kompetansemaalsett_etter_laereplan_property),
           :trinn_uuid => trinn_uuid || nil
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
@@ -88,6 +84,12 @@ module Kompetansesok
           :tittel => r.getProperty(@title_property).string
         }   
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
+    end
+    
+    private
+    
+    def get_uuids(resource, property)
+      resource.listProperties(property).map {|p| p.resource.to_s}
     end
     
   end

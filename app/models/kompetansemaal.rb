@@ -4,7 +4,7 @@ class Kompetansemaal < ActiveRecord::Base
   
   validates_uniqueness_of :uuid
 
-  attr_accessor :kompetansemaalsett_uuid, :hovedomraade_uuid
+  attr_accessor :kompetansemaalsett_uuids, :hovedomraade_uuids
   after_create :koble_kompetansemaalsett, :koble_hoovedomraade
 
   def laereplan
@@ -31,15 +31,19 @@ class Kompetansemaal < ActiveRecord::Base
     hovedomraader.empty? ? "" : hovedomraader.first.tittel
   end
   
-private
+  private
 
   def koble_kompetansemaalsett
-    r = Kompetansemaalsett.find_by_uuid(kompetansemaalsett_uuid)
-    kompetansemaalsett << r unless r.nil?
+    kompetansemaalsett_uuids.each do |kompetansemaalsett_uuid|
+      r = Kompetansemaalsett.find_by_uuid(kompetansemaalsett_uuid)
+      kompetansemaalsett << r unless r.nil?
+    end
   end
   
   def koble_hoovedomraade
-    r = Hovedomraade.find_by_uuid(hovedomraade_uuid) unless hovedomraade_uuid.nil?
-    hovedomraader << r unless r.nil?
+    hovedomraade_uuids.each do |hovedomraade_uuid|
+      r = Hovedomraade.find_by_uuid(hovedomraade_uuid) unless hovedomraade_uuid.nil?
+      hovedomraader << r unless r.nil?
+    end
   end
 end

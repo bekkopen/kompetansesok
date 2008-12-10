@@ -4,18 +4,20 @@ class Kompetansemaalsett < ActiveRecord::Base
   belongs_to :trinn
   
   validates_uniqueness_of :uuid
-  attr_accessor :laereplan_uuid, :trinn_uuid
+  attr_accessor :laereplan_uuids, :trinn_uuid
   after_create :koble_laereplan, :koble_trinn
   
   def laereplan
     laereplaner.first
   end
 
-private
+  private
 
   def koble_laereplan
-    l = Laereplan.find_by_uuid(laereplan_uuid)
-    laereplaner << l unless l.nil?
+    laereplan_uuids.each do |laereplan_uuid|
+      l = Laereplan.find_by_uuid(laereplan_uuid)
+      laereplaner << l unless l.nil?
+    end
   end
   
   def koble_trinn
