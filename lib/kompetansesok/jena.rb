@@ -55,15 +55,12 @@ module Kompetansesok
     
     # Kompetansemaalsett trenger ikke ha trinn
     def kompetansemaalsett
-      @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
-        trinn_referanse = r.getProperty(@kompetansemaalsett_etter_aarstrinn_property)
-        trinn_uuid = trinn_referanse.resource.to_s unless trinn_referanse.nil?
-        
+      @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|        
         { 
           :uuid => r.to_s,
           :tittel => r.getProperty(@title_property).string,
           :laereplan_uuids => get_uuids(r, @kompetansemaalsett_etter_laereplan_property),
-          :trinn_uuid => trinn_uuid || nil
+          :trinn_uuids => get_uuids(r, @kompetansemaalsett_etter_aarstrinn_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end

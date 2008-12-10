@@ -21,10 +21,10 @@ class Kompetansemaal < ActiveRecord::Base
   end
   
   def kompetansemaalsett_trinn
-    if(kompetansemaalsett.empty? || kompetansemaalsett.first.trinn.nil?)
+    if(kompetansemaalsett.empty? || kompetansemaalsett.first.trinn.first.nil?)
       ""
     else
-      kompetansemaalsett.first.trinn.tittel
+      kompetansemaalsett.first.trinn.first.tittel
     end
   end
   

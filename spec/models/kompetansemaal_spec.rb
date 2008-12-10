@@ -84,7 +84,7 @@ describe Kompetansemaal do
     end
     
     it "should have kompetansemaalsett_trinn" do
-      @kompetansemaalsett.trinn = Trinn.new(:tittel => "trinntittel")
+      @kompetansemaalsett.trinn << Trinn.new(:tittel => "trinntittel")
       @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
       @kompetansemaal.kompetansemaalsett_trinn.should == "trinntittel"
     end

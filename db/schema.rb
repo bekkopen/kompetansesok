@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081209130721) do
+ActiveRecord::Schema.define(:version => 20081210130259) do
 
   create_table "hovedomraader", :force => true do |t|
     t.string   "uuid"
@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(:version => 20081209130721) do
     t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "trinn_id"
   end
 
   add_index "kompetansemaalsett", ["uuid"], :name => "index_kompetansemaalsett_on_uuid"
@@ -68,6 +67,16 @@ ActiveRecord::Schema.define(:version => 20081209130721) do
 
   add_index "kompetansemaalsett_laereplaner", ["kompetansemaalsett_id"], :name => "index_kompetansemaalsett_laereplaner_on_kompetansemaalsett_id"
   add_index "kompetansemaalsett_laereplaner", ["laereplan_id"], :name => "index_kompetansemaalsett_laereplaner_on_laereplan_id"
+
+  create_table "kompetansemaalsett_trinn", :id => false, :force => true do |t|
+    t.integer  "kompetansemaalsett_id", :null => false
+    t.integer  "trinn_id",              :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "kompetansemaalsett_trinn", ["kompetansemaalsett_id"], :name => "index_kompetansemaalsett_trinn_on_kompetansemaalsett_id"
+  add_index "kompetansemaalsett_trinn", ["trinn_id"], :name => "index_kompetansemaalsett_trinn_on_trinn_id"
 
   create_table "laereplaner", :force => true do |t|
     t.string   "kode"

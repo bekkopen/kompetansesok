@@ -44,8 +44,8 @@ if defined?(JRUBY_VERSION)
         @kompetansemaalsett[:laereplan_uuids].should == ["uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0", "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"]
       end
       
-      it "should contain trinn uuid" do
-        @kompetansemaalsett[:trinn_uuid].should == "http://psi.udir.no/laereplan/aarstrinn/vg1"
+      it "should contain an array of trinn uuids" do
+        @kompetansemaalsett[:trinn_uuids].should == ["http://psi.udir.no/laereplan/aarstrinn/vg1"]
       end
     end
     

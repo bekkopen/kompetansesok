@@ -1,10 +1,10 @@
 class Kompetansemaalsett < ActiveRecord::Base
   has_and_belongs_to_many :laereplaner
   has_and_belongs_to_many :kompetansemaal
-  belongs_to :trinn
+  has_and_belongs_to_many :trinn
   
   validates_uniqueness_of :uuid
-  attr_accessor :trinn_uuid
+  attr_accessor_with_default :trinn_uuids, []
   attr_accessor_with_default :laereplan_uuids, []
   after_create :koble_laereplan, :koble_trinn
   
@@ -22,8 +22,9 @@ class Kompetansemaalsett < ActiveRecord::Base
   end
   
   def koble_trinn
-    t = Trinn.find_by_uuid(trinn_uuid) unless trinn_uuid.nil?
-    self.trinn = t unless t.nil?
-    self.save!
+    trinn_uuids.each do |trinn_uuid|
+      t = Trinn.find_by_uuid(trinn_uuid)
+      trinn << t unless t.nil?
+    end
   end
 end

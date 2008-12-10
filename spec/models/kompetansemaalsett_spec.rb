@@ -40,7 +40,9 @@ describe Kompetansemaalsett do
     end
     
     it "should have trinn" do
-      @kompetansemaalsett.trinn.should == nil
+      trinn = Trinn.new
+      @kompetansemaalsett.trinn << trinn
+      @kompetansemaalsett.trinn.should == [trinn]
     end
   end
   
