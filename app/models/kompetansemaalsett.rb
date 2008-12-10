@@ -4,7 +4,8 @@ class Kompetansemaalsett < ActiveRecord::Base
   belongs_to :trinn
   
   validates_uniqueness_of :uuid
-  attr_accessor :laereplan_uuids, :trinn_uuid
+  attr_accessor :trinn_uuid
+  attr_accessor_with_default :laereplan_uuids, []
   after_create :koble_laereplan, :koble_trinn
   
   def laereplan

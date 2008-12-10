@@ -4,7 +4,8 @@ class Kompetansemaal < ActiveRecord::Base
   
   validates_uniqueness_of :uuid
 
-  attr_accessor :kompetansemaalsett_uuids, :hovedomraade_uuids
+  attr_accessor_with_default :kompetansemaalsett_uuids, []
+  attr_accessor_with_default :hovedomraade_uuids, []
   after_create :koble_kompetansemaalsett, :koble_hoovedomraade
 
   def laereplan
