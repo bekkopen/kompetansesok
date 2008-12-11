@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :hovedomraader
+  map.resources :laereplansok
 
+  map.resources :hovedomraader
 
   map.resources :kompetansemaalsett
   map.resources :kompetansemaal
