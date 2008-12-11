@@ -1,13 +1,15 @@
 
 <table>
-  <% form_tag( laereplansok_index_path ) do %>
+  <% form_tag(laereplansok_index_path, :method => "get") do %>
     <tr>
+
       <td> <%= label_tag :laereplan_kode, "Læreplankode" %> </td>
       <td> <%= text_field :laereplansok, :laereplan_kode %> </td>
     </tr>
     <tr>
       <td> <%= label_tag :laereplan_tittel, "Læreplantittel" %> </td>
       <td> <%= text_field :laereplansok, :laereplan_tittel %> </td>
+
     </tr>
     <tr>
       <td> <%= submit_tag "Søk" %> </td>
@@ -15,7 +17,6 @@
   <%  end %>
 
 </table>
-  
 <br />
 
 <% unless @kompetansemaal.blank? %>

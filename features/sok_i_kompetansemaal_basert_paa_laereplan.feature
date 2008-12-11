@@ -7,23 +7,34 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
     Gitt at jeg er på læreplan søkesiden
     Når jeg fyller inn laereplan_tittel "Læreplan i musikk, samisk plan"
     Og jeg klikker søk
-    Så skal jeg se 56 kompetansemål
+    Så skal jeg se 10 kompetansemål
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                       |
-      | utforske ulike musikalske uttrykk gjennom å improvisere med lyd og bevegelse |
-      | delta i framføring med sang, samspill og bevegelse                           |
-      | samtale om et musikkstykkes klang, melodi, rytme, dynamikk og tempo          |
-      | gjenkjenne lyden av og kunne navn på noen instrumenter                       |
+      | beskrive hvordan den samiske musikken og dens historie er knyttet til samisk fortellertradisjon, historie, mytologi og kristendom |
+      | gjenkjenne og benevne forskjellige instrumenter og ensembler innenfor ulike sjangere |
+      | gjøre rede for regler for opphavsrett knyttet til bruk av musikk |
+
+
+   Scenario: Ved å søke på skal jeg kunne paginere
+    Gitt at jeg er på læreplan søkesiden
+    Når jeg fyller inn laereplan_tittel "fordypning i samisk"
+    Og jeg klikker søk
+    Så skal jeg se 10 kompetansemål
+
+   Scenario: Navigere i søkeresultat
+    GittScenario: Ved å søke på skal jeg kunne paginere
+    Når jeg trykker på side 2
+    Så skal jeg se 6 kompetansemål
 
 
   Scenario: Søke etter kompetansemål via læreplankode
     Gitt at jeg er på læreplan søkesiden
     Når jeg fyller inn laereplan_kode "NOK2-01"
     Og jeg klikker søk
-    Så skal jeg se 39 kompetansemål
+    Så skal jeg se 10 kompetansemål
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                                                          |
-      | gjøre rede for regnskapslovens krav til miljørapportering                                                       |
-      | vurdere lønnsomhet, likviditet og finansiering                                                                  |
-      | gjøre rede for hva innovasjon og entreprenørskap betyr for verdiskaping og sysselsetting i dagens samfunn       |
-      | gjøre rede for hvordan bedrifter kan øke endringsberedskapen gjennom kompetanseutvikling og organisasjonslæring |
+      | Fastsettes høsten 2007                                                                                          |
+      | beherske noteskrift, besifringsnotasjon og vanlige musikkuttrykk                                                |
+      | kjenne til samisk og norsk salmetradisjon                                                                       |
+

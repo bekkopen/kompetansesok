@@ -58,6 +58,7 @@ men burde være likt for mange andre distiubsjoner
 ** rspec-rails
 ** mysql
 ** nokogiri(se install nokogiri)
+** mislav-will_paginate --source http://gems.github.com
 
 Det var alt ;)
 

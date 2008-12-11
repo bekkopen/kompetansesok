@@ -16,6 +16,11 @@ Naar "jeg klikker søk" do
   click_button "Søk"
 end
 
+Naar /^jeg trykker på side (\d+)$/ do |n|
+  click_link n.to_s
+end
+
+
 Saa /^skal jeg se (\d+) kompetansemål$/ do |n|
   response.should have_selector('table#kompetansemaal') { |tables|
     tables.length.should == 1
