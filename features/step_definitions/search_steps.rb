@@ -9,9 +9,8 @@ Gitt /^at jeg er på læreplan søkesiden$/ do
 end
 
 Naar /^jeg søker etter "(.*)"$/ do |sok|
-  fill_in 'laereplansok[laereplan_tittel]', :with => sok.to_s
-  click_button "Søk"
-  
+  fill_in 'laereplansok[laereplan_tittel]', :with => sok.to_s 
+  click_button "Søk" 
 end
 
 Naar /^jeg velger Læreplan "(.*)"$/ do |laereplan_tittel|

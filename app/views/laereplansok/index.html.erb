@@ -20,8 +20,11 @@
 
 </table>
   
-<%= render :partial => 'kompetansemaal/list' %>
-  
 <br />
+
+<% unless @kompetansemaal.blank? %>
+  <%= render :partial => 'kompetansemaal/list' %>
+<% end %>
+
 
 
