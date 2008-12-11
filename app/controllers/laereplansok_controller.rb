@@ -4,7 +4,7 @@ class LaereplansokController < ApplicationController
     if not params[:laereplansok]
       @kompetansemaal = [].paginate
     else
-      @laereplansok = Laereplansok.new :laereplan_tittel => params[:laereplansok][:laereplan_tittel], :page => params[:page]
+      @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
       @kompetansemaal = @laereplansok.kompetansemaal
     end
   

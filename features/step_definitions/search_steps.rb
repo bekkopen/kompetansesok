@@ -8,13 +8,12 @@ Gitt /^at jeg er på læreplan søkesiden$/ do
   visit laereplansok_index_path
 end
 
-Naar /^jeg søker etter "(.*)"$/ do |sok|
-  fill_in 'laereplansok[laereplan_tittel]', :with => sok.to_s
-  click_button "Søk"
+Naar /^jeg fyller inn (\w+) "(.*)"$/ do |felt, sok|
+  fill_in "laereplansok[#{felt}]", :with => sok.to_s  
 end
 
-Naar /^jeg velger Læreplan "(.*)"$/ do |laereplan_tittel|
-  click_link laereplan_tittel
+Naar "jeg klikker søk" do
+  click_button "Søk"
 end
 
 Naar /^jeg trykker på side (\d+)$/ do |n|

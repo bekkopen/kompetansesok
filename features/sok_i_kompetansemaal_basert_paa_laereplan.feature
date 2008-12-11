@@ -3,9 +3,10 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
   For å finne et eller flere kompetansemål
   Må jeg kunne se alle kompetansemålene som tilhører en eller flere læreplanen
 
-  Scenario: Søke etter læreplan og vise flere kompetansemål
+  Scenario: Søke etter kompetansemål via læreplantittel
     Gitt at jeg er på læreplan søkesiden
-    Når jeg søker etter "Læreplan i musikk, samisk plan"
+    Når jeg fyller inn laereplan_tittel "Læreplan i musikk, samisk plan"
+    Og jeg klikker søk
     Så skal jeg se 10 kompetansemål
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                       |
@@ -16,12 +17,24 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
 
    Scenario: Ved å søke på skal jeg kunne paginere
     Gitt at jeg er på læreplan søkesiden
-    Når jeg søker etter "fordypning i samisk"
+    Når jeg fyller inn laereplan_tittel "fordypning i samisk"
+    Og jeg klikker søk
     Så skal jeg se 10 kompetansemål
-
-
 
    Scenario: Navigere i søkeresultat
     GittScenario: Ved å søke på skal jeg kunne paginere
     Når jeg trykker på side 2
     Så skal jeg se 6 kompetansemål
+
+
+  Scenario: Søke etter kompetansemål via læreplankode
+    Gitt at jeg er på læreplan søkesiden
+    Når jeg fyller inn laereplan_kode "NOK2-01"
+    Og jeg klikker søk
+    Så skal jeg se 10 kompetansemål
+    Og jeg skal se følgende spesifikke kompetansemål:
+      | tittel                                                                                                          |
+      | Fastsettes høsten 2007                                                                                          |
+      | beherske noteskrift, besifringsnotasjon og vanlige musikkuttrykk                                                |
+      | kjenne til samisk og norsk salmetradisjon                                                                       |
+

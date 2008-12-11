@@ -1,27 +1,27 @@
-<h1>Listing laereplansok</h1>
 
 <table>
   <% form_tag(laereplansok_index_path, :method => "get") do %>
     <tr>
 
-      <td>
-        <%= label_tag :laereplan_tittel, "Søk i læreplan tittel" %>
-      </td>
-      <td>
-        <%= text_field :laereplansok, :laereplan_tittel %>
-      </td>
+      <td> <%= label_tag :laereplan_kode, "Læreplankode" %> </td>
+      <td> <%= text_field :laereplansok, :laereplan_kode %> </td>
     </tr>
     <tr>
-      <td>
-      <%= submit_tag "Søk" %>
-      </td>
+      <td> <%= label_tag :laereplan_tittel, "Læreplantittel" %> </td>
+      <td> <%= text_field :laereplansok, :laereplan_tittel %> </td>
+
+    </tr>
+    <tr>
+      <td> <%= submit_tag "Søk" %> </td>
     </tr>
   <%  end %>
 
 </table>
-  
-<%= render :partial => 'kompetansemaal/list' %>
-
 <br />
+
+<% unless @kompetansemaal.blank? %>
+  <%= render :partial => 'kompetansemaal/list' %>
+<% end %>
+
 
 
