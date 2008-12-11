@@ -1,30 +1,48 @@
 class Laereplansok
-  attr_accessor :laereplan_tittel, :laereplan_kode
+  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade_uuid]
+
+  @@soekefelter.each do |f|
+    class_eval do
+      attr_accessor f
+    end
+  end
   
   def initialize(params = {})
     self.laereplan_tittel = params[:laereplan_tittel]
     self.laereplan_kode = params[:laereplan_kode]
+    self.hovedomraade_uuid = params[:hovedomraade_uuid]
     @page = params[:page]
     @per_page = 10
   end
 
   def kompetansemaal
-    if @laereplan_tittel == nil || @laereplan_tittel.length == 0
+    if empty_search?
       Kompetansemaal.paginate :per_page => @per_page, :page => @page
     else
-      searchForKompetansemaal.paginate :per_page => @per_page, :page => @page
+      search_for_kompetansemaal.paginate :per_page => @per_page, :page => @page
     end
+  end
+
+  def empty_search?
+    empty = true
+    @@soekefelter.each do |felt|
+      empty = false unless self.send(felt).blank?
+    end
+    empty
   end
 
   private
 
-  def searchForKompetansemaal
-    Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal, kompetansemaalsett|
-      kompetansemaalsett.any do |k|
+  def search_for_kompetansemaal
+    Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  :hovedomraader, {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal, kompetansemaalsett, hovedomraader|
+      kompetansemaalsett.all do |k|
         k.laereplaner do |l|
           l.tittel =~ parse_text_input(laereplan_tittel)
           l.kode =~ parse_text_input(laereplan_kode)
         end
+      end
+      hovedomraader.all do |hovedomraade| 
+        hovedomraade.uuid =~ parse_text_input(hovedomraade_uuid)
       end
     end
   end

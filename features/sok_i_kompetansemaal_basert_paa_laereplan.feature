@@ -33,8 +33,19 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
     Og jeg klikker søk
     Så skal jeg se 10 kompetansemål
     Og jeg skal se følgende spesifikke kompetansemål:
-      | tittel                                                                                                          |
-      | Fastsettes høsten 2007                                                                                          |
-      | beherske noteskrift, besifringsnotasjon og vanlige musikkuttrykk                                                |
-      | kjenne til samisk og norsk salmetradisjon                                                                       |
+      | tittel                                                                                                                  |
+      | beregne finansieringskostnader, utarbeide forslag til finansiering av ulike prosjekter og begrunne valg av alternativer |
+      | gjøre rede for interessegrupper og drøfte hva som kan utløse interessekonflikter ved fastsettelse av bedrifters mål     |
+
+  Scenario: Søke etter kompetansemål via læreplankode og læreplantittel
+    Gitt at jeg er på læreplan søkesiden
+    Når jeg fyller inn laereplan_kode "IDR"
+    Og jeg fyller inn laereplan_tittel "friluftsliv"
+    Og jeg klikker søk
+    Så skal jeg se 10 kompetansemål
+    Og jeg skal se følgende spesifikke kompetansemål:
+      | tittel                                                                                      |
+      | behandle og vedlikeholde redskap og utstyr slik at det til enhver tid er i orden            |
+      | vurdere betydningen av et godt kosthold ut fra praktiske og ernæringsmessige forhold        |
+
 

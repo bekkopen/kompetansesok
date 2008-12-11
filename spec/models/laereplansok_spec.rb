@@ -8,6 +8,7 @@ describe Laereplansok do
   
   before :each do
     @laereplansok = Laereplansok.new
+    @laereplansok.instance_variable_set(:@per_page,  100000)
   end
   
   it "should return nothing if there is a no matching laereplantittel" do
@@ -31,5 +32,13 @@ describe Laereplansok do
     kompetansemaal = @laereplansok.kompetansemaal
     kompetansemaal.length.should  == 38
   end
+  
+  it "should be possible to search by hovedomraadeuuid" do
+    pending "søke feil"
+    @laereplansok.hovedomraade_uuid = "uuid:78085ca0-5d55-4caa-a3b9-1bf54e720027"
+    kompetansemaal = @laereplansok.kompetansemaal
+    kompetansemaal.length.should  == 5
+  end
+  
 
 end

@@ -16,6 +16,11 @@ Naar "jeg klikker søk" do
   click_button "Søk"
 end
 
+Naar /^jeg velger (\w+) "([^\"]*)"$/ do |felt, hovedomraade|
+  select hovedomraade, :from => "laereplansok[#{felt}]"
+end
+
+
 Naar /^jeg trykker på side (\d+)$/ do |n|
   click_link n.to_s
 end
