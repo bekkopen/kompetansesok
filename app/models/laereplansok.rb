@@ -15,14 +15,14 @@ class Laereplansok
   end
 
   def kompetansemaal
-    if isEmptySearch
+    if empty_search?
       Kompetansemaal.paginate :per_page => @per_page, :page => @page
     else
-      searchForKompetansemaal.paginate :per_page => @per_page, :page => @page
+      search_for_kompetansemaal.paginate :per_page => @per_page, :page => @page
     end
   end
 
-  def isEmptySearch
+  def empty_search?
     empty = true
     @@soekefelter.each do |felt|
       empty = false unless self.send(felt).blank?
@@ -32,13 +32,16 @@ class Laereplansok
 
   private
 
-  def searchForKompetansemaal
-    Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal, kompetansemaalsett|
-      kompetansemaalsett.any do |k|
+  def search_for_kompetansemaal
+    Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  :hovedomraader, {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal, kompetansemaalsett, hovedomraader|
+      kompetansemaalsett.all do |k|
         k.laereplaner do |l|
           l.tittel =~ parse_text_input(laereplan_tittel)
           l.kode =~ parse_text_input(laereplan_kode)
         end
+      end
+      hovedomraader.all do |hovedomraade| 
+        hovedomraade.tittel =~ parse_text_input(hovedomraade_tittel)
       end
     end
   end
