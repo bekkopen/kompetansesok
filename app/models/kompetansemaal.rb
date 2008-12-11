@@ -8,29 +8,6 @@ class Kompetansemaal < ActiveRecord::Base
   attr_accessor_with_default :hovedomraade_uuids, []
   after_create :koble_kompetansemaalsett, :koble_hoovedomraade
 
-  def laereplan
-    kompetansemaalsett.first.laereplan if not kompetansemaalsett.empty?
-  end
-
-  def laereplan_tittel
-    laereplan.nil? ? "": laereplan.tittel
-  end
-
-  def kompetansemaalsett_tittel
-    kompetansemaalsett.empty? ? "" : kompetansemaalsett.first.tittel
-  end
-  
-  def kompetansemaalsett_trinn
-    if(kompetansemaalsett.empty? || kompetansemaalsett.first.trinn.first.nil?)
-      ""
-    else
-      kompetansemaalsett.first.trinn.first.tittel
-    end
-  end
-  
-  def hovedomraade_tittel
-    hovedomraader.empty? ? "" : hovedomraader.first.tittel
-  end
   
   private
 
