@@ -12,9 +12,9 @@
 
     </tr>
     <tr>
-      <td> <%= label_tag :hovedomraade_tittel, "Hovedområde" %></td>
+      <td> <%= label_tag :hovedomraade_uuid, "Hovedområde" %></td>
       <td>
-        <%= select( :laereplansok, :hovedomraade_tittel, @hovedomraader) %>
+        <%= select( :laereplansok, :hovedomraade_uuid, @hovedomraader, { :include_blank => true }) %>
       </td>
     </tr>
     <tr>

@@ -1,5 +1,5 @@
 class Laereplansok
-  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade_tittel]
+  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade_uuid]
 
   @@soekefelter.each do |f|
     class_eval do
@@ -10,6 +10,7 @@ class Laereplansok
   def initialize(params = {})
     self.laereplan_tittel = params[:laereplan_tittel]
     self.laereplan_kode = params[:laereplan_kode]
+    self.hovedomraade_uuid = params[:hovedomraade_uuid]
     @page = params[:page]
     @per_page = 10
   end
@@ -41,7 +42,7 @@ class Laereplansok
         end
       end
       hovedomraader.all do |hovedomraade| 
-        hovedomraade.tittel =~ parse_text_input(hovedomraade_tittel)
+        hovedomraade.uuid =~ parse_text_input(hovedomraade_uuid)
       end
     end
   end
