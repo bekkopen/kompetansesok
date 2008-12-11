@@ -1,13 +1,15 @@
 class LaereplansokController < ApplicationController
 
   def index
-    @kompetansemaal = []
-  end
-
-  def create
-    @laereplansok = Laereplansok.new :laereplan_tittel => params[:laereplansok][:laereplan_tittel]
-    @kompetansemaal = @laereplansok.kompetansemaal
+    if not params[:laereplansok]
+      @kompetansemaal = [].paginate
+    else
+      @laereplansok = Laereplansok.new :laereplan_tittel => params[:laereplansok][:laereplan_tittel], :page => params[:page]
+      @kompetansemaal = @laereplansok.kompetansemaal
+    end
+  
     render :action => "index"
   end
+
 
 end
