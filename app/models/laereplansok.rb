@@ -1,18 +1,18 @@
 class Laereplansok
-  attr_accessor :laereplan_tittel
-
-  def initialize(params)
-    @laereplan_tittel = params[:laereplan_tittel]
-    @kompetansemaalsett_tittel = params[:kompetansemaalsett_tittel]
+  attr_accessor :laereplan_tittel, :laereplan_kode
+  
+  def initialize(params = {})
+    self.laereplan_tittel = params[:laereplan_tittel]
+    self.laereplan_kode = params[:laereplan_kode]
   end
-
   
 
   def kompetansemaal
     Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal, kompetansemaalsett|
       kompetansemaalsett.any do |k|
-        k.laereplaner.any do |l|
-          l.tittel =~ parse_text_input(@laereplan_tittel)
+        k.laereplaner do |l|
+          l.tittel =~ parse_text_input(laereplan_tittel)
+          l.kode =~ parse_text_input(laereplan_kode)
         end
       end
     end
@@ -21,7 +21,7 @@ class Laereplansok
 
   private
   def parse_text_input(text)
-    if not text
+    if text.blank?
       nil
     else
       "%#{text}%"

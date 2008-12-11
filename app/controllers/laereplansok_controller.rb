@@ -5,7 +5,7 @@ class LaereplansokController < ApplicationController
   end
 
   def create
-    @laereplansok = Laereplansok.new :laereplan_tittel => params[:laereplansok][:laereplan_tittel]
+    @laereplansok = Laereplansok.new(params[:laereplansok])
     @kompetansemaal = @laereplansok.kompetansemaal
     render :action => "index"
   end
