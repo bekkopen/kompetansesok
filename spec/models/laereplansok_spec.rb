@@ -32,5 +32,12 @@ describe Laereplansok do
     kompetansemaal = @laereplansok.kompetansemaal
     kompetansemaal.length.should  == 38
   end
+  
+  it "should be possible to search by hovedomraadetittel" do
+    @laereplansok.hovedomraade_tittel = "Feilsøking og diagnose"
+    kompetansemaal = @laereplansok.kompetansemaal
+    kompetansemaal.length.should  == 5
+  end
+  
 
 end
