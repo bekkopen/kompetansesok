@@ -1,5 +1,5 @@
 class Laereplansok
-  @@soekefelter = [:laereplan_tittel, :laereplan_kode]
+  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade_tittel]
 
   @@soekefelter.each do |f|
     class_eval do

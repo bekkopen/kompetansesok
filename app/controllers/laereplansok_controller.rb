@@ -1,6 +1,11 @@
 class LaereplansokController < ApplicationController
 
   def index
+
+    @hovedomraader = Hovedomraade.find(:all).map do |h|
+      [h.tittel, h.uuid]
+    end
+
     if not params[:laereplansok]
       @kompetansemaal = [].paginate
     else

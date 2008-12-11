@@ -12,6 +12,12 @@
 
     </tr>
     <tr>
+      <td> <%= label_tag :hovedomraade_tittel, "Hovedområde" %></td>
+      <td>
+        <%= select( :laereplansok, :hovedomraade_tittel, @hovedomraader) %>
+      </td>
+    </tr>
+    <tr>
       <td> <%= submit_tag "Søk" %> </td>
     </tr>
   <%  end %>
