@@ -1,5 +1,11 @@
 class Laereplansok
-  attr_accessor :laereplan_tittel, :laereplan_kode
+  @@soekefelter = [:laereplan_tittel, :laereplan_kode]
+
+  @@soekefelter.each do |f|
+    class_eval do
+      attr_accessor f
+    end
+  end
   
   def initialize(params = {})
     self.laereplan_tittel = params[:laereplan_tittel]
@@ -9,11 +15,19 @@ class Laereplansok
   end
 
   def kompetansemaal
-    if @laereplan_tittel == nil || @laereplan_tittel.length == 0
+    if isEmptySearch
       Kompetansemaal.paginate :per_page => @per_page, :page => @page
     else
       searchForKompetansemaal.paginate :per_page => @per_page, :page => @page
     end
+  end
+
+  def isEmptySearch
+    empty = true
+    @@soekefelter.each do |felt|
+      empty = false unless self.send(felt).blank?
+    end
+    empty
   end
 
   private

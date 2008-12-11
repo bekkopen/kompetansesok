@@ -8,6 +8,7 @@ describe Laereplansok do
   
   before :each do
     @laereplansok = Laereplansok.new
+    @laereplansok.instance_variable_set(:@per_page,  100000)
   end
   
   it "should return nothing if there is a no matching laereplantittel" do
