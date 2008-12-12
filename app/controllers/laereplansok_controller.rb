@@ -11,9 +11,9 @@ class LaereplansokController < ApplicationController
     else
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
       @kompetansemaal = @laereplansok.kompetansemaal
+      render :action => "index"
     end
-  
-    render :action => "index"
+
   end
 
 
