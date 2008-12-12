@@ -1,5 +1,10 @@
 class Laereplansok
-  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade, :kompetansemaalsett]
+  @@soekefelter =  [:laereplan_tittel, 
+                    :laereplan_kode, 
+                    :hovedomraade, 
+                    :kompetansemaalsett, 
+                    :trinn, 
+                    :kompetansemaal_tittel]
 
   @@soekefelter.each do |f|
     class_eval do
@@ -32,7 +37,8 @@ class Laereplansok
   private
 
   def search_for_kompetansemaal
-    Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  :hovedomraader, {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal|
+    joins = [:hovedomraader, :kompetansemaalsett, {:kompetansemaalsett => :laereplaner}, {:kompetansemaalsett => :trinn}]
+    Kompetansemaal.find_where(:all, :include => joins) do |kompetansemaal|
       kompetansemaal.all do |maal|
         maal.kompetansemaalsett.all do |sett|
           sett.uuid == kompetansemaalsett
@@ -40,10 +46,14 @@ class Laereplansok
             plan.tittel =~ parse_text_input(laereplan_tittel)
             plan.kode =~ parse_text_input(laereplan_kode)
           end
+          sett.trinn do |t|
+            t.uuid == trinn
+          end
         end
         maal.hovedomraader.all do |h| 
           h.uuid == hovedomraade
         end
+        maal.tittel =~ parse_text_input(kompetansemaal_tittel)
       end
     end
   end

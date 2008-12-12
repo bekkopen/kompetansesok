@@ -35,6 +35,10 @@ Saa /^skal jeg se (\d+) kompetansemål$/ do |n|
   }
 end
 
+Saa /^jeg skal få (\d+) sider med resultater$/ do |n|
+  response.should have_tag('a', n)
+end
+
 Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |tabell|
   tabell.hashes.each do |kompetansemaal|
     response.should contain(kompetansemaal['tittel'])

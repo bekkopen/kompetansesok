@@ -9,6 +9,10 @@ class LaereplansokController < ApplicationController
     @kompetansemaalsett = Kompetansemaalsett.find(:all).map do |maalsett|
       [maalsett.tittel, maalsett.uuid]
     end
+    
+    @trinn = Trinn.find(:all).map do |trinn|
+      [trinn.tittel, trinn.uuid]
+    end
 
     if not params[:laereplansok]
       @kompetansemaal = [].paginate

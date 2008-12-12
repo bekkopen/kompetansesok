@@ -45,5 +45,17 @@ describe Laereplansok do
     kompetansemaal.length.should  == 17
   end
   
+  it "should be possible to search by trinn" do
+    @laereplansok.trinn = "http://psi.udir.no/laereplan/aarstrinn/vg1"
+    kompetansemaal = @laereplansok.kompetansemaal
+    kompetansemaal.length.should  == 17
+  end
+  
+  it "should be possible to search by kompetansemaaltittel" do
+    @laereplansok.kompetansemaal_tittel = "anleggsmaskiner"
+    kompetansemaal = @laereplansok.kompetansemaal
+    kompetansemaal.length.should  == 2
+  end
+  
 
 end

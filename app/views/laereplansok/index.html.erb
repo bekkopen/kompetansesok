@@ -9,7 +9,6 @@
     <tr>
       <td> <%= label_tag :laereplan_tittel, "Læreplantittel" %> </td>
       <td> <%= text_field :laereplansok, :laereplan_tittel %> </td>
-
     </tr>
     <tr>
       <td> <%= label_tag :hovedomraade, "Hovedområde" %></td>
@@ -20,7 +19,15 @@
       <td> <%= select( :laereplansok, :kompetansemaalsett, @kompetansemaalsett, { :include_blank => true }) %> </td>
     </tr>
     <tr>
-      <td> <%= submit_tag "Søk" %> </td>
+      <td> <%= label_tag :trinn, "Trinn" %></td>
+      <td> <%= select( :laereplansok, :trinn, @trinn, { :include_blank => true }) %> </td>
+    </tr>
+    <tr>
+      <td> <%= label_tag :kompetansemaal_tittel, "Kompetansemåltittel" %> </td>
+      <td> <%= text_field :laereplansok, :kompetansemaal_tittel %> </td>
+    </tr>
+    <tr>
+      <td> <%= submit_tag "Søk", :name => nil %> </td>
     </tr>
   <%  end %>
 
