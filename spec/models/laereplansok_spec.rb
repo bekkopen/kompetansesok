@@ -39,5 +39,11 @@ describe Laereplansok do
     kompetansemaal.length.should  == 5
   end
   
+  it "should be possible to search by kompetansemaalsett" do
+    @laereplansok.kompetansemaalsett = "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
+    kompetansemaal = @laereplansok.kompetansemaal
+    kompetansemaal.length.should  == 17
+  end
+  
 
 end

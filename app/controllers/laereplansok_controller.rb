@@ -5,6 +5,10 @@ class LaereplansokController < ApplicationController
     @hovedomraader = Hovedomraade.find(:all).map do |h|
       [h.tittel, h.uuid]
     end
+    
+    @kompetansemaalsett = Kompetansemaalsett.find(:all).map do |maalsett|
+      [maalsett.tittel, maalsett.uuid]
+    end
 
     if not params[:laereplansok]
       @kompetansemaal = [].paginate

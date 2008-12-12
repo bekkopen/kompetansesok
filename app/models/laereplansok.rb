@@ -1,5 +1,5 @@
 class Laereplansok
-  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade]
+  @@soekefelter = [:laereplan_tittel, :laereplan_kode, :hovedomraade, :kompetansemaalsett]
 
   @@soekefelter.each do |f|
     class_eval do
@@ -8,9 +8,7 @@ class Laereplansok
   end
   
   def initialize(params = {})
-    self.laereplan_tittel = params[:laereplan_tittel]
-    self.laereplan_kode = params[:laereplan_kode]
-    self.hovedomraade = params[:hovedomraade]
+    @@soekefelter.each {|soekefelt| self.send("#{soekefelt}=", params[soekefelt]) }
     @page = params[:page]
     @per_page = 10
   end
@@ -34,26 +32,20 @@ class Laereplansok
   private
 
   def search_for_kompetansemaal
-#    k = Kompetansemaal.find_where(:all, :include => [:hovedomraader] ) do |kompetansemaal|
-    k = Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  :hovedomraader, {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal|
+    Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  :hovedomraader, {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal|
       kompetansemaal.all do |maal|
         maal.kompetansemaalsett.all do |sett|
+          sett.uuid == kompetansemaalsett
           sett.laereplaner do |plan|
             plan.tittel =~ parse_text_input(laereplan_tittel)
             plan.kode =~ parse_text_input(laereplan_kode)
           end
         end
         maal.hovedomraader.all do |h| 
-          h.uuid =~ parse_text_input(hovedomraade)
+          h.uuid == hovedomraade
         end
       end
     end
-    
-#    k.each do |m|
-#      puts m.hovedomraader.first.uuid
-#    end
-    
-    k
   end
 
   def parse_text_input(text)
