@@ -102,7 +102,11 @@ div#nav_container {
 	padding: 5px 0px;
 }
 
-ul#nav_list li {
+div#spraak {
+	text-align: right;
+}
+
+ul#nav_list li, ul#spraak_liste li {
 	display: inline;
 	list-style-type: none;
 	padding-right: 20px;
@@ -119,4 +123,18 @@ ul#nav_list li a:hover {
 
 select {
   width: 30em;
+}
+
+form#laereplan_sok label {
+	font-weight: bold;
+}
+
+form#laereplan_sok input, form#laereplan_sok select {
+	display: block;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+form#laereplan_sok input.submit {
+	width: 60px;
 }

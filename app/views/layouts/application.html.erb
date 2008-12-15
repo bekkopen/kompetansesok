@@ -10,6 +10,12 @@
   </head>
   <body>
 	<div id="container">
+	  <div id="spraak">
+		<% form_tag("/spraak_session") do %>
+			<%= select :spraak, :valg, [["Bokmål", "nb"], ["Nynorsk", "nn"]] %>
+			<%= submit_tag "Velg språk", :class => 'submit' %>
+		<% end %>
+	  </div>
 	  <div id="header">
         <%= image_tag  "logo.gif" %>
 	  </div>
