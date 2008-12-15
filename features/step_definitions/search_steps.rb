@@ -27,6 +27,11 @@ end
 
 
 Saa /^skal jeg se (\d+) kompetansemål$/ do |n|
+  #puts response.body
+  response.should have_tag('script') do |script|
+    puts script.inspect
+  end
+
   response.should have_selector('table#kompetansemaal') { |tables|
     tables.length.should == 1
     tables.first.should have_selector('tbody > tr') { |rader|

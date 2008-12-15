@@ -8,11 +8,14 @@ class LaereplansokController < ApplicationController
 
     if not params[:laereplansok]
       @kompetansemaal = [].paginate
+      @rader = [].paginate
     else
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
       @kompetansemaal = @laereplansok.kompetansemaal
+      @rader = @laereplansok.to_table_rows
     end
-  
+
+    
     render :action => "index"
   end
 

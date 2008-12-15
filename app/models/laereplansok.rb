@@ -31,10 +31,48 @@ class Laereplansok
     empty
   end
 
+  # genererer en rad med disse kollonene for hvert innslag av kompetansemaal
+  # Læreplan  	Hovedområde  	Kompetansemålsett  	Trinn  	Kompetansemålkode  	Kompetansemål
+  def to_table_rows
+    rows = []
+    kompetansemaal.each do |maal|
+      maal.kompetansemaalsett.each do |kompetansemaalsett|
+        unless maal.hovedomraader.blank?
+          maal.hovedomraader.each do |hovedomraade|
+            unless kompetansemaalsett.trinn.empty?
+              kompetansemaalsett.trinn.each do |trinn|
+                laereplan =""
+                laereplan = kompetansemaalsett.laereplan.tittel unless kompetansemaalsett.laereplan == nil
+                rows << [kompetansemaalsett.laereplan.tittel, hovedomraade.tittel, kompetansemaalsett.tittel, trinn.tittel, "", maal.tittel]
+              end
+            else
+              rows << [kompetansemaalsett.laereplan.tittel, hovedomraade.tittel, kompetansemaalsett.tittel, "", "", maal.tittel]
+            end
+          end
+        else
+          unless kompetansemaalsett.trinn.empty?
+              kompetansemaalsett.trinn.each do |trinn|
+                laereplan =""
+                laereplan = kompetansemaalsett.laereplan.tittel unless kompetansemaalsett.laereplan == nil
+                rows << [kompetansemaalsett.laereplan.tittel, "", kompetansemaalsett.tittel, trinn.tittel, "", maal.tittel]
+              end
+            else
+              rows << [kompetansemaalsett.laereplan.tittel, "", kompetansemaalsett.tittel, "", "", maal.tittel]
+            end
+        end
+        
+      end
+    end
+    
+    rows.paginate :per_page => @per_page, :page => @page
+  end
+    
+
+  
   private
 
   def search_for_kompetansemaal
-#    k = Kompetansemaal.find_where(:all, :include => [:hovedomraader] ) do |kompetansemaal|
+    #    k = Kompetansemaal.find_where(:all, :include => [:hovedomraader] ) do |kompetansemaal|
     k = Kompetansemaal.find_where(:all, :include => [:kompetansemaalsett,  :hovedomraader, {:kompetansemaalsett => :laereplaner}] ) do |kompetansemaal|
       kompetansemaal.all do |maal|
         maal.kompetansemaalsett.all do |sett|
@@ -43,15 +81,15 @@ class Laereplansok
             plan.kode =~ parse_text_input(laereplan_kode)
           end
         end
-        maal.hovedomraader.all do |h| 
+        maal.hovedomraader.all do |h|
           h.uuid =~ parse_text_input(hovedomraade)
         end
       end
     end
     
-#    k.each do |m|
-#      puts m.hovedomraader.first.uuid
-#    end
+    #    k.each do |m|
+    #      puts m.hovedomraader.first.uuid
+    #    end
     
     k
   end

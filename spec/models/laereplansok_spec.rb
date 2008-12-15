@@ -38,6 +38,57 @@ describe Laereplansok do
     kompetansemaal = @laereplansok.kompetansemaal
     kompetansemaal.length.should  == 5
   end
-  
+
+
+  describe "generation of table rows" do
+    it "should generate proper initalized array" do
+      @laereplansok.to_table_rows.should_not be_empty
+      @laereplansok.to_table_rows.first.should_not be_empty
+    end
+
+    it "should not contain equal rows" do
+      seen_rows = []
+      @laereplansok.to_table_rows.each do |row|
+        seen_rows << row.to_s
+      end
+
+      seen_rows.length.should == seen_rows.uniq.length
+    end
+
+    it "should generate multiple rows upon more than one trinn" do
+      create_controled_structure()
+
+      seen = 0
+      @laereplansok.to_table_rows.each do |row|
+        if row[2] == Kompetansemaalsett.find(:first).tittel
+          seen += 1
+        end
+      end
+      seen.should == 2
+
+    end
+
+  end
+
+
+  def create_controled_structure
+    Trinn.find(:all).each do |t|
+      t.destroy
+    end
+    Kompetansemaalsett.find(:all).each do |k|
+      k.destroy
+    end
+
+    kompetansemaalsett = Kompetansemaalsett.create
+    kompetansemaalsett.kompetansemaal = [Kompetansemaal.create(:tittel => "kompetansemaal tittel")]
+    kompetansemaalsett.laereplaner = [Laereplan.create(:tittel => "laereplan tittel")]
+    kompetansemaalsett.tittel = "kompetansemaalsett tittel"
+    trinn = Trinn.create :tittel => "trinn tittel"
+    trinn.kompetansemaalsett << kompetansemaalsett
+    kompetansemaalsett.trinn << trinn
+    kompetansemaalsett.save!
+    trinn.save!
+  end
+
 
 end
