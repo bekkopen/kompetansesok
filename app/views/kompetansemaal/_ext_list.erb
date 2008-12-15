@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  var myData = <%= @rader.to_json %>
+  var kompetansemaalRader = <%= @rader.to_json %>
 
 </script>
 
@@ -44,7 +44,7 @@
         {name: 'kompetansemaal'}
       ]
     });
-    store.loadData(myData);
+    store.loadData(kompetansemaalRader);
 
     // create the Grid
     var grid = new Ext.grid.GridPanel({

@@ -1,18 +1,19 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
-  before :all do 
-    importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
-    importerer.importer_til_db
-  end
-  
-  before :each do
-    @laereplansok = Laereplansok.new
-    @laereplansok.instance_variable_set(:@per_page,  100000)
-  end
   
   
-  describe "searching" do
+    describe "searching" do
+    before :all do 
+      importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
+      importerer.importer_til_db
+    end
+
+    before :each do
+      @laereplansok = Laereplansok.new
+      @laereplansok.instance_variable_set(:@per_page,  100000)
+    end
+ 
     it "should return nothing if there is a no matching laereplantittel" do
       @laereplansok.laereplan_tittel = "asdfasdfasdf"
       kompetansemaal = @laereplansok.kompetansemaal
@@ -62,55 +63,75 @@ describe Laereplansok do
 
 
   describe "generation of table rows" do
+    before :each do
+      @laereplansok = Laereplansok.new
+      @laereplansok.stub!(:kompetansemaal).and_return([])
+      @kompetansemaal = Kompetansemaal.new(:tittel => "måltittel")
+    end
+    
     it "should generate proper initalized array" do
       @laereplansok.to_table_rows.should_not be_empty
       @laereplansok.to_table_rows.first.should_not be_empty
     end
 
-    it "should not contain equal rows" do
-      seen_rows = []
-      @laereplansok.to_table_rows.each do |row|
-        seen_rows << row.to_s
-      end
-
-      seen_rows.length.should == seen_rows.uniq.length
+    it "should have two rows for a kompetansemål with two hovedområder" do
+      hovedomraade1 = Hovedomraade.new(:tittel => "hovedområde 1")
+      hovedomraade2 = Hovedomraade.new(:tittel => "hovedområde 2")
+      @kompetansemaal.hovedomraader << [hovedomraade1, hovedomraade2]
+    
+      @laereplansok.should_receive(:kompetansemaal).and_return([@kompetansemaal])
+      hovedomraade_titler = @laereplansok.to_table_rows.map {|row| row[1]}     
+      hovedomraade_titler.compact.sort.should == ['hovedområde 1', 'hovedområde 2']
+    end
+    
+    it "should have two rows for a kompetansemål with two kompetansemaalsett" do
+      kompetansemaalsett1 = Kompetansemaalsett.new(:tittel => "kompetansemålsett 1")
+      kompetansemaalsett2 = Kompetansemaalsett.new(:tittel => "kompetansemålsett 2")
+      @kompetansemaal.kompetansemaalsett << [kompetansemaalsett1, kompetansemaalsett2]
+      
+      @laereplansok.should_receive(:kompetansemaal).and_return([@kompetansemaal])
+      kompetansemaalsett_titler = @laereplansok.to_table_rows.map {|row| row[2]}        
+      kompetansemaalsett_titler.sort.should == ['kompetansemålsett 1', 'kompetansemålsett 2']
+    end
+    
+    it "should have two rows for a kompetansemål with a kompetansemålsett with two trinn" do
+      trinn1 = Trinn.new(:tittel => "trinn 1")
+      trinn2 = Trinn.new(:tittel => "trinn 2")
+      kompetansemaalsett = Kompetansemaalsett.new(:trinn => [trinn1, trinn2])
+      @kompetansemaal.kompetansemaalsett << [kompetansemaalsett]
+      
+      @laereplansok.should_receive(:kompetansemaal).and_return([@kompetansemaal])
+      trinn_titler = @laereplansok.to_table_rows.map {|row| row[3]}        
+      trinn_titler.sort.should == ['trinn 1', 'trinn 2']
+    end
+    
+    it "should have two rows for a kompetansemål with a kompetansemålsett with two læreplaner" do
+      laereplan1 = Laereplan.new(:tittel => "læreplan 1")
+      laereplan2 = Laereplan.new(:tittel => "læreplan 2")
+      kompetansemaalsett = Kompetansemaalsett.new(:laereplaner => [laereplan1, laereplan2])
+      @kompetansemaal.kompetansemaalsett << [kompetansemaalsett]
+      
+      @laereplansok.should_receive(:kompetansemaal).and_return([@kompetansemaal])
+      laereplan_titler = @laereplansok.to_table_rows.map {|row| row[0]}
+      laereplan_titler.sort.should == ['læreplan 1', 'læreplan 2']
+    end
+    
+    it "should have four rows for a kompetansemål with a kompetansemålsett with two trinn and two læreplaner" do
+      trinn1 = Trinn.new(:tittel => "trinn 1")
+      trinn2 = Trinn.new(:tittel => "trinn 2")
+      laereplan1 = Laereplan.new(:tittel => "læreplan 1")
+      laereplan2 = Laereplan.new(:tittel => "læreplan 2")
+      kompetansemaalsett = Kompetansemaalsett.new(:laereplaner => [laereplan1, laereplan2], :trinn => [trinn1, trinn2])
+      @kompetansemaal.kompetansemaalsett << [kompetansemaalsett]
+      
+      @laereplansok.should_receive(:kompetansemaal).and_return([@kompetansemaal])
+      laereplan_trinn_titler = @laereplansok.to_table_rows.map {|row| [row[0], row[3]]}        
+      laereplan_trinn_titler[0].should == ["læreplan 1", "trinn 1"]
+      laereplan_trinn_titler[1].should == ["læreplan 2", "trinn 1"]
+      laereplan_trinn_titler[2].should == ["læreplan 1", "trinn 2"]
+      laereplan_trinn_titler[3].should == ["læreplan 2", "trinn 2"]
     end
 
-    it "should generate multiple rows upon more than one trinn" do
-      create_controled_structure()
-
-      seen = 0
-      @laereplansok.to_table_rows.each do |row|
-        if row[2] == Kompetansemaalsett.find(:first).tittel
-          seen += 1
-        end
-      end
-      seen.should == 2
-
-    end
-
-  end
-
- 
-  private 
-  
-  def create_controled_structure
-    Trinn.find(:all).each do |t|
-      t.destroy
-    end
-    Kompetansemaalsett.find(:all).each do |k|
-      k.destroy
-    end
-
-    kompetansemaalsett = Kompetansemaalsett.create
-    kompetansemaalsett.kompetansemaal = [Kompetansemaal.create(:tittel => "kompetansemaal tittel")]
-    kompetansemaalsett.laereplaner = [Laereplan.create(:tittel => "laereplan tittel")]
-    kompetansemaalsett.tittel = "kompetansemaalsett tittel"
-    trinn = Trinn.create :tittel => "trinn tittel"
-    trinn.kompetansemaalsett << kompetansemaalsett
-    kompetansemaalsett.trinn << trinn
-    kompetansemaalsett.save!
-    trinn.save!
   end
 
 end

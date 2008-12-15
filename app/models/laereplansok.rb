@@ -1,10 +1,10 @@
 class Laereplansok
   @@soekefelter =  [:laereplan_tittel, 
-                    :laereplan_kode, 
-                    :hovedomraade, 
-                    :kompetansemaalsett, 
-                    :trinn, 
-                    :kompetansemaal_tittel]
+    :laereplan_kode, 
+    :hovedomraade, 
+    :kompetansemaalsett, 
+    :trinn, 
+    :kompetansemaal_tittel]
 
   @@soekefelter.each do |f|
     class_eval do
@@ -39,35 +39,54 @@ class Laereplansok
   def to_table_rows
     rows = []
     kompetansemaal.each do |maal|
+      # Hovedområder
+      maal.hovedomraader.each do |hovedomraade|
+        rows << KompetansemaalRad.new(:hovedomraade_tittel => hovedomraade.tittel, 
+                                      :maal_tittel => maal.tittel).as_row
+      end
+      # Kompetansemålsett
       maal.kompetansemaalsett.each do |kompetansemaalsett|
-        unless maal.hovedomraader.blank?
-          maal.hovedomraader.each do |hovedomraade|
-            unless kompetansemaalsett.trinn.empty?
-              kompetansemaalsett.trinn.each do |trinn|
-                laereplan =""
-                laereplan = kompetansemaalsett.laereplan.tittel unless kompetansemaalsett.laereplan == nil
-                rows << [kompetansemaalsett.laereplan.tittel, hovedomraade.tittel, kompetansemaalsett.tittel, trinn.tittel, "", maal.tittel]
+        unless kompetansemaalsett.trinn.blank?
+          # Kompetansemålsett har trinn
+          kompetansemaalsett.trinn.each do |trinn|
+            unless kompetansemaalsett.laereplaner.blank?
+              # Kompetansemålsett har trinn og læreplaner
+              kompetansemaalsett.laereplaner.each do |plan|
+                rows << KompetansemaalRad.new(:laereplan_tittel => plan.tittel,
+                                              :kompetansemaalsett_tittel => kompetansemaalsett.tittel,
+                                              :trinn_tittel => trinn.tittel, 
+                                              :maal_tittel => maal.tittel).as_row
               end
             else
-              rows << [kompetansemaalsett.laereplan.tittel, hovedomraade.tittel, kompetansemaalsett.tittel, "", "", maal.tittel]
+              # Kompetansemålsett har trinn, men ikke læreplaner
+              rows << KompetansemaalRad.new(:kompetansemaalsett_tittel => kompetansemaalsett.tittel,
+                                            :trinn_tittel => trinn.tittel, 
+                                            :maal_tittel => maal.tittel).as_row
             end
           end
         else
-          unless kompetansemaalsett.trinn.empty?
-              kompetansemaalsett.trinn.each do |trinn|
-                laereplan = ""
-                laereplan = kompetansemaalsett.laereplan.tittel unless kompetansemaalsett.laereplan == nil
-                rows << [kompetansemaalsett.laereplan.tittel, "", kompetansemaalsett.tittel, trinn.tittel, "", maal.tittel]
-              end
-            else
-              rows << [kompetansemaalsett.laereplan.tittel, "", kompetansemaalsett.tittel, "", "", maal.tittel]
+          # Kompetansemålsett har ikke trinn
+          unless kompetansemaalsett.laereplaner.blank?
+            #Kompetansemålsett har læreplaner men ikke trinn
+            kompetansemaalsett.laereplaner.each do |plan|
+               rows << KompetansemaalRad.new(:laereplan_tittel => plan.tittel,
+                                              :kompetansemaalsett_tittel => kompetansemaalsett.tittel, 
+                                              :maal_tittel => maal.tittel).as_row
             end
+          else
+            # Kompetansemålsett har ikke trinn eller læreplaner
+            rows << KompetansemaalRad.new(:kompetansemaalsett_tittel => kompetansemaalsett.tittel, 
+            :maal_tittel => maal.tittel).as_row
+          end
         end
-        
       end
+
     end
-    
-    rows.paginate :per_page => @per_page, :page => @page
+    if rows.empty?
+      rows << KompetansemaalRad.new.as_row
+    else
+      rows.uniq.paginate :per_page => @per_page, :page => @page
+    end
   end
     
 
@@ -98,6 +117,24 @@ class Laereplansok
 
   def parse_text_input(text)
     text.blank? ? nil : "%#{text}%"
+  end
+  
+  
+  class KompetansemaalRad
+    attr_accessor :laereplan_tittel, :hovedomraade_tittel, :kompetansemaalsett_tittel, :maal_kode, :trinn_tittel, :maal_tittel
+    
+    def initialize(params = {})
+      self.laereplan_tittel = params[:laereplan_tittel]
+      self.hovedomraade_tittel = params[:hovedomraade_tittel]
+      self.kompetansemaalsett_tittel = params[:kompetansemaalsett_tittel]
+      self.trinn_tittel = params[:trinn_tittel]
+      self.maal_kode = params[:maal_kode]
+      self.maal_tittel = params[:maal_tittel]
+    end
+    
+    def as_row
+      [laereplan_tittel, hovedomraade_tittel, kompetansemaalsett_tittel, trinn_tittel, maal_kode, maal_tittel]
+    end
   end
   
 end
