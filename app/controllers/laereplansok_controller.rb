@@ -2,24 +2,18 @@ class LaereplansokController < ApplicationController
 
   def index
 
-    @hovedomraader = Hovedomraade.find(:all).map do |h|
-      [h.tittel, h.uuid]
-    end
-    
-    @kompetansemaalsett = Kompetansemaalsett.find(:all).map do |maalsett|
-      [maalsett.tittel, maalsett.uuid]
-    end
-    
-    @trinn = Trinn.find(:all).map do |trinn|
-      [trinn.tittel, trinn.uuid]
-    end
+    @hovedomraader = Hovedomraade.find(:all).map {|h| [h.tittel, h.uuid] }
+    @kompetansemaalsett = Kompetansemaalsett.find(:all).map {|maalsett| [maalsett.tittel, maalsett.uuid] }
+    @trinn = Trinn.find(:all).map {|trinn| [trinn.tittel, trinn.uuid] }
 
-    if not params[:laereplansok]
-      @kompetansemaal = [].paginate
-    else
+    if params[:laereplansok]
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
       @kompetansemaal = @laereplansok.kompetansemaal
+      @rader = @laereplansok.to_table_rows
       render :action => "index"
+    else
+      @kompetansemaal = [].paginate
+      @rader = [].paginate
     end
 
   end

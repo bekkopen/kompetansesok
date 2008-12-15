@@ -34,6 +34,44 @@ class Laereplansok
     empty
   end
 
+  # genererer en rad med disse kollonene for hvert innslag av kompetansemaal
+  # Læreplan  	Hovedområde  	Kompetansemålsett  	Trinn  	Kompetansemålkode  	Kompetansemål
+  def to_table_rows
+    rows = []
+    kompetansemaal.each do |maal|
+      maal.kompetansemaalsett.each do |kompetansemaalsett|
+        unless maal.hovedomraader.blank?
+          maal.hovedomraader.each do |hovedomraade|
+            unless kompetansemaalsett.trinn.empty?
+              kompetansemaalsett.trinn.each do |trinn|
+                laereplan =""
+                laereplan = kompetansemaalsett.laereplan.tittel unless kompetansemaalsett.laereplan == nil
+                rows << [kompetansemaalsett.laereplan.tittel, hovedomraade.tittel, kompetansemaalsett.tittel, trinn.tittel, "", maal.tittel]
+              end
+            else
+              rows << [kompetansemaalsett.laereplan.tittel, hovedomraade.tittel, kompetansemaalsett.tittel, "", "", maal.tittel]
+            end
+          end
+        else
+          unless kompetansemaalsett.trinn.empty?
+              kompetansemaalsett.trinn.each do |trinn|
+                laereplan = ""
+                laereplan = kompetansemaalsett.laereplan.tittel unless kompetansemaalsett.laereplan == nil
+                rows << [kompetansemaalsett.laereplan.tittel, "", kompetansemaalsett.tittel, trinn.tittel, "", maal.tittel]
+              end
+            else
+              rows << [kompetansemaalsett.laereplan.tittel, "", kompetansemaalsett.tittel, "", "", maal.tittel]
+            end
+        end
+        
+      end
+    end
+    
+    rows.paginate :per_page => @per_page, :page => @page
+  end
+    
+
+  
   private
 
   def search_for_kompetansemaal
@@ -59,13 +97,7 @@ class Laereplansok
   end
 
   def parse_text_input(text)
-    if text.blank?
-      nil
-    else
-      "%#{text}%"
-    end
+    text.blank? ? nil : "%#{text}%"
   end
-
-
+  
 end
-
