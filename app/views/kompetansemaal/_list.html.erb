@@ -13,35 +13,76 @@
     <% @kompetansemaal.each do |kompetansemaal| %>
 
       <% kompetansemaal.kompetansemaalsett.each do |maalsett|%>
-    
-        <% unless maalsett.trinn.blank? %>
+        
+        <% unless kompetansemaal.hovedomraader.blank? %>
+          <% kompetansemaal.hovedomraader.each do |hovedomraade| %>
+            
+            <%# tegning av felter %>
+              <% unless maalsett.trinn.blank? %>
+                <% maalsett.trinn.each do |trinn| %>
+                   <% maalsett.laereplaner.each do |laereplan| %>
+                    <tr>
+                      <td><%= laereplan.tittel %></td>
+                      <td><%= hovedomraade.tittel %></td>
+                      <td><%= maalsett.tittel %></td>
+                      <td><%= trinn.tittel %></td>
+                      <td> </td>
+                      <td><%= kompetansemaal.tittel %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
 
-          <% maalsett.trinn.each do |trinn| %>
-             <% maalsett.laereplaner.each do |laereplan| %>
+              <% else %>
+
+                <% maalsett.laereplaner.each do |laereplan| %>
+                  <tr>
+                    <td><%= laereplan.tittel %></td>
+                    <td><%= hovedomraade.tittel %></td>
+                    <td><%= maalsett.tittel %></td>
+                    <td> </td>
+                    <td> </td>
+                    <td><%= kompetansemaal.tittel %></td>
+                  </tr>
+                <% end %>
+              <% end %>
+              <%# slutt tegning av felter %>
+            
+          <% end %>
+
+        <% else %>
+      
+          <%# tegning av felter %>
+          <% unless maalsett.trinn.blank? %>
+            <% maalsett.trinn.each do |trinn| %>
+               <% maalsett.laereplaner.each do |laereplan| %>
+                <tr>
+                  <td><%= laereplan.tittel %></td>
+                  <td> </td>
+                  <td><%= maalsett.tittel %></td>
+                  <td><%= trinn.tittel %></td>
+                  <td> </td>
+                  <td><%= kompetansemaal.tittel %></td>
+                </tr>
+              <% end %>
+            <% end %>
+
+          <% else %>
+
+            <% maalsett.laereplaner.each do |laereplan| %>
               <tr>
                 <td><%= laereplan.tittel %></td>
                 <td> </td>
                 <td><%= maalsett.tittel %></td>
-                <td><%= trinn.tittel %></td>
+                <td> </td>
                 <td> </td>
                 <td><%= kompetansemaal.tittel %></td>
               </tr>
             <% end %>
           <% end %>
-          
-        <% else %>
-          
-          <% maalsett.laereplaner.each do |laereplan| %>
-            <tr>
-              <td><%= laereplan.tittel %></td>
-              <td> </td>
-              <td><%= maalsett.tittel %></td>
-              <td> </td>
-              <td> </td>
-              <td><%= kompetansemaal.tittel %></td>
-            </tr>
-          <% end %>
+          <%# slutt tegning av felter %>
+      
         <% end %>
+    
         
       <% end %>
       

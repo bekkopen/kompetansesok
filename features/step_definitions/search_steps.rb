@@ -27,12 +27,21 @@ end
 
 
 Saa /^skal jeg se (\d+) kompetansemål$/ do |n|
+  #puts response.body
+  response.should have_tag('script') do |script|
+    puts script.inspect
+  end
+
   response.should have_selector('table#kompetansemaal') { |tables|
     tables.length.should == 1
     tables.first.should have_selector('tbody > tr') { |rader|
       rader.length.should == n.to_i
     }
   }
+end
+
+Saa /^jeg skal få (\d+) sider med resultater$/ do |n|
+  response.should have_tag('a', n)
 end
 
 Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |tabell|

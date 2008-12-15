@@ -1,0 +1,81 @@
+<script type="text/javascript">
+  var kompetansemaalRader = <%= @rader.to_json %>
+
+</script>
+
+<script type="text/javascript">
+  Ext.onReady(function(){
+
+    // NOTE: This is an example showing simple state management. During development,
+    // it is generally best to disable state management as dynamically-generated ids
+    // can change across page loads, leading to unpredictable results.  The developer
+    // should ensure that stable state ids are set for stateful components in real apps.
+    Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+
+    
+    // example of custom renderer function
+    function change(val){
+      if(val > 0){
+        return '<span style="color:green;">' + val + '</span>';
+      }else if(val < 0){
+        return '<span style="color:red;">' + val + '</span>';
+      }
+      return val;
+    }
+
+    // example of custom renderer function
+    function pctChange(val){
+      if(val > 0){
+        return '<span style="color:green;">' + val + '%</span>';
+      }else if(val < 0){
+        return '<span style="color:red;">' + val + '%</span>';
+      }
+      return val;
+    }
+
+    // create the data store
+    var store = new Ext.data.SimpleStore({
+      fields: [
+        {name: 'laereplan'},
+        {name: 'hovedomraade'},
+        {name: 'kompetansemaalsett'},
+        {name: 'trinn'},
+        {name: 'kompetansemaal_kode'},
+        {name: 'kompetansemaal'}
+      ]
+    });
+    store.loadData(kompetansemaalRader);
+
+    // create the Grid
+    var grid = new Ext.grid.GridPanel({
+      store: store,
+      columns: [
+        {header: "Læreplan", sortable: true, dataIndex: 'laereplan'},
+        {header: "Hovedomrade", sortable: true, dataIndex: 'hovedomraade'},
+        {header: "Kompetansemålsett", sortable: true, dataIndex: 'kompetansemaalsett'},
+        {header: "Trinn", sortable: true, dataIndex: 'trinn'},
+        {header: "Kompetansemaalkode", sortable: true, dataIndex: 'kompetansemaal_kode'},
+        {header: "Kompetansemål", sortable: true, dataIndex: 'kompetansemaal'}
+      ],
+      stripeRows: true,
+      height: 500,
+      title:'Kompetansemål'
+    });
+
+    grid.render('grid-example');
+
+    grid.getSelectionModel().selectFirstRow();
+  });
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/grid-examples.css"/>
+<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../shared/examples.css" />
+<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../shared/lib.css" />
+<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../../resources/css/ext-all.css" />
+
+
+
+<div id="grid-example" style="height: 500px"> </div>
+
+<%= will_paginate @kompetansemaal %>

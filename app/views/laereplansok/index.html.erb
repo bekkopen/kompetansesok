@@ -9,16 +9,25 @@
     <tr>
       <td> <%= label_tag :laereplan_tittel, "Læreplantittel" %> </td>
       <td> <%= text_field :laereplansok, :laereplan_tittel %> </td>
-
     </tr>
     <tr>
-      <td> <%= label_tag :hovedomraade_uuid, "Hovedområde" %></td>
-      <td>
-        <%= select( :laereplansok, :hovedomraade_uuid, @hovedomraader, { :include_blank => true }) %>
-      </td>
+      <td> <%= label_tag :hovedomraade, "Hovedområde" %></td>
+      <td> <%= select( :laereplansok, :hovedomraade, @hovedomraader, { :include_blank => true }) %> </td>
     </tr>
     <tr>
-      <td> <%= submit_tag "Søk" %> </td>
+      <td> <%= label_tag :kompetansemaalsett, "Kompetansemållsett" %></td>
+      <td> <%= select( :laereplansok, :kompetansemaalsett, @kompetansemaalsett, { :include_blank => true }) %> </td>
+    </tr>
+    <tr>
+      <td> <%= label_tag :trinn, "Trinn" %></td>
+      <td> <%= select( :laereplansok, :trinn, @trinn, { :include_blank => true }) %> </td>
+    </tr>
+    <tr>
+      <td> <%= label_tag :kompetansemaal_tittel, "Kompetansemåltittel" %> </td>
+      <td> <%= text_field :laereplansok, :kompetansemaal_tittel %> </td>
+    </tr>
+    <tr>
+      <td> <%= submit_tag "Søk", :name => nil %> </td>
     </tr>
   <%  end %>
 
@@ -26,8 +35,10 @@
 <br />
 
 <% unless @kompetansemaal.blank? %>
-  <%= render :partial => 'kompetansemaal/list' %>
+  <%= render :partial => 'kompetansemaal/ext_list' %>
 <% end %>
+
+
 
 
 

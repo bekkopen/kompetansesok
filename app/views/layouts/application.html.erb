@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <%= javascript_include_tag('jquery-1.2.6.min', 'jquery.autocomplete.min') %>
+    <%= javascript_include_tag 'ext/adapter/ext/ext-base.js', 'ext/ext-all.js'   %>
     <%= stylesheet_link_tag('screen') %>
     <title>Kompetansesøk</title>
   </head>
@@ -17,7 +18,7 @@
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-		  <li><a href="#">Søk 1</a></li>
+		  <li><a href="<%= laereplansok_index_path %>">Søk via læreplan</a></li>
 		  <li><a href="#">Søk 2</a></li>
 		  <li><a href="#">Søk 3</a></li>
 		  <li><a href="#">Avansert søk</a></li>
