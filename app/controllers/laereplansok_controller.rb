@@ -2,9 +2,9 @@ class LaereplansokController < ApplicationController
 
   def index
 
-    @hovedomraader = Hovedomraade.find(:all).map {|h| [h.tittel, h.uuid] }
-    @kompetansemaalsett = Kompetansemaalsett.find(:all).map {|maalsett| [maalsett.tittel, maalsett.uuid] }
-    @trinn = Trinn.find(:all).map {|trinn| [trinn.tittel, trinn.uuid] }
+    @hovedomraader = create_options_for_select(Hovedomraade)
+    @kompetansemaalsett = create_options_for_select(Kompetansemaalsett)
+    @trinn = create_options_for_select(Trinn)
 
     if params[:laereplansok]
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
@@ -16,6 +16,15 @@ class LaereplansokController < ApplicationController
       @rader = [].paginate
     end
 
+  end
+  
+  
+  private
+  
+  def create_options_for_select(klass)
+    klass.find(:all).map do |k| 
+      [k.tittel, k.uuid]
+    end
   end
 
 
