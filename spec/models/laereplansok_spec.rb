@@ -1,9 +1,9 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
+
   
-  
-    describe "searching" do
+  describe "searching" do
     before :all do 
       importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
       importerer.importer_til_db
@@ -21,7 +21,7 @@ describe Laereplansok do
     end
 
     it "should return all records when no search parameters are given" do
-      @laereplansok.kompetansemaal.length.should == 67
+      @laereplansok.kompetansemaal.length.should == 96
     end
   
     it "should be possible to search by laereplantittel" do
@@ -34,6 +34,12 @@ describe Laereplansok do
       @laereplansok.laereplan_kode = "IDR1-01"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 38
+    end
+    
+    it "should be possible to search by a semicolon separated string of laereplankoder" do
+      @laereplansok.laereplan_kode = "IDR1-01; AMM3-01"
+      kompetansemaal = @laereplansok.kompetansemaal
+      kompetansemaal.length.should  == 67
     end
   
     it "should be possible to search by hovedomraade" do
@@ -51,7 +57,7 @@ describe Laereplansok do
     it "should be possible to search by trinn" do
       @laereplansok.trinn = "http://psi.udir.no/laereplan/aarstrinn/vg1"
       kompetansemaal = @laereplansok.kompetansemaal
-      kompetansemaal.length.should  == 17
+      kompetansemaal.length.should  == 46
     end
   
     it "should be possible to search by kompetansemaaltittel" do

@@ -107,7 +107,7 @@ class Laereplansok
           sett.uuid == kompetansemaalsett
           sett.laereplaner do |plan|
             plan.tittel =~ parse_text_input(laereplan_tittel)
-            plan.kode =~ parse_text_input(laereplan_kode)
+            plan.kode === laereplan_kode.gsub(" ", "").split(';') if laereplan_kode
           end
           sett.trinn do |t|
             t.uuid == trinn
