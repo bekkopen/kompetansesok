@@ -1,5 +1,5 @@
 
-function copy(text) {  
+function copy(text) { 
   var textArea = new Ext.form.TextArea({
          value: text
     });

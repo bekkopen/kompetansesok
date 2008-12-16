@@ -37,7 +37,7 @@ describe Laereplansok do
     end
     
     it "should be possible to search by a semicolon separated string of laereplankoder" do
-      @laereplansok.laereplan_kode = "IDR1-01; AMM3-01"
+      @laereplansok.laereplan_kode = "IDR1-01; AMM3"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 67
     end

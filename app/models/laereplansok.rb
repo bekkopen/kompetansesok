@@ -107,7 +107,11 @@ class Laereplansok
           sett.uuid == kompetansemaalsett
           sett.laereplaner do |plan|
             plan.tittel =~ parse_text_input(laereplan_tittel)
-            plan.kode === laereplan_kode.gsub(" ", "").split(';') if laereplan_kode
+          end
+          sett.laereplaner.any do |plan|
+            split_string_on_semicolon(laereplan_kode).each do |sokt_kode|
+              plan.kode =~ parse_text_input(sokt_kode)
+            end
           end
           sett.trinn do |t|
             t.uuid == trinn
@@ -123,6 +127,10 @@ class Laereplansok
 
   def parse_text_input(text)
     text.blank? ? nil : "%#{text}%"
+  end
+  
+  def split_string_on_semicolon(string)
+    string.nil? ? [] : string.gsub(" ", "").split(';')
   end
   
 end
