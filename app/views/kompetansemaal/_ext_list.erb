@@ -11,6 +11,7 @@
         {name: 'hovedomraade'},
         {name: 'kompetansemaalsett'},
         {name: 'trinn'},
+        {name: 'kompetansemaal_uuid'},
         {name: 'kompetansemaal_kode'},
         {name: 'kompetansemaal'}
       ]
@@ -19,24 +20,36 @@
 
     // create the Grid
     var grid = new Ext.grid.GridPanel({
+      id: 'kompetansemaal_grid',
       store: store,
       columns: [
-        {header: "Læreplan", sortable: true, dataIndex: 'laereplan'},
-        {header: "Hovedomrade", sortable: true, dataIndex: 'hovedomraade'},
-        {header: "Kompetansemålsett", sortable: true, dataIndex: 'kompetansemaalsett'},
-        {header: "Trinn", sortable: true, dataIndex: 'trinn'},
-        {header: "Kompetansemaalkode", sortable: true, dataIndex: 'kompetansemaal_kode'},
-        {header: "Kompetansemål", sortable: true, dataIndex: 'kompetansemaal'}
+        {header: "Læreplan", sortable: false, dataIndex: 'laereplan'},
+        {header: "Hovedomrade", sortable: false, dataIndex: 'hovedomraade'},
+        {header: "Kompetansemålsett", sortable: false, dataIndex: 'kompetansemaalsett'},
+        {header: "Trinn", sortable: false, dataIndex: 'trinn'},
+        {header: "Kompetansemål-uuid", sortable: false, hidden: true, dataIndex: 'kompetansemaal_uuid'},
+        {header: "Kompetansemålkode", sortable: false, dataIndex: 'kompetansemaal_kode'},
+        {header: "Kompetansemål", sortable: false, dataIndex: 'kompetansemaal'}
         ],
         stripeRows: true,
         height: 500,
         title:'Kompetansemål'
       });
+      
+      grid.addButton( {
+        text: 'Kopier til utklippstavle',
+        clickEvent: 'ctrl-c',
+        handler : function(){
+                      copySelectedUuids();
+                  }
+        });
 
-      grid.render('grid-example');
+
+
+      grid.render('kompetansemaal');
       grid.getSelectionModel().selectFirstRow();
 
-      // action listenre
+      // action listener
       grid.addListener
       (
         'keydown', 
@@ -50,32 +63,11 @@
             */
             if (keyPressed == 67)
               {
-                var str = "";
-
-                var allCols = grid.getColumnModel().getColumnsBy(
-                  function (columnConfig, index) {
-                    return true;
-                  }
-                );
-
-                var selRecords = grid.getSelectionModel().getSelections();
-
-                for ( rec = 0; rec < selRecords.length; rec++)
-                  {
-                    for (col = 0; col< allCols.length; col++)
-                      {
-                        var colIdxName = "";
-                        colIdxName += allCols[col].dataIndex;
-                        /* Excel needs a tab in between columns */
-                        str +=  selRecords[rec].get(allCols[col].dataIndex) + "\t";
-                      }
-                      str = str + "\n";
-                    }
-                    copy(str);
-                  }
-                }
+                copySelectedUuids();
               }
-            );
+            }
+          }
+        );
         //end of action listener
     
     });
@@ -86,6 +78,10 @@
 <link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../shared/lib.css" />
 <link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../../resources/css/ext-all.css" />
 
-<div id="grid-example" style="height: 500px"> </div>
+<div id="kompetansemaal" style="height: 500px"> </div>
 
 <%= will_paginate @kompetansemaal %>
+
+<%#= button_to_function "Kopier til utklippstavle", "getSelectedUuids()" %>
+  
+  

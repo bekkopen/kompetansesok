@@ -72,7 +72,7 @@ describe Laereplansok do
     it "should generate proper initalized array" do
       @laereplansok.to_table_rows.should_not be_empty
       @laereplansok.to_table_rows.first.should_not be_empty
-    end
+    end   
 
     it "should have two rows for a kompetansemål with two hovedområder" do
       hovedomraade1 = Hovedomraade.new(:tittel => "hovedområde 1")
