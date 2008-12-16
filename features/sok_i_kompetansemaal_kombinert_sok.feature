@@ -16,7 +16,7 @@ Feature: Skal kunne søke i kompetansemål basert må kombinasjon av input
 
   Scenario: Søke på kompetansemål basert på læreplantittel og trinn
     Gitt at jeg er på læreplan søkesiden
-    Når jeg velger laereplan_tittel "dans"
+    Når jeg fyller inn laereplan_tittel "dans"
     Og jeg velger trinn "Videregående trinn 2"
     Og jeg klikker søk
     Så skal jeg se 10 kompetansemål
@@ -29,8 +29,8 @@ Feature: Skal kunne søke i kompetansemål basert må kombinasjon av input
 
   Scenario: Søke på kompetansemål basert på læreplantittel og kompetansemåltittel
     Gitt at jeg er på læreplan søkesiden
-    Når jeg velger laereplan_tittel "kristendom"
-    Og jeg velger kompetansemaal_tittel "samisk"
+    Når jeg fyller inn laereplan_tittel "kristendom"
+    Og jeg fyller inn kompetansemaal_tittel "samisk"
     Og jeg klikker søk
     Så skal jeg se 10 kompetansemål
     Og jeg skal se følgende spesifikke kompetansemål:
