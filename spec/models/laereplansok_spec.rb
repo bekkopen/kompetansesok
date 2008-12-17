@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
-
   
   describe "searching" do
     before :all do 
@@ -22,6 +21,12 @@ describe Laereplansok do
 
     it "should return all records when no search parameters are given" do
       @laereplansok.kompetansemaal.length.should == 96
+    end
+    
+    it "should allow '*' as a wildcard for 'match anything here'" do
+      @laereplansok.laereplan_tittel = "aktivitetslære * idrettsfag"
+      kompetansemaal = @laereplansok.kompetansemaal
+      kompetansemaal.length.should  == 38
     end
   
     it "should be possible to search by laereplantittel" do
