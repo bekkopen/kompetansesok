@@ -303,6 +303,7 @@
     <grep:tilhoerer_hovedomraade rdf:resource="uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"/>
     <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"/>
     <ns:title>anvende regelverk i den enkelte idrettsaktivitet</ns:title>
+    <grep:kode>KODE</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">

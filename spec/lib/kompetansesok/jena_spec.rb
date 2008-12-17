@@ -97,6 +97,10 @@ if defined?(JRUBY_VERSION)
       it "should have an array of hovedomraade uuids" do
         @kompetansemaal[:hovedomraade_uuids].should == ["uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"]
       end
+      
+      it "should get kode" do
+        @kompetansemaal[:kode].should == "KODE"
+      end
 
     end
     

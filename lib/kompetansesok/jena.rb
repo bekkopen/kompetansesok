@@ -38,6 +38,7 @@ module Kompetansesok
         {
           :uuid => r.to_s,
           :tittel => tittel(r),
+          :kode => kode(r),
           :kompetansemaalsett_uuids => uuids(r, @kompetansemaalsett_har_kompetansemaal_property),
           :hovedomraade_uuids => uuids(r, @tilhoerer_hovedomraade_property)
         }
