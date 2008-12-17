@@ -74,13 +74,20 @@
       
  </script>
 
+
+
 <link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/grid-examples.css"/>
 <link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../shared/lib.css" />
 <link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../../resources/css/ext-all.css" />
 
+<div id="antall_treff" style="display:none;" ><%= @kompetansemaal.length%></div>
+
 <div id="kompetansemaal" style="height: 500px"> </div>
 
-<%= will_paginate @rader %>
+
+<% unless @rader.empty? %>
+  <%= will_paginate @rader %>
+<% end %>
 
 <%#= button_to_function "Kopier til utklippstavle", "getSelectedUuids()" %>
   

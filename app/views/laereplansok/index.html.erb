@@ -13,6 +13,4 @@
 	<%= text_field :laereplansok, :kompetansemaal_tittel %>
 	<%= submit_tag "Søk", :name => nil, :class => 'submit' %>
 <% end %>
-<% unless @kompetansemaal.blank? %>
-  <%= render :partial => 'kompetansemaal/ext_list' %>
-<% end %>
+<%= render :partial => 'kompetansemaal/ext_list' %>

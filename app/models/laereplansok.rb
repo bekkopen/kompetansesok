@@ -21,9 +21,9 @@ class Laereplansok
 
   def kompetansemaal
     if empty_search?
-      Kompetansemaal.paginate :per_page => @per_page, :page => @page
+      Kompetansemaal
     else
-      search_for_kompetansemaal.paginate :per_page => @per_page, :page => @page
+      search_for_kompetansemaal
     end
   end
 
@@ -89,7 +89,7 @@ class Laereplansok
 
     end
     if rows.empty?
-      rows << Kompetansesok::KompetansemaalRad.new.as_row
+      rows
     else
       rows.uniq.paginate :per_page => @per_page, :page => @page
     end

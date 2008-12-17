@@ -1,7 +1,6 @@
 class LaereplansokController < ApplicationController
 
   def index
-
     @hovedomraader = create_options_for_select(Hovedomraade)
     @kompetansemaalsett = create_options_for_select(Kompetansemaalsett)
     @trinn = create_options_for_select(Trinn)
@@ -10,6 +9,7 @@ class LaereplansokController < ApplicationController
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
       @kompetansemaal = @laereplansok.kompetansemaal
       @rader = @laereplansok.to_table_rows
+
       render :action => "index"
     else
       @kompetansemaal = [].paginate

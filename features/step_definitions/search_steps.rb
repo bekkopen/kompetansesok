@@ -26,25 +26,22 @@ Naar /^jeg trykker på side (\d+)$/ do |n|
 end
 
 
-Saa /^skal jeg se (\d+) kompetansemål$/ do |n|
-  response.should have_tag('script') do |script|
-#    puts script.inspect
-  end
-
-  response.should have_selector('table#kompetansemaal') { |tables|
-    tables.length.should == 1
-    tables.first.should have_selector('tbody > tr') { |rader|
-      rader.length.should == n.to_i
-    }
-  }
+Saa /^skal jeg se (\d+) kompetansemål totalt$/ do |n|
+  response.should have_tag('div#antall_treff', n)
 end
 
 Saa /^jeg skal få (\d+) sider med resultater$/ do |n|
   response.should have_tag('a', n)
 end
 
-Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |tabell|
-  tabell.hashes.each do |kompetansemaal|
-    response.should contain(kompetansemaal['tittel'])
+Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |table|
+  table.hashes.each do |kompetansemaal|
+    response.should contain(encode(kompetansemaal['tittel']))
   end
 end
+
+def encode(streng)
+  #bytter æøå med sin utf8 ekvivalent
+  streng.gsub('ø', '\u00f8').gsub('Ø', '\u00d8').gsub('æ', '\u00e6').gsub('Æ', '\u00c6').gsub('å', '\u00e5').gsub('Å', '\u00c5');
+end
+

@@ -8,10 +8,10 @@ Feature: Skal kunne søke i kompetansemål basert på hovedområde
     Gitt at jeg er på læreplan søkesiden
     Når jeg velger hovedomraade "Administrasjon, salg og økonomi"
     Og jeg klikker søk
-    Så skal jeg se 8 kompetansemål
+    Så skal jeg se 8 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                       |
-      | gjøre rede for arbeidsoppgaver, rutiner, markedsføring og organisering       |
+      | forklare kvalitet sett i sammenheng med rasjonell og lønnsom drift           |
       | behandle klager og reklamasjoner                                             |
 
 
