@@ -12,4 +12,13 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+  
+  before_filter :set_spraak
+  
+  private
+  
+  def set_spraak
+    session[:spraak].nil? ? I18n.locale = 'nb' : I18n.locale = session[:spraak]
+  end
+  
 end

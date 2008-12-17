@@ -7,6 +7,7 @@
   <rdf:Description rdf:about="uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e">
     <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg1"/>
     <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0"/>
     <ns:title>Aktivitetslære 1</ns:title>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
   </rdf:Description>
@@ -185,6 +186,11 @@
   <rdf:Description rdf:about="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7">
     <grep:kode>IDR1-01</grep:kode>
     <ns:title>Læreplan i aktivitetslære - felles programfag i utdanningsprogram for idrettsfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+   <rdf:Description rdf:about="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0">
+    <grep:kode>OYS-1</grep:kode>
+    <ns:title>Oysteins læreplan</ns:title>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:8e7d8ac1-e4be-435c-9f56-fda31fc67b35">

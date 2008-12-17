@@ -40,8 +40,12 @@ if defined?(JRUBY_VERSION)
         @kompetansemaalsett[:tittel].should == "Aktivitetslære 1"
       end
 
-      it "should contain laereplan uuid" do
-        @kompetansemaalsett[:laereplan_uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
+      it "should contain an array of laereplan uuids" do
+        @kompetansemaalsett[:laereplan_uuids].should == ["uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0", "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"]
+      end
+      
+      it "should contain an array of trinn uuids" do
+        @kompetansemaalsett[:trinn_uuids].should == ["http://psi.udir.no/laereplan/aarstrinn/vg1"]
       end
     end
     
@@ -78,14 +82,28 @@ if defined?(JRUBY_VERSION)
         @kompetansemaal[:tittel].should == "anvende regelverk i den enkelte idrettsaktivitet"
       end
 
-      it "should have kompetansemaallsett uuid" do
-        @kompetansemaal[:kompetansemaalsett_uuid].should == "uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"
+      it "should have an array of kompetansemaallsett uuids" do
+        @kompetansemaal[:kompetansemaalsett_uuids].should == ["uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"]
       end
       
-      it "should have hovedomraade uuid" do
-        @kompetansemaal[:hovedomraade_uuid].should == "uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"
+      it "should have an array of hovedomraade uuids" do
+        @kompetansemaal[:hovedomraade_uuids].should == ["uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"]
       end
 
+    end
+    
+    describe "trinn" do
+      before :each do
+        @trinn = @jena.trinn[0]
+      end
+      
+      it "should get uuid" do
+        @trinn[:uuid].should == "http://psi.udir.no/laereplan/aarstrinn/vg1"
+      end
+
+      it "should get tittel" do
+        @trinn[:tittel].should == "Videregående trinn 1"
+      end
     end
 
   end

@@ -58,6 +58,7 @@ men burde være likt for mange andre distiubsjoner
 ** rspec-rails
 ** mysql
 ** nokogiri(se install nokogiri)
+** mislav-will_paginate --source http://gems.github.com
 
 Det var alt ;)
 
@@ -68,7 +69,7 @@ Det ser ut til at nokogiri og webrat har problemer med jruby, måten jeg klarte
 problemene ligger;
 # aaronp-frex med ruby gem
 # installere jruby -S gem install -v=1.0.6 nokogiri
-# installere jruby -S gem install webrat
+# Last ned og bygg webrat fra siste versjon på git hub, og installer denne
 
 
 

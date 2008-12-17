@@ -38,6 +38,12 @@ describe Kompetansemaalsett do
       @kompetansemaalsett.kompetansemaal << kompetansemaal
       @kompetansemaalsett.kompetansemaal.should == [kompetansemaal]
     end
+    
+    it "should have trinn" do
+      trinn = Trinn.new
+      @kompetansemaalsett.trinn << trinn
+      @kompetansemaalsett.trinn.should == [trinn]
+    end
   end
   
 end

@@ -3,21 +3,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <%= javascript_include_tag('jquery-1.2.6.min', 'jquery.autocomplete.min') %>
+    <%= javascript_include_tag 'ext/adapter/ext/ext-base', 'ext/ext-all', 'ext-functions' %>
     <%= stylesheet_link_tag('screen') %>
     <title>Kompetansesøk</title>
   </head>
   <body>
 	<div id="container">
+	  <div id="spraak">
+		<% form_tag("/spraak_session") do %>
+			<%= select :spraak, :valg, [["Bokmål", "nb"], ["Nynorsk", "nn"]] %>
+			<%= submit_tag "Velg språk", :class => 'submit' %>
+		<% end %>
+	  </div>
 	  <div id="header">
-	  	<img src="images/logo.gif" alt="udir logo">
+        <%= image_tag  "logo.gif" %>
 	  </div>
 	  <div id="branding_bar">
-		<img src="images/searchBackground.gif" alt="backgroung image">
+		<%= image_tag "searchBackground.gif" %>
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-		  <li><a href="#">Søk 1</a></li>
+		  <li><a href="<%= laereplansok_index_path %>">Søk via læreplan</a></li>
 		  <li><a href="#">Søk 2</a></li>
 		  <li><a href="#">Søk 3</a></li>
 		  <li><a href="#">Avansert søk</a></li>

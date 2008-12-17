@@ -1,11 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :hovedomraader
-
-
-  map.resources :kompetansemaalsett
-  map.resources :kompetansemaal
-  map.resources :laereplaner
-
+  map.resources :laereplansok
+  map.resources :spraak_session
 
   # The priority is based upon order of creation: first created -> highest priority.
 

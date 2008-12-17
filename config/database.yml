@@ -40,6 +40,25 @@ test:
   timeout: 5000
 <% end %>
 
+integration_test:
+<% if defined?(JRUBY_VERSION) %>
+  adapter: jdbc
+  username: root
+  password: 
+  url: jdbc:mysql://localhost/kompetansesok_integration_test
+  driver: org.gjt.mm.mysql.Driver
+<% else %>
+  adapter: mysql
+  encoding: utf8
+  database: kompetansesok_integration_test
+  username: root
+  password:
+  host: localhost
+  port: 3306
+  pool: 5
+  timeout: 5000
+<% end %>
+
 production:
   adapter: mysql
   encoding: utf8

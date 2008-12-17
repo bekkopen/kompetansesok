@@ -11,14 +11,82 @@
   </thead>
   <tbody>
     <% @kompetansemaal.each do |kompetansemaal| %>
-    <tr>
-      <td><%= kompetansemaal.laereplan_tittel %></td>
-      <td><%= kompetansemaal.hovedomraade_tittel %></td>
-      <td><%= kompetansemaal.kompetansemaalsett_tittel %></td>
-      <td> </td>
-      <td> </td>
-      <td><%= kompetansemaal.tittel %></td>
-    </tr>
+
+      <% kompetansemaal.kompetansemaalsett.each do |maalsett|%>
+        
+        <% unless kompetansemaal.hovedomraader.blank? %>
+          <% kompetansemaal.hovedomraader.each do |hovedomraade| %>
+            
+            <%# tegning av felter %>
+              <% unless maalsett.trinn.blank? %>
+                <% maalsett.trinn.each do |trinn| %>
+                   <% maalsett.laereplaner.each do |laereplan| %>
+                    <tr>
+                      <td><%= laereplan.tittel %></td>
+                      <td><%= hovedomraade.tittel %></td>
+                      <td><%= maalsett.tittel %></td>
+                      <td><%= trinn.tittel %></td>
+                      <td> </td>
+                      <td><%= kompetansemaal.tittel %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+
+              <% else %>
+
+                <% maalsett.laereplaner.each do |laereplan| %>
+                  <tr>
+                    <td><%= laereplan.tittel %></td>
+                    <td><%= hovedomraade.tittel %></td>
+                    <td><%= maalsett.tittel %></td>
+                    <td> </td>
+                    <td> </td>
+                    <td><%= kompetansemaal.tittel %></td>
+                  </tr>
+                <% end %>
+              <% end %>
+              <%# slutt tegning av felter %>
+            
+          <% end %>
+
+        <% else %>
+      
+          <%# tegning av felter %>
+          <% unless maalsett.trinn.blank? %>
+            <% maalsett.trinn.each do |trinn| %>
+               <% maalsett.laereplaner.each do |laereplan| %>
+                <tr>
+                  <td><%= laereplan.tittel %></td>
+                  <td> </td>
+                  <td><%= maalsett.tittel %></td>
+                  <td><%= trinn.tittel %></td>
+                  <td> </td>
+                  <td><%= kompetansemaal.tittel %></td>
+                </tr>
+              <% end %>
+            <% end %>
+
+          <% else %>
+
+            <% maalsett.laereplaner.each do |laereplan| %>
+              <tr>
+                <td><%= laereplan.tittel %></td>
+                <td> </td>
+                <td><%= maalsett.tittel %></td>
+                <td> </td>
+                <td> </td>
+                <td><%= kompetansemaal.tittel %></td>
+              </tr>
+            <% end %>
+          <% end %>
+          <%# slutt tegning av felter %>
+      
+        <% end %>
+    
+        
+      <% end %>
+      
     <% end %>
   </tbody>
 </table>
+<%= will_paginate @kompetansemaal %>

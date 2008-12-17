@@ -1,2 +1,0 @@
-class KompetansemaalController < ApplicationController  
-end

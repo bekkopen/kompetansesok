@@ -1,0 +1,18 @@
+<% form_tag(laereplansok_index_path, :method => "get", :id => 'laereplan_sok') do %>
+	<%= label_tag :laereplan_kode, t("laereplankode") %>
+	<%= text_field :laereplansok, :laereplan_kode %>
+	<%= label_tag :laereplan_tittel, t("laereplantittel") %>
+	<%= text_field :laereplansok, :laereplan_tittel %>
+	<%= label_tag :hovedomraade, t("hovedomraade") %>
+	<%= select( :laereplansok, :hovedomraade, @hovedomraader, { :include_blank => true }) %>
+	<%= label_tag :kompetansemaalsett, t("kompetansemaalsett") %>
+	<%= select( :laereplansok, :kompetansemaalsett, @kompetansemaalsett, { :include_blank => true }) %>
+	<%= label_tag :trinn, t("trinn") %>
+	<%= select( :laereplansok, :trinn, @trinn, { :include_blank => true }) %>
+	<%= label_tag :kompetansemaal_tittel, t("kompetansemaaltittel") %>
+	<%= text_field :laereplansok, :kompetansemaal_tittel %>
+	<%= submit_tag "Søk", :name => nil, :class => 'submit' %>
+<% end %>
+<% unless @kompetansemaal.blank? %>
+  <%= render :partial => 'kompetansemaal/ext_list' %>
+<% end %>
