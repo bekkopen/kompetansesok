@@ -290,6 +290,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:7321b950-5720-4ee0-9d25-284d71e4f99e">
     <ns:title>Basistrening</ns:title>
+    <grep:kode>KODE</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:7383c30f-0347-43cf-a858-49933dd404e0">

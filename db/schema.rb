@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081217132310) do
+ActiveRecord::Schema.define(:version => 20081217135517) do
 
   create_table "hovedomraader", :force => true do |t|
     t.string   "uuid"
     t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "kode"
   end
 
   add_index "hovedomraader", ["uuid"], :name => "index_hovedomraader_on_uuid"

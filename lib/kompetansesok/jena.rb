@@ -37,9 +37,9 @@ module Kompetansesok
       @model.listResourcesWithProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
         {
           :uuid => r.to_s,
-          :tittel => r.getProperty(@title_property).string,
-          :kompetansemaalsett_uuids => get_uuids(r, @kompetansemaalsett_har_kompetansemaal_property),
-          :hovedomraade_uuids => get_uuids(r, @tilhoerer_hovedomraade_property)
+          :tittel => tittel(r),
+          :kompetansemaalsett_uuids => uuids(r, @kompetansemaalsett_har_kompetansemaal_property),
+          :hovedomraade_uuids => uuids(r, @tilhoerer_hovedomraade_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -48,9 +48,9 @@ module Kompetansesok
       @model.listObjectsOfProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|
         { 
           :uuid => r.to_s,
-          :kode => r.getProperty(@kode_property).string,
-          :tittel => r.getProperty(@title_property).string,
-          :hovedomraade_uuids => get_uuids(r, @hovedomraader_property)
+          :kode => kode(r),
+          :tittel => tittel(r),
+          :hovedomraade_uuids => uuids(r, @hovedomraader_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -60,9 +60,9 @@ module Kompetansesok
       @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|        
         { 
           :uuid => r.to_s,
-          :tittel => r.getProperty(@title_property).string,
-          :laereplan_uuids => get_uuids(r, @kompetansemaalsett_etter_laereplan_property),
-          :trinn_uuids => get_uuids(r, @kompetansemaalsett_etter_aarstrinn_property)
+          :tittel => tittel(r),
+          :laereplan_uuids => uuids(r, @kompetansemaalsett_etter_laereplan_property),
+          :trinn_uuids => uuids(r, @kompetansemaalsett_etter_aarstrinn_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -71,7 +71,8 @@ module Kompetansesok
       @model.listObjectsOfProperty(@tilhoerer_hovedomraade_property). map do |r|
         {
           :uuid => r.to_s,
-          :tittel => r.getProperty(@title_property).string,
+          :kode => kode(r),
+          :tittel => tittel(r),
         }   
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -80,15 +81,28 @@ module Kompetansesok
       @model.listObjectsOfProperty(@kompetansemaalsett_etter_aarstrinn_property). map do |r|
         {
           :uuid => r.to_s,
-          :tittel => r.getProperty(@title_property).string
+          :tittel => tittel(r)
         }   
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
     private
     
-    def get_uuids(resource, property)
+    def uuids(resource, property)
       resource.listProperties(property).map {|p| p.resource.to_s}
+    end
+    
+    def property_content(resource, property)
+      r = resource.getProperty(property)
+      r.nil? ? "" : r.string
+    end
+    
+    def tittel(resource)
+      property_content(resource, @title_property)
+    end
+    
+    def kode(resource)
+      property_content(resource, @kode_property)
     end
     
   end

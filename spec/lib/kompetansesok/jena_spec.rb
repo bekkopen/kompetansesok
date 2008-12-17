@@ -66,6 +66,10 @@ if defined?(JRUBY_VERSION)
         @hoovedomraade[:tittel].should == "Basistrening"
       end
       
+      it "should get kode" do
+        @hoovedomraade[:kode].should == "KODE"
+      end
+      
     end
 
     describe "kompetansemaal" do
