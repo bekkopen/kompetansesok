@@ -34,15 +34,25 @@ describe Laereplan do
       @laereplan.kompetansemaalsett.should == [kompetansemaalsett]
     end
     
+    it "should have hovedomraader" do
+      hovedomraade = Hovedomraade.new
+      @laereplan.hovedomraader << hovedomraade
+      @laereplan.hovedomraader.should == [hovedomraade]
+    end
+    
     it "should have unique list of kompetansemaal" do
-      kompetansemaal = Kompetansemaal.new
+      kompetansemaal1 = Kompetansemaal.new
+      kompetansemaal2 = Kompetansemaal.new
       kompetansemaalsett1 = Kompetansemaalsett.new
       kompetansemaalsett2 = Kompetansemaalsett.new
-      kompetansemaalsett1.kompetansemaal << kompetansemaal
-      kompetansemaalsett2.kompetansemaal << kompetansemaal
+      hovedomraade = Hovedomraade.new
+      kompetansemaalsett1.kompetansemaal << kompetansemaal1
+      kompetansemaalsett2.kompetansemaal << kompetansemaal1
+      hovedomraade.kompetansemaal << kompetansemaal2
       @laereplan.kompetansemaalsett << kompetansemaalsett1
       @laereplan.kompetansemaalsett << kompetansemaalsett2
-      @laereplan.kompetansemaal.should == [kompetansemaal]
+      @laereplan.hovedomraader << hovedomraade
+      @laereplan.kompetansemaal.should == [kompetansemaal1, kompetansemaal2]
     end
   end
 end

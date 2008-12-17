@@ -20,4 +20,22 @@ describe Hovedomraade do
       end.should raise_error
     end
   end
+  
+  describe "relationships" do
+    before :each do
+      @hovedomraade = Hovedomraade.new
+    end
+    
+    it "should have kompetansemaal" do
+      maal = Kompetansemaal.new
+      @hovedomraade.kompetansemaal << maal
+      @hovedomraade.kompetansemaal.should == [maal]
+    end
+    
+    it "should have laereplaner" do
+      plan = Laereplan.new
+      @hovedomraade.laereplaner << plan
+      @hovedomraade.laereplaner.should == [plan]
+    end
+  end
 end

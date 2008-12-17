@@ -16,6 +16,7 @@ module Kompetansesok
       @kompetansemaalsett_etter_laereplan_property    = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_laereplan')
       @tilhoerer_hovedomraade_property                = @model.getProperty(GREP_NS, 'tilhoerer_hovedomraade')
       @kompetansemaalsett_etter_aarstrinn_property    = @model.getProperty(GREP_NS, 'kompetansemaalsett_etter_aarstrinn')
+      @hovedomraader_property                         = @model.getProperty(GREP_NS, 'hovedomraader')
     end
     
     def les_rdf_fil(rdf_fil)
@@ -48,7 +49,8 @@ module Kompetansesok
         { 
           :uuid => r.to_s,
           :kode => r.getProperty(@kode_property).string,
-          :tittel => r.getProperty(@title_property).string
+          :tittel => r.getProperty(@title_property).string,
+          :hovedomraade_uuids => get_uuids(r, @hovedomraader_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -69,7 +71,7 @@ module Kompetansesok
       @model.listObjectsOfProperty(@tilhoerer_hovedomraade_property). map do |r|
         {
           :uuid => r.to_s,
-          :tittel => r.getProperty(@title_property).string
+          :tittel => r.getProperty(@title_property).string,
         }   
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end

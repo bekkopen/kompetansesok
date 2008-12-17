@@ -29,7 +29,7 @@ Saa /^skal det ligge (\d+) (.*) i basen$/ do |n, klasse|
   klass.count.should == n.to_i
 end
 
-Saa /^(.*) skal tilhøre (.*)/ do |klasse, relasjonsklasse|
+Saa /^(.*) skal ha relasjon til (.*)/ do |klasse, relasjonsklasse|
   klass = klasse.singularize.constantize
   relasjon = relasjonsklasse.pluralize.downcase.to_sym
   instans = klass.find :first

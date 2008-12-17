@@ -186,6 +186,7 @@
   <rdf:Description rdf:about="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7">
     <grep:kode>IDR1-01</grep:kode>
     <ns:title>Læreplan i aktivitetslære - felles programfag i utdanningsprogram for idrettsfag</ns:title>
+    <grep:hovedomraader rdf:resource="uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"/>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
   </rdf:Description>
    <rdf:Description rdf:about="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0">

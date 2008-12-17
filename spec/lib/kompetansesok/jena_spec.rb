@@ -24,6 +24,10 @@ if defined?(JRUBY_VERSION)
       it "should get kode" do
         @laereplan[:kode].should == "IDR1-01"
       end
+      
+      it "should get hovedomraade uuids" do
+        @laereplan[:hovedomraade_uuids].should == ["uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"]
+      end
 
     end
 
