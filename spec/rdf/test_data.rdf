@@ -43,6 +43,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:8f2ce324-6ac3-4ada-98ac-438325404a07">
     <ns:title>Idrettsaktiviteter</ns:title>
+    <grep:kode>Kode-1</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:60e0d1c6-ac7d-46eb-a22f-ca888b6c420f">
@@ -70,6 +71,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:2bd30a81-e4a9-439d-8706-161682c1e95b">
     <ns:title>Friluftsliv</ns:title>
+    <grep:kode>Kode-abc</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:bb06151b-245f-4248-ba24-44765deed2a7">

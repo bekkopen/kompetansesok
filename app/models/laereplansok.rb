@@ -2,7 +2,8 @@ class Laereplansok
   
   @@soekefelter =  [:laereplan_tittel, 
     :laereplan_kode, 
-    :hovedomraade, 
+    :hovedomraade,
+    :hovedomraade_kode,
     :kompetansemaalsett, 
     :trinn, 
     :kompetansemaal_tittel]
@@ -119,6 +120,11 @@ class Laereplansok
         end
         maal.hovedomraader.all do |h| 
           h.uuid == hovedomraade
+        end
+        maal.hovedomraader.any do |h|
+           split_string_on_semicolon(hovedomraade_kode).each do |sokt_kode|
+             h.kode =~ parse_text_input(sokt_kode)
+           end
         end
         maal.tittel =~ parse_text_input(kompetansemaal_tittel)
       end

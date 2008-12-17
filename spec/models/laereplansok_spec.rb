@@ -29,17 +29,17 @@ describe Laereplansok do
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 38
     end
-  
-    it "should be possible to search by laereplankode" do
-      @laereplansok.laereplan_kode = "IDR1-01"
-      kompetansemaal = @laereplansok.kompetansemaal
-      kompetansemaal.length.should  == 38
-    end
     
     it "should be possible to search by a semicolon separated string of laereplankoder" do
       @laereplansok.laereplan_kode = "IDR1-01; AMM3"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 67
+    end
+    
+    it "should be possible to search by a semicolon separated string of hovedomraadekoder" do
+      @laereplansok.hovedomraade_kode = "Kode-1; Kode-a"
+      kompetansemaal = @laereplansok.kompetansemaal
+      kompetansemaal.length.should  == 31
     end
   
     it "should be possible to search by hovedomraade" do
