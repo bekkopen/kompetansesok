@@ -24,6 +24,10 @@ if defined?(JRUBY_VERSION)
       it "should get kode" do
         @laereplan[:kode].should == "IDR1-01"
       end
+      
+      it "should get hovedomraade uuids" do
+        @laereplan[:hovedomraade_uuids].should == ["uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"]
+      end
 
     end
 
@@ -62,6 +66,10 @@ if defined?(JRUBY_VERSION)
         @hoovedomraade[:tittel].should == "Basistrening"
       end
       
+      it "should get kode" do
+        @hoovedomraade[:kode].should == "KODE"
+      end
+      
     end
 
     describe "kompetansemaal" do
@@ -88,6 +96,10 @@ if defined?(JRUBY_VERSION)
       
       it "should have an array of hovedomraade uuids" do
         @kompetansemaal[:hovedomraade_uuids].should == ["uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"]
+      end
+      
+      it "should get kode" do
+        @kompetansemaal[:kode].should == "KODE"
       end
 
     end

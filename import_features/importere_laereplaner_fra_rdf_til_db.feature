@@ -8,3 +8,4 @@ Feature: Importere læreplaner fra RDF til databasese
     Gitt at RDF-filer er hentet til fil
     Når 2 RDF-filer lastes inn i databasen
     Så skal det ligge 2 Laereplan i basen
+    Og Laereplan skal ha relasjon til Hovedomraade

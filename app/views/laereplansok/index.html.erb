@@ -5,6 +5,13 @@
 	<%= text_field :laereplansok, :laereplan_tittel %>
 	<%= label_tag :hovedomraade, t("hovedomraade") %>
 	<%= select( :laereplansok, :hovedomraade, @hovedomraader, { :include_blank => true }) %>
+  
+  <%# Hovedområder skal få "kode" i fremtiden, til de får dette, vil vi ikke vise søkefelt for kode til brukerene i prod %>
+  <% if RAILS_ENV == 'test' || RAILS_ENV == 'development'%>
+    <%= label_tag :hovedomraade_kode, t("hovedomraadekode") %>
+    <%= text_field :laereplansok, :hovedomraade_kode %>
+  <% end %>
+  
 	<%= label_tag :kompetansemaalsett, t("kompetansemaalsett") %>
 	<%= select( :laereplansok, :kompetansemaalsett, @kompetansemaalsett, { :include_blank => true }) %>
 	<%= label_tag :trinn, t("trinn") %>

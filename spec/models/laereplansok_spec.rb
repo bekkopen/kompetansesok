@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
-
   
   describe "searching" do
     before :all do 
@@ -23,15 +22,15 @@ describe Laereplansok do
     it "should return all records when no search parameters are given" do
       @laereplansok.kompetansemaal.length.should == 96
     end
-  
-    it "should be possible to search by laereplantittel" do
-      @laereplansok.laereplan_tittel = "aktivitetslære - felles programfag i utdanningsprogram for idrettsfag"
+    
+    it "should allow '*' as a wildcard for 'match anything here'" do
+      @laereplansok.laereplan_tittel = "aktivitetslære * idrettsfag"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 38
     end
   
-    it "should be possible to search by laereplankode" do
-      @laereplansok.laereplan_kode = "IDR1-01"
+    it "should be possible to search by laereplantittel" do
+      @laereplansok.laereplan_tittel = "aktivitetslære - felles programfag i utdanningsprogram for idrettsfag"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 38
     end
@@ -40,6 +39,12 @@ describe Laereplansok do
       @laereplansok.laereplan_kode = "IDR1-01; AMM3"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 67
+    end
+    
+    it "should be possible to search by a semicolon separated string of hovedomraadekoder" do
+      @laereplansok.hovedomraade_kode = "Kode-1; Kode-a"
+      kompetansemaal = @laereplansok.kompetansemaal
+      kompetansemaal.length.should  == 31
     end
   
     it "should be possible to search by hovedomraade" do

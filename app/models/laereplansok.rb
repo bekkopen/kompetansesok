@@ -2,7 +2,8 @@ class Laereplansok
   
   @@soekefelter =  [:laereplan_tittel, 
     :laereplan_kode, 
-    :hovedomraade, 
+    :hovedomraade,
+    :hovedomraade_kode,
     :kompetansemaalsett, 
     :trinn, 
     :kompetansemaal_tittel]
@@ -106,11 +107,11 @@ class Laereplansok
         maal.kompetansemaalsett.all do |sett|
           sett.uuid == kompetansemaalsett
           sett.laereplaner do |plan|
-            plan.tittel =~ parse_text_input(laereplan_tittel)
+            plan.tittel =~ make_ready_for_like(laereplan_tittel)
           end
           sett.laereplaner.any do |plan|
             split_string_on_semicolon(laereplan_kode).each do |sokt_kode|
-              plan.kode =~ parse_text_input(sokt_kode)
+              plan.kode =~ make_ready_for_like(sokt_kode)
             end
           end
           sett.trinn do |t|
@@ -120,17 +121,35 @@ class Laereplansok
         maal.hovedomraader.all do |h| 
           h.uuid == hovedomraade
         end
-        maal.tittel =~ parse_text_input(kompetansemaal_tittel)
+        maal.hovedomraader.any do |h|
+           split_string_on_semicolon(hovedomraade_kode).each do |sokt_kode|
+             h.kode =~ make_ready_for_like(sokt_kode)
+           end
+        end
+        maal.tittel =~ make_ready_for_like(kompetansemaal_tittel)
       end
     end
   end
 
-  def parse_text_input(text)
-    text.blank? ? nil : "%#{text}%"
+  def make_ready_for_like(text)
+    if text.blank? 
+      nil
+    else
+      text_with_wildcards = use_star_as_wildcard(text)
+      percent_at_start_and_end(text_with_wildcards)
+    end
   end
   
   def split_string_on_semicolon(string)
     string.nil? ? [] : string.gsub(" ", "").split(';')
+  end
+  
+  def use_star_as_wildcard(text)
+    text.gsub('*', '%')
+  end
+  
+  def percent_at_start_and_end(text)
+    "%#{text}%"
   end
   
 end
