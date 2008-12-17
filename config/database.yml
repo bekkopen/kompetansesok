@@ -7,12 +7,12 @@ development:
   adapter: jdbc
   username: root
   password: 
-  url: jdbc:mysql://localhost/kompetansesok_development
+  url: jdbc:mysql://localhost/kompetansesok_development<%= ENV['DB_SUFFIX'] %>
   driver: org.gjt.mm.mysql.Driver
 <% else %>
   adapter: mysql
   encoding: utf8
-  database: kompetansesok_development
+  database: kompetansesok_development<%= ENV['DB_SUFFIX'] %>
   username: root
   password:
   host: localhost
@@ -26,12 +26,12 @@ test:
   adapter: jdbc
   username: root
   password: 
-  url: jdbc:mysql://localhost/kompetansesok_test
+  url: jdbc:mysql://localhost/kompetansesok_test<%= ENV['DB_SUFFIX'] %>
   driver: org.gjt.mm.mysql.Driver
 <% else %>
   adapter: mysql
   encoding: utf8
-  database: kompetansesok_test
+  database: kompetansesok_test<%= ENV['DB_SUFFIX'] %>
   username: root
   password:
   host: localhost
@@ -45,12 +45,12 @@ integration_test:
   adapter: jdbc
   username: root
   password: 
-  url: jdbc:mysql://localhost/kompetansesok_integration_test
+  url: jdbc:mysql://localhost/kompetansesok_integration_test<%= ENV['DB_SUFFIX'] %>
   driver: org.gjt.mm.mysql.Driver
 <% else %>
   adapter: mysql
   encoding: utf8
-  database: kompetansesok_integration_test
+  database: kompetansesok_integration_test<%= ENV['DB_SUFFIX'] %>
   username: root
   password:
   host: localhost
@@ -62,7 +62,7 @@ integration_test:
 production:
   adapter: mysql
   encoding: utf8
-  database: kompetansesok_production
+  database: kompetansesok_production<%= ENV['DB_SUFFIX'] %>
   username: root
   password:
   host: localhost
