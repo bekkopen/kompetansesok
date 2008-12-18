@@ -22,7 +22,7 @@ class Laereplansok
 
   def kompetansemaal
     if empty_search?
-      Kompetansemaal
+      Kompetansemaal.find(:all)
     else
       search_for_kompetansemaal
     end
