@@ -7,9 +7,9 @@ function copySelectedUuids() {
 
   for ( rec = 0; rec < selRecords.length; rec++)
     {
-      uuids = uuids.concat([selRecords[rec].get('kompetansemaal_uuid')]);
+      uuids = uuids.concat(selRecords[rec].get('kompetansemaal_uuid')+"");
     }
-    displayKompetansemaal(uuids);
+    displayKompetansemaal(uuids, "Valgte kompetansemål uuid:");
 }
 
 function copySelectedCodesAndUuids() {
@@ -27,13 +27,13 @@ function copySelectedCodesAndUuids() {
 }
 
 
-function displayKompetansemaal(text)
+function displayKompetansemaal(text, tittel)
 {
 
     win = new Ext.Window({
-       title: "<b>Valgte kompetansemål uuid:</b>",
+       title: "<b>"+tittel+"</b>",
        html:text.join("<br/>"),
-       minHeight:200,
+       height:200,
        width:200
     });
 
