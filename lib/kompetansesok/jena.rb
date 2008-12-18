@@ -34,7 +34,7 @@ module Kompetansesok
     
     # Returnerer alle kompetansemaal som Array av Hash. Hver Hash er et key-value par med primitive verdier.
     def kompetansemaal
-      @model.listResourcesWithProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
+      @kompetansemaal ||= @model.listResourcesWithProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
         {
           :uuid => r.to_s,
           :tittel => tittel(r),
@@ -46,7 +46,7 @@ module Kompetansesok
     end
     
     def laereplaner
-      @model.listObjectsOfProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|
+      @laereplaner ||= @model.listObjectsOfProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|
         { 
           :uuid => r.to_s,
           :kode => kode(r),
@@ -58,7 +58,7 @@ module Kompetansesok
     
     # Kompetansemaalsett trenger ikke ha trinn
     def kompetansemaalsett
-      @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|        
+      @kompetansemaalsett ||= @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|        
         { 
           :uuid => r.to_s,
           :tittel => tittel(r),
@@ -69,7 +69,7 @@ module Kompetansesok
     end
     
     def hovedomraader
-      @model.listObjectsOfProperty(@tilhoerer_hovedomraade_property). map do |r|
+      @hovedomraader ||= @model.listObjectsOfProperty(@tilhoerer_hovedomraade_property). map do |r|
         {
           :uuid => r.to_s,
           :kode => kode(r),
@@ -79,7 +79,7 @@ module Kompetansesok
     end
     
     def trinn
-      @model.listObjectsOfProperty(@kompetansemaalsett_etter_aarstrinn_property). map do |r|
+      @trinn ||= @model.listObjectsOfProperty(@kompetansemaalsett_etter_aarstrinn_property). map do |r|
         {
           :uuid => r.to_s,
           :tittel => tittel(r)
