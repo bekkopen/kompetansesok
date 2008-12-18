@@ -38,7 +38,7 @@
       
       grid.addButton( {
         text: 'Kopier til utklippstavle',
-        clickEvent: 'ctrl-c',
+        id: 'kopier_til_utklipp',
         handler : function(){
                       copySelectedUuids();
                   }
@@ -49,27 +49,6 @@
       grid.render('kompetansemaal');
       grid.getSelectionModel().selectFirstRow();
 
-      // action listener
-      grid.addListener
-      (
-        'keydown', 
-        function(evnt)
-        {
-          var keyPressed = evnt.getKey();
-
-          if (evnt.ctrlKey) {
-            /*
-            * ctrl+c combination is code 67 
-            */
-            if (keyPressed == 67)
-              {
-                copySelectedUuids();
-              }
-            }
-          }
-        );
-        //end of action listener
-    
     });
       
  </script>
@@ -81,6 +60,7 @@
 <link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../../resources/css/ext-all.css" />
 
 <div id="antall_treff" style="display:none;" ><%= @kompetansemaal.length%></div>
+
 
 <div id="kompetansemaal" style="height: 500px"> </div>
 
