@@ -67,19 +67,19 @@ module Kompetansesok
         Hovedomraade.delete_all
         Trinn.delete_all
 
-        @out.puts('Importerer #{jena.trinn.length} Trinn...') if @out
+        @out.puts("Importerer #{jena.trinn.length} Trinn...") if @out
         Trinn.create!(jena.trinn)
-
-        @out.puts('Importerer #{jena.laereplaner.length} Laereplan...') if @out
+        @out.puts("Importerer #{jena.laereplaner.length} Laereplan...") if @out
         Laereplan.create!(jena.laereplaner)
-        @out.puts('Importerer #{jena.hovedomraader.length} Hovedomraade...') if @out
+        @out.puts("Importerer #{jena.hovedomraader.length} Hovedomraade...") if @out
         Hovedomraade.create!(jena.hovedomraader)
-        @out.puts('Importerer #{jena.kompetansemaalsett.length} Kompetansemaalsett...') if @out
-
+        @out.puts("Importerer #{jena.kompetansemaalsett.length} Kompetansemaalsett...") if @out
         Kompetansemaalsett.create!(jena.kompetansemaalsett)
-        @out.puts('Importerer #{jena.kompetansemaal.length} Kompetansemaal...') if @out
+        @out.puts("Importerer #{jena.kompetansemaal.length} Kompetansemaal...") if @out
         Kompetansemaal.create!(jena.kompetansemaal)
+        @out.puts('Database commit...') if @out
       end
+      @out.puts('Import ferdig.') if @out
     end
 
     def filer
