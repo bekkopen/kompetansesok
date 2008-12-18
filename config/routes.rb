@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :laereplansok
+  map.resources :laereplansok, :collection => {:update_dropdowns => :get}
   map.resources :spraak_session
 
   # The priority is based upon order of creation: first created -> highest priority.

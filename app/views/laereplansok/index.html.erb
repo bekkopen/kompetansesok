@@ -1,10 +1,25 @@
+<script type="text/javascript">
+  function updateDropdowns(query){
+    Ext.Ajax.request({
+        url:"<%= update_dropdowns_laereplansok_path %>",
+        timeout: 3000,
+        method: 'GET',
+        params: Ext.Ajax.serializeForm('laereplan_sok'),
+        success: function(xhr) {
+          alert('Response is "' + xhr.responseText + '"');
+        }
+    });
+}
+
+</script>
+
 <% form_tag(laereplansok_index_path, :method => "get", :id => 'laereplan_sok') do %>
 	<%= label_tag :laereplan_kode, t("laereplankode") %>
-	<%= text_field :laereplansok, :laereplan_kode %>
+	<%= text_field :laereplansok, :laereplan_kode, :onchange => "updateDropdowns()" %>
 	<%= label_tag :laereplan_tittel, t("laereplantittel") %>
 	<%= text_field :laereplansok, :laereplan_tittel %>
-	<%= label_tag :hovedomraade, t("hovedomraade") %>
-	<%= select( :laereplansok, :hovedomraade, @hovedomraader, { :include_blank => true }) %>
+	<%= label_tag :hovedomraade_uuid, t("hovedomraade") %>
+	<%= select( :laereplansok, :hovedomraade_uuid, @hovedomraader, { :include_blank => true }) %>
   
   <%# Hovedområder skal få "kode" i fremtiden, til de får dette, vil vi ikke vise søkefelt for kode til brukerene i prod %>
   <% if RAILS_ENV == 'test' || RAILS_ENV == 'development'%>
@@ -12,10 +27,10 @@
     <%= text_field :laereplansok, :hovedomraade_kode %>
   <% end %>
   
-	<%= label_tag :kompetansemaalsett, t("kompetansemaalsett") %>
-	<%= select( :laereplansok, :kompetansemaalsett, @kompetansemaalsett, { :include_blank => true }) %>
-	<%= label_tag :trinn, t("trinn") %>
-	<%= select( :laereplansok, :trinn, @trinn, { :include_blank => true }) %>
+	<%= label_tag :kompetansemaalsett_uuid, t("kompetansemaalsett") %>
+	<%= select( :laereplansok, :kompetansemaalsett_uuid, @kompetansemaalsett, { :include_blank => true }) %>
+	<%= label_tag :trinn_uuid, t("trinn") %>
+	<%= select( :laereplansok, :trinn_uuid, @trinn, { :include_blank => true }) %>
 	<%= label_tag :kompetansemaal_tittel, t("kompetansemaaltittel") %>
 	<%= text_field :laereplansok, :kompetansemaal_tittel %>
 	<%= submit_tag "Søk", :name => nil, :class => 'submit' %>

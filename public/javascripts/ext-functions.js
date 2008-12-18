@@ -66,4 +66,3 @@ function displayKompetansemaal(text, tittel)
 
 
 
-

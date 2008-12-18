@@ -47,20 +47,20 @@ describe Laereplansok do
       kompetansemaal.length.should  == 31
     end
   
-    it "should be possible to search by hovedomraade" do
-      @laereplansok.hovedomraade = "uuid:78085ca0-5d55-4caa-a3b9-1bf54e720027"
+    it "should be possible to search by hovedomraade_uuid" do
+      @laereplansok.hovedomraade_uuid = "uuid:78085ca0-5d55-4caa-a3b9-1bf54e720027"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 5
     end
   
-    it "should be possible to search by kompetansemaalsett" do
-      @laereplansok.kompetansemaalsett = "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
+    it "should be possible to search by kompetansemaalsett_uuid" do
+      @laereplansok.kompetansemaalsett_uuid = "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 17
     end
   
-    it "should be possible to search by trinn" do
-      @laereplansok.trinn = "http://psi.udir.no/laereplan/aarstrinn/vg1"
+    it "should be possible to search by trinn_uuid" do
+      @laereplansok.trinn_uuid = "http://psi.udir.no/laereplan/aarstrinn/vg1"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 46
     end
@@ -143,5 +143,26 @@ describe Laereplansok do
     end
 
   end
+
+  describe "search for laereplan" do
+    it "should give all laereplans for given search query" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+      
+      laereplaner = laereplansok.laereplaner
+      laereplaner.should_not be_empty
+      laereplaner.length.should == 1
+
+      laereplaner.first.tittel.should =~ /aktivitetslære/
+    end
+  end
+
+  describe "finding kompetansemålsett" do
+    it "should find all kompetansemaalsett for all matching laereplaner" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+      kompetansemaalsett = laereplansok.kompetansemaalsett
+      kompetansemaalsett.length.should == 3
+    end
+  end
+
 
 end

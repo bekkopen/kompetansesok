@@ -2,10 +2,10 @@ class Laereplansok
   
   @@soekefelter =  [:laereplan_tittel, 
     :laereplan_kode, 
-    :hovedomraade,
+    :hovedomraade_uuid,
     :hovedomraade_kode,
-    :kompetansemaalsett, 
-    :trinn, 
+    :kompetansemaalsett_uuid,
+    :trinn_uuid,
     :kompetansemaal_tittel]
 
   @@soekefelter.each do |f|
@@ -18,6 +18,23 @@ class Laereplansok
     @@soekefelter.each {|soekefelt| self.send("#{soekefelt}=", params[soekefelt]) }
     @page = params[:page]
     @per_page = 10
+  end
+
+  def laereplaner
+    Laereplan.find_where(:all) do |laereplan|
+      laereplan.all do |l|
+        l.tittel =~ make_ready_for_like(laereplan_tittel)
+      end
+      laereplan.any do |l|
+        search_for_any(l, laereplan_kode)
+      end
+    end
+  end
+
+  def kompetansemaalsett
+    laereplaner.map do |plan|
+      plan.kompetansemaalsett
+    end.flatten.uniq
   end
 
   def kompetansemaal
@@ -100,30 +117,32 @@ class Laereplansok
     Kompetansemaal.find_where(:all, :include => joins) do |kompetansemaal|
       kompetansemaal.all do |maal|
         maal.kompetansemaalsett.all do |sett|
-          sett.uuid == kompetansemaalsett
+          sett.uuid == kompetansemaalsett_uuid
           sett.laereplaner do |plan|
             plan.tittel =~ make_ready_for_like(laereplan_tittel)
           end
           sett.laereplaner.any do |plan|
-            split_string_on_semicolon(laereplan_kode).each do |sokt_kode|
-              plan.kode =~ make_ready_for_like(sokt_kode)
-            end
+            search_for_any(plan, laereplan_kode)
           end
           sett.trinn do |t|
-            t.uuid == trinn
+            t.uuid == trinn_uuid
           end
         end
         maal.hovedomraader.all do |h| 
-          h.uuid == hovedomraade
+          h.uuid == hovedomraade_uuid
         end
         maal.hovedomraader.any do |h|
-           split_string_on_semicolon(hovedomraade_kode).each do |sokt_kode|
-             h.kode =~ make_ready_for_like(sokt_kode)
-           end
+          search_for_any(h, hovedomraade_kode)
         end
         maal.tittel =~ make_ready_for_like(kompetansemaal_tittel)
       end
     end
+  end
+
+  def search_for_any(item, codes )
+   split_string_on_semicolon(codes).each do |sokt_kode|
+     item.kode =~ make_ready_for_like(sokt_kode)
+   end
   end
 
   def make_ready_for_like(text)
