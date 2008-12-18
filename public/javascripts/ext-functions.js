@@ -12,6 +12,20 @@ function copySelectedUuids() {
     displayKompetansemaal(uuids);
 }
 
+function copySelectedCodesAndUuids() {
+  var rows = [];
+  var grid = Ext.getCmp('kompetansemaal_grid');
+
+  var selRecords = grid.getSelectionModel().getSelections();
+
+  for ( rec = 0; rec < selRecords.length; rec++)
+    {
+      text = [selRecords[rec].get('kompetansemaal_kode')] + ", " + [selRecords[rec].get('kompetansemaal_uuid')]
+      rows = rows.concat(text);
+    }
+    displayKompetansemaal(rows);
+}
+
 
 function displayKompetansemaal(text)
 {

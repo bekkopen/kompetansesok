@@ -37,14 +37,20 @@
       });
       
       grid.addButton( {
-        text: 'Kopier til utklippstavle',
-        id: 'kopier_til_utklipp',
+        text: 'Vis id for valgte kompetansemål',
+        id: 'id_for_valgte',
         handler : function(){
                       copySelectedUuids();
                   }
         });
 
-
+      grid.addButton( {
+        text: 'Vis kode og id for valgte kompetansemål',
+        id: 'kod_og_id_for_valgte',
+        handler : function(){
+                      copySelectedCodesAndUuids();
+                  }
+        });
 
       grid.render('kompetansemaal');
       grid.getSelectionModel().selectFirstRow();
