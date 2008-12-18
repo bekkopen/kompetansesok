@@ -9,15 +9,15 @@ function copySelectedUuids() {
     {
       uuids = uuids.concat([selRecords[rec].get('kompetansemaal_uuid')]);
     }
-    displayKompetansemaal(uuids);
+    displayKompetansemaal(uuids, "Valgte kompetansemål uuid:");
 }
 
 
-function displayKompetansemaal(text)
+function displayKompetansemaal(text, tittel)
 {
 
     win = new Ext.Window({
-       title: "<b>Valgte kompetansemål uuid:</b>",
+       title: "<b>"+tittel+"</b>",
        html:text.join("<br/>"),
        minHeight:200,
        width:200
