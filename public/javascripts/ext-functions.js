@@ -23,7 +23,7 @@ function copySelectedCodesAndUuids() {
       text = [selRecords[rec].get('kompetansemaal_kode')] + ", " + [selRecords[rec].get('kompetansemaal_uuid')]
       rows = rows.concat(text);
     }
-    displayKompetansemaal(rows);
+    displayKompetansemaal(rows, "Valgte kompetansemål med kode og uuid:");
 }
 
 
