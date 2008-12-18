@@ -81,8 +81,7 @@ describe Laereplansok do
     end
     
     it "should generate proper initalized array" do
-      @laereplansok.to_table_rows.should_not be_empty
-      @laereplansok.to_table_rows.first.should_not be_empty
+      @laereplansok.to_table_rows.should be_empty
     end   
 
     it "should have two rows for a kompetansemål with two hovedområder" do
