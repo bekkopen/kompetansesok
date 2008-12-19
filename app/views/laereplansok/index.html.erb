@@ -6,11 +6,10 @@
         method: 'GET',
         params: Ext.Ajax.serializeForm('laereplan_sok'),
         success: function(xhr) {
-          alert('Response is "' + xhr.responseText + '"');
-       //   var data = xhr.responseText;
-       //   console.log(data)
+          var jsonData = Ext.util.JSON.decode(xhr.responseText);
+          var kompetansemaal_options = jsonData['kompetansemaalsett_options']
             
-       //   kompetansemaalsett.store.loadData(data);
+          kompetansemaalsett.store.loadData(kompetansemaal_options);
         }
     });
 }
