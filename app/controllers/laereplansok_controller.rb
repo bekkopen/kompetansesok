@@ -1,9 +1,9 @@
 class LaereplansokController < ApplicationController
 
   def index
-    @hovedomraader = create_options_for_select(Hovedomraade)
-    @kompetansemaalsett = create_options_for_select(Kompetansemaalsett)
-    @trinn = create_options_for_select(Trinn)
+    @hovedomraader_options = create_options_for_select(Hovedomraade)
+    @kompetansemaalsett_options = create_options_for_select(Kompetansemaalsett)
+    @trinn_options = create_options_for_select(Trinn)
 
     if params[:laereplansok]
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
@@ -18,11 +18,12 @@ class LaereplansokController < ApplicationController
 
   end
 
-  def update_dropdowns
+  def update_dropdowns 
     laereplaner_sok = Laereplansok.new(params[:laereplansok])
     @kompetansemaalsett_options = laereplaner_sok.kompetansemaalsett.map do |sett|
-      [sett.tittel, sett.uuid]
+      [sett.uuid, sett.tittel]
     end
+    prepend_empty_option(@kompetansemaalsett_options)  
   end
   
   
@@ -32,6 +33,10 @@ class LaereplansokController < ApplicationController
     klass.find(:all).map do |k| 
       [k.tittel, k.uuid]
     end
+  end
+  
+  def prepend_empty_option(options_array)
+    options_array.unshift([])  
   end
 
 

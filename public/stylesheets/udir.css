@@ -5,10 +5,8 @@
       
 -------------------------------------------------------------- */
 
-/* Default font settings. 
-   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+/* Default font settings. */
 body { 
-  font-size: 75%;
   color: #666; 
   background-color: #EAEAE8;
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -130,7 +128,6 @@ form#laereplan_sok label {
 }
 
 form#laereplan_sok input, form#laereplan_sok select {
-	display: block;
 	width: 200px;
 	margin-bottom: 10px;
 }
