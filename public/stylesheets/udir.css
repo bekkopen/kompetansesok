@@ -135,3 +135,7 @@ form#laereplan_sok input, form#laereplan_sok select {
 form#laereplan_sok input.submit {
 	width: 60px;
 }
+
+select#spraak_valg {
+	width: 10em;
+}

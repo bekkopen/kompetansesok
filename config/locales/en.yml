@@ -1,5 +1,7 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+    laereplankode: "Lærplankode på engelsk"
+    laereplantittel: "Læreplantittel på engelsk"
+    hovedomraade: "Hovedområde på engelsk"
+    kompetansemaalsett: "Kompetansemålsett på engelsk"
+    trinn: "Trinn på engelsk"
+    kompetansemaaltittel: "Kompetansemåltittel på engelsk"
