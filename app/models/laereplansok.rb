@@ -21,7 +21,7 @@ class Laereplansok
   end
 
   def laereplaner
-    Laereplan.find_where(:all) do |laereplan|
+    @laereplaner ||= Laereplan.find_where(:all) do |laereplan|
       laereplan.all do |l|
         l.tittel =~ make_ready_for_like(laereplan_tittel)
       end
@@ -34,6 +34,12 @@ class Laereplansok
   def kompetansemaalsett
     laereplaner.map do |plan|
       plan.kompetansemaalsett
+    end.flatten.uniq
+  end
+  
+  def trinn
+    kompetansemaalsett.map do |maalsett|
+      maalsett.trinn
     end.flatten.uniq
   end
 

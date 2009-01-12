@@ -34,11 +34,21 @@ Saa /^jeg skal få (\d+) sider med resultater$/ do |n|
   response.should have_tag('a', n)
 end
 
-Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |table|
-  table.hashes.each do |kompetansemaal|
+Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |tabell|
+  tabell.hashes.each do |kompetansemaal|
     response.should contain(encode(kompetansemaal['tittel']))
   end
 end
+
+Saa /^skal (\w+) repopuleres og inneholde følgende elementer:$/ do |felt, tabell|
+  pending "hvordan får vi testet dette?"
+
+  tabell.hashes.each do |option|
+#    puts "\n\n#{encode(option['tittel'])}\n\n"
+#     response.should contain(encode(option['tittel']))
+   end
+end
+
 
 def encode(streng)
   #bytter æøå med sin utf8 ekvivalent

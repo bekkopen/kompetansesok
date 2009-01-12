@@ -23,7 +23,11 @@ class LaereplansokController < ApplicationController
     @kompetansemaalsett_options = laereplaner_sok.kompetansemaalsett.map do |sett|
       [sett.uuid, sett.tittel]
     end
-    prepend_empty_option(@kompetansemaalsett_options)  
+    @trinn_options = laereplaner_sok.trinn.map do |trinn|
+      [trinn.uuid, trinn.tittel]
+    end
+    prepend_empty_option(@kompetansemaalsett_options)
+    prepend_empty_option(@trinn_options)       
   end
   
   
