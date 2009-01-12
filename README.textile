@@ -1,7 +1,7 @@
 h1. Velkommen til Kompetansesøk
 
-"Diskusjonsforum (Google Groups)":http://groups.google.com/group/kompetansesok
-"Endringsønsker og feil (Pivotal Tracker)":http://www.pivotaltracker.com/projects/4705/stories
+* "Diskusjonsforum (Google Groups)":http://groups.google.com/group/kompetansesok
+* "Endringsønsker og feil (Pivotal Tracker)":http://www.pivotaltracker.com/projects/4705/stories
 
 h2. Automatiserte tester
 
