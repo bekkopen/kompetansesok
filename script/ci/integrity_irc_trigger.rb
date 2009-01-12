@@ -57,10 +57,16 @@ class IRC
             else
                 puts s
                 if s.strip =~ /(http.*)$/
-                  headers = `curl -I #{$1}`
+                  tinyurl = $1
+                  curl = "curl -I #{tinyurl}"
+                  puts curl
+                  headers = `#{curl}`
+                  puts headers
                   if headers =~ /http:\/\/github.com\/(.*)\/kompetansesok/
                     repo = $1
                     puts "Triggering build for #{repo}"
+                  else
+                    puts "No build triggering"
                   end
                 end
         end
