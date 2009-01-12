@@ -1,8 +1,13 @@
 namespace :ci do
-  desc "Kjør alle tester"
-  task :all => 'db:migrate' do
+  desc "Kjør de raske testene"
+  task :quick => 'db:migrate' do
     sh("jruby -S rake spec")
-    sh("rake import:db features:app")
-    sh("jruby -S rake features:import")
+    sh("rake features:app RAILS_ENV=integration_test")
+  end
+
+  desc "Kjør de trege testene"
+  task :slow do
+    sh("rake db:migrate import:db RAILS_ENV=integration_test")
+    sh("jruby -S rake features:import RAILS_ENV=test")
   end
 end

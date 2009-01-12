@@ -1,5 +1,5 @@
 # Sets up the Rails environment for Cucumber
-ENV["RAILS_ENV"] = "test"
+ENV["RAILS_ENV"] = "integration_test"
 require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
 require 'cucumber/rails/world'
 Cucumber::Rails.use_transactional_fixtures

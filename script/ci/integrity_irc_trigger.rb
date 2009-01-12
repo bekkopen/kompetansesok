@@ -63,21 +63,22 @@ class IRC
                   headers = `#{curl}`
                   if headers =~ /http:\/\/github.com\/(.*)\/kompetansesok/
                     repo = $1
+                    project = "ks-#{repo}-quick"
                     trigger(repo)
                   end
                 elsif s.strip =~ /trigger\s+(.*)/
                   repo = $1.strip
-                  trigger(repo)
+                  trigger(project)
                 end
         end
     end
     
-    def trigger(repo)
-      trigger = %{curl -d "" http://10.0.100.233:8910/kompetansesok-#{repo}/builds}
+    def trigger(project)
+      trigger = %{curl -d "" http://10.0.100.233:8910/#{project}/builds}
       fork do
         `#{trigger}`
       end
-      send "PRIVMSG #{@channel} :Just told Integrity to build #{repo}"
+      send "PRIVMSG #{@channel} :Just told Integrity to build #{project}"
     end
     
     def main_loop()
