@@ -69,7 +69,7 @@ class IRC
                     puts trigger
 
                     fork do
-                      `trigger`
+                      `#{trigger}`
                     end
                   else
                     puts "No build triggering"
