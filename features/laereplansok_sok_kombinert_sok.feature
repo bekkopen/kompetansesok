@@ -4,8 +4,8 @@ Feature: Skal kunne søke i kompetansemål basert må kombinasjon av input
 
   Scenario: Søke på kompetansemål basert på hovedområde og kompetansemålsett
     Gitt at jeg er på læreplan søkesiden
-    Når jeg velger kompetansemaalsett_uuid "Bevegelse"
-    Og jeg velger hovedomraade_uuid "Grunntrening"
+    Når jeg velger Kompetansemålsett "Bevegelse"
+    Og jeg velger Hovedområde "Grunntrening"
     Og jeg klikker søk
     Så skal jeg se 4 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
@@ -16,20 +16,20 @@ Feature: Skal kunne søke i kompetansemål basert må kombinasjon av input
 
   Scenario: Søke på kompetansemål basert på læreplantittel og trinn
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn laereplan_tittel "dans"
-    Og jeg velger trinn_uuid "Videregående trinn 2"
+    Når jeg fyller inn Læreplantittel "dans"
+    Og jeg velger Trinn "Videregående trinn 2"
     Og jeg klikker søk
     Så skal jeg se 28 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                           |
       | forklare grunnleggende prinsipper for trening og ergonomi                        |
-      |planlegge, gjennomføre og vurdere opphold i naturen                               |
+      | planlegge, gjennomføre og vurdere opphold i naturen                              |
 
 
   Scenario: Søke på kompetansemål basert på læreplantittel og kompetansemåltittel
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn laereplan_tittel "kristendom"
-    Og jeg fyller inn kompetansemaal_tittel "samisk"
+    Når jeg fyller inn Læreplantittel "kristendom"
+    Og jeg fyller inn Kompetansemåltittel "samisk"
     Og jeg klikker søk
     Så skal jeg se 10 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:

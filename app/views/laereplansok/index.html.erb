@@ -16,25 +16,25 @@
 </script>
 
 <% form_tag(laereplansok_index_path, :method => "get", :id => 'laereplan_sok') do %>
-	<%= label_tag :laereplan_kode, t("laereplankode") %>
+	<%= label_tag :laereplansok_laereplan_kode, t("laereplankode") %>
 	<%= text_field :laereplansok, :laereplan_kode, :onchange => "updateDropdowns()" %><br />
-	<%= label_tag :laereplan_tittel, t("laereplantittel") %>
+	<%= label_tag :laereplansok_laereplan_tittel, t("laereplantittel") %>
 	<%= text_field :laereplansok, :laereplan_tittel, :onchange => "updateDropdowns()" %><br />
   
   <%# Hovedområder skal få "kode" i fremtiden, til de får dette, vil vi ikke vise søkefelt for kode til brukerene i prod %>
   <% if RAILS_ENV == 'test' || RAILS_ENV == 'development'%>
-    <%= label_tag :hovedomraade_kode, t("hovedomraadekode") %>
+    <%= label_tag :laereplansok_hovedomraade_kode, t("hovedomraadekode") %>
     <%= text_field :laereplansok, :hovedomraade_kode %><br />
   <% end %>
   
-  <%= label_tag :hovedomraade_uuid, t("hovedomraade") %>
+  <%= label_tag :laereplansok_hovedomraade_uuid, t("hovedomraade") %>
 	<%= select( :laereplansok, :hovedomraade_uuid, @hovedomraader_options, { :include_blank => true }) %><br />
   
-	<%= label_tag :kompetansemaalsett_uuid, t("kompetansemaalsett") %>
+	<%= label_tag :laereplansok_kompetansemaalsett_uuid, t("kompetansemaalsett") %>
 	<%= select( :laereplansok, :kompetansemaalsett_uuid, @kompetansemaalsett_options, { :include_blank => true }) %><br />
-	<%= label_tag :trinn_uuid, t("trinn") %>
+	<%= label_tag :laereplansok_trinn_uuid, t("trinn") %>
 	<%= select( :laereplansok, :trinn_uuid, @trinn_options, { :include_blank => true }) %><br />
-	<%= label_tag :kompetansemaal_tittel, t("kompetansemaaltittel") %>
+	<%= label_tag :laereplansok_kompetansemaal_tittel, t("kompetansemaaltittel") %>
 	<%= text_field :laereplansok, :kompetansemaal_tittel %><br />
 	<%= submit_tag "Søk", :name => nil, :class => 'submit' %>
 <% end %>

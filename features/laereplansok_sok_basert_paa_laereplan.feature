@@ -5,7 +5,7 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
 
   Scenario: Søke etter kompetansemål via læreplantittel
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn laereplan_tittel "Læreplan i musikk, samisk plan"
+    Når jeg fyller inn Læreplantittel "Læreplan i musikk, samisk plan"
     Og jeg klikker søk
     Så skal jeg se 56 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
@@ -16,7 +16,7 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
 
    Scenario: Ved å søke på skal jeg kunne paginere
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn laereplan_tittel "fordypning i samisk"
+    Når jeg fyller inn Læreplantittel "fordypning i samisk"
     Og jeg klikker søk
     Så skal jeg se 16 kompetansemål totalt
 
@@ -28,7 +28,7 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
 
   Scenario: Søke etter kompetansemål via læreplankode
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn laereplan_kode "NOK2-01"
+    Når jeg fyller inn Læreplankode "NOK2-01"
     Og jeg klikker søk
     Så skal jeg se 39 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
@@ -37,8 +37,8 @@ Feature: Skal kunne søke i kompetansemål basert på læreplan
 
   Scenario: Søke etter kompetansemål via læreplankode og læreplantittel
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn laereplan_kode "IDR"
-    Og jeg fyller inn laereplan_tittel "friluftsliv"
+    Når jeg fyller inn Læreplankode "IDR"
+    Og jeg fyller inn Læreplantittel "friluftsliv"
     Og jeg klikker søk
     Så skal jeg se 22 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:

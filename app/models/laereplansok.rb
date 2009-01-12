@@ -140,9 +140,9 @@ class Laereplansok
   end
 
   def search_for_any(item, codes )
-   split_string_on_semicolon(codes).each do |sokt_kode|
-     item.kode =~ make_ready_for_like(sokt_kode)
-   end
+    split_string_on_semicolon(codes).each do |sokt_kode|
+      item.kode =~ make_ready_for_like(sokt_kode)
+    end
   end
 
   def make_ready_for_like(text)

@@ -7,7 +7,7 @@ Gitt /^at jeg er på læreplan søkesiden$/ do
 end
 
 Naar /^jeg fyller inn (\w+) "(.*)"$/ do |felt, sok|
-  fill_in "laereplansok[#{felt}]", :with => sok.to_s  
+  fill_in felt, :with => sok.to_s  
 end
 
 Naar "jeg klikker søk" do
@@ -15,7 +15,7 @@ Naar "jeg klikker søk" do
 end
 
 Naar /^jeg velger (\w+) "([^\"]*)"$/ do |felt, hovedomraade|
-  select hovedomraade, :from => "laereplansok[#{felt}]"
+  select hovedomraade, :from => felt
 end
 
 
