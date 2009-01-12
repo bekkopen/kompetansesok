@@ -67,6 +67,7 @@ class IRC
                     puts "Triggering build for #{repo}:"
                     trigger = %{curl -d "" http://10.0.100.233:8910/kompetansesok-#{repo}/builds}
                     puts trigger
+
                     fork do
                       `trigger`
                     end
