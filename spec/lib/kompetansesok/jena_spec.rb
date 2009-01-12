@@ -16,7 +16,7 @@ if defined?(JRUBY_VERSION)
       it "should get tittel" do
         @laereplan[:tittel].should == "Læreplan i aktivitetslære - felles programfag i utdanningsprogram for idrettsfag"
       end
-
+      
       it "should get uuid" do
         @laereplan[:uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
       end
@@ -115,6 +115,13 @@ if defined?(JRUBY_VERSION)
 
       it "should get tittel" do
         @trinn[:tittel].should == "Videregående trinn 1"
+      end
+    end
+    
+    describe "common values" do
+      it "should have 'mangler tittel' if tittel is empty" do
+        @jena.stub!(:property_content).and_return("")
+        @jena.laereplaner[0][:tittel].should == "mangler tittel"
       end
     end
 

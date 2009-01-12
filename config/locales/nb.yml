@@ -1,7 +1,9 @@
 nb:
-    laereplankode: "Lærplankode på bokmål"
-    laereplantittel: "Læreplantittel på bokmål"
-    hovedomraade: "Hovedområde på bokmål"
-    kompetansemaalsett: "Kompetansemålsett på bokmål"
-    trinn: "Trinn på bokmål"
-    kompetansemaaltittel: "Kompetansemåltittel på bokmål"
+    laereplankode: "Lærplankode"
+    laereplantittel: "Læreplantittel"
+    hovedomraadekode: "Hovedområdekode"
+    hovedomraade: "Hovedområde"
+    kompetansemaalsett: "Kompetansemålsett"
+    trinn: "Trinn"
+    kompetansemaaltittel: "Kompetansemåltittel"
+    

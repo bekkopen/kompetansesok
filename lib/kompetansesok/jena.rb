@@ -99,7 +99,8 @@ module Kompetansesok
     end
     
     def tittel(resource)
-      property_content(resource, @title_property)
+      tittel = property_content(resource, @title_property)
+      tittel.blank? ? "mangler tittel" : tittel
     end
     
     def kode(resource)

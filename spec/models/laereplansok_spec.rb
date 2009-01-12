@@ -2,12 +2,13 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
   
+  before :all do 
+    importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
+    importerer.importer_til_db
+  end
+  
   describe "searching" do
-    before :all do 
-      importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
-      importerer.importer_til_db
-    end
-
+    
     before :each do
       @laereplansok = Laereplansok.new
       @laereplansok.instance_variable_set(:@per_page,  100000)
@@ -156,11 +157,17 @@ describe Laereplansok do
     end
   end
 
-  describe "finding kompetansemålsett" do
+  describe "finding relations" do
     it "should find all kompetansemaalsett for all matching laereplaner" do
       laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
       kompetansemaalsett = laereplansok.kompetansemaalsett
       kompetansemaalsett.length.should == 3
+    end
+    
+    it "should find all trinn for all matching laereplaner" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+      trinn = laereplansok.trinn
+      trinn.length.should == 3
     end
   end
 
