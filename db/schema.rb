@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081210130259) do
+ActiveRecord::Schema.define(:version => 20081217142408) do
 
   create_table "hovedomraader", :force => true do |t|
     t.string   "uuid"
     t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "kode"
   end
 
   add_index "hovedomraader", ["uuid"], :name => "index_hovedomraader_on_uuid"
@@ -30,11 +31,22 @@ ActiveRecord::Schema.define(:version => 20081210130259) do
   add_index "hovedomraader_kompetansemaal", ["hovedomraade_id"], :name => "index_hovedomraader_kompetansemaal_on_hovedomraade_id"
   add_index "hovedomraader_kompetansemaal", ["kompetansemaal_id"], :name => "index_hovedomraader_kompetansemaal_on_kompetansemaal_id"
 
+  create_table "hovedomraader_laereplaner", :id => false, :force => true do |t|
+    t.integer  "hovedomraade_uuid", :null => false
+    t.integer  "laereplan_uuid",    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "hovedomraader_laereplaner", ["hovedomraade_uuid"], :name => "index_hovedomraader_laereplaner_on_hovedomraade_uuid"
+  add_index "hovedomraader_laereplaner", ["laereplan_uuid"], :name => "index_hovedomraader_laereplaner_on_laereplan_uuid"
+
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "tittel"
     t.string   "uuid"
+    t.string   "kode"
   end
 
   add_index "kompetansemaal", ["uuid"], :name => "index_kompetansemaal_on_uuid"

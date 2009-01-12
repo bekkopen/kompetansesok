@@ -1,21 +1,29 @@
 class LaereplansokController < ApplicationController
 
   def index
-
-    @hovedomraader = create_options_for_select(Hovedomraade)
-    @kompetansemaalsett = create_options_for_select(Kompetansemaalsett)
-    @trinn = create_options_for_select(Trinn)
+    @hovedomraader_options = create_options_for_select(Hovedomraade)
+    @kompetansemaalsett_options = create_options_for_select(Kompetansemaalsett)
+    @trinn_options = create_options_for_select(Trinn)
 
     if params[:laereplansok]
       @laereplansok = Laereplansok.new(params[:laereplansok].merge(:page => params[:page]))
       @kompetansemaal = @laereplansok.kompetansemaal
       @rader = @laereplansok.to_table_rows
+
       render :action => "index"
     else
       @kompetansemaal = [].paginate
       @rader = [].paginate
     end
 
+  end
+
+  def dropdown_content 
+    laereplaner_sok = Laereplansok.new(params[:laereplansok])
+    @kompetansemaalsett_options = laereplaner_sok.kompetansemaalsett.map do |sett|
+      [sett.uuid, sett.tittel]
+    end
+    prepend_empty_option(@kompetansemaalsett_options)  
   end
   
   
@@ -25,6 +33,10 @@ class LaereplansokController < ApplicationController
     klass.find(:all).map do |k| 
       [k.tittel, k.uuid]
     end
+  end
+  
+  def prepend_empty_option(options_array)
+    options_array.unshift([])  
   end
 
 

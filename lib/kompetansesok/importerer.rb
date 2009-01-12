@@ -63,8 +63,8 @@ module Kompetansesok
         @out.puts('Sletter gamle data...') if @out
         Kompetansemaal.delete_all
         Kompetansemaalsett.delete_all
-        Hovedomraade.delete_all
         Laereplan.delete_all
+        Hovedomraade.delete_all
         Trinn.delete_all
 
         @out.puts("Importerer #{jena.trinn.length} Trinn...") if @out

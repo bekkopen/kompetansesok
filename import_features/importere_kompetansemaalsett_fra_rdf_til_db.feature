@@ -8,5 +8,5 @@ Feature: Importere kompetansemålsett fra RDF til database
     Gitt at RDF-filer er hentet til fil
     Når 2 RDF-filer lastes inn i databasen
     Så skal det ligge 4 Kompetansemaalsett i basen
-    Og Kompetansemaalsett skal tilhøre Laereplan
-    Og Kompetansemaalsett skal tilhøre Trinn
+    Og Kompetansemaalsett skal ha relasjon til Laereplan
+    Og Kompetansemaalsett skal ha relasjon til Trinn

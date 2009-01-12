@@ -37,51 +37,38 @@
       });
       
       grid.addButton( {
-        text: 'Kopier til utklippstavle',
-        clickEvent: 'ctrl-c',
+        text: 'Vis id for valgte kompetansemål',
+        id: 'id_for_valgte',
         handler : function(){
                       copySelectedUuids();
                   }
         });
 
-
+      grid.addButton( {
+        text: 'Vis kode og id for valgte kompetansemål',
+        id: 'kod_og_id_for_valgte',
+        handler : function(){
+                      copySelectedCodesAndUuids();
+                  }
+        });
 
       grid.render('kompetansemaal');
       grid.getSelectionModel().selectFirstRow();
 
-      // action listener
-      grid.addListener
-      (
-        'keydown', 
-        function(evnt)
-        {
-          var keyPressed = evnt.getKey();
-
-          if (evnt.ctrlKey) {
-            /*
-            * ctrl+c combination is code 67 
-            */
-            if (keyPressed == 67)
-              {
-                copySelectedUuids();
-              }
-            }
-          }
-        );
-        //end of action listener
-    
     });
       
  </script>
 
-<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/grid-examples.css"/>
-<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../shared/lib.css" />
-<link rel="stylesheet" type="text/css" href="http://extjs.com/deploy/dev/examples/grid/../../resources/css/ext-all.css" />
+
+<div id="antall_treff" style="display:none;" ><%= @kompetansemaal.length%></div>
+
 
 <div id="kompetansemaal" style="height: 500px"> </div>
 
-<%= will_paginate @rader %>
 
-<%#= button_to_function "Kopier til utklippstavle", "getSelectedUuids()" %>
+<% unless @rader.empty? %>
+  <%= will_paginate @rader %>
+<% end %>
+
   
   

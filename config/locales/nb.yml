@@ -1,6 +1,7 @@
 nb:
     laereplankode: "Lærplankode"
     laereplantittel: "Læreplantittel"
+    hovedomraadekode: "Hovedområdekode"
     hovedomraade: "Hovedområde"
     kompetansemaalsett: "Kompetansemålsett"
     trinn: "Trinn"

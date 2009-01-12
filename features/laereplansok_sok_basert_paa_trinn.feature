@@ -5,11 +5,10 @@ Feature: Skal kunne søke i kompetansemål basert på trinn
 
   Scenario: Søke på kompetansemål basert på trinn
     Gitt at jeg er på læreplan søkesiden
-    Når jeg velger trinn "ET_TRINN"
+    Når jeg velger trinn_uuid "Fjerde årstrinn"
     Og jeg klikker søk
-    Så skal jeg se 10 kompetansemål
-    Og jeg skal få 173 sider med resultater
+    Så skal jeg se 488 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                                     |
-      | definere mål for aktiviseringsarbeidet                                                     |
-      | utarbeide og grunngi ulike planar for aktivitetar tilpassa enkeltbrukarar og brukargrupper |
+      | bruke ball i leikar og nokre ballspel                                                      |
+      |bruke ski og skøyter der det ligg til rette for det                                         |

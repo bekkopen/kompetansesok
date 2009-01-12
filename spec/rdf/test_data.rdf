@@ -43,6 +43,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:8f2ce324-6ac3-4ada-98ac-438325404a07">
     <ns:title>Idrettsaktiviteter</ns:title>
+    <grep:kode>Kode-1</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:60e0d1c6-ac7d-46eb-a22f-ca888b6c420f">
@@ -70,6 +71,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:2bd30a81-e4a9-439d-8706-161682c1e95b">
     <ns:title>Friluftsliv</ns:title>
+    <grep:kode>Kode-abc</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:bb06151b-245f-4248-ba24-44765deed2a7">
@@ -186,6 +188,7 @@
   <rdf:Description rdf:about="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7">
     <grep:kode>IDR1-01</grep:kode>
     <ns:title>Læreplan i aktivitetslære - felles programfag i utdanningsprogram for idrettsfag</ns:title>
+    <grep:hovedomraader rdf:resource="uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"/>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
   </rdf:Description>
    <rdf:Description rdf:about="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0">
@@ -289,6 +292,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:7321b950-5720-4ee0-9d25-284d71e4f99e">
     <ns:title>Basistrening</ns:title>
+    <grep:kode>KODE</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:7383c30f-0347-43cf-a858-49933dd404e0">
@@ -301,6 +305,7 @@
     <grep:tilhoerer_hovedomraade rdf:resource="uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"/>
     <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"/>
     <ns:title>anvende regelverk i den enkelte idrettsaktivitet</ns:title>
+    <grep:kode>KODE</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">

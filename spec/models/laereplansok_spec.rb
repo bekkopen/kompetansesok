@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
-
   
   describe "searching" do
     before :all do 
@@ -23,15 +22,15 @@ describe Laereplansok do
     it "should return all records when no search parameters are given" do
       @laereplansok.kompetansemaal.length.should == 96
     end
-  
-    it "should be possible to search by laereplantittel" do
-      @laereplansok.laereplan_tittel = "aktivitetslære - felles programfag i utdanningsprogram for idrettsfag"
+    
+    it "should allow '*' as a wildcard for 'match anything here'" do
+      @laereplansok.laereplan_tittel = "aktivitetslære * idrettsfag"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 38
     end
   
-    it "should be possible to search by laereplankode" do
-      @laereplansok.laereplan_kode = "IDR1-01"
+    it "should be possible to search by laereplantittel" do
+      @laereplansok.laereplan_tittel = "aktivitetslære - felles programfag i utdanningsprogram for idrettsfag"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 38
     end
@@ -41,21 +40,27 @@ describe Laereplansok do
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 67
     end
+    
+    it "should be possible to search by a semicolon separated string of hovedomraadekoder" do
+      @laereplansok.hovedomraade_kode = "Kode-1; Kode-a"
+      kompetansemaal = @laereplansok.kompetansemaal
+      kompetansemaal.length.should  == 31
+    end
   
-    it "should be possible to search by hovedomraade" do
-      @laereplansok.hovedomraade = "uuid:78085ca0-5d55-4caa-a3b9-1bf54e720027"
+    it "should be possible to search by hovedomraade_uuid" do
+      @laereplansok.hovedomraade_uuid = "uuid:78085ca0-5d55-4caa-a3b9-1bf54e720027"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 5
     end
   
-    it "should be possible to search by kompetansemaalsett" do
-      @laereplansok.kompetansemaalsett = "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
+    it "should be possible to search by kompetansemaalsett_uuid" do
+      @laereplansok.kompetansemaalsett_uuid = "uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 17
     end
   
-    it "should be possible to search by trinn" do
-      @laereplansok.trinn = "http://psi.udir.no/laereplan/aarstrinn/vg1"
+    it "should be possible to search by trinn_uuid" do
+      @laereplansok.trinn_uuid = "http://psi.udir.no/laereplan/aarstrinn/vg1"
       kompetansemaal = @laereplansok.kompetansemaal
       kompetansemaal.length.should  == 46
     end
@@ -76,8 +81,7 @@ describe Laereplansok do
     end
     
     it "should generate proper initalized array" do
-      @laereplansok.to_table_rows.should_not be_empty
-      @laereplansok.to_table_rows.first.should_not be_empty
+      @laereplansok.to_table_rows.should be_empty
     end   
 
     it "should have two rows for a kompetansemål with two hovedområder" do
@@ -139,5 +143,26 @@ describe Laereplansok do
     end
 
   end
+
+  describe "search for laereplan" do
+    it "should give all laereplans for given search query" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+      
+      laereplaner = laereplansok.laereplaner
+      laereplaner.should_not be_empty
+      laereplaner.length.should == 1
+
+      laereplaner.first.tittel.should =~ /aktivitetslære/
+    end
+  end
+
+  describe "finding kompetansemålsett" do
+    it "should find all kompetansemaalsett for all matching laereplaner" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+      kompetansemaalsett = laereplansok.kompetansemaalsett
+      kompetansemaalsett.length.should == 3
+    end
+  end
+
 
 end

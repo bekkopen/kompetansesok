@@ -6,12 +6,12 @@ Feature: Skal kunne søke i kompetansemål basert på kompetansemålsett
 
   Scenario: Søke på kompetansemål basert på kompetansemålsett
     Gitt at jeg er på læreplan søkesiden
-    Når jeg velger kompetansemaalsett "Bevegelse"
+    Når jeg velger kompetansemaalsett_uuid "Bevegelse"
     Og jeg klikker søk
-    Så skal jeg se 8 kompetansemål
+    Så skal jeg se 8 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                            |
       | anvende ulike inspirasjonskilder som grunnlag for utfoldelse og fysiske uttrykk   |
-      | vise og forklare sammenhenger mellom kropp og bevegelseskvaliteter                |
+      | samhandle om planlegging og gjennomføring av relevant trening og bevegelse        |
 
 

@@ -16,13 +16,17 @@ if defined?(JRUBY_VERSION)
       it "should get tittel" do
         @laereplan[:tittel].should == "Læreplan i aktivitetslære - felles programfag i utdanningsprogram for idrettsfag"
       end
-
+      
       it "should get uuid" do
         @laereplan[:uuid].should == "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"
       end
 
       it "should get kode" do
         @laereplan[:kode].should == "IDR1-01"
+      end
+      
+      it "should get hovedomraade uuids" do
+        @laereplan[:hovedomraade_uuids].should == ["uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"]
       end
 
     end
@@ -62,6 +66,10 @@ if defined?(JRUBY_VERSION)
         @hoovedomraade[:tittel].should == "Basistrening"
       end
       
+      it "should get kode" do
+        @hoovedomraade[:kode].should == "KODE"
+      end
+      
     end
 
     describe "kompetansemaal" do
@@ -89,6 +97,10 @@ if defined?(JRUBY_VERSION)
       it "should have an array of hovedomraade uuids" do
         @kompetansemaal[:hovedomraade_uuids].should == ["uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"]
       end
+      
+      it "should get kode" do
+        @kompetansemaal[:kode].should == "KODE"
+      end
 
     end
     
@@ -103,6 +115,13 @@ if defined?(JRUBY_VERSION)
 
       it "should get tittel" do
         @trinn[:tittel].should == "Videregående trinn 1"
+      end
+    end
+    
+    describe "common values" do
+      it "should have 'mangler tittel' if tittel is empty" do
+        @jena.stub!(:property_content).and_return("")
+        @jena.laereplaner[0][:tittel].should == "mangler tittel"
       end
     end
 
