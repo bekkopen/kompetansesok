@@ -55,8 +55,14 @@ class IRC
                 puts "[ EVAL #{$5} from #{$1}!#{$2}@#{$3} ]"
                 send "PRIVMSG #{(($4==@nick)?$1:$4)} :#{evaluate($5)}"
             else
-                puts "===OTHER==="
                 puts s
+                if s.strip =~ /(http.*)$/
+                  headers = `curl -I #{$1}`
+                  if headers =~ /http:\/\/github.com\/(.*)\/kompetansesok/
+                    repo = $1
+                    puts "Triggering build for #{repo}"
+                  end
+                end
         end
     end
     def main_loop()
