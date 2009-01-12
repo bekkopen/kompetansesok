@@ -59,18 +59,14 @@ class IRC
                 if s.strip =~ /(http.*)$/
                   tinyurl = $1
                   curl = "curl -I #{tinyurl}"
-                  puts curl
                   headers = `#{curl}`
-                  puts headers
                   if headers =~ /http:\/\/github.com\/(.*)\/kompetansesok/
                     repo = $1
-                    puts "Triggering build for #{repo}:"
                     trigger = %{curl -d "" http://10.0.100.233:8910/kompetansesok-#{repo}/builds}
-                    puts trigger
-
                     fork do
                       `#{trigger}`
                     end
+                    send "PRIVMSG #{@channel} Just told Integrity to build #{repo}"
                   else
                     puts "No build triggering"
                   end
