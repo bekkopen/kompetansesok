@@ -18,7 +18,7 @@ class LaereplansokController < ApplicationController
 
   end
 
-  def update_dropdowns 
+  def dropdown_content 
     laereplaner_sok = Laereplansok.new(params[:laereplansok])
     @kompetansemaalsett_options = laereplaner_sok.kompetansemaalsett.map do |sett|
       [sett.uuid, sett.tittel]

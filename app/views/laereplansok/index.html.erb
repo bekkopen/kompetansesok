@@ -1,7 +1,7 @@
 <script type="text/javascript">
   function updateDropdowns(){
     Ext.Ajax.request({
-        url: '<%= update_dropdowns_laereplansok_path %>',
+        url: '<%= dropdown_content_laereplansok_path %>',
         timeout: 3000,
         method: 'GET',
         params: Ext.Ajax.serializeForm('laereplan_sok'),
@@ -19,15 +19,16 @@
 	<%= label_tag :laereplan_kode, t("laereplankode") %>
 	<%= text_field :laereplansok, :laereplan_kode, :onchange => "updateDropdowns()" %><br />
 	<%= label_tag :laereplan_tittel, t("laereplantittel") %>
-	<%= text_field :laereplansok, :laereplan_tittel %><br />
-	<%= label_tag :hovedomraade_uuid, t("hovedomraade") %>
-	<%= select( :laereplansok, :hovedomraade_uuid, @hovedomraader_options, { :include_blank => true }) %><br />
+	<%= text_field :laereplansok, :laereplan_tittel, :onchange => "updateDropdowns()" %><br />
   
   <%# Hovedområder skal få "kode" i fremtiden, til de får dette, vil vi ikke vise søkefelt for kode til brukerene i prod %>
   <% if RAILS_ENV == 'test' || RAILS_ENV == 'development'%>
     <%= label_tag :hovedomraade_kode, t("hovedomraadekode") %>
     <%= text_field :laereplansok, :hovedomraade_kode %><br />
   <% end %>
+  
+  <%= label_tag :hovedomraade_uuid, t("hovedomraade") %>
+	<%= select( :laereplansok, :hovedomraade_uuid, @hovedomraader_options, { :include_blank => true }) %><br />
   
 	<%= label_tag :kompetansemaalsett_uuid, t("kompetansemaalsett") %>
 	<%= select( :laereplansok, :kompetansemaalsett_uuid, @kompetansemaalsett_options, { :include_blank => true }) %><br />
