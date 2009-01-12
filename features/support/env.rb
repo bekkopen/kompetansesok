@@ -17,3 +17,7 @@ module Cucumber::StepMethods
   alias_method :Naar, :When
   alias_method :Saa, :Then
 end
+
+Webrat.configure do |config|
+  config.mode = :rails
+end 
