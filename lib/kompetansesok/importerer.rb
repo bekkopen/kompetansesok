@@ -78,10 +78,12 @@ module Kompetansesok
         @out.puts('Database commit...') if @out
       end
       
-      @out.puts("Importerer #{jena.kompetansemaal.length} Kompetansemaal...") 
-      require 'progressbar'
-      pbar = ProgressBar.new("Import", jena.kompetansemaal.length, @out)
-      
+      if @out
+        @out.puts("Importerer #{jena.kompetansemaal.length} Kompetansemaal...")
+        require 'progressbar'
+        pbar = ProgressBar.new("Import", jena.kompetansemaal.length, @out)
+      end
+       
       batch_size = 500
       n = 0
       loop do
@@ -90,11 +92,11 @@ module Kompetansesok
         
         ActiveRecord::Base.transaction do
           Kompetansemaal.create!(batch)
-          pbar.inc(batch.length)
+          pbar.inc(batch.length) if @out
         end
         n += batch_size
       end
-      pbar.finish
+      pbar.finish if @out
       
       @out.puts('Import ferdig.') if @out
     end

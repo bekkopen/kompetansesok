@@ -2,12 +2,13 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Laereplansok do
   
+  before :all do 
+    importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
+    importerer.importer_til_db
+  end
+  
   describe "searching" do
-    before :all do 
-      importerer = Kompetansesok::Importerer.new(Rails.root + '/spec/rdf')
-      importerer.importer_til_db
-    end
-
+    
     before :each do
       @laereplansok = Laereplansok.new
       @laereplansok.instance_variable_set(:@per_page,  100000)
