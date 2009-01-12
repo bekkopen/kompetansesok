@@ -1,5 +1,3 @@
-require File.dirname(__FILE__) + '/../support/env'
-
 Gitt /^at jeg viser læreplaner$/ do
   visit laereplaner_path
 end
@@ -9,7 +7,7 @@ Gitt /^at jeg er på læreplan søkesiden$/ do
 end
 
 Naar /^jeg fyller inn (\w+) "(.*)"$/ do |felt, sok|
-  fill_in "laereplansok[#{felt}]", :with => sok.to_s  
+  fill_in felt, :with => sok.to_s  
 end
 
 Naar "jeg klikker søk" do
@@ -17,7 +15,7 @@ Naar "jeg klikker søk" do
 end
 
 Naar /^jeg velger (\w+) "([^\"]*)"$/ do |felt, hovedomraade|
-  select hovedomraade, :from => "laereplansok[#{felt}]"
+  select hovedomraade, :from => felt
 end
 
 
@@ -40,7 +38,7 @@ Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |tabell|
   end
 end
 
-Saa /^skal (\w+) repopuleres og inneholde følgende elementer:$/ do |felt, tabell|
+Saa /^skal (\w+) repopuleres og inneholde følgende (\d+) elementer:$/ do |felt, antall, tabell|
   pending "hvordan får vi testet dette?"
 
   tabell.hashes.each do |option|
