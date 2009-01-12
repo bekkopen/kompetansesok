@@ -64,7 +64,7 @@ class IRC
                   if headers =~ /http:\/\/github.com\/(.*)\/kompetansesok/
                     repo = $1
                     project = "ks-#{repo}-quick"
-                    trigger(repo)
+                    trigger(project)
                   end
                 elsif s.strip =~ /trigger\s+(.*)/
                   repo = $1.strip
