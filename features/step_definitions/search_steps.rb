@@ -1,5 +1,3 @@
-require File.dirname(__FILE__) + '/../support/env'
-
 Gitt /^at jeg viser læreplaner$/ do
   visit laereplaner_path
 end
