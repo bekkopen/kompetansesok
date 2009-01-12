@@ -64,7 +64,12 @@ class IRC
                   puts headers
                   if headers =~ /http:\/\/github.com\/(.*)\/kompetansesok/
                     repo = $1
-                    puts "Triggering build for #{repo}"
+                    puts "Triggering build for #{repo}:"
+                    trigger = %{curl -d "" http://10.0.100.233:8910/kompetansesok-#{repo}/builds}
+                    puts trigger
+                    fork do
+                      `trigger`
+                    end
                   else
                     puts "No build triggering"
                   end
