@@ -1,5 +1,5 @@
 #!/usr/local/bin/ruby
-
+# http://snippets.dzone.com/posts/show/1785
 require "socket"
 
 # Don't allow use of "tainted" data by potentially dangerous operations
@@ -55,6 +55,7 @@ class IRC
                 puts "[ EVAL #{$5} from #{$1}!#{$2}@#{$3} ]"
                 send "PRIVMSG #{(($4==@nick)?$1:$4)} :#{evaluate($5)}"
             else
+                puts "===OTHER==="
                 puts s
         end
     end
