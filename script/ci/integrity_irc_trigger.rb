@@ -16,7 +16,7 @@ class IRC
     def send(s)
         # Send a message to the irc server and print it to the screen
         puts "--> #{s}"
-        @irc.send "#{s}\n", 0 
+        @irc.send "#{s}\n", 0
     end
     def connect()
         # Connect to the IRC server
@@ -24,6 +24,7 @@ class IRC
         send "USER blah blah blah :blah blah"
         send "NICK #{@nick}"
         send "JOIN #{@channel}"
+        send "PRIVMSG #{@channel} :I'm ready to trigger builds"
     end
     def evaluate(s)
         # Make sure we have a valid expression (for security reasons), and
@@ -66,7 +67,7 @@ class IRC
                     fork do
                       `#{trigger}`
                     end
-                    send "PRIVMSG #{@channel} Just told Integrity to build #{repo}"
+                    send "PRIVMSG #{@channel} :Just told Integrity to build #{repo}"
                   end
                 end
         end
