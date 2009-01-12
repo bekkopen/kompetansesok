@@ -67,7 +67,7 @@ class IRC
                     trigger(project)
                   end
                 elsif s.strip =~ /trigger\s+(.*)/
-                  repo = $1.strip
+                  project = $1.strip
                   trigger(project)
                 end
         end
