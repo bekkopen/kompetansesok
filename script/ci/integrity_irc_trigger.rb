@@ -3,7 +3,7 @@
 require "socket"
 
 # Don't allow use of "tainted" data by potentially dangerous operations
-$SAFE=1
+#$SAFE=1
 
 # The irc class, which talks to the server and holds the main event loop
 class IRC
