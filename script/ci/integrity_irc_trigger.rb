@@ -67,8 +67,6 @@ class IRC
                       `#{trigger}`
                     end
                     send "PRIVMSG #{@channel} Just told Integrity to build #{repo}"
-                  else
-                    puts "No build triggering"
                   end
                 end
         end
@@ -96,7 +94,7 @@ end
 # The main program
 # If we get an exception, then print it out and keep going (we do NOT want
 # to disconnect unexpectedly!)
-irc = IRC.new('irc.freenode.net', 6667, 'Integrity', '#kompetansesok')
+irc = IRC.new('irc.freenode.net', 6667, 'IntegrityTrigger', '#kompetansesok')
 irc.connect()
 begin
     irc.main_loop()
