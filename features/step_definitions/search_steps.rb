@@ -1,6 +1,3 @@
-Gitt /^at jeg viser læreplaner$/ do
-  visit laereplaner_path
-end
 
 Gitt /^at jeg er på læreplan søkesiden$/ do
   visit laereplansok_index_path
@@ -42,9 +39,8 @@ Saa /^skal (\w+) repopuleres og inneholde følgende (\d+) elementer:$/ do |felt,
   pending "hvordan får vi testet dette?"
 
   tabell.hashes.each do |option|
-#    puts "\n\n#{encode(option['tittel'])}\n\n"
-#     response.should contain(encode(option['tittel']))
-   end
+
+  end
 end
 
 
