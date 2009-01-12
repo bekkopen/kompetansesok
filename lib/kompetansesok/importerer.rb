@@ -2,7 +2,6 @@ raise "Denne koden krever JRuby" unless defined?(JRUBY_VERSION)
 require 'fileutils'
 require 'open-uri'
 require 'rubygems'
-require 'feed_tools'
 require 'java'
 
 JRuby.objectspace = true
@@ -24,6 +23,7 @@ module Kompetansesok
     #
     # Filene som importeres kan senere importeres i databasen via #importer_til_db
     def importer_til_fil(n=nil)
+      require 'feed_tools' # Vi aktiverer kun koden her fordi den monkey patcher YAML til å bruke YAML.parser (finnes ikke i JRuby)
       FileUtils.rm_rf(@import_dir)
       FileUtils.mkdir_p(@import_dir)
 
@@ -75,10 +75,27 @@ module Kompetansesok
         Hovedomraade.create!(jena.hovedomraader)
         @out.puts("Importerer #{jena.kompetansemaalsett.length} Kompetansemaalsett...") if @out
         Kompetansemaalsett.create!(jena.kompetansemaalsett)
-        @out.puts("Importerer #{jena.kompetansemaal.length} Kompetansemaal...") if @out
-        Kompetansemaal.create!(jena.kompetansemaal)
         @out.puts('Database commit...') if @out
       end
+      
+      @out.puts("Importerer #{jena.kompetansemaal.length} Kompetansemaal...") 
+      require 'progressbar'
+      pbar = ProgressBar.new("Import", jena.kompetansemaal.length, @out)
+      
+      batch_size = 500
+      n = 0
+      loop do
+        batch = jena.kompetansemaal[n...n+batch_size]
+        break if batch.nil?
+        
+        ActiveRecord::Base.transaction do
+          Kompetansemaal.create!(batch)
+          pbar.inc(batch.length)
+        end
+        n += batch_size
+      end
+      pbar.finish
+      
       @out.puts('Import ferdig.') if @out
     end
 
