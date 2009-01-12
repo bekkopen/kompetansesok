@@ -5,8 +5,8 @@ Feature: Ropopulere nedtrekslister i søk vi læreplan
 
   Scenario: Repopulere kompetansemålsett
     Gitt at jeg er på læreplan søkesiden
-    Når jeg velger laereplan_kode "ENG1-01"
-    Så skal kompetansemaalsett repopuleres og inneholde følgende 5 elementer: 
+    Når jeg fyller inn laereplan_kode "ENG1-01"
+    Så skal kompetansemaalsett repopuleres og inneholde følgende elementer: 
       | tittel                                                                                    |
       | Etter 2. årstrinn                                                                         |
       | Etter 4. årstrinn                                                                         |
