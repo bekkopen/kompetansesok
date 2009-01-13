@@ -23,6 +23,10 @@ module Cucumber::StepMethods
   alias_method :Saa, :Then
 end
 
+Webrat.configure do |config|
+  config.mode = :rails
+end 
+
 if ENV['RUBY_PROF']
   at_exit do
     result = RubyProf.stop

@@ -5,8 +5,7 @@ Feature: Ropopulere nedtrekslister i søk vi læreplan
 
   Scenario: Repopulere kompetansemålsett
     Gitt at jeg er på læreplan søkesiden
-    Når jeg fyller inn Læreplankode "ENG1-01"
-    # Dette gjøres med AJAX, og bør testes med Watir/FireWatir/Celerity
+    Når jeg fyller inn Læreplantittel "ENG1-01"
     Så skal kompetansemaalsett repopuleres og inneholde følgende 5 elementer: 
       | tittel                                                                                    |
       | Etter 2. årstrinn                                                                         |

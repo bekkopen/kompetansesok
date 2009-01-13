@@ -1,10 +1,3 @@
-Gitt /^at jeg viser læreplaner$/ do
-  visit laereplaner_path
-end
-
-Gitt /^at jeg er på læreplan søkesiden$/ do
-  visit laereplansok_index_path
-end
 
 Naar /^jeg fyller inn (\w+) "(.*)"$/ do |felt, sok|
   fill_in felt, :with => sok.to_s  
@@ -32,11 +25,20 @@ Saa /^jeg skal få (\d+) sider med resultater$/ do |n|
   response.should have_tag('a', n)
 end
 
-Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |table|
-  table.hashes.each do |kompetansemaal|
+Saa /^jeg skal se følgende spesifikke kompetansemål:$/ do |tabell|
+  tabell.hashes.each do |kompetansemaal|
     response.should contain(encode(kompetansemaal['tittel']))
   end
 end
+
+Saa /^skal (\w+) repopuleres og inneholde følgende (\d+) elementer:$/ do |felt, antall, tabell|
+  pending "hvordan får vi testet dette?"
+
+  tabell.hashes.each do |option|
+
+  end
+end
+
 
 def encode(streng)
   #bytter æøå med sin utf8 ekvivalent

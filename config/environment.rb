@@ -29,6 +29,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   if defined?(JRUBY_VERSION)
     config.gem 'activerecord-jdbc-adapter', :version => '0.9', :lib => 'jdbc_adapter' 
+    config.gem 'atom-tools', :version => '2.0.1'
   else
     config.gem 'mysql', :version => '= 2.7' 
   end

@@ -7,9 +7,10 @@
         params: Ext.Ajax.serializeForm('laereplan_sok'),
         success: function(xhr) {
           var jsonData = Ext.util.JSON.decode(xhr.responseText);
-          var kompetansemaal_options = jsonData['kompetansemaalsett_options']
-            
+          var kompetansemaal_options = jsonData['kompetansemaalsett_options'];
+          var trinn_options = jsonData['trinn_options'];
           kompetansemaalsett.store.loadData(kompetansemaal_options);
+          trinn.store.loadData(trinn_options);
         }
     });
 }

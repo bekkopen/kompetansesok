@@ -157,11 +157,17 @@ describe Laereplansok do
     end
   end
 
-  describe "finding kompetansemålsett" do
+  describe "finding relations" do
     it "should find all kompetansemaalsett for all matching laereplaner" do
       laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
       kompetansemaalsett = laereplansok.kompetansemaalsett
       kompetansemaalsett.length.should == 3
+    end
+    
+    it "should find all trinn for all matching laereplaner" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+      trinn = laereplansok.trinn
+      trinn.length.should == 3
     end
   end
 

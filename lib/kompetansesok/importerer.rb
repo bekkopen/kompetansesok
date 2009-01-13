@@ -3,6 +3,7 @@ require 'fileutils'
 require 'open-uri'
 require 'rubygems'
 require 'java'
+require "atom/feed"
 
 JRuby.objectspace = true
 
@@ -23,26 +24,29 @@ module Kompetansesok
     #
     # Filene som importeres kan senere importeres i databasen via #importer_til_db
     def importer_til_fil(n=nil)
-      require 'feed_tools' # Vi aktiverer kun koden her fordi den monkey patcher YAML til å bruke YAML.parser (finnes ikke i JRuby)
+      
+      
       FileUtils.rm_rf(@import_dir)
       FileUtils.mkdir_p(@import_dir)
 
       @out.puts("Leser Atom feed...") if @out
-      feed = FeedTools::Feed.open(ATOM_URL)
-      entries = n.nil? ? feed.items : feed.items[0...n]
+      feed = Atom::Feed.new(ATOM_URL)
+      feed.update!
+
+      entries = n.nil? ? feed.entries : feed.entries[0...n]
       @out.puts("Importerer #{entries.length} RDF filer...") if @out
       entries.each do |entry|
         @out.write('.') if @out
-        if entry.guid =~ /uuid:(.*);id=(.*)/
+        if entry.id =~ /uuid:(.*);id=(.*)/
           id = $2
           jena = Jena.new
-          jena.les_rdf_url(entry.link)
+          jena.les_rdf_url(entry.links.last.href)
 
           File.open(File.join(@import_dir, "#{id}.rdf"), 'wb') do |f|
             jena.write(f)
           end
         else
-          raise "Feil guid format på feed entry: #{entry.guid}"
+          raise "Feil id format på feed entry: #{entry.id}"
         end
       end
       @out.puts if @out
