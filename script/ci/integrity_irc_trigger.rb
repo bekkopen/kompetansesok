@@ -78,7 +78,8 @@ class IRC
       fork do
         `#{trigger}`
       end
-      send "PRIVMSG #{@channel} :Just told Integrity to build #{project}"
+      send "PRIVMSG #{@channel} :Just told Integrity to build #{project}:"
+      send "PRIVMSG #{@channel} :#{trigger}"
     end
     
     def main_loop()
