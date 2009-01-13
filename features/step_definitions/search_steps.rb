@@ -1,8 +1,4 @@
 
-Gitt /^at jeg er på læreplan søkesiden$/ do
-  visit laereplansok_index_path
-end
-
 Naar /^jeg fyller inn (\w+) "(.*)"$/ do |felt, sok|
   fill_in felt, :with => sok.to_s  
 end

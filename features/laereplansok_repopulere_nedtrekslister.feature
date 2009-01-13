@@ -4,8 +4,8 @@ Feature: Ropopulere nedtrekslister i søk vi læreplan
   Må nedtrekslistene begrenses ut i fra valgt læreplan
 
   Scenario: Repopulere kompetansemålsett
-    Gitt at jeg har åpnet læreplan søkesiden
-    Når jeg skriver "ENG1-01" i laereplan_kode 
+    Gitt at jeg er på læreplan søkesiden
+    Når jeg fyller inn Læreplantittel "ENG1-01"
     Så skal kompetansemaalsett repopuleres og inneholde følgende 5 elementer: 
       | tittel                                                                                    |
       | Etter 2. årstrinn                                                                         |
