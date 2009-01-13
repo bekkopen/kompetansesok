@@ -7,7 +7,7 @@ h2. Automatiserte tester
 
 h3. Funksjonelle tester (Cucumber features)
 
-Kjør features for appen:
+Kjør features for app:
 <pre>rake import:db
 rake features:app</pre>
 
