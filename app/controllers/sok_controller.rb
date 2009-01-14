@@ -13,7 +13,7 @@ class SokController < ApplicationController
       
       kompetansemaal_treff = treff
       
-      @kompetansemaal_treff = kompetansemaal_treff.map{|t| t.tittel } 
+      @kompetansemaal_treff = kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] } 
       
       
     end
