@@ -56,6 +56,10 @@ h2. Hent eksterne Rails plugins
 * git submodule init
 * git submodule update
 
+h2. Installere Sphinx
+* Last ned fra http://www.sphinxsearch.com/downloads.html
+* kjør './configure', 'make' og 'sudo make install'
+
 
 
 
