@@ -1,0 +1,32 @@
+<script type="text/javascript">
+  var valgte_kompetansemaal = []
+
+  Ext.onReady(function(){
+     // create the data store
+
+    valgte_window = document.getElementById("valgte_tekst");
+    valgte_grid = document.getElementById("valgte_kompetansemaal");
+
+    valgte_grid.showId = true;
+    valgte_grid.showKode = true;
+    valgte_grid.showPsi = true;
+
+  });
+ </script>
+
+<div id="valgte_kompetansemaal" style="height: 500px">
+  <table table="1">
+    <tr>
+      <th class="valgte_header">Valgte kompetansemål</th>
+    </tr>
+    <tr>
+      <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox" checked="showId()" onChange="toggleShowId(this.checked)"/>
+    </tr>
+    <tr>
+      <td class="valgte_body"><div id="valgte_tekst"></div></td>
+    </tr>
+  </table>
+</div>
+
+
+
