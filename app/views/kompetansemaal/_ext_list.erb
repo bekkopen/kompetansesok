@@ -35,7 +35,12 @@
         height: 500,
         title:'Kompetansemål'
       });
-      
+
+      grid.on({'click': function(){
+                          setSelectedKompetansemaal()
+                        }
+      });
+
       grid.addButton( {
         text: '<%= t("buttons.vis_id") %>',
         id: 'id_for_valgte',
