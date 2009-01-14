@@ -4,13 +4,13 @@ Egenskap: Søk
   kunne søke etter kompetansemål
   
   Scenario: Tomt søk
-    Gitt at jeg står på hovedsiden
+    Gitt at jeg er på hovedsiden
     Når jeg søker etter ""
     Så skal jeg ikke få noen treff
     Og jeg skal se "Vennligst angi et søkekriterium"
   
   Scenario: Få 9 treff på "samisk kultur"
-    Gitt at jeg står på hovedsiden
+    Gitt at jeg er på hovedsiden
     Når jeg søker etter "'samisk kultur'"
     # Sjekk manuelt at de kommer alfabetisk
     Så skal jeg få opp følgende treff:
@@ -27,7 +27,7 @@ Egenskap: Søk
     Og jeg skal ikke se "Vennligst angi et søkekriterium"
 
   Scenario: Få 1 treff på "gjeldende prosedyrer og regelverk"
-    Gitt at jeg står på hovedsiden
+    Gitt at jeg er på hovedsiden
     Når jeg søker etter "gjeldende prosedyrer og regelverk"
     Så skal jeg få opp følgende treff:
       | Tittel starter med                           |
