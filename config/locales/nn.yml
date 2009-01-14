@@ -1,8 +1,13 @@
 nn:
-    laereplankode: "Laerplankode på nynorsk"
-    laereplantittel: "Laereplantittel på nynorsk"
-    hovedomraade: "Hovedområde på nynorsk"
-    kompetansemaalsett: "Kompetansemålsett på nynorsk"
-    trinn: "Trinn på nynorsk"
-    kompetansemaaltittel: "Kompetansemåltittel på nynorsk"
-    introduksjonstekst: "Infotekst for hovedside - nynorsk"
+  laereplankode: "Laerplankode på nynorsk"
+  laereplantittel: "Laereplantittel på nynorsk"
+  hovedomraade: "Hovedområde på nynorsk"
+  kompetansemaalsett: "Kompetansemålsett på nynorsk"
+  trinn: "Trinn på nynorsk"
+  kompetansemaaltittel: "Kompetansemåltittel på nynorsk"
+  introduksjonstekst: "Infotekst for hovedside - nynorsk"
+
+  buttons:
+    export_csv: "Lagre resultatsett til fil"
+    vis_id: "Vis id for valgte kompetansemål"
+    vis_kode_og_id: "Vis kode og id for valgte kompetansemål"

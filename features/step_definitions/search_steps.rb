@@ -3,10 +3,6 @@ Naar /^jeg fyller inn (\w+) "(.*)"$/ do |felt, sok|
   fill_in felt, :with => sok.to_s  
 end
 
-Naar "jeg klikker søk" do
-  click_button "Søk"
-end
-
 Naar /^jeg velger (\w+) "([^\"]*)"$/ do |felt, hovedomraade|
   select hovedomraade, :from => felt
 end

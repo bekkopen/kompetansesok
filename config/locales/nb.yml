@@ -1,10 +1,16 @@
 nb:
-    laereplankode: "Læreplankode"
-    laereplantittel: "Læreplantittel"
-    hovedomraadekode: "Hovedområdekode"
-    hovedomraade: "Hovedområde"
-    kompetansemaalsett: "Kompetansemålsett"
-    trinn: "Trinn"
-    kompetansemaaltittel: "Kompetansemåltittel"
-    introduksjonstekst: "Infotekst for hovedside - bokmål"
+  laereplankode: "Læreplankode"
+  laereplantittel: "Læreplantittel"
+  hovedomraadekode: "Hovedområdekode"
+  hovedomraade: "Hovedområde"
+  kompetansemaalsett: "Kompetansemålsett"
+  trinn: "Trinn"
+  kompetansemaaltittel: "Kompetansemåltittel"
+  introduksjonstekst: "Infotekst for hovedside - bokmål"
+
+  buttons:
+    eksport_csv: "Lagre resultatsett til fil"
+    vis_id: "Vis id for valgte kompetansemål"
+    vis_kode_og_id: "Vis kode og id for valgte kompetansemål"
+    
     

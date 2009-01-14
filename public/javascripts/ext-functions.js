@@ -63,6 +63,3 @@ function displayKompetansemaal(text, tittel)
     win.show();
 
 }
-
-
-

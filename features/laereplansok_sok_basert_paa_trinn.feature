@@ -6,7 +6,7 @@ Feature: Skal kunne søke i kompetansemål basert på trinn
   Scenario: Søke på kompetansemål basert på trinn
     Gitt at jeg er på læreplan søkesiden
     Når jeg velger Trinn "Fjerde årstrinn"
-    Og jeg klikker søk
+    Og jeg klikker "Søk"
     Så skal jeg se 488 kompetansemål totalt
     Og TODO jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                                     |

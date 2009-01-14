@@ -7,7 +7,7 @@ Feature: Skal kunne søke i kompetansemål basert på kompetansemålsett
   Scenario: Søke på kompetansemål basert på kompetansemålsett
     Gitt at jeg er på læreplan søkesiden
     Når jeg velger Kompetansemålsett "Bevegelse"
-    Og jeg klikker søk
+    Og jeg klikker "Søk"
     Så skal jeg se 8 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                            |

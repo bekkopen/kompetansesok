@@ -37,18 +37,18 @@
       });
       
       grid.addButton( {
-        text: 'Vis id for valgte kompetansemål',
+        text: '<%= t("buttons.vis_id") %>',
         id: 'id_for_valgte',
         handler : function(){
-                      copySelectedUuids();
+                    copySelectedUuids();
                   }
         });
 
       grid.addButton( {
-        text: 'Vis kode og id for valgte kompetansemål',
-        id: 'kod_og_id_for_valgte',
+        text: '<%= t("buttons.vis_kode_og_id") %>',
+        id: 'kode_og_id_for_valgte',
         handler : function(){
-                      copySelectedCodesAndUuids();
+                    copySelectedCodesAndUuids();
                   }
         });
 

@@ -27,7 +27,7 @@ class LaereplansokController < ApplicationController
       [trinn.uuid, trinn.tittel]
     end
     prepend_empty_option(@kompetansemaalsett_options)
-    prepend_empty_option(@trinn_options)       
+    prepend_empty_option(@trinn_options)     
   end
   
   

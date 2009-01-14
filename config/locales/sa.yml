@@ -1,7 +1,12 @@
 sa:
-    laereplankode: "Lærplankode på samisk"
-    laereplantittel: "Læreplantittel på samisk"
-    hovedomraade: "Hovedområde på samisk"
-    kompetansemaalsett: "Kompetansemålsett på samisk"
-    trinn: "Trinn på samisk"
-    kompetansemaaltittel: "Kompetansemåltittel på samisk"
+  laereplankode: "Lærplankode på samisk"
+  laereplantittel: "Læreplantittel på samisk"
+  hovedomraade: "Hovedområde på samisk"
+  kompetansemaalsett: "Kompetansemålsett på samisk"
+  trinn: "Trinn på samisk"
+  kompetansemaaltittel: "Kompetansemåltittel på samisk"
+
+  buttons:
+    export_csv: "Lagre resultatsett til fil"
+    vis_id: "Vis id for valgte kompetansemål"
+    vis_kode_og_id: "Vis kode og id for valgte kompetansemål"

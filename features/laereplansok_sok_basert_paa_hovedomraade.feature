@@ -7,7 +7,7 @@ Feature: Skal kunne søke i kompetansemål basert på hovedområde
   Scenario: Søke på kompetansemål basert på hovedområde
     Gitt at jeg er på læreplan søkesiden
     Når jeg velger Hovedområde "Administrasjon, salg og økonomi"
-    Og jeg klikker søk
+    Og jeg klikker "Søk"
     Så skal jeg se 8 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                       |

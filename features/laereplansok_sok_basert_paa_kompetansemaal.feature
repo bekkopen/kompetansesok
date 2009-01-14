@@ -6,7 +6,7 @@ Feature: Skal kunne søke i kompetansemål basert på kompetansemål
   Scenario: Søke etter kompetansemål basert på tittel
     Gitt at jeg er på læreplan søkesiden
     Når jeg fyller inn Kompetansemåltittel "etableringsprosess"
-    Og jeg klikker søk
+    Og jeg klikker "Søk"
     Så skal jeg se 1 kompetansemål totalt
     Og jeg skal se følgende spesifikke kompetansemål:
       | tittel                                                                       |
