@@ -8,6 +8,7 @@
     <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg1"/>
     <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"/>
     <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:9fe35078-f82e-4ad2-adf9-5d8f0c4d4cad"/>
     <ns:title>Aktivitetslære 1</ns:title>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
   </rdf:Description>

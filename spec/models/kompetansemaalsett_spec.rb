@@ -27,10 +27,10 @@ describe Kompetansemaalsett do
       @kompetansemaalsett = Kompetansemaalsett.new(@valid_attributes)
     end
     
-    it "should have a laereplan" do
+    it "should have laereplaner" do
       laereplan = Laereplan.new
       @kompetansemaalsett.laereplaner << laereplan
-      @kompetansemaalsett.laereplan.should == laereplan
+      @kompetansemaalsett.laereplaner.should == [laereplan]
     end
     
     it "should have kompetansemaal" do
@@ -43,6 +43,12 @@ describe Kompetansemaalsett do
       trinn = Trinn.new
       @kompetansemaalsett.trinn << trinn
       @kompetansemaalsett.trinn.should == [trinn]
+    end
+    
+    it "should have fag" do
+      fag = Fag.new
+      @kompetansemaalsett.fag << fag
+      @kompetansemaalsett.fag.should == [fag]
     end
   end
   

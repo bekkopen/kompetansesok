@@ -67,8 +67,9 @@ module Kompetansesok
         @out.puts('Sletter gamle data...') if @out
         Kompetansemaal.delete_all
         Kompetansemaalsett.delete_all
-        Laereplan.delete_all
+        Fag.delete_all
         Hovedomraade.delete_all
+        Laereplan.delete_all
         Trinn.delete_all
 
         @out.puts("Importerer #{jena.trinn.length} Trinn...") if @out
@@ -77,6 +78,8 @@ module Kompetansesok
         Laereplan.create!(jena.laereplaner)
         @out.puts("Importerer #{jena.hovedomraader.length} Hovedomraade...") if @out
         Hovedomraade.create!(jena.hovedomraader)
+        @out.puts("Importerer #{jena.fag.length} Fag...") if @out
+        Fag.create!(jena.fag)
         @out.puts("Importerer #{jena.kompetansemaalsett.length} Kompetansemaalsett...") if @out
         Kompetansemaalsett.create!(jena.kompetansemaalsett)
         @out.puts('Database commit...') if @out

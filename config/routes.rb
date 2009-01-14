@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :fag
+
   map.resources :laereplansok, :collection => {:dropdown_content => :get}
   map.resources :spraak_session
 
