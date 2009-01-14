@@ -50,6 +50,8 @@ function toggleShowId(show)
 {
     valgte_grid = document.getElementById("valgte_kompetansemaal");
     valgte_grid.showId = show;
+
+    setSelectedKompetansemaal();
 }
 
 
