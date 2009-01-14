@@ -51,6 +51,18 @@ class Laereplansok
     end
   end
 
+  def kompetansemaal_as_csv
+    selected_attributes = kompetansemaal.map do |k|
+      [k.uuid, k.tittel]
+    end
+
+    FasterCSV.generate do |csv|
+      selected_attributes.each do |attibute|
+        csv << attibute
+      end
+    end
+  end
+
   def empty_search?
     empty = true
     @@soekefelter.each do |felt|
