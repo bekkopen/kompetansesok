@@ -7,7 +7,7 @@ namespace :ci do
 
   desc "Kjør de trege testene"
   task :slow => ['log:clear'] do
-    sh("rake db:migrate import:db RAILS_ENV=integration_test")
+    sh("rake db:migrate import:data RAILS_ENV=integration_test")
     sh("jruby -S rake features:import RAILS_ENV=test")
   end
 end

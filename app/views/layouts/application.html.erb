@@ -18,20 +18,21 @@
 		<% end %>
 	  </div>
 	  <div id="header">
-        <%= image_tag  "logo.gif" %>
+      <%= image_tag  "logo.gif" %>
 	  </div>
 	  <div id="branding_bar">
 		<%= image_tag "searchBackground.gif" %>
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-		  <li><%= link_to "Forside", :controller => "info" %></li>
-		  <li><a href="<%= laereplansok_index_path %>">Søk via læreplan</a></li>
-		  <li><a href="#">Søk via fag</a></li>
-		  <li><a href="#">Søk 3</a></li>
-		  <li><a href="#">Avansert søk</a></li>
-		</ul>
+  		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
+  		</ul>
 	  </div>
+	  <% if flash[:notice] %>
+	    <div id="notice"> 
+	      <%= flash[:notice] %>
+  	  </div>  
+	  <% end %>
 	  <div id="content">
 	    <%= yield %>
 	  </div>

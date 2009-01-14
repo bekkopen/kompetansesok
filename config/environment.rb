@@ -31,12 +31,17 @@ Rails::Initializer.run do |config|
     config.gem 'activerecord-jdbc-adapter', :version => '0.9', :lib => 'jdbc_adapter' 
     config.gem 'atom-tools',                :version => '2.0.1', :lib => 'atom/tools'
   else
-    config.gem 'mysql', :version => '= 2.7' 
+    config.gem 'mysql',              :version => '2.7' 
+    
+    # Brukes kun til test
+    config.gem 'nokogiri',           :version => '1.1.0'
+    config.gem 'cucumber',           :version => '0.1.15'
   end
+  # TODO: fjern denne - brukes ikke i nytt søkedesign
   config.gem 'mislav-will_paginate', :version => '2.3.6',  :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'fastercsv',            :version => '1.4.0'
   config.gem 'progressbar',          :version => '0.0.3'
-
+  config.gem 'chronic',              :version => '0.2.3'
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.

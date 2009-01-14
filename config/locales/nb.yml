@@ -1,4 +1,5 @@
 nb:
+  # TODO: (START) Fjern disse, og deretter feilende features og gammel søkekode
   laereplankode: "Læreplankode"
   laereplantittel: "Læreplantittel"
   hovedomraadekode: "Hovedområdekode"
@@ -12,5 +13,16 @@ nb:
     eksport_csv: "Lagre resultatsett til fil"
     vis_id: "Vis id for valgte kompetansemål"
     vis_kode_og_id: "Vis kode og id for valgte kompetansemål"
+  # TODO: (END) Fjern disse, og deretter feilende features og gammel søkekode
     
+  navigasjon:
+    forside: "Forside"
+  
+  knapper:
+    søk: "Søk"
     
+  etiketter:
+    søk: "Søk"
+
+  meldinger:
+    angi_kriterium: "Vennligst angi et søkekriterium" 

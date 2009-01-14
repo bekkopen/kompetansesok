@@ -1,13 +1,12 @@
 en:
-  laereplankode: "Lærplankode på engelsk"
-  laereplantittel: "Læreplantittel på engelsk"
-  hovedomraade: "Hovedområde på engelsk"
-  kompetansemaalsett: "Kompetansemålsett på engelsk"
-  trinn: "Trinn på engelsk"
-  kompetansemaaltittel: "Kompetansemåltittel på engelsk"
-  introduksjonstekst: "Infotekst for hovedside - engelsk"
+  navigasjon:
+    forside: "Front page"
+  
+  knapper:
+    søk: "Search"
+    
+  etiketter:
+    søk: "Search"
 
-  buttons:
-    eksport_csv: "Lagre resultatsett til fil"
-    vis_id: "Vis id for valgte kompetansemål"
-    vis_kode_og_id: "Vis kode og id for valgte kompetansemål"
+  meldinger:
+    angi_kriterium: "Please enter search criterion"

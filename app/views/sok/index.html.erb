@@ -1,0 +1,40 @@
+
+<% form_tag(root_path, :method => :get) do %>
+  <label for="q"><%= t('etiketter.søk') %></label>
+  <input name="q" id="q" size="30" type="text" />
+  <input type="submit" value="<%= t('knapper.søk') %>" />
+<% end %>
+
+
+<script type="text/javascript">
+  var kompetansemaalRader = <%= @kompetansemaal_treff.to_json %>;
+
+  Ext.onReady(function(){
+    Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+    
+    // create the data store
+    var store = new Ext.data.SimpleStore({
+      fields: [
+        {name: 'kompetansemaal'}
+      ]
+    });
+    store.loadData(kompetansemaalRader);
+
+    // create the Grid
+    var grid = new Ext.grid.GridPanel({
+      id: 'kompetansemaal_grid',
+      store: store,
+      columns: [
+        {header: "Kompetansemål", sortable: false, dataIndex: 'kompetansemaal'}
+        ],
+        stripeRows: true,
+        height: 500,
+        title:'Kompetansemål'
+      });
+
+      grid.render('kompetansemaal');
+      grid.getSelectionModel().selectFirstRow();
+
+    });
+      
+ </script>
