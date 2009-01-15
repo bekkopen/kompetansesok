@@ -1,9 +1,38 @@
 
-<% form_tag(root_path, :method => :get) do %>
-  <label for="q"><%= t('etiketter.søk') %></label>
-  <input name="q" id="q" size="30" type="text" />
-  <input type="submit" value="<%= t('knapper.søk') %>" />
-<% end %>
+<p>
+  <% form_tag(root_path, :method => :get) do %>
+    <label for="q"><%= t('etiketter.søk') %></label>
+    <input name="q" id="q" size="30" type="text" />
+    <input type="submit" value="<%= t('knapper.søk') %>" />
+  <% end %>
+</p>
+
+<div id='resultater'>
+  <h2><%= t('overskrifter.resultater') %></h2>
+  <p>
+      <div id="kompetansemaal" style="height: 300px; width: 570px;float:left"> </div>
+      <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+  </p>
+
+  <p>
+    <h3><%= t('overskrifter.læreplaner') %></h3>
+    <ul>
+      <% @laereplan_treff.each do |laereplan| %>
+        <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
+      <% end %>
+    </ul>
+  </p>
+
+  <p>
+    <h3><%= t('overskrifter.hovedområder') %></h3>
+    <ul>
+      <% @hovedomraade_treff.each do |hovedomraade| %>
+        <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
+      <% end %>
+    </ul>
+  </p>
+</div>
+
 
 <script type="text/javascript">
   var kompetansemaalRader = <%= @kompetansemaal_treff.to_json %>;
@@ -45,27 +74,3 @@
     });
       
  </script>
-
-<div id="kompetansemaal" style="height: 300px; width: 570px;float:left"> </div>
-
-<%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-
-<div id='laereplaner'>
-  <h2><%= t('overskrifter.læreplaner') %></h2>
-  <ul>
-    <% @laereplan_treff.each do |laereplan| %>
-      <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
-  
-    <% end %>
-  </ul>
-</div>
-
-<div id='hovedomraader'>
-  <h2><%= t('overskrifter.hovedområder') %></h2>
-  <ul>
-    <% @hovedomraade_treff.each do |hovedomraade| %>
-      <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
-  
-    <% end %>
-  </ul>
-</div>
