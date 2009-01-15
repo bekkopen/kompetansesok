@@ -35,14 +35,20 @@
         title:'Kompetansemål'
       });
 
-      grid.render('kompetansemaal');
-      grid.getSelectionModel().selectFirstRow();
+      grid.on({'click': function(){
+                          importAndDisplaySelectedKompetansemaal()
+                        }
+      });
 
+      grid.render('kompetansemaal');
+      
     });
       
  </script>
 
-<div id="kompetansemaal" style="height: 300px"> </div>
+<div id="kompetansemaal" style="height: 300px; width: 570px;float:left"> </div>
+
+<%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
 
 <div id='laereplaner'>
   <h2><%= t('overskrifter.læreplaner') %></h2>
@@ -63,5 +69,3 @@
     <% end %>
   </ul>
 </div>
-
-

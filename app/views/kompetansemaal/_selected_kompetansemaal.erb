@@ -1,0 +1,38 @@
+<script type="text/javascript">
+  var valgte_kompetansemaal = []
+  var valgte_kontroller = null;
+
+  Ext.onReady(function(){
+    valgte_grid = document.getElementById("valgte_kompetansemaal");
+    valgte_kontroller = new ValgteKompetansemaal();
+    valgte_grid.valgte_kompetansemaal = valgte_kontroller ;
+
+    initButtons()
+  });
+
+  function initButtons(){
+    document.getElementById("showIdCheckbox").checked = valgte_kontroller.showId;
+    document.getElementById("showKodeCheckbox").checked = valgte_kontroller.showKode;
+    document.getElementById("showPsiCheckbox").checked = valgte_kontroller.showPsi;
+  };
+
+
+</script>
+
+<div id="valgte_kompetansemaal" style="height: 300px; width:100%;">
+  <table style="width:250px;border:1px solid black;" >
+    <tr>
+      <th class="valgte_header">Valgte kompetansemål</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox"  onChange="valgte_kontroller.toggleShowId(this.checked)"/>
+        <label for="showKodeCheckbox">Vis kode:</label><input id="showKodeCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowKode(this.checked)"/>
+        <label for="showPsiCheckbox">Vis Psi:</label><input id="showPsiCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowPsi(this.checked)"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="valgte_body"><textarea id="valgte_tekst" cols="43" rows="14"></textarea></td>
+    </tr>
+  </table>
+</div>

@@ -171,5 +171,25 @@ describe Laereplansok do
     end
   end
 
+  describe "exporting kompetansemaal to csv format" do
+    before :each do
+      @laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære")
+    end
 
+    it "should give return a proper csv string upon calling kompetansemaal_as_csv" do
+      csv_string = @laereplansok.kompetansemaal_as_csv
+      csv_string.should_not be_empty
+      FasterCSV.parse(csv_string)
+    end
+
+    it "should give as many results as odinary search" do
+      @laereplansok.kompetansemaal.length.should == @laereplansok.kompetansemaal_as_csv.split("\n").length
+    end
+
+    it "should give correct csv line, containing uuid and tittel seperated by a comma and ended by a new line" do
+      laereplansok = Laereplansok.new(:laereplan_tittel => "aktivitetslære", :kompetansemaal_tittel => "beskrive", :hovedomraade_tittel => "Friluftsliv")
+      laereplansok.kompetansemaal_as_csv.should == "uuid:8d9bdb61-29d4-427a-b33b-571cd03bbea0,beskrive opplevelser i naturen\n"
+    end
+
+  end
 end

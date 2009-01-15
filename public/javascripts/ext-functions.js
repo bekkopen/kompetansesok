@@ -1,9 +1,19 @@
 
+
+function getSelectedKompetansemaal(){
+    return getSelectedRowsFrom('kompetansemaal_grid');
+};
+
+function getSelectedRowsFrom(extGridPanelId)
+{
+  var grid = Ext.getCmp(extGridPanelId);
+  var selRecords = grid.getSelectionModel().getSelections();
+  return selRecords;
+}
+
 function copySelectedUuids() {
   var uuids = [];
-  var grid = Ext.getCmp('kompetansemaal_grid');
-
-  var selRecords = grid.getSelectionModel().getSelections();
+  selRecords = getSelectedKompetansemaal();
 
   for ( rec = 0; rec < selRecords.length; rec++)
     {
@@ -63,3 +73,4 @@ function displayKompetansemaal(text, tittel)
     win.show();
 
 }
+

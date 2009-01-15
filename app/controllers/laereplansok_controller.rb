@@ -29,10 +29,10 @@ class LaereplansokController < ApplicationController
     prepend_empty_option(@kompetansemaalsett_options)
     prepend_empty_option(@trinn_options)     
   end
-  
+
   
   private
-  
+ 
   def create_options_for_select(klass)
     klass.find(:all).map do |k| 
       [k.tittel, k.uuid]
