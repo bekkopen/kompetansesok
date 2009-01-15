@@ -56,12 +56,20 @@ function ValgteKompetansemaal(){
         return nextElement;
     };
 
-    this.toggleShowId=function(show)
-    {
+    this.toggleShowId=function(show){
         this.showId = show;
-
         importAndDisplaySelectedKompetansemaal();
-    }
+    };
+
+    this.toggleShowKode=function(show){
+        this.showKode = show;
+        importAndDisplaySelectedKompetansemaal();
+    };
+
+    this.toggleShowPsi=function(show){
+        this.showPsi = show;
+        importAndDisplaySelectedKompetansemaal();
+    };
     
 
 };

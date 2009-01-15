@@ -7,11 +7,17 @@
     valgte_kontroller = new ValgteKompetansemaal();
     valgte_grid.valgte_kompetansemaal = valgte_kontroller ;
 
+    initButtons()
   });
 
+  function initButtons(){
+    document.getElementById("showIdCheckbox").checked = valgte_kontroller.showId;
+    document.getElementById("showKodeCheckbox").checked = valgte_kontroller.showKode;
+    document.getElementById("showPsiCheckbox").checked = valgte_kontroller.showPsi;
+  };
 
-  
- </script>
+
+</script>
 
 <div id="valgte_kompetansemaal" style="height: 500px; width:100%;">
   <table style="width:250px;border:1px solid black;" >
@@ -20,7 +26,9 @@
     </tr>
     <tr>
       <td>
-        <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox" checked="showId()" onChange="valgte_kontroller.toggleShowId(this.checked)"/>
+        <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox"  onChange="valgte_kontroller.toggleShowId(this.checked)"/>
+        <label for="showKodeCheckbox">Vis kode:</label><input id="showKodeCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowKode(this.checked)"/>
+        <label for="showPsiCheckbox">Vis Psi:</label><input id="showPsiCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowPsi(this.checked)"/>
       </td>
     </tr>
     <tr>
@@ -28,6 +36,7 @@
     </tr>
   </table>
 </div>
+
 
 
 
