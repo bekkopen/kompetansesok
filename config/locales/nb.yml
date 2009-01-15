@@ -17,6 +17,9 @@ nb:
     
   navigasjon:
     forside: "Forside"
+
+  overskrifter:
+    læreplaner: "Læreplaner"
   
   knapper:
     søk: "Søk"

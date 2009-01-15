@@ -43,3 +43,15 @@
  </script>
 
 <div id="kompetansemaal" style="height: 300px"> </div>
+
+<div id='laereplaner'>
+  <h2><%= t('overskrifter.læreplaner') %></h2>
+  <ul>
+    <% @laereplan_treff.each do |laereplan| %>
+      <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
+  
+    <% end %>
+  </ul>
+</div>
+
+
