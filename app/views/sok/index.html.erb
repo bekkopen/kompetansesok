@@ -54,4 +54,14 @@
   </ul>
 </div>
 
+<div id='hovedomraader'>
+  <h2><%= t('overskrifter.hovedområder') %></h2>
+  <ul>
+    <% @hovedomraade_treff.each do |hovedomraade| %>
+      <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
+  
+    <% end %>
+  </ul>
+</div>
+
 

@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :laereplansok, :collection => {:dropdown_content => :get}
   map.resources :spraak_session
   map.resources :laereplan
+  map.resources :hovedomraade
 
   # The priority is based upon order of creation: first created -> highest priority.
 

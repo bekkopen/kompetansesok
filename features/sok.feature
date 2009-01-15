@@ -40,3 +40,14 @@ Egenskap: Søk
       | Tittel                                              |
       | Læreplan i ambulansefaget Vg3 / opplæring i bedrift |
 
+  Scenario: Få 5 treff i hovedområder på "marked"
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "marked"
+    Så skal jeg få opp følgende treff for Hovedomraade:
+      | Tittel                 |
+      | Bedrift, kunde, marked |
+      | Marked og målgrupper   |
+      | Marked og økonomi      |
+      | Strategi og marked     |
+      | Økonomi og marked      |
+
