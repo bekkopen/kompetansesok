@@ -36,6 +36,8 @@ nb:
     vis_uuid: "Vis uuid"
     vis_kode: "Vis kode"
     vis_psi: "Vis PSI"
+    vis_laereplan_treff: "Vis treff i læreplaner"
+    vis_hovedomraade_treff: "vis treff i hovedområder"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium" 

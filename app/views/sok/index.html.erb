@@ -1,4 +1,3 @@
-
 <p>
   <% form_tag(root_path, :method => :get) do %>
     <label for="q"><%= t('etiketter.søk') %></label>
@@ -9,34 +8,35 @@
 
 <div id='resultater'>
   <h2><%= t('overskrifter.resultater') %></h2>
-  <p>
-      <div id="kompetansemaal" style="height: 300px; width: 570px;float:left"> </div>
-      <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-  </p>
-
-  <p>
-    <h3><%= t('overskrifter.læreplaner') %></h3>
+  
+  <div>
+    <div id="kompetansemaal" style="height: 300px; width: 570px;float:left"> </div>
+    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+  </div>
+  
+  <div id='laereplan_treff' class='delresultat'>
+    <h3><%= t('overskrifter.læreplaner') %></h3>    
     <ul>
       <% @laereplan_treff.each do |laereplan| %>
         <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
       <% end %>
     </ul>
-  </p>
-
-  <p>
+  </div>
+  
+  <div id='hovedomraade_treff' class='delresultat'>
     <h3><%= t('overskrifter.hovedområder') %></h3>
     <ul>
       <% @hovedomraade_treff.each do |hovedomraade| %>
         <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
       <% end %>
     </ul>
-  </p>
+  </div>
 </div>
 
 
 <script type="text/javascript">
   var kompetansemaalRader = <%= @kompetansemaal_treff.to_json %>;
-
+  
   Ext.onReady(function(){
     Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
     
@@ -49,28 +49,28 @@
       ]
     });
     store.loadData(kompetansemaalRader);
-
+    
     // create the Grid
     var grid = new Ext.grid.GridPanel({
       id: 'kompetansemaal_grid',
       store: store,
       columns: [
         {header: "<%= t('etiketter.uuid')%>", hidden: true, dataIndex: 'kompetansemaal_uuid'},
-        {header: "<%= t('etiketter.kode')%>", hidden: true, dataIndex: 'kompetansemaal_kode'},
-        {header: "<%= t('etiketter.tittel')%>", width: 550, sortable: true, resizable: false, menuDisabled: true, dataIndex: 'kompetansemaal_tittel'}
-        ],
-        stripeRows: true,
-        height: 300,
-        title:'Kompetansemål'
+          {header: "<%= t('etiketter.kode')%>", hidden: true, dataIndex: 'kompetansemaal_kode'},
+            {header: "<%= t('etiketter.tittel')%>", width: 550, sortable: true, resizable: false, menuDisabled: true, dataIndex: 'kompetansemaal_tittel'}
+            ],
+            stripeRows: true,
+            height: 300,
+            title:'Kompetansemål'
+          });
+          
+          grid.on({'click': function(){
+            importAndDisplaySelectedKompetansemaal()
+          }
+        });
+        
+        grid.render('kompetansemaal');
+        
       });
-
-      grid.on({'click': function(){
-                          importAndDisplaySelectedKompetansemaal()
-                        }
-      });
-
-      grid.render('kompetansemaal');
       
-    });
-      
- </script>
+      </script>

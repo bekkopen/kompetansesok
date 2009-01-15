@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090114083338) do
+ActiveRecord::Schema.define(:version => 20090115143704) do
 
   create_table "fag", :force => true do |t|
     t.string   "uuid"
@@ -50,14 +50,14 @@ ActiveRecord::Schema.define(:version => 20090114083338) do
   add_index "hovedomraader_kompetansemaal", ["kompetansemaal_id"], :name => "index_hovedomraader_kompetansemaal_on_kompetansemaal_id"
 
   create_table "hovedomraader_laereplaner", :id => false, :force => true do |t|
-    t.integer  "hovedomraade_uuid", :null => false
-    t.integer  "laereplan_uuid",    :null => false
+    t.integer  "hovedomraade_id", :null => false
+    t.integer  "laereplan_id",    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "hovedomraader_laereplaner", ["hovedomraade_uuid"], :name => "index_hovedomraader_laereplaner_on_hovedomraade_uuid"
-  add_index "hovedomraader_laereplaner", ["laereplan_uuid"], :name => "index_hovedomraader_laereplaner_on_laereplan_uuid"
+  add_index "hovedomraader_laereplaner", ["hovedomraade_id"], :name => "index_hovedomraader_laereplaner_on_hovedomraade_id"
+  add_index "hovedomraader_laereplaner", ["laereplan_id"], :name => "index_hovedomraader_laereplaner_on_laereplan_id"
 
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
