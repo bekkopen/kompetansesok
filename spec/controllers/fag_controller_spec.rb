@@ -9,8 +9,8 @@ describe FagController do
   describe "responding to GET show" do
 
     it "should expose the requested fag as @fag" do
-      Fag.should_receive(:find).with("37").and_return(mock_fag)
-      get :show, :id => "37"
+      Fag.should_receive(:find_by_uuid).with("uuid-37").and_return(mock_fag)
+      get :show, :id => "uuid-37"
       assigns[:fag].should equal(mock_fag)
     end
     

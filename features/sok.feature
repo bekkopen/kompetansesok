@@ -33,7 +33,7 @@ Egenskap: Søk
       | Tittel starter med                           |
       | utføre arbeid i tråd med gjeldende prosedyrer|
 
-   Scenario: Få 1 treff i læreplaner på "ambulansefaget"
+  Scenario: Få 1 treff i læreplaner på "ambulansefaget"
     Gitt at jeg er på hovedsiden
     Når jeg søker etter "ambulansefaget"
     Så skal jeg få opp følgende treff for Laereplan:
@@ -50,4 +50,3 @@ Egenskap: Søk
       | Marked og økonomi      |
       | Strategi og marked     |
       | Økonomi og marked      |
-

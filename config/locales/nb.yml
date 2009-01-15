@@ -24,6 +24,7 @@ nb:
   
   knapper:
     søk: "Søk"
+    tilbake_til_søk: "Tilbake til søket"
     
   etiketter:
     søk: "Søk"
