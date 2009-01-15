@@ -1,8 +1,11 @@
 class SokController < ApplicationController
 
   def index
-    if params[:q].blank?
-      @kompetansemaal_treff = []
+    @kompetansemaal_treff = []
+    @laereplan_treff = []
+    @hovedomraade_treff = []
+    
+    if params[:q].blank?     
       if params.has_key?(:q)
         flash[:notice] = t('meldinger.angi_kriterium')
       end
@@ -11,11 +14,17 @@ class SokController < ApplicationController
       sok = Ultrasphinx::Search.new(:query => params[:q])
       treff = sok.run
       
-      kompetansemaal_treff = treff
-      
-      @kompetansemaal_treff = kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] } 
-      
-      
+      treff.each do |t|
+        if t.instance_of? Kompetansemaal
+          @kompetansemaal_treff << t
+        elsif t.instance_of? Laereplan
+          @laereplan_treff << t
+        elsif t.instance_of? Hovedomraade
+          @hovedomraade_treff << t
+        end
+      end
+            
+      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
     end
   end
 

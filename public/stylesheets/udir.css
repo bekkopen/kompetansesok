@@ -16,7 +16,7 @@ body {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 h1 {
 	color: #333;
@@ -24,6 +24,7 @@ h1 {
 	line-height: 1em;
 	margin-bottom: 0.5em;
 }
+
 
 h1 img, h2 img, h3 img, 
 h4 img, h5 img, h6 img {
@@ -60,7 +61,8 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 /* Lists
 -------------------------------------------------------------- */
 
-ul          { list-style-type: disc; }
+ul          { list-style-type: none; }
+li          { padding: 0em 0em 0em 1em; }
 ol          { list-style-type: decimal; }
 
 dl          { margin: 10px 0; }
@@ -102,6 +104,14 @@ div#nav_container {
 
 div#spraak {
 	text-align: right;
+}
+
+div#resultater {
+  padding: 2em 0em
+}
+
+div.delresultat {
+  padding: 1em 0em
 }
 
 ul#nav_list li, ul#spraak_liste li {

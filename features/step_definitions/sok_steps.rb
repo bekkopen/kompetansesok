@@ -3,11 +3,18 @@ Naar /^jeg søker etter "(.*)"$/ do |sok|
   click_button 'Søk' 
 end
 
-Saa /^skal jeg få opp følgende treff:$/ do |sokeresultater|
+Saa /^skal jeg få opp følgende treff i kompetansemål:$/ do |sokeresultater|
   sokeresultater.hashes.each do |rad|
     response.should contain(encode(rad['Tittel starter med']))
   end
 end
+
+Saa /^skal jeg få opp følgende treff for (\w+):$/ do |type, sokeresultater|
+  sokeresultater.hashes.each do |rad|
+    response.should have_tag('a', rad['Tittel'])
+  end
+end
+
 
 Saa /^skal jeg ikke få noen treff$/ do
   response.should contain('var kompetansemaalRader = [];')
@@ -20,4 +27,3 @@ end
 Saa /^jeg skal ikke se "(.*)"$/ do |tekst|
   response.should_not contain(tekst)
 end
-
