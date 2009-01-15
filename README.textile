@@ -60,7 +60,8 @@ h2. Installere Sphinx
 * Last ned fra http://www.sphinxsearch.com/downloads.html
 * kjør './configure', 'make' og 'sudo make install'
 
-
+h2. Starte Ultrasphinx
+* start ultrasphinx-daemon: 'rake ultrasphinx:daemon:start'
 
 
 
