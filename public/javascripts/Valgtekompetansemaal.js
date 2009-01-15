@@ -18,7 +18,7 @@ function showValgteKompetansemaal()
     data = valgte_grid.data
     valgte_window.innerHTML = "";
     for(i in data){
-        valgte_window.innerHTML = valgte_window.innerHTML + "<br/>" + formatedKompetansemaalLinje(data[i])
+        valgte_window.innerHTML = valgte_window.innerHTML + "\n" + formatedKompetansemaalLinje(data[i])
     }
 }
 

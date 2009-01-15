@@ -2,9 +2,6 @@
   var valgte_kompetansemaal = []
 
   Ext.onReady(function(){
-     // create the data store
-
-    valgte_window = document.getElementById("valgte_tekst");
     valgte_grid = document.getElementById("valgte_kompetansemaal");
 
     valgte_grid.showId = true;
@@ -14,8 +11,8 @@
   });
  </script>
 
-<div id="valgte_kompetansemaal" style="height: 500px">
-  <table table="1">
+<div id="valgte_kompetansemaal" style="height: 500px; width:100%;">
+  <table style="width:250px;border:1px solid black;" >
     <tr>
       <th class="valgte_header">Valgte kompetansemål</th>
     </tr>
@@ -25,7 +22,7 @@
       </td>
     </tr>
     <tr>
-      <td class="valgte_body"><div id="valgte_tekst"></div></td>
+      <td class="valgte_body"><textarea id="valgte_tekst" cols="43" rows="14"></textarea></td>
     </tr>
   </table>
 </div>
