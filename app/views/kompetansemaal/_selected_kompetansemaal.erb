@@ -22,13 +22,13 @@
 <div id="valgte_kompetansemaal" style="height: 300px; width:100%;">
   <table style="width:250px;border:1px solid black;" >
     <tr>
-      <th class="valgte_header">Valgte kompetansemål</th>
+      <th class="valgte_header"><%= t('overskrifter.valgte_kompetansemål') %></th>
     </tr>
     <tr>
       <td>
-        <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox"  onChange="valgte_kontroller.toggleShowId(this.checked)"/>
-        <label for="showKodeCheckbox">Vis kode:</label><input id="showKodeCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowKode(this.checked)"/>
-        <label for="showPsiCheckbox">Vis Psi:</label><input id="showPsiCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowPsi(this.checked)"/>
+        <label for="showIdCheckbox"><%= t('etiketter.vis_uuid') %></label><input id="showIdCheckbox" type="checkbox"  onChange="valgte_kontroller.toggleShowId(this.checked)"/>
+        <label for="showKodeCheckbox"><%= t('etiketter.vis_kode') %></label><input id="showKodeCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowKode(this.checked)"/>
+        <label for="showPsiCheckbox"><%= t('etiketter.vis_psi') %></label><input id="showPsiCheckbox" type="checkbox" onChange="valgte_kontroller.toggleShowPsi(this.checked)"/>
       </td>
     </tr>
     <tr>

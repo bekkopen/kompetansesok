@@ -22,6 +22,7 @@ nb:
     resultater: "Resultater"
     læreplaner: "Læreplaner"
     hovedområder: "Hovedområder"
+    valgte_kompetansemål: "Valgte kompetansemål"
   
   knapper:
     søk: "Søk"
@@ -32,6 +33,9 @@ nb:
     uuid: "UUID"
     kode: "Kode"
     tittel: "Tittel"
+    vis_uuid: "Vis uuid"
+    vis_kode: "Vis kode"
+    vis_psi: "Vis PSI"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium" 
