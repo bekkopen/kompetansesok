@@ -8,7 +8,7 @@ Naar /^jeg velger (\w+) som språk$/ do |spraak|
   click_button "Velg språk"
 end
 
-Saa /^skal jeg se hovedsiden på nynorsk$/ do
-  response.body.should =~ /Infotekst for hovedside - nynorsk/
+Saa /^skal jeg se hovedsiden på engelsk$/ do
+  response.body.should =~ /Search/
+  response.body.should_not =~ /Søk/
 end
-

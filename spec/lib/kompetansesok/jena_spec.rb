@@ -51,6 +51,10 @@ if defined?(JRUBY_VERSION)
       it "should contain an array of trinn uuids" do
         @kompetansemaalsett[:trinn_uuids].should == ["http://psi.udir.no/laereplan/aarstrinn/vg1"]
       end
+      
+      it "should contain an array of fag uuids" do
+        @kompetansemaalsett[:fag_uuids].should == ["uuid:9fe35078-f82e-4ad2-adf9-5d8f0c4d4cad"]
+      end
     end
     
     describe "hovedomraader" do
@@ -116,6 +120,26 @@ if defined?(JRUBY_VERSION)
       it "should get tittel" do
         @trinn[:tittel].should == "Videregående trinn 1"
       end
+    end
+    
+    
+    describe "fag" do
+      before :each do
+        @fag = @jena.fag[0]
+      end
+      
+      it "should get uuid" do
+        @fag[:uuid].should == "uuid:9fe35078-f82e-4ad2-adf9-5d8f0c4d4cad"
+      end
+
+      it "should get tittel" do
+        @fag[:tittel].should == "Aktivitetslære 2"
+      end
+      
+      it "should get kode" do
+        @fag[:kode].should == "IDR1Z02"
+      end
+      
     end
     
     describe "common values" do

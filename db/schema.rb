@@ -9,7 +9,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081217142408) do
+ActiveRecord::Schema.define(:version => 20090114083338) do
+
+  create_table "fag", :force => true do |t|
+    t.string   "uuid"
+    t.string   "kode"
+    t.string   "tittel"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "fag_kompetansemaalsett", :id => false, :force => true do |t|
+    t.integer  "fag_id",                :null => false
+    t.integer  "kompetansemaalsett_id", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "fag_kompetansemaalsett", ["fag_id"], :name => "index_fag_kompetansemaalsett_on_fag_id"
+  add_index "fag_kompetansemaalsett", ["kompetansemaalsett_id"], :name => "index_fag_kompetansemaalsett_on_kompetansemaalsett_id"
 
   create_table "hovedomraader", :force => true do |t|
     t.string   "uuid"

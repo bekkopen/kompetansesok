@@ -27,6 +27,18 @@ Webrat.configure do |config|
   config.mode = :rails
 end 
 
+module Hjelpefunksjoner
+  def encode(streng)
+    #bytter æøå med sin utf8 ekvivalent
+    streng.gsub('ø', '\u00f8').gsub('Ø', '\u00d8').gsub('æ', '\u00e6').gsub('Æ', '\u00c6').gsub('å', '\u00e5').gsub('Å', '\u00c5');
+  end
+end
+
+World do |world|
+  world.extend(Hjelpefunksjoner)
+  world
+end
+
 if ENV['RUBY_PROF']
   at_exit do
     result = RubyProf.stop

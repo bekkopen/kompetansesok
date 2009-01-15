@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  uuid: MyString
+  kode: MyString
+  tittel: MyString
+
+two:
+  uuid: MyString
+  kode: MyString
+  tittel: MyString

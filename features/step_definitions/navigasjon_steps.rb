@@ -1,4 +1,3 @@
-
 Gitt /^at jeg er på hovedsiden$/ do
   visit root_path
 end
@@ -12,7 +11,7 @@ Naar /jeg klikker "(.+)"/ do |knapp|
 end
 
 Saa /^skal jeg bli tatt til hovedsiden$/ do
-  request.path_parameters[:controller].should == "info"
+  request.path_parameters[:controller].should == "sok"
   request.path_parameters[:action].should == "index"
 end
 

@@ -45,35 +45,23 @@ Sjekk uten krever følgende gems installert i både jruby og ruby for å kjøre
 tester. Dette er hva som er installert fra en blank ubuntu installasjon,
 men burde være likt for mange andre distiubsjoner
 * jruby fra svn, ikke apt-get i ubuntu
-* cucumber 1.11, må bygges fra siste checkout fra http://github.com/aslakhellesoy/cucumber/tarball/v0.1.11
 * debs;
 ** libmysqlclient15-dev
 ** mysql-server(remember empty root password)
 ** libxml2 og libxml2-dev
 ** libxslt-dev
 
-* gems i jruby og vanlig ruby gem;
-** rake
-** rails v2.2.2
-** rspec
-** activerecord-jdbc-adapter
-** feedtools
-** rspec-rails
-** mysql
-** nokogiri(se install nokogiri)
-** mislav-will_paginate --source http://gems.github.com
+h2. Hent eksterne Rails plugins
 
-Det var alt ;)
+* git submodule init
+* git submodule update
 
-h3. Install nokogiri
+h2. Installere Sphinx
+* Last ned fra http://www.sphinxsearch.com/downloads.html
+* kjør './configure', 'make' og 'sudo make install'
 
-Det ser ut til at nokogiri og webrat har problemer med jruby, måten jeg klarte
-å løse dette på er og installere nokogiri 1.0.6, det ser ut til at 1.0.7 er der
-problemene ligger;
-# aaronp-frex med ruby gem
-# installere jruby -S gem install -v=1.0.6 nokogiri
-# Last ned og bygg webrat fra siste versjon på git hub, og installer denne
-
+h2. Starte Ultrasphinx
+* start ultrasphinx-daemon: 'rake ultrasphinx:daemon:start'
 
 
 
