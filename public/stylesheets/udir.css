@@ -139,3 +139,10 @@ form#laereplan_sok input.submit {
 select#spraak_valg {
 	width: 10em;
 }
+
+td.x-grid3-td-2 {
+    overflow: hidden;
+}
+td.x-grid3-td-2 div.x-grid3-cell-inner {
+    white-space: normal;
+}
