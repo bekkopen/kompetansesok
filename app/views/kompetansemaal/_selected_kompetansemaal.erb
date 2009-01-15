@@ -1,14 +1,16 @@
 <script type="text/javascript">
   var valgte_kompetansemaal = []
+  var valgte_kontroller = null;
 
   Ext.onReady(function(){
     valgte_grid = document.getElementById("valgte_kompetansemaal");
-
-    valgte_grid.showId = true;
-    valgte_grid.showKode = true;
-    valgte_grid.showPsi = true;
+    valgte_kontroller = new ValgteKompetansemaal();
+    valgte_grid.valgte_kompetansemaal = valgte_kontroller ;
 
   });
+
+
+  
  </script>
 
 <div id="valgte_kompetansemaal" style="height: 500px; width:100%;">
@@ -18,7 +20,7 @@
     </tr>
     <tr>
       <td>
-        <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox" checked="showId()" onChange="toggleShowId(this.checked)"/>
+        <label for="showIdCheckbox">Vis uuid:</label><input id="showIdCheckbox" type="checkbox" checked="showId()" onChange="valgte_kontroller.toggleShowId(this.checked)"/>
       </td>
     </tr>
     <tr>
