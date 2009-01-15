@@ -10,7 +10,6 @@ nb:
   introduksjonstekst: "Infotekst for hovedside - bokmål"
 
   buttons:
-    eksport_csv: "Lagre resultatsett til fil"
     vis_id: "Vis id for valgte kompetansemål"
     vis_kode_og_id: "Vis kode og id for valgte kompetansemål"
   # TODO: (END) Fjern disse, og deretter feilende features og gammel søkekode
@@ -20,6 +19,7 @@ nb:
   
   knapper:
     søk: "Søk"
+    eksport_csv: "Lagre resultatsett til fil"
     
   etiketter:
     søk: "Søk"

@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :laereplansok, :collection => {:dropdown_content => :get}
   map.resources :spraak_session
+  map.resources :sok, :collection => {:download_csv => :post}
 
   # The priority is based upon order of creation: first created -> highest priority.
 
