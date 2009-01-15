@@ -28,6 +28,9 @@ nb:
     
   etiketter:
     søk: "Søk"
+    uuid: "UUID"
+    kode: "Kode"
+    tittel: "Tittel"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium" 
