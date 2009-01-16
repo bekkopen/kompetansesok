@@ -13,4 +13,14 @@
   <%=h @hovedomraade.tittel %>
 </p>
 
+<p>
+  <h3>
+    <%=  t("overskrifter.kompetansemål") %>
+  </h3>
+
+  <div id="kompetansemaal_liste" >
+    <%= render :partial => "kompetansemaal/simple_grid" %>
+    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+  </div>
+</p>
 <%= render :partial => 'common/back_button' %>
