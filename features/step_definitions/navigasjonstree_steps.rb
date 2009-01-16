@@ -5,7 +5,7 @@ end
 
 Saa /^jeg skal kunne se disse kompetansemaal.*:$/ do |kompetansemaal|
   kompetansemaal.hashes.each do |rad|
-    response.should contain("#{rad['Tittel']}")
+    response.should contain(encode(rad['Tittel']))
   end
 end
 
