@@ -4,7 +4,7 @@ Egenskap: Vise hovedmaal med navigasjonstree
   kunne visuelt se kompetansemaalene til hovedområdet som et tree
 
   Scenario: Enkel framvisning
-    Gitt at jeg ser på hovedområdet med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
+    Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
     Så skal jeg kunne se hovedomraade "Aktivitet i ulike rørslemiljø"
     Og jeg skal kunne se disse kompetansemaalene:
         | Tittel                                                                                    |

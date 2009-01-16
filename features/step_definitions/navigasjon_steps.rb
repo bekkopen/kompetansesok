@@ -10,8 +10,8 @@ Naar /jeg klikker "(.+)"/ do |knapp|
   click_button knapp
 end
 
-Gitt /^at jeg ser på hovedområdet med uuid (.+)$/ do |uuid|
-  visit url_for(:controller => :hovedomraade, :action => :show, :id => uuid)
+Gitt /^at jeg ser på (.*) med uuid (.+)$/ do |kontroller, uuid|
+  visit url_for(:controller => kontroller, :action => :show, :id => uuid)
 end
 
 

@@ -13,4 +13,13 @@
   <%=h @laereplan.tittel %>
 </p>
 
+<p>
+  <h3><%= t("overskrifter.kompetansemål") %></h3>
+  <ul>
+    <% @laereplan.kompetansemaalsett.each do |k| %>
+      <li><%= link_to k.tittel, :controller => :kompetansemaalsett, :action =>:show, :id => k.uuid %></li>
+    <%end%>
+  </ul>
+</p>
+
 <%= render :partial => 'common/back_button' %>

@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sok, :collection => {:download_csv => :post}
   map.resources :laereplan
   map.resources :hovedomraade
+  map.resources :kompetansemaalsett
 
 
   # The priority is based upon order of creation: first created -> highest priority.
