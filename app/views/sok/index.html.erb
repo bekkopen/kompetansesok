@@ -7,22 +7,25 @@
 </p>
 
 <div id='resultater'>
-  <h2><%= t('overskrifter.resultater') %></h2>
-  
+
+  <h2 class="resultater"><%= t('overskrifter.resultater') %>:</h2>
+
+  <p/>
+  <h3><%= t('overskrifter.kompetansemål') %></h3>
   <div>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
     <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
   </div>
-  
+
   <div id='laereplan_treff' class='delresultat'>
-    <h3><%= t('overskrifter.læreplaner') %></h3>    
+    <h3><%= t('overskrifter.læreplaner') %></h3>
     <ul>
       <% @laereplan_treff.each do |laereplan| %>
         <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
       <% end %>
     </ul>
   </div>
-  
+
   <div id='hovedomraade_treff' class='delresultat'>
     <h3><%= t('overskrifter.hovedområder') %></h3>
     <ul>

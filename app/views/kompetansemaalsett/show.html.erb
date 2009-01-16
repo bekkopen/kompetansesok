@@ -1,11 +1,8 @@
 <p>
-  <b>Uuid:</b>
-  <%=h @kompetansemaalsett.uuid %>
-</p>
-
-<p>
-  <b>Tittel:</b>
-  <%=h @kompetansemaalsett.tittel %>
+  <span class="enhet-overskrift"><%=  t('overskrifter.hovedområde')%></span><br/>
+  <h3 class="tittel"><%=h @kompetansemaalsett.tittel %></h3>
+  <span class="benevning">Uuid:</span>
+  <span class="uuid"><%=h @kompetansemaalsett.uuid %></span><br/>
 </p>
 
 <p>
