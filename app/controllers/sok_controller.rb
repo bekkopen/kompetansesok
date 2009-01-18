@@ -13,7 +13,7 @@ class SokController < ApplicationController
       flash.delete(:notice)
       sok = Ultrasphinx::Search.new(:query => params[:q])
       treff = sok.run
-      
+
       treff.each do |t|
         if t.instance_of? Kompetansemaal
           @kompetansemaal_treff << t

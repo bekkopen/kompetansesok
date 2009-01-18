@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe HovedomraadeController do
 
-  def mock_hovedomraade(stubs={})
+  def mock_hovedomraade(stubs={:kompetansemaal => []})
     @mock_hovedomraade ||= mock_model(Hovedomraade, stubs)
   end
 

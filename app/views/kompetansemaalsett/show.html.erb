@@ -1,11 +1,8 @@
-
 <p>
   <span class="enhet-overskrift"><%=  t('overskrifter.hovedområde')%></span><br/>
-  <h3 class="tittel"><%=h @hovedomraade.tittel %></h3>
+  <h3 class="tittel"><%=h @kompetansemaalsett.tittel %></h3>
   <span class="benevning">Uuid:</span>
-  <span class="uuid"><%=h @hovedomraade.uuid %></span><br/>
-  <span class="benevning">Kode:</span>
-  <span class="kode"><%=h @hovedomraade.kode.empty? ? t('etiketter.tom') : @hovedomraade.kode  %></span>
+  <span class="uuid"><%=h @kompetansemaalsett.uuid %></span><br/>
 </p>
 
 <p>
@@ -18,5 +15,4 @@
     <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
   </div>
 </p>
-<p/>
 <%= render :partial => 'common/back_button' %>
