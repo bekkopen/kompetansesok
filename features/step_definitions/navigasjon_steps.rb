@@ -2,6 +2,10 @@ Gitt /^at jeg er på hovedsiden$/ do
   visit root_path
 end
 
+Gitt /^at jeg er på infosiden$/ do
+  visit info_index_path
+end
+
 Naar /jeg klikker "(.+)"/ do |knapp|
   click_button knapp
 end

@@ -125,6 +125,7 @@
   <rdf:Description rdf:about="uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd">
     <grep:kode>NOR6-01</grep:kode>
     <ns:title>Læreplan i fordypning i norsk</ns:title>
+    <grep:hovedomraader rdf:resource="uuid:405ba63a-e2e6-47ae-88a9-beecea4ec87a"/>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
   </rdf:Description>
   <rdf:Description rdf:about="grep:kode">

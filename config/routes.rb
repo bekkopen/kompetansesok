@@ -1,13 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :fag
 
-  map.resources :laereplansok, :collection => {:dropdown_content => :get}
   map.resources :spraak_session
   map.resources :sok, :collection => {:download_csv => :post}
   map.resources :laereplan
   map.resources :hovedomraade
   map.resources :kompetansemaalsett
-
+  
+  map.resources  :info
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
 

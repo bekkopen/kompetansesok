@@ -29,7 +29,9 @@ class SokController < ApplicationController
           @hovedomraader_treff << t
         end
       end
-      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }
+
+      @kompetansemaal_treff, @laereplan_treff, @hovedomraade_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade)
+      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
     end
   end
 
@@ -58,6 +60,15 @@ class SokController < ApplicationController
   end
 
   private
+  
+  def partition_by_class(mixed_array, *klasses)
+    klasses.map do |klass|
+      klass_result, rest = mixed_array.partition do |mixed_element|
+        mixed_element.instance_of? klass
+      end
+      klass_result.flatten
+    end
+  end
 
   def fetch_values(options, kompetansemaal)
     values =[]
@@ -75,7 +86,7 @@ class SokController < ApplicationController
 
   def set_standard_filtering
      %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
-      session[p] = "true" unless session.cgi.has_key?(p)
+      session[p] = "true" unless session.cgi.has_key?(p) rescue nil # Ingen cgi i spec miljø
     end
   end
 
