@@ -22,25 +22,26 @@
   <h2 class="resultater"><%= t('overskrifter.resultater') %>:</h2>
 
   <p/>
-  <h3><%= t('overskrifter.kompetansemål') %></h3>
-  <div>
+  
+  <div id="kompetansemaal_treff">
+    <h3><%= t('overskrifter.kompetansemål') %></h3>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
     <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
   </div>
 
-  <div id='laereplan_treff' class='delresultat'>
+  <div id='laereplaner_treff' class='delresultat'>
     <h3><%= t('overskrifter.læreplaner') %></h3>
     <ul>
-      <% @laereplan_treff.each do |laereplan| %>
+      <% @laereplaner_treff.each do |laereplan| %>
         <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
       <% end %>
     </ul>
   </div>
 
-  <div id='hovedomraade_treff' class='delresultat'>
+  <div id='hovedomraader_treff' class='delresultat'>
     <h3><%= t('overskrifter.hovedområder') %></h3>
     <ul>
-      <% @hovedomraade_treff.each do |hovedomraade| %>
+      <% @hovedomraader_treff.each do |hovedomraade| %>
         <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
       <% end %>
     </ul>
@@ -48,7 +49,23 @@
 </div>
 
 <script type="text/javascript">
-  set_visiblity
+  $(document).ready(function() {
+    var filtrerSeksjoner = function() {
+      if($('#filter_kompetansemaal:checked').val() == null) {
+        $('#kompetansemaal_treff').hide();
+      }
+
+      if($('#filter_laereplaner:checked').val() == null) {
+        $('#laereplaner_treff').hide();
+      }
+
+      if($('#filter_hovedomraader:checked').val() == null) {
+        $('#hovedomraader_treff').hide();
+      }
+    }
+
+    filtrerSeksjoner();
+  });
 </script>
 
 

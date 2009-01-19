@@ -2,8 +2,8 @@ class SokController < ApplicationController
 
   def index
     @kompetansemaal_treff = []
-    @laereplan_treff = []
-    @hovedomraade_treff = []
+    @laereplaner_treff = []
+    @hovedomraader_treff = []
 
     %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
       session[p] = params[p]
@@ -22,9 +22,9 @@ class SokController < ApplicationController
         if t.instance_of? Kompetansemaal
           @kompetansemaal_treff << t
         elsif t.instance_of? Laereplan
-          @laereplan_treff << t
+          @laereplaner_treff << t
         elsif t.instance_of? Hovedomraade
-          @hovedomraade_treff << t
+          @hovedomraader_treff << t
         end
       end
       @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }
