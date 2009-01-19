@@ -6,8 +6,6 @@ function ValgteKompetansemaal(){
     this.tekst_id = "valgte_tekst";
     this.data = [];
 
-    
-
     this.displayValgteKompetansemaal = function()
     {
         valgte_window = document.getElementById(this.tekst_id);
@@ -80,9 +78,7 @@ function importAndDisplaySelectedKompetansemaal()
     valgte_grid = document.getElementById("valgte_kompetansemaal");
     valgte_grid.valgte_kompetansemaal.retriveDataFromExtGrid(valgte_kompetansemaal);
     
-
     valgte_grid.valgte_kompetansemaal.displayValgteKompetansemaal();
-
 };
 
 
