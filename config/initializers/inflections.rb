@@ -7,6 +7,7 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.plural(/e$/i, 'er')
   
   inflect.singular(/er$/, '')
+  inflect.singular(/ene$/, '')
    
   inflect.uncountable %w(kompetansemaalsett kompetansemaal trinn laereplansok fagsok fag)
   

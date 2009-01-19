@@ -9,10 +9,8 @@ Saa /^jeg skal kunne se disse kompetansemaal.*:$/ do |kompetansemaal|
   end
 end
 
-Saa /^jeg skal kunne gå til disse kompetansemaalsettene:$/ do |rad|
-  rad.hashes.each do |rad|
-    #TODO sjekke etter link istede for teksten
-    response.should contain(rad['tittel'])
-    #response.should contain(encode(rad['uuid']))
+Saa /^jeg skal kunne gå til disse (\w+):$/ do |type, rader|
+  rader.hashes.each do |rad|
+    response.should have_tag('a', rad['Tittel'])
   end
 end

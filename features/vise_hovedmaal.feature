@@ -1,7 +1,7 @@
-Egenskap: Vise hovedmaal med navigasjonstree
+Egenskap: Vise hovedmaal
   For å lettere få oversikt over sammenhengen
   Må lærere, bibliotekarer og forleggere
-  kunne visuelt se kompetansemaalene til hovedområdet som et tree
+  kunne visuelt se kompetansemaalene til et hovedområde
 
   Scenario: Enkel framvisning
     Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe

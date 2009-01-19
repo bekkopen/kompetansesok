@@ -1,7 +1,7 @@
-Egenskap: Vise kompetansemaalsett med kompetansemaal
+Egenskap: Vise kompetansemaalsett
   For å lettere få oversikt over sammenhengen
   Må lærere, bibliotekarer og forleggere
-  Kunne visuelt se kompetansemaalene som hører til et kompetansemaalsett
+  Kunne se kompetansemålene som hører til et kompetansemaalsett
 
   Scenario: Enkel framvisning
     Gitt at jeg ser på kompetansemaalsett med uuid uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96
