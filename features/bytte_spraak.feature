@@ -9,7 +9,7 @@ Feature: Bytte språk
     Så skal jeg se hovedsiden på engelsk
 
   Scenario: Gå til hovedside
-    Gitt at jeg er på læreplan søkesiden
+    Gitt at jeg er på infosiden
     Når jeg velger Nynorsk som språk
     Så skal jeg bli tatt til hovedsiden
 

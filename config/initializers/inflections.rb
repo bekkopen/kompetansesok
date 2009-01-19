@@ -9,7 +9,7 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.singular(/er$/, '')
   inflect.singular(/ene$/, '')
    
-  inflect.uncountable %w(kompetansemaalsett kompetansemaal trinn laereplansok fagsok fag)
+  inflect.uncountable %w(kompetansemaalsett kompetansemaal trinn laereplansok fagsok fag info)
   
   inflect.irregular 'hovedomraade','hovedomraader'
 end

@@ -1,19 +1,4 @@
-nb:
-  # TODO: (START) Fjern disse, og deretter feilende features og gammel søkekode
-  laereplankode: "Læreplankode"
-  laereplantittel: "Læreplantittel"
-  hovedomraadekode: "Hovedområdekode"
-  hovedomraade: "Hovedområde"
-  kompetansemaalsett: "Kompetansemålsett"
-  trinn: "Trinn"
-  kompetansemaaltittel: "Kompetansemåltittel"
-  introduksjonstekst: "Infotekst for hovedside - bokmål"
-
-  buttons:
-    vis_id: "Vis id for valgte kompetansemål"
-    vis_kode_og_id: "Vis kode og id for valgte kompetansemål"
-  # TODO: (END) Fjern disse, og deretter feilende features og gammel søkekode
-    
+nb:   
   navigasjon:
     forside: "Forside"
 
