@@ -21,3 +21,27 @@ Saa /^skal jeg bli tatt til hovedsiden$/ do
   request.path_parameters[:action].should == "index"
 end
 
+Gitt /^jeg har markert følgende:$/ do |table|
+  table.hashes.each do |config|
+    config.each do |checkbox, value|
+      box = "filter_#{checkbox}"
+      if value.blank?
+        uncheck box
+      else
+        check box
+      end
+    end
+  end
+end
+
+
+Saa /^skal filtreringsboksene huske instillinger:$/ do |table|
+  table.hashes.each do |config|
+    config.each do |checkbox, value|
+      value = nil if value.blank?
+      response.should have_selector("#filter_#{checkbox}") { |box|
+        box.attr('checked').should == value
+      }
+    end
+  end
+end

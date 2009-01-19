@@ -50,3 +50,13 @@ Egenskap: Søk
       | Marked og økonomi      |
       | Strategi og marked     |
       | Økonomi og marked      |
+
+  Scenario: Søke kun på Læreplaner
+    Gitt at jeg er på hovedsiden
+    Og jeg har markert følgende:
+      | kompetansemaal | laereplaner | hovedomraader |
+      | checked        |             | checked       |
+    Når jeg søker etter "hva som helst"
+    Så skal filtreringsboksene huske instillinger:
+      | kompetansemaal | laereplaner | hovedomraader |
+      | checked        |             | checked       |

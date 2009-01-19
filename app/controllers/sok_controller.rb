@@ -4,6 +4,10 @@ class SokController < ApplicationController
     @kompetansemaal_treff = []
     @laereplan_treff = []
     @hovedomraade_treff = []
+
+    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
+      session[p] = params[p]
+    end
     
     if params[:q].blank?     
       if params.has_key?(:q)
@@ -23,8 +27,7 @@ class SokController < ApplicationController
           @hovedomraade_treff << t
         end
       end
-            
-      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
+      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }
     end
   end
 
