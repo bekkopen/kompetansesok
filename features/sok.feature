@@ -71,3 +71,11 @@ Egenskap: Søk
     Så skal filtreringsboksene vise seksjoner:
       | kompetansemaal | laereplaner | hovedomraader |
       | true           | true        | true          |
+
+  Scenario: Kunne søke med '*' som wildcard
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "NOR6*"
+    Så skal jeg få opp følgende treff for Laereplan:
+      | Tittel                        |
+      | Læreplan i fordypning i norsk | 
+    
