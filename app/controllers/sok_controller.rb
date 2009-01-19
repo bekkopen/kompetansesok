@@ -1,4 +1,6 @@
 class SokController < ApplicationController
+  before_filter :set_standard_filtering
+
 
   def index
     @kompetansemaal_treff = []
@@ -6,7 +8,7 @@ class SokController < ApplicationController
     @hovedomraader_treff = []
 
     %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
-      session[p] = params[p]
+      session[p] = params[p] if params.has_key?(p)
     end
     
     if params[:q].blank?     
@@ -69,6 +71,12 @@ class SokController < ApplicationController
       values << kompetansemaal.psi
     end
     values
+  end
+
+  def set_standard_filtering
+     %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
+      session[p] = "true" unless session.cgi.has_key?(p)
+    end
   end
 
 end

@@ -5,13 +5,16 @@
     <input type="submit" value="<%= t('knapper.søk') %>" />
     <br/>
     <label for="filter_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
-    <input type="checkbox" id="filter_kompetansemaal" name="filter_kompetansemaal" <%= 'checked="checked"' if session['filter_kompetansemaal'] %> />
-    
-    <label for="filter_laereplaner"><%= t('etiketter.læreplaner') %></label>
-    <input type="checkbox" id="filter_laereplaner" name="filter_laereplaner" <%= 'checked="checked"' if session['filter_laereplaner'] %>/>
+    <input name="filter_kompetansemaal" type="checkbox" value="true" id="filter_kompetansemaal" <%= 'checked="checked"' if session['filter_kompetansemaal'] == "true" %> />
+    <input name="filter_kompetansemaal" type="hidden" value="false" />
 
-     <label for="filter_hovedomraader"><%= t('etiketter.hovedområder') %></label>
-    <input type="checkbox" id="filter_hovedomraader" name="filter_hovedomraader" <%= 'checked="checked"' if session['filter_hovedomraader'] %>/>
+    <label for="filter_laereplaner"><%= t('etiketter.læreplaner') %></label>
+    <input name="filter_laereplaner" type="checkbox" value="true" id="filter_laereplaner" <%= 'checked="checked"' if session['filter_laereplaner'] == "true" %>/>
+    <input name="filter_laereplaner" type="hidden" value="false" />
+
+    <label for="filter_hovedomraader"><%= t('etiketter.hovedområder') %></label>
+    <input name="filter_hovedomraader" type="checkbox" value="true" id="filter_hovedomraader" <%= 'checked="checked"' if session['filter_hovedomraader'] == "true" %>/>
+    <input name="filter_hovedomraader" type="hidden" value="false" />
      
 
   <% end %>

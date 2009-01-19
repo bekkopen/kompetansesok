@@ -55,8 +55,14 @@ Egenskap: Søk
     Gitt at jeg er på hovedsiden
     Og jeg har markert følgende:
       | kompetansemaal | laereplaner | hovedomraader |
-      | checked        |             | checked       |
+      | true           | false       | true          |
     Når jeg søker etter "hva som helst"
-    Så skal filtreringsboksene huske instillinger:
+    Så skal filtreringsboksene vise seksjoner:
       | kompetansemaal | laereplaner | hovedomraader |
-      | checked        |             | checked       |
+      | true           | false       | true          |
+
+  Scenario: Se standard filtering
+    Gitt at jeg er på hovedsiden
+    Så skal filtreringsboksene vise seksjoner:
+      | kompetansemaal | laereplaner | hovedomraader |
+      | true           | true        | true          |
