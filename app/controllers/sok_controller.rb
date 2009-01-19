@@ -14,15 +14,7 @@ class SokController < ApplicationController
       sok = Ultrasphinx::Search.new(:query => params[:q])
       treff = sok.run
 
-      treff.each do |t|
-        if t.instance_of? Kompetansemaal
-          @kompetansemaal_treff << t
-        elsif t.instance_of? Laereplan
-          @laereplan_treff << t
-        elsif t.instance_of? Hovedomraade
-          @hovedomraade_treff << t
-        end
-      end
+      @kompetansemaal_treff, @laereplan_treff, @hovedomraade_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade)
             
       @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
     end
@@ -53,6 +45,14 @@ class SokController < ApplicationController
   end
 
   private
+  
+  def partition_by_class(mixed_array, *klasses)
+    klasses.map do |klass|
+      mixed_array.partition do |mixed_element|
+        mixed_element if mixed_element.instance_of? klass
+      end.flatten
+    end
+  end
 
   def fetch_values(options, kompetansemaal)
     values =[]
