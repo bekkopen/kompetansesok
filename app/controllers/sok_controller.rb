@@ -1,9 +1,15 @@
 class SokController < ApplicationController
+  before_filter :set_standard_filtering
+
 
   def index
     @kompetansemaal_treff = []
-    @laereplan_treff = []
-    @hovedomraade_treff = []
+    @laereplaner_treff = []
+    @hovedomraader_treff = []
+
+    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
+      session[p] = params[p] if params.has_key?(p)
+    end
     
     if params[:q].blank?     
       if params.has_key?(:q)
@@ -13,11 +19,11 @@ class SokController < ApplicationController
       flash.delete(:notice)
       sok = Ultrasphinx::Search.new(:query => params[:q])
       treff = sok.run
-
+     
       @kompetansemaal_treff, @laereplan_treff, @hovedomraade_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade)
                       
-      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
-    end
+      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }    
+    end      
   end
 
   def download_csv
@@ -67,6 +73,12 @@ class SokController < ApplicationController
       values << kompetansemaal.psi
     end
     values
+  end
+
+  def set_standard_filtering
+     %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
+      session[p] = "true" unless session.cgi.has_key?(p)
+    end
   end
 
 end

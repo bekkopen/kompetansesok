@@ -18,3 +18,31 @@ Saa /^skal jeg bli tatt til hovedsiden$/ do
   request.path_parameters[:controller].should == "sok"
   request.path_parameters[:action].should == "index"
 end
+
+Gitt /^jeg har markert følgende:$/ do |table|
+  table.hashes.each do |config|
+    config.each do |checkbox, value|
+      box = "filter_#{checkbox}"
+      if value == 'true'
+        check box
+      else
+        uncheck box
+      end
+    end
+  end
+end
+
+Saa /^skal filtreringsboksene vise seksjoner:$/ do |table|
+  table.hashes.each do |config|
+    config.each do |checkbox, value|
+      response.should have_selector("#filter_#{checkbox}") { |box|
+        if value == 'true'
+          raise "Checkbox #{checkbox} should be checked" if box.attr('checked') != 'checked'
+        else
+          raise "Checkbox #{checkbox} should be unchecked" if box.attr('checked') == 'checked'
+        end
+        true
+      }
+    end
+  end
+end
