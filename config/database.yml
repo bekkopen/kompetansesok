@@ -3,69 +3,61 @@
 <% end %>
 
 development:
-<% if defined?(JRUBY_VERSION) %>
-  adapter: jdbc
-  username: root
-  password: 
-  url: jdbc:mysql://localhost/kompetansesok_development<%= ENV['DB_SUFFIX'] %>
-  driver: org.gjt.mm.mysql.Driver
-<% else %>
-  adapter: mysql
-  encoding: utf8
-  database: kompetansesok_development<%= ENV['DB_SUFFIX'] %>
-  username: root
-  password:
   host: localhost
+  username: root
+  database: kompetansesok_development<%= ENV['DB_SUFFIX'] %>
+  password:
+  encoding: utf8
   port: 3306
   pool: 5
   timeout: 5000
+<% if defined?(JRUBY_VERSION) %>
+  adapter: jdbcmysql
+  driver: org.gjt.mm.mysql.Driver
+<% else %>
+  adapter: mysql
 <% end %>
 
 test:
-<% if defined?(JRUBY_VERSION) %>
-  adapter: jdbc
-  username: root
-  password: 
-  url: jdbc:mysql://localhost/kompetansesok_test<%= ENV['DB_SUFFIX'] %>
-  driver: org.gjt.mm.mysql.Driver
-<% else %>
-  adapter: mysql
-  encoding: utf8
-  database: kompetansesok_test<%= ENV['DB_SUFFIX'] %>
-  username: root
-  password:
   host: localhost
+  username: root
+  database: kompetansesok_test<%= ENV['DB_SUFFIX'] %>
+  password:
+  encoding: utf8
   port: 3306
   pool: 5
   timeout: 5000
+<% if defined?(JRUBY_VERSION) %>
+  adapter: jdbcmysql
+  driver: org.gjt.mm.mysql.Driver
+<% else %>
+  adapter: mysql
 <% end %>
 
 integration_test:
-<% if defined?(JRUBY_VERSION) %>
-  adapter: jdbc
+  host: localhost
   username: root
-  password: 
-  url: jdbc:mysql://localhost/kompetansesok_integration_test<%= ENV['DB_SUFFIX'] %>
+  database: kompetansesok_integration_test<%= ENV['DB_SUFFIX'] %>
+  password:
+  encoding: utf8
+  port: 3306
+  pool: 5
+  timeout: 5000
+<% if defined?(JRUBY_VERSION) %>
+  adapter: jdbcmysql
   driver: org.gjt.mm.mysql.Driver
 <% else %>
   adapter: mysql
-  encoding: utf8
-  database: kompetansesok_integration_test<%= ENV['DB_SUFFIX'] %>
-  username: root
-  password:
-  host: localhost
-  port: 3306
-  pool: 5
-  timeout: 5000
 <% end %>
 
 production:
-  adapter: mysql
-  encoding: utf8
-  database: kompetansesok_production<%= ENV['DB_SUFFIX'] %>
-  username: root
-  password:
   host: localhost
+  username: root
+  database: kompetansesok
+  password:
+  encoding: utf8
   port: 3306
   pool: 5
   timeout: 5000
+  adapter: jdbcmysql
+  driver: org.gjt.mm.mysql.Driver

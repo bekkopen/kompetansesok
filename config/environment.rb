@@ -28,8 +28,12 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   if defined?(JRUBY_VERSION)
-    config.gem 'activerecord-jdbc-adapter', :version => '0.9', :lib => 'jdbc_adapter' 
-    config.gem 'atom-tools',                :version => '2.0.1', :lib => 'atom/tools'
+    config.gem 'activerecord-jdbc-adapter',   :version => '0.9', :lib => 'jdbc_adapter'
+    config.gem 'atom-tools',                  :version => '2.0.1', :lib => 'atom/tools'
+
+    config.gem 'jdbc-mysql',                      :version => '5.0.4', :lib =>'jdbc/mysql'
+    config.gem 'activerecord-jdbcmysql-adapter',  :version =>'0.9', :lib => 'active_record/connection_adapters/jdbcmysql_adapter'
+
   else
     config.gem 'mysql',              :version => '2.7' 
     
@@ -42,6 +46,7 @@ Rails::Initializer.run do |config|
   config.gem 'fastercsv',            :version => '1.4.0'
   config.gem 'progressbar',          :version => '0.0.3'
   config.gem 'chronic',              :version => '0.2.3'
+
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
