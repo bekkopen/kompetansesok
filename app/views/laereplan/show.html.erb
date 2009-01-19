@@ -8,12 +8,24 @@
 </p>
 
 <p>
-  <h3><%= t("overskrifter.kompetansemål") %></h3>
+  <h3><%= t("overskrifter.hovedområder") %></h3>
   <ul class="linke-liste">
-    <% @laereplan.kompetansemaalsett.each do |k| %>
-      <li><%= link_to k.tittel, :controller => :kompetansemaalsett, :action =>:show, :id => k.uuid %></li>
-    <%end%>
+    <% @laereplan.hovedomraader.each do |hovedomraade| %>
+      <li><%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %></li>
+    <% end %>
   </ul>
 </p>
+
+
+<p>
+  <h3><%= t("overskrifter.kompetansemålsett") %></h3>
+  <ul class="linke-liste">
+    <% @laereplan.kompetansemaalsett.each do |sett| %>
+      <li><%= link_to sett.tittel, kompetansemaalsett_path(sett) %></li>
+    <% end %>
+  </ul>
+</p>
+
+
 
 <%= render :partial => 'common/back_button' %>

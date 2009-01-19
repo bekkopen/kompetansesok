@@ -68,16 +68,16 @@ module Kompetansesok
         Kompetansemaal.delete_all
         Kompetansemaalsett.delete_all
         Fag.delete_all
-        Hovedomraade.delete_all
         Laereplan.delete_all
+        Hovedomraade.delete_all
         Trinn.delete_all
 
         @out.puts("Importerer #{jena.trinn.length} Trinn...") if @out
         Trinn.create!(jena.trinn)
-        @out.puts("Importerer #{jena.laereplaner.length} Laereplan...") if @out
-        Laereplan.create!(jena.laereplaner)
         @out.puts("Importerer #{jena.hovedomraader.length} Hovedomraade...") if @out
         Hovedomraade.create!(jena.hovedomraader)
+        @out.puts("Importerer #{jena.laereplaner.length} Laereplan...") if @out
+        Laereplan.create!(jena.laereplaner)
         @out.puts("Importerer #{jena.fag.length} Fag...") if @out
         Fag.create!(jena.fag)
         @out.puts("Importerer #{jena.kompetansemaalsett.length} Kompetansemaalsett...") if @out

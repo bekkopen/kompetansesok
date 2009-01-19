@@ -7,5 +7,14 @@ Egenskap: Vise laereplan
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
     Så skal jeg kunne se laereplanen "Læreplan i fordypning i norsk"
     Og jeg skal kunne gå til disse kompetansemaalsettene:
-        | tittel                | uuid                                          |
-        | Etter 10. årstrinn    |   uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96   |
+        | tittel                |
+        | Etter 10. årstrinn    | 
+
+
+  Scenario: Enkel framvisning med hovedområder
+    Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
+    Så skal jeg kunne se laereplanen "Læreplan i fordypning i norsk"
+    Og jeg skal kunne gå til disse hovedområdene:
+        | tittel                | 
+        | Tekst og mening       | 
+    
