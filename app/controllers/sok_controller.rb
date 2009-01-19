@@ -15,7 +15,7 @@ class SokController < ApplicationController
       treff = sok.run
 
       @kompetansemaal_treff, @laereplan_treff, @hovedomraade_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade)
-            
+                      
       @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
     end
   end
@@ -48,9 +48,10 @@ class SokController < ApplicationController
   
   def partition_by_class(mixed_array, *klasses)
     klasses.map do |klass|
-      mixed_array.partition do |mixed_element|
-        mixed_element if mixed_element.instance_of? klass
-      end.flatten
+      klass_result, rest = mixed_array.partition do |mixed_element|
+        mixed_element.instance_of? klass
+      end
+      klass_result.flatten
     end
   end
 
