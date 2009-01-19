@@ -1,16 +1,19 @@
 <p>
-  <b>Uuid:</b>
-  <%=h @laereplan.uuid %>
+  <span class="enhet-overskrift"><%=  t('overskrifter.hovedområde')%></span><br/>
+  <h3 class="tittel"><%=h @laereplan.tittel %></h3>
+  <span class="benevning">Uuid:</span>
+  <span class="uuid"><%=h @laereplan.uuid %></span><br/>
+  <span class="benevning">Kode:</span>
+  <span class="kode"><%=h @laereplan.kode %></span>
 </p>
 
 <p>
-  <b>Kode:</b>
-  <%=h @laereplan.kode %>
-</p>
-
-<p>
-  <b>Tittel:</b>
-  <%=h @laereplan.tittel %>
+  <h3><%= t("overskrifter.kompetansemål") %></h3>
+  <ul class="linke-liste">
+    <% @laereplan.kompetansemaalsett.each do |k| %>
+      <li><%= link_to k.tittel, :controller => :kompetansemaalsett, :action =>:show, :id => k.uuid %></li>
+    <%end%>
+  </ul>
 </p>
 
 <%= render :partial => 'common/back_button' %>
