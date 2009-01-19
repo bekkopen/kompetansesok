@@ -8,6 +8,11 @@ Egenskap: Søk
     Når jeg søker etter ""
     Så skal jeg ikke få noen treff
     Og jeg skal se "Vennligst angi et søkekriterium"
+
+  Scenario: Beholde søkestreng i søkefelt
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "mitt søk"
+    Så skal det stå "mitt søk" i søkefeltet
   
   Scenario: Få 9 treff i kompetansemål på "samisk kultur"
     Gitt at jeg er på hovedsiden

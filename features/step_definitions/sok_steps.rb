@@ -27,3 +27,8 @@ end
 Saa /^jeg skal ikke se "(.*)"$/ do |tekst|
   response.should_not contain(tekst)
 end
+
+Saa /^skal det stå "(.+)" i søkefeltet$/ do |sok|
+  response.body.should have_tag('input[id=q][value=?]', sok)
+end
+
