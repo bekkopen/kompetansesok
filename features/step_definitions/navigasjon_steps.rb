@@ -32,7 +32,6 @@ Gitt /^jeg har markert følgende:$/ do |table|
   end
 end
 
-
 Saa /^skal filtreringsboksene vise seksjoner:$/ do |table|
   table.hashes.each do |config|
     config.each do |checkbox, value|
