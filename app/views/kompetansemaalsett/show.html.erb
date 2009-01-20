@@ -5,14 +5,15 @@
   <span class="uuid"><%=h @kompetansemaalsett.uuid %></span><br/>
 </p>
 
-<p>
-  <h3>
-    <%=  t("overskrifter.kompetansemål") %>
-  </h3>
+<p/>
 
-  <div id="kompetansemaal_liste" >
-    <%= render :partial => "kompetansemaal/simple_grid" %>
-    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-  </div>
-</p>
+<div id="kompetansemaal_treff">
+  <h3><%= t('overskrifter.kompetansemål') %></h3>
+  <%=  render :partial => "kompetansemaal/simple_grid" %>
+</div>
+
+<div id="valgte_kompetansemaal">	
+  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+</div>
+
 <%= render :partial => 'common/back_button' %>

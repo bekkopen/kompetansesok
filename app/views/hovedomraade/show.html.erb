@@ -8,15 +8,16 @@
   <span class="kode"><%=h @hovedomraade.kode.blank? ? t('etiketter.tom') : @hovedomraade.kode  %></span>
 </p>
 
-<p>
-  <h3>
-    <%=  t("overskrifter.kompetansemål") %>
-  </h3>
+<p/>
 
-  <div id="kompetansemaal_liste" >
-    <%= render :partial => "kompetansemaal/simple_grid" %>
-    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-  </div>
-</p>
+<div id="kompetansemaal_treff">
+  <h3><%= t('overskrifter.kompetansemål') %></h3>
+  <%=  render :partial => "kompetansemaal/simple_grid" %>
+</div>
+
+<div id="valgte_kompetansemaal">	
+  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+</div>
+
 <p/>
 <%= render :partial => 'common/back_button' %>
