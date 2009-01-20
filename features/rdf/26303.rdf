@@ -1,0 +1,267 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:c32eb1c7-1697-4dbc-b2ef-c513ba5294a2">
+    <ns:title>eksperimentere med og velje materiale og teknikkar til ønskt produkt og uttrykk i blomsterdekoratørfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3acb6c71-4418-4cf5-96cb-3a7b54e49bb7">
+    <ns:title>Blomsterdekoratørfaget</ns:title>
+    <grep:kode>BLD3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:58c56bc8-3d8e-462c-bff1-94c4c455a330">
+    <ns:title>planleggje eige arbeid med blomsterfagleg materiale basert på kunnskap om ulike kulturar, stilhistoria og handverkets tradisjonar og historie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b5f09a43-def6-4b52-ac7b-ff628cbf8622">
+    <ns:title>gjere greie for aktuelle trendar og vurdere behov for produkt og tenester i marknaden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ce248038-f61f-4665-8d34-6fd1df5467ea">
+    <grep:hovedomraader rdf:resource="uuid:45098b7b-d81a-456c-bf56-6440677edec3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:37f577db-f317-4970-8391-85ce196e6510"/>
+    <grep:hovedomraader rdf:resource="uuid:34311f01-4cab-461b-918e-d28095146c0e"/>
+    <grep:kode>BLD3-01</grep:kode>
+    <ns:title>Læreplan i blomsterdekoratørfaget Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:529a317e-a791-4f36-a8cb-4b871eba1bf8">
+    <ns:title>analysere og vurdere eigne produkt med tanke på heilskapleg uttrykk og funksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ef151ab6-641e-48c2-9018-e97d864892f7">
+    <ns:title>utvikle miljøvennlege teknikkar, velje miljøvennleg materiale og gjere greie for verknadene av dette i utøving av blomsterdekoratørfaget </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c2afb6f9-a8ef-46d5-8a8b-c5ddf85ac644">
+    <ns:title>gjere greie for og kjenne att vanlege sjukdommar på stoveplanter og gjere greie for ulike tiltak mot sjukdommane  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:37f577db-f317-4970-8391-85ce196e6510">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d6a2afd1-2b37-437a-b693-5072af741cb1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c8f0722f-0a1b-4abd-9316-6ab00e6c0927"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <ns:title>Etter Vg3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ad1602ea-1670-4bc3-88ae-33956f58b7ca"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:da860068-24dd-4363-8aa4-8c3a74f95f1a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c342637a-ca5b-4ea2-93cd-77c7bef5da57"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ef151ab6-641e-48c2-9018-e97d864892f7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b5ee8c03-668a-4827-8d8a-ca427f517815"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3719cc19-e866-4281-83f7-764d79c66d33"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c2afb6f9-a8ef-46d5-8a8b-c5ddf85ac644"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b5f09a43-def6-4b52-ac7b-ff628cbf8622"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:58c56bc8-3d8e-462c-bff1-94c4c455a330"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bcb6c506-c124-42e5-a09a-7ebf5481f768"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:22f1ba54-7932-459b-af76-833d2465f860"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c32eb1c7-1697-4dbc-b2ef-c513ba5294a2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e3a0c0f0-e857-44b2-bdad-9b038f676c17"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0e8c888c-5744-422d-9f41-572e277fb442"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e9ca8ad2-ee63-4dfb-8f4b-52b85e5cc429"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f5e8423d-8af4-449e-88cb-699449e8be03"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:48bae350-3895-48b2-9f2c-95d22ddcd167"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bd1caa9f-04d7-4669-83ef-04c4e1bc10b2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:529a317e-a791-4f36-a8cb-4b871eba1bf8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae000d33-7180-4a17-bc6a-82e911b2970d"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:3acb6c71-4418-4cf5-96cb-3a7b54e49bb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b5ee8c03-668a-4827-8d8a-ca427f517815">
+    <ns:title>lage ulike vareeksponeringar og utstillingar av blomsterfaglege produkt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:22f1ba54-7932-459b-af76-833d2465f860">
+    <ns:title>bruke fagspråk og fagleg kompetanse i kommunikasjon med kollegaer, kundar, leverandørar og andre samarbeidspartnarar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:34311f01-4cab-461b-918e-d28095146c0e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:22f1ba54-7932-459b-af76-833d2465f860"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d6a2afd1-2b37-437a-b693-5072af741cb1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c2afb6f9-a8ef-46d5-8a8b-c5ddf85ac644"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e3a0c0f0-e857-44b2-bdad-9b038f676c17"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c8f0722f-0a1b-4abd-9316-6ab00e6c0927"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ae000d33-7180-4a17-bc6a-82e911b2970d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b5ee8c03-668a-4827-8d8a-ca427f517815"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ef151ab6-641e-48c2-9018-e97d864892f7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c32eb1c7-1697-4dbc-b2ef-c513ba5294a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c342637a-ca5b-4ea2-93cd-77c7bef5da57"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bcb6c506-c124-42e5-a09a-7ebf5481f768"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3719cc19-e866-4281-83f7-764d79c66d33"/>
+    <ns:title>Produksjon</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad1602ea-1670-4bc3-88ae-33956f58b7ca"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f5e8423d-8af4-449e-88cb-699449e8be03"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:58c56bc8-3d8e-462c-bff1-94c4c455a330"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad1602ea-1670-4bc3-88ae-33956f58b7ca">
+    <ns:title>gjere greie for og bruke eigenart og særtrekk ved levande materiale tilpassa ulike uttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f5e8423d-8af4-449e-88cb-699449e8be03">
+    <ns:title>gjere greie for opphav, naturleg sesong for og stell av eit breitt utval av namngitt botanisk materiale </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bcb6c506-c124-42e5-a09a-7ebf5481f768">
+    <ns:title>dokumentere og vurdere eigne produkt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c342637a-ca5b-4ea2-93cd-77c7bef5da57">
+    <ns:title>berekne forbruk av råvarer til ulike oppdrag og kalkulere kostnadene </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d6a2afd1-2b37-437a-b693-5072af741cb1">
+    <ns:title>utføre og tilpasse eige arbeid med blomsterfaglege produkt til høve, rom og underlag, trendar og dei ønska og behova kunden har</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45098b7b-d81a-456c-bf56-6440677edec3">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da860068-24dd-4363-8aa4-8c3a74f95f1a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b5f09a43-def6-4b52-ac7b-ff628cbf8622"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:48bae350-3895-48b2-9f2c-95d22ddcd167"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:529a317e-a791-4f36-a8cb-4b871eba1bf8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0e8c888c-5744-422d-9f41-572e277fb442"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e9ca8ad2-ee63-4dfb-8f4b-52b85e5cc429"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bd1caa9f-04d7-4669-83ef-04c4e1bc10b2"/>
+    <ns:title>Design med blomster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ae000d33-7180-4a17-bc6a-82e911b2970d">
+    <ns:title>grunngi og følgje rutinar knytte til kvalitetssikring av kundehandsaming </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:da860068-24dd-4363-8aa4-8c3a74f95f1a">
+    <ns:title>gjere greie for og følgje gjeldande rutinar og regelverk knytt til bruk av ulike materiale og produkt i blomsterdekoratørfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0e8c888c-5744-422d-9f41-572e277fb442">
+    <ns:title>utnytte eigenskapar ved ulike materiale i eige arbeid og vurdere kor eigna materiala er </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:48bae350-3895-48b2-9f2c-95d22ddcd167">
+    <ns:title>bruke digitale verktøy i eige designarbeid med blomstrar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c8f0722f-0a1b-4abd-9316-6ab00e6c0927">
+    <ns:title>gjere greie for og kjenne att skadar som skriv seg frå kulde, varme, støyt og feilvatning og førebygge slike skadar på blomstrar og plantar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e3a0c0f0-e857-44b2-bdad-9b038f676c17">
+    <ns:title>grunngi og følgje gjeldande regelverk for helse, miljø og tryggleik</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3719cc19-e866-4281-83f7-764d79c66d33">
+    <ns:title>utføre dekoroppdrag inne og ute, og tilpasse desse til rom, høve og kva behov kunden har</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e9ca8ad2-ee63-4dfb-8f4b-52b85e5cc429">
+    <ns:title>informere og rettleie kundar om blomsterfaglege produkt og tenester</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bd1caa9f-04d7-4669-83ef-04c4e1bc10b2">
+    <ns:title>vurdere og grunngi ulike idear til blomsterfaglege produkt </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

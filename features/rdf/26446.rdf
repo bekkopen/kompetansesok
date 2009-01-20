@@ -1,0 +1,343 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0120825a-0bef-40ee-bb0c-7c8c9d99290e">
+    <ns:title>modellere eksponentiell og logistisk vekst ved å bruke eksponentialfunksjoner og logaritmefunksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a59298f-da41-44b3-a2ae-ddb57f1af450">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:779b2589-62b0-48b8-aa6b-ae760053dca8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dfbac192-a04e-4423-b78f-37c02407a6a7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:00a08cbf-efc1-42c4-9ffb-69be4cbf5623"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e126215a-14dc-405f-81b6-f437cfa4d743"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a790973-4620-4b07-a5d9-3b3280e4a6f4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2aa87b3f-90b3-49c7-b1df-ea51f389309b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dea6a4b2-0fa2-4a09-bd9e-850fed865796"/>
+    <ns:title>Algebra</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c0267b8b-544a-43c3-8d64-db92a279cb28"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a08da30-75fe-49bf-a82f-53f31da60d9a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1dce7278-5837-48b4-a0be-01475f770bd2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dfbac192-a04e-4423-b78f-37c02407a6a7">
+    <ns:title>løse praktiske problemer i forbindelse med sparing, lån og avbetalingskjøp ved å bruke rekker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f58166b1-d405-4233-a3e7-15035c4e47f8">
+    <ns:title>gjøre rede for begrepene fordeling og stokastisk variabel for endelige utfallsrom, og finne forventning, varians og standardavvik for en stokastisk variabel</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1dce7278-5837-48b4-a0be-01475f770bd2">
+    <ns:title>omforme en praktisk problemstilling til en likning, en ulikhet eller et likningssystem, løse det og vurdere løsningens gyldighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:60939e86-e256-469f-a8a7-cbc701e4f61c">
+    <ns:title>tolke grunnleggende egenskaper til en funksjon ved hjelp av grafen </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e7358503-540e-4a54-9932-90cdd8d44ceb">
+    <ns:title>Læreplan i matematikk for samfunnsfag - programfag i studiespesialiserende program</ns:title>
+    <grep:hovedomraader rdf:resource="uuid:854880d5-fea3-4911-a6ea-fb602d3641b0"/>
+    <grep:hovedomraader rdf:resource="uuid:a1a15bfc-886b-4412-86e6-79f9cadcf753"/>
+    <grep:hovedomraader rdf:resource="uuid:d82fe2c8-9c44-4da4-b1d7-8710e4e758b4"/>
+    <grep:kode>MAT4-01</grep:kode>
+    <grep:hovedomraader rdf:resource="uuid:8a59298f-da41-44b3-a2ae-ddb57f1af450"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:36e8e2d4-4bd3-4c73-ba7b-1b1fdc5e10f5"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:8221dc5a-23bf-40b7-8b0c-423afb2f24df"/>
+    <grep:hovedomraader rdf:resource="uuid:85112daa-d937-48b6-88b0-07d82e20aa46"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e19317a5-7836-4b98-8100-0ad2fba294af">
+    <ns:title>lage og tolke funksjoner som modellerer og beskriver praktiske problemstillinger i økonomi og samfunnsfag, analysere empiriske funksjoner og bruke regresjon til å finne en tilnærmet polynomfunksjon, potensfunksjon eller eksponentialfunksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a08da30-75fe-49bf-a82f-53f31da60d9a">
+    <ns:title>faktorisere polynomer ved hjelp av nullpunkter og polynomdivisjon, og bruke det til å løse likninger med polynomer og rasjonale funksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c0267b8b-544a-43c3-8d64-db92a279cb28">
+    <ns:title>regne med logaritmer og bruke dem til å forenkle uttrykk og løse eksponentiallikninger og logaritmelikninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:36e8e2d4-4bd3-4c73-ba7b-1b1fdc5e10f5">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de028cef-49c4-40c1-ad2b-f4bb66727b6e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:428e658a-7213-4741-8531-20af42ef166f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:040d7355-b87a-4c25-a5d8-05c51a367412"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e19317a5-7836-4b98-8100-0ad2fba294af"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:49248d00-3723-4582-acef-9ae6441b68b1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1dce7278-5837-48b4-a0be-01475f770bd2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:54f3da52-f6dc-4106-a531-d29ffed1f747"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dea6a4b2-0fa2-4a09-bd9e-850fed865796"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:952af694-dda6-48e8-9df5-117a62a7f6fa"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d3b25559-1e4d-4707-93ad-075ef8496084"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:00a08cbf-efc1-42c4-9ffb-69be4cbf5623"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4a790973-4620-4b07-a5d9-3b3280e4a6f4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5de3ae32-e843-4e0c-b7c0-fa9831f280b8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c0267b8b-544a-43c3-8d64-db92a279cb28"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:085e2a34-d53c-476b-9333-ca256d5057b5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:229a6c3b-607f-404a-ace5-20820631e05e"/>
+    <ns:title>Matematikk S1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4253dd33-1965-4b34-80a4-2efb561d49b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5bffe5b-4b75-4cd9-a43b-2ff34af994a0">
+    <ns:title>beregne arealet under grafer ved hjelp av digitale hjelpemidler og tolke det i praktiske situasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00a08cbf-efc1-42c4-9ffb-69be4cbf5623">
+    <ns:title>bruke begrepene implikasjon og ekvivalens i matematisk argumentasjon
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:779b2589-62b0-48b8-aa6b-ae760053dca8">
+    <ns:title>avgjøre om en uendelig geometrisk rekke er konvergent, og beregne summen av rekka</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d3b25559-1e4d-4707-93ad-075ef8496084">
+    <ns:title>regne med binomialkoeffisienter og bygge opp Pascals talltrekant</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dea6a4b2-0fa2-4a09-bd9e-850fed865796">
+    <ns:title>løse likninger, ulikheter og likningssystemer av første og andre grad, både ved regning og med digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a2963f4-5971-452d-a4f4-55f074a18e12">
+    <ns:title>derivere polynomfunksjoner, potensfunksjoner, eksponentialfunksjoner og logaritmefunksjoner, og summer, differanser, produkter og kvotienter av disse funksjonene, og bruke kjerneregelen til å derivere sammensatte funksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a1a15bfc-886b-4412-86e6-79f9cadcf753">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b1c573d1-380a-4920-9f61-5ba7fbdc53ef"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6337b8aa-1496-4e59-bb22-fd39a9ab7fcc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6b793593-4529-4ece-ae1a-aa51baa4684c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f58166b1-d405-4233-a3e7-15035c4e47f8"/>
+    <ns:title>Sannsynlighet og statistikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:428e658a-7213-4741-8531-20af42ef166f">
+    <ns:title>gjøre rede for den geometriske tolkningen av det lineære optimeringsproblemet i to variabler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5de3ae32-e843-4e0c-b7c0-fa9831f280b8">
+    <ns:title>modellere praktiske optimeringsproblemer i økonomi ved hjelp av lineære likninger og ulikheter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e126215a-14dc-405f-81b6-f437cfa4d743">
+    <ns:title>modellere praktiske problemer ved hjelp av lineære likningssystemer med flere ukjente, og løse dem med og uten digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b13299d1-8a24-420f-9c18-5faa2e82ffdb">
+    <ns:title>løse økonomiske optimeringsproblemer i forbindelse med inntekts-, kostnads- og etterspørselsfunksjoner, og regne ut og bruke grensekostnader og grenseinntekter i enkle modeller</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:040d7355-b87a-4c25-a5d8-05c51a367412">
+    <ns:title>finne gjennomsnittlig veksthastighet for en funksjon ved regning og finne tilnærmingsverdier for momentan vekst i praktiske anvendelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b1c573d1-380a-4920-9f61-5ba7fbdc53ef">
+    <ns:title>gjennomføre enkel hypotesetesting ved hjelp av p-verdier og tolke resultatet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4a790973-4620-4b07-a5d9-3b3280e4a6f4">
+    <ns:title>regne med potenser, formler, parentesuttrykk og rasjonale og kvadratiske uttrykk med tall og bokstaver</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:54f3da52-f6dc-4106-a531-d29ffed1f747">
+    <ns:title>beregne nullpunkter og skjæringspunkter mellom grafer, både med og uten digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:229a6c3b-607f-404a-ace5-20820631e05e">
+    <ns:title>lage binomiske og hypergeometriske sannsynlighetsmodeller ut fra praktiske situasjoner, og regne med sannsynligheter for slike modeller</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e05a96ac-8d73-47b0-ac2c-6b5a5a2d2d1a">
+    <ns:title>Matematikk S2</ns:title>
+    <grep:kode>MAT4Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:85112daa-d937-48b6-88b0-07d82e20aa46">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:49248d00-3723-4582-acef-9ae6441b68b1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:428e658a-7213-4741-8531-20af42ef166f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5de3ae32-e843-4e0c-b7c0-fa9831f280b8"/>
+    <ns:title>Lineær optimering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:49248d00-3723-4582-acef-9ae6441b68b1">
+    <ns:title>løse lineære optimeringsproblemer grafisk, ved regning og med digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9186e502-bd3e-4649-82d2-d6e353cd7504">
+    <ns:title>drøfte forløpet til funksjoner og tolke de deriverte i praktiske sammenhenger ved å bruke førstederiverte og andrederiverte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8221dc5a-23bf-40b7-8b0c-423afb2f24df">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d5bffe5b-4b75-4cd9-a43b-2ff34af994a0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b1c573d1-380a-4920-9f61-5ba7fbdc53ef"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6b793593-4529-4ece-ae1a-aa51baa4684c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f58166b1-d405-4233-a3e7-15035c4e47f8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a08da30-75fe-49bf-a82f-53f31da60d9a"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:e05a96ac-8d73-47b0-ac2c-6b5a5a2d2d1a"/>
+    <ns:title>Matematikk S2</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:779b2589-62b0-48b8-aa6b-ae760053dca8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0120825a-0bef-40ee-bb0c-7c8c9d99290e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e126215a-14dc-405f-81b6-f437cfa4d743"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6337b8aa-1496-4e59-bb22-fd39a9ab7fcc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:60939e86-e256-469f-a8a7-cbc701e4f61c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a2963f4-5971-452d-a4f4-55f074a18e12"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dfbac192-a04e-4423-b78f-37c02407a6a7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b13299d1-8a24-420f-9c18-5faa2e82ffdb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9186e502-bd3e-4649-82d2-d6e353cd7504"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2aa87b3f-90b3-49c7-b1df-ea51f389309b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:854880d5-fea3-4911-a6ea-fb602d3641b0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:de028cef-49c4-40c1-ad2b-f4bb66727b6e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b13299d1-8a24-420f-9c18-5faa2e82ffdb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d5bffe5b-4b75-4cd9-a43b-2ff34af994a0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0120825a-0bef-40ee-bb0c-7c8c9d99290e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:085e2a34-d53c-476b-9333-ca256d5057b5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9186e502-bd3e-4649-82d2-d6e353cd7504"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:040d7355-b87a-4c25-a5d8-05c51a367412"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e19317a5-7836-4b98-8100-0ad2fba294af"/>
+    <ns:title>Funksjoner</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:54f3da52-f6dc-4106-a531-d29ffed1f747"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:60939e86-e256-469f-a8a7-cbc701e4f61c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a2963f4-5971-452d-a4f4-55f074a18e12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d82fe2c8-9c44-4da4-b1d7-8710e4e758b4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:229a6c3b-607f-404a-ace5-20820631e05e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4253dd33-1965-4b34-80a4-2efb561d49b5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d3b25559-1e4d-4707-93ad-075ef8496084"/>
+    <ns:title>Sannsynlighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:085e2a34-d53c-476b-9333-ca256d5057b5">
+    <ns:title>gjøre rede for definisjonen av den deriverte, regne ut den deriverte til polynomfunksjoner og bruke den til å drøfte polynomfunksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6337b8aa-1496-4e59-bb22-fd39a9ab7fcc">
+    <ns:title>gjøre rede for sentralgrensesetningen og bruke den til å beregne sannsynligheter for summer av uavhengige stokastiske variabler og binomiske fordelinger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4253dd33-1965-4b34-80a4-2efb561d49b5">
+    <ns:title>gjøre rede for ordnede utvalg med og uten tilbakelegging og uordnede utvalg uten tilbakelegging, og gjøre enkle sannsynlighetsberegninger knyttet til slike utvalg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de028cef-49c4-40c1-ad2b-f4bb66727b6e">
+    <ns:title>tegne grafen til polynomfunksjoner, eksponentialfunksjoner, potensfunksjoner og rasjonale funksjoner med lineær teller og nevner, både med og uten digitale hjelpemidler </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:952af694-dda6-48e8-9df5-117a62a7f6fa">
+    <ns:title>Matematikk S1</ns:title>
+    <grep:kode>MAT4Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b793593-4529-4ece-ae1a-aa51baa4684c">
+    <ns:title>gjøre rede for betydningen av normalfordelingene og regne ut sannsynligheter knyttet til dem</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2aa87b3f-90b3-49c7-b1df-ea51f389309b">
+    <ns:title>finne mønstre i tallfølger og bruke dem til å summere endelige aritmetiske og geometriske rekker og andre rekker, med og uten digitale hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -25,8 +25,12 @@ if defined?(JRUBY_VERSION)
         @laereplan[:kode].should == "IDR1-01"
       end
       
-      it "should get hovedomraade uuids" do
-        @laereplan[:hovedomraade_uuids].should == ["uuid:7321b950-5720-4ee0-9d25-284d71e4f99e"]
+      it "should have an array of hovedomraade uuids" do
+        @laereplan[:hovedomraade_uuids].should == ["uuid:8f2ce324-6ac3-4ada-98ac-438325404a07", "uuid:7321b950-5720-4ee0-9d25-284d71e4f99e", "uuid:2bd30a81-e4a9-439d-8706-161682c1e95b"]
+      end
+      
+      it "should have an array of kompetansemaalsett uuids" do
+        @laereplan[:kompetansemaalsett_uuids].should == ["uuid:7ec420f8-6a1f-4dec-891d-4fd538ee2e8e", "uuid:983fa5ba-8b1a-470e-8d38-c351815acb35", "uuid:7383c30f-0347-43cf-a858-49933dd404e0"]
       end
 
     end
@@ -43,17 +47,18 @@ if defined?(JRUBY_VERSION)
       it "should get tittel" do
         @kompetansemaalsett[:tittel].should == "Aktivitetslære 1"
       end
-
-      it "should contain an array of laereplan uuids" do
-        @kompetansemaalsett[:laereplan_uuids].should == ["uuid:9bdc529c-09f8-4eda-8c6e-fefe950daad0", "uuid:9bdc529c-09f8-4eda-8c6e-fefe950daac7"]
-      end
       
-      it "should contain an array of trinn uuids" do
+      it "should have an array of trinn uuids" do
         @kompetansemaalsett[:trinn_uuids].should == ["http://psi.udir.no/laereplan/aarstrinn/vg1"]
       end
       
-      it "should contain an array of fag uuids" do
-        @kompetansemaalsett[:fag_uuids].should == ["uuid:9fe35078-f82e-4ad2-adf9-5d8f0c4d4cad"]
+      it "should have an array of fag uuids" do
+        @kompetansemaalsett[:fag_uuids].should == ["uuid:3ed9705a-b234-4c01-b970-81b288cae332"]
+      end
+      
+      it "should have an array of kompetansemaal uuids" do        
+        @kompetansemaalsett[:kompetansemaal_uuids].should include("uuid:a2503251-4713-4667-8c32-e7e77ac6e4d5")
+        @kompetansemaalsett[:kompetansemaal_uuids].should include("uuid:9fc982bb-1a4a-47e1-a979-d0db04703d4c")
       end
     end
     
@@ -71,7 +76,12 @@ if defined?(JRUBY_VERSION)
       end
       
       it "should get kode" do
-        @hoovedomraade[:kode].should == "KODE"
+        @hoovedomraade[:kode].should == ""
+      end
+      
+      it "should have an array of kompetansemaal uuids" do
+        @hoovedomraade[:kompetansemaal_uuids].should include("uuid:a2503251-4713-4667-8c32-e7e77ac6e4d5")
+        @hoovedomraade[:kompetansemaal_uuids].should include("uuid:fb8e79d4-5f0d-432e-b983-661feac512d9")
       end
       
     end
@@ -93,17 +103,9 @@ if defined?(JRUBY_VERSION)
       it "should get tittel" do
         @kompetansemaal[:tittel].should == "anvende regelverk i den enkelte idrettsaktivitet"
       end
-
-      it "should have an array of kompetansemaallsett uuids" do
-        @kompetansemaal[:kompetansemaalsett_uuids].should == ["uuid:983fa5ba-8b1a-470e-8d38-c351815acb35"]
-      end
-      
-      it "should have an array of hovedomraade uuids" do
-        @kompetansemaal[:hovedomraade_uuids].should == ["uuid:8f2ce324-6ac3-4ada-98ac-438325404a07"]
-      end
       
       it "should get kode" do
-        @kompetansemaal[:kode].should == "KODE"
+        @kompetansemaal[:kode].should == ""
       end
 
     end
@@ -129,15 +131,15 @@ if defined?(JRUBY_VERSION)
       end
       
       it "should get uuid" do
-        @fag[:uuid].should == "uuid:9fe35078-f82e-4ad2-adf9-5d8f0c4d4cad"
+        @fag[:uuid].should == "uuid:3ed9705a-b234-4c01-b970-81b288cae332"
       end
 
       it "should get tittel" do
-        @fag[:tittel].should == "Aktivitetslære 2"
+        @fag[:tittel].should == "Aktivitetslære 1"
       end
       
       it "should get kode" do
-        @fag[:kode].should == "IDR1Z02"
+        @fag[:kode].should == "IDR1Z01"
       end
       
     end

@@ -1,0 +1,355 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:37f159df-c401-44fb-b322-84c91e79e464">
+    <ns:title>gjøre rede for samspillet mellom ulike uttrykksformer, som språk, bilde, musikk og grafikk i sammensatte tekster fra ulike medier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f9df909-e0b4-4b2e-9e85-416d5241afb7">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3f965116-812a-433f-864b-c1b3afc77d43"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:37f159df-c401-44fb-b322-84c91e79e464"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7db00b4b-ad02-4e8f-826f-d8b2e0681202"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:77104eef-50e2-4bd9-a8d7-19411d19d257"/>
+    <ns:title>Kommunikasjon og kultur 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3d79eb7c-9a3a-4f53-ae4a-b44a1cd707a3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:34bad4fb-0ba0-43d3-8424-01487f253294"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3c75fd54-20be-4ba8-83e3-e70a981b49b8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:08295d6a-7f5d-45d4-be1b-fcf95f3f37b5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:864cb5f1-8d05-4ed5-bfef-b4378a00d932"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ec9ba9be-0909-42d7-96c1-6f8706c9a7d1"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:1b31d203-ea8d-4326-893b-d06dad384ade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c0b3b80a-f955-48ff-87cf-e900430433ba">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:37f159df-c401-44fb-b322-84c91e79e464"/>
+    <ns:title>Tekst</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:de2058b7-c374-495a-8581-3cf3bcea0a0c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ec9ba9be-0909-42d7-96c1-6f8706c9a7d1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7db00b4b-ad02-4e8f-826f-d8b2e0681202"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:512bfbf4-c959-4357-bafc-cdd0d5debe81"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3c75fd54-20be-4ba8-83e3-e70a981b49b8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:864cb5f1-8d05-4ed5-bfef-b4378a00d932"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3f965116-812a-433f-864b-c1b3afc77d43"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:34bad4fb-0ba0-43d3-8424-01487f253294"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a6874090-4d72-49b9-8205-c6f150616291"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da13f7a9-a6cb-4faa-90d6-2069f6150f52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a196890b-fdd9-4da2-904a-fdfa62468b5e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b8b0cd85-8c14-4e55-a0c7-19145cf9d2c4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:14af33e5-5f8b-4057-9f09-71443b046f25"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e4191b31-15d2-493f-b438-48ede28519a8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3d79eb7c-9a3a-4f53-ae4a-b44a1cd707a3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4c2a2eb4-6280-477b-a729-69ad6d251128"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <ns:title>Kultur- og kommunikasjonsteori</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:571d2e77-a8c4-4227-af17-76890e90e26d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:49ab33e6-31a8-41d1-8c91-d1fbf9c1ca37"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b05791fe-9183-4bce-bcf9-edc5c9f8d41d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77104eef-50e2-4bd9-a8d7-19411d19d257"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:08295d6a-7f5d-45d4-be1b-fcf95f3f37b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c19e82b5-187d-4b00-b03a-b5561859b3b4">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:181a7052-6b3b-44f8-a05c-8cc989d2c015"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:3f9df909-e0b4-4b2e-9e85-416d5241afb7"/>
+    <grep:hovedomraader rdf:resource="uuid:c4ce9bee-ae03-4b13-9e36-c018d8806b76"/>
+    <grep:hovedomraader rdf:resource="uuid:c0b3b80a-f955-48ff-87cf-e900430433ba"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:d60099e4-36a9-4d42-b534-666c6a4ec640"/>
+    <grep:hovedomraader rdf:resource="uuid:a196890b-fdd9-4da2-904a-fdfa62468b5e"/>
+    <grep:kode>KKM1-01</grep:kode>
+    <ns:title>Læreplan i kommunikasjon og kultur - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ec9ba9be-0909-42d7-96c1-6f8706c9a7d1">
+    <ns:title>forklare hvordan sjangermønstre i tekster utvikles og endres over tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:08295d6a-7f5d-45d4-be1b-fcf95f3f37b5">
+    <ns:title>analysere og drøfte hvordan kulturer utvikles og forandres gjennom kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6874090-4d72-49b9-8205-c6f150616291">
+    <ns:title>analysere teksters kommunikative funksjoner </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:512bfbf4-c959-4357-bafc-cdd0d5debe81">
+    <ns:title>vurdere egne og andres tekster ved hjelp av teorier om språk og tekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:50933b56-8138-472a-8564-5bad3e66aded">
+    <ns:title>analysere språklige mønstre og samtaleformer i kommunikative aktiviteter i ulike situasjoner </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b8b0cd85-8c14-4e55-a0c7-19145cf9d2c4">
+    <ns:title>diskutere forholdet mellom kultur, individ og samfunn med utgangspunkt i konkrete ytringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c4ce9bee-ae03-4b13-9e36-c018d8806b76">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:50933b56-8138-472a-8564-5bad3e66aded"/>
+    <ns:title>Kommunikasjon</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2e2d8ac2-cf64-49d3-bf2c-ab3d220a1f48"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5da615e8-b18a-4992-8173-5f9d5147674e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dd250a9d-d50a-4711-bbb4-3af3bdd8d52f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:69d9e1f1-8355-4535-9f93-fe3e191d6c98"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3e66a811-cb41-4aac-a192-990b72364e3a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c52430a6-1e39-40f5-a2c6-dc59cb84bad8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:35f758df-54c5-4498-84be-1c367a53eae1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eb45c1c4-8932-4a29-8995-89eccf1e6fd3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5dd20cbd-7356-4293-9368-80b107a59353"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bbb6210-c7df-452d-b691-1d69e4870938"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b5eaa8a4-7e82-4366-9909-99ae48629f70"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f965116-812a-433f-864b-c1b3afc77d43">
+    <ns:title>gjennomføre et selvvalgt skriftlig fordypningsarbeid i analyse av tekst og presentere det for et publikum </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b5eaa8a4-7e82-4366-9909-99ae48629f70">
+    <ns:title>velge ut egnede analysemetoder fra ulike kommunikasjonsteorier og bruke dem på forskjellige typer kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eb45c1c4-8932-4a29-8995-89eccf1e6fd3">
+    <ns:title>gjennomføre en presentasjon om kulturell identitet og/eller kulturforskjeller</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:608e9357-91e1-4e54-b94c-406a7b38e811">
+    <ns:title>Kommunikasjon og kultur 3</ns:title>
+    <grep:kode>KKM1Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3c75fd54-20be-4ba8-83e3-e70a981b49b8">
+    <ns:title>tolke tekster fra et bredt spekter av epoker og kulturer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:49ab33e6-31a8-41d1-8c91-d1fbf9c1ca37">
+    <ns:title>bruke redskaper fra kultur- og kommunikasjonsteorier i analyse av ulike kulturelle ytringer fra egen samtid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:da13f7a9-a6cb-4faa-90d6-2069f6150f52">
+    <ns:title>drøfte sammenhengen mellom tekst og samfunn med utgangspunkt i samtidstekster fra forskjellige deler av verden </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c52430a6-1e39-40f5-a2c6-dc59cb84bad8">
+    <ns:title>analysere forholdet mellom en konkret kommunikativ aktivitet, situasjonen den foregår i, og de kulturelle og samfunnsmessige rammene for aktiviteten</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d79eb7c-9a3a-4f53-ae4a-b44a1cd707a3">
+    <ns:title>gjøre rede for fenomenene tradisjon, modernitet og postmodernitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:181a7052-6b3b-44f8-a05c-8cc989d2c015">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:50933b56-8138-472a-8564-5bad3e66aded"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eb45c1c4-8932-4a29-8995-89eccf1e6fd3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4c2a2eb4-6280-477b-a729-69ad6d251128"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b05791fe-9183-4bce-bcf9-edc5c9f8d41d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:14af33e5-5f8b-4057-9f09-71443b046f25"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:69d9e1f1-8355-4535-9f93-fe3e191d6c98"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b5eaa8a4-7e82-4366-9909-99ae48629f70"/>
+    <ns:title>Kommunikasjon og kultur 3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e2d8ac2-cf64-49d3-bf2c-ab3d220a1f48"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e4191b31-15d2-493f-b438-48ede28519a8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5dd20cbd-7356-4293-9368-80b107a59353"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:608e9357-91e1-4e54-b94c-406a7b38e811"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69d9e1f1-8355-4535-9f93-fe3e191d6c98">
+    <ns:title>gjøre rede for samspillet mellom språklige og ikke-språklige uttrykksformer i ulike kommunikasjonsprosesser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e66a811-cb41-4aac-a192-990b72364e3a">
+    <ns:title>drøfte hvordan kommunikasjon påvirkes av sosiale faktorer, som makt, kjønn, alder og sosial og økonomisk bakgrunn </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c2a2eb4-6280-477b-a729-69ad6d251128">
+    <ns:title>analysere og drøfte hvordan kommunikasjon påvirker mellommenneskelige relasjoner og sosiale strukturer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9bbb6210-c7df-452d-b691-1d69e4870938">
+    <ns:title>drøfte eksempler på ulike utfordringer ved tverrkulturell kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e4191b31-15d2-493f-b438-48ede28519a8">
+    <ns:title>drøfte sammenhengen mellom kulturelle verdier og kommunikasjonsformer innenfor og mellom kulturer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:77104eef-50e2-4bd9-a8d7-19411d19d257">
+    <ns:title>gjøre rede for ulike teorier om forholdet mellom kultur og tekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5da615e8-b18a-4992-8173-5f9d5147674e">
+    <ns:title>gjøre rede for hvordan ulike medier skaper ulike forutsetninger for kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d60099e4-36a9-4d42-b534-666c6a4ec640">
+    <ns:title>Kommunikasjon og kultur 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de2058b7-c374-495a-8581-3cf3bcea0a0c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b8b0cd85-8c14-4e55-a0c7-19145cf9d2c4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c52430a6-1e39-40f5-a2c6-dc59cb84bad8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a6874090-4d72-49b9-8205-c6f150616291"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dd250a9d-d50a-4711-bbb4-3af3bdd8d52f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:49ab33e6-31a8-41d1-8c91-d1fbf9c1ca37"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9bbb6210-c7df-452d-b691-1d69e4870938"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:35f758df-54c5-4498-84be-1c367a53eae1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:512bfbf4-c959-4357-bafc-cdd0d5debe81"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:da13f7a9-a6cb-4faa-90d6-2069f6150f52"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3e66a811-cb41-4aac-a192-990b72364e3a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5da615e8-b18a-4992-8173-5f9d5147674e"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:34f271db-8ddb-471f-bcf5-a06ad9607696"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:571d2e77-a8c4-4227-af17-76890e90e26d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1b31d203-ea8d-4326-893b-d06dad384ade">
+    <ns:title>Kommunikasjon og kultur 2</ns:title>
+    <grep:kode>KKM1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5dd20cbd-7356-4293-9368-80b107a59353">
+    <ns:title>samle inn et datamateriale fra autentiske kommunikasjonssituasjoner og presentere muntlig en analyse av det</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:35f758df-54c5-4498-84be-1c367a53eae1">
+    <ns:title>vurdere kommunikative aspekter ved egne og andres presentasjoner og gi konstruktiv tilbakemelding til andre</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b05791fe-9183-4bce-bcf9-edc5c9f8d41d">
+    <ns:title>gjøre rede for ulike teorier om forholdet mellom kultur og kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd250a9d-d50a-4711-bbb4-3af3bdd8d52f">
+    <ns:title>presentere et emne, faglig eller kunstnerisk, tilpasset en gitt kommunikasjonssituasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:864cb5f1-8d05-4ed5-bfef-b4378a00d932">
+    <ns:title>velge ut og bruke egnede analysemetoder fra ulike tekstteorier på forskjellige typer tekster </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:34bad4fb-0ba0-43d3-8424-01487f253294">
+    <ns:title>forklare hvordan tekster er bygd opp av grammatiske, tekstuelle og estetiske elementer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:14af33e5-5f8b-4057-9f09-71443b046f25">
+    <ns:title>analysere og drøfte hvordan kommunikasjon påvirkes av sosiale faktorer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:34f271db-8ddb-471f-bcf5-a06ad9607696">
+    <ns:title>Kommunikasjon og kultur 1</ns:title>
+    <grep:kode>KKM1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:571d2e77-a8c4-4227-af17-76890e90e26d">
+    <ns:title>gjøre rede for og reflektere over ulike måter å betrakte kultur på i et kommunikativt perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de2058b7-c374-495a-8581-3cf3bcea0a0c">
+    <ns:title>skape egne tekster tilpasset ulike kommunikasjonssituasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2e2d8ac2-cf64-49d3-bf2c-ab3d220a1f48">
+    <ns:title>gi eksempler på og drøfte ulike mediers muligheter og begrensinger for ulike former for kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7db00b4b-ad02-4e8f-826f-d8b2e0681202">
+    <ns:title>drøfte forholdet mellom tekst og virkelighet i fiksjonstekster og sakprosatekster </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

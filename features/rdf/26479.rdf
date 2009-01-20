@@ -1,0 +1,293 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:361de3bc-328b-4979-ad53-41025f7d8574">
+    <ns:title>drøfte hva brukermedvirkning innebærer, og vise dette i yrkesutøvelsen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f32fd53-d076-4d08-a8d2-126b8476264f">
+    <ns:title>følge gjeldende regelverk for helse, miljø og sikkerhet, bruke verneutstyr og vise sikker håndtering av kjemiske stoffer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f2d4a5b1-2373-4af2-a0e0-053e85b6181a">
+    <ns:title>utføre arbeidet i tråd med ergonomiske prinsipper </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:942f7f9d-4a23-4e53-81f9-e6a39f830c76">
+    <ns:title>begrunne valg av materialer og teknikker for utvikling av ortopediske hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dcedd945-4faf-4ca7-a6c3-cbaf7bfa6748">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:530868ca-9690-4523-b745-5f8ac8dd20ee"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:361de3bc-328b-4979-ad53-41025f7d8574"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:942f7f9d-4a23-4e53-81f9-e6a39f830c76"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1c1d4f1d-93c6-4996-86a7-7e507dd9f252"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:180d24ce-c61c-453d-81e1-670c1bcd3e15"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3e47720d-b5e5-4893-819d-f95bbc4459da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dc7437d1-cff5-4d68-a6ca-8f64116871f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:90729689-9905-4e4d-9a2a-8cae75048404"/>
+    <ns:title>Etter Vg3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:abb6c181-7080-4a8c-b944-f5afad682fe9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f9604426-2c8b-4db7-b8de-7ecefdde8e93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:757459c6-f28a-49b7-b563-fab9bd1ffa82"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:00fc191b-c893-46c0-99a8-76109cb8da59"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f2d4a5b1-2373-4af2-a0e0-053e85b6181a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:edd9a787-6ac4-4412-8b4b-7e84de7f2d4d"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:0d71f773-f771-4544-b67a-0b0c168e63cf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3dfdb9a3-2812-4c2b-bcfc-1d04a3fbff37"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e42034d-9c39-4786-8378-e2f94fae6614"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:00af4897-371a-4961-9c09-27db997ecd62"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2bda38b4-8fa2-4683-87f4-0078f7d20085"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c78edd0f-871b-46fc-94e4-f8f3419cc316"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:922bf809-12bd-4ae0-a962-b3b0b187a040"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4e43f4d0-357a-47a6-8847-cc1247634a08"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3ec07246-9d61-4353-8206-1e69d81b1556"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:444474f7-11e5-45d8-9bba-3966738030e8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d9ef9469-a8ec-42e3-b13e-1c02fd520fe7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:45efe869-b3fd-49b2-a708-1967f52f6993"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3f32fd53-d076-4d08-a8d2-126b8476264f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:530868ca-9690-4523-b745-5f8ac8dd20ee">
+    <ns:title>bruke regelverk knyttet til ortopediske hjelpemidler og informere om refusjonsordninger og saksgang ved søknader </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0d71f773-f771-4544-b67a-0b0c168e63cf">
+    <ns:title>Ortopediteknikkfaget</ns:title>
+    <grep:kode>ORT3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:abb6c181-7080-4a8c-b944-f5afad682fe9">
+    <ns:title>dokumentere, kvalitetssikre og videreutvikle arbeidsmetoder og produkter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d9ef9469-a8ec-42e3-b13e-1c02fd520fe7">
+    <ns:title>utforme og framstille ortopediske hjelpemidler ut fra brukernes estetiske og funksjonelle behov og økonomi og begrunne konsekvenser av ulike valg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00fc191b-c893-46c0-99a8-76109cb8da59">
+    <ns:title>bruke ulike strategier for konflikthåndtering </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:683e007e-bad9-4c8a-89e9-24b8715faaea">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7437d1-cff5-4d68-a6ca-8f64116871f5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d9ef9469-a8ec-42e3-b13e-1c02fd520fe7"/>
+    <ns:title>Yrkesutøvelse</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c78edd0f-871b-46fc-94e4-f8f3419cc316"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9e42034d-9c39-4786-8378-e2f94fae6614"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f2d4a5b1-2373-4af2-a0e0-053e85b6181a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:530868ca-9690-4523-b745-5f8ac8dd20ee"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:abb6c181-7080-4a8c-b944-f5afad682fe9"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:942f7f9d-4a23-4e53-81f9-e6a39f830c76"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:00af4897-371a-4961-9c09-27db997ecd62"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:444474f7-11e5-45d8-9bba-3966738030e8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3f32fd53-d076-4d08-a8d2-126b8476264f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2bda38b4-8fa2-4683-87f4-0078f7d20085"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:45efe869-b3fd-49b2-a708-1967f52f6993"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:edd9a787-6ac4-4412-8b4b-7e84de7f2d4d">
+    <ns:title>•	kommunisere og samhandle med brukere i ulike livssituasjoner og med ulik kulturbakgrunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3ec07246-9d61-4353-8206-1e69d81b1556">
+    <ns:title>drøfte sammenhenger mellom helse, levevaner og funksjonsevne</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c1d4f1d-93c6-4996-86a7-7e507dd9f252">
+    <ns:title>drøfte etiske dilemmaer i ortopediteknikkfaget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00af4897-371a-4961-9c09-27db997ecd62">
+    <ns:title>gjennomføre tiltak for god hygiene og smittevern i tråd med gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b03aa42f-b502-4b99-8f26-1fba6a052cef">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:757459c6-f28a-49b7-b563-fab9bd1ffa82"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:180d24ce-c61c-453d-81e1-670c1bcd3e15"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3e47720d-b5e5-4893-819d-f95bbc4459da"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3ec07246-9d61-4353-8206-1e69d81b1556"/>
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:757459c6-f28a-49b7-b563-fab9bd1ffa82">
+    <ns:title>gjøre rede for kroppens bevegelsesapparat og biomekanikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1592ae6d-f3c1-42a3-ad81-da6ec41ef576">
+    <grep:hovedomraader rdf:resource="uuid:683e007e-bad9-4c8a-89e9-24b8715faaea"/>
+    <grep:hovedomraader rdf:resource="uuid:6699dc35-9a4d-437e-99e1-99f64c9ff21a"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:dcedd945-4faf-4ca7-a6c3-cbaf7bfa6748"/>
+    <grep:hovedomraader rdf:resource="uuid:b03aa42f-b502-4b99-8f26-1fba6a052cef"/>
+    <grep:kode>ORT3-01</grep:kode>
+    <ns:title>Læreplan i ortopediteknikkfaget Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2bda38b4-8fa2-4683-87f4-0078f7d20085">
+    <ns:title>bruke og vedlikeholde utstyr, verktøy og maskiner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4e43f4d0-357a-47a6-8847-cc1247634a08">
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere konstruksjon og framstilling av ortopediske hjelpemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3dfdb9a3-2812-4c2b-bcfc-1d04a3fbff37">
+    <ns:title>veilede i bruk av ortopediske hjelpemidler </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dc7437d1-cff5-4d68-a6ca-8f64116871f5">
+    <ns:title>justere og vedlikeholde ortopediske hjelpemidler i samarbeid med ortopediingeniører, leger, fysioterapeuter og ergoterapeuter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c78edd0f-871b-46fc-94e4-f8f3419cc316">
+    <ns:title>følge gjeldende regelverk for taushetsplikt og personvern </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6699dc35-9a4d-437e-99e1-99f64c9ff21a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:361de3bc-328b-4979-ad53-41025f7d8574"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3dfdb9a3-2812-4c2b-bcfc-1d04a3fbff37"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1c1d4f1d-93c6-4996-86a7-7e507dd9f252"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:90729689-9905-4e4d-9a2a-8cae75048404"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:00fc191b-c893-46c0-99a8-76109cb8da59"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f9604426-2c8b-4db7-b8de-7ecefdde8e93"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e47720d-b5e5-4893-819d-f95bbc4459da">
+    <ns:title>drøfte hvordan ortopediske hjelpemidler kan bedre aktivitetsnivået hos mennesker med redusert førlighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:180d24ce-c61c-453d-81e1-670c1bcd3e15">
+    <ns:title>drøfte fysiske og psykiske utfordringer knyttet til ulike funksjonshemminger </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f9604426-2c8b-4db7-b8de-7ecefdde8e93">
+    <ns:title>kommunisere og samhandle med brukere i ulike livssituasjoner og med ulik kulturbakgrunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9e42034d-9c39-4786-8378-e2f94fae6614">
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere konstruksjon og framstilling av ortopediske hjelpemidler </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:90729689-9905-4e4d-9a2a-8cae75048404">
+    <ns:title>yte service til brukere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:922bf809-12bd-4ae0-a962-b3b0b187a040">
+    <ns:title>gjøre rede for kroppens bevegelsesapparat og biomekanikk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:444474f7-11e5-45d8-9bba-3966738030e8">
+    <ns:title>bruke digitale verktøy i arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45efe869-b3fd-49b2-a708-1967f52f6993">
+    <ns:title>velge design og flerdimensjonal form, kvalitet og funksjon ved utforming av ortopediske hjelpemidler </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

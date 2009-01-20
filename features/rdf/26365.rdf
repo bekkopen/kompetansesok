@@ -1,0 +1,283 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a085ce6c-fa9b-47a9-8eff-15b067f7fcdd">
+    <ns:title>planlegge, gjennomføre og vurdere turer over flere dager med overnatting ute i et valgt naturmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c33cd88d-f01b-4d42-b6ef-8381405c7f72">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b7c505c5-fa08-4984-9f01-c8784b973bc2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ca7e7c9b-9430-409a-bd45-e37d60b5d2d1"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:fba4c3af-5152-4761-ac7c-264823a51111"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:93b802bb-e255-4327-81af-7a925994b678"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:226d6547-a25a-4218-9f4e-85ac61aa85d1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:825aeba6-91d3-4c75-8641-8dd2c385d81e"/>
+    <ns:title>Friluftsliv 2</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a085ce6c-fa9b-47a9-8eff-15b067f7fcdd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:54e7335a-3d80-40a4-9abe-cd5ab996b5cb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6df3bbc7-16c3-4880-8549-95a243ae0b80"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:53ec2099-2fcd-45e6-9975-9f925ae4ccbe"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b29687b3-a9ba-4071-8030-30ab144de979"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a886b7d1-cecc-43e4-b278-49331d87ad51"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f3ada316-a57f-47d6-8a5f-49cf735ba336">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a00f524c-0499-4416-b141-f5625a675904"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0e2ce819-ae86-4aeb-bec6-2856692f466a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6aa4ce8c-eae5-4462-887b-4353fe932e89"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:83d8acbf-0e67-49c9-9ea6-fc54573e5866"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4ea79f36-a737-4a01-8ebf-31b7f428b715"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bce7a50e-1730-4c6e-a7e3-d99197c97053"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d3e885d5-51bb-4ced-abbe-c94a4a759b7d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1f21c3a4-15eb-4471-8b9a-bf5622bf5be5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3bb30042-de43-43f4-b55a-d884a9a18fc5"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:f7d9bd7d-4a39-404e-8298-1d406377f321"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a0019c6e-c0d6-4288-9ea8-90d354aad19c"/>
+    <ns:title>Friluftsliv 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:56c9b481-0908-4ea6-9e44-07131f950eed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bce7a50e-1730-4c6e-a7e3-d99197c97053">
+    <ns:title>vurdere betydningen av hensiktsmessig bekledning for ulike typer friluftsliv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d72b1a73-0a3b-45ee-bee1-ae724efa4b74">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b7c505c5-fa08-4984-9f01-c8784b973bc2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b29687b3-a9ba-4071-8030-30ab144de979"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1f21c3a4-15eb-4471-8b9a-bf5622bf5be5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3bb30042-de43-43f4-b55a-d884a9a18fc5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:56c9b481-0908-4ea6-9e44-07131f950eed"/>
+    <ns:title>Naturkjennskap </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fba4c3af-5152-4761-ac7c-264823a51111">
+    <ns:title>Friluftsliv 2</ns:title>
+    <grep:kode>IDR7Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6df3bbc7-16c3-4880-8549-95a243ae0b80">
+    <ns:title>veilede i friluftsliv der læring gjennom praksisfellesskap skal stå sentralt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:825aeba6-91d3-4c75-8641-8dd2c385d81e">
+    <ns:title>gjøre rede for det nasjonale friluftslivets historie og utvikling </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a00f524c-0499-4416-b141-f5625a675904">
+    <ns:title>planlegge, gjennomføre og vurdere tur med overnatting ute over flere dager i vannmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:83d8acbf-0e67-49c9-9ea6-fc54573e5866">
+    <ns:title>behandle og vedlikeholde redskap og utstyr slik at det til enhver tid er i orden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4ea79f36-a737-4a01-8ebf-31b7f428b715">
+    <ns:title>praktisere førstehjelp og livreddende ferdigheter i tilknytning til friluftsliv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:30a18559-c2b4-41b3-bace-1e755a3ff233">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a886b7d1-cecc-43e4-b278-49331d87ad51"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a00f524c-0499-4416-b141-f5625a675904"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d3e885d5-51bb-4ced-abbe-c94a4a759b7d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:93b802bb-e255-4327-81af-7a925994b678"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bce7a50e-1730-4c6e-a7e3-d99197c97053"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a0019c6e-c0d6-4288-9ea8-90d354aad19c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0e2ce819-ae86-4aeb-bec6-2856692f466a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:83d8acbf-0e67-49c9-9ea6-fc54573e5866"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ea79f36-a737-4a01-8ebf-31b7f428b715"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a085ce6c-fa9b-47a9-8eff-15b067f7fcdd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:53ec2099-2fcd-45e6-9975-9f925ae4ccbe"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6aa4ce8c-eae5-4462-887b-4353fe932e89"/>
+    <ns:title>Basisferdigheter </ns:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:54e7335a-3d80-40a4-9abe-cd5ab996b5cb">
+    <ns:title>vurdere framveksten av nye aktiviteter som kan være med på å forandre det tradisjonelle friluftslivets egenart </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0cf9fedb-265f-4cb0-9600-2fc23421cef4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:54e7335a-3d80-40a4-9abe-cd5ab996b5cb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6df3bbc7-16c3-4880-8549-95a243ae0b80"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:226d6547-a25a-4218-9f4e-85ac61aa85d1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ca7e7c9b-9430-409a-bd45-e37d60b5d2d1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:825aeba6-91d3-4c75-8641-8dd2c385d81e"/>
+    <ns:title>Veiledning </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f7d9bd7d-4a39-404e-8298-1d406377f321">
+    <ns:title>Friluftsliv 1</ns:title>
+    <grep:kode>IDR7Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0e2ce819-ae86-4aeb-bec6-2856692f466a">
+    <ns:title>gjøre rede for og praktisere de bestemmelsene som gjelder for friluftsliv og allmenn ferdsel i utmark</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:53ec2099-2fcd-45e6-9975-9f925ae4ccbe">
+    <ns:title>videreutvikle førstehjelp og livreddende ferdigheter i tilknytning til det friluftslivet eleven utøver</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b7c505c5-fa08-4984-9f01-c8784b973bc2">
+    <ns:title>vurdere og tolke de mest alminnelige varslene naturen gir oss, og ta de forholdsreglene som synes nødvendig</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a0019c6e-c0d6-4288-9ea8-90d354aad19c">
+    <ns:title>planlegge, gjennomføre og vurdere turer knyttet til lokal friluftslivstradisjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ca7e7c9b-9430-409a-bd45-e37d60b5d2d1">
+    <ns:title>gjøre rede for og delta i virksomheten til lokale friluftslivsorganisasjoner </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:93b802bb-e255-4327-81af-7a925994b678">
+    <ns:title>lage enkle redskaper eller enkelt utstyr som skal brukes i friluftsliv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b686c1b7-6e5c-4f8f-9358-40c63d9a51af">
+    <grep:hovedomraader rdf:resource="uuid:0cf9fedb-265f-4cb0-9600-2fc23421cef4"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:c33cd88d-f01b-4d42-b6ef-8381405c7f72"/>
+    <grep:hovedomraader rdf:resource="uuid:d72b1a73-0a3b-45ee-bee1-ae724efa4b74"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:f3ada316-a57f-47d6-8a5f-49cf735ba336"/>
+    <grep:hovedomraader rdf:resource="uuid:30a18559-c2b4-41b3-bace-1e755a3ff233"/>
+    <grep:kode>IDR7-01</grep:kode>
+    <ns:title>Læreplan i friluftsliv - valgfrie programfag i utdanningsprogram for idrettsfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f21c3a4-15eb-4471-8b9a-bf5622bf5be5">
+    <ns:title>forklare de mest alminnelige varsler naturen gir oss</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b29687b3-a9ba-4071-8030-30ab144de979">
+    <ns:title>beskrive den naturen eleven ferdes i, og utøve et friluftsliv der hensynet til naturen er overordnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:56c9b481-0908-4ea6-9e44-07131f950eed">
+    <ns:title>vise kjennskap til den naturen eleven ferdes i, og praktisere et friluftsliv der hensynet til naturen er overordnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3bb30042-de43-43f4-b55a-d884a9a18fc5">
+    <ns:title>bruke og vurdere naturen som matkilde </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d3e885d5-51bb-4ced-abbe-c94a4a759b7d">
+    <ns:title>vurdere betydningen av et godt kosthold ut fra praktiske og ernæringsmessige forhold</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a886b7d1-cecc-43e4-b278-49331d87ad51">
+    <ns:title>vurdere og tilberede mat som er hensiktsmessig på turer av lengre varighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6aa4ce8c-eae5-4462-887b-4353fe932e89">
+    <ns:title>planlegge, gjennomføre og vurdere tur med overnatting ute over flere dager i vinterfjellet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:226d6547-a25a-4218-9f4e-85ac61aa85d1">
+    <ns:title>gjennomføre nødvendig forarbeid og vurdere ansvaret ved å være veileder i friluftsliv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>
