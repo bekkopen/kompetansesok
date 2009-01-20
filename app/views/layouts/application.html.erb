@@ -27,6 +27,7 @@
 	  <div id="nav_container">
 	  	<ul id="nav_list">
   		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
+          <li><%= link_to t('navigasjon.database_eksport'), db_dumps_path %></li>
   		</ul>
 	  </div>
 	  <% if flash[:notice] %>

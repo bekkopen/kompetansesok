@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :kompetansemaalsett
   
   map.resources  :info
+  map.resources :db_dumps, :only => :index
   
 
   # The priority is based upon order of creation: first created -> highest priority.
