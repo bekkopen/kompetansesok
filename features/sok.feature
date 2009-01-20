@@ -62,17 +62,13 @@ Egenskap: Søk
     Så skal jeg få opp følgende treff for Kompetansemaalsett:
       | Tittel                 |
       | Anlegg og teknikk      |
-      | Nyanlegg               |
-      | Planlegging            |
 
   Scenario: Få 3 treff i kompetansemaalsett på "ambulanse"
     Gitt at jeg er på hovedsiden
-    Når jeg søker etter "ambulanse"
+    Når jeg søker etter "ambulansemedisin"
     Så skal jeg få opp følgende treff for Fag:
       | Tittel                    |
-      | Ambulansefaget            |
       | Ambulansemedisin          |
-      | Ambulanseoperative emner  |
 
   Scenario: Søke kun på Læreplaner
     Gitt at jeg er på hovedsiden
