@@ -1,6 +1,7 @@
 nb:   
   navigasjon:
     forside: "Forside"
+    database_eksport: "Database eksport"
 
   overskrifter:
     resultater: "Resultater"
@@ -10,6 +11,7 @@ nb:
     kompetansemål: "Kompetansemål"
     kompetansemålsett: "Kompetansemålsett"
     valgte_kompetansemål: "Valgte kompetansemål"
+    database_eksport: "Database eksport"
   
   knapper:
     søk: "Søk"
@@ -34,4 +36,7 @@ nb:
     kompetansemål: "Kompetansemål:"
 
   meldinger:
-    angi_kriterium: "Vennligst angi et søkekriterium" 
+    angi_kriterium: "Vennligst angi et søkekriterium"
+
+  tekst:
+    database_eksport: "Her kan du laste ned mysql database dumps. Slik at du lett kan få tilgang til dataen denne applikasjonen bruker. Klikk på linkene under for å laste ned ønsket dump:"
