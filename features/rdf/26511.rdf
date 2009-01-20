@@ -1,0 +1,345 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:c3d804a1-a587-444d-b45e-ea1f25e0e35c">
+    <ns:title>utøve grunnleggende teknikk i klassisk ballett med vekt på plassering og bruk av turn out</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e369844b-88ea-42de-9c2d-2c06a89b0518">
+    <ns:title>vise grunnleggende teknikk i jazzdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b4083323-3a57-4501-9c8c-a65be61a5aac">
+    <ns:title>vurdere egen teknisk, fysisk og uttrykksmessig utvikling i moderne dans / samtidsdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d20a51a9-5087-4ae1-b0b9-f67504999936">
+    <ns:title>utforske og formidle bevegelser og uttrykk gjennom improvisasjon og samhandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c056acf-79e6-4ffd-bb54-9964c2e4648d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c2469960-6368-4705-b739-0ccb16f33b8b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dbece843-ebb7-49fe-832f-d7210c540c91"/>
+    <ns:title>Moderne dans / samtidsdans</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f01e97b1-7898-48f2-a09b-b8e6f4faec28"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4c132566-0149-42f1-b758-95e0b0638abb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:165cafb0-495f-4607-8e01-89469d20cf0b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3f2a5404-27fe-4949-bef6-f3d9a29398ac"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b4083323-3a57-4501-9c8c-a65be61a5aac"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db5e2fb2-48e9-40bf-84ef-458d361609d6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:df1b8f42-2a8e-449d-87d2-6c29dade3258"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d20a51a9-5087-4ae1-b0b9-f67504999936"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:418d0160-e870-411d-91cd-4a962b420c71"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:423720de-fec6-4637-8dce-0d4881928666">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:251da06d-dccc-4574-881e-a028aa00966f"/>
+    <ns:title>Jazzdans</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:782e7612-14a2-49ba-869d-52afc67cc19e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d806dbb0-61ac-4874-93ec-8de39836f216"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dbcb747f-146c-4db9-9f6a-10aa74e8ca60"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e369844b-88ea-42de-9c2d-2c06a89b0518"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6c65d1ab-a023-4f8f-9a31-29e4838ec438"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5fa0081a-19a4-4743-8c80-8adccb1f6c4a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2a09f44a-c716-45a3-9a33-5160345e9224"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:17f4be30-737b-4184-9ed8-6aad9901fe94"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e3e7faf4-329b-455b-a966-099422b3cdc4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b91af83-123a-4ae7-95f3-a34c76c04dfc">
+    <ns:title>beskrive riktig plassering og bruk av turn out</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9f8b064a-4a06-4c56-a83c-1b80544fb25b">
+    <ns:title>Scenisk dans 2</ns:title>
+    <grep:kode>DAN2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c132566-0149-42f1-b758-95e0b0638abb">
+    <ns:title>analysere, formidle og vurdere bevegelser, musikalitet og uttrykk i skapende arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c2469960-6368-4705-b739-0ccb16f33b8b">
+    <ns:title>formidle moderne dans / samtidsdans med bruk av ulike bevegelseskvaliteter, innlevelse og personlig uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:02feb49f-aae2-4a56-8c4c-ee15e30dfc1a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b960d40c-8a8e-4517-a5a6-c29471997d16"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee50e1b2-60a6-4842-b9e9-e791a1262eab"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a11a032a-baff-4418-ac28-a6499392ad98"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4b91af83-123a-4ae7-95f3-a34c76c04dfc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7b02a368-7d05-42f0-8f85-327f113b8a29"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c3d804a1-a587-444d-b45e-ea1f25e0e35c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad634f02-2930-4aac-89bb-f95afb5fd6d2"/>
+    <ns:title>Klassisk ballett</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1f1ceb2b-7f48-4652-ab53-d240747f4eb0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3f4b7b54-2e8e-4f50-a967-406d7f377e6c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:017c894e-a1ed-478f-9677-6f00492fcce6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e3e7faf4-329b-455b-a966-099422b3cdc4">
+    <ns:title>relatere kunnskap om kroppens oppbygning og egne fysiske forutsetninger til å utøve jazzdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dbcb747f-146c-4db9-9f6a-10aa74e8ca60">
+    <ns:title>beskrive egen teknisk og fysisk utvikling i jazzdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f01e97b1-7898-48f2-a09b-b8e6f4faec28">
+    <ns:title>beskrive egen teknisk og fysisk utvikling i moderne dans / samtidsdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6c65d1ab-a023-4f8f-9a31-29e4838ec438">
+    <ns:title>formidle ulike elementer fra jazzdansens dynamikk og musikalitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db5e2fb2-48e9-40bf-84ef-458d361609d6">
+    <ns:title>relatere kunnskap om kroppens oppbygning og egne fysiske forutsetninger til å utøve moderne dans / samtidsdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b9a35299-284d-4d53-8a56-6e39fee140e7">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:345f6b71-ba81-4545-b6d9-66546d4136f3"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e498cae0-7866-4c25-8666-2933f09f835d"/>
+    <grep:hovedomraader rdf:resource="uuid:7c056acf-79e6-4ffd-bb54-9964c2e4648d"/>
+    <grep:hovedomraader rdf:resource="uuid:423720de-fec6-4637-8dce-0d4881928666"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:1d0d5fda-4934-4131-92ea-3ad5124f7ac8"/>
+    <grep:hovedomraader rdf:resource="uuid:02feb49f-aae2-4a56-8c4c-ee15e30dfc1a"/>
+    <grep:kode>DAN2-01</grep:kode>
+    <ns:title>Læreplan i scenisk dans - programfag i utdanningsprogram for musikk, dans, drama, programområde for dans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7b02a368-7d05-42f0-8f85-327f113b8a29">
+    <ns:title>vurdere egen teknisk, fysisk og uttrykksmessig utvikling i klassisk ballett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f2a5404-27fe-4949-bef6-f3d9a29398ac">
+    <ns:title>utøve grunnleggende teknikk i moderne dans / samtidsdans med vekt på kroppsbevissthet og tyngdekraft</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f4b7b54-2e8e-4f50-a967-406d7f377e6c">
+    <ns:title>anvende elementer fra den klassiske ballettens stil, form og særpreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a09f44a-c716-45a3-9a33-5160345e9224">
+    <ns:title>anvende relevant terminologi i jazzdans
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e498cae0-7866-4c25-8666-2933f09f835d">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:db5e2fb2-48e9-40bf-84ef-458d361609d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3f4b7b54-2e8e-4f50-a967-406d7f377e6c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f01e97b1-7898-48f2-a09b-b8e6f4faec28"/>
+    <ns:title>Scenisk dans 2</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c3d804a1-a587-444d-b45e-ea1f25e0e35c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dbcb747f-146c-4db9-9f6a-10aa74e8ca60"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ad634f02-2930-4aac-89bb-f95afb5fd6d2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3f2a5404-27fe-4949-bef6-f3d9a29398ac"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:9f8b064a-4a06-4c56-a83c-1b80544fb25b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:17f4be30-737b-4184-9ed8-6aad9901fe94"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:017c894e-a1ed-478f-9677-6f00492fcce6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e3e7faf4-329b-455b-a966-099422b3cdc4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d20a51a9-5087-4ae1-b0b9-f67504999936"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:251da06d-dccc-4574-881e-a028aa00966f"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a11a032a-baff-4418-ac28-a6499392ad98">
+    <ns:title>formidle elementer fra den klassiske ballettens stil, form og særpreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5fa0081a-19a4-4743-8c80-8adccb1f6c4a">
+    <ns:title>formidle jazzdansens bevegelseskvalitet og musikalitet med vekt på personlig uttrykk og bevisst bruk av teknikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad634f02-2930-4aac-89bb-f95afb5fd6d2">
+    <ns:title>relatere kunnskap om kroppens oppbygning og egne fysiske forutsetninger til å utøve klassisk ballett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d8c0bd78-4014-4b43-87aa-c81585387098">
+    <ns:title>Scenisk dans 1</ns:title>
+    <grep:kode>DAN2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:782e7612-14a2-49ba-869d-52afc67cc19e">
+    <ns:title>vurdere egen teknisk, fysisk og uttrykksmessig utvikling i jazzdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ee50e1b2-60a6-4842-b9e9-e791a1262eab">
+    <ns:title>vise grunnleggende teknikk i klassisk ballett 
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:345f6b71-ba81-4545-b6d9-66546d4136f3">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7b02a368-7d05-42f0-8f85-327f113b8a29"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:782e7612-14a2-49ba-869d-52afc67cc19e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b960d40c-8a8e-4517-a5a6-c29471997d16"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5fa0081a-19a4-4743-8c80-8adccb1f6c4a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b4083323-3a57-4501-9c8c-a65be61a5aac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c2469960-6368-4705-b739-0ccb16f33b8b"/>
+    <ns:title>Scenisk dans 3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d806dbb0-61ac-4874-93ec-8de39836f216"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:d2b61525-c3cb-4404-831e-60f969024059"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4c132566-0149-42f1-b758-95e0b0638abb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a11a032a-baff-4418-ac28-a6499392ad98"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b960d40c-8a8e-4517-a5a6-c29471997d16">
+    <ns:title>formidle klassisk ballett med bevisst bruk av grunnleggende teknikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1d0d5fda-4934-4131-92ea-3ad5124f7ac8">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1f1ceb2b-7f48-4652-ab53-d240747f4eb0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4b91af83-123a-4ae7-95f3-a34c76c04dfc"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ee50e1b2-60a6-4842-b9e9-e791a1262eab"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a09f44a-c716-45a3-9a33-5160345e9224"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dbece843-ebb7-49fe-832f-d7210c540c91"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e369844b-88ea-42de-9c2d-2c06a89b0518"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:d8c0bd78-4014-4b43-87aa-c81585387098"/>
+    <ns:title>Scenisk dans 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6c65d1ab-a023-4f8f-9a31-29e4838ec438"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:165cafb0-495f-4607-8e01-89469d20cf0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:df1b8f42-2a8e-449d-87d2-6c29dade3258"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:418d0160-e870-411d-91cd-4a962b420c71"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:df1b8f42-2a8e-449d-87d2-6c29dade3258">
+    <ns:title>formidle ulike bevegelseskvaliteter i moderne dans / samtidsdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:17f4be30-737b-4184-9ed8-6aad9901fe94">
+    <ns:title>anvende jazzdansens stil, bevegelseskvalitet og uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:251da06d-dccc-4574-881e-a028aa00966f">
+    <ns:title>utøve grunnleggende teknikk i jazzdans med vekt på plassering og bruk av torso</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:165cafb0-495f-4607-8e01-89469d20cf0b">
+    <ns:title>utforske og utvikle bevegelser gjennom improvisasjon og samhandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d806dbb0-61ac-4874-93ec-8de39836f216">
+    <ns:title>utforske, utvikle og formidle rytme og bevegelse gjennom improvisasjon og samhandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f1ceb2b-7f48-4652-ab53-d240747f4eb0">
+    <ns:title>anvende relevant terminologi og beskrive oppbygningen av en klassisk ballettklasse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:418d0160-e870-411d-91cd-4a962b420c71">
+    <ns:title>vise grunnleggende teknikk i moderne dans / samtidsdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d2b61525-c3cb-4404-831e-60f969024059">
+    <ns:title>Scenisk dans 3</ns:title>
+    <grep:kode>DAN2Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dbece843-ebb7-49fe-832f-d7210c540c91">
+    <ns:title>anvende relevant terminologi i moderne dans / samtidsdans</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:017c894e-a1ed-478f-9677-6f00492fcce6">
+    <ns:title>beskrive egen teknisk og fysisk utvikling i klassisk ballett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

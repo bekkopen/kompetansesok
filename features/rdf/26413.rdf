@@ -1,0 +1,214 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:df101561-ffc6-4b46-a8ea-1fa1fc5a1d0f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c78a1a5e-16b5-451d-8afe-8b6b99b2393d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bdcb0245-3bbd-436b-9be6-8c120a55375a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:450cc954-1d16-49c7-9ccf-6a25bd4f074b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2c964394-f690-45ae-9006-c50b4ece8d84"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:effa8ca3-eb08-4c26-9c03-a3a417a97787"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:38cd7ae9-bc41-4ef9-82a9-6829cdbb15aa"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:216a5d5a-0681-4cf3-934a-f7bab6573ac5"/>
+    <ns:title>Ensembleledelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c0fbc1e-14f8-4ffe-aeb8-0ea213eb9fab">
+    <ns:title>gi og ta konstruktiv kritikk og fremme samarbeidsevne, toleranse og flerkulturell forståelse i produksjonsledelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:38cd7ae9-bc41-4ef9-82a9-6829cdbb15aa">
+    <ns:title>formidle musikalske uttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:59a94dc6-61e0-4325-bf47-ff33476c6b01">
+    <ns:title>Instruksjon og ledelse</ns:title>
+    <grep:kode>MUS7Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:216a5d5a-0681-4cf3-934a-f7bab6573ac5">
+    <ns:title>instruere og lede kor og instrumentalensembler med et variert repertoar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a8f8254d-7927-4248-81d8-2d24decbc688">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:16c9a2f5-5eca-4bdb-8090-108351852010"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6d527162-83fa-497c-8407-0d5b3e080f84"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:450cc954-1d16-49c7-9ccf-6a25bd4f074b"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:216a5d5a-0681-4cf3-934a-f7bab6573ac5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:afdf9db6-6874-4626-a97d-7d53b30b00ad"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bdcb0245-3bbd-436b-9be6-8c120a55375a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c78a1a5e-16b5-451d-8afe-8b6b99b2393d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2c964394-f690-45ae-9006-c50b4ece8d84"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7f8629f3-f3a5-4cf0-8e89-9c8128676cb3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:38cd7ae9-bc41-4ef9-82a9-6829cdbb15aa"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:59a94dc6-61e0-4325-bf47-ff33476c6b01"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:93feeff9-8bae-4873-853a-14f80412c13f"/>
+    <ns:title></ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:78859ccf-24e8-4bab-b5ee-3a4ad42c3b93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4c0fbc1e-14f8-4ffe-aeb8-0ea213eb9fab"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:effa8ca3-eb08-4c26-9c03-a3a417a97787"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:450cc954-1d16-49c7-9ccf-6a25bd4f074b">
+    <ns:title>lede øvelser for oppvarming, klang og intonasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:587816e2-a62b-45e3-ac11-b617ffc26adf">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:afdf9db6-6874-4626-a97d-7d53b30b00ad"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:78859ccf-24e8-4bab-b5ee-3a4ad42c3b93"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8629f3-f3a5-4cf0-8e89-9c8128676cb3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6d527162-83fa-497c-8407-0d5b3e080f84"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4c0fbc1e-14f8-4ffe-aeb8-0ea213eb9fab"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:16c9a2f5-5eca-4bdb-8090-108351852010"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:93feeff9-8bae-4873-853a-14f80412c13f"/>
+    <ns:title>Produksjonsledelse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c78a1a5e-16b5-451d-8afe-8b6b99b2393d">
+    <ns:title>velge repertoar for ulike ensembler og vurdere vanskegrad</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16c9a2f5-5eca-4bdb-8090-108351852010">
+    <ns:title>planlegge og vurdere repertoar, arrangement og presentasjonsform for ulike målgrupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6d527162-83fa-497c-8407-0d5b3e080f84">
+    <ns:title>gjøre rede for hovedprinsipper i forvaltning av opphavsrett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:93feeff9-8bae-4873-853a-14f80412c13f">
+    <ns:title>lede planlegging og gjennomføring av produksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:78859ccf-24e8-4bab-b5ee-3a4ad42c3b93">
+    <ns:title>bruke musikkfaglig kompetanse som grunnlag for næringsvirksomhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:effa8ca3-eb08-4c26-9c03-a3a417a97787">
+    <ns:title>beherske grunnleggende takteringsfigurer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bdcb0245-3bbd-436b-9be6-8c120a55375a">
+    <ns:title>bruke partitur som utgangspunkt for praktisk arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:afdf9db6-6874-4626-a97d-7d53b30b00ad">
+    <ns:title>bruke digitale verktøy i planlegging, dokumentasjon og gjennomføring av produksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:06f1d995-6348-4710-8a20-8128183db943">
+    <grep:hovedomraader rdf:resource="uuid:587816e2-a62b-45e3-ac11-b617ffc26adf"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:a8f8254d-7927-4248-81d8-2d24decbc688"/>
+    <grep:hovedomraader rdf:resource="uuid:df101561-ffc6-4b46-a8ea-1fa1fc5a1d0f"/>
+    <grep:kode>MUS7-01</grep:kode>
+    <ns:title>Læreplan i instruksjon og ledelse - programfag i utdanningsprogram for musikk, dans, drama, programområde for musikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7f8629f3-f3a5-4cf0-8e89-9c8128676cb3">
+    <ns:title>gi eksempler på ulike muligheter for finansiering av produksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2c964394-f690-45ae-9006-c50b4ece8d84">
+    <ns:title>gi veiledning ut fra notebildet og egne intensjoner i en øvingssituasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

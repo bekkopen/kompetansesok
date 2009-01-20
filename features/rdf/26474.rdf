@@ -1,0 +1,1217 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:219f033b-3e2a-4e43-8095-59e46e7d044d">
+    <ns:title>Etter 7. årstrinn</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a8a6378-35d8-4fc0-885e-f6e71226b92e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f303f112-8082-454a-89e0-ea2dbb70c9d3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f2a72ca5-fdb2-4109-bf9a-21ec0d6d4547"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5722f3ee-f251-492a-bb63-a3fb0792f05e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2c3bd35f-2d39-41b2-a836-43b46ad17816"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8a8b88ed-562c-4260-be43-d4b36c582e6f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fffe9294-1014-4c13-8ba7-c9707ab5b927"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7d323413-7e6f-4257-b7e7-fdfe7502e0a2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2d1d6ee4-b549-4637-877c-445a999f805e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e82dfa91-672f-41b2-9fac-d3eb34da841c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:72c0b0b6-7e65-4626-85cb-fbe420e077df"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aebae09f-3621-4fa2-8440-16ff0c7447c7"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:19db8ddc-a95c-476e-981f-0fa818f75cd3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e1110786-d885-46ab-9c54-c23d5d179c21"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4717c987-787b-47de-ac74-64112e9adb17"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4a025e34-71e6-482f-9893-9538834e95d8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:790f36e5-3495-4032-b1e8-14042ee212b8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c072c52c-137a-4c56-9bc0-6b9e1be44ce5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e75742a7-da7e-4ac3-9f3a-38401d25a7f9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:90ec2ba5-e3cd-4ff9-a704-0e41b5c29da4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:84c85936-f552-4113-b0bd-34d0ae851cac"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:32b5ddae-2d51-48c2-a9be-11209a603a62"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6299eefc-20d2-427c-bc99-915b7ff57e7c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3558f6fe-e0ed-4182-a2bd-80b11bf0f927"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dc9894f8-bc7c-4b35-87d7-dcafb1c47ac1"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:a54b056c-f352-4e79-acf5-68e051c308a3"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5b2c09a-2655-4630-938e-15f110bbaddb">
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:7e703755-e272-486f-bc52-524f84edd3a4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2294bee5-263d-48b7-8f90-bf9f8fdb9048"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6a1c3cb8-5387-4e54-a181-45a5c63a2387"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6b56f00f-8338-471a-b00c-76ffb40945cb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c4f4108f-c683-4c80-a2e1-82a7e9d77414"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a4897a1-a16f-4f04-84e4-fa3861c8ba1b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fe95830d-5207-410d-a8d6-461bba956f31"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e2868a22-a040-4b6e-aef1-ae84b0ba0b10"/>
+    <ns:title>Etter Vg2 studieforberedende utdanningsprogram</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8ba526b8-0595-4ad9-a26e-504b65cc67d4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9fd8fbe8-b872-4225-a39a-68b6b7d9c2d9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b62b1fdf-8149-4af2-8875-4398d7b6a8d0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cd2faa18-6bce-4aa4-8b49-4343a7d863af"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b327180c-6b0c-42ef-a066-6231d39ab4a1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6b8a0edc-6160-487e-8395-4f26a2ac9f09"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:748cea91-2bdf-44b5-bffa-6d46398c00ce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cf639523-f80c-4c79-926d-c14f783ae088">
+    <ns:title>avlese og kommunisere på ”International Sign”</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd8cdc7d-5ccd-4005-b94a-de8bdb079064">
+    <ns:title>vurdere språklige nyanser ved oversettelser mellom tegnspråk og norsk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e9edad6a-6feb-4a95-8800-286ed5266bda">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7abdfd62-596c-47b3-85bc-a3b9492d1bcf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:31c3b8ad-e484-48af-97cc-50302ed9a309"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2b1f31e8-1ef6-48c2-9945-9ec050b2288b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c6bd5072-597c-42cf-bc2b-4aab2b0efab1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:59790fdf-1a52-4adf-94c6-cb69ac43f6ac"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8124e0bd-aba4-40ac-92fc-3a8819b955c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:095ce0e2-21ab-4608-8df5-ead6ac1bb469"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:00238baf-2bff-4e02-b1fb-d29d9ca7a760"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c549d5e9-e36b-4ae1-926e-7632108f8bc7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ebf6f014-ea7a-4dcf-876c-9f7cf94baec5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e5ef7a9e-6bf5-44f1-92c6-017b89335522"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:315d7501-fc47-43b6-bb89-d0f6b21de5e8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4b501279-6b74-4552-850a-bd736ce267bc"/>
+    <ns:title>Etter Vg3 – studieforberedende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d40c42d8-58ea-4eb1-9d8a-974dac4a12a4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a6e188d5-689f-4ed5-be6d-9c4f595d5445"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a90ab459-300d-433d-a261-74b6d4b67e75"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cf639523-f80c-4c79-926d-c14f783ae088"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d0e7e479-99e6-452c-a52e-dcb88b3eec6d">
+    <ns:title>samtale om steds- og persontegn og diskutere opprinnelse til slike tegn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:17d6609b-c2c1-4bcf-add8-a83af188d93b">
+    <ns:title>fortelle, forklare, gi og ta imot beskjeder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:76db8bba-31ac-41b9-9a01-78be7d3da5f0">
+    <ns:title>beskrive og forklare uttrykksformer i døvekulturen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6e188d5-689f-4ed5-be6d-9c4f595d5445">
+    <ns:title>gjøre rede for norsk tegnspråkpolitikk fra 1900 frem til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96767326-de8c-4a35-b8ac-d96b2da4c6fd">
+    <ns:title>delta i utforskende samtaler om litteratur, teater og film med spesiell vekt på døvekultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2b9cf44d-550c-4fe8-a395-bcaf642843dd">
+    <ns:title>lage fortellinger, poesi og sakpreget tekst på tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5ea58a8c-ced6-4cfe-a696-b7f199bfcd31">
+    <ns:title>forklare hvordan tekster i ulike sjangere kan bygges opp på ulike måter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:74c48864-78b0-49f9-801e-bba4897e8712">
+    <ns:title>arbeide kreativt med tekstskaping på tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c072c52c-137a-4c56-9bc0-6b9e1be44ce5">
+    <ns:title>gi eksempler på hvordan tegn dannes og endres over tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0be1e7c7-4e47-46dc-99a7-637ce7db7775">
+    <ns:title>beskrive likheter og forskjeller mellom døvekultur og norsk kultur før og nå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aebae09f-3621-4fa2-8440-16ff0c7447c7">
+    <ns:title>skape tegnspråktekster strukturert etter tidsrekkefølge og tema, med et rikt tegnforråd og variert setningskonstruksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:748cea91-2bdf-44b5-bffa-6d46398c00ce">
+    <ns:title>gjengi innholdet i et utvalg nordiske tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:945609c2-b8c3-47d2-8402-6a3369ea5a4c">
+    <ns:title>Norsk tegnspråk Vg3 påbygging til generell studiekompetanse</ns:title>
+    <grep:kode>NOR4Z08</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1884dd93-173f-4808-ad29-00159f847e42">
+    <ns:title>Norsk tegnspråk Vg1 studieforberedende og Vg2 yrkesfaglige utdanningsprogram</ns:title>
+    <grep:kode>NOR4Z05</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c464f529-ff77-433d-ae17-200bffcbc699">
+    <ns:title>beskrive likheter og forskjeller mellom ulike varianter av norsk tegnspråk og mellom ulike nordiske tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:652b1c66-4225-4de9-8861-3e6262093f10">
+    <ns:title>lage fortellinger ved å kombinere tegnspråk og bilder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b9667e0b-0df1-4566-9402-8b26df21772f">
+    <ns:title>beskrive de nordiske lands tegnspråksituasjon og tegnspråkpolitikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c83b088-c078-49bd-a11b-de9e7bb14518">
+    <ns:title>forklare hvordan tegnspråktekster er bygget opp</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1568fd92-65ef-42f0-8416-3028b93695ee">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d1d07d2a-65cf-4623-ad62-77fd3cf931f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2cb647e2-6204-4367-8e6f-99404ebf5824"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2d6dee29-c8d9-4750-bcb1-eba50e4c1c27"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:00d3cdbe-631a-45ef-857a-0f998581ca01"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ad045e88-796c-4a4d-9d50-0a5b33b72ee8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bdd3172a-5eae-4d16-9e42-f348409f15a3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e767cf1b-070b-41f6-8ede-dd53de110916"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:27d4a37b-a125-4408-ad4c-2f3a5ac79f34"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:652b1c66-4225-4de9-8861-3e6262093f10"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b8841929-b4ca-43e3-b1ee-1150e98efe05"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eb73ba32-1986-46b7-a9bb-7ffe648185da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c0f1d6ff-f175-428c-933c-dcc3e8fbb722"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:869d5424-f921-4a7d-af8c-ee7bf0a4c67d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fb35a3e6-ef84-481d-8b0e-48235c82630c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:96371d71-3ef3-4d05-bad7-8febdb8884fc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0bc6cf4a-7378-4af7-ad59-8f6c486f7e5d"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:021a85c5-1540-44fe-8119-0b966dcd9ef6"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:7b9bef42-7223-4b1c-a5af-84137b1dcf22"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:17d6609b-c2c1-4bcf-add8-a83af188d93b"/>
+    <ns:title>Etter 4. årstrinn</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:741c3b62-7f78-4450-a589-8e74e04c9e29"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2b9cf44d-550c-4fe8-a395-bcaf642843dd"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d304f2c3-9397-4722-9359-da594548ad31"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0be1e7c7-4e47-46dc-99a7-637ce7db7775"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a0aea8d-c458-44a6-8f59-73d8cd6ce05a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3e2aacab-ecc4-4a3a-942c-e2ed8d5c2016"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2bf3b2a5-e257-4476-9b23-17ff78197511"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:85b75474-c43f-45d5-a935-2b5665fb1623">
+    <ns:title>gjøre rede for utviklingslinjer i norsk og internasjonal døvehistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:70da6055-0bd1-4f6d-ad22-2d25dcc1ec5c">
+    <ns:title>gjøre rede for ulike arenaer hvor døvekulturen utspilles</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f4ce1a9b-c900-4513-8691-37dc38d0e577">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:361745ad-da8f-48e7-83ca-0471d9f99c2c"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d0e7e479-99e6-452c-a52e-dcb88b3eec6d"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:5ad98902-e3b7-4800-a022-c787ccb619fb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:27f05eee-a9f4-423f-8451-324c10ab27a0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:322f4668-f065-4264-a330-321a55a90845"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a34c8796-c3dd-4bfd-9caf-1a49eea91f98"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2913a0a0-c7a5-4661-8269-2b158cc96cc0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:18527db6-841e-43bf-9e47-d0972fdefc87"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4386cf1b-fa3d-430d-a5e8-c6cb77188473"/>
+    <ns:title>Etter 2. årstrinn </ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:74c48864-78b0-49f9-801e-bba4897e8712"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a556829a-4767-474d-a295-ebe90a3d7552"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:03210931-f145-48fb-a8e7-a1a457a28701"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:33527c35-2b5d-4107-bee2-1f0df157edf0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:228d03d6-9db5-48cc-ba88-793ce5ca4874"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:db39f4f1-4a49-40ea-ae0d-c607c234587b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ca05440e-858e-4bdd-9f80-c76714c998fd"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2991dd14-6661-4bd9-8644-79276fa1ed2d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b327180c-6b0c-42ef-a066-6231d39ab4a1">
+    <ns:title>drøfte hvordan identitet kan påvirke kulturelle uttrykksformer i tegnspråkmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:322f4668-f065-4264-a330-321a55a90845">
+    <ns:title>leke, improvisere og eksperimentere med håndform, rytme, bevegelse, tegn og meningsbærende elementer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ba495f27-81b3-4c89-a130-e554840dcd41">
+    <ns:title>dokumentere hvordan norsk tegnspråk har blitt påvirket og endret over tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1a43213c-c617-430c-9b43-4efd35bb87e1">
+    <ns:title>beskrive og vurdere hvordan sjangere og språkvarianter i tegnspråk brukes av representanter for ulike grupper og i ulike sosiale sammenhenger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45f06a23-1b4f-4a41-a538-5a2e104deee6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bdd3172a-5eae-4d16-9e42-f348409f15a3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b9667e0b-0df1-4566-9402-8b26df21772f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7abdfd62-596c-47b3-85bc-a3b9492d1bcf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7d323413-7e6f-4257-b7e7-fdfe7502e0a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d935f59d-3c21-4414-baaf-b214bae8193f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:27d4a37b-a125-4408-ad4c-2f3a5ac79f34"/>
+    <ns:title>Språk og kultur</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2c94ac6b-e64c-4e3f-baae-16c46c6fdfa3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7c83b088-c078-49bd-a11b-de9e7bb14518"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:95a006d0-fa1f-4461-beb2-8f4a98f33686"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8b1a6030-e715-4ea2-af26-860dd1005634"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8124e0bd-aba4-40ac-92fc-3a8819b955c0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e75742a7-da7e-4ac3-9f3a-38401d25a7f9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c464f529-ff77-433d-ae17-200bffcbc699"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:18ec2e46-7032-472d-9d66-a448dd2c3d4f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a6e188d5-689f-4ed5-be6d-9c4f595d5445"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:29ae6188-0ddc-48c1-9866-531e8794728e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:00d3cdbe-631a-45ef-857a-0f998581ca01"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:90ec2ba5-e3cd-4ff9-a704-0e41b5c29da4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:76db8bba-31ac-41b9-9a01-78be7d3da5f0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:869d5424-f921-4a7d-af8c-ee7bf0a4c67d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c82e2fd9-ebd6-43c8-b197-32ad39132e41"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2294bee5-263d-48b7-8f90-bf9f8fdb9048"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2913a0a0-c7a5-4661-8269-2b158cc96cc0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d0e7e479-99e6-452c-a52e-dcb88b3eec6d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c072c52c-137a-4c56-9bc0-6b9e1be44ce5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2d1d6ee4-b549-4637-877c-445a999f805e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ba495f27-81b3-4c89-a130-e554840dcd41"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:72c0b0b6-7e65-4626-85cb-fbe420e077df"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a34c8796-c3dd-4bfd-9caf-1a49eea91f98"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8ba526b8-0595-4ad9-a26e-504b65cc67d4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c6bd5072-597c-42cf-bc2b-4aab2b0efab1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2bf3b2a5-e257-4476-9b23-17ff78197511"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0be1e7c7-4e47-46dc-99a7-637ce7db7775"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9272030e-a20d-4dcf-92da-e1945f9c03a3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c0f1d6ff-f175-428c-933c-dcc3e8fbb722"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b62b1fdf-8149-4af2-8875-4398d7b6a8d0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0e67b44d-affc-4ca1-b2e7-00747cc5538b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6b8a0edc-6160-487e-8395-4f26a2ac9f09"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a35302bb-7442-4bd5-8959-e159ee15adc3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e601b94f-56cd-4737-aee6-ec4e38a4e7de"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:06a4cb89-c383-4b6f-a83a-a3150c5f26e3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fb35a3e6-ef84-481d-8b0e-48235c82630c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b327180c-6b0c-42ef-a066-6231d39ab4a1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cf83a9bd-7abc-462b-af59-5a6098c4a298"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:70da6055-0bd1-4f6d-ad22-2d25dcc1ec5c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:48bae5aa-0ea7-4b32-bda2-5c106f6ab7c0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:021a85c5-1540-44fe-8119-0b966dcd9ef6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e82dfa91-672f-41b2-9fac-d3eb34da841c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a556829a-4767-474d-a295-ebe90a3d7552"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dd8cdc7d-5ccd-4005-b94a-de8bdb079064"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1a43213c-c617-430c-9b43-4efd35bb87e1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:03210931-f145-48fb-a8e7-a1a457a28701"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:85b75474-c43f-45d5-a935-2b5665fb1623"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a7e467b-def5-4094-bd90-e7f16c1617b6"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31c3b8ad-e484-48af-97cc-50302ed9a309"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:03210931-f145-48fb-a8e7-a1a457a28701">
+    <ns:title>forbinde bokstavene i håndalfabetet med de skriftlige symbolene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a62519ae-49a7-4601-926e-bf714430ff25">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a56375ee-3c5d-441e-83f2-9e1e559ab9d6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d1d07d2a-65cf-4623-ad62-77fd3cf931f5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9fd8fbe8-b872-4225-a39a-68b6b7d9c2d9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:19db8ddc-a95c-476e-981f-0fa818f75cd3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cfc959fb-0a71-46a7-84be-c3d664251208"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b8841929-b4ca-43e3-b1ee-1150e98efe05"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c4f4108f-c683-4c80-a2e1-82a7e9d77414"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e767cf1b-070b-41f6-8ede-dd53de110916"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a8a6378-35d8-4fc0-885e-f6e71226b92e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3db8fccb-3f84-45c5-bbe7-f1c06f47f8b0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dccaafa5-7bf5-4c45-a51b-b20b4e7c7243"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:74c48864-78b0-49f9-801e-bba4897e8712"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd2faa18-6bce-4aa4-8b49-4343a7d863af"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:652b1c66-4225-4de9-8861-3e6262093f10"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ebbd549-fa0a-4986-baff-503987a0e9b1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ebf6f014-ea7a-4dcf-876c-9f7cf94baec5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a06910ca-f478-4348-a299-3126f7d2234e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e1110786-d885-46ab-9c54-c23d5d179c21"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:175087c2-f8b0-4dbf-bcd5-6d54e128fdd2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d3e1b31d-8ce2-411c-a9a8-24f4929a8921"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6299eefc-20d2-427c-bc99-915b7ff57e7c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:095ce0e2-21ab-4608-8df5-ead6ac1bb469"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f2a72ca5-fdb2-4109-bf9a-21ec0d6d4547"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f2e867f5-ceed-4564-b852-830de2086742"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:361745ad-da8f-48e7-83ca-0471d9f99c2c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3d6e6076-c882-445a-b021-de2fdf0b5033"/>
+    <ns:title>Tegnspråktekster</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:32b5ddae-2d51-48c2-a9be-11209a603a62"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4717c987-787b-47de-ac74-64112e9adb17"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a90ab459-300d-433d-a261-74b6d4b67e75"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2cb647e2-6204-4367-8e6f-99404ebf5824"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63bda514-818a-42fa-8f36-9cb71e839c03"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e5ef7a9e-6bf5-44f1-92c6-017b89335522"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:228d03d6-9db5-48cc-ba88-793ce5ca4874"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:59790fdf-1a52-4adf-94c6-cb69ac43f6ac"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4b501279-6b74-4552-850a-bd736ce267bc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:84c85936-f552-4113-b0bd-34d0ae851cac"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:748cea91-2bdf-44b5-bffa-6d46398c00ce"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3e2aacab-ecc4-4a3a-942c-e2ed8d5c2016"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8f31a061-a0cd-4739-a347-473b3c71a158"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:06c2195c-8576-4bd7-b50f-0b4cf4681434"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f65e5e7c-29ce-43b0-8f7b-bd682e6017b5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2b9cf44d-550c-4fe8-a395-bcaf642843dd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c919e2a8-0e2f-4339-ad23-d653ed28d1a0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2c3bd35f-2d39-41b2-a836-43b46ad17816"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:33527c35-2b5d-4107-bee2-1f0df157edf0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:96371d71-3ef3-4d05-bad7-8febdb8884fc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a8b88ed-562c-4260-be43-d4b36c582e6f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ea58a8c-ced6-4cfe-a696-b7f199bfcd31"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0bc6cf4a-7378-4af7-ad59-8f6c486f7e5d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5bb8a199-9aa3-4a94-9127-2efac9c0b6ca"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:aebae09f-3621-4fa2-8440-16ff0c7447c7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a3cbdae-0acb-4104-99bc-e4899d5f7533"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c7f9ed3f-a23d-4dde-9b27-6152a71c780d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d7a0a4a1-91e8-423c-a2f8-15d625f0bb36"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2d6dee29-c8d9-4750-bcb1-eba50e4c1c27"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8c06c2e6-7911-4aab-9c15-992c0af74ab7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6b56f00f-8338-471a-b00c-76ffb40945cb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c549d5e9-e36b-4ae1-926e-7632108f8bc7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d774f162-8200-43d8-b24b-7da4ee9036f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:84c85936-f552-4113-b0bd-34d0ae851cac">
+    <ns:title>vurdere egne og andres tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a1c3cb8-5387-4e54-a181-45a5c63a2387">
+    <ns:title>diskutere og reflektere rundt det å tilhøre en språklig og kulturell minoritet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:021a85c5-1540-44fe-8119-0b966dcd9ef6">
+    <ns:title>beskrive geografiske varianter av tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2cb647e2-6204-4367-8e6f-99404ebf5824">
+    <ns:title>bruke digitale verktøy i arbeid med tekstskaping</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d40c42d8-58ea-4eb1-9d8a-974dac4a12a4">
+    <ns:title>fremføre et utvalg litteratur innen poesi, drama og prosa</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2913a0a0-c7a5-4661-8269-2b158cc96cc0">
+    <ns:title>bruke et håndalfabet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db39f4f1-4a49-40ea-ae0d-c607c234587b">
+    <ns:title>delta aktivt i samtaler i små og store grupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0e67b44d-affc-4ca1-b2e7-00747cc5538b">
+    <ns:title>vurdere sammenhengen mellom språk og identitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e5ef7a9e-6bf5-44f1-92c6-017b89335522">
+    <ns:title>diskutere språklige likheter og forskjeller mellom nordiske tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7abdfd62-596c-47b3-85bc-a3b9492d1bcf">
+    <ns:title>gjennomføre arbeidet med en selvvalgt fordypningsoppgave knyttet til historie og kultur og utforme den som en tegnspråktekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e2aacab-ecc4-4a3a-942c-e2ed8d5c2016">
+    <ns:title>diskutere egne og andres tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2294bee5-263d-48b7-8f90-bf9f8fdb9048">
+    <ns:title>gjøre rede for hvordan norsk tegnspråk har blitt og blir påvirket av andre tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a556829a-4767-474d-a295-ebe90a3d7552">
+    <ns:title>samtale om likheter og forskjeller i ulike teksttyper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e767cf1b-070b-41f6-8ede-dd53de110916">
+    <ns:title>oversette enkle tekster fra norsk til tegnspråk og fra tegnspråk til norsk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn10">
+    <ns:title>Tiende årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0bc6cf4a-7378-4af7-ad59-8f6c486f7e5d">
+    <ns:title>gjenkjenne og bruke de språklige virkemidlene gjentakelse, kontrast og enkle språklige bilder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:32b5ddae-2d51-48c2-a9be-11209a603a62">
+    <ns:title>gi uttrykk for forståelse av og opplevelser av lengre tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dc9894f8-bc7c-4b35-87d7-dcafb1c47ac1">
+    <ns:title>innlede til og lede møter og diskusjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00238baf-2bff-4e02-b1fb-d29d9ca7a760">
+    <ns:title>Norsk tegnspråk Vg3 studieforberedende utdanningsprogram</ns:title>
+    <grep:kode>NOR4Z07</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4386cf1b-fa3d-430d-a5e8-c6cb77188473">
+    <ns:title>lytte og gi respons til andre i samtaler og under framføringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:21ac5424-4dd8-457e-99b7-eac096d27469">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:315d7501-fc47-43b6-bb89-d0f6b21de5e8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e8901726-d684-496c-8d61-61f4ed33cb38"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cf639523-f80c-4c79-926d-c14f783ae088"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:27f05eee-a9f4-423f-8451-324c10ab27a0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:17d6609b-c2c1-4bcf-add8-a83af188d93b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5722f3ee-f251-492a-bb63-a3fb0792f05e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e2868a22-a040-4b6e-aef1-ae84b0ba0b10"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2991dd14-6661-4bd9-8644-79276fa1ed2d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d304f2c3-9397-4722-9359-da594548ad31"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fe95830d-5207-410d-a8d6-461bba956f31"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1cbce377-1eb9-4205-b5d6-aa100aef5092"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad243d7c-508e-47ec-b2dd-65c7c52c1c9b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ca05440e-858e-4bdd-9f80-c76714c998fd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:790f36e5-3495-4032-b1e8-14042ee212b8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:726e346d-d779-48a4-aff9-75788b057bc2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d40c42d8-58ea-4eb1-9d8a-974dac4a12a4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eb73ba32-1986-46b7-a9bb-7ffe648185da"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:741c3b62-7f78-4450-a589-8e74e04c9e29"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:18527db6-841e-43bf-9e47-d0972fdefc87"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:98c6d4c9-c229-48d2-8d0c-f03369683780"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3558f6fe-e0ed-4182-a2bd-80b11bf0f927"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:927dcf28-64ec-41f1-b2b5-078926476b35"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:96f9900c-0812-41bd-98ca-9c2656554e5d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bcff2322-d532-41c6-9385-4c5598043518"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4386cf1b-fa3d-430d-a5e8-c6cb77188473"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:114cbf00-4313-48aa-8508-438a85939a4f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f303f112-8082-454a-89e0-ea2dbb70c9d3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4c6ce29a-70c1-4a68-bafb-50041b65edd8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4a025e34-71e6-482f-9893-9538834e95d8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad045e88-796c-4a4d-9d50-0a5b33b72ee8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6a1c3cb8-5387-4e54-a181-45a5c63a2387"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2b1f31e8-1ef6-48c2-9945-9ec050b2288b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db39f4f1-4a49-40ea-ae0d-c607c234587b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3d1d5dcb-caaa-4187-a7ef-2ff0c0be539d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0d68d310-98d2-4945-b26c-1db5ce84ebc0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b40e84c6-e0c8-4720-8a1d-a291dae7ab06"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ed70cfd-363f-4c4f-b5c9-0372955de16a"/>
+    <ns:title>Muntlig samhandling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:92459d53-01a5-4cd7-ab01-ef1130da51e8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fffe9294-1014-4c13-8ba7-c9707ab5b927"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a0aea8d-c458-44a6-8f59-73d8cd6ce05a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:12f572d6-b98d-4c27-8d0e-e190ebfe6627"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc9894f8-bc7c-4b35-87d7-dcafb1c47ac1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:acb91b78-2904-4d82-9a4a-03958308a94a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:322f4668-f065-4264-a330-321a55a90845"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:96767326-de8c-4a35-b8ac-d96b2da4c6fd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8c138c52-361e-40f1-98ce-29f117b7b133"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a4897a1-a16f-4f04-84e4-fa3861c8ba1b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:27f372cc-a17b-4f53-b839-69e44e9da21d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5bb8a199-9aa3-4a94-9127-2efac9c0b6ca">
+    <ns:title>gjøre rede for og bruke et bredt register av språklige virkemidler i ulike sjangere og anvende det i egen tekstproduksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:361745ad-da8f-48e7-83ca-0471d9f99c2c">
+    <ns:title>uttrykke sine egne tekstopplevelser gjennom tegnspråk, tegninger, bilder og bevegelse
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00d3cdbe-631a-45ef-857a-0f998581ca01">
+    <ns:title>gjenkjenne og avlese svensk enhåndsalfabet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:27f05eee-a9f4-423f-8451-324c10ab27a0">
+    <ns:title>uttrykke sine egne følelser og meninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c549d5e9-e36b-4ae1-926e-7632108f8bc7">
+    <ns:title>analysere og sammenligne virkemidler i ulike sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a90ab459-300d-433d-a261-74b6d4b67e75">
+    <ns:title>presentere resultatet av et større tegnspråkfaglig arbeid eller prosjekt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7d323413-7e6f-4257-b7e7-fdfe7502e0a2">
+    <ns:title>forstå og gjenfortelle enkle tekster på svensk og dansk tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:095ce0e2-21ab-4608-8df5-ead6ac1bb469">
+    <ns:title>beherske tekstutvikling fra ide til produkt og kunne tilpasse språk og virkemidler til ulike tekster og formål</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d774f162-8200-43d8-b24b-7da4ee9036f2">
+    <ns:title>bruke datateknologien til å arkivere og systematisere egne tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dccaafa5-7bf5-4c45-a51b-b20b4e7c7243">
+    <ns:title>analysere og vurdere hvordan døve og tegnspråk fremstilles i ulike medier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63bda514-818a-42fa-8f36-9cb71e839c03">
+    <ns:title>vurdere egne tekster og egen tekstskaping ved hjelp av kunnskap om språk og tekstlingvistikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:27f372cc-a17b-4f53-b839-69e44e9da21d">
+    <ns:title>forstå og gjengi informasjon fra svensk og dansk tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c0f1d6ff-f175-428c-933c-dcc3e8fbb722">
+    <ns:title>beskrive noen av funksjonene til ulike ytringer og setningstyper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:869d5424-f921-4a7d-af8c-ee7bf0a4c67d">
+    <ns:title>beskrive møteplasser for døvekultur før og nå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2b1f31e8-1ef6-48c2-9945-9ec050b2288b">
+    <ns:title>presentere et tema fra et studieretningsfag for en målgruppe som ikke kan tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e75742a7-da7e-4ac3-9f3a-38401d25a7f9">
+    <ns:title>forklare noen likheter og forskjeller mellom å bruke språk spontant og forberedt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:31c3b8ad-e484-48af-97cc-50302ed9a309">
+    <ns:title>gjøre rede for forholdet mellom muntlig og skriftlig språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a56375ee-3c5d-441e-83f2-9e1e559ab9d6">
+    <ns:title>gjengi innholdet i et utvalg nordiske tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fffe9294-1014-4c13-8ba7-c9707ab5b927">
+    <ns:title>drøfte og vurdere skjønnlitterære tekster med utgangspunkt i egne opplevelser og med forståelse for språk og innhold</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b62b1fdf-8149-4af2-8875-4398d7b6a8d0">
+    <ns:title>vurdere språklige nyanser ved oversettelser mellom tegnspråk og norsk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2cb13285-6878-4c86-9235-3bf937a6ab10">
+    <ns:title>Etter Vg1 – studieforberedende program og Vg2 – yrkesfaglig utdanningsprogram</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:76db8bba-31ac-41b9-9a01-78be7d3da5f0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a7e467b-def5-4094-bd90-e7f16c1617b6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:726e346d-d779-48a4-aff9-75788b057bc2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:12f572d6-b98d-4c27-8d0e-e190ebfe6627"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cf83a9bd-7abc-462b-af59-5a6098c4a298"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:06c2195c-8576-4bd7-b50f-0b4cf4681434"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:92459d53-01a5-4cd7-ab01-ef1130da51e8"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:927dcf28-64ec-41f1-b2b5-078926476b35"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:48bae5aa-0ea7-4b32-bda2-5c106f6ab7c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d774f162-8200-43d8-b24b-7da4ee9036f2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5bb8a199-9aa3-4a94-9127-2efac9c0b6ca"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:1884dd93-173f-4808-ad29-00159f847e42"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0d68d310-98d2-4945-b26c-1db5ce84ebc0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1a43213c-c617-430c-9b43-4efd35bb87e1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8c06c2e6-7911-4aab-9c15-992c0af74ab7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ba495f27-81b3-4c89-a130-e554840dcd41"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d1d6ee4-b549-4637-877c-445a999f805e">
+    <ns:title>gjøre rede for nordiske døve kunstnere og deres arbeider</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5ebbd549-fa0a-4986-baff-503987a0e9b1">
+    <ns:title>bruke digitale verktøy til arkivering og systematisering av eget arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e2868a22-a040-4b6e-aef1-ae84b0ba0b10">
+    <ns:title>beherske og forklare prinsippene i enkel kommunikasjon på ”International Sign”</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cf83a9bd-7abc-462b-af59-5a6098c4a298">
+    <ns:title>gjøre rede for likheter og forskjeller mellom de nordiske tegnspråkene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:927dcf28-64ec-41f1-b2b5-078926476b35">
+    <ns:title>bruke kunnskap om språk og tekst i utforskende og vurderende samtaler om original tegnspråktekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a4897a1-a16f-4f04-84e4-fa3861c8ba1b">
+    <ns:title>presentere et tegnspråklig tema for en målgruppe som ikke kan tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:48bae5aa-0ea7-4b32-bda2-5c106f6ab7c0">
+    <ns:title>drøfte sentrale sider ved flerspråklighet og relatere drøftingen til egen flerspråklighet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3558f6fe-e0ed-4182-a2bd-80b11bf0f927">
+    <ns:title>gi en begrunnet vurdering av andres muntlige framføringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8c06c2e6-7911-4aab-9c15-992c0af74ab7">
+    <ns:title>tolke og reflektere over innhold og form i et representativt utvalg tegnspråktekster hentet fra skjønnlitteratur og sakprosa</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8f31a061-a0cd-4739-a347-473b3c71a158">
+    <ns:title>presentere resultatet av et større tegnspråkfaglig arbeid eller prosjekt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:acb91b78-2904-4d82-9a4a-03958308a94a">
+    <ns:title>gjennomføre enkle foredrag, presentasjoner, gjenfortellinger, rollespill og dramatisering, tilpasset ulike mottakere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d3e1b31d-8ce2-411c-a9a8-24f4929a8921">
+    <ns:title>sammenligne og vurdere tekster som overføres fra et språk til et annet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e601b94f-56cd-4737-aee6-ec4e38a4e7de">
+    <ns:title>beskrive tegnspråk utenfor Norden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7b9bef42-7223-4b1c-a5af-84137b1dcf22">
+    <ns:title>Norsk tegnspråk 3.-4. årstrinn</ns:title>
+    <grep:kode>NOR4Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a7e467b-def5-4094-bd90-e7f16c1617b6">
+    <ns:title>forklare språklige og grammatiske særtrekk ved norsk tegnspråk sammenlignet med andre språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d1d5dcb-caaa-4187-a7ef-2ff0c0be539d">
+    <ns:title>forstå og gjengi enkle ytringer på ”Internasjonalt tegnspråk”</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4717c987-787b-47de-ac74-64112e9adb17">
+    <ns:title>bruke digitale verktøy i produksjon av tegnspråktekster og sammensatte tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e8901726-d684-496c-8d61-61f4ed33cb38">
+    <ns:title>presentere et tegnspråklig tema for en målgruppe som ikke kan tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a8b88ed-562c-4260-be43-d4b36c582e6f">
+    <ns:title>strukturere og bygge opp tegnspråktekster i ulike sjangere for å skape sammenheng i den enkelte tekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8124e0bd-aba4-40ac-92fc-3a8819b955c0">
+    <ns:title>beskrive tegnspråk utenfor Norden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eb90ad81-1874-4b03-b387-18096c9271ab">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn10"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8b1a6030-e715-4ea2-af26-860dd1005634"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3d1d5dcb-caaa-4187-a7ef-2ff0c0be539d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c83b088-c078-49bd-a11b-de9e7bb14518"/>
+    <ns:title>Etter 10. årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:98c6d4c9-c229-48d2-8d0c-f03369683780"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c82e2fd9-ebd6-43c8-b197-32ad39132e41"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a35302bb-7442-4bd5-8959-e159ee15adc3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d935f59d-3c21-4414-baaf-b214bae8193f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:06a4cb89-c383-4b6f-a83a-a3150c5f26e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cfc959fb-0a71-46a7-84be-c3d664251208"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:63bda514-818a-42fa-8f36-9cb71e839c03"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:27f372cc-a17b-4f53-b839-69e44e9da21d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5ea58a8c-ced6-4cfe-a696-b7f199bfcd31"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2c94ac6b-e64c-4e3f-baae-16c46c6fdfa3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c919e2a8-0e2f-4339-ad23-d653ed28d1a0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c7f9ed3f-a23d-4dde-9b27-6152a71c780d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ad243d7c-508e-47ec-b2dd-65c7c52c1c9b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d7a0a4a1-91e8-423c-a2f8-15d625f0bb36"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5ebbd549-fa0a-4986-baff-503987a0e9b1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:95a006d0-fa1f-4461-beb2-8f4a98f33686"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a06910ca-f478-4348-a299-3126f7d2234e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1cbce377-1eb9-4205-b5d6-aa100aef5092"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8c138c52-361e-40f1-98ce-29f117b7b133"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:96f9900c-0812-41bd-98ca-9c2656554e5d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c464f529-ff77-433d-ae17-200bffcbc699"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:96767326-de8c-4a35-b8ac-d96b2da4c6fd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:acb91b78-2904-4d82-9a4a-03958308a94a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f65e5e7c-29ce-43b0-8f7b-bd682e6017b5"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:16513c58-d164-48d2-bf43-70e55797ae5c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:70da6055-0bd1-4f6d-ad22-2d25dcc1ec5c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0a3cbdae-0acb-4104-99bc-e4899d5f7533"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9272030e-a20d-4dcf-92da-e1945f9c03a3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:741c3b62-7f78-4450-a589-8e74e04c9e29">
+    <ns:title>forklare hvordan en tolk brukes</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7e703755-e272-486f-bc52-524f84edd3a4">
+    <ns:title>Norsk tegnspråk  Vg2 studieforberedende utdanningsprogram</ns:title>
+    <grep:kode>NOR4Z06</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ed70cfd-363f-4c4f-b5c9-0372955de16a">
+    <ns:title>beherske og forklare prinsippene i enkel kommunikasjon på ”International Sign”</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9fd8fbe8-b872-4225-a39a-68b6b7d9c2d9">
+    <ns:title>produsere og vurdere egne tekster i ulike sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2bf3b2a5-e257-4476-9b23-17ff78197511">
+    <ns:title>samtale om noen likheter og forskjeller mellom tegnspråk og norsk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96371d71-3ef3-4d05-bad7-8febdb8884fc">
+    <ns:title>ordne tekster med tittel, innledning og avslutning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f2a72ca5-fdb2-4109-bf9a-21ec0d6d4547">
+    <ns:title>forklare opphavsrettslige regler for bruk av tekster hentet fra Internett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d304f2c3-9397-4722-9359-da594548ad31">
+    <ns:title>samhandle med andre gjennom lek, dramatisering, samtale og diskusjoner, og praktisere regler for gruppesamtaler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a06910ca-f478-4348-a299-3126f7d2234e">
+    <ns:title>uttrykke seg presist og med et variert og nyansert tegnforråd i ulike typer tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b40e84c6-e0c8-4720-8a1d-a291dae7ab06">
+    <ns:title>diskutere og reflektere rundt det å tilhøre en språklig og kulturell minoritet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5722f3ee-f251-492a-bb63-a3fb0792f05e">
+    <ns:title>drøfte hvordan språk kan uttrykke og skape holdninger til enkeltindivider og grupper av mennesker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:726e346d-d779-48a4-aff9-75788b057bc2">
+    <ns:title>holde foredrag, dramatiseringer, presentasjoner, framføringer og presentere fagstoff</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:59790fdf-1a52-4adf-94c6-cb69ac43f6ac">
+    <ns:title>sammenligne og vurdere tekster som overføres fra et språk til et annet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:95a006d0-fa1f-4461-beb2-8f4a98f33686">
+    <ns:title>drøfte den muntlige fortellingens rolle i vår egen og andre døvekulturer før og nå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:03df98c3-7557-4c24-b37d-19605fad8896">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:e9edad6a-6feb-4a95-8800-286ed5266bda"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:f4ce1a9b-c900-4513-8691-37dc38d0e577"/>
+    <grep:kode>NOR4-01</grep:kode>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:2cb13285-6878-4c86-9235-3bf937a6ab10"/>
+    <grep:hovedomraader rdf:resource="uuid:21ac5424-4dd8-457e-99b7-eac096d27469"/>
+    <ns:title>Læreplan i norsk tegnspråk</ns:title>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:eb90ad81-1874-4b03-b387-18096c9271ab"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:1568fd92-65ef-42f0-8416-3028b93695ee"/>
+    <grep:hovedomraader rdf:resource="uuid:45f06a23-1b4f-4a41-a538-5a2e104deee6"/>
+    <grep:hovedomraader rdf:resource="uuid:a62519ae-49a7-4601-926e-bf714430ff25"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:d5b2c09a-2655-4630-938e-15f110bbaddb"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:219f033b-3e2a-4e43-8095-59e46e7d044d"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:1296aef5-8c7d-42ff-9e83-d4616d4b949e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b8841929-b4ca-43e3-b1ee-1150e98efe05">
+    <ns:title>drøfte noen estetiske virkemidler i tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1296aef5-8c7d-42ff-9e83-d4616d4b949e">
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:945609c2-b8c3-47d2-8402-6a3369ea5a4c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dccaafa5-7bf5-4c45-a51b-b20b4e7c7243"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:175087c2-f8b0-4dbf-bcd5-6d54e128fdd2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e601b94f-56cd-4737-aee6-ec4e38a4e7de"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8f31a061-a0cd-4739-a347-473b3c71a158"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0e67b44d-affc-4ca1-b2e7-00747cc5538b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:18ec2e46-7032-472d-9d66-a448dd2c3d4f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3d6e6076-c882-445a-b021-de2fdf0b5033"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bcff2322-d532-41c6-9385-4c5598043518"/>
+    <ns:title>Etter påbygning til generell studiekompetanse – yrkesfaglige utdanningsprogram</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a56375ee-3c5d-441e-83f2-9e1e559ab9d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d3e1b31d-8ce2-411c-a9a8-24f4929a8921"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b9667e0b-0df1-4566-9402-8b26df21772f"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f2e867f5-ceed-4564-b852-830de2086742"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:29ae6188-0ddc-48c1-9866-531e8794728e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3db8fccb-3f84-45c5-bbe7-f1c06f47f8b0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:114cbf00-4313-48aa-8508-438a85939a4f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ed70cfd-363f-4c4f-b5c9-0372955de16a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:85b75474-c43f-45d5-a935-2b5665fb1623"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b40e84c6-e0c8-4720-8a1d-a291dae7ab06"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dd8cdc7d-5ccd-4005-b94a-de8bdb079064"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e8901726-d684-496c-8d61-61f4ed33cb38"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4c6ce29a-70c1-4a68-bafb-50041b65edd8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:06a4cb89-c383-4b6f-a83a-a3150c5f26e3">
+    <ns:title>gjøre rede for og sammenligne tegnspråkliges og samiske/minoritetsspråkliges rettigheter i Norden og i andre deler av verden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:90ec2ba5-e3cd-4ff9-a704-0e41b5c29da4">
+    <ns:title>finne språklige særtrekk i sitt eget miljø og sammenligne med andre varianter av tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f303f112-8082-454a-89e0-ea2dbb70c9d3">
+    <ns:title>presentere fagstoff med bevissthet om hvem mottakergruppen er</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0d68d310-98d2-4945-b26c-1db5ce84ebc0">
+    <ns:title>mestre ulike muntlig roller i gruppesamtaler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e1110786-d885-46ab-9c54-c23d5d179c21">
+    <ns:title>presentere egne erfaringer med tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a35302bb-7442-4bd5-8959-e159ee15adc3">
+    <ns:title>drøfte spørsmål knyttet til kultur, språk og identitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn7">
+    <ns:title>Syvende årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f65e5e7c-29ce-43b0-8f7b-bd682e6017b5">
+    <ns:title>gjenkjenne de språklige virkemidlene humor, ironi, kontraster og sammenligninger, symboler og språklige bilder og bruke dem i egne tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d935f59d-3c21-4414-baaf-b214bae8193f">
+    <ns:title>gjøre rede for hvilke verdier og tenkemåter som kommer frem i originale tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c919e2a8-0e2f-4339-ad23-d653ed28d1a0">
+    <ns:title>bruke tegnspråktekster og annen bilde- og tekstinformasjon hentet fra bibliotek, internett og massemedier og utvise kildekritikk og referere til benyttede kilder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8c138c52-361e-40f1-98ce-29f117b7b133">
+    <ns:title>vurdere egne og andres muntlige framføringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn4">
+    <ns:title>Fjerde årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:19db8ddc-a95c-476e-981f-0fa818f75cd3">
+    <ns:title>referere og oppsummere tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:790f36e5-3495-4032-b1e8-14042ee212b8">
+    <ns:title>opptre i ulike språkroller gjennom rollespill og drama, fortelling, intervju og presentasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a8a6378-35d8-4fc0-885e-f6e71226b92e">
+    <ns:title>bruke bibliotek og digitale informasjonskanaler på en målrettet måte og kunne gjengi kilder de har brukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:228d03d6-9db5-48cc-ba88-793ce5ca4874">
+    <ns:title>forstå og samtale om innholdet i enkle tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5ad98902-e3b7-4800-a022-c787ccb619fb">
+    <ns:title>Norsk tegnspråk 1.-2. årstrinn</ns:title>
+    <grep:kode>NOR4Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d1d07d2a-65cf-4623-ad62-77fd3cf931f5">
+    <ns:title>beherske et tilstrekkelig tegn- og begrepsforråd til å kunne utrykke kunnskap, erfaring, opplevelser, følelser og egne meninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c4f4108f-c683-4c80-a2e1-82a7e9d77414">
+    <ns:title>analysere og vurdere hvordan døve og tegnspråk fremstilles i ulike medier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eb73ba32-1986-46b7-a9bb-7ffe648185da">
+    <ns:title>gi uttrykk for sine egne tanker og opplevelser om barnelitteratur, teater, filmer, dataspill og TV-programmer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:72c0b0b6-7e65-4626-85cb-fbe420e077df">
+    <ns:title>gjøre rede for utviklingstrekk i døves historie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e82dfa91-672f-41b2-9fac-d3eb34da841c">
+    <ns:title>forstå og kunne bruke ulike tallsystemer i norsk tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f2e867f5-ceed-4564-b852-830de2086742">
+    <ns:title>produsere og vurdere egne tekster i ulike sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b501279-6b74-4552-850a-bd736ce267bc">
+    <ns:title>vurdere argumentasjon i egne og andres tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d6e6076-c882-445a-b021-de2fdf0b5033">
+    <ns:title>vurdere egen utvikling i produksjon av tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4a025e34-71e6-482f-9893-9538834e95d8">
+    <ns:title>lytte til og forstå andre, uttrykke og grunngi sine egne standpunkter og vise respekt for andres</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn2">
+    <ns:title>Andre årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96f9900c-0812-41bd-98ca-9c2656554e5d">
+    <ns:title>lede og referere møter og diskusjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2c3bd35f-2d39-41b2-a836-43b46ad17816">
+    <ns:title>reflektere rundt og vurdere bruk av tegnspråk i media og digitale informasjonskanaler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:315d7501-fc47-43b6-bb89-d0f6b21de5e8">
+    <ns:title>analysere sammenhengen mellom innhold, virkemidler og hensikt i muntlige sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:98c6d4c9-c229-48d2-8d0c-f03369683780">
+    <ns:title>forstå og gjengi enkle ytringer på et tegnspråk fra et engelskspråklig språkområde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ebf6f014-ea7a-4dcf-876c-9f7cf94baec5">
+    <ns:title>vurdere egen utvikling i produksjon av tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8ba526b8-0595-4ad9-a26e-504b65cc67d4">
+    <ns:title>vurdere sammenhengen mellom språk og identitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a54b056c-f352-4e79-acf5-68e051c308a3">
+    <ns:title>Norsk tegnspråk 5.-7. årstrinn</ns:title>
+    <grep:kode>NOR4Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1cbce377-1eb9-4205-b5d6-aa100aef5092">
+    <ns:title>drøfte hvordan språkbruk kan virke diskriminerende og trakasserende</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6299eefc-20d2-427c-bc99-915b7ff57e7c">
+    <ns:title>eksperimentere med ulike tegnspråklige virkemidler og stilvarianter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:06c2195c-8576-4bd7-b50f-0b4cf4681434">
+    <ns:title>beskrive estetiske uttrykk i teater, film, musikkvideo, aviser og reklame, og drøfte ulike funksjoner knyttet til språk og bilde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c6ce29a-70c1-4a68-bafb-50041b65edd8">
+    <ns:title>presentere faglige emner og gi tilbakemelding på andres presentasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad243d7c-508e-47ec-b2dd-65c7c52c1c9b">
+    <ns:title>uttrykke egne meninger i diskusjoner og vurdere hva som er saklig argumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c82e2fd9-ebd6-43c8-b197-32ad39132e41">
+    <ns:title>gjøre rede for ulikheter i slang og ungdomsspråk på tegnspråk og norsk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a34c8796-c3dd-4bfd-9caf-1a49eea91f98">
+    <ns:title>forbinde talltegn med tallbegreper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3db8fccb-3f84-45c5-bbe7-f1c06f47f8b0">
+    <ns:title>bruke digitale verktøy til å analysere egne og andres tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b56f00f-8338-471a-b00c-76ffb40945cb">
+    <ns:title>bruke digitale verktøy til å analysere egne og andres tegnspråktekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:29ae6188-0ddc-48c1-9866-531e8794728e">
+    <ns:title>drøfte hvordan identitet kan påvirke kulturelle uttrykksformer i tegnspråkmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9272030e-a20d-4dcf-92da-e1945f9c03a3">
+    <ns:title>forklare hvordan mening og uttrykk videreføres og endres i tekster som oversettes</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:27d4a37b-a125-4408-ad4c-2f3a5ac79f34">
+    <ns:title>uttrykke tanker om tekster fra ulike tider og kulturer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:12f572d6-b98d-4c27-8d0e-e190ebfe6627">
+    <ns:title>drøfte krav til forberedelse av framføring når situasjonen krever bruk av tolk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d6dee29-c8d9-4750-bcb1-eba50e4c1c27">
+    <ns:title>forstå og samtale om tegnspråktekster for barn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd2faa18-6bce-4aa4-8b49-4343a7d863af">
+    <ns:title>analysere tekster i ulike sjangere for å kunne ta stilling til spørsmål tekstene tar opp og verdier de representerer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:18527db6-841e-43bf-9e47-d0972fdefc87">
+    <ns:title>samtale om hvordan valg av tegn, ansiktsuttrykk og kroppsspråk skaper ulik mening i tegnspråktekster
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad045e88-796c-4a4d-9d50-0a5b33b72ee8">
+    <ns:title>forklare hvordan man gjennom språk kan krenke andre</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c6bd5072-597c-42cf-bc2b-4aab2b0efab1">
+    <ns:title>beskrive de nordiske lands tegnspråksituasjon og tegnspråkpolitikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2991dd14-6661-4bd9-8644-79276fa1ed2d">
+    <ns:title>fortelle sammenhengende om opplevelser og erfaringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b1a6030-e715-4ea2-af26-860dd1005634">
+    <ns:title>drøfte endringer i døvesamfunnet i Norge i et historisk perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b8a0edc-6160-487e-8395-4f26a2ac9f09">
+    <ns:title>gjøre rede for utviklingslinjer i norsk og internasjonal døvehistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:18ec2e46-7032-472d-9d66-a448dd2c3d4f">
+    <ns:title>gjennomføre arbeidet med en selvvalgt fordypningsoppgave knyttet til historie og kultur og utforme den som en tegnspråktekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:114cbf00-4313-48aa-8508-438a85939a4f">
+    <ns:title>presentere eller fremføre et utvalg litteratur innen poesi, drama og prosa</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:175087c2-f8b0-4dbf-bcd5-6d54e128fdd2">
+    <ns:title>beherske tekstutvikling i ulike sjangere fra ide til produkt og kunne tilpasse språk og virkemidler til ulike tekster og formål</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d7a0a4a1-91e8-423c-a2f8-15d625f0bb36">
+    <ns:title>bruke ulike medier, kilder og estetiske uttrykk i egne tegnspråkfaglige og tverrfaglige tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ca05440e-858e-4bdd-9f80-c76714c998fd">
+    <ns:title>samtale om personer og handling i eventyr og fortellinger
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16513c58-d164-48d2-bf43-70e55797ae5c">
+    <ns:title>Norsk tegnspråk 8.-10. årstrinn</ns:title>
+    <grep:kode>NOR4Z04</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a0aea8d-c458-44a6-8f59-73d8cd6ce05a">
+    <ns:title>framføre tegnspråktekster for medelever</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bcff2322-d532-41c6-9385-4c5598043518">
+    <ns:title>analysere og vurdere sammenhengen mellom innhold, virkemidler og hensikt i muntlige sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:92459d53-01a5-4cd7-ab01-ef1130da51e8">
+    <ns:title>bruke relevante og saklige argumenter i diskusjoner og vise åpenhet for andres argumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0a3cbdae-0acb-4104-99bc-e4899d5f7533">
+    <ns:title>vurdere estetiske virkemidler i sammensatte tekster hentet fra informasjons- og underholdningsmedier, reklame og kunst og reflektere over hvordan vi påvirkes av språk, lyd og bilder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bdd3172a-5eae-4d16-9e42-f348409f15a3">
+    <ns:title>avlese og forstå noe svensk og dansk tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2c94ac6b-e64c-4e3f-baae-16c46c6fdfa3">
+    <ns:title>presentere resultatet av fordypning i to selvvalgte emner knyttet til tegnspråk som språk eller døves historie, kultur og organisasjonsliv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe95830d-5207-410d-a8d6-461bba956f31">
+    <ns:title>presentere faglige emner og gi tilbakemelding på andres presentasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7f9ed3f-a23d-4dde-9b27-6152a71c780d">
+    <ns:title>forstå og skape tegnspråktekster i ulike sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cfc959fb-0a71-46a7-84be-c3d664251208">
+    <ns:title>forstå et utvalg tekster på svensk og dansk tegnspråk og gjengi dette som norsk tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:33527c35-2b5d-4107-bee2-1f0df157edf0">
+    <ns:title>lage enkle tekster på tegnspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fb35a3e6-ef84-481d-8b0e-48235c82630c">
+    <ns:title>gjøre rede for enhåndsalfabetet, tohåndsalfabetet og det samiske håndalfabetet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

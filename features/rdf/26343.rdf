@@ -1,0 +1,312 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5462520-4a2c-4bcb-b572-23f811464c74">
+    <ns:title>gjere greie for kva empati tyder innanfor oppvekst-, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fff0c9f9-9d34-4b17-8a91-6896c0e2d59d">
+    <ns:title>gjere greie for kva som kjenneteiknar kommunikasjon som fremjar helse, trivsel og velvære, og sjølv medverke til det</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:22efc7f5-729c-4eaa-9060-45155fab7b71">
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:87d5e98c-a327-4718-b96e-2d43b8fa7947"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8fb6bbfa-bb73-4bec-8ce5-142d420328aa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:37e16183-c46b-48ec-8d30-f02d7ca9e49c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6b8c6303-bd1b-4e4a-af79-f00b527424f7"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bd8e4b1b-330e-48fb-b099-1276e4b92039"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b047438b-b462-4306-b34d-8bc964305881"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:00d4f62b-2652-47f7-aadc-d5065cdcf94e"/>
+    <ns:title>Helsefremjande arbeid</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:649cb1e9-c039-4a88-a337-b944fc525a08"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c455fa8a-fa88-4f5a-80fe-4e2c79ce4409"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b8c6303-bd1b-4e4a-af79-f00b527424f7">
+    <ns:title>bruke rette arbeidsteknikkar og gode arbeidsstillingar, og gjere greie for samanhengen mellom ergonomi og helse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f846722d-dd4f-40e4-b6e3-8216801826cf">
+    <ns:title>diskutere og gi døme på service, etikk og omsorg i oppvekst-, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:81872092-948b-476b-8598-aa2d351808dd">
+    <ns:title>gi døme på korleis empati kjem til uttrykk i handlingar, og sjølv kunne vise empati i veremåten sin</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:87d5e98c-a327-4718-b96e-2d43b8fa7947">
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <grep:kode>HSF1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c455fa8a-fa88-4f5a-80fe-4e2c79ce4409">
+    <ns:title>setje saman enkle måltid og vurdere energi- og næringsinnhaldet i tråd med tilrådingar om eit sunt kosthald frå helsestyresmaktene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ef13ac81-3019-4308-8c2e-5f000213f45a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63e73772-52af-4c66-9664-833df84107df"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:81872092-948b-476b-8598-aa2d351808dd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7edbcf04-b403-4859-8341-27f9e9589f34"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a9f21939-7ae1-4c03-85c4-f0f35d78f21c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d5462520-4a2c-4bcb-b572-23f811464c74"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ea1a6514-0983-40c5-a00f-6ab230a88790"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:766c22a9-e0b0-4f16-9ca5-2956b6f141e8"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:48e69e38-b06a-4e8b-a7e8-a1bcd3c04ec4"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fff0c9f9-9d34-4b17-8a91-6896c0e2d59d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:766c22a9-e0b0-4f16-9ca5-2956b6f141e8">
+    <ns:title>forklare kva sosial kompetanse vil seie, og gi døme på korleis ein sjølv kan bruke sosial kompetanse i møte med menneske som er avhengige av tilbod i oppvekst-, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg1">
+    <ns:title>Videregående trinn 1</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b224b09c-86fc-44ac-9fa7-84ed39b4fd74">
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:kode>HSF1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c38f4dad-3a50-4aec-999b-346f8edeeebd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:efe84be4-3521-4511-82d8-24c46521cd44"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:05bbc296-d967-4317-9074-98ce21bc9066"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e41a0131-675c-47b3-b491-253cf46590d8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:372f5b99-f535-4d3a-bc77-fb7124d4a078"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <ns:title>Yrkesutøving</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3dbf0c6b-be31-44b3-8d18-dbfb3eeef4cb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f846722d-dd4f-40e4-b6e3-8216801826cf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d61970c4-6c41-478c-965d-8a97a30f26a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ceb9128b-41f0-4f8b-9faa-8e54192a48bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc7ea8b2-ff9e-49fc-b5c8-c8ef25e4635d">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a9f21939-7ae1-4c03-85c4-f0f35d78f21c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:48e69e38-b06a-4e8b-a7e8-a1bcd3c04ec4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:81872092-948b-476b-8598-aa2d351808dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:766c22a9-e0b0-4f16-9ca5-2956b6f141e8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ea1a6514-0983-40c5-a00f-6ab230a88790"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:63e73772-52af-4c66-9664-833df84107df"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fff0c9f9-9d34-4b17-8a91-6896c0e2d59d"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d5462520-4a2c-4bcb-b572-23f811464c74"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7edbcf04-b403-4859-8341-27f9e9589f34"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:b224b09c-86fc-44ac-9fa7-84ed39b4fd74"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:084ea80f-4dee-4e86-a014-ed2ac59183b4">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:6a5d1b53-ac4d-48a7-82fe-169efe4f53e7"/>
+    <grep:hovedomraader rdf:resource="uuid:c38f4dad-3a50-4aec-999b-346f8edeeebd"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:fc7ea8b2-ff9e-49fc-b5c8-c8ef25e4635d"/>
+    <grep:hovedomraader rdf:resource="uuid:ef13ac81-3019-4308-8c2e-5f000213f45a"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:22efc7f5-729c-4eaa-9060-45155fab7b71"/>
+    <grep:hovedomraader rdf:resource="uuid:5e4a2035-f915-44a9-b713-70e6539d7b6e"/>
+    <grep:kode>HSF1-01</grep:kode>
+    <ns:title>Læreplan i felles programfag i vg1 helse- og sosialfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3dbf0c6b-be31-44b3-8d18-dbfb3eeef4cb">
+    <ns:title>drøfte korleis endringar i samfunnet påverkar yrkesutøvinga i oppvekst-, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7edbcf04-b403-4859-8341-27f9e9589f34">
+    <ns:title>gjere greie for og gi døme på kva haldningar, verdiar og menneskesyn er, med utgangspunkt i ulike psykologiske perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:372f5b99-f535-4d3a-bc77-fb7124d4a078">
+    <ns:title>gjere greie for korleis ein har organisert oppvekst-, helse- og sosialtenestene i samfunnet i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bd8e4b1b-330e-48fb-b099-1276e4b92039">
+    <ns:title>drøfte helse-, livsstils- og kosthaldsinformasjon og reklame i media</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5e4a2035-f915-44a9-b713-70e6539d7b6e">
+    <ns:title>Helsefremjande arbeid </ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:37e16183-c46b-48ec-8d30-f02d7ca9e49c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b047438b-b462-4306-b34d-8bc964305881"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6b8c6303-bd1b-4e4a-af79-f00b527424f7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c455fa8a-fa88-4f5a-80fe-4e2c79ce4409"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:649cb1e9-c039-4a88-a337-b944fc525a08"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:00d4f62b-2652-47f7-aadc-d5065cdcf94e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8fb6bbfa-bb73-4bec-8ce5-142d420328aa"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bd8e4b1b-330e-48fb-b099-1276e4b92039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8fb6bbfa-bb73-4bec-8ce5-142d420328aa">
+    <ns:title>gjere greie for samanhengar mellom helse og livsstil</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63e73772-52af-4c66-9664-833df84107df">
+    <ns:title>forklare kva eit etisk dilemma er, og gi døme på slike dilemma</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d61970c4-6c41-478c-965d-8a97a30f26a2">
+    <ns:title>greie for sentralt regelverk som regulerer arbeidet i oppvekst-, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ceb9128b-41f0-4f8b-9faa-8e54192a48bd">
+    <ns:title>gi døme på korleis brukaren kan stimulerast til læring og opplevingar, uavhengig av alder, kulturtilhøyring og funksjonsnivå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:37e16183-c46b-48ec-8d30-f02d7ca9e49c">
+    <ns:title>drøfte og gi døme på kva den enkelte og samfunnet kan gjere for å betre eiga helse og folkehelsa, både psykisk og fysisk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:48e69e38-b06a-4e8b-a7e8-a1bcd3c04ec4">
+    <ns:title>drøfte og prøve ut ulike modellar for konflikthandtering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a9f21939-7ae1-4c03-85c4-f0f35d78f21c">
+    <ns:title>kommunisere med ulike brukarar ut frå deira behov og modningsnivå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f5be4f50-a1a5-4154-8322-a8d45c3e5085">
+    <ns:title>Yrkesutøvelse</ns:title>
+    <grep:kode>HSF1Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:649cb1e9-c039-4a88-a337-b944fc525a08">
+    <ns:title>gjere greie for kva den enkelte kan gjere for å halde ved lag eit godt immunforsvar og førebyggje smittespreiing, og forklare kva smittespreiing kan føre til</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a5d1b53-ac4d-48a7-82fe-169efe4f53e7">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:efe84be4-3521-4511-82d8-24c46521cd44"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ceb9128b-41f0-4f8b-9faa-8e54192a48bd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e41a0131-675c-47b3-b491-253cf46590d8"/>
+    <ns:title>Yrkesutøving</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d61970c4-6c41-478c-965d-8a97a30f26a2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f846722d-dd4f-40e4-b6e3-8216801826cf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3dbf0c6b-be31-44b3-8d18-dbfb3eeef4cb"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:372f5b99-f535-4d3a-bc77-fb7124d4a078"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:f5be4f50-a1a5-4154-8322-a8d45c3e5085"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05bbc296-d967-4317-9074-98ce21bc9066"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:05bbc296-d967-4317-9074-98ce21bc9066">
+    <ns:title>gjere greie for kvifor det er viktig med heilskapleg og tverrfagleg samarbeid, og gi døme på yrkesgrupper som er med i slikt samarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b047438b-b462-4306-b34d-8bc964305881">
+    <ns:title>utføre grunnleggjande førstehjelp</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:efe84be4-3521-4511-82d8-24c46521cd44">
+    <ns:title>gjere greie for utfordringar og moglegheiter som vårt fleirkulturelle samfunn representerer for yrkesutøvinga i oppvekst, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e41a0131-675c-47b3-b491-253cf46590d8">
+    <ns:title>gjere greie for kjenneteikn på profesjonalitet i yrke innanfor oppvekst-, helse- og sosialsektoren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ea1a6514-0983-40c5-a00f-6ab230a88790">
+    <ns:title>grunngi og vurdere eigne haldningar og veremåtar når omsorg og utvikling hos brukaren er målet, uavhengig av kultur, religion, livsførsel og funksjonsnivå hos den andre</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00d4f62b-2652-47f7-aadc-d5065cdcf94e">
+    <ns:title>forklare korleis kroppen er bygd opp og fungerer i forhold til livsstilssjukdommar, og forklare konsekvensar av svikt i vitale kroppsfunksjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

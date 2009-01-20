@@ -24,8 +24,6 @@ module Kompetansesok
     #
     # Filene som importeres kan senere importeres i databasen via #importer_til_db
     def importer_til_fil(n=nil)
-      
-      
       FileUtils.rm_rf(@import_dir)
       FileUtils.mkdir_p(@import_dir)
 
@@ -52,49 +50,57 @@ module Kompetansesok
       @out.puts if @out
     end
 
-    def importer_til_db(n=nil)
-      jena = Jena.new
+    def importer_til_db(antall_filer=nil)
+      @jena = Jena.new
       
-      fil_array = n.nil? ? filer : filer[0...n]
+      les_filer(antall_filer)        
+      slett_alt_i_databasen
+      last_inn_kompetansemaal
+      last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
+
+      @out.puts('Import ferdig.') if @out
+    end
+
+    def filer
+      Dir["#{@import_dir}/*.rdf"].sort
+    end
+    
+    
+    private
+    
+    def les_filer(antall)
+      fil_array = antall.nil? ? filer : filer[0...antall]
       @out.puts("Leser #{fil_array.length} RDF filer...") if @out
       fil_array.each do |rdf_fil|
         @out.write('.') if @out
-        jena.les_rdf_fil(rdf_fil)
+        @jena.les_rdf_fil(rdf_fil)
       end
-      @out.puts if @out
-
+    end
+    
+    def slett_alt_i_databasen
       ActiveRecord::Base.transaction do
         @out.puts('Sletter gamle data...') if @out
-        Kompetansemaal.delete_all
-        Kompetansemaalsett.delete_all
-        Fag.delete_all
         Laereplan.delete_all
         Hovedomraade.delete_all
+        Kompetansemaalsett.delete_all
+        Fag.delete_all
         Trinn.delete_all
-
-        @out.puts("Importerer #{jena.trinn.length} Trinn...") if @out
-        Trinn.create!(jena.trinn)
-        @out.puts("Importerer #{jena.hovedomraader.length} Hovedomraade...") if @out
-        Hovedomraade.create!(jena.hovedomraader)
-        @out.puts("Importerer #{jena.laereplaner.length} Laereplan...") if @out
-        Laereplan.create!(jena.laereplaner)
-        @out.puts("Importerer #{jena.fag.length} Fag...") if @out
-        Fag.create!(jena.fag)
-        @out.puts("Importerer #{jena.kompetansemaalsett.length} Kompetansemaalsett...") if @out
-        Kompetansemaalsett.create!(jena.kompetansemaalsett)
+        Kompetansemaal.delete_all
         @out.puts('Database commit...') if @out
       end
-      
+    end
+    
+    def last_inn_kompetansemaal
       if @out
-        @out.puts("Importerer #{jena.kompetansemaal.length} Kompetansemaal...")
+        @out.puts("Importerer #{@jena.kompetansemaal.length} Kompetansemaal...")
         require 'progressbar'
-        pbar = ProgressBar.new("Import", jena.kompetansemaal.length, @out)
+        pbar = ProgressBar.new("Import", @jena.kompetansemaal.length, @out)
       end
        
       batch_size = 500
       n = 0
       loop do
-        batch = jena.kompetansemaal[n...n+batch_size]
+        batch = @jena.kompetansemaal[n...n+batch_size]
         break if batch.nil?
         
         ActiveRecord::Base.transaction do
@@ -104,12 +110,18 @@ module Kompetansesok
         n += batch_size
       end
       pbar.finish if @out
-      
-      @out.puts('Import ferdig.') if @out
     end
-
-    def filer
-      Dir["#{@import_dir}/*.rdf"].sort
+    
+    def last_inn(*typer)
+      ActiveRecord::Base.transaction do        
+        typer.each do |type|
+          data = @jena.send(type.to_s.pluralize.downcase)
+          @out.puts("Importerer #{data.length} #{type}...") if @out
+          type.send(:create!, data)
+        end
+        @out.puts('Database commit...') if @out
+      end
     end
+    
   end 
 end

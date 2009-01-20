@@ -1,0 +1,428 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd932fd5-3716-4e37-80be-d57deeeea852">
+    <ns:title>gjere greie for prosessen frå hending til nyheit i media</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5b4e999b-63fc-43b7-86c8-1f8102163b35">
+    <ns:title>forklare korleis ny teknologi og digitalisering endrar tradisjonelle kommunikasjonsmønster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:89efbff6-8dd0-4ccd-931f-21536d9f2450">
+    <ns:title>vurdere og bruke aktuelle digitale verktøy i ulike former for personleg kommunikasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:67eec69e-dd9c-4fc0-96ac-e4b2d987f272">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:434ca8ce-e93b-4787-af5a-6d79ba335a16"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:739c4a46-8f3e-4ede-b351-7906c796b8f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:99dc1a41-3b00-4b03-b559-d51fb00ab029"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:be06d066-da03-4415-ab9d-19a39a92d9e6"/>
+    <ns:title>Medie- og informasjonskunnskap 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7fa24f6f-9738-4603-9b66-972065558650"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e3655542-f38c-4abb-bb1b-49d1e4af45da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:18ad6dae-96c2-4f66-9f09-55e7181b5617"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d3f7cfe6-91cf-4fb5-8074-7ecdacb2bf19"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:494bb897-2fed-4c97-81f5-5098c7e0a9fb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7078c692-d949-44fa-92f3-95a91da780bd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:401319ec-7c21-40a9-aa59-3eaa4e94e6d7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5acf5587-4f64-4e37-be24-7088b1909c0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:81bef377-a079-49ef-8df8-f85fe0a6615e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d6bc337f-2da1-4a5b-ac9e-194281b505cf"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:29b9ed78-f091-42f3-885f-8d0891a8b2bb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8b147f0a-8e55-4aa9-a865-96f4cca4b2e2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c277e7d-48f6-4599-806e-55016ffecd66"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:96058b14-4d90-46ee-b283-b95271ee2e25"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2158044a-6a0b-44c7-a644-986a064dd37f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:23d7e33d-58e5-4f26-880b-0d319bd6ce4f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:07a6b506-a5fa-40f5-9202-ff0266cb6bcd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c6b25b1d-01d2-4852-bbde-1b759c3247cf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:02e7c7b6-b9d8-4003-b63f-e4e5dbe249b7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:88292b34-ddf3-4192-b150-5c42f655f943"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b9b81834-a0a0-47ab-aed9-d0a2908f2a26">
+    <ns:title>diskutere etiske utfordringar knytte til Internett og nye medium</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c8e48cf-16a6-4643-bade-2ad71f796335">
+    <ns:title>gjere greie for ulike påverknadsmodellar og vurdere korleis folk kan bli påverka av ulike medium</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d3f7cfe6-91cf-4fb5-8074-7ecdacb2bf19">
+    <ns:title>diskutere konsekvensar medieutviklinga har for journalistrolla</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96058b14-4d90-46ee-b283-b95271ee2e25">
+    <ns:title>gjere greie for hovudtrekk i internasjonal mediehistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:88292b34-ddf3-4192-b150-5c42f655f943">
+    <ns:title>gjere greie for sentrale trekk ved mediestrukturen i utviklingsland</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:edbe751a-303f-41f1-8630-6d040f75ad19">
+    <ns:title>forme ut eigne journalistiske medieuttrykk i ulike kanalar og grunngje val av målgruppe, kanal og teknologi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:585ea5be-c999-4e14-900b-3d4abe587ff0">
+    <ns:title>diskutere kva følgjer det kan få at mange er aktive brukarar av media og sjølve utviklar medieprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:99dc1a41-3b00-4b03-b559-d51fb00ab029">
+    <ns:title>diskutere kva for roller informasjonsbyrå og lobbyverksemd spelar i eit demokrati</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3caf390e-3877-4edb-9756-3c8d2655bc1c">
+    <ns:title>diskutere pressa si rolle i utviklinga av demokratiet i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:434ca8ce-e93b-4787-af5a-6d79ba335a16">
+    <ns:title>skape og presentere eigne medieprodukt i ulike kombinasjonar av tekst, lyd og bilde og grunngje val av medium og publiseringsform</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:83cd1cb3-6f7f-47c1-938b-ad75a3aa8fc4">
+    <ns:title>vurdere bruk og misbruk av statistikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:29b9ed78-f091-42f3-885f-8d0891a8b2bb">
+    <ns:title>Medie- og informasjonskunnskap 2</ns:title>
+    <grep:kode>MIN1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7fa24f6f-9738-4603-9b66-972065558650">
+    <ns:title>analysere form og innhald i ulike avis-, radio-, film- og fjernsynssjangrar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b080bf57-ca10-4d62-84b0-398c486bab0d">
+    <ns:title>gjere greie for sentrale kommunikasjonsformer og kommunikasjonsmodellar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd69ecaf-df86-4070-baaa-f8225b8668db">
+    <ns:title>gjere greie for arkitekturen til Internett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:401319ec-7c21-40a9-aa59-3eaa4e94e6d7">
+    <ns:title>lage produksjonsplan for eigne medieproduksjonar med oversikt over tidsbruk og kostnader</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8c4e218a-067a-4a15-b42f-500c0e094b09">
+    <ns:title>forklare kva som ligg i omgrepet pressa sin sjølvjustis, og diskutere konsekvensar av brot på presseetiske normer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:14e90523-3ebf-4ea9-862e-5e0675f517f8">
+    <ns:title>Medie- og informasjonskunnskap 1</ns:title>
+    <grep:kode>MIN1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2158044a-6a0b-44c7-a644-986a064dd37f">
+    <ns:title>gjere greie for ulike medieideologiar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:18ad6dae-96c2-4f66-9f09-55e7181b5617">
+    <ns:title>utforske påverknadsstrategiar i ulike typar medieprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c6b25b1d-01d2-4852-bbde-1b759c3247cf">
+    <ns:title>diskutere media si rolle i utviklinga av demokrati i eit internasjonalt perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d6bc337f-2da1-4a5b-ac9e-194281b505cf">
+    <ns:title>reflektere over media si rolle når det gjeld informasjons-, nyheits- og kulturformidling i det internasjonale mediebildet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:49003115-34d5-4247-a678-21f507dbec6c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:401319ec-7c21-40a9-aa59-3eaa4e94e6d7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b9b81834-a0a0-47ab-aed9-d0a2908f2a26"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:23d7e33d-58e5-4f26-880b-0d319bd6ce4f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:56e8f4e7-f2b6-4401-90b9-39554e699cc8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:edbe751a-303f-41f1-8630-6d040f75ad19"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:89efbff6-8dd0-4ccd-931f-21536d9f2450"/>
+    <ns:title>Uttrykksformer</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6dfafbf4-0af4-4bdb-a96c-fbe9b68a98de"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7078c692-d949-44fa-92f3-95a91da780bd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:81bef377-a079-49ef-8df8-f85fe0a6615e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8c4e218a-067a-4a15-b42f-500c0e094b09"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:019b0f36-0c73-4e73-bf61-024745b01223"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:434ca8ce-e93b-4787-af5a-6d79ba335a16"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7fa24f6f-9738-4603-9b66-972065558650"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:02e7c7b6-b9d8-4003-b63f-e4e5dbe249b7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dd69ecaf-df86-4070-baaa-f8225b8668db"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:207ce8f0-551e-4495-8841-679c6017ff73"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd932fd5-3716-4e37-80be-d57deeeea852"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5acf5587-4f64-4e37-be24-7088b1909c0b">
+    <ns:title>analysere media som ressurs og maktfaktor i samfunns- og arbeidsliv og diskutere opne og skjulte funksjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ae944ea7-7863-4767-bbd3-42f09b107911">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:21758641-9831-4e19-b12e-7232894420af"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1c603062-feb2-4a3a-8893-25087865b145"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c6b25b1d-01d2-4852-bbde-1b759c3247cf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:be06d066-da03-4415-ab9d-19a39a92d9e6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3caf390e-3877-4edb-9756-3c8d2655bc1c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d3f7cfe6-91cf-4fb5-8074-7ecdacb2bf19"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4fb79e26-f3cf-4d8a-95fa-8e84a8baa9df"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:88292b34-ddf3-4192-b150-5c42f655f943"/>
+    <ns:title>Medieutvikling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e3655542-f38c-4abb-bb1b-49d1e4af45da"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:78f6ebd7-4eb8-4213-b21c-458f10efa8a1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:96058b14-4d90-46ee-b283-b95271ee2e25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b8de6dd8-6364-4b3e-9bef-04a7d107863e">
+    <ns:title>vurdere kva som kan påverke val av medium</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:56e8f4e7-f2b6-4401-90b9-39554e699cc8">
+    <ns:title>gjere greie for kva informasjon er, og kva for informasjonstypar som finst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e3655542-f38c-4abb-bb1b-49d1e4af45da">
+    <ns:title>gjere greie for sentrale trekk ved internasjonal mediestruktur og internasjonal mediepolitikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:23d7e33d-58e5-4f26-880b-0d319bd6ce4f">
+    <ns:title>bruke forteljarteknikkar, munnlege uttrykksmåtar og dramaturgiske verkemiddel i eigne medieproduksjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:21758641-9831-4e19-b12e-7232894420af">
+    <ns:title>drøfte korleis ytringsfridom er ein føresetnad for frie medium og demokrati</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7078c692-d949-44fa-92f3-95a91da780bd">
+    <ns:title>analysere media si rolle som kunst- og kulturformidlar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:81bef377-a079-49ef-8df8-f85fe0a6615e">
+    <ns:title>analysere og evaluere eigne og andre sine medieprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b147f0a-8e55-4aa9-a865-96f4cca4b2e2">
+    <ns:title>gjere greie for sentrale lover og føresegner som gjeld opphavsrett, personvern og ytringsfridom</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:09e82eed-8d61-4e7a-9939-6661c02e7cd3">
+    <ns:title>utforske medietilbodet i det fleirkulturelle Noreg og diskutere korleis media kan påverke identiteten til urfolk og nasjonale og etniske minoritetar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:97990cf1-a808-438a-b226-059d972732c6">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:67eec69e-dd9c-4fc0-96ac-e4b2d987f272"/>
+    <grep:hovedomraader rdf:resource="uuid:6abb78f0-4815-413d-9be1-952f7891e3a4"/>
+    <grep:hovedomraader rdf:resource="uuid:49003115-34d5-4247-a678-21f507dbec6c"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:29199494-c35a-490c-a1d5-077c370e8fac"/>
+    <grep:hovedomraader rdf:resource="uuid:ae944ea7-7863-4767-bbd3-42f09b107911"/>
+    <grep:kode>MIN1-01</grep:kode>
+    <ns:title>Læreplan i medie- og informasjonskunnskap - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6abb78f0-4815-413d-9be1-952f7891e3a4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5b4e999b-63fc-43b7-86c8-1f8102163b35"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1c8e48cf-16a6-4643-bade-2ad71f796335"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d6bc337f-2da1-4a5b-ac9e-194281b505cf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:09e82eed-8d61-4e7a-9939-6661c02e7cd3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:18ad6dae-96c2-4f66-9f09-55e7181b5617"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:494bb897-2fed-4c97-81f5-5098c7e0a9fb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b080bf57-ca10-4d62-84b0-398c486bab0d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:56b5b6c6-81fd-47cc-b1e7-80488e70b46a"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:83cd1cb3-6f7f-47c1-938b-ad75a3aa8fc4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:07a6b506-a5fa-40f5-9202-ff0266cb6bcd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:99dc1a41-3b00-4b03-b559-d51fb00ab029"/>
+    <ns:title>Medium, individ og samfunn</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:585ea5be-c999-4e14-900b-3d4abe587ff0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c7463eda-4493-475f-9a1b-2495b0012d2b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2158044a-6a0b-44c7-a644-986a064dd37f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b8de6dd8-6364-4b3e-9bef-04a7d107863e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7c277e7d-48f6-4599-806e-55016ffecd66"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5acf5587-4f64-4e37-be24-7088b1909c0b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8b147f0a-8e55-4aa9-a865-96f4cca4b2e2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:739c4a46-8f3e-4ede-b351-7906c796b8f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:be06d066-da03-4415-ab9d-19a39a92d9e6">
+    <ns:title>presentere sør-nord-problematikken i det internasjonale mediebildet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c277e7d-48f6-4599-806e-55016ffecd66">
+    <ns:title>drøfte korleis media er med på å skape, forsterke og motverke informasjonskløfter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:56b5b6c6-81fd-47cc-b1e7-80488e70b46a">
+    <ns:title>diskutere kva som er god kommunikasjon, og vurdere kva som kan hindre slik kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6dfafbf4-0af4-4bdb-a96c-fbe9b68a98de">
+    <ns:title>gjere greie for typiske trekk ved journalistikk, reklame, propaganda, informasjon og underhaldning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:019b0f36-0c73-4e73-bf61-024745b01223">
+    <ns:title>diskutere objektivitetsomgrepet i samband med formidling av stoff i media</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:02e7c7b6-b9d8-4003-b63f-e4e5dbe249b7">
+    <ns:title>utvikle eit medieprodukt i samarbeid med ei bedrift eller ein organisasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:78f6ebd7-4eb8-4213-b21c-458f10efa8a1">
+    <ns:title>gjere greie for sentrale trekk ved mediehistoria i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:29199494-c35a-490c-a1d5-077c370e8fac">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:89efbff6-8dd0-4ccd-931f-21536d9f2450"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8c4e218a-067a-4a15-b42f-500c0e094b09"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:83cd1cb3-6f7f-47c1-938b-ad75a3aa8fc4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cd932fd5-3716-4e37-80be-d57deeeea852"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:edbe751a-303f-41f1-8630-6d040f75ad19"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:207ce8f0-551e-4495-8841-679c6017ff73"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3caf390e-3877-4edb-9756-3c8d2655bc1c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b8de6dd8-6364-4b3e-9bef-04a7d107863e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:78f6ebd7-4eb8-4213-b21c-458f10efa8a1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b9b81834-a0a0-47ab-aed9-d0a2908f2a26"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1c603062-feb2-4a3a-8893-25087865b145"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:09e82eed-8d61-4e7a-9939-6661c02e7cd3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:56e8f4e7-f2b6-4401-90b9-39554e699cc8"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4fb79e26-f3cf-4d8a-95fa-8e84a8baa9df"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:019b0f36-0c73-4e73-bf61-024745b01223"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:585ea5be-c999-4e14-900b-3d4abe587ff0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b080bf57-ca10-4d62-84b0-398c486bab0d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dd69ecaf-df86-4070-baaa-f8225b8668db"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5b4e999b-63fc-43b7-86c8-1f8102163b35"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6dfafbf4-0af4-4bdb-a96c-fbe9b68a98de"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:14e90523-3ebf-4ea9-862e-5e0675f517f8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:56b5b6c6-81fd-47cc-b1e7-80488e70b46a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c7463eda-4493-475f-9a1b-2495b0012d2b"/>
+    <ns:title>Medie- og informasjonskunnskap 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:21758641-9831-4e19-b12e-7232894420af"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1c8e48cf-16a6-4643-bade-2ad71f796335"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:207ce8f0-551e-4495-8841-679c6017ff73">
+    <ns:title>vurdere informasjon kjeldekritisk og bruke relevant informasjons- og kommunikasjonsteknologi i arbeid med eigne medieprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:494bb897-2fed-4c97-81f5-5098c7e0a9fb">
+    <ns:title>vurdere korleis media kan forme haldningar, normer og verdiar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07a6b506-a5fa-40f5-9202-ff0266cb6bcd">
+    <ns:title>reflektere over etiske problemstillingar og utfordringar i møtet mellom medium og ulike kulturar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4fb79e26-f3cf-4d8a-95fa-8e84a8baa9df">
+    <ns:title>gjere greie for hovudtrekk ved norsk mediepolitikk fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:739c4a46-8f3e-4ede-b351-7906c796b8f5">
+    <ns:title>undersøkje korleis produksjon og distribusjon av informasjon kan bli styrt og kontrollert av ulike interesser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7463eda-4493-475f-9a1b-2495b0012d2b">
+    <ns:title>vurdere kva rolle media spelar for læring, likestilling og identitetsdanning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c603062-feb2-4a3a-8893-25087865b145">
+    <ns:title>presentere hovudliner i mediestrukturen i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

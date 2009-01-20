@@ -1,0 +1,333 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:af237227-3fc0-476e-8b2f-406d139a707c">
+    <ns:title>begrunne valg av verktøy, materialer og teknikker i parykktilvirkning og frisyreforming</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a928f533-13ee-426e-98bd-c2077276440f">
+    <ns:title>utføre grunnleggende klippeteknikker og gjøre bruk av disse i ulike typer frisyrer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4bc959ca-8343-4145-95dc-a4e3be7866ef">
+    <ns:title>prøvemaskere og vurdere ulike alternativer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:900c4a27-8111-4e50-ab5d-f91322f2afdb">
+    <ns:title>skape et bestemt uttrykk i design av masker ved bruk av farger og formelementer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:52ba8986-f55a-4fe9-aec9-04265e27ecdd">
+    <ns:title>modellere opp ulike former og lage masker i ulike materialer og teknikker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8961b2b6-8719-4af1-89cd-039d62f799ff">
+    <grep:hovedomraader rdf:resource="uuid:fcaffd80-1eff-4db4-8936-8ea3c4e8a0de"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:168303ed-2786-420a-a618-8ae5d329aa61"/>
+    <grep:hovedomraader rdf:resource="uuid:f897ae41-8733-4138-9113-751539f0c66b"/>
+    <grep:kode>MPM3-01</grep:kode>
+    <ns:title>Læreplan i maskør- og parykkmakerfaget - særløp Vg2 og Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fcaffd80-1eff-4db4-8936-8ea3c4e8a0de">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:900c4a27-8111-4e50-ab5d-f91322f2afdb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:52ba8986-f55a-4fe9-aec9-04265e27ecdd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a9b31080-05df-4346-b2d5-c16728adeafc"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:355dcd63-6539-49ec-a9e4-372360258bd2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e266e976-ad1f-4173-bbab-789ace82c0c0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:275228b2-e2fd-4939-a1f9-d947cac35e80"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e113df33-f7ba-4618-ba03-86a47a33380e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:002a6ee5-f35d-4505-ae4e-de00d9305ec1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cdabaabb-71ef-4333-bd63-3878c5ac7361"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c34c3b6f-7376-4e87-aea8-5be710b81263"/>
+    <ns:title>Maskering og modellering</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4bc959ca-8343-4145-95dc-a4e3be7866ef"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9a852e00-5fb2-4089-b09d-d92c2332ddee"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6ca32cb2-19c3-4947-ac13-8ea295425e3d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8fefc933-9e90-4a4d-adf4-4fee47d739ff">
+    <ns:title>forklare og begrunne ulike bruksområder for hår, tyll og bånd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9a852e00-5fb2-4089-b09d-d92c2332ddee">
+    <ns:title>utvikle en karakter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2dc71a89-8f14-4c4c-9077-50c3fe346c6a">
+    <ns:title>tilvirke og tilpasse ulike typer hårdeler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e266e976-ad1f-4173-bbab-789ace82c0c0">
+    <ns:title>analysere og tolke en tekst i forhold til rollefigur og karakteranalyse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:53aeb090-d536-4e94-a78f-e4a6116519f3">
+    <ns:title>gjøre rede for ulike hårtyper og dere oppbygging</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6ca1c4c3-b8bb-4c2e-a7cc-a45b059f07d2">
+    <ns:title>forklare prinsipper ved farging, bleking og strukturomforming og utføre disse kjemiske behandlingene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:654183bf-2412-48cb-a5e4-3e8dd2d90ba1">
+    <ns:title>Maskør- og parykkmakerfaget - særløp</ns:title>
+    <grep:kode>MPM3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bb79a9bf-1d88-403d-b920-bef52aa31074">
+    <ns:title>utføre ulike friseringsteknikker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:608b61ab-3b74-4c6b-adb5-b24ae186d5d9">
+    <ns:title>tilvirke og tilpasse parykker ved bruk av ulike metoder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c498955a-223d-4fe3-823e-6f8c13563721">
+    <ns:title>lage og bruke arbeidstegninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e113df33-f7ba-4618-ba03-86a47a33380e">
+    <ns:title>tilpasse, lime og sminke løse deler på hud ved hjelp av ulike materialer og teknikker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e4a3b198-ff0d-4ae6-a446-0cf1f37bbc09">
+    <ns:title>ta vare på materialer og utføre nødvendig vedlikehold av utstyr og verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6ca32cb2-19c3-4947-ac13-8ea295425e3d">
+    <ns:title>forklare ansiktets anatomi og aldringsprosess for å utvikle en karakter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2bba7e3c-20a1-4ea0-bb9a-c05ff3413b97">
+    <ns:title>tilvirke og tilpasse øyebryn, bart og skjegg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0a90e0ae-cd93-4ec7-b879-c216a6e0378d">
+    <ns:title>forklare og bruke internasjonale nummersystemer for hårfarger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:168303ed-2786-420a-a618-8ae5d329aa61">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:52ba8986-f55a-4fe9-aec9-04265e27ecdd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e266e976-ad1f-4173-bbab-789ace82c0c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:63ded682-5742-48eb-97ae-bfbf0232ce64"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c34c3b6f-7376-4e87-aea8-5be710b81263"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:65f13057-f852-4c46-8b79-3502b6eab446"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:af237227-3fc0-476e-8b2f-406d139a707c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6ca1c4c3-b8bb-4c2e-a7cc-a45b059f07d2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2dc71a89-8f14-4c4c-9077-50c3fe346c6a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bb79a9bf-1d88-403d-b920-bef52aa31074"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e4a3b198-ff0d-4ae6-a446-0cf1f37bbc09"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6ca32cb2-19c3-4947-ac13-8ea295425e3d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:900c4a27-8111-4e50-ab5d-f91322f2afdb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2bba7e3c-20a1-4ea0-bb9a-c05ff3413b97"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:275228b2-e2fd-4939-a1f9-d947cac35e80"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:654183bf-2412-48cb-a5e4-3e8dd2d90ba1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:53aeb090-d536-4e94-a78f-e4a6116519f3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e113df33-f7ba-4618-ba03-86a47a33380e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:67fff404-145f-427c-a7ff-6d290d6c0a94"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0a90e0ae-cd93-4ec7-b879-c216a6e0378d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dc7531df-226d-4111-83aa-24a492a03c81"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:608b61ab-3b74-4c6b-adb5-b24ae186d5d9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c498955a-223d-4fe3-823e-6f8c13563721"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4bc959ca-8343-4145-95dc-a4e3be7866ef"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8fefc933-9e90-4a4d-adf4-4fee47d739ff"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9a852e00-5fb2-4089-b09d-d92c2332ddee"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a9b31080-05df-4346-b2d5-c16728adeafc"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:002a6ee5-f35d-4505-ae4e-de00d9305ec1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:420f7270-3f59-4ba9-bd1c-e0a065fb04d2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:83312588-bb42-470a-82d1-bca98462b8d5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c1ef9e72-0d0e-4aa4-9288-d8ca800eeb4b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a928f533-13ee-426e-98bd-c2077276440f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1d0f326c-df00-4742-811f-4ba5599cadd2"/>
+    <ns:title>Etter Vg3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cdabaabb-71ef-4333-bd63-3878c5ac7361"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:355dcd63-6539-49ec-a9e4-372360258bd2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c1ef9e72-0d0e-4aa4-9288-d8ca800eeb4b">
+    <ns:title>forme og vedlikeholde ulike frisyrer etter gitt idé og tidsepoke</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:420f7270-3f59-4ba9-bd1c-e0a065fb04d2">
+    <ns:title>utføre arbeid i samsvar med arbeidsplan, kvalitetskrav og gjeldende regelverk for helse, miljø og sikkerhet samt for bruk av kjemikalier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dc7531df-226d-4111-83aa-24a492a03c81">
+    <ns:title>reparere og gjenbruke parykker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:63ded682-5742-48eb-97ae-bfbf0232ce64">
+    <ns:title>forklare og anvende kordle, tresseramme, hekle og karde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1d0f326c-df00-4742-811f-4ba5599cadd2">
+    <ns:title>beskrive frisyrenes tidstypiske stil og form, og forklare frisyrenes plass i stilhistorien</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f897ae41-8733-4138-9113-751539f0c66b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dc71a89-8f14-4c4c-9077-50c3fe346c6a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:83312588-bb42-470a-82d1-bca98462b8d5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:67fff404-145f-427c-a7ff-6d290d6c0a94"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:420f7270-3f59-4ba9-bd1c-e0a065fb04d2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1d0f326c-df00-4742-811f-4ba5599cadd2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:63ded682-5742-48eb-97ae-bfbf0232ce64"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dc7531df-226d-4111-83aa-24a492a03c81"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:608b61ab-3b74-4c6b-adb5-b24ae186d5d9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a928f533-13ee-426e-98bd-c2077276440f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e4a3b198-ff0d-4ae6-a446-0cf1f37bbc09"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c1ef9e72-0d0e-4aa4-9288-d8ca800eeb4b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6ca1c4c3-b8bb-4c2e-a7cc-a45b059f07d2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:af237227-3fc0-476e-8b2f-406d139a707c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2bba7e3c-20a1-4ea0-bb9a-c05ff3413b97"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:53aeb090-d536-4e94-a78f-e4a6116519f3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c498955a-223d-4fe3-823e-6f8c13563721"/>
+    <ns:title>Parykk- og frisyreutvikling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bb79a9bf-1d88-403d-b920-bef52aa31074"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8fefc933-9e90-4a4d-adf4-4fee47d739ff"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a90e0ae-cd93-4ec7-b879-c216a6e0378d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:65f13057-f852-4c46-8b79-3502b6eab446"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:355dcd63-6539-49ec-a9e4-372360258bd2">
+    <ns:title>forme en karakter ved hjelp av tredimensjonal maskering, og begrunne materialvalg i forhold til ønsket resultat og bruksområde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:65f13057-f852-4c46-8b79-3502b6eab446">
+    <ns:title>utvikle og begrunne en idé og arbeidsprosess i samsvar med produksjonens visjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:83312588-bb42-470a-82d1-bca98462b8d5">
+    <ns:title>beregne pris på produkter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:002a6ee5-f35d-4505-ae4e-de00d9305ec1">
+    <ns:title>modellere opp og støpe løse deler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cdabaabb-71ef-4333-bd63-3878c5ac7361">
+    <ns:title>begrunne valg og bruk av verktøy, materialer og teknikker i maskering og modellering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:67fff404-145f-427c-a7ff-6d290d6c0a94">
+    <ns:title>presentere arbeidsprosesser og egne produkter med og uten digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c34c3b6f-7376-4e87-aea8-5be710b81263">
+    <ns:title>lage positiv og negativ form ut fra avstøpning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a9b31080-05df-4346-b2d5-c16728adeafc">
+    <ns:title>designe en karakter etter gitte tidsepoker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:275228b2-e2fd-4939-a1f9-d947cac35e80">
+    <ns:title>bruke ulike materialer, verktøy og teknikker i arbeidet med maskering, og ta hensyn til ulike hudtyper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

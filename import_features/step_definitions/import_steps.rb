@@ -33,5 +33,5 @@ Saa /^(.*) skal ha relasjon til (.*)/ do |klasse, relasjonsklasse|
   klass = klasse.singularize.constantize
   relasjon = relasjonsklasse.pluralize.downcase.to_sym
   instans = klass.find :first
-  instans.send(relasjon).should_not be_nil
+  instans.send(relasjon).first.should_not be_nil
 end

@@ -1,0 +1,219 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:2dbc0c71-6d30-4c35-bc1a-1b9f575642cc">
+    <ns:title>planleggje og utforme scenografi for digital produksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5476e5c2-69ee-41dd-9285-9c0d390970b8">
+    <ns:title>planleggje og produsere enkle sceneoppsetjingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4718903e-5245-4a77-b1d9-870e9b268976">
+    <ns:title>karakterisere særtrekk ved design av større arrangement </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d627e8a-685f-4a47-9026-c01d1c5253aa">
+    <ns:title>lage skisser til presentasjon av kostyme</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c53d8fa5-246b-4ddb-a645-8a4f162414dd">
+    <ns:title>utforme modellar i målestokk av scenerom til tenkte arrangement</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:615f0c12-e21b-43f0-9d70-d9e10aed7b3b">
+    <ns:title>bruke form, farge, komposisjon og materiale til å formidle ein bodskap </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8f3bb3b2-7e5c-4faf-9c8b-4b59ba870fcb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:615f0c12-e21b-43f0-9d70-d9e10aed7b3b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dbc0c71-6d30-4c35-bc1a-1b9f575642cc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5986adb9-43ce-439e-8b65-18365c75c54f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5476e5c2-69ee-41dd-9285-9c0d390970b8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c53d8fa5-246b-4ddb-a645-8a4f162414dd"/>
+    <ns:title>Scenerom</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f348a18f-0335-46b7-bf57-7055fb405fca">
+    <ns:title>vurdere val av farge og materiale i klede og kostyme</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3203dabc-4b55-4e20-9a9b-40c2e6134b17">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5d15a563-01e5-43db-b69e-4bd87a6bf9e4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:30a2e255-bd4d-4604-b729-a014a188974f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:acdecf06-0ed8-4b85-964f-d767f2bab497"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f348a18f-0335-46b7-bf57-7055fb405fca"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5d627e8a-685f-4a47-9026-c01d1c5253aa"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b0afd294-ac39-452e-b1a2-86259add31fc"/>
+    <ns:title>Kostyme</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:03ba9815-4749-4bda-9e4c-77553e937307">
+    <ns:title>Scenografi og kostyme</ns:title>
+    <grep:kode>FOR4Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b0afd294-ac39-452e-b1a2-86259add31fc">
+    <ns:title>designe og produsere enkle kostyme</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:30a2e255-bd4d-4604-b729-a014a188974f">
+    <ns:title>vurdere verkemidla sminke, kostyme og rekvisittar som kommunikasjon i scenerommet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:acdecf06-0ed8-4b85-964f-d767f2bab497">
+    <ns:title>bruke enkel mønsterkonstruksjon og ulike samanføyingsteknikkar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5986adb9-43ce-439e-8b65-18365c75c54f">
+    <ns:title>vurdere korleis kvitt og farga lys verkar inn på uttrykket til scenerommet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8d3ed407-d2cd-445d-be59-1fec3dedaf82">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4718903e-5245-4a77-b1d9-870e9b268976"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a6060e93-f59c-4d3f-b9ff-2db4a2350285"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:13a41ada-6345-493e-8b8e-05cdc475c30b"/>
+    <ns:title>Stilhistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:497fa497-5b8f-4489-99c9-78e1e75a62dc">
+    <grep:hovedomraader rdf:resource="uuid:8d3ed407-d2cd-445d-be59-1fec3dedaf82"/>
+    <grep:hovedomraader rdf:resource="uuid:3203dabc-4b55-4e20-9a9b-40c2e6134b17"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:46d89470-a101-4106-a31d-544bd782fd34"/>
+    <grep:hovedomraader rdf:resource="uuid:8f3bb3b2-7e5c-4faf-9c8b-4b59ba870fcb"/>
+    <grep:kode>FOR4-01</grep:kode>
+    <ns:title>Læreplan i scenografi og kostyme - valfritt programfag i studiespesialiserande utdanningsprogram, programområde for formgjevingsfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d15a563-01e5-43db-b69e-4bd87a6bf9e4">
+    <ns:title>lage enkle masker til ei tenkt oppsetjing</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:13a41ada-6345-493e-8b8e-05cdc475c30b">
+    <ns:title>karakterisere særtrekk ved klede, møblar og gjenstandar frå ulike epokar og kulturar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6060e93-f59c-4d3f-b9ff-2db4a2350285">
+    <ns:title>analysere og samanlikne sceniske uttrykk og verkemiddel i filmar frå ulike epokar </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:46d89470-a101-4106-a31d-544bd782fd34">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d627e8a-685f-4a47-9026-c01d1c5253aa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c53d8fa5-246b-4ddb-a645-8a4f162414dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d15a563-01e5-43db-b69e-4bd87a6bf9e4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:13a41ada-6345-493e-8b8e-05cdc475c30b"/>
+    <ns:title>Scenografi og kostyme</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:615f0c12-e21b-43f0-9d70-d9e10aed7b3b"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:03ba9815-4749-4bda-9e4c-77553e937307"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f348a18f-0335-46b7-bf57-7055fb405fca"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5476e5c2-69ee-41dd-9285-9c0d390970b8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a6060e93-f59c-4d3f-b9ff-2db4a2350285"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2dbc0c71-6d30-4c35-bc1a-1b9f575642cc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:acdecf06-0ed8-4b85-964f-d767f2bab497"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5986adb9-43ce-439e-8b65-18365c75c54f"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30a2e255-bd4d-4604-b729-a014a188974f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b0afd294-ac39-452e-b1a2-86259add31fc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4718903e-5245-4a77-b1d9-870e9b268976"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,296 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c03f450-4fd0-4eda-994d-00aea16e89af">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:305cd4aa-eb4f-410a-ad6a-6cd773fd0dcc"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cb470d1e-b346-47a0-b177-667ff9f0fd1b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c50d9a71-cfa6-4d0a-925c-25f444cdfc99"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:801f1fcd-c394-4347-b364-d5528628f6e6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6a52f662-2da9-4b84-8337-0a0273b79292"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b410bfc6-a355-416e-8e72-b938ed35f324"/>
+    <ns:title>Teaterkompaniet </ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:869ccdec-745f-4b35-883d-d0eaa702344e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9800f3c3-6ab0-45c0-89a7-06ffe4e0ee09"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d07c1e40-a3bd-441e-b5c7-a32b07875a49"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:58cada0e-1c05-4b3a-86b6-f92b37a1c932"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3fe8c09d-731d-43c1-8516-87f1851981ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1751b1c1-99f4-4953-ab6e-2dcd3140d758">
+    <ns:title>beskrive og drøfte sentrale utviklingstrekk i teateret fra modernismen til egen samtid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cb470d1e-b346-47a0-b177-667ff9f0fd1b">
+    <ns:title>utvikle vurderingskriterier for virksomhet og produksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:305cd4aa-eb4f-410a-ad6a-6cd773fd0dcc">
+    <ns:title>etablere et teaterkompani, ta ansvar for en teater- eller dramaproduksjon og formidle den for et eksternt publikum</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:973f232b-e0d3-4556-9e35-c392c57ac49c">
+    <ns:title>Teater i perspektiv 1</ns:title>
+    <grep:kode>DRA3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9e6c14b0-8c6a-46e0-a532-02fe7b86238e">
+    <ns:title>sammenligne ulike kulturers teateruttrykk og drøfte teaterets utvikling i et flerkulturelt samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d07c1e40-a3bd-441e-b5c7-a32b07875a49">
+    <ns:title>gjøre rede for kulturforvaltning og kulturorganisasjoner fra lokalt til nasjonalt nivå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b410bfc6-a355-416e-8e72-b938ed35f324">
+    <ns:title>gjøre rede for barne- og ungdomsteaterets plass i kulturlivet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a52f662-2da9-4b84-8337-0a0273b79292">
+    <ns:title>lage budsjetter for ensemblets teaterproduksjoner og føre enkelt regnskap </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2dc4e24c-0249-412d-9853-5f95301fb9bb">
+    <ns:title>presentere en oversikt over teaterets utvikling fra urteater til modernisme i et flerkulturelt perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:25261c24-6a5a-4401-8d55-757b08382f07">
+    <ns:title>gjøre rede for sentrale teaterteorier og modeller fra modernismen til egen samtid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16ed4bdb-e119-4581-bee4-14cacd8a0998">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2733069d-2e65-469e-80e5-efe8a905536c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1e4f4c9f-af30-4582-a58e-2f5aa9ba4329"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:11b90333-3c25-41d6-a87f-432cf4b6004f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5d453a53-063e-4c97-8cd0-196de1a148ab"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68024be4-02fb-4cb1-af21-f30f534994c6"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:07bf4669-a2e3-4c25-99ed-79a9e2f1825e"/>
+    <ns:title>Teaterteori og -analyse </ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:25261c24-6a5a-4401-8d55-757b08382f07"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:977bb9d6-be49-4b81-b2f3-c5980d9eacaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07bf4669-a2e3-4c25-99ed-79a9e2f1825e">
+    <ns:title>analysere og drøfte sammenhenger og påvirkninger mellom sceneteater og andre medieuttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d51dfca8-74bb-4603-96c9-40ddeccbb776">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:ad8cb869-0c91-4913-abb1-dc07622f05fe"/>
+    <grep:hovedomraader rdf:resource="uuid:1c03f450-4fd0-4eda-994d-00aea16e89af"/>
+    <grep:hovedomraader rdf:resource="uuid:16ed4bdb-e119-4581-bee4-14cacd8a0998"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:8a2f139a-b3d3-45e5-8d9b-5779f8ffc304"/>
+    <grep:hovedomraader rdf:resource="uuid:ea56a3b3-5b69-4484-a341-8877ef2c13ce"/>
+    <grep:kode>DRA3-01</grep:kode>
+    <ns:title>Læreplan i teater i perspektiv - programfag i utdanningsprogram for musikk, dans, drama, programområde for drama</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1339b684-80de-4fc7-b778-d0d5111bde75">
+    <ns:title>presentere utvalgte teaterhistoriske epoker med vekt på teaterets form, uttrykk og posisjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad8cb869-0c91-4913-abb1-dc07622f05fe">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:801f1fcd-c394-4347-b364-d5528628f6e6"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:84ea40b5-71b7-4931-83c4-ed69b15b56e4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:305cd4aa-eb4f-410a-ad6a-6cd773fd0dcc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3fe8c09d-731d-43c1-8516-87f1851981ec"/>
+    <ns:title>Teater i perspektiv 2 </ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:78d8b6e0-acd1-4a5a-b849-cb7be4cfbb8c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cb470d1e-b346-47a0-b177-667ff9f0fd1b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:25261c24-6a5a-4401-8d55-757b08382f07"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:07bf4669-a2e3-4c25-99ed-79a9e2f1825e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e6c14b0-8c6a-46e0-a532-02fe7b86238e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:869ccdec-745f-4b35-883d-d0eaa702344e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:68024be4-02fb-4cb1-af21-f30f534994c6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11b90333-3c25-41d6-a87f-432cf4b6004f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1751b1c1-99f4-4953-ab6e-2dcd3140d758"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:58cada0e-1c05-4b3a-86b6-f92b37a1c932">
+    <ns:title>kartlegge muligheter for ensemblets virksomhet i lokalsamfunnet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:78d8b6e0-acd1-4a5a-b849-cb7be4cfbb8c">
+    <ns:title>presentere en teaterform og drøfte forholdet mellom tekst og uttrykk, sal og scene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:626bf073-8023-44f1-b542-6d869812e832">
+    <ns:title>drøfte historiske og kulturelle forutsetninger for ulike teateruttrykk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d453a53-063e-4c97-8cd0-196de1a148ab">
+    <ns:title>analysere og tolke forestillinger og skrive teateranmeldelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:84ea40b5-71b7-4931-83c4-ed69b15b56e4">
+    <ns:title>Teater i perspektiv 2</ns:title>
+    <grep:kode>DRA3Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:801f1fcd-c394-4347-b364-d5528628f6e6">
+    <ns:title>skrive søknader til relevante instanser for egne prosjekter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2733069d-2e65-469e-80e5-efe8a905536c">
+    <ns:title>beskrive og drøfte teater som uttrykks- og ytringsform og vurdere sammenhengen mellom teori og praksis</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:977bb9d6-be49-4b81-b2f3-c5980d9eacaf">
+    <ns:title>presentere en analyse av et skuespill ved hjelp av teaterteoretiske begreper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1e4f4c9f-af30-4582-a58e-2f5aa9ba4329">
+    <ns:title>presentere og drøfte definisjoner, begreper, metoder og retninger i teaterets utvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ea56a3b3-5b69-4484-a341-8877ef2c13ce">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:78d8b6e0-acd1-4a5a-b849-cb7be4cfbb8c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9e6c14b0-8c6a-46e0-a532-02fe7b86238e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1751b1c1-99f4-4953-ab6e-2dcd3140d758"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:626bf073-8023-44f1-b542-6d869812e832"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1339b684-80de-4fc7-b778-d0d5111bde75"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2dc4e24c-0249-412d-9853-5f95301fb9bb"/>
+    <ns:title>Teaterhistorie </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:11b90333-3c25-41d6-a87f-432cf4b6004f">
+    <ns:title>analysere forestillinger i et sosialt og kulturelt perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c50d9a71-cfa6-4d0a-925c-25f444cdfc99">
+    <ns:title>drøfte betydningen av kommunikasjon og problemløsning i ledelsesoppgaver</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:68024be4-02fb-4cb1-af21-f30f534994c6">
+    <ns:title>drøfte sammenhenger mellom samtidige og historiske teateruttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9800f3c3-6ab0-45c0-89a7-06ffe4e0ee09">
+    <ns:title>lede teaterkompaniets prosjekter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a2f139a-b3d3-45e5-8d9b-5779f8ffc304">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:977bb9d6-be49-4b81-b2f3-c5980d9eacaf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:58cada0e-1c05-4b3a-86b6-f92b37a1c932"/>
+    <ns:title>Teater i perspektiv 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c50d9a71-cfa6-4d0a-925c-25f444cdfc99"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d453a53-063e-4c97-8cd0-196de1a148ab"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:973f232b-e0d3-4556-9e35-c392c57ac49c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9800f3c3-6ab0-45c0-89a7-06ffe4e0ee09"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d07c1e40-a3bd-441e-b5c7-a32b07875a49"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2dc4e24c-0249-412d-9853-5f95301fb9bb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1e4f4c9f-af30-4582-a58e-2f5aa9ba4329"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:626bf073-8023-44f1-b542-6d869812e832"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2733069d-2e65-469e-80e5-efe8a905536c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6a52f662-2da9-4b84-8337-0a0273b79292"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b410bfc6-a355-416e-8e72-b938ed35f324"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1339b684-80de-4fc7-b778-d0d5111bde75"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3fe8c09d-731d-43c1-8516-87f1851981ec">
+    <ns:title>definere mål og visjoner for gruppens teater- og dramaproduksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:869ccdec-745f-4b35-883d-d0eaa702344e">
+    <ns:title>drøfte teaterets funksjon og betydning i et lokalsamfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

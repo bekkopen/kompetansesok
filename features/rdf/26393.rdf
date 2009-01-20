@@ -1,0 +1,272 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07422c69-00b6-4b19-bd50-ca0ccc438e74">
+    <ns:title>forklare bestemmelser og retningslinjer for barne- og ungdomsidrett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6d65f009-8730-4ef0-aa58-ac529a262107">
+    <ns:title>drøfte hvordan barne- og ungdomsidrett bør drives</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0ed2ef07-19cd-4c0b-a553-63bfbd4436a2">
+    <ns:title>drøfte hovedprinsipper for finansiering av norsk idrett på nasjonalt og lokalt nivå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eb8ecb6b-56b6-4a73-b61c-6d4f999c1b9f">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bb74d4c9-ada4-41d5-919c-2d7ff99037e8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:07422c69-00b6-4b19-bd50-ca0ccc438e74"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6d65f009-8730-4ef0-aa58-ac529a262107"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eae8a919-f525-4c15-9d8f-b2932abd9d0f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4e723c9c-61ca-460c-93ca-322b43384d48"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b028d406-4687-4674-95a6-aa63918f401a"/>
+    <ns:title>Idrettens verdigrunnlag</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5c67b34b-a0b9-4596-aaae-1c9cbded1871"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:35f70e51-4168-4e0b-8ce1-1b4db07d1295"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96810459-6b83-4ffe-85c1-1a098a905b79">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:058d3f8c-21f3-40c0-84c5-6bf6137da99b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:de00fa5c-19c4-4c2b-a2ac-15cd5c69cc13"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ed2ef07-19cd-4c0b-a553-63bfbd4436a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f06d554-e207-44df-abcd-e533c7af375b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bad4172a-c918-4122-85ca-c3c50f77ce8f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b00bcd98-4f1c-47db-9ac3-f1cfdc06a9c0"/>
+    <ns:title>Organisering av idrett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3b6bf244-49ee-485d-9acb-f56f27f59c9e">
+    <ns:title>forklare utviklingen av idrettsaktiviteter i samiske og arktiske strøk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4e723c9c-61ca-460c-93ca-322b43384d48">
+    <ns:title>vurdere hvilken betydning dugnad og frivillighetskulturen har for norsk idrett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a0c2160-f8ac-4e59-97f6-e427796f5652">
+    <ns:title>gjøre rede for sammenhenger mellom idrettsaktivitet, livskvalitet og helse i et samfunnsperspektiv </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6cc10bf-e764-46b6-8aef-af6155f236a5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:32347581-a993-40bb-9aa3-11eca8409ca1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:62a6dbc1-8b53-49e4-b50b-224bdb6c7163"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7a0c2160-f8ac-4e59-97f6-e427796f5652"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <ns:title>Idretten i samfunnet</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3b6bf244-49ee-485d-9acb-f56f27f59c9e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d7bae2c6-f118-49f9-a741-76df6fc47310"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6773625d-b159-4690-a8b7-08a1ab9b1550"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4d2baaa2-8b5e-48c9-94fc-9b10e617ab13"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:263756df-b602-4e86-9a6e-55cc0863ad96"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2f06d554-e207-44df-abcd-e533c7af375b">
+    <ns:title>gjøre rede for offentlige etater og politiske organer som er sentrale i idrettsarbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d7bae2c6-f118-49f9-a741-76df6fc47310">
+    <ns:title>gjøre rede for utviklingen av de moderne olympiske lekene fram til i dag, og diskutere ulike problemstillinger knyttet til olympisme </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:058d3f8c-21f3-40c0-84c5-6bf6137da99b">
+    <ns:title>forklare utbredelse av og innhold i ulike former for uorganisert idrett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:62a6dbc1-8b53-49e4-b50b-224bdb6c7163">
+    <ns:title>gjøre rede for hovedtrekkene i norsk idrettshistorie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b00bcd98-4f1c-47db-9ac3-f1cfdc06a9c0">
+    <ns:title>forklare hvordan idretter blir organisert og ledet på ulike nivå</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eae8a919-f525-4c15-9d8f-b2932abd9d0f">
+    <ns:title>drøfte hvilken mening og verdi idrett uttrykker i ulike sammenhenger for den enkelte og samfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b028d406-4687-4674-95a6-aa63918f401a">
+    <ns:title>drøfte aktuelle problemstillinger knyttet til idrettsbevegelsens moralske og etiske verdigrunnlag </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bb74d4c9-ada4-41d5-919c-2d7ff99037e8">
+    <ns:title>gjøre rede for grunnleggende prinsipper knyttet til idrettens verdigrunnlag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6773625d-b159-4690-a8b7-08a1ab9b1550">
+    <ns:title>diskutere forholdet mellom idrett og massemedier og reflektere over formidling av idrett i mediene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bad4172a-c918-4122-85ca-c3c50f77ce8f">
+    <ns:title>gjøre rede for hvordan eget idrettslag er bygd opp og fungerer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:35f70e51-4168-4e0b-8ce1-1b4db07d1295">
+    <ns:title>vurdere problemstillinger knyttet til idrett og kjønnsroller</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:32347581-a993-40bb-9aa3-11eca8409ca1">
+    <ns:title>forklare hovedtrekk ved idrettens utvikling i Europa fra antikken og fram til i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:263756df-b602-4e86-9a6e-55cc0863ad96">
+    <ns:title>gjøre rede for hvordan idrett er en del av ulike kulturer i Norge</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:507b0a92-02ef-4e49-a711-d40f20f387a7">
+    <grep:hovedomraader rdf:resource="uuid:eb8ecb6b-56b6-4a73-b61c-6d4f999c1b9f"/>
+    <grep:hovedomraader rdf:resource="uuid:a6cc10bf-e764-46b6-8aef-af6155f236a5"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:7fce2f49-cf2b-41c0-bb6c-5274f9047627"/>
+    <grep:hovedomraader rdf:resource="uuid:96810459-6b83-4ffe-85c1-1a098a905b79"/>
+    <grep:kode>IDR3-01</grep:kode>
+    <ns:title>Læreplan i idrett og samfunn - felles programfag i utdanningsprogram for idrettsfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5c67b34b-a0b9-4596-aaae-1c9cbded1871">
+    <ns:title>diskutere forholdet mellom toppidrett og breddeidrett i den organiserte idretten</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de00fa5c-19c4-4c2b-a2ac-15cd5c69cc13">
+    <ns:title>forklare hvordan samisk idrett er organisert og finansiert</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e835cbba-58eb-4ae9-a57e-cdffaee65452">
+    <ns:title>Idrett og samfunn</ns:title>
+    <grep:kode>IDR3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4d2baaa2-8b5e-48c9-94fc-9b10e617ab13">
+    <ns:title>drøfte aktuelle idrettspolitiske tema og forholdet mellom idrett og nasjonal og internasjonal politikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7fce2f49-cf2b-41c0-bb6c-5274f9047627">
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:35f70e51-4168-4e0b-8ce1-1b4db07d1295"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bad4172a-c918-4122-85ca-c3c50f77ce8f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eae8a919-f525-4c15-9d8f-b2932abd9d0f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6d65f009-8730-4ef0-aa58-ac529a262107"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:07422c69-00b6-4b19-bd50-ca0ccc438e74"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7a0c2160-f8ac-4e59-97f6-e427796f5652"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bb74d4c9-ada4-41d5-919c-2d7ff99037e8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d7bae2c6-f118-49f9-a741-76df6fc47310"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6773625d-b159-4690-a8b7-08a1ab9b1550"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4d2baaa2-8b5e-48c9-94fc-9b10e617ab13"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2f06d554-e207-44df-abcd-e533c7af375b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b028d406-4687-4674-95a6-aa63918f401a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5c67b34b-a0b9-4596-aaae-1c9cbded1871"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:058d3f8c-21f3-40c0-84c5-6bf6137da99b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:32347581-a993-40bb-9aa3-11eca8409ca1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:263756df-b602-4e86-9a6e-55cc0863ad96"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3b6bf244-49ee-485d-9acb-f56f27f59c9e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:62a6dbc1-8b53-49e4-b50b-224bdb6c7163"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de00fa5c-19c4-4c2b-a2ac-15cd5c69cc13"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0ed2ef07-19cd-4c0b-a553-63bfbd4436a2"/>
+    <ns:title>Idrett og samfunn</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b00bcd98-4f1c-47db-9ac3-f1cfdc06a9c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4e723c9c-61ca-460c-93ca-322b43384d48"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:e835cbba-58eb-4ae9-a57e-cdffaee65452"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

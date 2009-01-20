@@ -35,47 +35,47 @@ module Kompetansesok
     
     # Returnerer alle kompetansemaal som Array av Hash. Hver Hash er et key-value par med primitive verdier.
     def kompetansemaal
-      @kompetansemaal ||= @model.listResourcesWithProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
+      @kompetansemaal ||= @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|
         {
           :uuid => r.to_s,
           :tittel => tittel(r),
           :kode => kode(r),
-          :kompetansemaalsett_uuids => uuids(r, @kompetansemaalsett_har_kompetansemaal_property),
-          :hovedomraade_uuids => uuids(r, @tilhoerer_hovedomraade_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
-    def laereplaner
-      @laereplaner ||= @model.listObjectsOfProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|
+    def laereplaner      
+      @laereplaner ||= @model.listResourcesWithProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|
         { 
           :uuid => r.to_s,
           :kode => kode(r),
           :tittel => tittel(r),
-          :hovedomraade_uuids => uuids(r, @hovedomraader_property)
+          :hovedomraade_uuids => uuids(r, @hovedomraader_property),
+          :kompetansemaalsett_uuids => uuids(r, @kompetansemaalsett_etter_laereplan_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
     # Kompetansemaalsett trenger ikke ha trinn
     def kompetansemaalsett
-      @kompetansemaalsett ||= @model.listObjectsOfProperty(@kompetansemaalsett_har_kompetansemaal_property).map do |r|        
+      @kompetansemaalsett ||= @model.listObjectsOfProperty(@kompetansemaalsett_etter_laereplan_property).map do |r|        
         { 
           :uuid => r.to_s,
           :tittel => tittel(r),
-          :laereplan_uuids => uuids(r, @kompetansemaalsett_etter_laereplan_property),
           :trinn_uuids => uuids(r, @kompetansemaalsett_etter_aarstrinn_property),
-          :fag_uuids => uuids(r, @kompetansemaalsett_etter_fag_property)
+          :fag_uuids => uuids(r, @kompetansemaalsett_etter_fag_property),
+          :kompetansemaal_uuids => uuids(r, @kompetansemaalsett_har_kompetansemaal_property)
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
     
     def hovedomraader
-      @hovedomraader ||= @model.listObjectsOfProperty(@tilhoerer_hovedomraade_property). map do |r|
+      @hovedomraader ||= @model.listResourcesWithProperty(@tilhoerer_hovedomraade_property). map do |r|
         {
           :uuid => r.to_s,
           :kode => kode(r),
           :tittel => tittel(r),
+          :kompetansemaal_uuids => uuids(r, @tilhoerer_hovedomraade_property)
         }   
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end

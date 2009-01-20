@@ -1,0 +1,332 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:c57ef367-fd1e-40e3-b48a-77e7b3894ae1">
+    <ns:title>Skogskjøtsel, utmark og bedrift</ns:title>
+    <grep:kode>SBR2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:10fe4f28-282a-4060-8140-6e238f57701a">
+    <ns:title>planlegge tynning og foryngelseshogst etter skogbruksplan, gjeldende regelverk og miljøstandarder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:346c870f-1d4d-4a81-86fa-20119b186e35">
+    <ns:title>demonstrere enkel manøvrering og avvirkning med hogstmaskin eller hogstmaskinsimulator</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:af7465e7-0d9c-4934-ac6b-656480fef071">
+    <ns:title>planlegge og utføre etterarbeid etter tynning og foryngelseshogst i tråd med gjeldende standarder og hensynet til allmennhetens frie ferdsel</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8655fcc2-f2bc-412b-99d5-b32434bf5f63">
+    <ns:title>presentere et utvalg typiske plante- og dyrearter i noen skogtyper og gjøre rede for deres leveområder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45bee027-c41a-46bd-a90f-89de0d0562c9">
+    <ns:title>vurdere behov for og utføre ungskogspleie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e047c39a-20cf-422a-a1c4-b8ccf67ccf20">
+    <ns:title>utføre arbeid i skog og utmark etter gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:35650dbf-1835-4ed7-9bf5-f9154d200fc6">
+    <ns:title>planlegge og utøve skog- og utmarksnæring med hensyn til økologi, allmennhet og andre brukergrupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:235dabf5-9f48-4d5e-9005-c573136d05a1">
+    <ns:title>fastsette bonitet på grunnlag av vegetasjonstyper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8538134b-8a1e-4ca1-8bdf-b4e97fe0654e">
+    <ns:title>forklare forskjellen mellom budsjett og regnskap, påpeke eventuelle avvik og mulige årsaker til dem</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a5f79e9-9693-4b52-a227-e611ca40f13d">
+    <ns:title>planlegge og utføre vedlikehold av anlegg og produksjonsutstyr til bruk i skog og utmark</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6eb18e89-d51b-4e02-a5b7-f6c7669e2195">
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere utmarksaktiviteter tilrettelagt for publikum til ulike årstider</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3fbd1577-3d1a-4bf1-a47f-d5dd9552db6c">
+    <ns:title>velge foryngelsesmetode og utføre foryngelse av skog</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:238fa6d1-235b-411d-b0f9-5d5bab22600d">
+    <ns:title>utføre markberedning, såing og planting</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e2c75916-c3dd-42ef-919d-549f65a32800">
+    <ns:title>planlegge og gjennomføre produksjon av bioenergi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f536845c-fe38-4fff-ab0b-b294c998a733">
+    <ns:title>Drift og vedlikehold</ns:title>
+    <grep:kode>SBR2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1903b5cf-3243-4fc0-93e7-eb206c99a4c7">
+    <ns:title>gjøre rede for skogbrukets organisasjoner og sentrale trekk ved offentlig skogsforvaltning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe997e6e-3d08-47c2-a69a-4bc03c45f307">
+    <ns:title>sette mål og vurdere lønnsomhet for en utmarksproduksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:afbb86d3-c58e-4ac3-a648-6bd620979125">
+    <ns:title>foreta feilsøking og vedlikehold av motor, drivverk, hydrauliske og elektriske systemer, og utføre enklere reparasjonssveising etter gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c8c510e5-3447-42a4-9768-c3763b521180">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:45bee027-c41a-46bd-a90f-89de0d0562c9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:97b3bda4-6f5d-486c-8936-c9a57cfab0bc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3fbd1577-3d1a-4bf1-a47f-d5dd9552db6c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6e2237a6-2133-4716-a869-595346a0de4b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1903b5cf-3243-4fc0-93e7-eb206c99a4c7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6eb18e89-d51b-4e02-a5b7-f6c7669e2195"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8538134b-8a1e-4ca1-8bdf-b4e97fe0654e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ba0a769a-7933-46ab-aeda-ef2d736e5007"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0c19ef40-8f19-4318-b9af-98b14f976201"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e2c75916-c3dd-42ef-919d-549f65a32800"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:235dabf5-9f48-4d5e-9005-c573136d05a1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e047c39a-20cf-422a-a1c4-b8ccf67ccf20"/>
+    <ns:title>Skogskjøtsel, utmark og bedrift</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8655fcc2-f2bc-412b-99d5-b32434bf5f63"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3b58ae0e-1129-4000-a2d9-dff9abd8463b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:35650dbf-1835-4ed7-9bf5-f9154d200fc6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:238fa6d1-235b-411d-b0f9-5d5bab22600d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:433859d7-5d12-4a1e-8a13-718dce43e00d"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:c57ef367-fd1e-40e3-b48a-77e7b3894ae1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fe997e6e-3d08-47c2-a69a-4bc03c45f307"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5cc9a4c8-18be-49b4-bf39-1c6ed76f83bf">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5c29e748-27cb-48da-b8e7-8771a8a723e3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fe750423-6635-4aa9-8a51-495570276eda"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da69257e-c123-4da0-8d1f-e99f18f2df47"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:754516f2-7c94-486a-866f-1534538124a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a5f79e9-9693-4b52-a227-e611ca40f13d"/>
+    <ns:title>Drift og vedlikehold</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:afbb86d3-c58e-4ac3-a648-6bd620979125"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1eeb6d3d-13be-4ae4-a3b2-0ae2cb715f00"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0d6a90b2-9375-4996-9a10-1f6ee4c05f31"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:217ee0a0-d0e5-4241-868b-d74677886cd2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:10fe4f28-282a-4060-8140-6e238f57701a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:69224120-babd-4ad2-ad54-65077ba5768c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:346c870f-1d4d-4a81-86fa-20119b186e35"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:af7465e7-0d9c-4934-ac6b-656480fef071"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:217ee0a0-d0e5-4241-868b-d74677886cd2">
+    <ns:title>utføre regelmessig vedlikehold på hogstmaskin, lastbærer, landbrukstraktor, motorsag og andre motorredskaper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:da69257e-c123-4da0-8d1f-e99f18f2df47">
+    <ns:title>vurdere risiko ved arbeid i skog og utmark og ivareta egen og andres sikkerhet i tråd med gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:433859d7-5d12-4a1e-8a13-718dce43e00d">
+    <ns:title>beskrive økologiske sammenhenger i ulike skogtyper, identifisere merkeplanter, biotoper og kulturminner, og vurdere konsekvenser av menneskelig aktivitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:754516f2-7c94-486a-866f-1534538124a2">
+    <ns:title>bruke maskiner og teknisk utstyr i skogsdrift i samsvar med gjeldende regelverk og standarder, og dokumentere det</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:97b3bda4-6f5d-486c-8936-c9a57cfab0bc">
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere arbeid i skog og utmark i tråd med gjeldende regelverk og bransjestandarder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1eeb6d3d-13be-4ae4-a3b2-0ae2cb715f00">
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere skogsdrift, på egen hånd og i samarbeid med andre</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0d6a90b2-9375-4996-9a10-1f6ee4c05f31">
+    <ns:title>forklare hogstmaskinens anvendelsesområde og virkemåte, og utføre innstillinger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5c29e748-27cb-48da-b8e7-8771a8a723e3">
+    <ns:title>bruke lastbærer, landbrukstraktor, motorsag og andre yrkesrelevante motorredskaper i tynning og foryngelseshogst i samsvar med gjeldende regelverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1a3155ce-47fb-484e-a04a-a9dec7906ba5">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:c9f70577-c1eb-47b9-85ec-7b1d55c27d1f"/>
+    <grep:hovedomraader rdf:resource="uuid:5cc9a4c8-18be-49b4-bf39-1c6ed76f83bf"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:c8c510e5-3447-42a4-9768-c3763b521180"/>
+    <grep:hovedomraader rdf:resource="uuid:8f9e07a8-aa9a-42fa-a91c-380c57b48a4a"/>
+    <grep:kode>SBR2-01</grep:kode>
+    <ns:title>Programområde for skogbruk - Læreplan i felles programfag vg2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe750423-6635-4aa9-8a51-495570276eda">
+    <ns:title>utføre sommer- og vintervedlikehold av skogsveger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ba0a769a-7933-46ab-aeda-ef2d736e5007">
+    <ns:title>forklare forskjeller mellom naturskog og kulturlandskap</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0c19ef40-8f19-4318-b9af-98b14f976201">
+    <ns:title>vurdere muligheter for ny næringsvirksomhet basert på skog- og utmarksressurser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c9f70577-c1eb-47b9-85ec-7b1d55c27d1f">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:afbb86d3-c58e-4ac3-a648-6bd620979125"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:da69257e-c123-4da0-8d1f-e99f18f2df47"/>
+    <ns:title>Drift og vedlikehold</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:346c870f-1d4d-4a81-86fa-20119b186e35"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a5f79e9-9693-4b52-a227-e611ca40f13d"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:f536845c-fe38-4fff-ab0b-b294c998a733"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:217ee0a0-d0e5-4241-868b-d74677886cd2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:69224120-babd-4ad2-ad54-65077ba5768c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:10fe4f28-282a-4060-8140-6e238f57701a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5c29e748-27cb-48da-b8e7-8771a8a723e3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:af7465e7-0d9c-4934-ac6b-656480fef071"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0d6a90b2-9375-4996-9a10-1f6ee4c05f31"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fe750423-6635-4aa9-8a51-495570276eda"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:754516f2-7c94-486a-866f-1534538124a2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1eeb6d3d-13be-4ae4-a3b2-0ae2cb715f00"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8f9e07a8-aa9a-42fa-a91c-380c57b48a4a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6e2237a6-2133-4716-a869-595346a0de4b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8538134b-8a1e-4ca1-8bdf-b4e97fe0654e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:238fa6d1-235b-411d-b0f9-5d5bab22600d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:433859d7-5d12-4a1e-8a13-718dce43e00d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fe997e6e-3d08-47c2-a69a-4bc03c45f307"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0c19ef40-8f19-4318-b9af-98b14f976201"/>
+    <ns:title>Skogskjøtsel, utmark og bedrift</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3fbd1577-3d1a-4bf1-a47f-d5dd9552db6c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:97b3bda4-6f5d-486c-8936-c9a57cfab0bc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e2c75916-c3dd-42ef-919d-549f65a32800"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1903b5cf-3243-4fc0-93e7-eb206c99a4c7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6eb18e89-d51b-4e02-a5b7-f6c7669e2195"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:35650dbf-1835-4ed7-9bf5-f9154d200fc6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8655fcc2-f2bc-412b-99d5-b32434bf5f63"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:45bee027-c41a-46bd-a90f-89de0d0562c9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ba0a769a-7933-46ab-aeda-ef2d736e5007"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:235dabf5-9f48-4d5e-9005-c573136d05a1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e047c39a-20cf-422a-a1c4-b8ccf67ccf20"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3b58ae0e-1129-4000-a2d9-dff9abd8463b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6e2237a6-2133-4716-a869-595346a0de4b">
+    <ns:title>bruke motorryddesag og manuelle redskaper i bestandspleie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69224120-babd-4ad2-ad54-65077ba5768c">
+    <ns:title>bruke yrkesrelevante, digitale verktøy til planlegging, produksjons- og driftsoppfølging og posisjonering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3b58ae0e-1129-4000-a2d9-dff9abd8463b">
+    <ns:title>bruke yrkesrelevante, digitale verktøy i informasjonsinnhenting, kommunikasjon og posisjonering                                                           </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

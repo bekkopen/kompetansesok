@@ -1,0 +1,261 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:cf85ca9c-279e-464e-a236-28b3ed490265">
+    <ns:title>Orgelbyggerfaget</ns:title>
+    <grep:kode>ORG3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d0c0bcc-8c35-4f81-9d8c-02acc4178b15">
+    <ns:title>betjene maskiner og håndverktøy som brukes til framstilling av deler til orgelet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:83accffe-0080-46e3-be71-988b5d865d99">
+    <ns:title>bruke ulike sammenføyings- og limemetoder i orgelbyggerfaget             </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f636617b-eb53-455e-a2a6-1dafd7de0a5a">
+    <ns:title>gjøre rede for og ivareta gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:66119bd4-b0ce-4e9a-b7e1-a1c82fe21e47">
+    <ns:title>gjøre rede for pneumatiske, elektriske og digitale systemer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:090e667c-9ae8-4f3b-abf2-069f34212d4d">
+    <ns:title>gjøre rede for overflatebehandlingsmetoder og utføre ulike teknikker for overflatebehandling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:29d019c9-1912-4390-9daa-b01a16ee36d4">
+    <ns:title>beskrive hovedtrekk ved orgelets tekniske, klanglige og arkitektoniske utvikling </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f660586b-e588-4caf-a674-e4a8964ad7c8">
+    <ns:title>gjøre rede for mekaniske, pneumatiske og elektriske overføringer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ff28b96c-4905-4cc1-9ea8-2556c1a479f9">
+    <ns:title>beregne og dimensjonere aktuelle deler i et orgel ved hjelp av formler, likninger, tabeller og digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0989ad1e-4ef8-46fa-b66f-04737a8c2b75">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:66119bd4-b0ce-4e9a-b7e1-a1c82fe21e47"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:090e667c-9ae8-4f3b-abf2-069f34212d4d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:046193fe-3ba0-4cd7-928d-936b16558456"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:19452183-7843-4022-be8d-a3c4801a59d0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:132a17ef-cd62-4431-8741-b019433ebbad"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:38e961fd-7a55-4200-b0b5-8e09ff29cebf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0f41d851-59d4-41ff-9803-0c3d8edd66c0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6a5b89ad-fb5e-422c-af53-4fb4442df067"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ff28b96c-4905-4cc1-9ea8-2556c1a479f9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:870b2ce9-b15b-43f7-b8bf-8608bd0eb997"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:83accffe-0080-46e3-be71-988b5d865d99"/>
+    <ns:title>Orgelproduksjon</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3d0c0bcc-8c35-4f81-9d8c-02acc4178b15"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6a037cce-576c-4f3f-9fbe-022e61c28be0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0c134473-d52d-4dc6-881f-4b6face1719e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f636617b-eb53-455e-a2a6-1dafd7de0a5a"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:64746a86-b82a-4ddc-b1ed-18c778d25f54"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:57893044-2903-4e7b-a99e-6812a3930789">
+    <ns:title>gjøre rede for grunnleggende musikkteori og musikkhistorie </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0a511be6-985b-483e-9e47-45572797e346">
+    <ns:title>forklare grunnlaget for akustikk og mensurering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:38e961fd-7a55-4200-b0b5-8e09ff29cebf">
+    <ns:title>lodde og sveise metaller for bruk i instrumentet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:046193fe-3ba0-4cd7-928d-936b16558456">
+    <ns:title>montere deler i orgelet under veiledning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0f41d851-59d4-41ff-9803-0c3d8edd66c0">
+    <ns:title>beregne materialkostnader etter kappliste og lage selvkostkalkyle av aktuelle deler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:64746a86-b82a-4ddc-b1ed-18c778d25f54">
+    <ns:title>skissere og tegne orgelets oppbygning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:19452183-7843-4022-be8d-a3c4801a59d0">
+    <ns:title>dokumentere og vurdere eget arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:414a018f-8d39-4f2d-94f9-ee270e8fdd12">
+    <ns:title>gjøre rede for orgelets oppbygning og virkemåte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c83cfbd6-990a-4eb8-a442-645c8e9e6681">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:57893044-2903-4e7b-a99e-6812a3930789"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0a511be6-985b-483e-9e47-45572797e346"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f660586b-e588-4caf-a674-e4a8964ad7c8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:29d019c9-1912-4390-9daa-b01a16ee36d4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:414a018f-8d39-4f2d-94f9-ee270e8fdd12"/>
+    <ns:title>Orgelkunnskap</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a5b89ad-fb5e-422c-af53-4fb4442df067">
+    <ns:title>gjøre rede for grunnleggende restaureringsmetoder og utføre vedlikehold</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6f77ffc0-a20a-4705-bcdb-ba0ef5e5294d">
+    <grep:hovedomraader rdf:resource="uuid:0989ad1e-4ef8-46fa-b66f-04737a8c2b75"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:1f5b1730-25fe-4c1f-9909-795c43587a35"/>
+    <grep:hovedomraader rdf:resource="uuid:c83cfbd6-990a-4eb8-a442-645c8e9e6681"/>
+    <grep:kode>ORG3-01</grep:kode>
+    <ns:title>Læreplan i orgelbyggerfaget Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f5b1730-25fe-4c1f-9909-795c43587a35">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:414a018f-8d39-4f2d-94f9-ee270e8fdd12"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:29d019c9-1912-4390-9daa-b01a16ee36d4"/>
+    <ns:title>Etter Vg3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0f41d851-59d4-41ff-9803-0c3d8edd66c0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f636617b-eb53-455e-a2a6-1dafd7de0a5a"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:cf85ca9c-279e-464e-a236-28b3ed490265"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3d0c0bcc-8c35-4f81-9d8c-02acc4178b15"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ff28b96c-4905-4cc1-9ea8-2556c1a479f9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f660586b-e588-4caf-a674-e4a8964ad7c8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0c134473-d52d-4dc6-881f-4b6face1719e"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:83accffe-0080-46e3-be71-988b5d865d99"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0a511be6-985b-483e-9e47-45572797e346"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:19452183-7843-4022-be8d-a3c4801a59d0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:090e667c-9ae8-4f3b-abf2-069f34212d4d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:870b2ce9-b15b-43f7-b8bf-8608bd0eb997"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:38e961fd-7a55-4200-b0b5-8e09ff29cebf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6a037cce-576c-4f3f-9fbe-022e61c28be0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:66119bd4-b0ce-4e9a-b7e1-a1c82fe21e47"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:132a17ef-cd62-4431-8741-b019433ebbad"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:64746a86-b82a-4ddc-b1ed-18c778d25f54"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:046193fe-3ba0-4cd7-928d-936b16558456"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:57893044-2903-4e7b-a99e-6812a3930789"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6a5b89ad-fb5e-422c-af53-4fb4442df067"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:132a17ef-cd62-4431-8741-b019433ebbad">
+    <ns:title>gjøre rede for grunnleggende intonasjonsprinsipper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0c134473-d52d-4dc6-881f-4b6face1719e">
+    <ns:title>framstille deler til orgelhus, vindlader, spillebord og mekanikk, registermekanikk, belger og pipeverk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a037cce-576c-4f3f-9fbe-022e61c28be0">
+    <ns:title>temperere og stemme et register</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:870b2ce9-b15b-43f7-b8bf-8608bd0eb997">
+    <ns:title>gjøre rede for egenskaper og bruksområder for aktuelle tresorter og metaller som brukes i orgelbygging </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

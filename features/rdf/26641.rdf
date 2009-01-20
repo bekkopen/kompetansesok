@@ -1,0 +1,360 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:f07e841c-4c42-4ef8-9530-f3f30f7f8ab5">
+    <ns:title>planlegge og gjennomføre arbeidet i tråd med prinsippene for universell utforming av produkter og tjenester </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b8396eb6-fd38-45b2-a3a7-26cc5a5efbaf">
+    <ns:title>utføre arbeidet i tråd med ergonomiske prinsipper </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:54bd48e9-4667-44c9-9977-eb21422bc998">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dd63e710-fcd0-4b20-9298-97e47826974a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7a9ce2e6-ca09-4ff2-a725-c8d05f53741e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e3b79b01-873a-4315-89e0-4666e71507ef"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d356e6e0-d968-4723-93de-27391d90cb2f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd466538-12a9-489c-a913-3b2d1f2ddf6a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e226cecf-4771-4767-b499-c06ecf63ca5a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7215ca66-ef28-4536-89d2-161d9180a007"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:388c0b78-073b-41ec-8f6a-55b8446e769a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a80fd322-5c80-4c8e-bf41-9aa851e1d772"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9cd0b433-19d2-4018-93fe-e18d2896aefd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d79ff16-f5a8-4102-8447-1f54af9f8e78">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dd63e710-fcd0-4b20-9298-97e47826974a"/>
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:6331db4f-5d6a-49ef-93dc-814908d56f79"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e3b79b01-873a-4315-89e0-4666e71507ef"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7215ca66-ef28-4536-89d2-161d9180a007"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cd466538-12a9-489c-a913-3b2d1f2ddf6a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d356e6e0-d968-4723-93de-27391d90cb2f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7a9ce2e6-ca09-4ff2-a725-c8d05f53741e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:388c0b78-073b-41ec-8f6a-55b8446e769a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a80fd322-5c80-4c8e-bf41-9aa851e1d772"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9cd0b433-19d2-4018-93fe-e18d2896aefd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e226cecf-4771-4767-b499-c06ecf63ca5a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c0a9b482-0dc8-4053-a740-c94926c951ed">
+    <ns:title>forberede og assistere ved tannbehandlinger og kirurgiske inngrep i munnhulen </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b1b227f3-16a1-4e20-9806-0a234399b31e">
+    <ns:title>gi pasienter postoperativ informasjon i samarbeid med tannlege eller tannpleier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6e088e01-2719-4c2d-8900-267a300c3e77">
+    <ns:title>bruke korrekt fagterminologi </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:440d1bcd-26ca-4a43-a816-4b31212df50a">
+    <ns:title>drøfte tannhelsesekretærens rolle i det tverrfaglige samarbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a9ce2e6-ca09-4ff2-a725-c8d05f53741e">
+    <ns:title>gjøre rede for utvikling av sykdom i tenner og munnhule og hvilke konsekvenser slike sykdommer kan ha for fysisk, psykisk og sosial helse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fa5cf48c-dc77-4058-a661-07d2a2ac3846">
+    <ns:title>planlegge, gjennomføre, dokumentere og vurdere eget arbeid innen tannhelsetjenesten</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0c96217b-0f43-4087-afe0-1db57f0d8f0d">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d4d187c1-0203-4918-b572-552bce213a15"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a43bde46-c869-4951-9305-6392672a9609"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:040f2bcc-23ec-4cf3-b435-0812847fbe03"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:619f435d-524d-4a59-9fa5-af0237fb1085"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:92d7cee5-66b1-4c26-999c-b06b3c98369f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:07a1eb90-fa1d-4d5f-aaf7-b793ea1c017b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:440d1bcd-26ca-4a43-a816-4b31212df50a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6e088e01-2719-4c2d-8900-267a300c3e77"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d4f623b4-0729-40ac-89e7-ff8946b28849"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ac1086f-aa3b-4c0a-aa2d-0f2e93c63c6c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:07a1eb90-fa1d-4d5f-aaf7-b793ea1c017b">
+    <ns:title>drøfte hva profesjonell yrkesutøvelse innebærer for tannhelsesekretæren</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b37ab734-aa72-4d81-9c04-2185464c1f2c">
+    <ns:title>følge arbeidsplassens rutiner for kvalitetsutviklingsarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9cd0b433-19d2-4018-93fe-e18d2896aefd">
+    <ns:title>drøfte sammenhenger mellom tann- og munnhelse, levevaner og kosthold</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:92d7cee5-66b1-4c26-999c-b06b3c98369f">
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:kode>TAN3Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7215ca66-ef28-4536-89d2-161d9180a007">
+    <ns:title>håndtere kjemiske stoffer og miljøfarlig avfall  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:619f435d-524d-4a59-9fa5-af0237fb1085">
+    <ns:title>kommunisere med pasienter i ulike livssituasjoner </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d4f623b4-0729-40ac-89e7-ff8946b28849">
+    <ns:title>ivareta pasienter med odontofobi  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1520802d-6304-4f72-b02e-e8964d210139">
+    <ns:title>Yrkesutøvelse</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fa5cf48c-dc77-4058-a661-07d2a2ac3846"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d31c44e5-cbb5-4be6-bdb8-9b7b8aad4b8f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:69b13a47-cc3e-41a3-adb1-2994c9e96dec"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b8396eb6-fd38-45b2-a3a7-26cc5a5efbaf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:be902694-1335-452b-a715-7b24a9133b62"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c0a9b482-0dc8-4053-a740-c94926c951ed"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:29168cbd-586e-412a-8baa-e6609bba0e0b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cf614c48-0791-4c90-a957-f00112674e28"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b37ab734-aa72-4d81-9c04-2185464c1f2c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7cf13e9f-bf80-4c6a-8831-4c636bba36a6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:35206f4b-6a1d-40ca-9b4e-8ec2ab37c607"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b1b227f3-16a1-4e20-9806-0a234399b31e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fe35b0b6-f964-477c-8d68-cc6b45bf0a70"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f07e841c-4c42-4ef8-9530-f3f30f7f8ab5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d356e6e0-d968-4723-93de-27391d90cb2f">
+    <ns:title>informere om munnhygiene, fluorbruk og individuelle innkallingsintervaller som ledd i det helsefremmende arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe35b0b6-f964-477c-8d68-cc6b45bf0a70">
+    <ns:title>utføre enklere laboratoriearbeid på tannklinikken</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d03ae6f-beab-433c-b34f-38cc6b63c1c0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6e088e01-2719-4c2d-8900-267a300c3e77"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:440d1bcd-26ca-4a43-a816-4b31212df50a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:040f2bcc-23ec-4cf3-b435-0812847fbe03"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a43bde46-c869-4951-9305-6392672a9609"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:07a1eb90-fa1d-4d5f-aaf7-b793ea1c017b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d4d187c1-0203-4918-b572-552bce213a15"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:619f435d-524d-4a59-9fa5-af0237fb1085"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ac1086f-aa3b-4c0a-aa2d-0f2e93c63c6c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d4f623b4-0729-40ac-89e7-ff8946b28849"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d31c44e5-cbb5-4be6-bdb8-9b7b8aad4b8f">
+    <ns:title>utføre arbeidet i tråd med gjeldende regelverk for helse, miljø og sikkerhet og etter hygieniske retningslinjer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd63e710-fcd0-4b20-9298-97e47826974a">
+    <ns:title>utføre praktisk smittevernarbeid og drøfte betydningen av dette </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd466538-12a9-489c-a913-3b2d1f2ddf6a">
+    <ns:title>gjøre rede for tennenes og munnhulens anatomi og fysiologi </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d4d187c1-0203-4918-b572-552bce213a15">
+    <ns:title>drøfte yrkesetiske problemstillinger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a80fd322-5c80-4c8e-bf41-9aa851e1d772">
+    <ns:title>utføre førstehjelp knyttet til yrkesutøvelsen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:29168cbd-586e-412a-8baa-e6609bba0e0b">
+    <ns:title>utføre administrative oppgaver i en tannhelsepraksis </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cf614c48-0791-4c90-a957-f00112674e28">
+    <ns:title>bestille og oppbevare dentalt forbruksmateriell </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ac1086f-aa3b-4c0a-aa2d-0f2e93c63c6c">
+    <ns:title>drøfte kjennetegn på god pasientservice og yte service til pasienter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:040f2bcc-23ec-4cf3-b435-0812847fbe03">
+    <ns:title>drøfte hva pasientmedvirkning innebærer i tannhelsetjenesten, og informere om pasientens rettigheter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69b13a47-cc3e-41a3-adb1-2994c9e96dec">
+    <ns:title>bruke og vedlikeholde instrumenter og utstyr </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f9eb0125-1eed-4112-a521-7aa1976ad2f3">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7cf13e9f-bf80-4c6a-8831-4c636bba36a6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:69b13a47-cc3e-41a3-adb1-2994c9e96dec"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cf614c48-0791-4c90-a957-f00112674e28"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b1b227f3-16a1-4e20-9806-0a234399b31e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b37ab734-aa72-4d81-9c04-2185464c1f2c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fa5cf48c-dc77-4058-a661-07d2a2ac3846"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f07e841c-4c42-4ef8-9530-f3f30f7f8ab5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:35206f4b-6a1d-40ca-9b4e-8ec2ab37c607"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c0a9b482-0dc8-4053-a740-c94926c951ed"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:29168cbd-586e-412a-8baa-e6609bba0e0b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:be902694-1335-452b-a715-7b24a9133b62"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fe35b0b6-f964-477c-8d68-cc6b45bf0a70"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d31c44e5-cbb5-4be6-bdb8-9b7b8aad4b8f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b8396eb6-fd38-45b2-a3a7-26cc5a5efbaf"/>
+    <ns:title>Yrkesutøvelse</ns:title>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:1c047c16-7c61-41d4-9352-87f9fcd87f31"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:be902694-1335-452b-a715-7b24a9133b62">
+    <ns:title>bruke relevante digitale verktøy i arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e3b79b01-873a-4315-89e0-4666e71507ef">
+    <ns:title>drøfte konsekvenser for tann- og munnhelse ved bruk av tobakk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b790f3df-a91a-4e1e-b0c6-8a099c214b17">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:f9eb0125-1eed-4112-a521-7aa1976ad2f3"/>
+    <grep:hovedomraader rdf:resource="uuid:1520802d-6304-4f72-b02e-e8964d210139"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:0c96217b-0f43-4087-afe0-1db57f0d8f0d"/>
+    <grep:hovedomraader rdf:resource="uuid:3d03ae6f-beab-433c-b34f-38cc6b63c1c0"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:2d79ff16-f5a8-4102-8447-1f54af9f8e78"/>
+    <grep:hovedomraader rdf:resource="uuid:54bd48e9-4667-44c9-9977-eb21422bc998"/>
+    <grep:kode>TAN3-01</grep:kode>
+    <ns:title>Programområde for tannhelsesekretær - læreplan felles programfag Vg3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e226cecf-4771-4767-b499-c06ecf63ca5a">
+    <ns:title>drøfte hva estetikk, service, personlig hygiene og framtreden betyr for trygghet og trivsel </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7cf13e9f-bf80-4c6a-8831-4c636bba36a6">
+    <ns:title>følge gjeldende regelverk om taushetsplikt, personvern og yrkesetiske retningslinjer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:388c0b78-073b-41ec-8f6a-55b8446e769a">
+    <ns:title>gjøre rede for hvordan enkelte legemidler kan innvirke på munn- og tannhelse </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:35206f4b-6a1d-40ca-9b4e-8ec2ab37c607">
+    <ns:title>ta dentale røntgenbilder i tråd med strålehygieniske retningslinjer og vurdere røntgenbildenes kvalitet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6331db4f-5d6a-49ef-93dc-814908d56f79">
+    <ns:title>Helsefremmende arbeid</ns:title>
+    <grep:kode>TAN3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c047c16-7c61-41d4-9352-87f9fcd87f31">
+    <ns:title>Yrkesutøvelse</ns:title>
+    <grep:kode>TAN3Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a43bde46-c869-4951-9305-6392672a9609">
+    <ns:title>bruke ulike strategier for konflikthåndtering </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>
