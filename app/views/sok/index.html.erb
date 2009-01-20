@@ -39,7 +39,7 @@
     <h3><%= t('overskrifter.læreplaner') %></h3>
     <ul>
       <% @laereplaner_treff.each do |laereplan| %>
-        <li> <%= link_to laereplan.tittel, laereplan_path(laereplan) %> </li>
+        <li> <%= link_to "#{laereplan.kode}: #{laereplan.tittel}", laereplan_path(laereplan) %> </li>
       <% end %>
     </ul>
   </div>
