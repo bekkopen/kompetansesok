@@ -39,13 +39,15 @@ Rails::Initializer.run do |config|
     
     # Brukes kun til test
     config.gem 'nokogiri',           :version => '1.1.0'
-    config.gem 'cucumber',           :version => '0.1.15'
+    config.gem 'cucumber',           :version => '0.1.16'
   end
   # TODO: fjern denne - brukes ikke i nytt søkedesign
   config.gem 'mislav-will_paginate', :version => '2.3.6',  :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'fastercsv',            :version => '1.4.0'
   config.gem 'progressbar',          :version => '0.0.3'
   config.gem 'chronic',              :version => '0.2.3'
+  
+  config.gem 'rubyzip',              :version => '0.9.1', :lib => 'zip/zipfilesystem'
 
   
   # Only load the plugins named here, in the order given. By default, all plugins 
