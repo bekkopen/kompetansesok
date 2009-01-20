@@ -16,8 +16,6 @@ body {
 /* Headings
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6 { font-weight: bold; }
-
 h1 {
 	color: #333;
 	font-size: 2em;
@@ -25,6 +23,7 @@ h1 {
 	margin-bottom: 0.5em;
 }
 
+h2,h3,h4,h5,h6 { font-weight: bold; }
 
 h1 img, h2 img, h3 img, 
 h4 img, h5 img, h6 img {
@@ -107,7 +106,7 @@ div#spraak {
 }
 
 div#resultater {
-  padding: 2em 0em
+  padding: 1.5em 0em
 }
 
 div.delresultat {
@@ -196,14 +195,14 @@ ul.linke-liste
     margin-bottom: 1em;
 }
 
-#sokefelt {
+/*#sokefelt {
     width: 49%;
     float:left;
 }
 #valgte_kompetansemaal {
     width: 49%;
     float: right;
-}
+}*/
 
 #sokeside_top {
     overflow:auto;
