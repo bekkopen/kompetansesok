@@ -8,6 +8,11 @@ Egenskap: Søk
     Når jeg søker etter ""
     Så skal jeg ikke få noen treff
     Og jeg skal se "Vennligst angi et søkekriterium"
+
+  Scenario: Beholde søkestreng i søkefelt
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "mitt søk"
+    Så skal det stå "mitt søk" i søkefeltet
   
   Scenario: Få 9 treff i kompetansemål på "samisk kultur"
     Gitt at jeg er på hovedsiden
@@ -38,7 +43,7 @@ Egenskap: Søk
     Når jeg søker etter "ambulansefaget"
     Så skal jeg få opp følgende treff for Laereplan:
       | Tittel                                              |
-      | Læreplan i ambulansefaget Vg3 / opplæring i bedrift |
+      | AMB3-01: Læreplan i ambulansefaget Vg3 / opplæring i bedrift |
 
   Scenario: Få 5 treff i hovedområder på "marked"
     Gitt at jeg er på hovedsiden
@@ -66,3 +71,19 @@ Egenskap: Søk
     Så skal filtreringsboksene vise seksjoner:
       | kompetansemaal | laereplaner | hovedomraader |
       | true           | true        | true          |
+
+  Scenario: Kunne søke med '*' som wildcard
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "NOR6*"
+    Så skal jeg få opp følgende treff for Laereplan:
+      | Tittel                        |
+      | NOR6-01: Læreplan i fordypning i norsk |
+
+  Scenario: Kunne søke etter flere verider separert med semikolon
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "NOR6-01; FOR6-01"
+    Så skal jeg få opp følgende treff for Laereplan:
+      | Tittel                                                                                                                                       |
+      | NOR6-01: Læreplan i fordypning i norsk                                                                                                       |
+      | FOR6-01: Læreplan i samisk visuell kultur - valfritt programfag i studiespesialiserande utdanningsprogram, programområde for formgjevingsfag |
+    
