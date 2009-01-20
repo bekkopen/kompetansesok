@@ -29,8 +29,6 @@ class SokController < ApplicationController
 
   def download_csv
 
-    response.headers['Content-Type'] = 'application/force-download'
-
     valgte_kompetanse_maal = []
     if params[:uuids]
       params[:uuids].split(",").each do |uuid|
@@ -47,8 +45,9 @@ class SokController < ApplicationController
         csv << values unless values.empty?
       end
     end
+    
+    send_data(@content, :filename => "#{timestamp}_kompetansemaal.csv", :disposition => 'inline')
 
-    render :layout => false
   end
 
   private
