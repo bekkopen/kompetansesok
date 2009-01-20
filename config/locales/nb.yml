@@ -2,6 +2,7 @@ nb:
   navigasjon:
     forside: "Forside"
     database_eksport: "Database eksport"
+    om_kopetansemål_søk: "Om kompetansemål søk"
 
   overskrifter:
     resultater: "Resultater"
@@ -13,13 +14,14 @@ nb:
     fag: "Fag"
     valgte_kompetansemål: "Valgte kompetansemål"
     database_eksport: "Database eksport"
+    søk_etter_kompetansemål: "Søk etter kompetansemål"
+    kompetansemål_søk: "Kompetansemål søk"
+    ofte_stillte_spørsmål: "Ofte stillte spørsmål"
   
   knapper:
     søk: "Søk"
     eksport_csv: "Lagre resultatsett til fil"
     tilbake: "Tilbake"
-    
-
     
   etiketter:
     søk: "Søk"
