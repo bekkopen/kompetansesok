@@ -1,4 +1,4 @@
-require 'zip/zipfilesystem'
+
 
 
 namespace :db do
@@ -20,6 +20,7 @@ namespace :db do
     zip_filename = "db_dump_#{time_stamp}.zip"
     zip_savepath = File.join(zip_path, zip_filename)
 
+    require 'zip/zipfilesystem'
     Zip::ZipFile.open(zip_savepath, Zip::ZipFile::CREATE) do |zipfile|
       zipfile.file.open(dump_filename, "w") { |f| f.puts File.new(dump_filepath).read }
     end
