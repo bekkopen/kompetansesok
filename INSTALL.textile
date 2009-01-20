@@ -1,0 +1,32 @@
+h1. Installasjon av Kompetansesøk applikasjonen i produksjonsmiljø
+
+h2. Installer GlassFish
+
+Installer "GlassFish V2 UR2 b04":https://glassfish.dev.java.net/downloads/v2ur2-b04.html (følg instruksjonene på siden)
+
+h2. Installer MySQL
+
+Installer "MySQL 5.1":http://dev.mysql.com/downloads/mysql/5.1.html#downloads (følg instruksjonene på siden)
+
+h2. Lag database
+
+<code>mysqladmin create kompetansesok -uroot</code>
+
+h2. Lag tabeller
+
+h3. Hent kildekoden 
+
+Dette krever at kildekoden hentes ned. Kildekoden inneholder et script for å lage tabeller.
+
+* Gå til http://github.com/bekkopen/kompetansesok/tree/master med en browser og klikk "Download"
+* Velg nyeste versjon fra "Other downloads"
+* Velg zip fil og pakk ut på produksjonsserveren
+
+h3. Installer JRuby
+
+* Hent 
+
+h3. Migrer database
+
+<code>jruby -S rake db:migrate RAILS_ENV=production</code>
+
