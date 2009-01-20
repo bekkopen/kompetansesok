@@ -1,0 +1,416 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6a424334-a63d-49ee-9680-3b6eee1f738a">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b661f775-3d52-4736-bf07-50134f9c2594"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e1fa990a-e753-474e-83c2-b0ccf3f2c0e5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f6659cce-a6d0-459f-99bb-4dfa06af50bf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5a55ab96-5355-48a6-adae-dd66cdb2073f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:951936f3-5f0f-43da-a363-85d3508e8c7a"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:1516a2b8-7f62-4688-8bc3-77d2e2fdf33a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cdc4efef-38ae-45a9-9b6f-fd6748f51137"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:19517536-94af-4b07-86b8-876afaee2a43"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a6b7add6-67a5-4122-9c1e-77442124df44"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5ec558a4-340b-4e97-a5f8-17ce0dfa688b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ee7bb04-0334-4a36-a1d3-a60b4611d3c6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bf9f27a7-cb9f-4183-926a-024ca3d51737"/>
+    <ns:title>Reiseliv og språk 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:57d85dd2-63de-4927-bb8b-485e8a9bc13c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:69ff3176-8046-4cc8-94fe-735e58de6c79"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1301a19a-ee68-4145-acf1-88afcc70db7f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2f31106b-9490-46c6-8d96-eddc0ee1919e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:05f05f99-6362-4289-b576-f8ce54e774dc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a7a041ac-ce10-47a2-bd5f-bb8ed4b842d7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a5b7bde1-5a05-48cd-817e-7a9f910344e5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c7900ed3-a62b-4f5b-83b8-d4264d7f3ec6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0266b7e9-894f-43b5-9a7a-50fc9b91ff01"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5dba8926-ef7d-4e42-af90-c7efd75a09b7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51ed31fc-7645-4e09-9421-d3e9d55da3b1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:16170a54-63df-472f-9a55-ff7c1c7720cd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:82251f69-d60f-427c-8283-353c57056ff9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2f0628ff-211d-4676-af6a-80989c48bbad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8648e93f-3409-44d7-9968-d1bfb6b2e3bb">
+    <ns:title>presentere en destinasjon med vekt på historiske og geografiske forutsetninger for reiseliv </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1516a2b8-7f62-4688-8bc3-77d2e2fdf33a">
+    <ns:title>Reiseliv og språk 1</ns:title>
+    <grep:kode>RSPZ01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b661f775-3d52-4736-bf07-50134f9c2594">
+    <ns:title>identifisere kjennetegn ved lokale, nasjonale og internasjonale markedssegmenter i reiselivsnæringen </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c5be1144-2561-4106-bf8e-3a8637e0cc65">
+    <ns:title>presentere sentrale nasjonale og internasjonale destinasjoner på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a03a559b-d82b-4821-9027-747d84511647">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:57d85dd2-63de-4927-bb8b-485e8a9bc13c"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a6b7add6-67a5-4122-9c1e-77442124df44"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:51ed31fc-7645-4e09-9421-d3e9d55da3b1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0266b7e9-894f-43b5-9a7a-50fc9b91ff01"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ee7bb04-0334-4a36-a1d3-a60b4611d3c6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:69ff3176-8046-4cc8-94fe-735e58de6c79"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f0628ff-211d-4676-af6a-80989c48bbad"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a7a041ac-ce10-47a2-bd5f-bb8ed4b842d7"/>
+    <ns:title>Reiselivsproduktet</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5ec558a4-340b-4e97-a5f8-17ce0dfa688b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f6659cce-a6d0-459f-99bb-4dfa06af50bf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b661f775-3d52-4736-bf07-50134f9c2594"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5a55ab96-5355-48a6-adae-dd66cdb2073f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e1fa990a-e753-474e-83c2-b0ccf3f2c0e5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1301a19a-ee68-4145-acf1-88afcc70db7f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45a8f8e3-e332-490c-9f84-68343c30bb4e">
+    <ns:title>drøfte hvordan reiselivsprodukter påvirkes av geografiske og klimatiske forhold </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f6659cce-a6d0-459f-99bb-4dfa06af50bf">
+    <ns:title>vurdere ulike markedssegmenter med tanke på et reiselivsprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b395feda-0ced-4c15-883f-4cd1e96b4fcb">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7a35d6ad-8b88-4dc4-9eab-f2a91442a145"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0226053b-237e-403b-b17c-52577604c86a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b740d5f3-9324-4d04-ba42-c89496e91eb2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:45a8f8e3-e332-490c-9f84-68343c30bb4e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:95f1b452-aae4-444a-8b57-b201439ae114"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8648e93f-3409-44d7-9968-d1bfb6b2e3bb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8b8c3b18-7d40-4178-95fc-1be088ad2b43"/>
+    <ns:title>Reiselivsutvikling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eccf49d7-4285-421a-ac5e-a6e25c4d9819"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:33438572-b679-42e3-9e59-b8b1b93fc230"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3d09b0a9-7ec0-4618-9bae-500d144de3dd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0de62a0c-9c1a-485c-b40e-d26714b5adeb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c14ffeff-1903-4a1a-85af-e45ca778ed00"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1301a19a-ee68-4145-acf1-88afcc70db7f">
+    <ns:title>drøfte hvordan ulike rammevilkår kan påvirke reiselivsnæringen, og hvordan reiseliv kan inngå i ulike næringskombinasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ee7bb04-0334-4a36-a1d3-a60b4611d3c6">
+    <ns:title>utarbeide og presentere en enkel markedsplan for et reiselivsprodukt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c14ffeff-1903-4a1a-85af-e45ca778ed00">
+    <ns:title>gjøre rede for historiske forutsetninger for utviklingen av reiselivet og bruke historiske kilder i formidlingen av reiselivsprodukter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:33438572-b679-42e3-9e59-b8b1b93fc230">
+    <ns:title>drøfte virkninger av reiselivsprodukter på kultur, natur og miljø i lokalt, nasjonalt og internasjonalt perspektiv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f8ebbb6-ef21-4f7d-9295-6f67e94e8ad3">
+    <ns:title>Reiseliv og språk 2</ns:title>
+    <grep:kode>RSPZ02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0c1ca246-2251-4d82-8a2c-a3276213630b">
+    <ns:title>lese og trekke ut hovedinnholdet i reiselitteratur på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:26f4c1e5-a60d-413b-912c-08eb3eac2393">
+    <ns:title>utveksle informasjon i forberedt og spontan samhandling med andre på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:57d85dd2-63de-4927-bb8b-485e8a9bc13c">
+    <ns:title>gjøre rede for bærekraftig utvikling av en destinasjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a5b7bde1-5a05-48cd-817e-7a9f910344e5">
+    <ns:title>finne opplysninger og presentere innholdet i sammensatte reiselivstekster på norsk/samisk og minst ett annet språk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b8c3b18-7d40-4178-95fc-1be088ad2b43">
+    <ns:title>kartlegge og vurdere hvordan reiselivsnæringen påvirkes av globale miljøkrav </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cdba2e86-aed5-4531-946e-ca6610e672a4">
+    <ns:title>Språk og kultur</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:82251f69-d60f-427c-8283-353c57056ff9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a5b7bde1-5a05-48cd-817e-7a9f910344e5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cdc4efef-38ae-45a9-9b6f-fd6748f51137"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:05f05f99-6362-4289-b576-f8ce54e774dc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c7900ed3-a62b-4f5b-83b8-d4264d7f3ec6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f31106b-9490-46c6-8d96-eddc0ee1919e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0c1ca246-2251-4d82-8a2c-a3276213630b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ea2b4583-d42a-4d48-bf3d-82501095234a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:26f4c1e5-a60d-413b-912c-08eb3eac2393"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:94f50296-bb26-48f9-a71d-7e19ea5a22f8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:19517536-94af-4b07-86b8-876afaee2a43"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bf9f27a7-cb9f-4183-926a-024ca3d51737"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c5be1144-2561-4106-bf8e-3a8637e0cc65"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fe886aa2-45dd-41cd-8366-d95cd0fd604d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:951936f3-5f0f-43da-a363-85d3508e8c7a"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5dba8926-ef7d-4e42-af90-c7efd75a09b7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b06bdc06-df87-414d-98f1-187f9843d025"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:16170a54-63df-472f-9a55-ff7c1c7720cd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f9ca9bbc-c879-48df-a49f-67578ca6fd28"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2f0628ff-211d-4676-af6a-80989c48bbad">
+    <ns:title>gjøre rede for sentrale nasjonale og internasjonale organisasjoner i reiselivet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:05f05f99-6362-4289-b576-f8ce54e774dc">
+    <ns:title>gjøre rede for betydningen av kulturkunnskap i formidling av opplevelser og destinasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bf9f27a7-cb9f-4183-926a-024ca3d51737">
+    <ns:title>bruke ulike internasjonale målesystemer og gjøre valutaberegninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ea2b4583-d42a-4d48-bf3d-82501095234a">
+    <ns:title>drøfte betydningen av interkulturell forståelse og respekt i kommunikasjon med andre</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:95f1b452-aae4-444a-8b57-b201439ae114">
+    <ns:title>gjøre rede for reiselivets betydning for den totale verdiskapningen i samfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16170a54-63df-472f-9a55-ff7c1c7720cd">
+    <ns:title>bruke situasjonstilpasset skriftlig og muntlig engelsk i sosiale, reiselivsfaglige og interkulturelle sammenhenger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5ec558a4-340b-4e97-a5f8-17ce0dfa688b">
+    <ns:title>planlegge og gjennomføre muntlig guiding på en destinasjon på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e1fa990a-e753-474e-83c2-b0ccf3f2c0e5">
+    <ns:title>gjøre rede for allemannsretten og vurdere forholdet mellom reiselivsnæringen og hensynet til naturbaserte næringer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe886aa2-45dd-41cd-8366-d95cd0fd604d">
+    <ns:title>drøfte dagsaktuelle og reiselivsfaglige emner på norsk/samisk og et annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5dba8926-ef7d-4e42-af90-c7efd75a09b7">
+    <ns:title>informere ulike målgrupper på norsk/samisk og et annet språk om nasjonale og internasjonale turistattraksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:19517536-94af-4b07-86b8-876afaee2a43">
+    <ns:title>samtale om kulturelle og språklige erfaringer knyttet til forskjellige geografiske områder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3d09b0a9-7ec0-4618-9bae-500d144de3dd">
+    <ns:title>drøfte reiseskildringer fra tidligere tider og vurdere informasjon og holdninger i et historisk perspektiv </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69ff3176-8046-4cc8-94fe-735e58de6c79">
+    <ns:title>bruke informasjon om geografiske og kulturelle forhold i markedsføringsarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:94f50296-bb26-48f9-a71d-7e19ea5a22f8">
+    <ns:title>formidle emner fra norsk og samisk kulturhistorie og kulturliv på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:51ed31fc-7645-4e09-9421-d3e9d55da3b1">
+    <ns:title>vurdere prinsipper for bærekraftig bruk av naturen på en destinasjon i reselivssammenheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eccf49d7-4285-421a-ac5e-a6e25c4d9819">
+    <ns:title>bruke UNESCOs database for verdensarven og andre oversikter over kulturarv og naturattraksjoner i planlegging av reiser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f9ca9bbc-c879-48df-a49f-67578ca6fd28">
+    <ns:title>samtale om kulturelle og språklige erfaringer knyttet til forskjellige geografiske områder på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5a55ab96-5355-48a6-adae-dd66cdb2073f">
+    <ns:title>bruke behovs- og motivasjonsteori i analyse av ulike reiselivsprodukter </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b740d5f3-9324-4d04-ba42-c89496e91eb2">
+    <ns:title>foreslå tiltak som kan gi en bærekraftig utvikling av reiselivsprodukter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:82251f69-d60f-427c-8283-353c57056ff9">
+    <ns:title>bruke digitale verktøy og andre hjelpemidler i informasjonsinnhenting og kommunikasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b9ae5893-32ed-470c-8a06-7989b281244b">
+    <grep:hovedomraader rdf:resource="uuid:b395feda-0ced-4c15-883f-4cd1e96b4fcb"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:abd62718-1021-4544-b721-e729e28d13de"/>
+    <grep:hovedomraader rdf:resource="uuid:a03a559b-d82b-4821-9027-747d84511647"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:6a424334-a63d-49ee-9680-3b6eee1f738a"/>
+    <grep:hovedomraader rdf:resource="uuid:cdba2e86-aed5-4531-946e-ca6610e672a4"/>
+    <grep:kode>RSP1-01</grep:kode>
+    <ns:title>Læreplan i reiseliv og språk - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b06bdc06-df87-414d-98f1-187f9843d025">
+    <ns:title>drøfte reiseskildringer fra tidligere tider og vurdere informasjon og holdninger i et historisk perspektiv </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7900ed3-a62b-4f5b-83b8-d4264d7f3ec6">
+    <ns:title>tilpasse språkbruken i noen grad til ulike kommunikasjonssituasjoner på norsk/samisk og et annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2f31106b-9490-46c6-8d96-eddc0ee1919e">
+    <ns:title>beskrive og vurdere hvordan atferd, klesdrakt, språkbruk og kroppsspråk kan tilpasses ulike situasjoner i vertskapsrollen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:abd62718-1021-4544-b721-e729e28d13de">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8b8c3b18-7d40-4178-95fc-1be088ad2b43"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8648e93f-3409-44d7-9968-d1bfb6b2e3bb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3d09b0a9-7ec0-4618-9bae-500d144de3dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:95f1b452-aae4-444a-8b57-b201439ae114"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b06bdc06-df87-414d-98f1-187f9843d025"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:45a8f8e3-e332-490c-9f84-68343c30bb4e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26f4c1e5-a60d-413b-912c-08eb3eac2393"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:33438572-b679-42e3-9e59-b8b1b93fc230"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0c1ca246-2251-4d82-8a2c-a3276213630b"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:1f8ebbb6-ef21-4f7d-9295-6f67e94e8ad3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c5be1144-2561-4106-bf8e-3a8637e0cc65"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:94f50296-bb26-48f9-a71d-7e19ea5a22f8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0de62a0c-9c1a-485c-b40e-d26714b5adeb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b740d5f3-9324-4d04-ba42-c89496e91eb2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0226053b-237e-403b-b17c-52577604c86a"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <ns:title>Reiseliv og språk 2</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eccf49d7-4285-421a-ac5e-a6e25c4d9819"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c14ffeff-1903-4a1a-85af-e45ca778ed00"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f9ca9bbc-c879-48df-a49f-67578ca6fd28"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ea2b4583-d42a-4d48-bf3d-82501095234a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fe886aa2-45dd-41cd-8366-d95cd0fd604d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7a35d6ad-8b88-4dc4-9eab-f2a91442a145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:951936f3-5f0f-43da-a363-85d3508e8c7a">
+    <ns:title>drøfte sider ved tradisjoner, levemåter, verdier og normer i Norge og i andre land </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a35d6ad-8b88-4dc4-9eab-f2a91442a145">
+    <ns:title>presentere et reiselivsprodukt ved hjelp av digitale verktøy på norsk/samisk og et annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cdc4efef-38ae-45a9-9b6f-fd6748f51137">
+    <ns:title>samtale om aktuelle og tverrfaglige emner knyttet til reiseliv på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0de62a0c-9c1a-485c-b40e-d26714b5adeb">
+    <ns:title>vurdere hvordan utviklingen av tilbud, etterspørsel og trender i reiselivet henger sammen med samfunnsutviklingen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0266b7e9-894f-43b5-9a7a-50fc9b91ff01">
+    <ns:title>bruke kommunikasjons- og presentasjonsteknikker og digitale verktøy i presentasjoner på norsk/samisk og minst ett annet språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a7a041ac-ce10-47a2-bd5f-bb8ed4b842d7">
+    <ns:title>forklare servicemedarbeiderens rolle i tjenesteproduksjon </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0226053b-237e-403b-b17c-52577604c86a">
+    <ns:title>diskutere sammenhenger mellom trender og muligheter for innovative reiselivsprodukter i Norge</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a6b7add6-67a5-4122-9c1e-77442124df44">
+    <ns:title>beskrive det helhetlige reiselivsproduktet på en destinasjon og vurdere destinasjonens konkurransedyktighet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

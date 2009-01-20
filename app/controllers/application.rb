@@ -21,4 +21,8 @@ class ApplicationController < ActionController::Base
     session[:spraak].nil? ? I18n.locale = 'nb' : I18n.locale = session[:spraak]
   end
   
+  def timestamp
+    Time.now.strftime("%Y%m%d%H%M")
+  end
+  
 end

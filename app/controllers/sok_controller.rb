@@ -6,8 +6,10 @@ class SokController < ApplicationController
     @kompetansemaal_treff = []
     @laereplaner_treff = []
     @hovedomraader_treff = []
+    @kompetansemaalsett_treff = []
+    @fag_treff = []
 
-    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
+    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader filter_kompetansemaalsett filter_fag}.each do |p|
       session[p] = params[p] if params.has_key?(p)
     end
     
@@ -21,15 +23,13 @@ class SokController < ApplicationController
       sok = Ultrasphinx::Search.new(:query => sokestreng, :per_page => Ultrasphinx::Search::MAX_MATCHES)
       treff = sok.run
       
-      @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade)       
+      @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
       @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
     end
   end
 
   def download_csv
-
-    response.headers['Content-Type'] = 'application/force-download'
 
     valgte_kompetanse_maal = []
     if params[:uuids]
@@ -47,8 +47,9 @@ class SokController < ApplicationController
         csv << values unless values.empty?
       end
     end
+    
+    send_data(@content, :filename => "#{timestamp}_kompetansemaal.csv", :disposition => 'inline')
 
-    render :layout => false
   end
 
   private
@@ -77,7 +78,7 @@ class SokController < ApplicationController
   end
 
   def set_standard_filtering
-    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader}.each do |p|
+    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader filter_kompetansemaalsett filter_fag}.each do |p|
       session[p] = "true" unless session.cgi.has_key?(p) rescue nil # Ingen cgi i spec miljø
     end
   end

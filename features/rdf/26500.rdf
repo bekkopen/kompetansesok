@@ -1,0 +1,1000 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:61c62de4-18d9-4e38-8f19-e7504e9c943e">
+    <ns:title>diskutere årsaker til og følgjer av kriminalitet, og forklare korleis rettsstaten fungerer ut frå korleis eit aktuelt lovbrot er behandla</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1274369c-aff2-46a6-951f-1437190cdb04">
+    <ns:title>søkje etter og velje ut kjelder, vurdere dei kritisk og vise korleis ulike kjelder kan framstille historia ulikt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7d881247-9ff0-4e69-9ef0-4507d0295c48">
+    <ns:title>presentere hovudtrekk ved samisk kultur i dag og reflektere over kva det vil seie å vere urfolk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:af926b21-a867-4291-b156-7eb465d412d6">
+    <ns:title>vurdere bruk og misbruk av ressursar, konsekvensar det kan få for miljøet og samfunnet, og konfliktar det kan skape lokalt og globalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d83778c-deab-4402-967e-7a6db9fe8960">
+    <ns:title>vurdere utfordringar ved å etablere ei bedrift </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:503e32ff-4860-4bc1-b3ea-5203fb886e08">
+    <ns:title>forklare omgrepet globalisering og vurdere ulike konsekvensar av globalisering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1c6dc733-7c72-49a5-92da-1b2b9bb798d9">
+    <ns:title>lese, tolke og bruke papirbaserte og digitale kart og kunne bruke målestokk og kartteikn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0bed9632-fc33-48bb-bdf4-8babd0cf51bc">
+    <ns:title>lage spørsmål om sentrale internasjonale konfliktar på 1900-talet og i vårt eige hundreår, formulere årsaksforklaringar og diskutere konsekvensar av konfliktane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4bbd2484-6430-4370-bf40-b5a885ced3d3">
+    <ns:title>samtale om kva vi meiner med identitet og kultur, kjenne att kulturelle symbol og lage ein visuell presentasjon av dei</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:82a048c8-ea1b-488a-b79f-b33c4d8f0985">
+    <ns:title>identifisere grunnleggjande skilnader mellom dei politiske partia i Noreg, og argumentere frå ulike politiske ståstader</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45d391a4-b6d4-4418-8d81-be8401732183">
+    <ns:title>samanlikne liv og virke i Noreg og i nokre andre land</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8d1ebea9-b97c-4962-b4cb-09578e40b437">
+    <ns:title>presentere ei historisk hending med utgangspunkt i ulike ideologiar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac4e811a-8f43-45d8-b2d7-140122b1b692">
+    <ns:title>gjere greie for kva for nasjonale minoritetar som finst i Noreg, og beskrive hovudtrekk ved historia og levekåra til minoritetane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:28dba578-d0a6-4355-9375-778ca3edc586">
+    <ns:title>planleggje og presentere reiser til nære stader ved hjelp av kart og Internett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3926e2c3-7f87-4763-a527-7612ed32e0ab">
+    <ns:title>diskutere samanhengar mellom styreform, rettsstat og menneskerettar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a78ca135-3b2b-4784-8fb2-78f096e853fd">
+    <ns:title>samtale om toleranse og om korleis møte mellom ulike kulturar kan vere både gjevande og konfliktfylte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:013027c4-652c-4019-88c3-d0d4bddd0def">
+    <ns:title>forklare kva haldningar og fordommar er og drøfte moglegheiter og utfordringar i fleirkulturelle samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aff49ac5-2ae3-43ed-9150-eac9eeb8217f">
+    <ns:title>fortelje om sin eigen familie for ein til to menneskealdrar sidan, og om korleis levevis og levekår har endra seg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:00ad2ff6-23c7-4c7d-be4a-96ad59367f74">
+    <ns:title>beskrive hovudtrekk i norsk økonomi og korleis vår økonomi heng saman med den globale økonomien</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:55e200f5-c590-45f6-86f2-d1ab03f32fbb">
+    <ns:title>setje namn på og plassere heimstaden, heimkommunen, heimfylket og landet sitt på teikningar, kartskisser eller modellar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:faaea28c-cd68-45f3-ba93-97b8844ce289">
+    <ns:title>gjere greie for EU sine mål og styringsorgan og diskutere Noreg sitt forhold til EU</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c0be25b-befa-474c-97bc-8f46c919c214">
+    <ns:title>trekkje ut hovudlinene i resultat- og balanserekneskapet til bedrifter med manuelle og digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:abb8b1ba-0ec2-42ae-9647-22bdeb5d5cf5">
+    <ns:title>forklare korleis menneske gjer seg nytte av naturgrunnlaget, andre ressursar og teknologi i Noreg og i andre land i verda</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3c306912-91bb-4ef3-b331-5acd6068bcef">
+    <ns:title>bruke digitale verktøy til å finne døme på ulike typar konfliktar i verda og presentere ein aktuell internasjonal konflikt og forslag til å løyse konflikten</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn7">
+    <ns:title>Syvende årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:23174ede-945f-471b-a5ca-240478c611b6">
+    <ns:title>analysere utviklinga av rusmiddelbruk og røyking i Noreg og reflektere over haldningar til rusmiddel</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:061d4ea5-579b-4366-afd6-e2950098e8a2">
+    <ns:title>forklare kvifor kjønnsroller varierer mellom samfunn og kulturar og diskutere kvifor kjønnsrollene endrar seg over tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a93506ba-68c1-450d-933c-8a6bd4944e1a">
+    <ns:title>finne fram i trykte og digitale medium, sortere innhaldet i kategoriar og produsere materiale som kan publiserast</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a37bc95d-943a-4f83-a727-0fbd05eab006">
+    <ns:title>drøfte oppfatningar av rettferd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dff54bf7-13c7-4f5e-8acc-e9b8a35de44a">
+    <ns:title>Samfunnsfag 1.-4. årssteg</ns:title>
+    <grep:kode>SAF1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9cfb2240-869d-458a-b153-b7339612b206">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:aaa79126-e850-46f3-87bc-f0bd33e1745c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4fafc90f-8608-4249-8c87-d79ee4bfc1ee"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ddb67fb2-0fc2-4381-a9ce-2d130bfcb3a9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d441876a-0994-4141-9584-fb2aa7863c08"/>
+    <ns:title>Arbeids- og næringsliv</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5d83778c-deab-4402-967e-7a6db9fe8960"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8e50e99c-ae00-4877-a0be-5402f0cf9486"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ad09fb1f-a97e-4131-b72f-b22d91512f79"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7c0be25b-befa-474c-97bc-8f46c919c214"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a5d44b6-8933-41ad-ae89-e059ed5b1581">
+    <ns:title>gjere samfunnsfaglege undersøkingar som krev teljing og rekning, og presentere resultata av undersøkingane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aaa79126-e850-46f3-87bc-f0bd33e1745c">
+    <ns:title>gjere greie for organisasjonane sin plass i arbeidslivet og drøfte faktorar som bestemmer lønn og arbeidsvilkår</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eb34fd4f-aa72-437c-91f3-ed5193f4144c">
+    <ns:title>gje døme på ulike forventningar til gutar og jenter og drøfte korleis forventningane kan opplevast</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fc2fefe1-c55f-4f12-ab19-a03dbbbcec3b">
+    <ns:title>gje døme på korleis religion påverkar samfunn og kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aaa5eb7d-31aa-415a-a0e1-84948dde1048">
+    <ns:title>utforske kva som krevst for at samfunn skal kunne halde fram å eksistere og samanlikne to eller fleire samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:db1e1fa6-7f8c-4ded-8808-1da05f3fcb91">
+    <ns:title>gje att mytar, segner og eventyr med historisk innhald</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4fafc90f-8608-4249-8c87-d79ee4bfc1ee">
+    <ns:title>definere omgrepet levestandard, gjere greie for årsaker til at levestandarden i Noreg har auka og diskutere om auken har ført til betre livskvalitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5c4aa3d0-2ac1-435c-a881-d86320232edb">
+    <ns:title>drøfte menneskeverd, rasisme og diskriminering i eit historisk og notidig perspektiv med elevar frå andre skular ved å bruke digitale kommunikasjonsverktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn4">
+    <ns:title>Fjerde årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ec7663da-24ff-4f81-9baa-aa6f0917fcb3">
+    <ns:title>gje døme på internasjonalt samarbeid og beskrive Noreg som internasjonal aktør</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:86a8162e-4496-41e9-88ee-9cf20f5dc027">
+    <ns:title>bruke historiske kart og framstille oppdagingsreiser som europearar gjorde, skildre kulturmøte og samtale om korleis dei ulike kulturane opplevde møtet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c550ff48-53b5-421c-89bb-3a9a4abf170b">
+    <ns:title>forklare korleis vi i Noreg bruker ressursar frå andre stader i verda</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cd173809-ab5f-4888-a25a-13a29b6a3f76">
+    <ns:title>gjere greie for kva eit samfunn er, og reflektere over kvifor menneske søkjer saman i samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:16a1d3cd-caa5-4f06-8569-8084fe5b64e1">
+    <ns:title>forklare skilnader mellom å leve i eit demokrati og i eit samfunn utan demokrati, og gjere greie for dei viktigaste maktinstitusjonane i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:502d9bfe-1947-4e07-8270-977556c34cdd">
+    <ns:title>drøfte idear og krefter som førte til den amerikanske fridomskampen og den franske revolusjonen, og følgjer som dette fekk for den demokratiske utviklinga i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ae6b8cfe-b777-4634-a28c-a7a1b0368506">
+    <ns:title>Samfunnsfag 5.-7. årssteg</ns:title>
+    <grep:kode>SAF1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:82a601df-f96c-4bcc-8500-532def1dda99">
+    <ns:title>gjere greie for sentrale kjenneteikn ved norsk økonomisk politikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ae00c0da-11bb-43b3-822a-12807e418010">
+    <ns:title>samanlikne og påvise likskapar og skilnader mellom land i Europa og land i andre verdsdelar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ef23211-b0f4-4ca7-b382-d7715e8311af">
+    <ns:title>definere omgrepet makt og gje døme på korleis makt blir brukt i verdssamfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c0617328-ec19-4774-bd80-bd6ba001126f">
+    <ns:title>beskrive landskapsformer og geografiske nemningar ved å utforske landskapet nær skulen og heimen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ed8d5314-e187-4007-8ab4-668d92f4a2a9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fc2fefe1-c55f-4f12-ab19-a03dbbbcec3b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c7543168-427f-48fa-9f5f-c8c9acb0668a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c99502c0-eadd-496f-8a37-c4b146f9b26e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7d881247-9ff0-4e69-9ef0-4507d0295c48"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1de03733-15df-472d-b9f0-d7b9e30c76e3"/>
+    <ns:title>Kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1b142330-5679-4f14-91d8-fddc96f2055d">
+    <ns:title>bruke digitale verktøy til å finne informasjon om omfanget av kriminalitet i Noreg, grunngje kvifor samfunnet straffar og vurdere korleis kriminalitet kan førebyggjast</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a79a1dbc-7fca-42f4-8109-1edcb0c9d2a0">
+    <ns:title>forklare samanhengar mellom naturressursar, næringar, busetnad og levevis</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8764fb8e-bd74-4259-b043-6195e295a797">
+    <ns:title>lage visuelle framstillingar av to eller fleire tidlege elvekulturar ved hjelp av digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ee732653-4d69-47ed-ab50-b4e00728807b">
+    <ns:title>gjere greie for imperialisme og gje døme på avkolonialisering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:adcc7198-6f82-4590-8e78-2c19d7006653">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:43c8aa35-5897-4148-8e40-c4a4eba5d2ae"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b17d0f55-d656-466c-a706-8c97da580069"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:39678c7b-4e0f-4253-a7b4-6d70f91483ea"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a79a1dbc-7fca-42f4-8109-1edcb0c9d2a0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ae00c0da-11bb-43b3-822a-12807e418010"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01b1cad8-4e13-4d74-8d29-b44689471ac0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d8807548-48ad-4866-ba21-d5fc336881a2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a9fbd41f-6415-4f24-894d-14d38b387717"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e806095-352a-49b9-849e-6ead321cb3eb"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c550ff48-53b5-421c-89bb-3a9a4abf170b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2acdbca7-c510-48b3-b40e-a8fe829af8d4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:84de36ae-c851-440d-a854-ae1311b450d9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cd173809-ab5f-4888-a25a-13a29b6a3f76"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:34547711-95fb-402b-9772-4ffe901a4822"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3aed5e3f-0a88-4735-8060-a85d4954ff58"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:49ec979c-77a8-4cc2-9d29-817a3e742e25"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2f7f8a97-de34-4947-929b-bc80aeaea7a7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:be7af95a-afc1-42b0-833f-8d45619b80c9"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01f2cc5e-67a6-45ed-a43f-ccdc2be314d2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:86a8162e-4496-41e9-88ee-9cf20f5dc027"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4bbd2484-6430-4370-bf40-b5a885ced3d3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8764fb8e-bd74-4259-b043-6195e295a797"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a1c0a5d-a6cb-433b-b59d-4e9075cf24d8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:74332b08-2f60-4c27-8fa7-fc7721db54d4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:16a1d3cd-caa5-4f06-8569-8084fe5b64e1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ac4e811a-8f43-45d8-b2d7-140122b1b692"/>
+    <ns:title>Etter 7. årssteget</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9cba9f6e-532e-4b3f-89e4-265a6da94f60"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ed34f50c-83fc-4ef9-a7f8-a667a5765619"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:ae6b8cfe-b777-4634-a28c-a7a1b0368506"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8b80d1bd-37a0-45ce-91c8-798fb867bd97"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8d50d656-fc7c-4de0-ad42-e553c85484eb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:31ea6886-35cd-4264-932b-602dd7a76061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:88445b9c-77a2-4603-adc8-d919df0c4894">
+    <ns:title>presentere historiske emne ved hjelp av skrift, teikningar, bilete, film, modellar og digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eee2f495-d1f3-4056-91f0-3abae6b4acb2">
+    <ns:title>beskrive pengebruken til jenter og gutar og samtale om forhold som påverkar forbruk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b9954a9e-5c5e-4f40-9917-0ec9f4e4306e">
+    <ns:title>rekne ut inntekter, planleggje pengeforbruk i ein familie ved å bruke ulike verktøy og vurdere korleis sparing og låneopptak påverkar personleg økonomi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7a14a549-b2ba-4810-99bf-4d32306aade5">
+    <ns:title>fortelje om samane, urfolket i Noreg, og om sentrale trekk ved kulturen og levekåra til samane fram til vikingtida</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7ad0d55d-1332-4fbf-a4cb-6485c70cbab9">
+    <ns:title>kjenne att historiske spor i sitt eige lokalmiljø og undersøkje lokale samlingar og minnesmerke</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b04e2009-c28d-4746-bfb2-6f9ab3a2be43">
+    <ns:title>lage ei oversikt over normer som regulerer forholdet mellom menneske og samtale om konsekvensar ved å bryte normene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3b75bdb3-32d6-43f7-9128-6634ec2e2b75">
+    <ns:title>presentere hovudtrekk ved historia og kulturen til samane frå dansketida til i dag, og drøfte forholdet deira til storsamfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:baf441be-b732-4374-9437-c8d7b3db2d0c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ed34f50c-83fc-4ef9-a7f8-a667a5765619"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1c6dc733-7c72-49a5-92da-1b2b9bb798d9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ba4971e3-b2a8-4895-a208-3d4ff7b97412"/>
+    <ns:title>Geografi</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a30c21b5-40dc-4886-bdc7-8b0a4e1d5b6c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2f7f8a97-de34-4947-929b-bc80aeaea7a7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c0617328-ec19-4774-bd80-bd6ba001126f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:55e200f5-c590-45f6-86f2-d1ab03f32fbb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3aed5e3f-0a88-4735-8060-a85d4954ff58"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ae00c0da-11bb-43b3-822a-12807e418010"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:45e66e52-abee-4cc7-86ca-523373fec939"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e94a5eae-b700-4604-975f-fd2f0dc7980c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:295dae02-b86f-432b-86b9-98fcf1200c3e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:45d391a4-b6d4-4418-8d81-be8401732183"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:56c57d6c-ca38-4d6e-a298-2a9692e680be"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dbb54b37-ed00-4df5-bb04-89f66da02eb8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c26eb6e4-7286-4ced-ad17-de5043e0747d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:af926b21-a867-4291-b156-7eb465d412d6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:be7af95a-afc1-42b0-833f-8d45619b80c9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c550ff48-53b5-421c-89bb-3a9a4abf170b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a08acec9-a2c9-4252-8a22-faf8067a975e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:abb8b1ba-0ec2-42ae-9647-22bdeb5d5cf5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9cba9f6e-532e-4b3f-89e4-265a6da94f60"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:49ec979c-77a8-4cc2-9d29-817a3e742e25"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:28dba578-d0a6-4355-9375-778ca3edc586"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eedeae3b-a596-4527-aed4-e78dc5b41c4f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:49de104e-01cf-4d0d-8214-69074a6af832"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a79a1dbc-7fca-42f4-8109-1edcb0c9d2a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:be7af95a-afc1-42b0-833f-8d45619b80c9">
+    <ns:title>lese og bruke papirbaserte og digitale kart og lokalisere geografiske hovudtrekk i sitt eige fylke, nabofylka, dei samiske busetjingsområda, Noreg, Europa og andre verdsdelar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9cba9f6e-532e-4b3f-89e4-265a6da94f60">
+    <ns:title>planleggje og presentere reiser til Europa og andre verdsdelar ved å bruke digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn10">
+    <ns:title>Tiende årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac2f9311-85dd-4a56-a526-962b83845932">
+    <ns:title>fortelje om korleis jordbruket forandra levemåten i Noreg og Norden og beskrive  hovudtrekk ved bronsealderen og jernalderen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ed34f50c-83fc-4ef9-a7f8-a667a5765619">
+    <ns:title>forklare korleis produksjon og forbruk kan øydeleggje økosystem og forureine jord, vatn og luft, og drøfte korleis dette kan hindrast og reparerast</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:31ea6886-35cd-4264-932b-602dd7a76061">
+    <ns:title>fortelje om sentrale trekk ved kulturen og levekåra til samane frå vikingtida til slutten av dansketida, og om forholdet deira til statane på Nordkalotten i denne perioden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:74332b08-2f60-4c27-8fa7-fc7721db54d4">
+    <ns:title>samtale om variasjon i seksuell orientering i tilknyting til kjærleik, samliv og familie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c71f6e17-d131-4445-8fc0-5abe95028051">
+    <ns:title>finne fram til og presentere aktuelle samfunnsspørsmål, skilje mellom meiningar og fakta, formulere argument og drøfte spørsmåla</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d08196f8-d933-40e0-a985-e35f5eae8df9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1220c5e9-63d9-41ff-957c-3b5c861beb44"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:82a601df-f96c-4bcc-8500-532def1dda99"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:82a048c8-ea1b-488a-b79f-b33c4d8f0985"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:95210b82-a585-4895-9b8b-436c98664ac4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3926e2c3-7f87-4763-a527-7612ed32e0ab"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:da1f0e98-d4cb-4df3-9c16-10363e0cab68"/>
+    <ns:title>Politikk og demokrati</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aaecd2bd-acf2-46e7-b2d4-e8b9b40486a9">
+    <ns:title>gje døme på og drøfte demokrati som styreform, gjere greie for politisk innverknad og maktfordeling i Noreg og bruke digitale kanalar for utøving av demokrati</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c26eb6e4-7286-4ced-ad17-de5043e0747d">
+    <ns:title>fortelje om naturgrunnlaget med vekt på indre og ytre krefter på jorda, rørsler i luftmassane, krinsløpet til vatnet, vêr, klima og vegetasjon, og drøfte samanhengar mellom natur og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b80d1bd-37a0-45ce-91c8-798fb867bd97">
+    <ns:title>undersøkje greske og romerske samfunn i antikken og finne døme på korleis kulturen deira har påverka vår eigen kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fcad1486-0c98-455f-aa9e-4553ccde0039">
+    <ns:title>planleggje, gjennomføre og presentere problemorienterte samfunnsfaglege undersøkingar og vurdere arbeidsprosessen og resultata</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e87cf866-d392-4a9b-b30a-90151edb14e9">
+    <ns:title>gjere greie for FNs arbeid med fred og menneskerettar og forklare FNs rolle i det internasjonale arbeidet for urfolk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d8807548-48ad-4866-ba21-d5fc336881a2">
+    <ns:title>forklare korleis informasjon frå massemedium og kommersiell påverknad kan verke inn på forbruksvanar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9bd3b2ed-3dc3-470f-838d-63b38e514946">
+    <ns:title>beskrive korleis forbruksmønsteret har utvikla seg i Noreg og gjere greie for rettane til forbrukarane</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:153fde3a-dd4a-46ef-af82-83926dec3ad4">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b9954a9e-5c5e-4f40-9917-0ec9f4e4306e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:061d4ea5-579b-4366-afd6-e2950098e8a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1b142330-5679-4f14-91d8-fddc96f2055d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:61182744-6578-4fdc-92ea-e215c1868cd3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5e0a5823-4e4e-4913-8670-c212dbeebeb8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:99e6c422-2166-41ee-bf47-a12159bfae93"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cf945b21-3845-42a8-8718-4bedc5d2be8a"/>
+    <ns:title>Individ og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:49ec979c-77a8-4cc2-9d29-817a3e742e25">
+    <ns:title>registrere og ordne spor etter istida på heimstaden og forklare kva istida hadde å seie for danning av landskap og heile landet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8e50e99c-ae00-4877-a0be-5402f0cf9486">
+    <ns:title>diskutere noen etiske problemstillingar knytte til arbeidslivet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3c6b6d36-714c-4121-b31d-780e48a1d212">
+    <ns:title>forklare kvifor kultur ikkje er medfødd, og gjere greie for og analysere kulturelle variasjonar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a08acec9-a2c9-4252-8a22-faf8067a975e">
+    <ns:title>forklare og drøfte variasjonar i levekår i ulike delar av verda og samanlikne og vurdere dei store skilnadene mellom fattige og rike</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:95210b82-a585-4895-9b8b-436c98664ac4">
+    <ns:title>gjere greie for styreforma og dei viktigaste politiske styringsorgana i Noreg og drøfte fleirtalsdemokratiet i forhold til urfolk og minoritetar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:af67fa86-95d1-4249-b56c-7065d3781c86">
+    <ns:title>forklare framveksten av velferdsstaten og beskrive trekk ved det moderne Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:61182744-6578-4fdc-92ea-e215c1868cd3">
+    <ns:title>gjere greie for økonomiske og juridiske sider ved å gå inn i eit samliv og  diskutere følgjer av samlivsbrot</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f4331fb2-3fd5-44d9-bb24-dba5ed3e9fb2">
+    <ns:title>følgje enkle reglar for personvern når ein bruker Internett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3aed5e3f-0a88-4735-8060-a85d4954ff58">
+    <ns:title>registrere flyktningstraumar, forklare kvifor somme rømmer frå heimlandet sitt, og drøfte korleis det kan vere å kome til eit framandt land som flyktning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f805d571-8413-4788-a794-d5886b57b298">
+    <ns:title>leggje ein plan for å starte og drive ei bedrift ut frå ei undersøking av grunnlaget for ei slik bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d19b1a5c-34f9-4559-be8c-014545cf2769">
+    <ns:title>forklare kvifor ein feirar 17. mai og 6. februar og fortelje om nasjonaldagane til andre land</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5e0a5823-4e4e-4913-8670-c212dbeebeb8">
+    <ns:title>gjere greie for endringar i familie- og samlivsformer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5e806095-352a-49b9-849e-6ead321cb3eb">
+    <ns:title>gje døme på korleis Noreg er med i internasjonalt samarbeid gjennom FN og andre organisasjonar, også internasjonalt urfolkssamarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b17d0f55-d656-466c-a706-8c97da580069">
+    <ns:title>gjere greie for sentrale trekk ved tidsepokane mellomalder, renessanse og opplysningstid i Europa, og diskutere grunnar til denne tidsinndelinga</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2f7f8a97-de34-4947-929b-bc80aeaea7a7">
+    <ns:title>fortelje om regnskog, grasslette, ørken og andre landskapstypar og forklare korleis menneske gjer seg nytte av dei</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:84de36ae-c851-440d-a854-ae1311b450d9">
+    <ns:title>utforske ulike kjelder, illustrere korleis dei kan gje ulik informasjon om fortida, og forklare korleis historikarar bruker dei til å lage historiske framstillingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d441876a-0994-4141-9584-fb2aa7863c08">
+    <ns:title>gjere greie for årsaker til arbeidsløyse og drøfte måtar å redusere arbeidsløysa på</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:786c74b9-267c-4c43-8d95-030ca5fc95a7">
+    <ns:title>gjere greie for årsaker til at somme land er fattige og somme rike og drøfte tiltak for å redusere fattigdom i verda</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b2d49ac8-f16c-4f1d-b981-d6984c4755f9">
+    <ns:title>skape forteljingar om menneske i fortida og snakke om skilnader og likskapar før og no</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:56c57d6c-ca38-4d6e-a298-2a9692e680be">
+    <ns:title>bruke bilete, film og andre kjelder for å fortelje om viktige landskap og landskapsformer i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e73bb0c-0043-4b45-b706-f8fb10c623cc">
+    <ns:title>Samfunnsfag i videregående opplæring</ns:title>
+    <grep:kode>SAF1Z04</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0aeacf39-5209-493e-853a-6b0753389b73">
+    <ns:title>utforske kjelder og bruke dei til å lage etterlikningar av gjenstandar frå fortida</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e54d7a1f-9fd7-4b04-aff8-47af0207335d">
+    <ns:title>samtale om oppgåvene til familien og om variasjonar i familieformer, inkludert åleineforsørgjarfamiliar, storfamiliar, familiar der dei føresette har same kjønn, og familiar med fleire sett føresette</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b4a4c45f-3b6e-40e1-a783-b647c251a757">
+    <ns:title>finne døme på hendingar som har vore med på å forme dagens Noreg, og reflektere over korleis samfunnet kunne ha vorte dersom desse hendingane hadde utvikla seg annleis</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a30c21b5-40dc-4886-bdc7-8b0a4e1d5b6c">
+    <ns:title>gjere greie for eigne rettar og konsekvensar når ein arbeider på Internett og publiserer sitt eige materiale</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ba4971e3-b2a8-4895-a208-3d4ff7b97412">
+    <ns:title>lokalisere og dokumentere oversikt over geografiske hovudtrekk i verda og samanlikne ulike land og regionar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01f2cc5e-67a6-45ed-a43f-ccdc2be314d2">
+    <ns:title>bruke omgrepet periode og vise samanhengar mellom fortida og notida ved å plassere ei rekkje historiske hendingar på ei tidsline</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:870618f6-148b-4964-8c48-8a36e465ad89">
+    <ns:title>drøfte forholdet mellom kjærleik og seksualitet i lys av kulturelle normer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8ce018a5-d262-479b-a5e0-df34bb8aa369">
+    <grep:kode>SAF1-01</grep:kode>
+    <grep:hovedomraader rdf:resource="uuid:41964434-10d0-4306-ab3f-493be7f70a88"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <ns:title>Læreplan i samfunnsfag</ns:title>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:1e664dea-4863-4375-9a6e-d2cdca147608"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:12678ce9-f0b4-4966-ab78-cf213bf3ab33"/>
+    <grep:hovedomraader rdf:resource="uuid:d08196f8-d933-40e0-a985-e35f5eae8df9"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:5377ed7b-f625-49d0-bc6c-7cbdc982a182"/>
+    <grep:hovedomraader rdf:resource="uuid:9cfb2240-869d-458a-b153-b7339612b206"/>
+    <grep:hovedomraader rdf:resource="uuid:ed8d5314-e187-4007-8ab4-668d92f4a2a9"/>
+    <grep:hovedomraader rdf:resource="uuid:79fed7ea-29bc-482d-b447-14f30db06f42"/>
+    <grep:hovedomraader rdf:resource="uuid:4c858270-4546-4437-96de-c460d8d0fb99"/>
+    <grep:hovedomraader rdf:resource="uuid:baf441be-b732-4374-9437-c8d7b3db2d0c"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:adcc7198-6f82-4590-8e78-2c19d7006653"/>
+    <grep:hovedomraader rdf:resource="uuid:153fde3a-dd4a-46ef-af82-83926dec3ad4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cf945b21-3845-42a8-8718-4bedc5d2be8a">
+    <ns:title>definere sentrale omgrep knytte til sosialisering og bruke dei til å undersøkje trekk ved sosialiseringa av ungdom i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5620f408-7a7e-45de-bc2f-35f2e489107d">
+    <ns:title>beskrive korleis steinalderfolk levde som jegerar og samlarar, ved å fantasere rundt dei første menneska som kom til landet vårt etter istida</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2acdbca7-c510-48b3-b40e-a8fe829af8d4">
+    <ns:title>gjere greie for ein aktuell konflikt og drøfte framlegg til løysing</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:da1f0e98-d4cb-4df3-9c16-10363e0cab68">
+    <ns:title>gjere greie for korleis ein sjølv kan vere med i og påverke det politiske systemet og diskutere kva som kan truge demokratiet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:65b2f763-2c7d-4627-b106-7c367702f2a8">
+    <ns:title>bruke omgrepa fortid, notid og framtid om seg sjølv og familien sin</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7543168-427f-48fa-9f5f-c8c9acb0668a">
+    <ns:title>forklare kvifor fordommar oppstår og diskutere korleis framandfrykt og rasisme kan motarbeidast</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:69c2a833-ee0a-438c-8eb6-bfcd193c3343">
+    <ns:title>skape forteljingar om menneske i fortida, og slik vise korleis rammer og verdiar i samfunnet påverkar tankar og handlingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c52f1746-6935-45e3-a15c-e2ae3484b1c3">
+    <ns:title>Samfunnsfag 8.-10. årssteg</ns:title>
+    <grep:kode>SAF1Z03</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cf9983d9-2325-49ab-ae7c-dbe56a9b575e">
+    <ns:title>gjere greie for politiske institusjonar i Noreg og samanlikne dei med institusjonar i andre land</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:80ca4a1f-6053-433f-abbd-5ad7f1326f7d">
+    <ns:title>forklare teknologiske og samfunnsmessige endringar som følgde av den industrielle revolusjonen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1220c5e9-63d9-41ff-957c-3b5c861beb44">
+    <ns:title>forklare kva som ligg til grunn for velferdsstaten og vurdere utfordringar som velferdsstaten står overfor</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6dca8917-c87f-44a7-aa97-8f4bed7eda11">
+    <ns:title>gjere greie for kva som kjenneteiknar internasjonal terrorisme og reflektere over årsaker til terrorisme</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:99e6c422-2166-41ee-bf47-a12159bfae93">
+    <ns:title>drøfte rettane ein har som forbrukar og diskutere forbrukaren sitt etiske ansvar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:12678ce9-f0b4-4966-ab78-cf213bf3ab33">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aff49ac5-2ae3-43ed-9150-eac9eeb8217f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:65b2f763-2c7d-4627-b106-7c367702f2a8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:49de104e-01cf-4d0d-8214-69074a6af832"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:28dba578-d0a6-4355-9375-778ca3edc586"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7a14a549-b2ba-4810-99bf-4d32306aade5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:55e200f5-c590-45f6-86f2-d1ab03f32fbb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f4331fb2-3fd5-44d9-bb24-dba5ed3e9fb2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eedeae3b-a596-4527-aed4-e78dc5b41c4f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c0617328-ec19-4774-bd80-bd6ba001126f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eb34fd4f-aa72-437c-91f3-ed5193f4144c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b2d49ac8-f16c-4f1d-b981-d6984c4755f9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e54d7a1f-9fd7-4b04-aff8-47af0207335d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a93506ba-68c1-450d-933c-8a6bd4944e1a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:56c57d6c-ca38-4d6e-a298-2a9692e680be"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ac2f9311-85dd-4a56-a526-962b83845932"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5620f408-7a7e-45de-bc2f-35f2e489107d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8a5d44b6-8933-41ad-ae89-e059ed5b1581"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:dff54bf7-13c7-4f5e-8acc-e9b8a35de44a"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:45d391a4-b6d4-4418-8d81-be8401732183"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:88445b9c-77a2-4603-adc8-d919df0c4894"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eee2f495-d1f3-4056-91f0-3abae6b4acb2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:986efbe7-8b02-4211-96b1-33c909788364"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b04e2009-c28d-4746-bfb2-6f9ab3a2be43"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d19b1a5c-34f9-4559-be8c-014545cf2769"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a37bc95d-943a-4f83-a727-0fbd05eab006"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a78ca135-3b2b-4784-8fb2-78f096e853fd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:45e66e52-abee-4cc7-86ca-523373fec939"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:db1e1fa6-7f8c-4ded-8808-1da05f3fcb91"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7ad0d55d-1332-4fbf-a4cb-6485c70cbab9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0aeacf39-5209-493e-853a-6b0753389b73"/>
+    <ns:title>Etter 4. årssteget</ns:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:49de104e-01cf-4d0d-8214-69074a6af832">
+    <ns:title>peike ut verdshav og verdsdelar og bruke sentrale geografiske omgrep</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1de03733-15df-472d-b9f0-d7b9e30c76e3">
+    <ns:title>definere omgrepet kultur og gje døme på at kultur varierer frå stad til stad og endrar seg over tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:34547711-95fb-402b-9772-4ffe901a4822">
+    <ns:title>velje eit tema, forme spørsmål og kaste lys over dei ved å bruke ulike kjelder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ad09fb1f-a97e-4131-b72f-b22d91512f79">
+    <ns:title>bruke digitale verktøy til å hente informasjon om ulike yrker og diskutere moglegheiter og utfordringar på arbeidsmarknaden i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eedeae3b-a596-4527-aed4-e78dc5b41c4f">
+    <ns:title>samle opplysningar frå globus, kart og digitale kjelder og bruke dei til å samtale om stader, folk og språk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a9fbd41f-6415-4f24-894d-14d38b387717">
+    <ns:title>drøfte spørsmål omkring bruk og misbruk av tobakk og ulike rusmiddel</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a1c0a5d-a6cb-433b-b59d-4e9075cf24d8">
+    <ns:title>beskrive roller i sin eigen kvardag og undersøkje kva forventningar som knyter seg til desse rollene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dbb54b37-ed00-4df5-bb04-89f66da02eb8">
+    <ns:title>drøfte premissar for ei berekraftig utvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c858270-4546-4437-96de-c460d8d0fb99">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f8fc1054-8fe0-4a4e-be23-374e031fc725"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e87cf866-d392-4a9b-b30a-90151edb14e9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:503e32ff-4860-4bc1-b3ea-5203fb886e08"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6dca8917-c87f-44a7-aa97-8f4bed7eda11"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ec7663da-24ff-4f81-9baa-aa6f0917fcb3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ef23211-b0f4-4ca7-b382-d7715e8311af"/>
+    <ns:title>Internasjonale forhold</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3c306912-91bb-4ef3-b331-5acd6068bcef"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:786c74b9-267c-4c43-8d95-030ca5fc95a7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:faaea28c-cd68-45f3-ba93-97b8844ce289"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:edcd1b88-196d-4283-a6cc-431161e47305">
+    <ns:title>gjere greie for grunnleggjande menneskerettar og drøfte verdien av at dei blir respekterte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:45e66e52-abee-4cc7-86ca-523373fec939">
+    <ns:title>peike ut og orientere seg etter himmelretningar og gjere greie for kvifor det er tidsskilnader</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:53390781-a6cd-4e42-85fa-79cc82b9c0e5">
+    <ns:title>presentere viktige utviklingstrekk i norsk historie på 1800-talet og første halvdelen av 1900-talet, og forklare korleis dei peikar fram mot samfunnet i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:986efbe7-8b02-4211-96b1-33c909788364">
+    <ns:title>utforme og praktisere reglar for samspel med andre og vere med og ta demokratiske avgjersler i skulesamfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8d50d656-fc7c-4de0-ad42-e553c85484eb">
+    <ns:title>presentere historiske hendingar gjennom å lage to forteljingar om same hendinga, sett frå ulike ståstader</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e94a5eae-b700-4604-975f-fd2f0dc7980c">
+    <ns:title>gjere greie for storleik, struktur og vekst i befolkningar og drøfte befolkningsutvikling og flytting i nyare tid, inkludert urbanisering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:79fed7ea-29bc-482d-b447-14f30db06f42">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4bbd2484-6430-4370-bf40-b5a885ced3d3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:23174ede-945f-471b-a5ca-240478c611b6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:16a1d3cd-caa5-4f06-8569-8084fe5b64e1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:74332b08-2f60-4c27-8fa7-fc7721db54d4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:61c62de4-18d9-4e38-8f19-e7504e9c943e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e54d7a1f-9fd7-4b04-aff8-47af0207335d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:aaecd2bd-acf2-46e7-b2d4-e8b9b40486a9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a78ca135-3b2b-4784-8fb2-78f096e853fd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eb34fd4f-aa72-437c-91f3-ed5193f4144c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2acdbca7-c510-48b3-b40e-a8fe829af8d4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a5d44b6-8933-41ad-ae89-e059ed5b1581"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d8807548-48ad-4866-ba21-d5fc336881a2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f4331fb2-3fd5-44d9-bb24-dba5ed3e9fb2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5e806095-352a-49b9-849e-6ead321cb3eb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2a1c0a5d-a6cb-433b-b59d-4e9075cf24d8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:34547711-95fb-402b-9772-4ffe901a4822"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:aaa5eb7d-31aa-415a-a0e1-84948dde1048"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c71f6e17-d131-4445-8fc0-5abe95028051"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fcad1486-0c98-455f-aa9e-4553ccde0039"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cf9983d9-2325-49ab-ae7c-dbe56a9b575e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:013027c4-652c-4019-88c3-d0d4bddd0def"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eee2f495-d1f3-4056-91f0-3abae6b4acb2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b04e2009-c28d-4746-bfb2-6f9ab3a2be43"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f805d571-8413-4788-a794-d5886b57b298"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:00ad2ff6-23c7-4c7d-be4a-96ad59367f74"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:edcd1b88-196d-4283-a6cc-431161e47305"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a93506ba-68c1-450d-933c-8a6bd4944e1a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:39678c7b-4e0f-4253-a7b4-6d70f91483ea"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9bd3b2ed-3dc3-470f-838d-63b38e514946"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cd173809-ab5f-4888-a25a-13a29b6a3f76"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a37bc95d-943a-4f83-a727-0fbd05eab006"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a9fbd41f-6415-4f24-894d-14d38b387717"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:870618f6-148b-4964-8c48-8a36e465ad89"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:986efbe7-8b02-4211-96b1-33c909788364"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3c6b6d36-714c-4121-b31d-780e48a1d212"/>
+    <ns:title>Samfunnskunnskap</ns:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d2d5d50a-e94f-4a5f-a3ac-15ce876493b8">
+    <ns:title>drøfte viktige omveltingar i samfunnet i nyare tid, og reflektere over korleis dagens samfunn opnar for nye omveltingar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c99502c0-eadd-496f-8a37-c4b146f9b26e">
+    <ns:title>beskrive hovudtrekk ved kulturen til nokre minoritetar i Noreg og drøfte utfordringar i fleirkulturelle samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:39678c7b-4e0f-4253-a7b4-6d70f91483ea">
+    <ns:title>gjere greie for hovudtrekk ved samiske samfunn i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1e664dea-4863-4375-9a6e-d2cdca147608">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d441876a-0994-4141-9584-fb2aa7863c08"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:786c74b9-267c-4c43-8d95-030ca5fc95a7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:95210b82-a585-4895-9b8b-436c98664ac4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ad09fb1f-a97e-4131-b72f-b22d91512f79"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ec7663da-24ff-4f81-9baa-aa6f0917fcb3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6dca8917-c87f-44a7-aa97-8f4bed7eda11"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:da1f0e98-d4cb-4df3-9c16-10363e0cab68"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d83778c-deab-4402-967e-7a6db9fe8960"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fc2fefe1-c55f-4f12-ab19-a03dbbbcec3b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ddb67fb2-0fc2-4381-a9ce-2d130bfcb3a9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:faaea28c-cd68-45f3-ba93-97b8844ce289"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5e0a5823-4e4e-4913-8670-c212dbeebeb8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c99502c0-eadd-496f-8a37-c4b146f9b26e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b9954a9e-5c5e-4f40-9917-0ec9f4e4306e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e87cf866-d392-4a9b-b30a-90151edb14e9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aaa79126-e850-46f3-87bc-f0bd33e1745c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ef23211-b0f4-4ca7-b382-d7715e8311af"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4fafc90f-8608-4249-8c87-d79ee4bfc1ee"/>
+    <ns:title>Etter Vg1/Vg2 i vidaregåande opplæring</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:99e6c422-2166-41ee-bf47-a12159bfae93"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7c0be25b-befa-474c-97bc-8f46c919c214"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:82a601df-f96c-4bcc-8500-532def1dda99"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3926e2c3-7f87-4763-a527-7612ed32e0ab"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f8fc1054-8fe0-4a4e-be23-374e031fc725"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1220c5e9-63d9-41ff-957c-3b5c861beb44"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8e50e99c-ae00-4877-a0be-5402f0cf9486"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:3e73bb0c-0043-4b45-b706-f8fb10c623cc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:503e32ff-4860-4bc1-b3ea-5203fb886e08"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c7543168-427f-48fa-9f5f-c8c9acb0668a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7d881247-9ff0-4e69-9ef0-4507d0295c48"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:82a048c8-ea1b-488a-b79f-b33c4d8f0985"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cf945b21-3845-42a8-8718-4bedc5d2be8a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1de03733-15df-472d-b9f0-d7b9e30c76e3"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1b142330-5679-4f14-91d8-fddc96f2055d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:61182744-6578-4fdc-92ea-e215c1868cd3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3c306912-91bb-4ef3-b331-5acd6068bcef"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:061d4ea5-579b-4366-afd6-e2950098e8a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:295dae02-b86f-432b-86b9-98fcf1200c3e">
+    <ns:title>beskrive og forklare natur- og kulturlandskapet i lokalsamfunnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5377ed7b-f625-49d0-bc6c-7cbdc982a182">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ee732653-4d69-47ed-ab50-b4e00728807b"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <ns:title>Etter 10. årssteget</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aaa5eb7d-31aa-415a-a0e1-84948dde1048"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:295dae02-b86f-432b-86b9-98fcf1200c3e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:23174ede-945f-471b-a5ca-240478c611b6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fcad1486-0c98-455f-aa9e-4553ccde0039"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aaecd2bd-acf2-46e7-b2d4-e8b9b40486a9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c26eb6e4-7286-4ced-ad17-de5043e0747d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:00ad2ff6-23c7-4c7d-be4a-96ad59367f74"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3b75bdb3-32d6-43f7-9128-6634ec2e2b75"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a30c21b5-40dc-4886-bdc7-8b0a4e1d5b6c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dbb54b37-ed00-4df5-bb04-89f66da02eb8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:53390781-a6cd-4e42-85fa-79cc82b9c0e5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d2d5d50a-e94f-4a5f-a3ac-15ce876493b8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1274369c-aff2-46a6-951f-1437190cdb04"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:61c62de4-18d9-4e38-8f19-e7504e9c943e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:013027c4-652c-4019-88c3-d0d4bddd0def"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:af926b21-a867-4291-b156-7eb465d412d6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f805d571-8413-4788-a794-d5886b57b298"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8d1ebea9-b97c-4962-b4cb-09578e40b437"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:af67fa86-95d1-4249-b56c-7065d3781c86"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cf9983d9-2325-49ab-ae7c-dbe56a9b575e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5c4aa3d0-2ac1-435c-a881-d86320232edb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a08acec9-a2c9-4252-8a22-faf8067a975e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:abb8b1ba-0ec2-42ae-9647-22bdeb5d5cf5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3c6b6d36-714c-4121-b31d-780e48a1d212"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c71f6e17-d131-4445-8fc0-5abe95028051"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:80ca4a1f-6053-433f-abbd-5ad7f1326f7d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b4a4c45f-3b6e-40e1-a783-b647c251a757"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:edcd1b88-196d-4283-a6cc-431161e47305"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e94a5eae-b700-4604-975f-fd2f0dc7980c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0bed9632-fc33-48bb-bdf4-8babd0cf51bc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:69c2a833-ee0a-438c-8eb6-bfcd193c3343"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ba4971e3-b2a8-4895-a208-3d4ff7b97412"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:870618f6-148b-4964-8c48-8a36e465ad89"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1c6dc733-7c72-49a5-92da-1b2b9bb798d9"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:c52f1746-6935-45e3-a15c-e2ae3484b1c3"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn10"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:502d9bfe-1947-4e07-8270-977556c34cdd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9bd3b2ed-3dc3-470f-838d-63b38e514946"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01b1cad8-4e13-4d74-8d29-b44689471ac0">
+    <ns:title>skape forteljingar om menneske i fortida og bruke dei til å vise korleis menneske tenkjer og handlar ut frå samfunnet dei lever i</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f8fc1054-8fe0-4a4e-be23-374e031fc725">
+    <ns:title>diskutere samanhengen mellom økonomisk vekst, miljø og berekraftig utvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ddb67fb2-0fc2-4381-a9ce-2d130bfcb3a9">
+    <ns:title>reflektere over verdien av å ha eit arbeid og kva som kjenneteiknar eit godt arbeidsmiljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:41964434-10d0-4306-ab3f-493be7f70a88">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7ad0d55d-1332-4fbf-a4cb-6485c70cbab9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8b80d1bd-37a0-45ce-91c8-798fb867bd97"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b4a4c45f-3b6e-40e1-a783-b647c251a757"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:db1e1fa6-7f8c-4ded-8808-1da05f3fcb91"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:69c2a833-ee0a-438c-8eb6-bfcd193c3343"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:01b1cad8-4e13-4d74-8d29-b44689471ac0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:65b2f763-2c7d-4627-b106-7c367702f2a8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d2d5d50a-e94f-4a5f-a3ac-15ce876493b8"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:88445b9c-77a2-4603-adc8-d919df0c4894"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:53390781-a6cd-4e42-85fa-79cc82b9c0e5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ac4e811a-8f43-45d8-b2d7-140122b1b692"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31ea6886-35cd-4264-932b-602dd7a76061"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0aeacf39-5209-493e-853a-6b0753389b73"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5620f408-7a7e-45de-bc2f-35f2e489107d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b17d0f55-d656-466c-a706-8c97da580069"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0bed9632-fc33-48bb-bdf4-8babd0cf51bc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8d50d656-fc7c-4de0-ad42-e553c85484eb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:43c8aa35-5897-4148-8e40-c4a4eba5d2ae"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:aff49ac5-2ae3-43ed-9150-eac9eeb8217f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8d1ebea9-b97c-4962-b4cb-09578e40b437"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3b75bdb3-32d6-43f7-9128-6634ec2e2b75"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:01f2cc5e-67a6-45ed-a43f-ccdc2be314d2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:86a8162e-4496-41e9-88ee-9cf20f5dc027"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7a14a549-b2ba-4810-99bf-4d32306aade5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee732653-4d69-47ed-ab50-b4e00728807b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2d49ac8-f16c-4f1d-b981-d6984c4755f9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d19b1a5c-34f9-4559-be8c-014545cf2769"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:af67fa86-95d1-4249-b56c-7065d3781c86"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:80ca4a1f-6053-433f-abbd-5ad7f1326f7d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1274369c-aff2-46a6-951f-1437190cdb04"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:84de36ae-c851-440d-a854-ae1311b450d9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:502d9bfe-1947-4e07-8270-977556c34cdd"/>
+    <ns:title>Historie</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5c4aa3d0-2ac1-435c-a881-d86320232edb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8764fb8e-bd74-4259-b043-6195e295a797"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ac2f9311-85dd-4a56-a526-962b83845932"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:43c8aa35-5897-4148-8e40-c4a4eba5d2ae">
+    <ns:title>fortelje om hovudtrekk ved samfunnsutviklinga i Noreg frå vikingtida til slutten av dansketida, og gjere nærare greie for eit sentralt tema i denne perioden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

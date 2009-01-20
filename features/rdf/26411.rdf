@@ -1,0 +1,383 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:d783a020-830a-4ed7-8a14-ae53c5a44970">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6034eb2b-857a-4424-b341-c06ad1bcbc95"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e164c79e-aa4d-4c3a-83ff-a31f3db1eb3a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c81b6ac6-4c3a-42e4-8a5d-51bb29e0aef6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:223da9b1-d514-438b-aece-5e2f9506abd4"/>
+    <ns:title>Multimedieutvikling </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9ac65991-c594-4cc7-b85f-a77c682a8531">
+    <ns:title>gjøre rede for standarder for kommunikasjon mellom ulike former for digitalt utstyr og mellom programmer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:970e0c95-2d3f-43c6-9e97-8529a01c365b">
+    <ns:title>tilordne uttrykk til variabler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3309d83f-6416-4c30-a0b2-e49e6007bb54">
+    <ns:title>gjøre rede for og argumentere for nødvendigheten av regelverk og etiske normer for bruk av informasjonsteknologi</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:85b6fabb-a49b-4637-a40f-a05bb45c2d7c">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f64e18da-a017-4faf-91ee-101ab57f905f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:537ef2ec-e330-4cb0-9dda-6a19e74a29ad"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4516e860-4f16-498e-8609-5dba464d1b85"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:35ba1501-3d11-41d6-8f65-18c67eb13236"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9ac65991-c594-4cc7-b85f-a77c682a8531"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4ffb218e-9dce-44d4-8c62-af101151b6f3"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:052a8313-2389-44e9-8667-fe30f798016f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e67f3b57-c76a-4502-aabf-0be2bb5e7cd3"/>
+    <ns:title>Informasjonsteknologi 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3309d83f-6416-4c30-a0b2-e49e6007bb54"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9e85f3c7-a669-4296-beba-2cd641e3fe9b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b27f19dc-1cfe-43b5-b9f3-8c1f048fa5fd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:87dcf41e-6003-46cd-9ed8-59c2bf7534bc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:83338d92-d86c-4990-8d81-342a901484d9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6322a437-905f-4e67-9c3a-1fe5a9c492d0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d1cf3c7b-a9a6-42b0-beb6-fc8d55e39ffc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cb819139-41de-46b3-a330-be137b2eb867"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:44101523-b0a1-4206-8ca5-d38ff407c994"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:6fc14e32-3cfc-4f5f-b02c-53253ea7d18b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:efa9c93e-0d56-44a0-a4d6-db6ec41beb64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e67f3b57-c76a-4502-aabf-0be2bb5e7cd3">
+    <ns:title>utvikle normaliserte datamodeller ut fra problemstillinger og begrunne valgene som er gjort</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:44101523-b0a1-4206-8ca5-d38ff407c994">
+    <ns:title>redigere nettsteder ved bruk av standardiserte oppmerkingsspråk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:089e4d3e-0e7b-445f-bdf0-69abbcdb5543">
+    <ns:title>lese og bruke dokumentasjon og kode</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b27f19dc-1cfe-43b5-b9f3-8c1f048fa5fd">
+    <ns:title>utvikle, presentere og begrunne databaseapplikasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7d4c3553-b7d2-45e7-ab28-a4e5bfc2edec">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f64e18da-a017-4faf-91ee-101ab57f905f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:537ef2ec-e330-4cb0-9dda-6a19e74a29ad"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:44101523-b0a1-4206-8ca5-d38ff407c994"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:87dcf41e-6003-46cd-9ed8-59c2bf7534bc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:efa9c93e-0d56-44a0-a4d6-db6ec41beb64"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4516e860-4f16-498e-8609-5dba464d1b85"/>
+    <ns:title>Nettsteder og multimedier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e8f995e0-038f-444c-8e63-02178afefb8d">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:96fafbb3-f532-4bc7-bfce-faf54f3a88fa"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dae0c38a-a840-4f23-9f53-8f27a0a96bc3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:089e4d3e-0e7b-445f-bdf0-69abbcdb5543"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:037090dc-a004-4399-824f-d09fe26193df"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:970e0c95-2d3f-43c6-9e97-8529a01c365b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1fdf46d6-bae9-499b-9be3-8c883229d5f0"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <ns:title>Programmering</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a707163-13e5-4018-8607-83b65a1a2762"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:413070b8-6c52-44c0-b323-42938996f1d8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e793c6cd-9091-4e6d-ba71-cff27ff4db01"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:295fbd73-bb81-469b-a45c-d719f9c89fb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6322a437-905f-4e67-9c3a-1fe5a9c492d0">
+    <ns:title>beskrive og drøfte informasjonsteknologiens muligheter og konsekvenser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dae0c38a-a840-4f23-9f53-8f27a0a96bc3">
+    <ns:title>teste og finne feil i programmer ved å bruke vanlige teknikker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4ffb218e-9dce-44d4-8c62-af101151b6f3">
+    <ns:title>forklare hvordan de fysiske signalene i datautstyr kan tolkes som binære tall, tegnsett, grafiske framstillinger, billedpunkter og lyd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:037090dc-a004-4399-824f-d09fe26193df">
+    <ns:title>lage egne og bruke egne og andres funksjoner eller metoder med parametere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d1cf3c7b-a9a6-42b0-beb6-fc8d55e39ffc">
+    <ns:title>lage databaser i henhold til gitte datamodeller</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d945b871-c94d-4a3f-bfab-278ab6193000">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cb819139-41de-46b3-a330-be137b2eb867"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6322a437-905f-4e67-9c3a-1fe5a9c492d0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3309d83f-6416-4c30-a0b2-e49e6007bb54"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:052a8313-2389-44e9-8667-fe30f798016f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9ac65991-c594-4cc7-b85f-a77c682a8531"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4ffb218e-9dce-44d4-8c62-af101151b6f3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:83338d92-d86c-4990-8d81-342a901484d9"/>
+    <ns:title>Digital samtid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:052a8313-2389-44e9-8667-fe30f798016f">
+    <ns:title>gjøre rede for hvilke utfordringer og muligheter den digitale verden kan skape for språklige og kulturelle minoriteter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4ec635e9-aa39-4982-be53-a58e85fba6df">
+    <ns:title>Læreplan i informasjonsteknologi - programfag i studiespesialiserende utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <grep:hovedomraader rdf:resource="uuid:d783a020-830a-4ed7-8a14-ae53c5a44970"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:1dc66537-c7f5-4ff2-8e98-b6d8eb0c4e3a"/>
+    <grep:hovedomraader rdf:resource="uuid:7d4c3553-b7d2-45e7-ab28-a4e5bfc2edec"/>
+    <grep:hovedomraader rdf:resource="uuid:e8f995e0-038f-444c-8e63-02178afefb8d"/>
+    <grep:hovedomraader rdf:resource="uuid:d945b871-c94d-4a3f-bfab-278ab6193000"/>
+    <grep:hovedomraader rdf:resource="uuid:074589ec-98ad-4b79-94e6-38801bc5d294"/>
+    <grep:hovedomraader rdf:resource="uuid:dda38434-ad6f-43f1-ac0e-bc54afa74650"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:85b6fabb-a49b-4637-a40f-a05bb45c2d7c"/>
+    <grep:kode>INF1-01</grep:kode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6034eb2b-857a-4424-b341-c06ad1bcbc95">
+    <ns:title>vurdere multimedieprodukter med hensyn til brukergrensesnitt og funksjonalitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a707163-13e5-4018-8607-83b65a1a2762">
+    <ns:title>programmere med enkle og indekserte variabler eller andre kolleksjoner av variabler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:074589ec-98ad-4b79-94e6-38801bc5d294">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9e85f3c7-a669-4296-beba-2cd641e3fe9b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b27f19dc-1cfe-43b5-b9f3-8c1f048fa5fd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d1cf3c7b-a9a6-42b0-beb6-fc8d55e39ffc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e67f3b57-c76a-4502-aabf-0be2bb5e7cd3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:35ba1501-3d11-41d6-8f65-18c67eb13236"/>
+    <ns:title>Databaser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:009bc939-1fc4-4611-86d1-df583685b507">
+    <ns:title>lage brukerveiledninger for IT-løsninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dda38434-ad6f-43f1-ac0e-bc54afa74650">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dda30678-3dd4-4506-b3df-bc73d133bee3"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a3633baa-1447-44cc-8927-582a832f503a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:009bc939-1fc4-4611-86d1-df583685b507"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ce13ce58-a545-42ac-91da-de97e50270bd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d09bdde1-5613-447d-89bc-f7cf28bb7ef8"/>
+    <ns:title>Planlegging og dokumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e164c79e-aa4d-4c3a-83ff-a31f3db1eb3a">
+    <ns:title>vurdere og bruke relevante filformater for tekst, bilde, lyd, video og animasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4516e860-4f16-498e-8609-5dba464d1b85">
+    <ns:title>gjøre rede for hvilke standarder og prinsipper som muliggjør Internett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9e85f3c7-a669-4296-beba-2cd641e3fe9b">
+    <ns:title>lage dynamiske nettsider som bruker en database ved hjelp av spørrespråk og programvare på tjener</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:35ba1501-3d11-41d6-8f65-18c67eb13236">
+    <ns:title>gjøre rede for begrepene primærnøkkel, kandidatnøkkel, fremmednøkkel og atomærkravet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6fc14e32-3cfc-4f5f-b02c-53253ea7d18b">
+    <ns:title>Informasjonsteknologi 1</ns:title>
+    <grep:kode>INF1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:96fafbb3-f532-4bc7-bfce-faf54f3a88fa">
+    <ns:title>programmere funksjoner eller metoder som blir aktivisert av hendelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:413070b8-6c52-44c0-b323-42938996f1d8">
+    <ns:title>definere variabler og velge hensiktsmessige datatyper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:83338d92-d86c-4990-8d81-342a901484d9">
+    <ns:title>beskrive ulike typer digitalt utstyr og forklare hovedtrekkene ved virkemåten</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1dc66537-c7f5-4ff2-8e98-b6d8eb0c4e3a">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:009bc939-1fc4-4611-86d1-df583685b507"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:295fbd73-bb81-469b-a45c-d719f9c89fb5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a3633baa-1447-44cc-8927-582a832f503a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dae0c38a-a840-4f23-9f53-8f27a0a96bc3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c81b6ac6-4c3a-42e4-8a5d-51bb29e0aef6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e164c79e-aa4d-4c3a-83ff-a31f3db1eb3a"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:15865e8c-3851-4f86-a714-cca0bd42e63e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ce13ce58-a545-42ac-91da-de97e50270bd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:413070b8-6c52-44c0-b323-42938996f1d8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:96fafbb3-f532-4bc7-bfce-faf54f3a88fa"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d09bdde1-5613-447d-89bc-f7cf28bb7ef8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6034eb2b-857a-4424-b341-c06ad1bcbc95"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:037090dc-a004-4399-824f-d09fe26193df"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dda30678-3dd4-4506-b3df-bc73d133bee3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:089e4d3e-0e7b-445f-bdf0-69abbcdb5543"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8a707163-13e5-4018-8607-83b65a1a2762"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1fdf46d6-bae9-499b-9be3-8c883229d5f0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e793c6cd-9091-4e6d-ba71-cff27ff4db01"/>
+    <ns:title>Informasjonsteknologi 2</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:970e0c95-2d3f-43c6-9e97-8529a01c365b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:223da9b1-d514-438b-aece-5e2f9506abd4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:15865e8c-3851-4f86-a714-cca0bd42e63e">
+    <ns:title>Informasjonsteknologi 2</ns:title>
+    <grep:kode>INF1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d09bdde1-5613-447d-89bc-f7cf28bb7ef8">
+    <ns:title>spesifisere og begrunne funksjonelle krav til planlagte IT-løsninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e793c6cd-9091-4e6d-ba71-cff27ff4db01">
+    <ns:title>utvikle og sette sammen delprogrammer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ce13ce58-a545-42ac-91da-de97e50270bd">
+    <ns:title>velge og bruke relevante teknikker og verktøy for planlegging og utvikling av IT-løsninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c81b6ac6-4c3a-42e4-8a5d-51bb29e0aef6">
+    <ns:title>bruke programmeringsspråk i multimedieapplikasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:295fbd73-bb81-469b-a45c-d719f9c89fb5">
+    <ns:title>gjøre rede for hensikten med objektorientert utvikling og begrepene klasse, objekt og arv</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cb819139-41de-46b3-a330-be137b2eb867">
+    <ns:title>beskrive og foreslå tiltak mot trusler i den digitale verden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:223da9b1-d514-438b-aece-5e2f9506abd4">
+    <ns:title>planlegge og utvikle multimedieapplikasjoner ved å kombinere egne og andres multimedieelementer av typene tekst, bilde, lyd, video og animasjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f64e18da-a017-4faf-91ee-101ab57f905f">
+    <ns:title>sette opp krav til og vurdere nettsteder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:87dcf41e-6003-46cd-9ed8-59c2bf7534bc">
+    <ns:title>utvikle nettsteder i henhold til planer og vurdere om krav til brukergrensesnitt er oppfylt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1fdf46d6-bae9-499b-9be3-8c883229d5f0">
+    <ns:title>programmere med valg og gjentakelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:537ef2ec-e330-4cb0-9dda-6a19e74a29ad">
+    <ns:title>organisere og begrunne filstrukturen for nettsteder</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a3633baa-1447-44cc-8927-582a832f503a">
+    <ns:title>gjøre rede for hvordan IT-løsninger utvikles i samarbeid mellom personer, og hvilke krav det setter til planleggings- og utviklingsprosessen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dda30678-3dd4-4506-b3df-bc73d133bee3">
+    <ns:title>forklare hensikten med teknisk dokumentasjon og lage slik dokumentasjon for IT-løsninger, med spesiell vekt på å dokumentere grensesnitt mellom ulike delsystemer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:efa9c93e-0d56-44a0-a4d6-db6ec41beb64">
+    <ns:title>planlegge nettsteder som inneholder multimediekomponenter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

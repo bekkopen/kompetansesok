@@ -6,4 +6,5 @@ Feature: Importere fag fra RDF til databasese
   Scenario: Parse fag
     Gitt at RDF-filer er hentet til fil
     Når 2 RDF-filer lastes inn i databasen
-    Så skal det ligge 0 Fag i basen
+    Så skal det ligge 4 Fag i basen
+    Og Fag skal ha relasjon til Kompetansemaalsett

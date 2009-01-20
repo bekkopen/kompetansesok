@@ -1,0 +1,236 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:3adb9862-4253-4606-a976-fe6752e12ea1">
+    <ns:title>bruke matematiske prinsipper innen aritmetikk, algebra og geometri i praktiske sammenhenger knyttet til luftfartøyer og utstyr</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f5b75d10-164e-473c-9068-4f70c8e9a451">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:be28ce5d-b665-45a4-9ecd-ec87ac3c7db3"/>
+    <grep:hovedomraader rdf:resource="uuid:c7f48523-ccd4-4a61-b644-26ee6172f53b"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:153dcf05-d7ca-451b-8612-0315a66a59b3"/>
+    <grep:hovedomraader rdf:resource="uuid:4e3fae5e-2e42-45c0-b87e-b52d0120e887"/>
+    <grep:kode>FLY2-01</grep:kode>
+    <ns:title>Programområde for flyfag - Læreplan i felles programfag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:106b5d06-028b-4b91-b545-353136942956">
+    <ns:title>bruke fysiske prinsipper innen materie, mekanikk, termodynamikk, optikk og bølger og lyd i praktiske sammenhenger knyttet til luftfartøyer og utstyr</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:be28ce5d-b665-45a4-9ecd-ec87ac3c7db3">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:266c16f6-fb2d-4469-b6eb-1cc5f3988bb2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1d20b9cd-5604-41f6-bfcf-c9acbd010268"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a1eb5e93-fe90-4b93-8532-35dfa818b7a4"/>
+    <ns:title>Teknisk vedlikehold 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2460017f-2fdc-447a-89f0-00fdbd95c8c9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c8a0a247-be3f-4702-8aa4-d38a4205824e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7da9e7d4-ac5c-4508-8a42-07333c7a8952"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:7fc18228-7484-42de-ad8e-8044aee24aee"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:561ecb6e-3ff7-483e-85e4-588d426f4849"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7f48523-ccd4-4a61-b644-26ee6172f53b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7da9e7d4-ac5c-4508-8a42-07333c7a8952"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1d20b9cd-5604-41f6-bfcf-c9acbd010268"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c8a0a247-be3f-4702-8aa4-d38a4205824e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:266c16f6-fb2d-4469-b6eb-1cc5f3988bb2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a1eb5e93-fe90-4b93-8532-35dfa818b7a4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:561ecb6e-3ff7-483e-85e4-588d426f4849"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2460017f-2fdc-447a-89f0-00fdbd95c8c9"/>
+    <ns:title>Teknisk vedlikehold 1</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1d20b9cd-5604-41f6-bfcf-c9acbd010268">
+    <ns:title>utføre arbeidet i henhold til helse-, miljø- og sikkerhetskrav</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:266c16f6-fb2d-4469-b6eb-1cc5f3988bb2">
+    <ns:title>vurdere og dokumentere eget og andres arbeid som utføres på systemene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ab1db5d-c7b5-4ac6-bfba-67d853f6afff">
+    <ns:title>Luftfartøylære</ns:title>
+    <grep:kode>FLY2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:561ecb6e-3ff7-483e-85e4-588d426f4849">
+    <ns:title>utføre ulike monterings-, demonterings-, inspeksjons-, og reparasjonsteknikker for arbeid på luftfartøyer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a1eb5e93-fe90-4b93-8532-35dfa818b7a4">
+    <ns:title>utføre arbeidet på systemene fagmessig, nøyaktig og i overensstemmelse med gjeldende lover og forskrifter og produsentenes tekniske dokumentasjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a83976e4-c511-4d59-9882-1d20ea84432e">
+    <ns:title>gjenkjenne og redegjøre for ulike materialer, deres egenskaper og bruksområder, og for relevante komponenter i luftfartøyenes konstruksjoner</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c8a0a247-be3f-4702-8aa4-d38a4205824e">
+    <ns:title>bruke faglig presist språk om vedlikehold av luftfartøysystemer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:153dcf05-d7ca-451b-8612-0315a66a59b3">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4e91068f-6656-412b-8a93-527f83a74666"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b5a00514-ed2b-4a7a-93ef-7f3f7154b9f9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:106b5d06-028b-4b91-b545-353136942956"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5cbea793-dc3b-4975-9da2-35340474b37e"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:2ab1db5d-c7b5-4ac6-bfba-67d853f6afff"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:53809b0f-8040-43c4-83bc-c84ef2bec092"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bfaad8f5-f32d-4675-abf3-5a7044e76700"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a83976e4-c511-4d59-9882-1d20ea84432e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3adb9862-4253-4606-a976-fe6752e12ea1"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <ns:title>Luftfartøylære</ns:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2460017f-2fdc-447a-89f0-00fdbd95c8c9">
+    <ns:title>bruke riktig verktøy og måleinstrumenter knyttet til vedlikehold av luftfartøyer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4e3fae5e-2e42-45c0-b87e-b52d0120e887">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b5a00514-ed2b-4a7a-93ef-7f3f7154b9f9"/>
+    <ns:title>Luftfartøylære</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4e91068f-6656-412b-8a93-527f83a74666"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:106b5d06-028b-4b91-b545-353136942956"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3adb9862-4253-4606-a976-fe6752e12ea1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:53809b0f-8040-43c4-83bc-c84ef2bec092"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a83976e4-c511-4d59-9882-1d20ea84432e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5cbea793-dc3b-4975-9da2-35340474b37e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bfaad8f5-f32d-4675-abf3-5a7044e76700"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b5a00514-ed2b-4a7a-93ef-7f3f7154b9f9">
+    <ns:title>måle på, koble og gjenkjenne og redegjøre for elektriske komponenter i luftfartøyer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7fc18228-7484-42de-ad8e-8044aee24aee">
+    <ns:title>Teknisk vedlikehold 1</ns:title>
+    <grep:kode>FLY2Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4e91068f-6656-412b-8a93-527f83a74666">
+    <ns:title>måle på, koble og gjenkjenne og redegjøre for analoge elektroniske komponenter i luftfartøyer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:53809b0f-8040-43c4-83bc-c84ef2bec092">
+    <ns:title>måle på, koble og gjenkjenne og redegjøre for digitale elektroniske komponenter og elektroniske instrumentsystemer i luftfartøyer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7da9e7d4-ac5c-4508-8a42-07333c7a8952">
+    <ns:title>arbeide i overensstemmelse med rutiner for kvalitetssikring og internkontroll</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bfaad8f5-f32d-4675-abf3-5a7044e76700">
+    <ns:title>beskrive grunnleggende aerodynamiske lover</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5cbea793-dc3b-4975-9da2-35340474b37e">
+    <ns:title>bruke matematiske formler sett i sammenheng med lover innen fysikk som er aktuelle for faget</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

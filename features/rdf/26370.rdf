@@ -1,0 +1,269 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="uuid:b993774b-85bc-4ea0-877d-e766d2ad02e9">
+    <ns:title>gje døme på teoriar om befolkningsutvikling og drøfte globale befolkningsforhold</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:24a825bf-13be-42e4-808e-731affaaaf28">
+    <ns:title>gje døme på korleis ein har utnytta ressursane i Noreg og drøfte korleis endringar i næringsstrukturen har påverka lokalisering og  busetnadsmønster </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f7d9f6a0-0872-4d2d-9e65-87c2c6778794">
+    <ns:title>bruke digitale kart og geografiske informasjonssystem (GIS)
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2ababb6b-e466-432a-9250-9f345c46937c">
+    <ns:title>gje døme på lokaliseringsfaktorar som er viktige for global økonomisk verksemd og internasjonal arbeidsdeling, og vurdere kva dette har å seie i dag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c30d94f2-14a8-4dbe-b5b2-3f99ffadb3b6">
+    <ns:title>drøfte miljøkonsekvensar i norske og samiske samfunn av bruk og inngrep i naturområde</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a59e3890-78db-40ed-aedd-63b1cffc0590">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:11dd4866-ade1-416e-8086-4dbbde3878f5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b993774b-85bc-4ea0-877d-e766d2ad02e9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fd968883-21ef-42f6-891c-d095b016e310"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ac7d44c0-9435-476c-948d-ea86df70b779"/>
+    <ns:title>Demografi og utvikling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac7d44c0-9435-476c-948d-ea86df70b779">
+    <ns:title>gjere greie for den demografiske utviklinga i Noreg med hovudvekt på situasjonen i dag
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fd968883-21ef-42f6-891c-d095b016e310">
+    <ns:title>forklare årsakene til flyttestraumar i land og mellom land og drøfte verknadene </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b34b23ed-790e-4905-9f5b-1acc3c9c632e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2ababb6b-e466-432a-9250-9f345c46937c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:24a825bf-13be-42e4-808e-731affaaaf28"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c30d94f2-14a8-4dbe-b5b2-3f99ffadb3b6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:68655066-2f57-46a0-a372-0a7ce80d829f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4000f472-085f-4499-a837-623816463fff"/>
+    <ns:title>Ressursar og næringsverksemd</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e45787ae-5da1-40c8-885f-a56eea9b1fbd">
+    <ns:title>Geografi</ns:title>
+    <grep:kode>GEO1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e7c96dc2-4ccb-4634-9b7e-2278c4b08cd6">
+    <ns:title>gjere greie for globale hav- og luftstraumar og forklare kva dei har å seie for klimaet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7990e04b-6bc8-4345-a3e2-d3e1755fe916">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b782da80-8c4e-49a0-b479-a6b37a0e5e2f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:58ea51d9-379f-49b4-bbbd-f76348e6287d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e7c96dc2-4ccb-4634-9b7e-2278c4b08cd6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b9388db0-d41c-43e9-8587-6a59a6818ef2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1433608e-9e4b-42e9-8408-9f2069a5a07d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:645923f8-fd00-41f5-a737-ee235adc975b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:36af8b74-5721-4645-a84d-b57ce993cdc4"/>
+    <ns:title>Landskap og klima</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1433608e-9e4b-42e9-8408-9f2069a5a07d">
+    <ns:title>beskrive naturlandskap og forskjellige kulturlandskap og forklare samanhengar og skilnader mellom dei</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:36af8b74-5721-4645-a84d-b57ce993cdc4">
+    <ns:title>gjere greie for korleis jorda er oppbygd, hovudtypane av bergartar og korleis dei blir danna</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:667c47a0-ddeb-4f7c-a806-59a0fbc101dd">
+    <ns:title>finne fram til og presentere geografisk informasjon ved å lese og vurdere tekst, bilete og statistiske framstillingar frå digitale og andre kjelder
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:31933d29-bbe2-437d-9f6e-752ca7d5aa0c">
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:e45787ae-5da1-40c8-885f-a56eea9b1fbd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:11dd4866-ade1-416e-8086-4dbbde3878f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fd968883-21ef-42f6-891c-d095b016e310"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1433608e-9e4b-42e9-8408-9f2069a5a07d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2ababb6b-e466-432a-9250-9f345c46937c"/>
+    <ns:title>Etter Vg1/Vg2 </ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f7d9f6a0-0872-4d2d-9e65-87c2c6778794"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b9388db0-d41c-43e9-8587-6a59a6818ef2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4000f472-085f-4499-a837-623816463fff"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:58ea51d9-379f-49b4-bbbd-f76348e6287d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:37e70bb3-cb56-4edf-96ef-da70f3741f6a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:667c47a0-ddeb-4f7c-a806-59a0fbc101dd"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ac7d44c0-9435-476c-948d-ea86df70b779"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:46799f75-f1c4-4bc3-a593-cbe1278f94a7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b993774b-85bc-4ea0-877d-e766d2ad02e9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c30d94f2-14a8-4dbe-b5b2-3f99ffadb3b6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:68655066-2f57-46a0-a372-0a7ce80d829f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:4606df6e-3ac3-413a-a666-86d260da8d64"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:24a825bf-13be-42e4-808e-731affaaaf28"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b782da80-8c4e-49a0-b479-a6b37a0e5e2f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e7c96dc2-4ccb-4634-9b7e-2278c4b08cd6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:645923f8-fd00-41f5-a737-ee235adc975b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:36af8b74-5721-4645-a84d-b57ce993cdc4"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:68655066-2f57-46a0-a372-0a7ce80d829f">
+    <ns:title>gje døme på og samanlikne ulike former for arealbruk i Noreg </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:46799f75-f1c4-4bc3-a593-cbe1278f94a7">
+    <ns:title>gje oversikt over geografiske hovudtrekk, som elvar, innsjøar, fjell, byar og land nasjonalt og globalt</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:76902c32-ebcf-47db-86a4-f834c7126ffd">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:46799f75-f1c4-4bc3-a593-cbe1278f94a7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:667c47a0-ddeb-4f7c-a806-59a0fbc101dd"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:37e70bb3-cb56-4edf-96ef-da70f3741f6a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f7d9f6a0-0872-4d2d-9e65-87c2c6778794"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:4606df6e-3ac3-413a-a666-86d260da8d64"/>
+    <ns:title>Geografiske kjelder og verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b782da80-8c4e-49a0-b479-a6b37a0e5e2f">
+    <ns:title>drøfte årsakene til naturkatastrofar i verda og kva for verknader dei har på samfunn som blir ramma</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:58ea51d9-379f-49b4-bbbd-f76348e6287d">
+    <ns:title>gjere greie for forhold som bestemmer vêr- og klimatilhøva i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:11dd4866-ade1-416e-8086-4dbbde3878f5">
+    <ns:title>gjere greie for globale skilnader i fordeling og levekår, forklare moglege årsaker til dei og drøfte korleis ein kan jamne ut skilnader mellom land</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b9388db0-d41c-43e9-8587-6a59a6818ef2">
+    <ns:title>diskutere estetiske og økonomiske verdiar i landskap</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4606df6e-3ac3-413a-a666-86d260da8d64">
+    <ns:title>lese og bruke kart i ulik målestokk og gjere enkel kartanalyse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4000f472-085f-4499-a837-623816463fff">
+    <ns:title>gjere greie for ressursomgrepet og diskutere kva som vert lagt i omgrepet berekraftig ressursutnytting</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:37e70bb3-cb56-4edf-96ef-da70f3741f6a">
+    <ns:title>gjere observasjonar og registreringar av geografiske tema på ekskursjon eller feltarbeid og bruke dei til å sjå natur og samfunn i samanheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:645923f8-fd00-41f5-a737-ee235adc975b">
+    <ns:title>forklare korleis indre og ytre krefter formar landskap, og kjenne att typiske landformer i Noreg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a60aba98-f482-4d4d-a5c1-abc4784b9587">
+    <grep:hovedomraader rdf:resource="uuid:a59e3890-78db-40ed-aedd-63b1cffc0590"/>
+    <grep:hovedomraader rdf:resource="uuid:b34b23ed-790e-4905-9f5b-1acc3c9c632e"/>
+    <grep:hovedomraader rdf:resource="uuid:7990e04b-6bc8-4345-a3e2-d3e1755fe916"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:31933d29-bbe2-437d-9f6e-752ca7d5aa0c"/>
+    <grep:hovedomraader rdf:resource="uuid:76902c32-ebcf-47db-86a4-f834c7126ffd"/>
+    <grep:kode>GEO1-01</grep:kode>
+    <ns:title>Læreplan i geografi - fellesfag i studieførebuande utdanningsprogram</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+</rdf:RDF>

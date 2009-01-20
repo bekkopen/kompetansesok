@@ -10,13 +10,14 @@ nb:
     hovedområde: "Hovedområde"
     kompetansemål: "Kompetansemål"
     kompetansemålsett: "Kompetansemålsett"
+    fag: "Fag"
     valgte_kompetansemål: "Valgte kompetansemål"
     database_eksport: "Database eksport"
   
   knapper:
     søk: "Søk"
     eksport_csv: "Lagre resultatsett til fil"
-    tilbake_til_søk: "Tilbake til søket"
+    tilbake: "Tilbake"
     
 
     
@@ -34,6 +35,8 @@ nb:
     læreplaner: "Læreplaner:"
     hovedområder: "Hovedområder:"
     kompetansemål: "Kompetansemål:"
+    kompetansemålsett: "Kompetansemålsett:"
+    fag: "Fag:"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"

@@ -1,4 +1,6 @@
 class Kompetansemaalsett < ActiveRecord::Base
+  is_indexed :fields => ['tittel', 'uuid']
+  
   has_and_belongs_to_many :laereplaner
   has_and_belongs_to_many :kompetansemaal
   has_and_belongs_to_many :trinn
@@ -6,17 +8,20 @@ class Kompetansemaalsett < ActiveRecord::Base
   
   validates_uniqueness_of :uuid
   attr_accessor_with_default :trinn_uuids, []
-  attr_accessor_with_default :laereplan_uuids, []
+  attr_accessor_with_default :kompetansemaal_uuids, []
   attr_accessor_with_default :fag_uuids, []
-  after_create :koble_laereplan, :koble_trinn, :koble_fag
+  after_create :koble_kompetansemaal, :koble_trinn, :koble_fag
   
+  def to_param
+    uuid
+  end
   
   private
 
-  def koble_laereplan
-    laereplan_uuids.each do |laereplan_uuid|
-      l = Laereplan.find_by_uuid(laereplan_uuid)
-      laereplaner << l unless l.nil?
+  def koble_kompetansemaal
+    kompetansemaal_uuids.each do |kompetansemaal_uuid|
+      l = Kompetansemaal.find_by_uuid(kompetansemaal_uuid)
+      kompetansemaal << l unless l.nil?
     end
   end
   

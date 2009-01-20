@@ -1,0 +1,648 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8fcb5662-0082-4cd6-a77c-ed9348f70f27">
+    <ns:title>gjøre rede for utviklingen av demokratiske ideer og institusjoner i moderne tid og drøfte utfordringer knyttet til realiseringen av rettsstatlige og demokratiske idealer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6e68095c-b3e6-462d-a7c2-9ef945796543">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2ad72cd-866c-4e0d-973b-b584b57bc9c2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c20039b5-6a29-4267-abaf-69bb90a29c37"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:79266753-de34-4081-ad88-6b0b306dfe62"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6b6424ee-e427-48ab-a04a-364b272301e0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d70a451f-d513-4fcb-9fa8-465a81e02c91"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:26fe58ac-577e-44ed-b7cf-59d6bfe213e9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:add96fe0-bfd3-4008-92a6-dd5328e54920"/>
+    <ns:title>Nyere tid og kritisk tenkning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1058ac3e-86e8-4e4d-96ad-ce871861ae62">
+    <ns:title>identifisere dikotomiserende tenkning og drøfte hvordan dikotomisering har preget ideologier og bevegelser, og kan stå i konflikt med demokratiske idealer og vitenskapelig tenkemåte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:39d726b8-7a6c-4b5b-9e86-2fdecd486bae">
+    <ns:title>anvende relevante kildekritiske spørsmål til beretninger og vise hvordan beretninger kan brukes som kilder til antikken</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6519fce5-a111-4888-a7d0-a88604885c02">
+    <grep:hovedomraader rdf:resource="uuid:6e68095c-b3e6-462d-a7c2-9ef945796543"/>
+    <grep:hovedomraader rdf:resource="uuid:fd63f422-500b-42ad-bb20-b3264829f4e6"/>
+    <grep:hovedomraader rdf:resource="uuid:9f5a85bf-7ace-4950-b986-d6db532fda9b"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:854e0d47-7311-40d1-9ca3-821d9f91797e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <grep:hovedomraader rdf:resource="uuid:4b0a1a51-73a4-4114-9a9a-212930a8adb0"/>
+    <grep:hovedomraader rdf:resource="uuid:669c03f9-7239-4d12-9815-83f06b7c08ef"/>
+    <grep:hovedomraader rdf:resource="uuid:4c6ede55-b802-4cb5-82e0-6630e0b92b2c"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:745a57ed-34b5-4fb3-a0db-c935af496548"/>
+    <grep:hovedomraader rdf:resource="uuid:f8d4108b-6944-4b75-8879-60592c48027a"/>
+    <grep:hovedomraader rdf:resource="uuid:80fe4d90-a223-4bb5-9b44-85acf9d4a49e"/>
+    <ns:title>Læreplan i historie og filosofi - programfag</ns:title>
+    <grep:hovedomraader rdf:resource="uuid:87dabd87-1fab-4f70-a3a9-4d2b3d531c46"/>
+    <grep:hovedomraader rdf:resource="uuid:e9dbaeec-a695-4489-9496-2e1b062d48ff"/>
+    <grep:hovedomraader rdf:resource="uuid:a88093ed-9b6b-41cc-b4ca-c480d40a6678"/>
+    <grep:kode>HIF1-01</grep:kode>
+    <grep:hovedomraader rdf:resource="uuid:a3301fdc-fcbd-47bf-abc2-83940e64bf9b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:669c03f9-7239-4d12-9815-83f06b7c08ef">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3c90cf44-a3a1-4324-ae22-9ba29811dac7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2d0e44e-461c-4b69-9aae-849ff198ea97"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0da4f169-5c5e-45e7-9a56-5345ba2daff6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0806a144-8486-49f4-8fd7-1b2a5e12ff8f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f027b08a-41ab-4b2e-8729-416ac42c004e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:aaf6bd4c-4045-490e-8d5d-59b46f789c94"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bac28dd5-41ac-4563-9f30-4bf5403e70c5"/>
+    <ns:title>Oldtid og myter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:20c6c34b-76c7-47f1-8bd7-e6434c722c90">
+    <ns:title>drøfte hvilken betydning islamsk kultur og tenkning fikk i middelalderen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:79266753-de34-4081-ad88-6b0b306dfe62">
+    <ns:title>presentere en ikke-europeisk kultur og vise hvordan en filosofitradisjon eller en historieforståelse har preget denne kulturen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b6424ee-e427-48ab-a04a-364b272301e0">
+    <ns:title>drøfte i hvilken grad samefolkets felles historie har betydning for moderne allsamisk identitet på tvers av statsgrensene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f027b08a-41ab-4b2e-8729-416ac42c004e">
+    <ns:title>reflektere over hvordan myter preger virkelighetsforståelse og fortellinger, og diskutere hvordan mytene søker å gi svar på grunnleggende spørsmål i eldre kultursamfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:854e0d47-7311-40d1-9ca3-821d9f91797e">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:aaf6bd4c-4045-490e-8d5d-59b46f789c94"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f027b08a-41ab-4b2e-8729-416ac42c004e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d566a343-c5dd-4f2e-b2a8-a398bef7e964"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b6d44229-1050-4346-a965-274f89bc463f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bb11b58d-bfa2-4e21-8691-e8469351a7fb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:15365b35-d85a-4141-a937-8af0404f07c6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b2d0e44e-461c-4b69-9aae-849ff198ea97"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:26fe58ac-577e-44ed-b7cf-59d6bfe213e9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5bd66936-9a99-49a6-abc0-9fc6130585c1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:add96fe0-bfd3-4008-92a6-dd5328e54920"/>
+    <ns:title>Historie og filosofi 1</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:151e4b97-446b-41de-9dd9-790aa662205e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5c7b0489-e7b6-4868-8872-92028b5af715"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0da4f169-5c5e-45e7-9a56-5345ba2daff6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a535c53-394c-45b0-93de-30bfef7a8605"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:7c257a89-790f-45d8-a236-d20642aa29ee"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b2ad72cd-866c-4e0d-973b-b584b57bc9c2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d70a451f-d513-4fcb-9fa8-465a81e02c91"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:51dc5219-dca5-47c4-909b-610bc7cb12d2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a23da895-324c-4167-878f-042749eb466f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:74990323-93ea-4c37-b25b-4d8bbc32aa40"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:79266753-de34-4081-ad88-6b0b306dfe62"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d3a62ca5-a966-45d3-ab75-9a7f2edbf506"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e83df189-32fa-4292-a616-50cf94141e1a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1be149db-6041-4bd4-a31e-af606d61a4c4"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5251993a-ca5f-43c6-8796-2a99dbd84e56"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:885a3110-21c8-4111-8493-f1f921d666cc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:bac28dd5-41ac-4563-9f30-4bf5403e70c5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2b4d5bd9-7e4c-4fb0-8544-c2c43baa4fd8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:af6dec9a-2f2b-4368-b93e-dbbfd849e0da"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:617cf9f9-9264-41e3-a31d-94229dc9954c"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:71a37d8f-8319-4661-8d0f-4a026acee7f5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3c90cf44-a3a1-4324-ae22-9ba29811dac7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8b3d8303-775c-4546-a0de-dd1b75b2181d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e29c1578-f919-471c-ab88-bc5e6537ee44"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0ecf3cad-b68f-4a93-bc63-aa9c0d416fdc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ea016f8a-c1b0-4644-a546-2d9fe357b71a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0806a144-8486-49f4-8fd7-1b2a5e12ff8f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6b6424ee-e427-48ab-a04a-364b272301e0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:649118cf-7adf-4340-9b54-2fb9d6aa2385"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c20039b5-6a29-4267-abaf-69bb90a29c37"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:20c6c34b-76c7-47f1-8bd7-e6434c722c90"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:39d726b8-7a6c-4b5b-9e86-2fdecd486bae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5c7b0489-e7b6-4868-8872-92028b5af715">
+    <ns:title>gjøre rede for sentrale filosofiske problemstillinger i perioden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f1599293-e24a-44f3-83a0-fac010777787">
+    <ns:title>Historie og filosofi 2</ns:title>
+    <grep:kode>HIF1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:21f0b32c-2fb6-460b-8e2b-4a6509428989">
+    <ns:title>drøfte problemer knyttet til begrepene sannhet og objektivitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bb11b58d-bfa2-4e21-8691-e8469351a7fb">
+    <ns:title>forklare opprinnelsen til den filosofiske samtalen og anvende prinsippene for den</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:649118cf-7adf-4340-9b54-2fb9d6aa2385">
+    <ns:title>vurdere verdien av utvalgte levninger og beretninger som kilder til kunnskap om ulike emner i middelalderen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b2837626-b110-4424-bef5-dbead7521d19">
+    <ns:title>forklare begrepet historiebevissthet og vurdere hvordan historieforståelse og kunnskap om fortiden kan påvirke menneskers valg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8ee34463-19f9-418c-a52f-e89e296f8860">
+    <ns:title>presentere og drøfte synspunktene i tre kortere tekster om ideologi i tenkning, hverdagsliv og politikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:38a6eb8b-736c-4f9b-80c9-f5f95edc2107">
+    <ns:title>drøfte urfolkskulturers situasjon i brytningen mellom tradisjon og modernitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8a39994f-a04b-4396-9c8b-6d37d901959f">
+    <ns:title>gjøre rede for hvordan terror og ikke-vold har vært brukt og begrunnet som virkemidler i politisk kamp og diskutere etiske problemer knyttet til slike virkemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1f9cd2c0-24c5-4ef7-85fc-213a1ee23a74">
+    <ns:title>forklare begrepene identitetspolitikk og erindringspolitikk og diskutere hvordan historie er blitt brukt i kulturell og politisk sammenheng</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9f5a85bf-7ace-4950-b986-d6db532fda9b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1be149db-6041-4bd4-a31e-af606d61a4c4"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d566a343-c5dd-4f2e-b2a8-a398bef7e964"/>
+    <ns:title>Middelalder og kildebruk</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:15365b35-d85a-4141-a937-8af0404f07c6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:649118cf-7adf-4340-9b54-2fb9d6aa2385"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:20c6c34b-76c7-47f1-8bd7-e6434c722c90"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2a535c53-394c-45b0-93de-30bfef7a8605"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2b4d5bd9-7e4c-4fb0-8544-c2c43baa4fd8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e83df189-32fa-4292-a616-50cf94141e1a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:51dc5219-dca5-47c4-909b-610bc7cb12d2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ec1eb324-2f43-40c6-9c08-5832f7ec661d">
+    <ns:title>gjøre rede for utviklingen av historie som vitenskap og drøfte problemstillinger knyttet til sannhetssøken i historieforskning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:15365b35-d85a-4141-a937-8af0404f07c6">
+    <ns:title>gjøre rede for hvordan klassisk gresk filosofi videreføres i kristen tenkning og forklare hvordan kristen tenkning endrer seg i perioden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ea016f8a-c1b0-4644-a546-2d9fe357b71a">
+    <ns:title>gi eksempler på boktrykkerkunstens betydning for spredning av historieskriving, ideer og kunnskap</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:eb58e606-2633-48f5-9084-9264059bff4f">
+    <ns:title>diskutere hendelser, endringer og utfordringer i moderne tid som har aktualisert etiske og eksistensielle spørsmål</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a23da895-324c-4167-878f-042749eb466f">
+    <ns:title>diskutere forskjellen mellom historieframstilling gjennom myter og gjennom skjønnlitteratur og saksprosa</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1056810c-7c6f-46cf-8d04-53864804f84b">
+    <ns:title>identifisere og drøfte menneskesyn i ulike typer historiske og filosofiske tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a88093ed-9b6b-41cc-b4ca-c480d40a6678">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8ee34463-19f9-418c-a52f-e89e296f8860"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8a39994f-a04b-4396-9c8b-6d37d901959f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:30289d44-1334-4eee-b213-4387e02221e2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1058ac3e-86e8-4e4d-96ad-ce871861ae62"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:401e0714-5f01-476c-81e0-291e201a9c49"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8fcb5662-0082-4cd6-a77c-ed9348f70f27"/>
+    <ns:title>Politiske ideer og ideologier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:334a5c46-aafc-4eb3-a8b2-bf31a218fab1">
+    <ns:title>forklare hva det vil si å tenke historisk til forskjell fra det å ha kunnskaper om historie, og hvorfor begge deler er viktig for å utvikle historiebevissthet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5d22838c-ce03-4d1f-8b4d-3c82772e99b8">
+    <ns:title>bruke historiefaglige metoder for å undersøke problemstillinger og utforme en faglig framstilling av arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e9dbaeec-a695-4489-9496-2e1b062d48ff">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8b3d8303-775c-4546-a0de-dd1b75b2181d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ea016f8a-c1b0-4644-a546-2d9fe357b71a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:151e4b97-446b-41de-9dd9-790aa662205e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b6d44229-1050-4346-a965-274f89bc463f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5bd66936-9a99-49a6-abc0-9fc6130585c1"/>
+    <ns:title>Renessanse og forklaring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e29c1578-f919-471c-ab88-bc5e6537ee44">
+    <ns:title>gi eksempler på viktige vitenskapelige og tekniske nyvinninger og vurdere hvilke konsekvenser de hadde i Europa og for kontakten på tvers av kontinenter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b6d44229-1050-4346-a965-274f89bc463f">
+    <ns:title>gjøre rede for samfunnsforståelsen i renessansen og diskutere hvilke faktorer som påvirket sentrale tenkeres oppfatning om stat og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:876a95bd-9e03-480e-8c21-322432af04fb">
+    <ns:title>gjøre rede for filosofiske ideer om forholdet mellom mennesker, dyr og natur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2b4d5bd9-7e4c-4fb0-8544-c2c43baa4fd8">
+    <ns:title>drøfte idégrunnlaget for føydalisme og hva føydalisme betydde for middelalderens mennesker</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f8d4108b-6944-4b75-8879-60592c48027a">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5c7b0489-e7b6-4868-8872-92028b5af715"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e29c1578-f919-471c-ab88-bc5e6537ee44"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:885a3110-21c8-4111-8493-f1f921d666cc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:617cf9f9-9264-41e3-a31d-94229dc9954c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5251993a-ca5f-43c6-8796-2a99dbd84e56"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0ecf3cad-b68f-4a93-bc63-aa9c0d416fdc"/>
+    <ns:title>Opplysningstid og perspektiver </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3771450d-b6de-4554-b27c-e849b7a98e1e">
+    <ns:title>forklare begrepet paradigme og diskutere viktige paradigmeskifter i historie</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0ecf3cad-b68f-4a93-bc63-aa9c0d416fdc">
+    <ns:title>presentere hovedtrekk i opplysningstidens tenkning, deriblant statstenkningen og frihetsidealene og drøfte betydningen de fikk i Amerika, Europa og Norden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:87dabd87-1fab-4f70-a3a9-4d2b3d531c46">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:251b2246-8939-4440-9b7e-1953b1dd9b7d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3771450d-b6de-4554-b27c-e849b7a98e1e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ec1eb324-2f43-40c6-9c08-5832f7ec661d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:21f0b32c-2fb6-460b-8e2b-4a6509428989"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8c182a21-d948-4dc0-98ce-d5d7a9c0d100"/>
+    <ns:title>Kunnskap og sannhetssøken </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f156ce9b-4096-4588-b8aa-419ef5c2803c">
+    <ns:title>gjøre rede for miljøproblematikk i et historisk perspektiv og drøfte etiske dilemmaer knyttet til dette</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d3a62ca5-a966-45d3-ab75-9a7f2edbf506">
+    <ns:title>drøfte romerrettens og retorikkens betydning for utviklingen av det romerske samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1aa9f572-ca33-4149-9de4-035004cd8ab0">
+    <ns:title>diskutere hvordan uttrykks- og kommunikasjonsformer påvirket og ble påvirket av den historiske utviklingen i moderne tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ee0cec1a-8c2d-47b9-8115-b01408251c69">
+    <ns:title>gjøre rede for forskjellige historiesyn og analysere eget og andres historiesyn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3c90cf44-a3a1-4324-ae22-9ba29811dac7">
+    <ns:title>diskutere hvilken betydning muntlighet har for historiebruken i en kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:617cf9f9-9264-41e3-a31d-94229dc9954c">
+    <ns:title>vurdere hvordan historiske forhold kan ses fra ulike perspektiver og synsvinkler gjennom eksempler fra perioden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:401e0714-5f01-476c-81e0-291e201a9c49">
+    <ns:title>forklare forskjellen mellom et vidt og et snevert ideologibegrep og vurdere hvordan ideologi fungerer i tenkning, hverdagsliv, politisk mobilisering og statsstyring</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4b0a1a51-73a4-4114-9a9a-212930a8adb0">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:39d726b8-7a6c-4b5b-9e86-2fdecd486bae"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a23da895-324c-4167-878f-042749eb466f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d3a62ca5-a966-45d3-ab75-9a7f2edbf506"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:bb11b58d-bfa2-4e21-8691-e8469351a7fb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:71a37d8f-8319-4661-8d0f-4a026acee7f5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:af6dec9a-2f2b-4368-b93e-dbbfd849e0da"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:74990323-93ea-4c37-b25b-4d8bbc32aa40"/>
+    <ns:title>Antikken og samtalen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a3301fdc-fcbd-47bf-abc2-83940e64bf9b">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:38a6eb8b-736c-4f9b-80c9-f5f95edc2107"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b14944bb-dab7-474d-b124-510c1c70f90b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e550f6ba-986d-4fa0-8f05-b1584191ddeb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:dd67f378-9736-49d9-8176-cb48c775f40c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:787f63c8-d9ac-4c5c-b4cf-2c7b1552cfb7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:334a5c46-aafc-4eb3-a8b2-bf31a218fab1"/>
+    <ns:title>Mennesket i moderne tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5bd66936-9a99-49a6-abc0-9fc6130585c1">
+    <ns:title>drøfte sammenhenger mellom den økonomiske utviklingen og utviklingen av kunst, vitenskap og filosofi i renessansen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5251993a-ca5f-43c6-8796-2a99dbd84e56">
+    <ns:title>drøfte romantikkens betydning for tenkning, kunst og kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:aaf6bd4c-4045-490e-8d5d-59b46f789c94">
+    <ns:title>drøfte hvordan mennesker i eldre kultursamfunn har forstått tid, søkt mening og overført kunnskap mellom generasjonene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:80fe4d90-a223-4bb5-9b44-85acf9d4a49e">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6fcabc8d-6873-473e-b44e-23e45b628a14"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5d22838c-ce03-4d1f-8b4d-3c82772e99b8"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b2837626-b110-4424-bef5-dbead7521d19"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1f9cd2c0-24c5-4ef7-85fc-213a1ee23a74"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ee0cec1a-8c2d-47b9-8115-b01408251c69"/>
+    <ns:title>Historieforståelse, historiebevissthet og historiebruk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:251b2246-8939-4440-9b7e-1953b1dd9b7d">
+    <ns:title>presentere hovedsynspunktene i tre kortere faghistoriske eller filosofiske tekster om viktige vitenskapelige oppdagelser og framskritt i moderne tid, og drøfte forskjeller og likheter i forfatternes tilnærminger til emnet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7244ecaf-a20a-48e7-9f33-63ece6548a40">
+    <ns:title>identifisere og drøfte samfunnssyn i ulike typer historiske tekster fra moderne tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:af6dec9a-2f2b-4368-b93e-dbbfd849e0da">
+    <ns:title>analysere framveksten av demokratiske ideer i greske bystater</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b14944bb-dab7-474d-b124-510c1c70f90b">
+    <ns:title>drøfte hva modernisering kan være og gi eksempler fra ulike deler av verden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fd63f422-500b-42ad-bb20-b3264829f4e6">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:31c81738-7a8c-4d9d-b7b3-c5ab4c69824a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1aa9f572-ca33-4149-9de4-035004cd8ab0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:102c7a05-d0e7-471e-b166-d1ef016599ec"/>
+    <ns:title>Felleskap, produksjon og forbruk</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ac660975-3d13-4005-bc40-86194ef8df6a"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:876a95bd-9e03-480e-8c21-322432af04fb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7244ecaf-a20a-48e7-9f33-63ece6548a40"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f156ce9b-4096-4588-b8aa-419ef5c2803c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e7e4edca-c563-40db-bb13-ce140e9ecc60"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:add96fe0-bfd3-4008-92a6-dd5328e54920">
+    <ns:title>forklare forskjeller mellom tidlige produksjonsmåter og industrikapitalisme og vurdere hva de innebar for forståelse av tid og arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b2ad72cd-866c-4e0d-973b-b584b57bc9c2">
+    <ns:title>drøfte hvorfor kritisk tenkning er sentralt innenfor historieforskning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a535c53-394c-45b0-93de-30bfef7a8605">
+    <ns:title>bruke begrepene kontinuitet og endring i diskusjoner om den historiske utviklingen i perioden</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c20039b5-6a29-4267-abaf-69bb90a29c37">
+    <ns:title>gjøre rede for sentrale tema innenfor norsk og europeisk historieskriving i første del av 1800-tallet og forklare hvordan historieskrivingen bidro til utvikling av nasjonale identiteter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b2d0e44e-461c-4b69-9aae-849ff198ea97">
+    <ns:title>reflektere over forbindelsen mellom tidsoppfatning og fortelling når det gjelder kronologi, erfaringsoverføring og menneskets eksistensielle søken</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0806a144-8486-49f4-8fd7-1b2a5e12ff8f">
+    <ns:title>gjøre rede for hva som kjennetegner symboler og gi eksempler på ulike typer symboler fra eldre kultursamfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:afcd50f1-fd2b-4d87-9957-7a6f3e1aa8e7">
+    <ns:title>presentere hovedsynspunktene i tre kortere historiske eller filosofiske tekster om søken etter eksistens og mening i moderne tid, og drøfte forskjeller og likheter i tilnærmingen til emnet
+</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ac660975-3d13-4005-bc40-86194ef8df6a">
+    <ns:title>gjøre rede for noen sentrale økonomiske teorier og drøfte med eksempler fra historien hvordan økonomisk aktivitet, utvikling eller problemer har underbygd eller utfordret disse teoriene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:755e6889-049a-43cf-93fc-6ab87f6c0fcb">
+    <ns:title>vurdere hva som former historisk identitet hos individer og grupper, og gi eksempler på hvordan ulike fellesskap har formet, forsterket og formidlet historisk identitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6fcabc8d-6873-473e-b44e-23e45b628a14">
+    <ns:title>drøfte muligheter og utfordringer som mangfoldet av kilder i informasjonssamfunnet gir for historie som vitenskap og opplevelsesarena</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:bac28dd5-41ac-4563-9f30-4bf5403e70c5">
+    <ns:title>sammenlikne samfunnsstruktur og naturgrunnlag i to eldre kultursamfunn og diskutere hvilke ideer som preget disse samfunnene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:31c81738-7a8c-4d9d-b7b3-c5ab4c69824a">
+    <ns:title>diskutere sammenhenger mellom økonomisk utvikling, ideologier og filosofi og utviklingen av teknologi, arkitektur og formgivning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e83df189-32fa-4292-a616-50cf94141e1a">
+    <ns:title>diskutere forskjeller og likheter i politisk og religiøs tenkning mellom Norden og Europa i middelalderen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8c182a21-d948-4dc0-98ce-d5d7a9c0d100">
+    <ns:title>gjøre rede for hvordan vitenskapelig tenkemåte og metode har omfattet stadig nye områder i moderne tid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:51dc5219-dca5-47c4-909b-610bc7cb12d2">
+    <ns:title>gi eksempler på ulike former for periodisering og drøfte hvilken betydning dette har for vektlegging i historieframstillinger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7c257a89-790f-45d8-a236-d20642aa29ee">
+    <ns:title>Historie og filosofi 1</ns:title>
+    <grep:kode>HIF1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d70a451f-d513-4fcb-9fa8-465a81e02c91">
+    <ns:title>drøfte hvordan historieforståelser kan virke undertrykkende eller frigjørende for ulike grupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:74990323-93ea-4c37-b25b-4d8bbc32aa40">
+    <ns:title>gjøre rede for hvordan gresk og romersk sivilisasjon, kultur og samfunnsforhold ble preget av møter med andre kulturer</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:71a37d8f-8319-4661-8d0f-4a026acee7f5">
+    <ns:title>gjøre rede for naturfilosofi og athensk filosofi om menneske og samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e7e4edca-c563-40db-bb13-ce140e9ecc60">
+    <ns:title>drøfte hvordan kjønn, etnisitet og sosial og religiøs tilhørighet har satt grenser for menneskers utfoldelse og valgmuligheter, og gi eksempler fra historien på hvordan slike grenser har vært overskredet eller endret</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1be149db-6041-4bd4-a31e-af606d61a4c4">
+    <ns:title>sammenlikne grunntrekk i bysantinsk og vesteuropeisk kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e550f6ba-986d-4fa0-8f05-b1584191ddeb">
+    <ns:title>presentere hovedsynspunktene i tre kortere faghistoriske tekster om problemstillinger knyttet til mennesker og modernisering, og samtale om forskjeller og likheter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6c973461-4c82-4a35-ad9c-e55a92990b63">
+    <ns:title>gi eksempler på problemstillinger og tema som har vært gjenstand for menneskenes eksistensielle og religiøse undring og refleksjon i moderne tid, og gjennom samtale uttrykke kjennetegn ved filosofisk refleksjon</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d566a343-c5dd-4f2e-b2a8-a398bef7e964">
+    <ns:title>diskutere hvordan kristendommen og islam fungerte som ”store fortellinger” og som historiesyn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:151e4b97-446b-41de-9dd9-790aa662205e">
+    <ns:title>diskutere ulike synspunkter på reformasjonens betydning for den kulturelle og økonomiske utviklingen i Europa</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:102c7a05-d0e7-471e-b166-d1ef016599ec">
+    <ns:title>drøfte synspunktene i tre kortere tekster knyttet til fellesskap, produksjon og forbruk i en egen framstilling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b3d8303-775c-4546-a0de-dd1b75b2181d">
+    <ns:title>diskutere ulike typer forklaringer knyttet til emner fra renessansen gjennom filosofisk samtale</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:30289d44-1334-4eee-b213-4387e02221e2">
+    <ns:title>undersøke og presentere politiske ideer og arbeidsformer til ulike massebevegelser og forklare deres historiske bakgrunn og betydning</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0da4f169-5c5e-45e7-9a56-5345ba2daff6">
+    <ns:title>forme en enkel historisk framstilling med utgangspunkt i ikke-skriftlige levninger fra perioden som viser hvordan slike levninger kan tolkes forskjellig</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:787f63c8-d9ac-4c5c-b4cf-2c7b1552cfb7">
+    <ns:title>reflektere over hva det vil si at mennesket er historieskapt og historieskapende</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:745a57ed-34b5-4fb3-a0db-c935af496548">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:38a6eb8b-736c-4f9b-80c9-f5f95edc2107"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:755e6889-049a-43cf-93fc-6ab87f6c0fcb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1f9cd2c0-24c5-4ef7-85fc-213a1ee23a74"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:787f63c8-d9ac-4c5c-b4cf-2c7b1552cfb7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8fcb5662-0082-4cd6-a77c-ed9348f70f27"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:251b2246-8939-4440-9b7e-1953b1dd9b7d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:dd67f378-9736-49d9-8176-cb48c775f40c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b14944bb-dab7-474d-b124-510c1c70f90b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:334a5c46-aafc-4eb3-a8b2-bf31a218fab1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ec1eb324-2f43-40c6-9c08-5832f7ec661d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8c182a21-d948-4dc0-98ce-d5d7a9c0d100"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ac660975-3d13-4005-bc40-86194ef8df6a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1056810c-7c6f-46cf-8d04-53864804f84b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e7e4edca-c563-40db-bb13-ce140e9ecc60"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b2837626-b110-4424-bef5-dbead7521d19"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:876a95bd-9e03-480e-8c21-322432af04fb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6c973461-4c82-4a35-ad9c-e55a92990b63"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:31c81738-7a8c-4d9d-b7b3-c5ab4c69824a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7244ecaf-a20a-48e7-9f33-63ece6548a40"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1058ac3e-86e8-4e4d-96ad-ce871861ae62"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ee0cec1a-8c2d-47b9-8115-b01408251c69"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:102c7a05-d0e7-471e-b166-d1ef016599ec"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8a39994f-a04b-4396-9c8b-6d37d901959f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5d22838c-ce03-4d1f-8b4d-3c82772e99b8"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3771450d-b6de-4554-b27c-e849b7a98e1e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f156ce9b-4096-4588-b8aa-419ef5c2803c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6fcabc8d-6873-473e-b44e-23e45b628a14"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:eb58e606-2633-48f5-9084-9264059bff4f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8ee34463-19f9-418c-a52f-e89e296f8860"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:afcd50f1-fd2b-4d87-9957-7a6f3e1aa8e7"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:f1599293-e24a-44f3-83a0-fac010777787"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e550f6ba-986d-4fa0-8f05-b1584191ddeb"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:401e0714-5f01-476c-81e0-291e201a9c49"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:1aa9f572-ca33-4149-9de4-035004cd8ab0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:21f0b32c-2fb6-460b-8e2b-4a6509428989"/>
+    <ns:title>Historie og filosofi 2</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:30289d44-1334-4eee-b213-4387e02221e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:dd67f378-9736-49d9-8176-cb48c775f40c">
+    <ns:title>diskutere begrepene moderne og postmoderne og gjøre rede for diskusjoner om begrepene i historiefaglige og filosofiske sammenhenger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:26fe58ac-577e-44ed-b7cf-59d6bfe213e9">
+    <ns:title>sammenlikne liberalismens og marxismens ideologiske grunnlag</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:4c6ede55-b802-4cb5-82e0-6630e0b92b2c">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:afcd50f1-fd2b-4d87-9957-7a6f3e1aa8e7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:755e6889-049a-43cf-93fc-6ab87f6c0fcb"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:eb58e606-2633-48f5-9084-9264059bff4f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:1056810c-7c6f-46cf-8d04-53864804f84b"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6c973461-4c82-4a35-ad9c-e55a92990b63"/>
+    <ns:title>Eksistens og mening</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:885a3110-21c8-4111-8493-f1f921d666cc">
+    <ns:title>reflektere over den samfunnsmessige bakgrunnen for vitenskapsrevolusjonen og over hvordan den la grunnlaget for nye diskusjoner om erkjennelse og etikk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -23,6 +23,20 @@ describe Fag do
       @fag.kompetansemaalsett << kompetansemaalsett
       @fag.kompetansemaalsett.should == [kompetansemaalsett]
     end
+    
+    it "should have unique list of kompetansemaal" do
+      kompetansemaal1 = Kompetansemaal.new
+      kompetansemaal2 = Kompetansemaal.new
+      kompetansemaalsett1 = Kompetansemaalsett.new
+      kompetansemaalsett2 = Kompetansemaalsett.new
+      kompetansemaalsett1.kompetansemaal << kompetansemaal1
+      kompetansemaalsett1.kompetansemaal << kompetansemaal2
+      kompetansemaalsett2.kompetansemaal << kompetansemaal1
+      
+      @fag.kompetansemaalsett << kompetansemaalsett1
+      @fag.kompetansemaalsett << kompetansemaalsett2
+      @fag.kompetansemaal.should == [kompetansemaal1, kompetansemaal2]
+    end
    
   end
 end

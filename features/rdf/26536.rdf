@@ -1,0 +1,289 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0236819b-08c9-4b13-b5cd-cd8eb47e5bf7">
+    <ns:title>bruke musikk og natur som inspirasjonskilde </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d5a0ebc5-e7a4-405d-93a2-8ef9c1a13bc2">
+    <ns:title>Teater og bevegelse 2 </ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6615560d-82c7-4257-8fd8-8ecd6813b308"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:385e16ee-8c8b-462c-8cc6-344be7b9ab81"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:55a04106-2031-4b95-98e2-fc47a892f315"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:191cf4bc-c30c-41db-a7cd-b172307c1f6e"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:77ac5e88-f913-4308-b1d0-690813193d51"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0118c08e-dd63-439f-b7e0-9edf8f21604d"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ed99b3ea-eda1-4d5f-945c-523d8d886819"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:87ed9e50-a6e6-482f-bfd9-e2deb0c6d5b1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:94e65bf0-ca60-4159-b21c-80be67d170b2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f30526e7-6cf2-444a-93e8-92846ada7673"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7f8d8352-4e96-4c1f-ae00-7eded8676634">
+    <ns:title>delta aktivt i samspill, presentasjoner og visninger</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:200999fe-f6c5-4edd-9238-affaa4bf43be">
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:d5a0ebc5-e7a4-405d-93a2-8ef9c1a13bc2"/>
+    <grep:hovedomraader rdf:resource="uuid:39a8dfa6-d976-4a13-b958-1ffdc5cf0fb5"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:c7120670-bd70-4ba9-bd24-d580da419237"/>
+    <grep:hovedomraader rdf:resource="uuid:123a050f-e98b-466c-beba-c56d001a7f69"/>
+    <grep:kode>DRA1-01</grep:kode>
+    <ns:title>Læreplan i teater og bevegelse - programfag i utdanningsprogram for musikk, dans, drama, programområde for drama</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:87ed9e50-a6e6-482f-bfd9-e2deb0c6d5b1">
+    <ns:title>Teater og bevegelse 2</ns:title>
+    <grep:kode>DRA1Z02</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8986e937-d9d9-4ba5-86ea-3600d781a578">
+    <ns:title>bruke oppvarmings-, avspennings- og konsentrasjonsteknikker i selvstendig trening</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f30526e7-6cf2-444a-93e8-92846ada7673">
+    <ns:title>utarbeide, gjennomføre og vurdere egne treningsopplegg</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2e55cfe2-0848-4252-b33d-083986f5854c">
+    <ns:title>bruke enkle teknikker i scenekamp og klovne- og maskearbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ed99b3ea-eda1-4d5f-945c-523d8d886819">
+    <ns:title>videreutvikle personlig fysisk uttrykk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6615560d-82c7-4257-8fd8-8ecd6813b308">
+    <ns:title>lage og framføre uttrykk med bevegelse og handling i abstrakt, konkret og fortellende form </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:39a8dfa6-d976-4a13-b958-1ffdc5cf0fb5">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7f8d8352-4e96-4c1f-ae00-7eded8676634"/>
+    <ns:title>Skapende arbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3f1d244a-b50f-440c-9c39-8988f178b268"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9450f8bc-0b53-4d02-ab40-c7f38956e4b2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:55a04106-2031-4b95-98e2-fc47a892f315"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2a59dc32-719a-423b-a20e-4862651d3a77"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0118c08e-dd63-439f-b7e0-9edf8f21604d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6615560d-82c7-4257-8fd8-8ecd6813b308"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0236819b-08c9-4b13-b5cd-cd8eb47e5bf7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:be1335b5-9fbd-4363-97bc-b1abd5ce1565"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:94e65bf0-ca60-4159-b21c-80be67d170b2"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:92e265ff-37b2-42ef-82b8-0fe45107b699"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:94e65bf0-ca60-4159-b21c-80be67d170b2">
+    <ns:title>bruke komposisjon og koreografi i kunstnerisk arbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:77ac5e88-f913-4308-b1d0-690813193d51">
+    <ns:title>drøfte egne erfaringer med ulike øvelser og teknikker </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:55a04106-2031-4b95-98e2-fc47a892f315">
+    <ns:title>presentere og drøfte muligheter som ulike tradisjoner og retninger i bevegelsesfaget gir i utøvende og skapende arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:cbeaf284-ce82-4833-84c9-21fad60d2d17">
+    <ns:title>gjennomføre og vurdere en periode med trening </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c7120670-bd70-4ba9-bd24-d580da419237">
+    <ns:title>Teater og bevegelse 1</ns:title>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:8bd51b92-c908-464b-9b71-c0ef7c1a28be"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:cbeaf284-ce82-4833-84c9-21fad60d2d17"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:92e265ff-37b2-42ef-82b8-0fe45107b699"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:37f2376d-ca56-4c2f-b89d-de4abc93dcf1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2e55cfe2-0848-4252-b33d-083986f5854c"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a59dc32-719a-423b-a20e-4862651d3a77"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7738c16d-96c5-43cf-b215-6432fc72007d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e1d16f04-0102-48ee-8ab2-a88decadf25c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f0e16d96-96c2-4bbe-983e-431c824f87a6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3f1d244a-b50f-440c-9c39-8988f178b268"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0236819b-08c9-4b13-b5cd-cd8eb47e5bf7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7f8d8352-4e96-4c1f-ae00-7eded8676634"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9450f8bc-0b53-4d02-ab40-c7f38956e4b2"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8986e937-d9d9-4ba5-86ea-3600d781a578"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:be1335b5-9fbd-4363-97bc-b1abd5ce1565"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f0e16d96-96c2-4bbe-983e-431c824f87a6">
+    <ns:title>drøfte sammenhenger mellom livsstil og helse og fysisk og skapende aktivitet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3f1d244a-b50f-440c-9c39-8988f178b268">
+    <ns:title>formidle uttrykk gjennom bevegelse og handling og vurdere virkningen </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7738c16d-96c5-43cf-b215-6432fc72007d">
+    <ns:title>vise utholdenhet, styrke, smidighet og koordinasjon i trenings- og visningsarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:be1335b5-9fbd-4363-97bc-b1abd5ce1565">
+    <ns:title>utforske og utvikle rollefigurer i et handlingsforløp </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:385e16ee-8c8b-462c-8cc6-344be7b9ab81">
+    <ns:title>lede oppvarmings-, avspennings- og konsentrasjonsøvelser</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9450f8bc-0b53-4d02-ab40-c7f38956e4b2">
+    <ns:title>drøfte bevegelse og handling som virkemidler i en forestilling</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8bd51b92-c908-464b-9b71-c0ef7c1a28be">
+    <ns:title>Teater og bevegelse 1</ns:title>
+    <grep:kode>DRA1Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0118c08e-dd63-439f-b7e0-9edf8f21604d">
+    <ns:title>gjøre rede for betydningen av fysisk ekspressivitet i kunstnerisk utøvende virksomhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a59dc32-719a-423b-a20e-4862651d3a77">
+    <ns:title>utnytte sanseapparatet, kroppen og kroppens nullpunkt i skapende arbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:92e265ff-37b2-42ef-82b8-0fe45107b699">
+    <ns:title>drøfte egne ferdigheter og utviklingsmuligheter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:123a050f-e98b-466c-beba-c56d001a7f69">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f0e16d96-96c2-4bbe-983e-431c824f87a6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7738c16d-96c5-43cf-b215-6432fc72007d"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2e55cfe2-0848-4252-b33d-083986f5854c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:191cf4bc-c30c-41db-a7cd-b172307c1f6e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8986e937-d9d9-4ba5-86ea-3600d781a578"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:385e16ee-8c8b-462c-8cc6-344be7b9ab81"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:37f2376d-ca56-4c2f-b89d-de4abc93dcf1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e1d16f04-0102-48ee-8ab2-a88decadf25c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f30526e7-6cf2-444a-93e8-92846ada7673"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:77ac5e88-f913-4308-b1d0-690813193d51"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ed99b3ea-eda1-4d5f-945c-523d8d886819"/>
+    <ns:title>Fysisk grunnlagstrening </ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:cbeaf284-ce82-4833-84c9-21fad60d2d17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:191cf4bc-c30c-41db-a7cd-b172307c1f6e">
+    <ns:title>praktisere ulike tradisjoner og retninger i bevegelsesfaget </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg2">
+    <ns:title>Videregående trinn 2</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:37f2376d-ca56-4c2f-b89d-de4abc93dcf1">
+    <ns:title>bruke dynamikk, økonomisering, energi, tyngdekraft og balanse</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e1d16f04-0102-48ee-8ab2-a88decadf25c">
+    <ns:title>beherske grunnleggende bruk av impuls, koordinasjon og aksjon/reaksjon i trenings- og visningsarbeid</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

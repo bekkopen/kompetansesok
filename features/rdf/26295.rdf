@@ -1,0 +1,325 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5f225891-2862-4b78-836c-9390a606ceca">
+    <ns:title>veilede barn og unge i etiske spørsmål</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2a972695-c9ea-4e22-96dc-89365f352bae">
+    <ns:title>bruke observasjon og motivasjon som redskaper i planleggingen og gjennomføringen av arbeidet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:661a50e2-d636-437b-aeb0-07a163703c4c">
+    <ns:title>følge gjeldende regelverk for taushetsplikt og personvern </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2342e257-5101-4d94-84e0-b1db81d0f871">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:609a4d20-1ebb-4159-971b-6c67451fa739"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:6b9d4dc3-75e2-426f-b6fc-bf0696265ccc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:88d39114-0faf-4a95-a366-e850e6e8c6e6"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:fe28ed61-c23d-4d82-aba4-6c200c437bb4"/>
+    <ns:title>Kommunikasjon og samhandling</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5654dec9-42ef-4582-b12e-02234b5e4580"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a72be652-de81-4315-be30-dc58033fc7ee"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5f225891-2862-4b78-836c-9390a606ceca"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c3211e95-b312-4530-8998-3a382a7fa983"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f96b2c79-f47a-4899-9ac0-cc314daeb1a0">
+    <ns:title>gjennomføre aktiviteter knyttet til kunst og kultur</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:ebc3986e-99a8-45db-a110-2c0f686ed9c5">
+    <ns:title>gjennomføre aktiviteter som stimulerer barns språklige, intellektuelle, emosjonelle og motoriske utvikling </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:88d39114-0faf-4a95-a366-e850e6e8c6e6">
+    <ns:title>legge til rette for tiltak som styrker barn og unges evne og vilje til medvirkning og til å ta ansvar</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:75cb5e94-ad51-4ed6-bfb2-96555c728a81">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8ceac534-7dc8-4b0b-90ea-bf2685f0bc18"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:092a00b1-5e85-40d3-9068-3954e9a36332"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:3e7536ac-7501-4397-8f05-39dbfa49652e"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:138cdbad-b310-49d2-a87b-90f601123551"/>
+    <ns:title>Yrkesutøvelse </ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:86d0f6b1-26b4-44a3-9bcd-386f27ad87d7"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:661a50e2-d636-437b-aeb0-07a163703c4c"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8e46917f-562c-44b4-aca6-53f5acd2c6e9"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d92bf06f-9c50-46b6-856b-a91da60c9484"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8c465709-87f9-43ab-ae3b-db3150843edc"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f96b2c79-f47a-4899-9ac0-cc314daeb1a0"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:ebc3986e-99a8-45db-a110-2c0f686ed9c5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2a972695-c9ea-4e22-96dc-89365f352bae"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:a01c83a0-8a5b-49c2-b603-ca2f6c0c5cb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2d6eb3b1-4574-4817-a384-b88b8140c62f">
+    <ns:title>planlegge og gjennomføre tiltak og aktiviteter som kan fremme psykisk og fysisk helse hos barn og unge </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e7536ac-7501-4397-8f05-39dbfa49652e">
+    <ns:title>legge til rette for lek ut fra den betydningen lek har for barns læring, utvikling og sosialisering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:6b9d4dc3-75e2-426f-b6fc-bf0696265ccc">
+    <ns:title>samarbeide med foresatte, kollegaer og andre samarbeidspartnere om aktiviteter og tiltak for barn og unge</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:296141aa-3f6a-4359-a7cd-8922a0bb7662">
+    <ns:title>gjennomføre tiltak som kan bidra til å forebygge bruk av rusmidler og tobakk  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:64b819ca-ae28-4a66-ae33-91bb6c1e4b8a">
+    <ns:title>identifisere tegn på omsorgssvikt og andre bekymringsfulle forhold og varsle i tråd med gjeldende regelverk </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:412486e2-a8c4-49e7-8ebe-e0c00d494933">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:64b819ca-ae28-4a66-ae33-91bb6c1e4b8a"/>
+    <ns:title>Helsefremmende arbeid </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:296141aa-3f6a-4359-a7cd-8922a0bb7662"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:f3abef36-8299-4e0f-a57c-f5a76e278098"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:079667f5-71b1-4a6d-9b64-f6a831720e35"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5b3da24f-d5e2-412d-8fcc-c5021ac9a7c1"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2828d937-2c0f-4b65-970a-393bed0a0014"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:2d6eb3b1-4574-4817-a384-b88b8140c62f"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:7e4ca06b-b976-429d-ac07-b21c0d8f8ef5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:0d2d77f4-442c-48d4-9cb2-643b275b5d67"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:079667f5-71b1-4a6d-9b64-f6a831720e35">
+    <ns:title>utføre førstehjelp knyttet til yrkesutøvelsen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d92bf06f-9c50-46b6-856b-a91da60c9484">
+    <ns:title>utføre arbeidet i tråd med ergonomiske prinsipper og gjeldende regelverk for helse, miljø og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0f8cbbe5-1ef0-4d0e-baaf-e8b3de5800e7">
+    <ns:title>Barne- og ungdomsarbeiderfaget</ns:title>
+    <grep:kode>BUA3Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de9e58c3-33a5-4126-a943-7ab6c41609aa">
+    <grep:hovedomraader rdf:resource="uuid:75cb5e94-ad51-4ed6-bfb2-96555c728a81"/>
+    <grep:hovedomraader rdf:resource="uuid:2342e257-5101-4d94-84e0-b1db81d0f871"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:192ed024-b0d1-4387-b9de-1900122f53c5"/>
+    <grep:hovedomraader rdf:resource="uuid:412486e2-a8c4-49e7-8ebe-e0c00d494933"/>
+    <grep:kode>BUA3-01</grep:kode>
+    <ns:title>Læreplan i barne- og ungdomsarbeiderfaget Vg3 / opplæring i bedrift</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8e46917f-562c-44b4-aca6-53f5acd2c6e9">
+    <ns:title>bidra til å bygge sosiale nettverk for barn og unge i samarbeid med deres foresatte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:86d0f6b1-26b4-44a3-9bcd-386f27ad87d7">
+    <ns:title>bruke digitale verktøy, utøve kildekritikk og ta hensyn til personvern og opphavsrett</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c3211e95-b312-4530-8998-3a382a7fa983">
+    <ns:title>legge til rette for utvikling av barn og unges selvfølelse og identitet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:fe28ed61-c23d-4d82-aba4-6c200c437bb4">
+    <ns:title>iverksette tiltak som bidrar til å styrke barn og unges sosiale kompetanse </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:f3abef36-8299-4e0f-a57c-f5a76e278098">
+    <ns:title>gjennomføre tiltak som utvikler barn og unges evne til å ta ansvar for egen helse og sikkerhet</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:0d2d77f4-442c-48d4-9cb2-643b275b5d67">
+    <ns:title>veilede barn og unge i påkledning som passer for den enkelte aktivitet, årstid og værforhold</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5b3da24f-d5e2-412d-8fcc-c5021ac9a7c1">
+    <ns:title>foreslå tiltak som fremmer hygiene, forebygger sykdommer og hindrer smitte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:609a4d20-1ebb-4159-971b-6c67451fa739">
+    <ns:title>bruke strategier for konflikthåndtering og veilede barn og unge i å håndtere konflikter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/vg3">
+    <ns:title>Videregående trinn 3</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:092a00b1-5e85-40d3-9068-3954e9a36332">
+    <ns:title>gjennomføre aktiviteter i tråd med universell utforming av produkter og tjenester</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:138cdbad-b310-49d2-a87b-90f601123551">
+    <ns:title>tilberede mat og måltider for barn og unge i tråd med gjeldende regelverk og retningslinjer for mat og måltider </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5654dec9-42ef-4582-b12e-02234b5e4580">
+    <ns:title>drøfte hva rollemodeller betyr i barn og unges sosialiseringsprosess</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:192ed024-b0d1-4387-b9de-1900122f53c5">
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:0f8cbbe5-1ef0-4d0e-baaf-e8b3de5800e7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:138cdbad-b310-49d2-a87b-90f601123551"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2d6eb3b1-4574-4817-a384-b88b8140c62f"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8e46917f-562c-44b4-aca6-53f5acd2c6e9"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8ceac534-7dc8-4b0b-90ea-bf2685f0bc18"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/vg3"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9fe243a6-084d-4d8d-ba4c-c2aea9f9201d"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a01c83a0-8a5b-49c2-b603-ca2f6c0c5cb2"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8c465709-87f9-43ab-ae3b-db3150843edc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:88d39114-0faf-4a95-a366-e850e6e8c6e6"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:64b819ca-ae28-4a66-ae33-91bb6c1e4b8a"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:296141aa-3f6a-4359-a7cd-8922a0bb7662"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:609a4d20-1ebb-4159-971b-6c67451fa739"/>
+    <ns:title>Etter Vg3</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:3e7536ac-7501-4397-8f05-39dbfa49652e"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5654dec9-42ef-4582-b12e-02234b5e4580"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f96b2c79-f47a-4899-9ac0-cc314daeb1a0"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:f3abef36-8299-4e0f-a57c-f5a76e278098"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:ebc3986e-99a8-45db-a110-2c0f686ed9c5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:7e4ca06b-b976-429d-ac07-b21c0d8f8ef5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:661a50e2-d636-437b-aeb0-07a163703c4c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:092a00b1-5e85-40d3-9068-3954e9a36332"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2828d937-2c0f-4b65-970a-393bed0a0014"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:fe28ed61-c23d-4d82-aba4-6c200c437bb4"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:6b9d4dc3-75e2-426f-b6fc-bf0696265ccc"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c3211e95-b312-4530-8998-3a382a7fa983"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:0d2d77f4-442c-48d4-9cb2-643b275b5d67"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d92bf06f-9c50-46b6-856b-a91da60c9484"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:2a972695-c9ea-4e22-96dc-89365f352bae"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5f225891-2862-4b78-836c-9390a606ceca"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:079667f5-71b1-4a6d-9b64-f6a831720e35"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5b3da24f-d5e2-412d-8fcc-c5021ac9a7c1"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:86d0f6b1-26b4-44a3-9bcd-386f27ad87d7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:a72be652-de81-4315-be30-dc58033fc7ee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8c465709-87f9-43ab-ae3b-db3150843edc">
+    <ns:title>planlegge, gjennomføre, vurdere og dokumentere pedagogiske aktiviteter tilpasset alder, funksjonsnivå, kulturtilhørighet og livssituasjon  </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9fe243a6-084d-4d8d-ba4c-c2aea9f9201d">
+    <ns:title>•	legge til rette for utvikling av barn og unges selvfølelse og identitet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8ceac534-7dc8-4b0b-90ea-bf2685f0bc18">
+    <ns:title>utføre arbeidet i henhold til gjeldende regelverk og yrkesetiske retningslinjer </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:2828d937-2c0f-4b65-970a-393bed0a0014">
+    <ns:title>gjennomføre tiltak som kan bidra til å forebygge kriminalitet </ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:7e4ca06b-b976-429d-ac07-b21c0d8f8ef5">
+    <ns:title>gjennomføre tiltak som kan bidra til å forebygge ensomhet, mobbing og diskriminering</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a72be652-de81-4315-be30-dc58033fc7ee">
+    <ns:title>kommunisere og samhandle med barn, unge og foresatte</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a01c83a0-8a5b-49c2-b603-ca2f6c0c5cb2">
+    <ns:title>tilpasse leke-, idretts- og friluftsaktiviteter til ulike årstider, natur og miljø</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+</rdf:RDF>

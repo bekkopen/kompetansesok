@@ -1,0 +1,231 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grep="http://psi.udir.no/ontologi/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ns="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfschema="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontology/rdf/2008/10">
+    <rdfschema:comment>Grep-ontologi modellert i RDF/OWL</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_har_kompetansemaal">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_har_kompetansemaal"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:b07b7e07-873f-41c5-856b-ff06a8a75bba">
+    <ns:title>utforske hvordan teknologi og endringer i samfunnet påvirker samisk og bruken av språket og drøfte tradisjonskunnskapens betydning i dagens samfunn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:01e6f620-70b4-4e62-a7a7-1f007150f718">
+    <ns:title>framføre et program sammensatt av ulike uttrykksformer basert på egne eller andres tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:08b51fb0-6cb0-4599-94c9-fc03ca702ecf">
+    <ns:title>eksperimentere med ulike muntlige og skriftlige uttrykksformer i ulike sjangere</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e91b91fe-08a3-4f06-9955-686a3168531c">
+    <ns:title>sammenlikne ord og grammatiske former i skriftlig samisk med talemålet og presentere resultatet av sammenlikningen</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:3e9bd273-f1cd-4631-854e-1229e384938c">
+    <grep:hovedomraader rdf:resource="uuid:a0ba11cf-4a7e-4f4d-84c6-668c7dfe80a9"/>
+    <grep:kompetansemaalsett_etter_laereplan rdf:resource="uuid:75caa426-43b6-40f1-afe9-30d791d82ae1"/>
+    <grep:hovedomraader rdf:resource="uuid:1a58b689-8568-4913-a925-0c2aa0ddc604"/>
+    <grep:kode>SFS2-01</grep:kode>
+    <ns:title>Læreplan i fordypning i samisk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/laereplan">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dc:title">
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:label>Navn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:tilhoerer_hovedomraade">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/tilhoerer_hovedomraade"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemål tilhører hovedområde</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:204a74a0-3ecf-4fa4-98d6-34dbf36a63b7">
+    <ns:title>formidle og kommentere medieoppslag fra selvvalgte medier og lage egne oppslag for ulike medier</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:hovedomraader">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/hovedomraader"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/hovedomraade"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Samling av hovedområder som tilhører en læreplan.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Hovedområder tilhører læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:1a58b689-8568-4913-a925-0c2aa0ddc604">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:b07b7e07-873f-41c5-856b-ff06a8a75bba"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:de4e538a-5817-4d33-8a0e-33b35c1ae16b"/>
+    <ns:title>Utforsking av språket i bruk</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:08b51fb0-6cb0-4599-94c9-fc03ca702ecf"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e91b91fe-08a3-4f06-9955-686a3168531c"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:152ea8d0-017a-42d8-872e-8c8fd5cacd21"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d2ec6f68-3298-4c7a-b700-512343c784fe"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:e89d170e-032b-4bf6-a242-f31a732ea604"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:073d3365-d10a-4c88-bb46-0d42bb76aeaa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_fag">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_fag"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter fag</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:de4e538a-5817-4d33-8a0e-33b35c1ae16b">
+    <ns:title>eksperimentere med tolking og oversettelse mellom samisk og andre språk og samtale om hvordan mening endres i forhold til ordvalg og kontekst</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:8b79a76e-3fc2-4ff3-91bd-053635836137">
+    <ns:title>utvikle og presentere sammensatte tekster med utgangspunkt i forfatterskap ved hjelp av digitale verktøy</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/fag">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/fag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_laereplan">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_laereplan"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter læreplan</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:152ea8d0-017a-42d8-872e-8c8fd5cacd21">
+    <ns:title>presentere ordspråk og billedlige uttrykk på samisk og sammenlikne med andre språk, og samtale om hvordan slike uttrykk kan representere ulike tenkemåter</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d2ec6f68-3298-4c7a-b700-512343c784fe">
+    <ns:title>dokumentere og vurdere egen utvikling i arbeid med utforsking av språket i bruk</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:a0ba11cf-4a7e-4f4d-84c6-668c7dfe80a9">
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:c8e2d86a-a65e-44b2-adb6-8afc002bcc69"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:204a74a0-3ecf-4fa4-98d6-34dbf36a63b7"/>
+    <ns:title>Språk og kommunikasjon</ns:title>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:8b79a76e-3fc2-4ff3-91bd-053635836137"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:01e6f620-70b4-4e62-a7a7-1f007150f718"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:04647d36-0b5c-4f7c-93ef-554bc207baf5"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:d22923a2-c2cf-4972-be5c-9c180003d2a4"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:5803b09f-0165-4b80-892e-6b536a337775"/>
+    <grep:tilhoerer_hovedomraade rdf:resource="uuid:9510e0d6-1054-40a9-b6b5-1e3ac7bacb66"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:5803b09f-0165-4b80-892e-6b536a337775">
+    <ns:title>formidle egne opplevelser av film, teater og musikk og vurdere bruk av virkemidler</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:d22923a2-c2cf-4972-be5c-9c180003d2a4">
+    <ns:title>sammenlikne og vurdere nettsteder på samisk med hensyn til flerspråklighet, bruksmåter, informasjonsverdi og design</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kode">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kode"/>
+    <rdfschema:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/fag"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/laereplan"/>
+    <rdfschema:comment xml:lang="no">Kode kan benyttes til å omtale en læreplan i en presis kortform. Skal ikke benyttes til maskinell behandling.</rdfschema:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfschema:label>Kode</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:c8e2d86a-a65e-44b2-adb6-8afc002bcc69">
+    <ns:title>dokumentere og vurdere egen utvikling i arbeid med tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:9510e0d6-1054-40a9-b6b5-1e3ac7bacb66">
+    <ns:title>vurdere bruk av kilder med hensyn til innhold, opphavsrett og personvern</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/hovedomraade">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:75caa426-43b6-40f1-afe9-30d791d82ae1">
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d22923a2-c2cf-4972-be5c-9c180003d2a4"/>
+    <ns:title>Etter 10. årstrinn</ns:title>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:8b79a76e-3fc2-4ff3-91bd-053635836137"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e89d170e-032b-4bf6-a242-f31a732ea604"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:08b51fb0-6cb0-4599-94c9-fc03ca702ecf"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:152ea8d0-017a-42d8-872e-8c8fd5cacd21"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:c8e2d86a-a65e-44b2-adb6-8afc002bcc69"/>
+    <grep:kompetansemaalsett_etter_fag rdf:resource="uuid:679d3c96-40fe-4b23-a0b1-7453d5307103"/>
+    <grep:kompetansemaalsett_etter_aarstrinn rdf:resource="http://psi.udir.no/laereplan/aarstrinn/aarstrinn10"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:04647d36-0b5c-4f7c-93ef-554bc207baf5"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:5803b09f-0165-4b80-892e-6b536a337775"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:d2ec6f68-3298-4c7a-b700-512343c784fe"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:204a74a0-3ecf-4fa4-98d6-34dbf36a63b7"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:e91b91fe-08a3-4f06-9955-686a3168531c"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:01e6f620-70b4-4e62-a7a7-1f007150f718"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:9510e0d6-1054-40a9-b6b5-1e3ac7bacb66"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:073d3365-d10a-4c88-bb46-0d42bb76aeaa"/>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:de4e538a-5817-4d33-8a0e-33b35c1ae16b"/>
+    <grep:kompetansemaalsett_har_kompetansemaal rdf:resource="uuid:b07b7e07-873f-41c5-856b-ff06a8a75bba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/laereplan/aarstrinn/aarstrinn10">
+    <ns:title>Tiende årstrinn</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="grep:kompetansemaalsett_etter_aarstrinn">
+    <rdfschema:isDefinedBy rdf:resource="http://psi.udir.no/ontologi/kompetansemaalsett_etter_aarstrinn"/>
+    <rdfschema:range rdf:resource="http://psi.udir.no/ontologi/rdf/2008/aarstrinn"/>
+    <rdfschema:domain rdf:resource="http://psi.udir.no/ontologi/rdf/2008/kompetansemaalsett"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfschema:label>Kompetansemålsett etter årstrinn</rdfschema:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:04647d36-0b5c-4f7c-93ef-554bc207baf5">
+    <ns:title>lese og presentere et utvalg selvvalgte tekster</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:073d3365-d10a-4c88-bb46-0d42bb76aeaa">
+    <ns:title>presentere et utvalg av ord og uttrykk som er like og forskjellige i de samiske språkene</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:679d3c96-40fe-4b23-a0b1-7453d5307103">
+    <ns:title>Fordypning i samisk 8.-10. årstrinn</ns:title>
+    <grep:kode>SFS2Z01</grep:kode>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/fag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="uuid:e89d170e-032b-4bf6-a242-f31a732ea604">
+    <ns:title>planlegge, gjennomføre og presentere en undersøkelse av hvordan barn og unge bruker samisk og hvordan språket brukes ulikt av ulike aldersgrupper</ns:title>
+    <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://psi.udir.no/ontologi/rdf/2008/aarstrinn">
+    <owl:EquivalentClass rdf:resource="http://psi.udir.no/ontologi/aarstrinn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>
