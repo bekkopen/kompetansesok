@@ -34,6 +34,8 @@ nb:
     læreplaner: "Læreplaner:"
     hovedområder: "Hovedområder:"
     kompetansemål: "Kompetansemål:"
+    kompetansemålsett: "Kompetansemålsett:"
+    fag: "Fag"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
