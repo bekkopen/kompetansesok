@@ -55,6 +55,24 @@ Egenskap: Søk
       | Marked og økonomi      |
       | Strategi og marked     |
       | Økonomi og marked      |
+      
+  Scenario: Få 3 treff i kompetansemaalsett på "anlegg"
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "anlegg"
+    Så skal jeg få opp følgende treff for Kompetansemaalsett:
+      | Tittel                 |
+      | Anlegg og teknikk      |
+      | Nyanlegg               |
+      | Planlegging            |
+
+  Scenario: Få 3 treff i kompetansemaalsett på "ambulanse"
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "ambulanse"
+    Så skal jeg få opp følgende treff for Fag:
+      | Tittel                    |
+      | Ambulansefaget            |
+      | Ambulansemedisin          |
+      | Ambulanseoperative emner  |
 
   Scenario: Søke kun på Læreplaner
     Gitt at jeg er på hovedsiden

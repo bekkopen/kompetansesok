@@ -1,4 +1,6 @@
 class Kompetansemaalsett < ActiveRecord::Base
+  is_indexed :fields => ['tittel', 'uuid']
+  
   has_and_belongs_to_many :laereplaner
   has_and_belongs_to_many :kompetansemaal
   has_and_belongs_to_many :trinn

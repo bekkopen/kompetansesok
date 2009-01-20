@@ -10,6 +10,7 @@ nb:
     hovedområde: "Hovedområde"
     kompetansemål: "Kompetansemål"
     kompetansemålsett: "Kompetansemålsett"
+    fag: "Fag"
     valgte_kompetansemål: "Valgte kompetansemål"
     database_eksport: "Database eksport"
   
@@ -35,7 +36,7 @@ nb:
     hovedområder: "Hovedområder:"
     kompetansemål: "Kompetansemål:"
     kompetansemålsett: "Kompetansemålsett:"
-    fag: "Fag"
+    fag: "Fag:"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
