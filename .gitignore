@@ -4,3 +4,4 @@ tmp
 nbproject
 *.war
 catalog.xml
+public/db_dumps

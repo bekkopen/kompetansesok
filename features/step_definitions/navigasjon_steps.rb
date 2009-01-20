@@ -10,6 +10,10 @@ Naar /jeg klikker "(.+)"/ do |knapp|
   click_button knapp
 end
 
+Naar /jeg klikker på linken "(.+)"/ do |link|
+  click_link link
+end
+
 Gitt /^at jeg ser på (.*) med uuid (.+)$/ do |kontroller, uuid|
   visit url_for(:controller => kontroller, :action => :show, :id => uuid)
 end
