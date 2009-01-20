@@ -1,7 +1,7 @@
 Egenskap: Vise laereplan
   For å lettere få oversikt over sammenhengen
   Må lærere, bibliotekarer og forleggere
-  Kunne se kompetansemaalsettene og hovedområdene som hører til en laereplan
+  Kunne se kompetansemålene, kompetansemaalsettene og hovedområdene som hører til en laereplan
 
 
   Scenario: Fremvisning av kompetansemål
