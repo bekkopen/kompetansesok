@@ -12,6 +12,9 @@ class Kompetansemaalsett < ActiveRecord::Base
   attr_accessor_with_default :fag_uuids, []
   after_create :koble_kompetansemaal, :koble_trinn, :koble_fag
   
+  def to_param
+    uuid
+  end
   
   private
 
