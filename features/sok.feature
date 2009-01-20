@@ -77,5 +77,13 @@ Egenskap: Søk
     Når jeg søker etter "NOR6*"
     Så skal jeg få opp følgende treff for Laereplan:
       | Tittel                        |
-      | Læreplan i fordypning i norsk | 
+      | Læreplan i fordypning i norsk |
+
+  Scenario: Kunne søke etter flere verider separert med semikolon
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "NOR6-01; FOR6-01"
+    Så skal jeg få opp følgende treff for Laereplan:
+      | Tittel                                                                                                                              |
+      | Læreplan i fordypning i norsk                                                                                                       |
+      | Læreplan i samisk visuell kultur - valfritt programfag i studiespesialiserande utdanningsprogram, programområde for formgjevingsfag |
     
