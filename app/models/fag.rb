@@ -4,4 +4,10 @@ class Fag < ActiveRecord::Base
   def to_param
     uuid
   end
+  
+  def kompetansemaal
+    kompetansemaalsett.map do |maalsett|
+      maalsett.kompetansemaal
+    end.flatten.uniq
+  end
 end
