@@ -16,7 +16,7 @@ nb:
   knapper:
     søk: "Søk"
     eksport_csv: "Lagre resultatsett til fil"
-    tilbake_til_søk: "Tilbake til søket"
+    tilbake: "Tilbake"
     
 
     
