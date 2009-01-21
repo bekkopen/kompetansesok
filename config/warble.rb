@@ -11,7 +11,7 @@ Warbler::Config.new do |config|
 
   # Additional files/directories to include, above those in config.dirs
   # The default value is Ruby's libdir (standard library)
-  # config.includes += FileList["db"]
+  config.includes += FileList["Rakefile"]
 
   # Additional files/directories to exclude
   # config.excludes = FileList["lib/tasks/*"]

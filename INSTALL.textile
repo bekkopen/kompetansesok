@@ -2,11 +2,15 @@ h1. Installasjon av Kompetansesøk applikasjonen i produksjonsmiljø
 
 h2. Installer GlassFish
 
-Installer "GlassFish V2 UR2 b04":https://glassfish.dev.java.net/downloads/v2ur2-b04.html (følg instruksjonene på siden)
+Installer "GlassFish V2 UR2 b04":https://glassfish.dev.java.net/downloads/v2ur2-b04.html (følg instruksjonene på siden).
+
+Sett opp OS slik at GlassFish starter automatisk når OS rebootes.
 
 h2. Installer MySQL
 
 Installer "MySQL 5.1":http://dev.mysql.com/downloads/mysql/5.1.html#downloads (følg instruksjonene på siden)
+
+Sett opp OS slik at MySQL starter automatisk når OS rebootes.
 
 h2. Opprett database
 
@@ -21,3 +25,10 @@ for å muliggjøre hurtige søk.
 
 Sphinx må installeres på serveren, og legges på PATH. Når applikasjonen starter vil den
 (re)starte searchd (Sphinx daemon).
+
+h2. Deploy war
+
+Dette kan gjøres fra en hvilken som helst maskin på lokalt nett.
+Se egen seksjon for å bygge war fil.
+
+~/src/glassfish/bin/asadmin deploy --user admin --contextroot / kompetansesok_production.war

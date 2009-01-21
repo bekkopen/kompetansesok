@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/inflections'
 load File.dirname(__FILE__) + '/../../Rakefile'
 
-if Rails.env == 'production' && defined?(JRUBY_VERSION) # Vi er på Glassfish!
+if Rails.env == 'production' && defined?(JRUBY_VERSION) && !ENV['SKIP_SETUP_DATA'] # Vi er på Glassfish!
   class SetupData
     def opprett_tabeller
       puts "== OPPRETTER DATABASETABELLER =="
