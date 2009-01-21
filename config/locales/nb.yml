@@ -13,6 +13,7 @@ nb:
     fag: "Fag"
     valgte_kompetansemål: "Valgte kompetansemål"
     database_eksport: "Database eksport"
+    søk_i:  "Søk i:"
   
   knapper:
     søk: "Søk"
