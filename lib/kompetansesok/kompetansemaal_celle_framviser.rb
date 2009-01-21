@@ -1,32 +1,28 @@
 module Kompetansesok
-  class KompetansemaalCelleFramviser
-    def initialize(kompetansemaal)
-      @kompetansemaal = kompetansemaal
+  module KompetansemaalCelleFramviser
+    def to_html(kompetansemaal)
+      [laereplaner(kompetansemaal), hovedomraader(kompetansemaal), kompetansemaalsett(kompetansemaal), fag(kompetansemaal)].compact.join("<br/>")
     end
 
-    def to_html
-      [laereplaner(), hovedomraader(), kompetansemaalsett(), fag()].compact.join("<br/>")
+    def laereplaner(kompetansemaal)
+      string_joined_on(kompetansemaal, :laereplaner, t('etiketter.læreplan'))
     end
 
-    def laereplaner
-      string_joined_on(:laereplaner, @kompetansemaal.t('etiketter.læreplan'))
+    def hovedomraader(kompetansemaal)
+      string_joined_on(kompetansemaal,:hovedomraader, t('etiketter.hovedområde'))
     end
 
-    def hovedomraader
-      string_joined_on(:hovedomraader, @kompetansemaal.t('etiketter.Hovedområde'))
+    def kompetansemaalsett(kompetansemaal)
+      string_joined_on(kompetansemaal,:kompetansemaalsett, t('etiketter.kompetansemålsett'))
     end
 
-    def kompetansemaalsett
-      string_joined_on(:kompetansemaalsett, @kompetansemaal.t('etiketter.kompetansemålsett'))
-    end
-
-    def fag
-      string_joined_on(:fag, @kompetansemaal.t('etiketter.fag'))
+    def fag(kompetansemaal)
+      string_joined_on(kompetansemaal,:fag, t('etiketter.fag'))
     end
 
     private    
-    def string_joined_on(attribute, tittel, join_string = ", ")
-      alle_attr = @kompetansemaal.send(attribute).map do |h|
+    def string_joined_on(kompetansemaal, attribute, tittel, join_string = ", ")
+      alle_attr = kompetansemaal.send(attribute).map do |h|
         h.tittel
       end.join(join_string)
       if alle_attr.empty?
