@@ -13,4 +13,9 @@ class Kompetansemaal < ActiveRecord::Base
     alle.flatten.uniq
   end
 
+  def fag
+    kompetansemaalsett.map do |maalsett|
+      maalsett.fag
+    end.flatten.uniq
+  end
 end

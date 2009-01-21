@@ -49,6 +49,13 @@ describe Kompetansemaal do
       @kompetansemaal.laereplaner.should == [laereplan1, laereplan2]
     end
 
+    it "should have fag" do
+      fag = Fag.new
+      @kompetansemaalsett.fag << fag
+      @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
+
+      @kompetansemaal.fag.should == [fag]
+    end
   end
   
 end
