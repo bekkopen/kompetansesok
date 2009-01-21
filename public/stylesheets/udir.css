@@ -195,16 +195,16 @@ ul.linke-liste
     margin-bottom: 1em;
 }
 
-#sokefelt {
-    width: 40%;
+#topp_venstre {
+    width: 43%;
     float:left;
 }
 #valgte_kompetansemaal {
-    width: 58%;
+    width: 55%;
     float: right;
 }
 
 
-#sokeside_top {
+#sidetopp {
     overflow:auto;
 }

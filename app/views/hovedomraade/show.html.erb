@@ -1,22 +1,30 @@
 
-<p>
-  <span class="enhet-overskrift"><%=  t('overskrifter.hovedområde')%></span><br/>
-  <h3 class="tittel"><%=h @hovedomraade.tittel %></h3>
-  <span class="benevning">Uuid:</span>
-  <span class="uuid"><%=h @hovedomraade.uuid %></span><br/>
-  <span class="benevning">Kode:</span>
-  <span class="kode"><%=h @hovedomraade.kode.blank? ? t('etiketter.tom') : @hovedomraade.kode  %></span>
-</p>
+<h1 class='tittel'><%=h @hovedomraade.tittel %></h1>
 
-<p/>
-
-<div id="kompetansemaal_treff">
-  <h3><%= t('overskrifter.kompetansemål') %></h3>
-  <%=  render :partial => "kompetansemaal/simple_grid" %>
+<div id='sidetopp'>
+  
+  <div id='topp_venstre'>  
+    <span class="benevning">Uuid:</span>
+    <span class="uuid"><%=h @hovedomraade.uuid %></span><br/>
+    <span class="benevning">Kode:</span>
+    <span class="kode"><%=h @hovedomraade.kode.blank? ? t('etiketter.tom') : @hovedomraade.kode  %></span>
+  </div>
+  
+  <div id="valgte_kompetansemaal">	
+    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+  </div>
+  
 </div>
 
-<div id="valgte_kompetansemaal">	
-  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+<hr/>
+
+<div id='resultater'>
+  
+  <div id="kompetansemaal_treff">
+    <h3><%= t('overskrifter.kompetansemål') %></h3>
+    <%=  render :partial => "kompetansemaal/simple_grid" %>
+  </div>
+  
 </div>
 
 <p/>

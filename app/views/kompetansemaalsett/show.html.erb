@@ -1,19 +1,30 @@
-<p>
-  <span class="enhet-overskrift"><%=  t('overskrifter.hovedområde')%></span><br/>
-  <h3 class="tittel"><%=h @kompetansemaalsett.tittel %></h3>
-  <span class="benevning">Uuid:</span>
-  <span class="uuid"><%=h @kompetansemaalsett.uuid %></span><br/>
-</p>
+
+<h1 class="tittel"><%=h @kompetansemaalsett.tittel %></h1>
+
+<div id='sidetopp'>
+  
+  <div id='topp_venstre'>
+    <span class="benevning">Uuid:</span>
+    <span class="uuid"><%=h @kompetansemaalsett.uuid %></span><br/>
+  </div>
+  
+  <div id="valgte_kompetansemaal">	
+    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+  </div>
+  
+</div>
+
+<hr/>
+
+<div id='resultater'>
+  
+  <div id="kompetansemaal_treff">
+    <h3><%= t('overskrifter.kompetansemål') %></h3>
+    <%=  render :partial => "kompetansemaal/simple_grid" %>
+  </div>
+  
+</div>
 
 <p/>
-
-<div id="kompetansemaal_treff">
-  <h3><%= t('overskrifter.kompetansemål') %></h3>
-  <%=  render :partial => "kompetansemaal/simple_grid" %>
-</div>
-
-<div id="valgte_kompetansemaal">	
-  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-</div>
 
 <%= render :partial => 'common/back_button' %>
