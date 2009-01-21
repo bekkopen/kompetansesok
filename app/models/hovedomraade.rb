@@ -20,6 +20,12 @@ class Hovedomraade < ActiveRecord::Base
     end.compact
   end
   
+  def kompetansemaalsett
+    kompetansemaal.map do |maal|
+      maal.kompetansemaalsett
+    end.flatten.uniq
+  end
+  
   private
   
   def koble_kompetansemaal

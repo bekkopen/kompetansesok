@@ -38,7 +38,7 @@ describe Hovedomraade do
       @hovedomraade.kompetansemaal.should == [maal]
     end
     
-    it "should have kompetansemaal for a laereplan" do
+    it "should have kompetansemaal for a laereplan filtered on kompetansemaalsett" do
       laereplan1 = Laereplan.new
       laereplan2 = Laereplan.new
       maalsett1 = Kompetansemaalsett.new(:laereplaner => [laereplan1])
@@ -50,6 +50,17 @@ describe Hovedomraade do
       @hovedomraade.kompetansemaal << maal2
       
       @hovedomraade.kompetansemaal_for_laereplan(laereplan1).should == [maal1]
+    end
+    
+    it "should have kompetansemaalsett through kompetansemaal" do
+      maalsett1 = Kompetansemaalsett.new
+      maalsett2 = Kompetansemaalsett.new
+      maal1 = Kompetansemaal.new(:kompetansemaalsett => [maalsett1])
+      maal2 = Kompetansemaal.new(:kompetansemaalsett => [maalsett2])
+      @hovedomraade.kompetansemaal << maal1
+      @hovedomraade.kompetansemaal << maal2
+      
+      @hovedomraade.kompetansemaalsett.should == [maalsett1, maalsett2]
     end
     
   end

@@ -25,6 +25,15 @@
     <%=  render :partial => "kompetansemaal/simple_grid" %>
   </div>
   
+  <p>
+    <h3><%= t("overskrifter.kompetansemålsett") %></h3>
+    <ul class="linke-liste">
+      <% @hovedomraade.kompetansemaalsett.each do |sett| %>
+        <li><%= link_to sett.tittel, hovedomraade_kompetansemaalsett_path(@hovedomraade, sett) %></li>
+      <% end %>
+    </ul>
+  </p>
+  
 </div>
 
 <p/>

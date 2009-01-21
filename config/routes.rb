@@ -7,7 +7,9 @@ ActionController::Routing::Routes.draw do |map|
     plan.resources :hovedomraade
     plan.resources :kompetansemaalsett
   end
-  map.resources :hovedomraade
+  map.resources :hovedomraade do |h|
+    h.resources :kompetansemaalsett
+  end
   map.resources :kompetansemaalsett
   
   map.resources :info
