@@ -1,7 +1,7 @@
-Egenskap: Vise hovedmaal
+Egenskap: Vise hovedområde for en læreplan
   For å lettere få oversikt over sammenhengen
   Må lærere, bibliotekarer og forleggere
-  kunne visuelt se kompetansemaalene til et hovedområde
+  kunne visuelt se kompetansemaalene til et hovedområde filtrert på læreplan
 
   Scenario: Vise kompetansemål
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd

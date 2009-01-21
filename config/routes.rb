@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sok, :collection => {:download_csv => :post}
   map.resources :laereplan do |plan|
     plan.resources :hovedomraade
+    plan.resources :kompetansemaalsett
   end
   map.resources :hovedomraade
   map.resources :kompetansemaalsett

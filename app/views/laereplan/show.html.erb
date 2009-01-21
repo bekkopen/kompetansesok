@@ -38,7 +38,7 @@
     <h3><%= t("overskrifter.kompetansemålsett") %></h3>
     <ul class="linke-liste">
       <% @laereplan.kompetansemaalsett.each do |sett| %>
-        <li><%= link_to sett.tittel, kompetansemaalsett_path(sett) %></li>
+        <li><%= link_to sett.tittel, laereplan_kompetansemaalsett_path(@laereplan, sett) %></li>
       <% end %>
     </ul>
   </p>
