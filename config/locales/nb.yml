@@ -35,11 +35,11 @@ nb:
     vis_laereplan_treff: "Vis treff i læreplaner"
     vis_hovedomraade_treff: "vis treff i hovedområder"
     tom: "<ingen data>"
-    læreplaner: "Læreplaner:"
-    hovedområder: "Hovedområder:"
-    kompetansemål: "Kompetansemål:"
-    kompetansemålsett: "Kompetansemålsett:"
-    fag: "Fag:"
+    læreplaner: "Læreplaner"
+    hovedområder: "Hovedområder"
+    kompetansemål: "Kompetansemål"
+    kompetansemålsett: "Kompetansemålsett"
+    fag: "Fag"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
