@@ -14,6 +14,12 @@ class Hovedomraade < ActiveRecord::Base
     uuid
   end
   
+  def kompetansemaal_for_laereplan(laereplan)
+    kompetansemaal.map do |maal|
+      maal if maal.laereplaner.include?(laereplan)
+    end.compact
+  end
+  
   private
   
   def koble_kompetansemaal

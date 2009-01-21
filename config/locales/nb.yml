@@ -1,8 +1,8 @@
 nb:   
   navigasjon:
-    forside: "Forside"
-    database_eksport: "Database eksport"
-    om_kopetansemål_søk: "Om kompetansemål søk"
+    forside: "Søk"
+    database_eksport: "Last ned databasen"
+    om_kopetansemål_søk: "Om søket / hjelp"
 
   overskrifter:
     resultater: "Resultater"

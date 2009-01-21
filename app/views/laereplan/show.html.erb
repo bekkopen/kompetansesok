@@ -29,7 +29,7 @@
     <h3><%= t("overskrifter.hovedområder") %></h3>
     <ul class="linke-liste">
       <% @laereplan.hovedomraader.each do |hovedomraade| %>
-        <li><%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %></li>
+        <li><%= link_to hovedomraade.tittel, laereplan_hovedomraade_path(@laereplan, hovedomraade) %></li>
       <% end %>
     </ul>
   </p>
