@@ -11,7 +11,7 @@ if defined?(JRUBY_VERSION)
 
   Warbler::Task.new
   
-  task :clean_war => ['war:clean', 'submodules:install', 'tmp:clear', 'tmp:create', 'war']
+  task :clean_war => ['clobber', 'submodules:install', 'war']
 end
 
 namespace :war do
