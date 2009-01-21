@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe LaereplanController do
 
-  def mock_laereplan(stubs={})
+  def mock_laereplan(stubs={:kompetansemaal => []})
     @mock_fag ||= mock_model(Laereplan, stubs)
   end
 

@@ -1,9 +1,9 @@
-Egenskap: Vise hovedmaal
+Egenskap: Vise hovedområde
   For å lettere få oversikt over sammenhengen
   Må lærere, bibliotekarer og forleggere
   kunne visuelt se kompetansemaalene til et hovedområde
 
-  Scenario: Enkel framvisning
+  Scenario: Vise kompetansemål
     Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
     Så skal jeg kunne se hovedomraade "Aktivitet i ulike rørslemiljø"
     Og jeg skal kunne se disse kompetansemaalene:

@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe FagController do
 
-  def mock_fag(stubs={})
+  def mock_fag(stubs={:kompetansemaal => []})
     @mock_fag ||= mock_model(Fag, stubs)
   end
 

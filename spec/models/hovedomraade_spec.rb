@@ -26,16 +26,31 @@ describe Hovedomraade do
       @hovedomraade = Hovedomraade.new
     end
     
+    it "should have laereplaner" do
+      plan = Laereplan.new
+      @hovedomraade.laereplaner << plan
+      @hovedomraade.laereplaner.should == [plan]
+    end
+    
     it "should have kompetansemaal" do
       maal = Kompetansemaal.new
       @hovedomraade.kompetansemaal << maal
       @hovedomraade.kompetansemaal.should == [maal]
     end
     
-    it "should have laereplaner" do
-      plan = Laereplan.new
-      @hovedomraade.laereplaner << plan
-      @hovedomraade.laereplaner.should == [plan]
+    it "should have kompetansemaal for a laereplan" do
+      laereplan1 = Laereplan.new
+      laereplan2 = Laereplan.new
+      maalsett1 = Kompetansemaalsett.new(:laereplaner => [laereplan1])
+      maalsett2 = Kompetansemaalsett.new(:laereplaner => [laereplan2])
+      maal1 = Kompetansemaal.new(:kompetansemaalsett => [maalsett1])
+      maal2 = Kompetansemaal.new(:kompetansemaalsett => [maalsett2])
+      @hovedomraade.laereplaner << laereplan1 
+      @hovedomraade.kompetansemaal << maal1
+      @hovedomraade.kompetansemaal << maal2
+      
+      @hovedomraade.kompetansemaal_for_laereplan(laereplan1).should == [maal1]
     end
+    
   end
 end
