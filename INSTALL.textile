@@ -32,3 +32,6 @@ Dette kan gjøres fra en hvilken som helst maskin på lokalt nett.
 Se egen seksjon for å bygge war fil.
 
 ~/src/glassfish/bin/asadmin deploy --user admin --contextroot / kompetansesok_production.war
+
+Hvis du får problemer med PermGenSpace - se her:
+http://www.nabble.com/Caused-by:-java.lang.OutOfMemoryError:-PermGen-space-td17664141.html

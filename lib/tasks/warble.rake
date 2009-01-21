@@ -1,17 +1,20 @@
 if defined?(JRUBY_VERSION)
   begin
-    # First, make sure plugin directory is at the front of the load path
-    # (to avoid picking up gem-installed warbler)
-    require 'warbler'
-  rescue LoadError
-    # Next, try activating the gem
-    gem 'warbler'
-    require 'warbler'
-  end
+    begin
+      # First, make sure plugin directory is at the front of the load path
+      # (to avoid picking up gem-installed warbler)
+      require 'warbler'
+    rescue LoadError
+      # Next, try activating the gem
+      gem 'warbler'
+      require 'warbler'
+    end
 
-  Warbler::Task.new
-  
-  task :clean_war => ['clobber', 'submodules:install', 'war']
+    Warbler::Task.new
+    task :clean_war => ['clobber', 'submodules:install', 'war']
+  rescue
+    # Ignore - happens when we're in a War - warbler isn't packaged
+  end
 end
 
 namespace :war do
