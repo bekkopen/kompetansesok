@@ -25,7 +25,7 @@ class SokController < ApplicationController
       
       @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
-      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
+      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, lag_framvisnings_string(t)] }
     end
   end
 
@@ -53,7 +53,11 @@ class SokController < ApplicationController
   end
 
   private
-    
+
+  def lag_framvisnings_string(kompetansemaal)
+    Kompetansesok::KompetansemaalCelleFramviser.new(kompetansemaal).to_html
+  end
+
   def partition_by_class(mixed_array, *klasses)
     klasses.map do |klass|
       klass_result, rest = mixed_array.partition do |mixed_element|
