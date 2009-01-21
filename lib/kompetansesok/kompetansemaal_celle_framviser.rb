@@ -1,6 +1,6 @@
 module Kompetansesok
   module KompetansemaalCelleFramviser
-    def to_html(kompetansemaal)
+    def to_detalje_html(kompetansemaal)
       [laereplaner(kompetansemaal), hovedomraader(kompetansemaal), kompetansemaalsett(kompetansemaal), fag(kompetansemaal)].compact.join("<br/>")
     end
 

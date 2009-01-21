@@ -37,14 +37,14 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
   end
 
   it "should produce correct html string" do
-    @kompetansemaal_celle_framviser.to_html(@kompetansemaal).should == "etiketter.læreplan: en, to<br/>etiketter.hovedområde: h1, h2<br/>etiketter.kompetansemålsett: k1, k2<br/>etiketter.fag: f1, f2"
+    @kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal).should == "etiketter.læreplan: en, to<br/>etiketter.hovedområde: h1, h2<br/>etiketter.kompetansemålsett: k1, k2<br/>etiketter.fag: f1, f2"
   end
 
   it "should produce correct html string, if no fag is present" do
     @stubs[:fag] = []
     @kompetansemaal = (mock("kompetansemaal",  @stubs))
     @kompetansemaal_celle_framviser = MyView.new 
-    @kompetansemaal_celle_framviser.to_html(@kompetansemaal).should == "etiketter.læreplan: en, to<br/>etiketter.hovedområde: h1, h2<br/>etiketter.kompetansemålsett: k1, k2"
+    @kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal).should == "etiketter.læreplan: en, to<br/>etiketter.hovedområde: h1, h2<br/>etiketter.kompetansemålsett: k1, k2"
   end
 end
 
