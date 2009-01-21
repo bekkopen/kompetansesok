@@ -28,7 +28,7 @@ module Kompetansesok
       if alle_attr.empty?
         nil
       else
-        "#{tittel}: #{alle_attr}"
+        "<span class='kompetansemaal_detaljer'>#{tittel}: #{alle_attr}</span>"
       end
     end
   end

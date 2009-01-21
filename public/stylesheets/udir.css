@@ -152,8 +152,11 @@ select#spraak_valg {
 td.x-grid3-td-2 {
     overflow: hidden;
 }
-td.x-grid3-td-2 div.x-grid3-cell-inner {
+td.x-grid3-td-3 div.x-grid3-cell-inner {
     white-space: normal;
+}
+.kompetansemaal_detaljer {
+    padding-left: 10px;
 }
 
 
