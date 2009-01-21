@@ -26,6 +26,12 @@ class Hovedomraade < ActiveRecord::Base
     end.flatten.uniq
   end
   
+  def kompetansemaalsett_for_laereplan(laereplan)
+    kompetansemaal_for_laereplan(laereplan).map do |maal|
+      maal.kompetansemaalsett
+    end.flatten.uniq
+  end
+  
   private
   
   def koble_kompetansemaal

@@ -9,6 +9,7 @@ describe HovedomraadeController do
   describe "responding to GET show" do
     before :each do
       Hovedomraade.should_receive(:find_by_uuid).with("uuid-hovedomraade").and_return(mock_hovedomraade)
+      mock_hovedomraade.stub!(:kompetansemaalsett)
     end
     
     def do_get(params = {})
@@ -26,14 +27,42 @@ describe HovedomraadeController do
       do_get
     end
     
-    it "should find kompetansemaal filtered by laereplan if it is nested under laereplan" do
-      kompetansemaal = []
-      laereplan = mock_model(Laereplan)
-      Laereplan.should_receive(:find_by_uuid).with("uuid-laereplan").and_return(laereplan)
-      mock_hovedomraade.should_receive(:kompetansemaal_for_laereplan).with(laereplan).and_return(kompetansemaal)
+    it "should expose all kompetansemaalsett when not filtered by laereplan" do
+      kompetansemaalsett = []
+      mock_hovedomraade.should_receive(:kompetansemaalsett).and_return(kompetansemaalsett)
       
-      do_get :laereplan_id => "uuid-laereplan"
+      do_get
+      assigns[:kompetansemaalsett].should == kompetansemaalsett
     end
+    
+    
+    describe "nested under laereplan" do
+      before :each do
+        mock_hovedomraade.stub!(:kompetansemaal_for_laereplan).and_return([])
+        mock_hovedomraade.stub!(:kompetansemaalsett_for_laereplan).and_return([])
+      end
+      
+      
+      it "should find kompetansemaal filtered by laereplan" do
+        kompetansemaal = []
+        laereplan = mock_model(Laereplan)
+        Laereplan.should_receive(:find_by_uuid).with("uuid-laereplan").and_return(laereplan)
+        mock_hovedomraade.should_receive(:kompetansemaal_for_laereplan).with(laereplan).and_return(kompetansemaal)
+      
+        do_get :laereplan_id => "uuid-laereplan"
+      end
+      
+      it "should expose kompetansemaalsett filtered by laereplan" do
+        kompetansemaalsett = []
+        mock_hovedomraade.should_receive(:kompetansemaalsett_for_laereplan).and_return(kompetansemaalsett)
+      
+        do_get :laereplan_id => "uuid-laereplan"
+        assigns[:kompetansemaalsett].should == kompetansemaalsett
+      end
+    
+      
+    end
+    
     
   end
 

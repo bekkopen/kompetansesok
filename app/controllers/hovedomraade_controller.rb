@@ -3,10 +3,13 @@ class HovedomraadeController < ApplicationController
   def show
     @hovedomraade = Hovedomraade.find_by_uuid(params[:id])
     
-    kompetansemaal = if params[:laereplan_id]
-      @hovedomraade.kompetansemaal_for_laereplan(Laereplan.find_by_uuid(params[:laereplan_id]))
+    if params[:laereplan_id]
+      laereplan = Laereplan.find_by_uuid(params[:laereplan_id])
+      kompetansemaal = @hovedomraade.kompetansemaal_for_laereplan(laereplan)
+      @kompetansemaalsett = @hovedomraade.kompetansemaalsett_for_laereplan(laereplan)
     else
-      @hovedomraade.kompetansemaal
+      kompetansemaal = @hovedomraade.kompetansemaal
+      @kompetansemaalsett = @hovedomraade.kompetansemaalsett
     end
     
     @kompetansemaal_treff = kompetansemaal.map{|t| [t.uuid, t.kode, t.tittel] }
