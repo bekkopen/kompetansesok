@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :hovedomraade
   map.resources :kompetansemaalsett
   
-  map.resources  :info
+  # map.resources :info
   map.resources :db_dumps, :only => :index
   
 
