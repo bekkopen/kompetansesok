@@ -23,7 +23,8 @@ class SokController < ApplicationController
       sok = Ultrasphinx::Search.new(:query => sokestreng, :per_page => Ultrasphinx::Search::MAX_MATCHES)
       treff = sok.run
       
-      @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
+      @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = 
+        partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
       @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
     end

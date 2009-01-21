@@ -28,12 +28,11 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   if defined?(JRUBY_VERSION)
-    config.gem 'activerecord-jdbc-adapter',   :version => '0.9', :lib => 'jdbc_adapter'
-    config.gem 'atom-tools',                  :version => '2.0.1', :lib => 'atom/tools'
-
+    config.gem 'activerecord-jdbc-adapter',       :version => '0.9', :lib => 'jdbc_adapter'
+    config.gem 'atom-tools',                      :version => '2.0.1', :lib => 'atom/tools'
+    config.gem 'rake',                            :version => '0.8.3'
     config.gem 'jdbc-mysql',                      :version => '5.0.4', :lib =>'jdbc/mysql'
     config.gem 'activerecord-jdbcmysql-adapter',  :version =>'0.9', :lib => 'active_record/connection_adapters/jdbcmysql_adapter'
-
   else
     config.gem 'mysql',              :version => '2.7' 
     
@@ -41,14 +40,10 @@ Rails::Initializer.run do |config|
     config.gem 'nokogiri',           :version => '1.1.0'
     config.gem 'cucumber',           :version => '0.1.16'
   end
-  # TODO: fjern denne - brukes ikke i nytt søkedesign
-  config.gem 'mislav-will_paginate', :version => '2.3.6',  :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'fastercsv',            :version => '1.4.0'
   config.gem 'progressbar',          :version => '0.0.3'
   config.gem 'chronic',              :version => '0.2.3'
-  
   config.gem 'rubyzip',              :version => '0.9.1', :lib => 'zip/zipfilesystem'
-
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.

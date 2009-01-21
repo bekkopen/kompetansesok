@@ -8,25 +8,16 @@ h2. Installer MySQL
 
 Installer "MySQL 5.1":http://dev.mysql.com/downloads/mysql/5.1.html#downloads (følg instruksjonene på siden)
 
-h2. Lag database
+h2. Opprett database
 
 <code>mysqladmin create kompetansesok -uroot</code>
 
-h2. Lag tabeller
+(Tabeller opprettes automatisk når applikasjonen starter)
 
-h3. Hent kildekoden 
+h2. Installer Sphinx
 
-Dette krever at kildekoden hentes ned. Kildekoden inneholder et script for å lage tabeller.
+Applikasjonen bruker "Sphinx":http://www.sphinxsearch.com/ i tillegg til relasjonsdatabase
+for å muliggjøre hurtige søk.
 
-* Gå til http://github.com/bekkopen/kompetansesok/tree/master med en browser og klikk "Download"
-* Velg nyeste versjon fra "Other downloads"
-* Velg zip fil og pakk ut på produksjonsserveren
-
-h3. Installer JRuby
-
-* Hent 
-
-h3. Migrer database
-
-<code>jruby -S rake db:migrate RAILS_ENV=production</code>
-
+Sphinx må installeres på serveren, og legges på PATH. Når applikasjonen starter vil den
+(re)starte searchd (Sphinx daemon).
