@@ -9,7 +9,7 @@ describe LaereplanController do
   describe "responding to GET show" do
 
     it "should expose the requested fag as @laereplan" do
-      Laereplan.should_receive(:find_by_uuid).with("uuid-38").and_return(mock_laereplan)
+      Laereplan.should_receive(:find_by_uuid).with("uuid-38").and_return(mock_laereplan(:kompetansemaal => []))
       get :show, :id => "uuid-38"
       assigns[:laereplan].should equal(mock_laereplan)
     end
