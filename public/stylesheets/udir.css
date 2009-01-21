@@ -18,7 +18,7 @@ body {
 
 h1 {
 	color: #333;
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1em;
 	margin-bottom: 0.5em;
 }
@@ -195,15 +195,16 @@ ul.linke-liste
     margin-bottom: 1em;
 }
 
-/*#sokefelt {
-    width: 49%;
+#topp_venstre {
+    width: 43%;
     float:left;
 }
 #valgte_kompetansemaal {
-    width: 49%;
+    width: 55%;
     float: right;
-}*/
+}
 
-#sokeside_top {
+
+#sidetopp {
     overflow:auto;
 }

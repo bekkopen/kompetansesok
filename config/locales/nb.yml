@@ -2,6 +2,7 @@ nb:
   navigasjon:
     forside: "Forside"
     database_eksport: "Database eksport"
+    om_kopetansemål_søk: "Om kompetansemål søk"
 
   overskrifter:
     resultater: "Resultater"
@@ -13,13 +14,15 @@ nb:
     fag: "Fag"
     valgte_kompetansemål: "Valgte kompetansemål"
     database_eksport: "Database eksport"
+    søk_i:  "Søk i:"
+    søk_etter_kompetansemål: "Søk etter kompetansemål"
+    kompetansemål_søk: "Kompetansemål søk"
+    ofte_stillte_spørsmål: "Ofte stillte spørsmål"
   
   knapper:
     søk: "Søk"
     eksport_csv: "Lagre resultatsett til fil"
     tilbake: "Tilbake"
-    
-
     
   etiketter:
     søk: "Søk"
@@ -32,11 +35,11 @@ nb:
     vis_laereplan_treff: "Vis treff i læreplaner"
     vis_hovedomraade_treff: "vis treff i hovedområder"
     tom: "<ingen data>"
-    læreplaner: "Læreplaner:"
-    hovedområder: "Hovedområder:"
-    kompetansemål: "Kompetansemål:"
-    kompetansemålsett: "Kompetansemålsett:"
-    fag: "Fag:"
+    læreplaner: "Læreplaner"
+    hovedområder: "Hovedområder"
+    kompetansemål: "Kompetansemål"
+    kompetansemålsett: "Kompetansemålsett"
+    fag: "Fag"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
