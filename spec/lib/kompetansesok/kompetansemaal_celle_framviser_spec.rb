@@ -21,30 +21,39 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
   end
 
   it "should return correct leareplan string" do
-    @kompetansemaal_celle_framviser.laereplaner(@kompetansemaal).should =~ /etiketter.læreplan: en, to/
+    strip_styling(@kompetansemaal_celle_framviser.laereplaner(@kompetansemaal)).should == "etiketter.læreplan: en, to"
   end
 
   it "should return correct hovedomraade string" do
-    @kompetansemaal_celle_framviser.hovedomraader(@kompetansemaal).should =~ /etiketter.hovedområde: h1, h2/
+    strip_styling(@kompetansemaal_celle_framviser.hovedomraader(@kompetansemaal)).should == "etiketter.hovedområde: h1, h2"
   end
 
   it "should return correct Kompetansemaalsett string" do
-    @kompetansemaal_celle_framviser.kompetansemaalsett(@kompetansemaal).should =~ /etiketter.kompetansemålsett: k1, k2/
+    strip_styling(@kompetansemaal_celle_framviser.kompetansemaalsett(@kompetansemaal)).should == "etiketter.kompetansemålsett: k1, k2"
   end
 
   it "should return correct fag string" do
-    @kompetansemaal_celle_framviser.fag(@kompetansemaal).should =~ /etiketter.fag: f1, f2/
+    strip_styling(@kompetansemaal_celle_framviser.fag(@kompetansemaal)).should == "etiketter.fag: f1, f2"
   end
 
   it "should produce correct html string" do
-    @kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal).should =~ /etiketter.læreplan: en, to.*<br\/>.*etiketter.hovedområde: h1, h2.*<br\/>.*etiketter.kompetansemålsett: k1, k2.*<br\/>.*etiketter.fag: f1, f2/
+    strip_styling(@kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal)).should == "etiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2etiketter.fag: f1, f2"
   end
 
   it "should produce correct html string, if no fag is present" do
     @stubs[:fag] = []
     @kompetansemaal = (mock("kompetansemaal",  @stubs))
     @kompetansemaal_celle_framviser = MyView.new 
-    @kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal).should =~ /etiketter.læreplan: en, to.*<br\/>.*etiketter.hovedområde: h1, h2.*<br\/>.*etiketter.kompetansemålsett: k1, k2/
+    strip_styling(@kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal)).should == "etiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2"
+  end
+
+  it "should produce correct styling around the elements" do
+    @kompetansemaal_celle_framviser.fag(@kompetansemaal).should == "<span class='kompetansemaal_detaljer'>etiketter.fag: <span class='kompetansemaal_detaljer_fag'>f1, f2</span></span>"
+  end
+
+
+  def strip_styling(tekst)
+    tekst.gsub(/<[^>]+>/, "")
   end
 end
 
