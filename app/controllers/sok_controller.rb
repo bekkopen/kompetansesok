@@ -26,11 +26,11 @@ class SokController < ApplicationController
       @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
       #TODO bruke configfil til å angi 30 i framtiden.
-      if @kompetansemaal_treff.length <= 30
-        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, "#{t.tittel}<br/>#{to_detalje_html(t)}"] }
+      if @kompetansemaal_treff.length <= 50
+        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, "#{t.tittel.capitalize}<br/>#{to_detalje_html(t)}"] }
       else
         flash[:notice] = t('feilmelding.for_grovt_søk')
-        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, t.tittel] }
+        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, t.tittel.capitalize] }
       end
     end
   end
