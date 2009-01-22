@@ -7,8 +7,8 @@ Egenskap: Vise kompetansemaalsett for en læreplan
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
     Når jeg velger kompetansemaalsett "Etter 10. årstrinn"
     Så skal jeg få kompetansemaalsett "uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96" nøstet under laereplan "uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd"
-    Og jeg skal kunne se disse kompetansemaalene:
-      | Tittel                |
+    Og skal jeg få opp følgende treff i kompetansemål:
+      | Tittel starter med                                                                                                                                              |
       | utvikle og presentere sammensatte tekster med utgangspunkt i forfatterskap ved hjelp av digitale verktøy                                                        |
       | framføre et program sammensatt av ulike uttrykksformer basert på egne eller andres tekster                                                                      |
       | formidle og kommentere medieoppslag fra selvvalgte medier og lage egne oppslag for ulike medier                                                                 |

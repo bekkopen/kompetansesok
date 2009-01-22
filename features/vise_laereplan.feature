@@ -7,8 +7,8 @@ Egenskap: Vise laereplan
   Scenario: Fremvisning av kompetansemål
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
     Så skal jeg kunne se laereplanen "Læreplan i fordypning i norsk"
-    Og jeg skal kunne se disse kompetansemaalene:
-        | Tittel                                                                                                                  |
+    Og skal jeg få opp følgende treff i kompetansemål:
+        | Tittel starter med                                                                                                      |
         | utvikle og presentere sammensatte tekster med utgangspunkt i forfatterskap ved hjelp av digitale verktøy                |
         | framføre et program sammensatt av ulike uttrykksformer basert på egne eller andres tekster                              |
         | formidle og kommentere medieoppslag fra selvvalgte medier og lage egne oppslag for ulike medier                         |

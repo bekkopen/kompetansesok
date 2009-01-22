@@ -6,8 +6,8 @@ Egenskap: Vise hovedområde
   Scenario: Vise kompetansemål
     Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
     Så skal jeg kunne se hovedomraade "Aktivitet i ulike rørslemiljø"
-    Og jeg skal kunne se disse kompetansemaalene:
-        | Tittel                                                                                    |
+    Og skal jeg få opp følgende treff i kompetansemål:
+        | Tittel starter med                                                                        |
         | bruke ball i leikar og nokre ballspel                                                     |
         | bruke enkle hjelpemiddel og bruksreiskapar for opphald i naturen                          |
         | bruke grunnleggjande rørsler i varierte miljø og i tilrettelagde aktivitetar              |

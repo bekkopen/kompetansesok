@@ -7,8 +7,8 @@ Egenskap: Vise kompetansemaalsett for et hovedområde
     Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
     Når jeg velger kompetansemaalsett "Etter 4. årssteget"
     Så skal jeg få kompetansemaalsett "uuid:72e634c7-761b-43d0-8503-06790651fb28" nøstet under hovedomraade "uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe"
-    Og jeg skal kunne se disse kompetansemaalene:
-      | Tittel                                                                                  |
+    Og skal jeg få opp følgende treff i kompetansemål:
+      | Tittel starter med                                                                      |
       | vise evne til samhandling i ulike aktivitetar                                           |
       | vere med i aktivitetar som utfordrar heile sanseapparatet og koordinasjonen             |
       | lage og bruke enkle kart til å orientere seg i nærområdet                               |

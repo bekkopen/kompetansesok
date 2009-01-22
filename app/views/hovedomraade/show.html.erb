@@ -29,7 +29,15 @@
     <h3><%= t("overskrifter.kompetansemålsett") %></h3>
     <ul class="linke-liste">
       <% @kompetansemaalsett.each do |sett| %>
-        <li><%= link_to sett.tittel, hovedomraade_kompetansemaalsett_path(@hovedomraade, sett) %></li>
+        <% if(@through_laereplan) 
+             link = laereplan_hovedomraade_kompetansemaalsett_path(@laereplan, @hovedomraade, sett)
+           else
+             link = hovedomraade_kompetansemaalsett_path(@hovedomraade, sett)  
+           end
+         %>
+    
+  
+        <li><%= link_to sett.tittel, link %></li>
       <% end %>
     </ul>
   </p>

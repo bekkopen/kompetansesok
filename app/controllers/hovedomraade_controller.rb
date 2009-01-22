@@ -4,9 +4,10 @@ class HovedomraadeController < ApplicationController
     @hovedomraade = Hovedomraade.find_by_uuid(params[:id])
     
     if params[:laereplan_id]
-      laereplan = Laereplan.find_by_uuid(params[:laereplan_id])
-      kompetansemaal = @hovedomraade.kompetansemaal_for_laereplan(laereplan)
-      @kompetansemaalsett = @hovedomraade.kompetansemaalsett_for_laereplan(laereplan)
+      @laereplan = Laereplan.find_by_uuid(params[:laereplan_id])
+      kompetansemaal = @hovedomraade.kompetansemaal_for_laereplan(@laereplan)
+      @kompetansemaalsett = @hovedomraade.kompetansemaalsett_for_laereplan(@laereplan)
+      @through_laereplan = true
     else
       kompetansemaal = @hovedomraade.kompetansemaal
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett

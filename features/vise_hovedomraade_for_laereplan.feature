@@ -7,8 +7,8 @@ Egenskap: Vise hovedområde for en læreplan
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
     Når jeg velger hovedomraade "Utforsking av språk og tekst"
     Så skal jeg få hovedomraade "uuid:9f87b126-7f07-44da-bfec-3bdffd779df2" nøstet under laereplan "uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd"
-    Og jeg skal kunne se disse kompetansemaalene:
-      | Tittel                                                                                                                                                         |
+    Og skal jeg få opp følgende treff i kompetansemål:
+      | Tittel starter med                                                                                                                                             |
       | dokumentere og vurdere egen utvikling i arbeid med utforskning av språk og tekst                                                                               |
       | utforske og vurdere hvordan digitale medier påvirker og endrer språk og kommunikasjon                                                                          |
       | oversette enkle tekster fra engelsk eller andre språk til norsk og forklare hvordan mening endres i forhold til ordvalg                                        |
