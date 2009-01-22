@@ -1,6 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :fag
-
+  
   map.resources :spraak_session
   map.resources :sok, :collection => {:download_csv => :post}
   map.resources :laereplan do |plan|
@@ -13,7 +12,10 @@ ActionController::Routing::Routes.draw do |map|
     h.resources :kompetansemaalsett
   end
   map.resources :kompetansemaalsett
-  
+  map.resources :fag do |f|
+    f.resources :kompetansemaalsett
+  end
+ 
   map.resources :info
   map.resources :db_dumps, :only => :index
   
