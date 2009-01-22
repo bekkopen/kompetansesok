@@ -155,10 +155,23 @@ td.x-grid3-td-2 {
 td.x-grid3-td-3 div.x-grid3-cell-inner {
     white-space: normal;
 }
+
 .kompetansemaal_detaljer {
     padding-left: 10px;
+    color:gray;
 }
-
+.kompetansemaal_detaljer_hovedomraader {
+  color:#80C34E;
+}
+.kompetansemaal_detaljer_laereplaner {
+  color:brown;
+}
+.kompetansemaal_detaljer_kompetansemaalsett {
+  color:red;
+}
+.kompetansemaal_detaljer_fag {
+  color:blue;
+}
 
 /*----------------- informasjon style -------------*/
 
