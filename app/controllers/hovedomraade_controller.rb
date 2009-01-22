@@ -13,7 +13,7 @@ class HovedomraadeController < ApplicationController
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett
     end
     
-    @kompetansemaal_treff = kompetansemaal.map{|t| [t.uuid, t.kode, t.tittel] }
+    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal)
     
   end
 
