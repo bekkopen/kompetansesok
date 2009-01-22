@@ -1,0 +1,4 @@
+#udir konfigurasion for kompetansesok
+db_dumps:
+  path: "public/db_dumps"
+
