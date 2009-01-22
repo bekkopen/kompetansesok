@@ -1,6 +1,5 @@
 class SokController < ApplicationController
   before_filter :set_standard_filtering
-  include Kompetansesok::KompetansemaalCelleFramviser
 
   def index
     @kompetansemaal_treff = []
@@ -23,15 +22,9 @@ class SokController < ApplicationController
       sok = Ultrasphinx::Search.new(:query => sokestreng, :per_page => Ultrasphinx::Search::MAX_MATCHES)
       treff = sok.run
       
-      @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
+      kompetansemaal, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
-      #TODO bruke configfil til å angi 30 i framtiden.
-      if @kompetansemaal_treff.length <= 50
-        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, "#{t.tittel.capitalize}<br/>#{to_detalje_html(t)}"] }
-      else
-        flash[:notice] = t('feilmelding.for_grovt_søk')
-        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, t.tittel.capitalize] }
-      end
+      @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal)
     end
   end
 
