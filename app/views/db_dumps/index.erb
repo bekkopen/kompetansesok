@@ -11,6 +11,8 @@
 
 <p>
   <ul id="db_liste">
-    
+    <% @db_dumps.each do |file, path| %>
+      <li><a href="<%=  path %>"><%= file %></a></li>
+    <% end %>
   </ul>
 </p>
