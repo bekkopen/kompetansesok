@@ -2,7 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  include Kompetansesok::KompetansemaalCelleFramviser
+  include ApplicationHelper #helper all does not work
   
   helper :all # include all helpers, all the time
 
@@ -39,5 +39,7 @@ class ApplicationController < ActionController::Base
     end
     sorted_rows(kompetansemaal, sorter_paa, maks_detalj_rader)
   end
+
+  
   
 end
