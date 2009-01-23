@@ -58,17 +58,21 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 
 
 /* farge koder */
-.element_Fag {
-    color: #99bb33;
+.element_Fag, .kompetansemaal_detaljer_fag {
+    /*color: #99bb33;*/
+    color: #ddbb77;
 }
-.element_Laereplan {
-    color: #aabb66;
+.element_Laereplan, .kompetansemaal_detaljer_laereplaner {
+    /*color: #aabb66;*/
+    color: #FF4600;
 }
-.element_Hovedomraade {
-    color: #bbbb99;
+.element_Hovedomraade, .kompetansemaal_detaljer_hovedomraader{
+    /*color: #bbbb99;*/
+    color: #810000;
 }
-.element_Kompetansemaalsett {
-    color: #666666;
+.element_Kompetansemaalsett, .kompetansemaal_detaljer_kompetansemaalsett {
+    /*color: #666666;*/
+    color: #bb6666;
 }
 
 /* Lists
@@ -172,20 +176,9 @@ td.x-grid3-td-3 div.x-grid3-cell-inner {
 
 .kompetansemaal_detaljer {
     padding-left: 10px;
-    color:gray;
+    
 }
-.kompetansemaal_detaljer_hovedomraader {
-  color:#80C34E;
-}
-.kompetansemaal_detaljer_laereplaner {
-  color:brown;
-}
-.kompetansemaal_detaljer_kompetansemaalsett {
-  color:red;
-}
-.kompetansemaal_detaljer_fag {
-  color:blue;
-}
+
 
 /*----------------- informasjon style -------------*/
 
