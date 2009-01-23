@@ -23,8 +23,24 @@ h2. Installer Sphinx
 Applikasjonen bruker "Sphinx":http://www.sphinxsearch.com/ i tillegg til relasjonsdatabase
 for å muliggjøre hurtige søk.
 
-Sphinx må installeres på serveren, og legges på PATH. Når applikasjonen starter vil den
-(re)starte searchd (Sphinx daemon).
+Sphinx må installeres på serveren og OS må kofigureres slik at sphinxd starter når OS rebootes.
+
+h3. Debian/Ubuntu
+
+Det finnes ikke debian/ubuntu pakker. Bygg fra scratch på serveren:
+Detaljer her: http://sphinxsearch.com/docs/current.html#installing
+
+  cd tmp
+  wget http://sphinxsearch.com/downloads/sphinx-0.9.8.1.tar.gz
+  tar xzf sphinx-0.9.8.1.tar.gz
+  cd sphinx-0.9.8.1
+  ./configure
+  make
+  sudo make install
+
+Kopier Sphinx config fila fra utviklingsmaskin til produksjonsmaskin:
+
+  ./script/upload_sphinx_production_conf_debian
 
 h2. Deploy war
 

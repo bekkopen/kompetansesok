@@ -9,11 +9,6 @@ if Rails.env == 'production' && defined?(JRUBY_VERSION) && !ENV['SKIP_SETUP_DATA
       ActiveRecord::Migrator.migrate(migrations)
     end
     
-    def konfig_sphinx
-      puts "== OPPRETTER SPHINX KONFIGURASJON =="
-      Rake::Task["ultrasphinx:configure"].invoke
-    end
-    
     def import_rdf
       puts "== IMPORTERER RDF =="
       statiske_rdf_filer = File.expand_path(File.dirname(__FILE__) + '/../../features/rdf')
@@ -25,24 +20,12 @@ if Rails.env == 'production' && defined?(JRUBY_VERSION) && !ENV['SKIP_SETUP_DATA
       puts "== INDEKSERER DATA =="
       Rake::Task["ultrasphinx:index"].invoke  
     end
-    
-    def restart_sphinx
-      begin
-        puts "== RESTARTER SPHINX DAEMON =="
-        Rake::Task["ultrasphinx:daemon:restart"].invoke
-      rescue
-        puts "== STARTER SPHINX DAEMON =="
-        Rake::Task["ultrasphinx:daemon:start"].invoke
-      end
-    end
   end
 
   sd = SetupData.new
   sd.opprett_tabeller
-  sd.konfig_sphinx
   sd.import_rdf
   sd.index_data
-  sd.restart_sphinx
 
-  puts "== KLAR =="
+  puts "== KLAR. HUSK Å STARTE SPHNIX DAEMON =="
 end
