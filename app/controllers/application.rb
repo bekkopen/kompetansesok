@@ -32,8 +32,7 @@ class ApplicationController < ActionController::Base
   end
   
   def lag_kompetansemaalrader(kompetansemaal, sorter_paa = :tittel)
-    
-    maks_detalj_rader = 50 #TODO bruke configfil til å angi antall
+    maks_detalj_rader = udir_config['maks_detalj_rader'] 
     
     if kompetansemaal.length > maks_detalj_rader
       flash[:notice] = t('feilmelding.for_grovt_søk')

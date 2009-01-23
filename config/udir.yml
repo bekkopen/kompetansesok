@@ -2,3 +2,5 @@
 db_dumps:
   path: "public/db_dumps"
 
+maks_detalj_rader: 50
+
