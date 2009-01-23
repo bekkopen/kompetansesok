@@ -1,32 +1,42 @@
-<p>
-  <span class="enhet-overskrift"><%=  t('overskrifter.fag')%></span><br/>
-  <h3 class="tittel"><%=h @fag.tittel %></h3>
-  <span class="benevning">Uuid:</span>
-  <span class="uuid"><%=h @fag.uuid %></span><br/>
-  <span class="benevning">Kode:</span>
-  <span class="kode"><%=h @fag.kode %></span>
-</p>
 
-<p/> 
+<h1 class="tittel"><%=h @fag.tittel %></h1>
 
-<div id="kompetansemaal_treff">
-  <h3><%= t('overskrifter.kompetansemål') %></h3>
-  <%=  render :partial => "kompetansemaal/simple_grid" %>
+<div id='sidetopp'>
+  
+  <div id='topp_venstre'>  
+    <span class="benevning"><%= t('etiketter.uuid') %>:</span>
+    <span class="uuid"><%=h @fag.uuid %></span><br/>
+    <span class="benevning"><%= t('etiketter.kode') %>:</span>
+    <span class="kode"><%=h @fag.kode %></span>
+  </div>
+  
+  <div id="valgte_kompetansemaal">	
+    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+  </div>
+  
 </div>
 
-<div id="valgte_kompetansemaal">	
-  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+<hr/>
+
+<div id='resultater'>
+  
+  <div id="kompetansemaal_treff">
+    <h3><%= t('overskrifter.kompetansemål') %></h3>
+    <%=  render :partial => "kompetansemaal/simple_grid" %>
+  </div>
+  
+  <p>
+    <h3><%= t("overskrifter.kompetansemålsett") %></h3>
+    <ul class="linke-liste">
+      <% @fag.kompetansemaalsett.each do |sett| %>
+        <li><%= link_to sett.tittel, fag_kompetansemaalsett_path(@fag, sett) %></li>
+      <% end %>
+    </ul>
+  </p>
+  
 </div>
 
-<p>
-  <h3><%= t("overskrifter.kompetansemålsett") %></h3>
-  <ul class="linke-liste">
-    <% @fag.kompetansemaalsett.each do |sett| %>
-      <li><%= link_to sett.tittel, kompetansemaalsett_path(sett) %></li>
-    <% end %>
-  </ul>
-</p>
-
+<p/>
 
 
 <%= render :partial => 'common/back_button' %>

@@ -6,8 +6,8 @@ Egenskap: Vise kompetansemaalsett
   Scenario: Enkel framvisning
     Gitt at jeg ser på kompetansemaalsett med uuid uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96
     Så skal jeg kunne se kompetansemålet "Etter 10. årstrinn"
-    Og jeg skal kunne se disse kompetansemaalene:
-        | Tittel                |
+    Og skal jeg få opp følgende treff i kompetansemål:
+        | Tittel starter med                |
         | dokumentere og vurdere egen utvikling i arbeid med tekster  |
         | dokumentere og vurdere egen utvikling i arbeid med utforskning av språk og tekst  |
         | eksperimentere med ulike skriftlige og muntlige uttrykksformer i ulike sjangere |

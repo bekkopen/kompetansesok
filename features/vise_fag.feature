@@ -7,8 +7,8 @@ Egenskap: Vise fag
   Scenario: Fremvisning av kompetansemål
     Gitt at jeg ser på fag med uuid uuid:2a5b44fa-6475-4bba-8fd1-e2e58b461864
     Så skal jeg kunne se faget "Administrasjonsfag"
-    Og jeg skal kunne se disse kompetansemaalene:
-      | Tittel                                                                                                                                                    |
+    Og skal jeg få opp følgende treff i kompetansemål:
+      | Tittel starter med                                                                                                                                        |
       | gjere greie for verknaden av aktivitetar på den fysiske og mentale helsa hos brukarane, og dokumentere endringar på bakgrunn av gjennomførte aktivitetar  |
       | lage budsjett og føre rekneskap over kostnader knytte til aktiviseringsarbeidet                                                                           |
       | berekne forbruk og gjere innkjøp av materiale, reiskapar og utstyr til bruk i aktiviseringsarbeidet                                                       |

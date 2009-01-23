@@ -1,13 +1,22 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :fag
-
+  
   map.resources :spraak_session
   map.resources :sok, :collection => {:download_csv => :post}
-  map.resources :laereplan
-  map.resources :hovedomraade
+  map.resources :laereplan do |plan|
+    plan.resources :hovedomraade do |h|
+      h.resources :kompetansemaalsett
+    end
+    plan.resources :kompetansemaalsett
+  end
+  map.resources :hovedomraade do |h|
+    h.resources :kompetansemaalsett
+  end
   map.resources :kompetansemaalsett
-  
-  map.resources  :info
+  map.resources :fag do |f|
+    f.resources :kompetansemaalsett
+  end
+ 
+  map.resources :info
   map.resources :db_dumps, :only => :index
   
 

@@ -1,6 +1,6 @@
 class SokController < ApplicationController
   before_filter :set_standard_filtering
-
+  include Kompetansesok::KompetansemaalCelleFramviser
 
   def index
     @kompetansemaal_treff = []
@@ -26,7 +26,13 @@ class SokController < ApplicationController
       @kompetansemaal_treff, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = 
         partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
-      @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel] }       
+      #TODO bruke configfil til å angi 30 i framtiden.
+      if @kompetansemaal_treff.length <= 50
+        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, "#{t.tittel.capitalize}<br/>#{to_detalje_html(t)}"] }
+      else
+        flash[:notice] = t('feilmelding.for_grovt_søk')
+        @kompetansemaal_treff = @kompetansemaal_treff.map{|t| [t.uuid, t.kode, t.tittel, t.tittel.capitalize] }
+      end
     end
   end
 
@@ -54,7 +60,7 @@ class SokController < ApplicationController
   end
 
   private
-    
+  
   def partition_by_class(mixed_array, *klasses)
     klasses.map do |klass|
       klass_result, rest = mixed_array.partition do |mixed_element|

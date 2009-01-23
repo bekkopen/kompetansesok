@@ -16,6 +16,12 @@ class Kompetansemaalsett < ActiveRecord::Base
     uuid
   end
   
+  def kompetansemaal_for_hovedomraade(hovedomraade)
+    kompetansemaal.map do |maal|
+      maal if maal.hovedomraader.include?(hovedomraade)
+    end.uniq.compact
+  end
+  
   private
 
   def koble_kompetansemaal

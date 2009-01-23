@@ -2,6 +2,6 @@ class InfoController < ApplicationController
   def index
   end
   
-  def faq
+  def show
   end
 end

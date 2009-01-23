@@ -31,6 +31,5 @@ describe SokController do
     assigns[:content].should == "uuid:c405c2f1-7e1d-4ab5-829d-d9b757c94631,kode\nuuid:c056ac28-0517-4336-999e-0a98d4d7c4f2,kode1\n"
   end
 
-  
 
 end

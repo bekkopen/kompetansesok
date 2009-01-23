@@ -23,7 +23,6 @@ describe Kompetansemaal do
 
   describe "relationships" do
     before :each do
-      @laereplan = Laereplan.new
       @kompetansemaalsett = Kompetansemaalsett.new
       @hovedomraade = Hovedomraade.new
       @kompetansemaal = Kompetansemaal.new
@@ -38,7 +37,25 @@ describe Kompetansemaal do
       @kompetansemaal.hovedomraader << @hovedomraade
       @kompetansemaal.hovedomraader.length == 1
     end
+    
+    it "should have laereplaner" do
+      laereplan1 = Laereplan.new
+      laereplan2 = Laereplan.new
+      @kompetansemaalsett.laereplaner << laereplan1
+      @hovedomraade.laereplaner << laereplan2
+      @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
+      @kompetansemaal.hovedomraader << @hovedomraade
+      
+      @kompetansemaal.laereplaner.should == [laereplan1, laereplan2]
+    end
 
+    it "should have fag" do
+      fag = Fag.new
+      @kompetansemaalsett.fag << fag
+      @kompetansemaal.kompetansemaalsett << @kompetansemaalsett
+
+      @kompetansemaal.fag.should == [fag]
+    end
   end
   
 end
