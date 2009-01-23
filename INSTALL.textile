@@ -43,6 +43,7 @@ Kopier Sphinx config fila fra utviklingsmaskin til produksjonsmaskin:
 Start Sphinx
 
   # TODO: Sett opp i /etc/init.d/searchd
+  # http://www.sphinxsearch.com/forum/view.html?id=367
   sudo searchd
 
 h2. Installere applikasjon på GlassFish
