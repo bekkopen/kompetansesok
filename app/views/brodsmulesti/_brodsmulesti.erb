@@ -1,7 +1,14 @@
 <% if @brodsmulesti %>
   <div id="brodsmulesti">
+    <%= t('etiketter.du_er_her')%>:
+    <% first = true %>
     <% @brodsmulesti.each do |element|  %>
-      / <span class="element"><%=  element.tittel %></span>
+      <% if not first  %>
+        &#187;
+      <% else  first = false %>
+      <% end %>
+
+       <span class="element_<%= element.class %>"><%=  element.tittel %></span>
     <%  end %>
   </div>
 <% end %>

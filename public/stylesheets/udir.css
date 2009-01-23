@@ -57,6 +57,20 @@ pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; } 
 
 
+/* farge koder */
+.element_Fag {
+    color: #99bb33;
+}
+.element_Laereplan {
+    color: #aabb66;
+}
+.element_Hovedomraade {
+    color: #bbbb99;
+}
+.element_Kompetansemaalsett {
+    color: #666666;
+}
+
 /* Lists
 -------------------------------------------------------------- */
 
