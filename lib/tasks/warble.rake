@@ -12,7 +12,7 @@ if defined?(JRUBY_VERSION)
 
     Warbler::Task.new
     task :clean_war => ['clobber', 'submodules:install', 'war']
-  rescue
+  rescue Exception
     # Ignore - happens when we're in a War - warbler isn't packaged
   end
 end
