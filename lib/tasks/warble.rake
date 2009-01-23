@@ -11,11 +11,14 @@ if defined?(JRUBY_VERSION)
     end
 
     Warbler::Task.new
-    task :clean_war => ['clobber', 'submodules:install', 'war']
-  rescue Exception
+  rescue Exception => e
+    puts e.message
+    puts e.backtrace
     # Ignore - happens when we're in a War - warbler isn't packaged
   end
 end
+
+task :clean_war => ['clobber', 'submodules:install', 'war']
 
 namespace :war do
   desc "create production war"

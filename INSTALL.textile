@@ -42,7 +42,16 @@ Kopier Sphinx config fila fra utviklingsmaskin til produksjonsmaskin:
 
   ./script/upload_sphinx_production_conf_debian
 
-h2. Deploy war
+h2. Installere applikasjon på GlassFish
+
+h3. Bygg war
+
+Dette steget kan hoppes over hvis du allerede har en war fil.
+
+  jruby -S gem install aslakhellesoy-warbler (Har noen småfikser som ikke er i offisiell gem)
+  rake war:production
+
+h3. Deploy war
 
 Dette kan gjøres fra en hvilken som helst maskin på lokalt nett.
 Se egen seksjon for å bygge war fil.
