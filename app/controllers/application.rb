@@ -2,6 +2,8 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  include Kompetansesok::KompetansemaalCelleFramviser
+  
   helper :all # include all helpers, all the time
 
   # See ActionController::RequestForgeryProtection for details
@@ -27,6 +29,16 @@ class ApplicationController < ActionController::Base
 
   def udir_config
     @udir_config ||= YAML.load(File.open('config/udir.yml'))
+  end
+  
+  def lag_kompetansemaalrader(kompetansemaal)
+    #TODO bruke configfil til å angi 30 i framtiden.
+      if kompetansemaal.length <= 50
+        kompetansemaal.map{|t| [t.uuid, t.kode, t.tittel, "#{t.tittel.capitalize}<br/>#{to_detalje_html(t)}"] }
+      else
+        flash[:notice] = t('feilmelding.for_grovt_søk')
+        kompetansemaal.map{|t| [t.uuid, t.kode, t.tittel, t.tittel.capitalize] }
+      end
   end
   
 end
