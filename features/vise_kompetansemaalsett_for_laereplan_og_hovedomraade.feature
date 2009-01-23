@@ -19,4 +19,6 @@ Egenskap: Vise kompetansemaalsett for en læreplan og hovedområde
       | eksperimentere med ulike skriftlige og muntlige uttrykksformer i ulike sjangere       |
       | oversette enkle tekster fra engelsk eller andre språk til norsk og forklare hvordan   |
       | sammenlikne ord og grammatiske former i skriftlig norsk med norsk talemål og          |
-
+    Så jeg skal se Læreplan "Læreplan i fordypning i norsk" i brødsmulestien
+    Og jeg skal se Hovedområde "Utforsking av språk og tekst" i brødsmulestien
+    Og jeg skal se Kompetansemålsett "Etter 10. årstrinn" i brødsmulestien

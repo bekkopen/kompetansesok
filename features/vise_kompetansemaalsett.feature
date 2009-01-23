@@ -25,3 +25,7 @@ Egenskap: Vise kompetansemaalsett
         | sammenlikne ord og grammatiske former i skriftlig norsk med norsk talemål og presentere       |
         | utforske og vurdere hvordan digitale medier påvirker og endrer språk og kommunikasjon         |
         | utvikle og presentere sammensatte tekster med utgangspunkt i forfatterskap ved hjelp av       |
+
+  Scenario: Vise brødsmulesti
+    Gitt at jeg ser på kompetansemaalsett med uuid uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96
+    Så jeg skal se Kompetansemålsett "Etter 10. årstrinn" i brødsmulestien

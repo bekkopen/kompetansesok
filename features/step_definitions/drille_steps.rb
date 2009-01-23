@@ -17,9 +17,8 @@ end
 
 
 
-Saa /^jeg skal se Læreplan "(.*)" og Hovedområde "(.*)" i brødsmulestien$/ do |laereplan_tittel, hovedmaal_tittel|
+Saa /^jeg skal se .* "(.*)" i brødsmulestien$/ do |brodsmulesti_innhold|
   request.should have_tag("#brodsmulesti") do  |content|
-    content.should contain(laereplan_tittel)
-    content.should contain(hovedmaal_tittel)
+    content.should contain(brodsmulesti_innhold)
   end
 end

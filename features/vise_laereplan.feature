@@ -42,5 +42,9 @@ Egenskap: Vise laereplan
     Så skal jeg kunne se laereplanen "Læreplan i fordypning i norsk"
     Og jeg skal kunne gå til disse hovedområdene:
         | tittel                | 
-        | Tekst og mening       | 
+        | Tekst og mening       |
+
+  Scenario: Vise brødsmulesti
+    Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
+    Så jeg skal se Læreplan "Læreplan i fordypning i norsk" i brødsmulestien
     

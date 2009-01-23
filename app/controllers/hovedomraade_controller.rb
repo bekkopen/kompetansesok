@@ -12,8 +12,8 @@ class HovedomraadeController < ApplicationController
     else
       kompetansemaal = @hovedomraade.kompetansemaal
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett
+      @brodsmulesti = [@hovedomraade]
     end
-    
     @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal)
     
   end

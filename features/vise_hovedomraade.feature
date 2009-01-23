@@ -25,4 +25,7 @@ Egenskap: Vise hovedområde
         | vere med i songleikar og enkle dansar frå ulike kulturar                                  |
         | vere trygg i vatn og vere symjedyktig                                                     |
         | vise evne til samhandling i ulike aktivitetar                                             |
-        
+
+  Scenario: Vise brødsmulesti
+    Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
+    Så jeg skal se Hovedområde "Aktivitet i ulike rørslemiljø" i brødsmulestien
