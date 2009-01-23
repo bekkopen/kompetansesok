@@ -57,13 +57,25 @@ Dette kan gjøres fra en hvilken som helst maskin på lokalt nett.
 
 Og så fra serveren:
 
-  /usr/share/glassfish/bin/asadmin deploy --user admin --contextroot / /tmp/kompetansesok_production.war
+  sudo /usr/share/glassfish/bin/asadmin deploy --user admin --contextroot / /tmp/kompetansesok_production.war
 
 Hvis du får problemer med PermGenSpace - se her:
 http://www.nabble.com/Caused-by:-java.lang.OutOfMemoryError:-PermGen-space-td17664141.html
 
 h3. Opprett tabeller og importere data
 
-  export GEM_PATH=/usr/share/glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/WEB-INF/gems
+Vi forsøkte å la dette skje i appens initializer, men det kjørte flere ganger - muligens pga flere instanser.
+Må prøve dette igjen. I mellomtiden:
+  
   cd /usr/share/glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/WEB-INF
-  java -jar lib/jruby-complete.jar -S rake 
+  export RAILS_ENV=production
+  sudo GEM_PATH=/usr/share/glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/WEB-INF/gems java -jar lib/jruby-complete.jar -S rake db:migrate
+  
+  # TODO: Gjøre om til Rake task 0g fjerne script filene (og ref i warbler config)
+  java -jar lib/jruby-complete.jar script/import/import_til_fil /tmp/kompetansesok
+
+
+
+
+
+

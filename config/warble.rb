@@ -7,7 +7,7 @@ Warbler::Config.new do |config|
   # config.staging_dir = "tmp/war"
 
   # Application directories to be included in the webapp.
-  config.dirs = %w(app config lib log vendor tmp db features)
+  config.dirs = %w(app config lib log vendor tmp db script)
 
   # Additional files/directories to include, above those in config.dirs
   # The default value is Ruby's libdir (standard library)

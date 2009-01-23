@@ -12,8 +12,6 @@ if defined?(JRUBY_VERSION)
 
     Warbler::Task.new
   rescue Exception => e
-    puts e.message
-    puts e.backtrace
     # Ignore - happens when we're in a War - warbler isn't packaged
   end
 end
