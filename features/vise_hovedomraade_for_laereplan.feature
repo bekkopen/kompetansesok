@@ -17,3 +17,5 @@ Egenskap: Vise hovedområde for en læreplan
       | eksperimentere med ulike skriftlige og muntlige uttrykksformer i ulike sjangere               |
       | sammenlikne ord og grammatiske former i skriftlig norsk med norsk talemål og presentere       |
       | presentere ordspråk og billedlige uttrykk på norsk og sammenlikne med andre språk, og samtale |
+    Så jeg skal se Læreplan "Læreplan i fordypning i norsk" i brødsmulestien
+    Og jeg skal se Hovedområde "Utforsking av språk og tekst" i brødsmulestien

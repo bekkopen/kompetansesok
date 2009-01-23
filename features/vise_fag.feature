@@ -26,4 +26,8 @@ Egenskap: Vise fag
     Så skal jeg kunne se faget "Administrasjonsfag"
     Og jeg skal kunne gå til disse kompetansemaalsettene:
       | tittel               |
-      | Administrasjonsfag   | 
+      | Administrasjonsfag   |
+
+  Scenario: Vise brødsmulesti
+    Gitt at jeg ser på fag med uuid uuid:2a5b44fa-6475-4bba-8fd1-e2e58b461864
+    Så jeg skal se Fag "Administrasjonsfag" i brødsmulestien

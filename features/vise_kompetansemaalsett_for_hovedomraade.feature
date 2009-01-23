@@ -3,9 +3,12 @@ Egenskap: Vise kompetansemaalsett for et hovedområde
   Må lærere, bibliotekarer og forleggere
   Kunne se kompetansemålene som hører til et kompetansemaalsett filtrert på hovedområde
 
-  Scenario: Vise kompetansemål
+  Scenario: Gå til kompetansemål Etter 4
     Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
     Når jeg velger kompetansemaalsett "Etter 4. årssteget"
+
+  Scenario: Vise kompetansemål
+    GittScenario: Gå til kompetansemål Etter 4
     Så skal jeg få kompetansemaalsett "uuid:72e634c7-761b-43d0-8503-06790651fb28" nøstet under hovedomraade "uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe"
     Og skal jeg få opp følgende treff i kompetansemål:
       | Tittel starter med                                                                      |
@@ -28,3 +31,7 @@ Egenskap: Vise kompetansemaalsett for et hovedområde
       | samtale om reglar som gjeld for opphald i naturen, og kunne praktisere sporlaus ferdsel |
 
 
+  Scenario: Vise brødsmulesti
+    GittScenario: Gå til kompetansemål Etter 4
+    Så jeg skal se Hovedområde "Aktivitet i ulike rørslemiljø" i brødsmulestien
+    Så jeg skal se Kompetansemålsett "Etter 4. årssteget" i brødsmulestien

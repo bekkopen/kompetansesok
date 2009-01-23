@@ -28,3 +28,10 @@ Egenskap: Vise kompetansemaalsett for et fag
       | vurdere Samelovens språkregler og Sametingets opprettelse i forhold til språksituasjon og tospråklighet                           |
       | lese tekster skrevet i eldre ortografi og sammenligne med dagens ortografi                                                        |
       | sammenligne samisk og norsk sang- og salmetradisjon                                                                               |
+
+
+  Scenario: Vise brødsmulesti
+    Gitt at jeg ser på fag med uuid uuid:bf2c65fc-13cf-4e6c-88db-229878c4822c
+    Når jeg velger kompetansemaalsett "Etter Vg2 - studieforberedende utdanningsprogram"
+    Så jeg skal se Fag "Samisk som førstespråk, samisk 1, Vg2 studieforberedende utdanningsprogram" i brødsmulestien
+    Og jeg skal se Kompetansemålsett "Etter Vg2 - studieforberedende utdanningsprogram" i brødsmulestien

@@ -6,7 +6,7 @@ describe DbDumpsController do
     if not File.exist?(@tmp_db_dumps_dir)
       File.makedirs(@tmp_db_dumps_dir)
     end
-    controller.should_receive(:udir_config).and_return({"db_dumps.path"=>@tmp_db_dumps_dir})
+    controller.should_receive(:udir_config).and_return({"db_dumps"=>{"path"=>@tmp_db_dumps_dir}})
   end
 
   after(:each) do
@@ -29,8 +29,8 @@ describe DbDumpsController do
     
     get :index
     assigns[:db_dumps].should == {
-      "db_dump_test1.zip" => File.join(@tmp_db_dumps_dir, "db_dump_test1.zip"),
-      "db_dump_test2.zip" => File.join(@tmp_db_dumps_dir, "db_dump_test2.zip")
+      "db_dump_test1.zip" => File.join("db_dumps_test", "db_dump_test1.zip"),
+      "db_dump_test2.zip" => File.join("db_dumps_test", "db_dump_test2.zip")
     }
   end
 
@@ -45,8 +45,8 @@ describe DbDumpsController do
 
     get :index
     assigns[:db_dumps].should == {
-      "db_dump_test1.zip" => File.join(@tmp_db_dumps_dir, "db_dump_test1.zip"),
-      "db_dump_test2.zip" => File.join(@tmp_db_dumps_dir, "db_dump_test2.zip")
+      "db_dump_test1.zip" => File.join("db_dumps_test", "db_dump_test1.zip"),
+      "db_dump_test2.zip" => File.join("db_dumps_test", "db_dump_test2.zip")
     }
   end
 
