@@ -2,46 +2,47 @@
 <h1 class='tittel'><%=h @hovedomraade.tittel %></h1>
 
 <div id='sidetopp'>
-  
+
   <div id='topp_venstre'>
     <span class="benevning"><%= t('etiketter.uuid') %>:</span>
     <span class="uuid"><%=h @hovedomraade.uuid %></span><br/>
     <span class="benevning"><%= t('etiketter.kode') %>:</span>
     <span class="kode"><%=h @hovedomraade.kode.blank? ? t('etiketter.tom') : @hovedomraade.kode  %></span>
   </div>
-  
-  <div id="valgte_kompetansemaal">	
+
+  <div id="valgte_kompetansemaal">
     <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
   </div>
-  
+
 </div>
 
 <hr/>
 
 <div id='resultater'>
-  
+  <%= render :partial =>"brodsmulesti/brodsmulesti" %>
+
   <div id="kompetansemaal_treff">
     <h3><%= t('overskrifter.kompetansemål') %></h3>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
   </div>
-  
+
   <p>
     <h3><%= t("overskrifter.kompetansemålsett") %></h3>
     <ul class="linke-liste">
       <% @kompetansemaalsett.each do |sett| %>
-        <% if(@through_laereplan) 
-             link = laereplan_hovedomraade_kompetansemaalsett_path(@laereplan, @hovedomraade, sett)
-           else
-             link = hovedomraade_kompetansemaalsett_path(@hovedomraade, sett)  
-           end
-         %>
-    
-  
+        <% if(@through_laereplan)
+          link = laereplan_hovedomraade_kompetansemaalsett_path(@laereplan, @hovedomraade, sett)
+        else
+          link = hovedomraade_kompetansemaalsett_path(@hovedomraade, sett)
+        end
+      %>
+
+
         <li><%= link_to sett.tittel, link %></li>
       <% end %>
     </ul>
   </p>
-  
+
 </div>
 
 <p/>

@@ -15,3 +15,11 @@ Saa /^skal jeg få (\w+) "(.*)" nøstet under (\w+) "(.*)"$/ do |modell, modell_
   request.path_parameters["#{nostet_under}_id".to_sym].should == nostet_uuid
 end
 
+
+
+Saa /^jeg skal se Læreplan "(.*)" og Hovedområde "(.*)" i brødsmulestien$/ do |laereplan_tittel, hovedmaal_tittel|
+  request.should have_tag("#brodsmulesti") do  |content|
+    content.should contain(laereplan_tittel)
+    content.should contain(hovedmaal_tittel)
+  end
+end

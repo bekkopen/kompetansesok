@@ -1,0 +1,7 @@
+<% if @brodsmulesti %>
+  <div id="brodsmulesti">
+    <% @brodsmulesti.each do |element|  %>
+      / <span class="element"><%=  element.tittel %></span>
+    <%  end %>
+  </div>
+<% end %>

@@ -8,6 +8,7 @@ class HovedomraadeController < ApplicationController
       kompetansemaal = @hovedomraade.kompetansemaal_for_laereplan(@laereplan)
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett_for_laereplan(@laereplan)
       @through_laereplan = true
+      @brodsmulesti = [@laereplan, @hovedomraade].flatten.compact
     else
       kompetansemaal = @hovedomraade.kompetansemaal
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett

@@ -7,6 +7,7 @@ Egenskap: Vise hovedområde for en læreplan
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
     Når jeg velger hovedomraade "Utforsking av språk og tekst"
     Så skal jeg få hovedomraade "uuid:9f87b126-7f07-44da-bfec-3bdffd779df2" nøstet under laereplan "uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd"
+    Og jeg skal se Læreplan "Læreplan i fordypning i norsk" og Hovedområde "Utforsking av språk og tekst" i brødsmulestien
     Og skal jeg få opp følgende treff i kompetansemål:
       | Tittel starter med                                                                            |
       | dokumentere og vurdere egen utvikling i arbeid med utforskning av språk og tekst              |
