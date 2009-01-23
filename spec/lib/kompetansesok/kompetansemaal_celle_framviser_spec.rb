@@ -8,53 +8,157 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
   end
 
-  before(:each) do
-    @stubs = {
-      :laereplaner => [Laereplan.new(:tittel => "en"), Laereplan.new(:tittel => "to")],
-      :hovedomraader => [Hovedomraade.new(:tittel => "h1"), Hovedomraade.new(:tittel => "h2")],
-      :kompetansemaalsett => [Kompetansemaalsett.new(:tittel => "k1"), Kompetansemaalsett.new(:tittel => 'k2')],
-      :fag => [Fag.new(:tittel => "f1"), Fag.new(:tittel => 'f2')]
-    }
+  
+  describe "generating details" do
+    
+    before(:each) do
+      @stubs = {
+        :tittel => 'tittel',
+        :laereplaner => [Laereplan.new(:tittel => "en"), Laereplan.new(:tittel => "to")],
+        :hovedomraader => [Hovedomraade.new(:tittel => "h1"), Hovedomraade.new(:tittel => "h2")],
+        :kompetansemaalsett => [Kompetansemaalsett.new(:tittel => "k1"), Kompetansemaalsett.new(:tittel => 'k2')],
+        :fag => [Fag.new(:tittel => "f1"), Fag.new(:tittel => 'f2')]
+      }
 
-    @kompetansemaal = mock("Kompetansemaal",@stubs)
-    @kompetansemaal_celle_framviser = MyView.new
+      @kompetansemaal = mock("Kompetansemaal",@stubs)
+      @kompetansemaal_celle_framviser = MyView.new
+    end
+
+    it "should return correct leareplan string" do
+      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "etiketter.læreplan: en, to"
+    end
+
+    it "should return correct hovedomraade string" do
+      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "etiketter.hovedområde: h1, h2"
+    end
+
+    it "should return correct Kompetansemaalsett string" do
+      strip_styling(@kompetansemaal_celle_framviser.send(:kompetansemaalsett, @kompetansemaal)).should == "etiketter.kompetansemålsett: k1, k2"
+    end
+
+    it "should return correct fag string" do
+      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "etiketter.fag: f1, f2"
+    end
+
+    it "should produce correct html string" do
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Titteletiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2etiketter.fag: f1, f2"
+    end
+
+    it "should produce correct html string, if no fag is present" do
+      @stubs[:fag] = []
+      @kompetansemaal = (mock("kompetansemaal",  @stubs))
+      @kompetansemaal_celle_framviser = MyView.new 
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Titteletiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2"
+    end
+
+    it "should produce correct styling around the elements" do
+      @kompetansemaal_celle_framviser.send(:fag, @kompetansemaal).should == "<span class='kompetansemaal_detaljer'>etiketter.fag: <span class='kompetansemaal_detaljer_fag'>f1, f2</span></span>"
+    end
+  
   end
-
-  it "should return correct leareplan string" do
-    strip_styling(@kompetansemaal_celle_framviser.laereplaner(@kompetansemaal)).should == "etiketter.læreplan: en, to"
+  
+  
+  describe "generating rows" do
+    before :each do
+      @kompetansemaal_celle_framviser = MyView.new
+      @maal = Kompetansemaal.new(:uuid => 'uuid', :tittel => 'tittel', :kode => 'kode')
+    end    
+    
+    it "should have kompetansemaal.uuid at index 0" do
+      kompetansemaal = [@maal]
+      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[0].should == 'uuid'
+    end
+    
+    it "should have kompetansemaal.kode at index 1" do
+      kompetansemaal = [@maal]
+      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[1].should == 'kode'
+    end
+    
+    it "should have kompetansemaal.tittel at index 2" do
+      kompetansemaal = [@maal]
+      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[2].should == 'tittel'
+    end
+    
+    it "should have details at index 3" do
+      kompetansemaal = [@maal]
+      @kompetansemaal_celle_framviser.should_receive(:to_detail_html).and_return("details")
+      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[3].should == 'details'
+    end
+    
+    it "should not have kompetansemaal.tittel (capitalized) at index 2 if the number of kompetansemaal is higher than a config treshold" do
+      kompetansemaal = [@maal]
+      max_treshold = 0
+      @kompetansemaal_celle_framviser.should_not_receive(:to_detail_html)
+      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :tittel, max_treshold).first[3].should == "Tittel"
+    end
+    
+    
   end
-
-  it "should return correct hovedomraade string" do
-    strip_styling(@kompetansemaal_celle_framviser.hovedomraader(@kompetansemaal)).should == "etiketter.hovedområde: h1, h2"
-  end
-
-  it "should return correct Kompetansemaalsett string" do
-    strip_styling(@kompetansemaal_celle_framviser.kompetansemaalsett(@kompetansemaal)).should == "etiketter.kompetansemålsett: k1, k2"
-  end
-
-  it "should return correct fag string" do
-    strip_styling(@kompetansemaal_celle_framviser.fag(@kompetansemaal)).should == "etiketter.fag: f1, f2"
-  end
-
-  it "should produce correct html string" do
-    strip_styling(@kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal)).should == "etiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2etiketter.fag: f1, f2"
-  end
-
-  it "should produce correct html string, if no fag is present" do
-    @stubs[:fag] = []
-    @kompetansemaal = (mock("kompetansemaal",  @stubs))
-    @kompetansemaal_celle_framviser = MyView.new 
-    strip_styling(@kompetansemaal_celle_framviser.to_detalje_html(@kompetansemaal)).should == "etiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2"
-  end
-
-  it "should produce correct styling around the elements" do
-    @kompetansemaal_celle_framviser.fag(@kompetansemaal).should == "<span class='kompetansemaal_detaljer'>etiketter.fag: <span class='kompetansemaal_detaljer_fag'>f1, f2</span></span>"
+  
+  
+  
+  describe "sorting rows" do
+    
+    before :each do
+      @kompetansemaal_celle_framviser = MyView.new
+    end
+    
+    it "should be sorted by tittel by default" do
+      maal_1 = Kompetansemaal.new(:tittel => 'maal_1')
+      maal_2 = Kompetansemaal.new(:tittel => 'maal_2')
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+      
+      sorted.first[2].should == 'maal_1'
+      sorted.last[2].should == 'maal_2'
+    end
+    
+    it "should be sorted first by first given sort field" do
+      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
+      h_2 = Hovedomraade.new(:tittel => 'hovedomraade b')
+      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_2])
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
+      
+      sorted[0][2].should == 'maal_1'
+      sorted[1][2].should == 'maal_2'
+    end
+    
+    it "should be sorted by tittel if the first sort_field is equal" do
+      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
+      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_1])
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
+      
+      sorted[0][2].should == 'maal_1'
+      sorted[1][2].should == 'maal_2'
+    end 
+    
+    it "should have nil values sorted last " do
+      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
+      maal_1 = Kompetansemaal.new(:uuid => 'uuid_1', :tittel => 'maal', :hovedomraader => [h_1])
+      maal_2 = Kompetansemaal.new(:uuid => 'uuid_2',:tittel => 'maal_2')
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
+      
+      sorted[0][0].should == 'uuid_1'
+      sorted[1][0].should == 'uuid_2'
+    end
+    
   end
 
 
   def strip_styling(tekst)
     tekst.gsub(/<[^>]+>/, "")
   end
+  
+  
 end
+
 
 
