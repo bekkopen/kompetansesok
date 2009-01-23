@@ -31,14 +31,14 @@ class ApplicationController < ActionController::Base
     @udir_config ||= YAML.load(File.open('config/udir.yml'))
   end
   
-  def lag_kompetansemaalrader(kompetansemaal)
-    #TODO bruke configfil til å angi 30 i framtiden.
-      if kompetansemaal.length <= 50
-        kompetansemaal.map{|t| [t.uuid, t.kode, t.tittel, "#{t.tittel.capitalize}<br/>#{to_detalje_html(t)}"] }
-      else
-        flash[:notice] = t('feilmelding.for_grovt_søk')
-        kompetansemaal.map{|t| [t.uuid, t.kode, t.tittel, t.tittel.capitalize] }
-      end
+  def lag_kompetansemaalrader(kompetansemaal, sorter_paa = :tittel)
+    
+    maks_detalj_rader = 50 #TODO bruke configfil til å angi antall
+    
+    if kompetansemaal.length > maks_detalj_rader
+      flash[:notice] = t('feilmelding.for_grovt_søk')
+    end
+    sorted_rows(kompetansemaal, sorter_paa, maks_detalj_rader)
   end
   
 end

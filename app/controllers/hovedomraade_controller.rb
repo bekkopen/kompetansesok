@@ -13,7 +13,7 @@ class HovedomraadeController < ApplicationController
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett
     end
     
-    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal)
+    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, :kompetansemaalsett)
     
   end
 
