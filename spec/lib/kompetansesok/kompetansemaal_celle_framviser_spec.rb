@@ -89,7 +89,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
       kompetansemaal = [@maal]
       max_treshold = 0
       @kompetansemaal_celle_framviser.should_not_receive(:to_detail_html)
-      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :tittel, max_treshold).first[3].should == "Tittel"
+      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, max_treshold).first[3].should == "Tittel"
     end
     
     
@@ -102,49 +102,87 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     before :each do
       @kompetansemaal_celle_framviser = MyView.new
     end
-  
-    it "should be sorted by tittel by default" do
-      maal_1 = Kompetansemaal.new(:tittel => 'maal_1')
-      maal_2 = Kompetansemaal.new(:tittel => 'maal_2')
+    
+    it "should be sorted by laereplan first" do
+      l_1 = Laereplan.new(:tittel => 'laereplan a')
+      l_2 = Laereplan.new(:tittel => 'laereplan b')
+      h_1 = Hovedomraade.new(:tittel => 'hovedomraade', :laereplaner => [l_1])
+      h_2 = Hovedomraade.new(:tittel => 'hovedomraade', :laereplaner => [l_2])
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [h_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [h_2])
+    
       kompetansemaal = [maal_2, maal_1]
       sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
       
-      sorted.first[2].should == 'maal_1'
-      sorted.last[2].should == 'maal_2'
+      sorted[0][2].should == 'maal x'
+      sorted[1][2].should == 'maal a'
     end
     
-    it "should be sorted first by first given sort field" do
-      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
-      h_2 = Hovedomraade.new(:tittel => 'hovedomraade b')
-      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
-      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_2])
+#    it "should be sorted by hovedomraade second" do
+#      l_1 = Laereplan.new(:tittel => 'laereplan a')
+#      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a', :laereplaner => [l_1])
+#      h_2 = Hovedomraade.new(:tittel => 'hovedomraade b', :laereplaner => [l_1])
+#      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [h_1])
+#      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [h_2])
+#    
+#      kompetansemaal = [maal_2, maal_1]
+#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+#      
+#      sorted[0][2].should == 'maal x'
+#      sorted[1][2].should == 'maal a'
+#    end
     
-      kompetansemaal = [maal_2, maal_1]
-      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
-      
-      sorted[0][2].should == 'maal_1'
-      sorted[1][2].should == 'maal_2'
-    end
     
-    it "should be sorted by tittel if the first sort_field is equal" do
-      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
-      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
-      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_1])
     
-      kompetansemaal = [maal_2, maal_1]
-      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
-      
-      sorted[0][2].should == 'maal_1'
-      sorted[1][2].should == 'maal_2'
-    end 
+    
+    
+    
+    
+    
+    
+#    it "should be sorted by tittel by default" do
+#      maal_1 = Kompetansemaal.new(:tittel => 'maal_1')
+#      maal_2 = Kompetansemaal.new(:tittel => 'maal_2')
+#      kompetansemaal = [maal_2, maal_1]
+#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+#      
+#      sorted.first[2].should == 'maal_1'
+#      sorted.last[2].should == 'maal_2'
+#    end
+#    
+#    it "should be sorted first by first given sort field" do
+#      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
+#      h_2 = Hovedomraade.new(:tittel => 'hovedomraade b')
+#      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
+#      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_2])
+#    
+#      kompetansemaal = [maal_2, maal_1]
+#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
+#      
+#      sorted[0][2].should == 'maal_1'
+#      sorted[1][2].should == 'maal_2'
+#    end
+#    
+#    it "should be sorted by tittel if the first sort_field is equal" do
+#      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
+#      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
+#      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_1])
+#    
+#      kompetansemaal = [maal_2, maal_1]
+#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
+#      
+#      sorted[0][2].should == 'maal_1'
+#      sorted[1][2].should == 'maal_2'
+#    end 
     
     it "should have nil values sorted last " do
+      pending "lage sorteringen først"
       h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
       maal_1 = Kompetansemaal.new(:uuid => 'uuid_1', :tittel => 'maal', :hovedomraader => [h_1])
       maal_2 = Kompetansemaal.new(:uuid => 'uuid_2',:tittel => 'maal_2')
     
       kompetansemaal = [maal_2, maal_1]
-      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
       
       sorted[0][0].should == 'uuid_1'
       sorted[1][0].should == 'uuid_2'

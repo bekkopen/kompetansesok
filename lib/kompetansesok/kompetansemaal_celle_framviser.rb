@@ -1,9 +1,9 @@
 module Kompetansesok
   module KompetansemaalCelleFramviser
     
-    def sorted_rows(kompetansemaal, sort_on = :tittel, max_treshold = 30)
+    def sorted_rows(kompetansemaal, max_treshold = 30)
       unsorted = generate_unsorted_rows(kompetansemaal, max_treshold) 
-      sort_rows(unsorted, sort_on)
+      sort_rows(unsorted)
     end
 
     
@@ -57,14 +57,14 @@ module Kompetansesok
       end
     end
     
-    def sort_rows(rows, sort_on)
+    def sort_rows(rows)
       sort_last = 'åååååå'
       rows.sort_by do |row|
-        if sort_on == :tittel
-          row[2]
-        else
-          [row.last[sort_on] || sort_last, row[2] || sort_last]
-        end
+#        if sort_on == :tittel
+#          row[2]
+#        else
+          [row.last[:laereplan] || sort_last]
+#        end
       end
     end
     
