@@ -32,7 +32,7 @@ Rails::Initializer.run do |config|
   config.gem 'progressbar',                       :version => '0.0.3'
   config.gem 'chronic',                           :version => '0.2.3'
   config.gem 'rubyzip',                           :version => '0.9.1',  :lib => 'zip/zipfilesystem'
-  config.gem 'rspec',                             :version => '0.1.12', :lib => 'spec'
+  config.gem 'rspec',                             :version => '1.1.12', :lib => 'spec'
 
   if defined?(JRUBY_VERSION)
     config.gem 'activerecord-jdbc-adapter',       :version => '0.9',    :lib => 'jdbc_adapter'
