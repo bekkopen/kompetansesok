@@ -12,4 +12,5 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.uncountable %w(kompetansemaalsett kompetansemaal trinn laereplansok fagsok fag info)
   
   inflect.irregular 'hovedomraade','hovedomraader'
+  # inflect.irregular 'laereplan','laereplaner'
 end

@@ -1,0 +1,69 @@
+h1. Installasjon av Kompetansesøk applikasjonen i produksjonsmiljø
+
+h2. Installer GlassFish
+
+Installer "GlassFish V2 UR2 b04":https://glassfish.dev.java.net/downloads/v2ur2-b04.html (følg instruksjonene på siden).
+
+Sett opp OS slik at GlassFish starter automatisk når OS rebootes.
+
+h2. Installer MySQL
+
+Installer "MySQL 5.1":http://dev.mysql.com/downloads/mysql/5.1.html#downloads (følg instruksjonene på siden)
+
+Sett opp OS slik at MySQL starter automatisk når OS rebootes.
+
+h2. Opprett database
+
+<code>mysqladmin create kompetansesok -uroot</code>
+
+h2. Installer Sphinx
+
+Applikasjonen bruker "Sphinx":http://www.sphinxsearch.com/ i tillegg til relasjonsdatabase
+for å muliggjøre hurtige søk.
+
+Sphinx må installeres på serveren og OS må kofigureres slik at sphinxd starter når OS rebootes.
+
+h3. Debian/Ubuntu
+
+Det finnes ikke debian/ubuntu pakker. Bygg fra scratch på serveren:
+Detaljer her: http://sphinxsearch.com/docs/current.html#installing
+
+  cd tmp
+  wget http://sphinxsearch.com/downloads/sphinx-0.9.8.1.tar.gz
+  tar xzf sphinx-0.9.8.1.tar.gz
+  cd sphinx-0.9.8.1
+  ./configure
+  make
+  sudo make install
+
+Kopier Sphinx config fila fra utviklingsmaskin til produksjonsmaskin:
+
+  ./script/upload_sphinx_production_conf_debian
+
+h2. Installere applikasjon på GlassFish
+
+h3. Bygg war
+
+Dette steget kan hoppes over hvis du allerede har en war fil.
+
+  jruby -S gem install aslakhellesoy-warbler (Har noen småfikser som ikke er i offisiell gem)
+  rake war:production
+
+h3. Deploy war
+
+Dette kan gjøres fra en hvilken som helst maskin på lokalt nett.
+  
+  scp kompetansesok_production.war udiradmin@10.0.100.233:/tmp/kompetansesok_production.war
+
+Og så fra serveren:
+
+  /usr/share/glassfish/bin/asadmin deploy --user admin --contextroot / /tmp/kompetansesok_production.war
+
+Hvis du får problemer med PermGenSpace - se her:
+http://www.nabble.com/Caused-by:-java.lang.OutOfMemoryError:-PermGen-space-td17664141.html
+
+h3. Opprett tabeller og importere data
+
+  export GEM_PATH=/usr/share/glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/WEB-INF/gems
+  cd /usr/share/glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/WEB-INF
+  java -jar lib/jruby-complete.jar -S rake 
