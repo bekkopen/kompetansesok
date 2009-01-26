@@ -12,17 +12,16 @@
   </head>
   <body>
 	<div id="container">
-	  <div id="spraak">
-		<% form_tag("/spraak_session") do %>
-			<%= select :spraak, :valg, [["Bokmål", "nb"], ["Nynorsk", "nn"], ["Samisk", "sa"], ["Engelsk", "en"]], :selected => session[:spraak] %>
-			<%= submit_tag "Velg språk", :class => 'submit' %>
-		<% end %>
-	  </div>
 	  <div id="header">
-      <%= image_tag  "logo.gif" %>
+      <%= image_tag "logo.gif" %>
 	  </div>
 	  <div id="branding_bar">
-		<%= image_tag "searchBackground.gif" %>
+		  <div id="spraak">
+			<% form_tag("/spraak_session") do %>
+				<%= select :spraak, :valg, [["Bokmål", "nb"], ["Nynorsk", "nn"], ["Samisk", "sa"], ["Engelsk", "en"]], :selected => session[:spraak] %>
+				<%= submit_tag "Velg språk", :class => 'submit' %>
+			<% end %>
+		  </div>
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">

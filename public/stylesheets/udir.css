@@ -125,9 +125,8 @@ div#container {
 }
 
 div#branding_bar {
-	text-align: right;
-	background-color: #F47936;
 	height: 40px;
+	background: #F47936 url(/images/searchBackground.gif) no-repeat fixed top right;
 }
 
 div#nav_container {
@@ -139,6 +138,7 @@ div#nav_container {
 
 div#spraak {
 	text-align: right;
+	padding: 8px 8px 0 0;
 }
 
 div#resultater {
