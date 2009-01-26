@@ -21,7 +21,7 @@ h2. Installer Sphinx
 Applikasjonen bruker "Sphinx":http://www.sphinxsearch.com/ i tillegg til relasjonsdatabase
 for å muliggjøre hurtige søk.
 
-Sphinx må installeres på serveren og OS må kofigureres slik at sphinxd starter når OS rebootes.
+Sphinx må installeres på serveren og OS må kofigureres slik at searchd starter når OS rebootes.
 
 h3. Debian/Ubuntu
 
