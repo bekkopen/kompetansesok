@@ -8,13 +8,14 @@ class HovedomraadeController < ApplicationController
       kompetansemaal = @hovedomraade.kompetansemaal_for_laereplan(@laereplan)
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett_for_laereplan(@laereplan)
       @through_laereplan = true
-      @brodsmulesti = [@laereplan, @hovedomraade]
+      brodsmule_elementer = [@laereplan, @hovedomraade]
     else
       kompetansemaal = @hovedomraade.kompetansemaal
       @kompetansemaalsett = @hovedomraade.kompetansemaalsett
-      @brodsmulesti = [@hovedomraade]
+      brodsmule_elementer = [@hovedomraade]
     end
 
+    @brodsmulesti = lag_brodsmuler(brodsmule_elementer.compact)
     @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, :kompetansemaalsett)
   end
 

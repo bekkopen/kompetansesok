@@ -3,18 +3,16 @@ module ApplicationHelper
   include Kompetansesok::KompetansemaalCelleFramviser
 
   def lag_brodsmuler(elementer)
-    puts "\n\n\n--------------------------kommer vi hit?"
     if not elementer.empty?
       elementer.map do |element|
         {:klasse => element.class, :tittel => element.tittel, :url => lag_path_for(element, elementer)}
       end
-    else
-      puts "brodsmuler is empty.."
     end
   end
 
   def lag_path_for(element, elementer)
     hvilke = []
+
     elementer.each do |kandidat|
       hvilke << kandidat
       if kandidat == element
@@ -25,8 +23,7 @@ module ApplicationHelper
   end
 
   def generate_path(elementer)
-    if elementer.empty?
-      puts "\n\nempty..."
+    if elementer.empty?    
       ""
     else
       klasser = elementer.map do |e|
@@ -35,9 +32,8 @@ module ApplicationHelper
       uuids = elementer.map do |e|
         e.uuid
       end
-      puts "\n\n\n\n"
-      p klasser
-      send(klasser.join("_") + "_path", uuids[0])
+      
+      send(klasser.join("_") + "_path", *uuids)
     end
   end
 end
