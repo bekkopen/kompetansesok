@@ -25,34 +25,34 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should return correct leareplan string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "etiketter.læreplan: en, to"
+      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "en, to"
     end
 
     it "should return correct hovedomraade string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "etiketter.hovedområde: h1, h2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "h1, h2"
     end
 
     it "should return correct Kompetansemaalsett string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:kompetansemaalsett, @kompetansemaal)).should == "etiketter.kompetansemålsett: k1, k2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:kompetansemaalsett, @kompetansemaal)).should == "k1, k2"
     end
 
     it "should return correct fag string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "etiketter.fag: f1, f2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "f1, f2"
     end
 
     it "should produce correct html string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Titteletiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2etiketter.fag: f1, f2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelen, toh1, h2k1, k2f1, f2"
     end
 
     it "should produce correct html string, if no fag is present" do
       @stubs[:fag] = []
       @kompetansemaal = (mock("kompetansemaal",  @stubs))
       @kompetansemaal_celle_framviser = MyView.new 
-      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Titteletiketter.læreplan: en, toetiketter.hovedområde: h1, h2etiketter.kompetansemålsett: k1, k2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelen, toh1, h2k1, k2"
     end
 
     it "should produce correct styling around the elements" do
-      @kompetansemaal_celle_framviser.send(:fag, @kompetansemaal).should == "<span class='kompetansemaal_detaljer'>etiketter.fag: <span class='kompetansemaal_detaljer_fag'>f1, f2</span></span>"
+      @kompetansemaal_celle_framviser.send(:fag, @kompetansemaal).should == "<span class='kompetansemaal_detaljer'><span class='kompetansemaal_detaljer_fag'>f1, f2</span></span>"
     end
   
   end
@@ -102,7 +102,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     before :each do
       @kompetansemaal_celle_framviser = MyView.new
     end
-    
+  
     it "should be sorted by tittel by default" do
       maal_1 = Kompetansemaal.new(:tittel => 'maal_1')
       maal_2 = Kompetansemaal.new(:tittel => 'maal_2')
