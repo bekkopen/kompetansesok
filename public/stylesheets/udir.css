@@ -58,22 +58,38 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 
 
 /* farge koder */
-.element_Fag, .kompetansemaal_detaljer_fag {
+.element_Fag a, .kompetansemaal_detaljer_fag {
     /*color: #99bb33;*/
     color: #ddbb77;
+    padding-left: 24px;
+    background: url('../images/f.png');
+    background-repeat: no-repeat;
 }
-.element_Laereplan, .kompetansemaal_detaljer_laereplaner {
+.element_Laereplan a, .kompetansemaal_detaljer_laereplaner {
     /*color: #aabb66;*/
     color: #FF4600;
+    padding-left: 24px;
+    background: url('../images/l.png');
+    background-repeat: no-repeat;
 }
-.element_Hovedomraade, .kompetansemaal_detaljer_hovedomraader{
+.element_Hovedomraade a, .kompetansemaal_detaljer_hovedomraader{
     /*color: #bbbb99;*/
     color: #810000;
+    padding-left: 24px;
+    background: url('../images/h.png');
+    background-repeat: no-repeat;
 }
-.element_Kompetansemaalsett, .kompetansemaal_detaljer_kompetansemaalsett {
+.element_Kompetansemaalsett a, .kompetansemaal_detaljer_kompetansemaalsett {
     /*color: #666666;*/
     color: #bb6666;
+    padding-left: 24px;
+    background: url('../images/ks.png');
+    background-repeat: no-repeat;
 }
+.kompetansemaal_detaljer_hovedomraader, .kompetansemaal_detaljer_kompetansemaalsett, .kompetansemaal_detaljer_laereplaner, .kompetansemaal_detaljer_fag {
+    padding-bottom: 5px;
+}
+
 #brodsmulesti
 {
     margin: 1em 0 1em 0;
