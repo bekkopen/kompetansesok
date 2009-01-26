@@ -79,15 +79,16 @@ module Kompetansesok
     
     def slett_alt_i_databasen
       ActiveRecord::Base.transaction do
-        @out.puts('Sletter gamle data...') if @out
+        @out.print("\nSletter gamle data...") if @out
         Laereplan.delete_all
         Hovedomraade.delete_all
         Kompetansemaalsett.delete_all
         Fag.delete_all
         Trinn.delete_all
         Kompetansemaal.delete_all
-        @out.puts('Database commit...') if @out
+        @out.print('Commit...') if @out
       end
+      @out.puts('OK!') if @out
     end
     
     def last_inn_kompetansemaal
@@ -115,12 +116,14 @@ module Kompetansesok
     def last_inn(*typer)
       ActiveRecord::Base.transaction do        
         typer.each do |type|
-          data = @jena.send(type.to_s.pluralize.downcase)
-          @out.puts("Importerer #{data.length} #{type}...") if @out
+          data = @jena.send(type.name.pluralize.downcase)
+          @out.print("Importerer #{data.length} #{type.name.pluralize}...") if @out
           type.send(:create!, data)
+          @out.puts('OK!') if @out
         end
-        @out.puts('Database commit...') if @out
+        @out.print('Commit...') if @out
       end
+      @out.puts('OK!') if @out
     end
     
   end 
