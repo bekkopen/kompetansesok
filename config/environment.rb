@@ -27,26 +27,26 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
+
+  config.gem 'fastercsv',                         :version => '1.4.0'
+  config.gem 'progressbar',                       :version => '0.0.3'
+  config.gem 'chronic',                           :version => '0.2.3'
+  config.gem 'rubyzip',                           :version => '0.9.1',  :lib => 'zip/zipfilesystem'
+  config.gem 'rspec',                             :version => '0.1.12', :lib => 'spec'
+
   if defined?(JRUBY_VERSION)
-    config.gem 'activerecord-jdbc-adapter',   :version => '0.9', :lib => 'jdbc_adapter'
-    config.gem 'atom-tools',                  :version => '2.0.1', :lib => 'atom/tools'
-
-    config.gem 'jdbc-mysql',                      :version => '5.0.4', :lib =>'jdbc/mysql'
-    config.gem 'activerecord-jdbcmysql-adapter',  :version =>'0.9', :lib => 'active_record/connection_adapters/jdbcmysql_adapter'
-
+    config.gem 'activerecord-jdbc-adapter',       :version => '0.9',    :lib => 'jdbc_adapter'
+    config.gem 'jdbc-mysql',                      :version => '5.0.4',  :lib => 'jdbc/mysql'
+    config.gem 'activerecord-jdbcmysql-adapter',  :version => '0.9',    :lib => 'active_record/connection_adapters/jdbcmysql_adapter'
+    config.gem 'atom-tools',                      :version => '2.0.1',  :lib => 'atom/tools'
+    config.gem 'rake',                            :version => '0.8.3'
   else
-    config.gem 'mysql',              :version => '2.7' 
+    config.gem 'mysql',                           :version => '2.7' 
     
     # Brukes kun til test
-    config.gem 'nokogiri',           :version => '1.1.0'
-    config.gem 'cucumber',           :version => '0.1.16'
+    config.gem 'nokogiri',                        :version => '1.1.0'
+    config.gem 'cucumber',                        :version => '0.1.16'
   end
-  config.gem 'fastercsv',            :version => '1.4.0'
-  config.gem 'progressbar',          :version => '0.0.3'
-  config.gem 'chronic',              :version => '0.2.3'
-  
-  config.gem 'rubyzip',              :version => '0.9.1', :lib => 'zip/zipfilesystem'
-
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.

@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Laster opp konfigurasjon for sphinx og oppretter nødvendige mapper for logger og data
+#
+scp config/ultrasphinx/production_debian.conf udiradmin@10.0.100.233:/tmp/sphinx_production_debian.conf
+ssh udiradmin@10.0.100.233 sudo mkdir -p /usr/local/etc /var/log/sphinx
+ssh udiradmin@10.0.100.233 sudo mv /tmp/sphinx_production_debian.conf /usr/local/etc/sphinx.conf

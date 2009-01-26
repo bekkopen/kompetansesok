@@ -1,7 +1,9 @@
 namespace :db do
   # Vi legger til ekstra for å sette opp ultrasphinx
-  task :migrate => 'ultrasphinx:configure'
-  
+  task :migrate do
+    Rake::Task['ultrasphinx:configure'].invoke
+  end
+
   namespace :test do
     # For at specs skal ha tilgjengelig indeksert data må vi gjøre dette her.
     task :prepare do
