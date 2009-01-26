@@ -151,6 +151,7 @@ div.delresultat {
 ul#nav_list {
   list-style-type: none;
   overflow: auto;
+  font-weight: bold;
 }
 
 ul#nav_list li {
