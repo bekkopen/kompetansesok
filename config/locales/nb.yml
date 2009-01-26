@@ -52,3 +52,6 @@ nb:
   feilmelding:
     for_grovt_søk: "Søket du har angitt er for grovt. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
+    
+  tooltips:
+    søkeboks: "Skriv inn tittel, kode eller id"

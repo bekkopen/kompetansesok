@@ -109,6 +109,15 @@
     
     filtrerSeksjoner();
   });
+
+  Ext.onReady(function(){
+    new Ext.ToolTip({
+        target: 'q',
+        html: '<%= t('tooltips.søkeboks') %>'
+    });
+
+    Ext.QuickTips.init();
+  });
   </script>
 
 
