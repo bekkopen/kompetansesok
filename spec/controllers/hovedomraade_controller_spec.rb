@@ -2,14 +2,14 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe HovedomraadeController do
 
-  def mock_hovedomraade(stubs={:kompetansemaal => []})
+  def mock_hovedomraade(stubs={:kompetansemaal => [], :tittel=>"tittel", :uuid=>"uuid"})
     @mock_hovedomraade ||= mock_model(Hovedomraade, stubs)
   end
 
   describe "responding to GET show" do
     before :each do
       Hovedomraade.should_receive(:find_by_uuid).with("uuid-hovedomraade").and_return(mock_hovedomraade)
-      mock_hovedomraade.stub!(:kompetansemaalsett)
+      mock_hovedomraade.stub!(:kompetansemaalsett, {:tittel => "tittel", :uuid => "uuid"})
     end
     
     def do_get(params = {})
@@ -45,7 +45,7 @@ describe HovedomraadeController do
       
       it "should find kompetansemaal filtered by laereplan" do
         kompetansemaal = []
-        laereplan = mock_model(Laereplan)
+        laereplan = mock_model(Laereplan, {:tittel => "tittel", :uuid => "uuid"})
         Laereplan.should_receive(:find_by_uuid).with("uuid-laereplan").and_return(laereplan)
         mock_hovedomraade.should_receive(:kompetansemaal_for_laereplan).with(laereplan).and_return(kompetansemaal)
       

@@ -55,3 +55,8 @@ Saa /^skal filtreringsboksene vise seksjoner:$/ do |table|
     end
   end
 end
+
+Saa /^skal jeg se en side med overskrift "(.*)"$/ do |overskrift|
+  response.body.should have_tag("h1", overskrift)
+end
+
