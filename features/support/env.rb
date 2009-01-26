@@ -6,9 +6,6 @@ end
 # Sets up the Rails environment for Cucumber
 ENV["RAILS_ENV"] = "integration_test"
 require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
-require 'cucumber/rails/world'
-Cucumber::Rails.use_transactional_fixtures
-Cucumber.alias_steps %w{Naar Saa}
 
 require 'webrat'
 Webrat.configure do |config|
@@ -16,6 +13,8 @@ Webrat.configure do |config|
 end
 require 'cucumber/rails/rspec'
 require 'webrat/core/matchers'
+
+Cucumber::Rails.use_transactional_fixtures
 
 module Hjelpefunksjoner
   def encode(streng)

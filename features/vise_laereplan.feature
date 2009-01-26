@@ -46,5 +46,5 @@ Egenskap: Vise laereplan
 
   Scenario: Vise brødsmulesti
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
-    Så jeg skal se Læreplan "Læreplan i fordypning i norsk" i brødsmulestien
+    Så skal jeg se "Læreplan i fordypning i norsk" på plass "1" i brødsmulestien
     
