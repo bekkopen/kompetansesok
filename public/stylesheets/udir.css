@@ -165,6 +165,8 @@ ul#nav_list li a {
 ul#nav_list li a:hover {
   background-color: #999;
   color: #FFF;
+  border-top: 2px solid #333;
+  padding-top: 3px;
 }
 
 
