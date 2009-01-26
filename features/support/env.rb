@@ -8,24 +8,14 @@ ENV["RAILS_ENV"] = "integration_test"
 require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
 require 'cucumber/rails/world'
 Cucumber::Rails.use_transactional_fixtures
+Cucumber.alias_steps %w{Naar Saa}
 
-require 'webrat/rails'
+require 'webrat'
+Webrat.configure do |config|
+  config.mode = :rails
+end
 require 'cucumber/rails/rspec'
-require 'webrat/rspec-rails'
-
-Webrat.configure do |config|
-  config.mode = :rails
-end
-
-module Cucumber::StepMethods
-  alias_method :Gitt, :Given
-  alias_method :Naar, :When
-  alias_method :Saa, :Then
-end
-
-Webrat.configure do |config|
-  config.mode = :rails
-end 
+require 'webrat/core/matchers'
 
 module Hjelpefunksjoner
   def encode(streng)

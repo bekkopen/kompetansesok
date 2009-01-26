@@ -45,7 +45,7 @@ Rails::Initializer.run do |config|
     
     # Brukes kun til test
     config.gem 'nokogiri',                        :version => '1.1.0'
-    config.gem 'cucumber',                        :version => '0.1.16'
+    config.gem 'aslakhellesoy-cucumber',          :version => '0.1.99.9', :lib => 'cucumber'
   end
   
   # Only load the plugins named here, in the order given. By default, all plugins 

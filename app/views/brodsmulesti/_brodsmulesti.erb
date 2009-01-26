@@ -1,6 +1,5 @@
 <% if @brodsmulesti %>
   <div id="brodsmulesti">
-    <%= t('etiketter.du_er_her')%>:
     <%= @brodsmulesti.map do |element|
        "<span class='element_#{element[:klasse]}'><a href='#{element[:url]}'>#{element[:tittel]}</a></span>"
      end.join(" &#187; ") %>
