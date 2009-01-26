@@ -31,15 +31,13 @@ class ApplicationController < ActionController::Base
     @udir_config ||= YAML.load(File.open('config/udir.yml'))
   end
   
-  def lag_kompetansemaalrader(kompetansemaal)
+  def lag_kompetansemaalrader(kompetansemaal, ikke_vis_detaljer_for = [])
     maks_detalj_rader = udir_config['maks_detalj_rader'] 
     
     if kompetansemaal.length > maks_detalj_rader
       flash[:notice] = t('feilmelding.for_grovt_søk')
     end
-    sorted_rows(kompetansemaal, maks_detalj_rader)
-  end
-
-  
+    sorted_rows(kompetansemaal, ikke_vis_detaljer_for, maks_detalj_rader)
+  end  
   
 end

@@ -14,7 +14,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     before(:each) do
       @stubs = {
         :tittel => 'tittel',
-        :laereplaner => [Laereplan.new(:tittel => "en"), Laereplan.new(:tittel => "to")],
+        :laereplaner => [Laereplan.new(:tittel => "plan1"), Laereplan.new(:tittel => "plan2")],
         :hovedomraader => [Hovedomraade.new(:tittel => "h1"), Hovedomraade.new(:tittel => "h2")],
         :kompetansemaalsett => [Kompetansemaalsett.new(:tittel => "k1"), Kompetansemaalsett.new(:tittel => 'k2')],
         :fag => [Fag.new(:tittel => "f1"), Fag.new(:tittel => 'f2')]
@@ -25,7 +25,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should return correct leareplan string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "en, to"
+      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "plan1, plan2"
     end
 
     it "should return correct hovedomraade string" do
@@ -41,14 +41,14 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should produce correct html string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelen, toh1, h2k1, k2f1, f2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelplan1, plan2h1, h2k1, k2f1, f2"
     end
 
     it "should produce correct html string, if no fag is present" do
       @stubs[:fag] = []
       @kompetansemaal = (mock("kompetansemaal",  @stubs))
       @kompetansemaal_celle_framviser = MyView.new 
-      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelen, toh1, h2k1, k2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelplan1, plan2h1, h2k1, k2"
     end
 
     it "should produce correct styling around the elements" do
@@ -61,37 +61,59 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
   describe "generating rows" do
     before :each do
       @kompetansemaal_celle_framviser = MyView.new
-      @maal = Kompetansemaal.new(:uuid => 'uuid', :tittel => 'tittel', :kode => 'kode')
+      @kompetansemaal = [Kompetansemaal.new(:uuid => 'uuid', :tittel => 'tittel', :kode => 'kode')]
     end    
     
     it "should have kompetansemaal.uuid at index 0" do
-      kompetansemaal = [@maal]
-      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[0].should == 'uuid'
+      @kompetansemaal_celle_framviser.send(:generate_unsorted_rows, @kompetansemaal).first[0].should == 'uuid'
     end
     
     it "should have kompetansemaal.kode at index 1" do
-      kompetansemaal = [@maal]
-      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[1].should == 'kode'
+      @kompetansemaal_celle_framviser.send(:generate_unsorted_rows, @kompetansemaal).first[1].should == 'kode'
     end
     
     it "should have kompetansemaal.tittel at index 2" do
-      kompetansemaal = [@maal]
-      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[2].should == 'tittel'
+      @kompetansemaal_celle_framviser.send(:generate_unsorted_rows, @kompetansemaal).first[2].should == 'tittel'
     end
-    
-    it "should have details at index 3" do
-      kompetansemaal = [@maal]
-      @kompetansemaal_celle_framviser.should_receive(:to_detail_html).and_return("details")
-      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal).first[3].should == 'details'
-    end
-    
+        
     it "should not have kompetansemaal.tittel (capitalized) at index 2 if the number of kompetansemaal is higher than a config treshold" do
-      kompetansemaal = [@maal]
       max_treshold = 0
       @kompetansemaal_celle_framviser.should_not_receive(:to_detail_html)
-      @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, max_treshold).first[3].should == "Tittel"
+      @kompetansemaal_celle_framviser.send(:generate_unsorted_rows, @kompetansemaal, [], max_treshold).first[3].should == "Tittel"
     end
     
+    
+    describe "details" do
+      it "should be at index 3" do
+        @kompetansemaal_celle_framviser.should_receive(:to_detail_html).and_return("details")
+        @kompetansemaal_celle_framviser.send(:generate_unsorted_rows, @kompetansemaal).first[3].should == 'details'
+      end
+      
+      it "should not include laereplaner if it is told to skip it" do
+        skip_details_for = [:laereplaner]
+        @kompetansemaal_celle_framviser.should_not_receive(:laereplaner)
+        @kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal.first, skip_details_for)
+      end
+      
+      it "should not include hovedomraader if it is told to skip it" do
+        skip_details_for = [:hovedomraader]
+        @kompetansemaal_celle_framviser.should_not_receive(:hovedomraader)
+        @kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal.first, skip_details_for)
+      end
+      
+      it "should not include fag if it is told to skip it" do
+        skip_details_for = [:fag]
+        @kompetansemaal_celle_framviser.should_not_receive(:fag)
+        @kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal.first, skip_details_for)
+      end
+      
+      it "should not include kompetansemaalsett if it is told to skip it" do
+        skip_details_for = [:kompetansemaalsett]
+        @kompetansemaal_celle_framviser.should_not_receive(:kompetansemaalsett)
+        @kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal.first, skip_details_for)
+      end
+      
+    end
     
   end
   
@@ -199,7 +221,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
       maal_2 = Kompetansemaal.new(:tittel => 'maal b')
     
       kompetansemaal = [maal_2, maal_1]
-      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, max_detailed_rows)
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, [], max_detailed_rows)
       
       sorted[0][2].should == 'maal a'
       sorted[1][2].should == 'maal b'

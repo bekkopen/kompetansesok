@@ -1,16 +1,21 @@
 module Kompetansesok
   module KompetansemaalCelleFramviser
     
-    def sorted_rows(kompetansemaal, max_treshold = 30)
-      unsorted = generate_unsorted_rows(kompetansemaal, max_treshold) 
+    def sorted_rows(kompetansemaal, skip_details_for = [], max_treshold = 30)
+      unsorted = generate_unsorted_rows(kompetansemaal, plural_classnames_as_symbols(skip_details_for), max_treshold) 
       sort_rows(unsorted)
     end
 
     
     private    
     
-    def to_detail_html(kompetansemaal)
-      [kompetansemaal.tittel.capitalize, laereplaner(kompetansemaal), hovedomraader(kompetansemaal), kompetansemaalsett(kompetansemaal), fag(kompetansemaal)].compact.join("<br/>")
+    def to_detail_html(kompetansemaal, skip_details_for = [])
+      [kompetansemaal.tittel.capitalize, 
+        skip_details_for.include?(:laereplaner) ? nil : laereplaner(kompetansemaal), 
+        skip_details_for.include?(:hovedomraader) ? nil : hovedomraader(kompetansemaal), 
+        skip_details_for.include?(:kompetansemaalsett) ? nil : kompetansemaalsett(kompetansemaal), 
+        skip_details_for.include?(:fag) ? nil : fag(kompetansemaal)
+      ].compact.join("<br/>")
     end
 
     def laereplaner(kompetansemaal)
@@ -41,7 +46,7 @@ module Kompetansesok
       end
     end
     
-    def generate_unsorted_rows(kompetansemaal, max_treshold)
+    def generate_unsorted_rows(kompetansemaal, skip_details_for = [], max_treshold = 30)
       if kompetansemaal.length < max_treshold
         kompetansemaal.map do |maal|
           possible_sort_by = {:laereplan => laereplaner(maal), 
@@ -49,7 +54,7 @@ module Kompetansesok
             :kompetansemaalsett => kompetansemaalsett(maal),
             :fag => fag(maal),
             :kompetansemaal => maal.tittel }
-          [maal.uuid, maal.kode, maal.tittel, to_detail_html(maal), possible_sort_by]
+          [maal.uuid, maal.kode, maal.tittel, to_detail_html(maal, skip_details_for), possible_sort_by]
         end
       else
         kompetansemaal.map do |maal|
@@ -63,10 +68,16 @@ module Kompetansesok
       sort_last = 'åååååå'
       rows.sort_by do |row|
         [row.last[:laereplan] || sort_last,
-         row.last[:hovedomraade] || sort_last,
-         row.last[:kompetansemaalsett] || sort_last,
-         row.last[:fag] || sort_last,
-         row.last[:kompetansemaal] || sort_last ]
+          row.last[:hovedomraade] || sort_last,
+          row.last[:kompetansemaalsett] || sort_last,
+          row.last[:fag] || sort_last,
+          row.last[:kompetansemaal] || sort_last ]
+      end
+    end
+    
+    def plural_classnames_as_symbols(klasses)
+      klasses.map do |klass|
+        klass.class.to_s.downcase.pluralize.to_sym
       end
     end
     
