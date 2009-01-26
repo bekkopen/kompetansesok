@@ -97,7 +97,7 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 -------------------------------------------------------------- */
 
 ul          { list-style-type: none; }
-li          { padding: 0em 0em 0em 1em; }
+/*li          { padding: 0em 0em 0em 1em; }*/
 ol          { list-style-type: decimal; }
 
 dl          { margin: 10px 0; }
@@ -126,14 +126,13 @@ div#container {
 
 div#branding_bar {
 	height: 40px;
-	background: #F47936 url(/images/searchBackground.gif) no-repeat fixed top right;
+	background: #F47936 url(../images/searchBackground.gif) no-repeat fixed top right;
 }
 
 div#nav_container {
 	background-color: #DFDFDF;
 	margin: 10px 0px;
 	text-align: right;
-	padding: 5px 0px;
 }
 
 div#spraak {
@@ -149,20 +148,42 @@ div.delresultat {
   padding: 1em 0em
 }
 
-ul#nav_list li, ul#spraak_liste li {
+ul#nav_list {
+  list-style-type: none;
+  overflow: auto;
+}
+
+ul#nav_list li {
+  float: right;
+}
+
+ul#nav_list li a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+ul#nav_list li a:hover {
+  background-color: #999;
+  color: #FFF;
+}
+
+
+
+/*ul#nav_list li, ul#spraak_liste li {
 	display: inline;
 	list-style-type: none;
 	padding-right: 20px;
 }
 
-ul#nav_list li a {
+/*ul#nav_list li a {
 	text-decoration: none;
 	color: #666;
+	padding: 20px;
 }
 
 ul#nav_list li a:hover {
 	text-decoration: underline;
-}
+}*/
 
 select {
   width: 30em;

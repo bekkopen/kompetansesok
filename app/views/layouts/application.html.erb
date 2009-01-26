@@ -25,9 +25,9 @@
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-  		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
-          <li><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
 		  <li><%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %></li>
+		  <li><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
+  		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
   		</ul>
 	  </div>
 	  <% if flash[:notice] %>
