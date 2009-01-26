@@ -267,31 +267,3 @@ ul.linke-liste
 .x-panel-header {
   display:none;
 }
-
-.x-panel-body {
-  background:white none repeat scroll 0 0;
-  border: none;
-  border-width:0 1px 1px;
-  position:relative;
-}
-
-.x-grid3-row-alt {
-  background-color: #FAFAFA;
-}
-.x-grid3-row {
-  border-color: #FFFFFF #EDEDED #EDEDED;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-}
-
-.x-grid3-scroller {
-  overflow:auto;
-  position:relative;
-}
-
-.x-grid3-row td, .x-grid3-summary-row td {
-  line-height:13px;
-}
-
-
