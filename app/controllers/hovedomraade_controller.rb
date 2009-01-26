@@ -16,7 +16,7 @@ class HovedomraadeController < ApplicationController
     end
 
     @brodsmulesti = lag_brodsmuler(brodsmule_elementer.compact)
-    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, :kompetansemaalsett)
+    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, brodsmule_elementer)
   end
 
 end

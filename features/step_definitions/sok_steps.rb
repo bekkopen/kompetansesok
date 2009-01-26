@@ -1,3 +1,4 @@
+
 Naar /^jeg søker etter "(.*)"$/ do |sok|
   fill_in 'Søk', :with => sok
   click_button 'Søk' 
