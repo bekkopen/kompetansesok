@@ -104,12 +104,12 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
     
     it "should be sorted by laereplan first" do
-      l_1 = Laereplan.new(:tittel => 'laereplan a')
-      l_2 = Laereplan.new(:tittel => 'laereplan b')
-      h_1 = Hovedomraade.new(:tittel => 'hovedomraade', :laereplaner => [l_1])
-      h_2 = Hovedomraade.new(:tittel => 'hovedomraade', :laereplaner => [l_2])
-      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [h_1])
-      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [h_2])
+      plan_1 = Laereplan.new(:tittel => 'laereplan a')
+      plan_2 = Laereplan.new(:tittel => 'laereplan b')
+      hoved_1 = Hovedomraade.new(:tittel => 'hovedomraade', :laereplaner => [plan_1])
+      hoved_2 = Hovedomraade.new(:tittel => 'hovedomraade', :laereplaner => [plan_2])
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [hoved_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [hoved_2])
     
       kompetansemaal = [maal_2, maal_1]
       sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
@@ -118,76 +118,92 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
       sorted[1][2].should == 'maal a'
     end
     
-#    it "should be sorted by hovedomraade second" do
-#      l_1 = Laereplan.new(:tittel => 'laereplan a')
-#      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a', :laereplaner => [l_1])
-#      h_2 = Hovedomraade.new(:tittel => 'hovedomraade b', :laereplaner => [l_1])
-#      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [h_1])
-#      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [h_2])
-#    
-#      kompetansemaal = [maal_2, maal_1]
-#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
-#      
-#      sorted[0][2].should == 'maal x'
-#      sorted[1][2].should == 'maal a'
-#    end
-    
-    
-    
-    
-    
-    
-    
-    
-    
-#    it "should be sorted by tittel by default" do
-#      maal_1 = Kompetansemaal.new(:tittel => 'maal_1')
-#      maal_2 = Kompetansemaal.new(:tittel => 'maal_2')
-#      kompetansemaal = [maal_2, maal_1]
-#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
-#      
-#      sorted.first[2].should == 'maal_1'
-#      sorted.last[2].should == 'maal_2'
-#    end
-#    
-#    it "should be sorted first by first given sort field" do
-#      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
-#      h_2 = Hovedomraade.new(:tittel => 'hovedomraade b')
-#      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
-#      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_2])
-#    
-#      kompetansemaal = [maal_2, maal_1]
-#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
-#      
-#      sorted[0][2].should == 'maal_1'
-#      sorted[1][2].should == 'maal_2'
-#    end
-#    
-#    it "should be sorted by tittel if the first sort_field is equal" do
-#      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
-#      maal_1 = Kompetansemaal.new(:tittel => 'maal_1', :hovedomraader => [h_1])
-#      maal_2 = Kompetansemaal.new(:tittel => 'maal_2', :hovedomraader => [h_1])
-#    
-#      kompetansemaal = [maal_2, maal_1]
-#      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, :hovedomraade)
-#      
-#      sorted[0][2].should == 'maal_1'
-#      sorted[1][2].should == 'maal_2'
-#    end 
-    
-    it "should have nil values sorted last " do
-      pending "lage sorteringen først"
-      h_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
-      maal_1 = Kompetansemaal.new(:uuid => 'uuid_1', :tittel => 'maal', :hovedomraader => [h_1])
-      maal_2 = Kompetansemaal.new(:uuid => 'uuid_2',:tittel => 'maal_2')
+    it "should be sorted by hovedomraade second" do
+      plan_1 = Laereplan.new(:tittel => 'laereplan a')
+      hoved_1 = Hovedomraade.new(:tittel => 'hovedomraade a', :laereplaner => [plan_1])
+      hoved_2 = Hovedomraade.new(:tittel => 'hovedomraade b', :laereplaner => [plan_1])
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [hoved_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [hoved_2])
     
       kompetansemaal = [maal_2, maal_1]
       sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
       
-      sorted[0][0].should == 'uuid_1'
-      sorted[1][0].should == 'uuid_2'
+      sorted[0][2].should == 'maal x'
+      sorted[1][2].should == 'maal a'
     end
     
+    it "should be sorted by kompetansemaalsett third" do
+      plan_1 = Laereplan.new(:tittel => 'laereplan a')
+      hoved_1 = Hovedomraade.new(:tittel => 'hovedomraade a', :laereplaner => [plan_1])
+      sett_1 = Kompetansemaalsett.new(:tittel => 'sett a')
+      sett_2 = Kompetansemaalsett.new(:tittel => 'sett b')
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [hoved_1], :kompetansemaalsett => [sett_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [hoved_1], :kompetansemaalsett => [sett_2])
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+      
+      sorted[0][2].should == 'maal x'
+      sorted[1][2].should == 'maal a'
+    end
+    
+    it "should be sorted by fag fourth" do
+      plan_1 = Laereplan.new(:tittel => 'laereplan a')
+      hoved_1 = Hovedomraade.new(:tittel => 'hovedomraade a', :laereplaner => [plan_1])
+      fag_1 = Fag.new(:tittel => 'fag a')
+      fag_2 = Fag.new(:tittel => 'fag b')
+      sett_1 = Kompetansemaalsett.new(:tittel => 'sett', :fag => [fag_1])
+      sett_2 = Kompetansemaalsett.new(:tittel => 'sett', :fag => [fag_2])
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [hoved_1], :kompetansemaalsett => [sett_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [hoved_1], :kompetansemaalsett => [sett_2])
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+      
+      sorted[0][2].should == 'maal x'
+      sorted[1][2].should == 'maal a'
+    end
+    
+    it "should be sorted by kompetansemaal finally" do
+      plan_1 = Laereplan.new(:tittel => 'laereplan a')
+      hoved_1 = Hovedomraade.new(:tittel => 'hovedomraade a', :laereplaner => [plan_1])
+      fag_1 = Fag.new(:tittel => 'fag a')
+      sett_1 = Kompetansemaalsett.new(:tittel => 'sett', :fag => [fag_1])
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [hoved_1], :kompetansemaalsett => [sett_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a', :hovedomraader => [hoved_1], :kompetansemaalsett => [sett_1])
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+      
+      sorted[0][2].should == 'maal a'
+      sorted[1][2].should == 'maal x'
+    end
+    
+    
+    it "should have nil values sorted last " do
+      hoved_1 = Hovedomraade.new(:tittel => 'hovedomraade a')
+      maal_1 = Kompetansemaal.new(:tittel => 'maal x', :hovedomraader => [hoved_1])
+      maal_2 = Kompetansemaal.new(:tittel => 'maal a')
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal)
+      
+      sorted[0][2].should == 'maal x'
+      sorted[1][2].should == 'maal a'
+    end
+    
+    it "should sort by kompetansemaal if the number of rows is higher than a maximum number of rows" do
+      max_detailed_rows = 1
+      
+      maal_1 = Kompetansemaal.new(:tittel => 'maal a')
+      maal_2 = Kompetansemaal.new(:tittel => 'maal b')
+    
+      kompetansemaal = [maal_2, maal_1]
+      sorted = @kompetansemaal_celle_framviser.sorted_rows(kompetansemaal, max_detailed_rows)
+      
+      sorted[0][2].should == 'maal a'
+      sorted[1][2].should == 'maal b'
+    end
   end
 
 

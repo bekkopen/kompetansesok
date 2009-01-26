@@ -47,12 +47,14 @@ module Kompetansesok
           possible_sort_by = {:laereplan => laereplaner(maal), 
             :hovedomraade => hovedomraader(maal), 
             :kompetansemaalsett => kompetansemaalsett(maal),
-            :fag => fag(maal) }
+            :fag => fag(maal),
+            :kompetansemaal => maal.tittel }
           [maal.uuid, maal.kode, maal.tittel, to_detail_html(maal), possible_sort_by]
         end
       else
         kompetansemaal.map do |maal|
-          [maal.uuid, maal.kode, maal.tittel, maal.tittel.capitalize, {}]
+          possible_sort_by = {:kompetansemaal => maal.tittel}
+          [maal.uuid, maal.kode, maal.tittel, maal.tittel.capitalize, possible_sort_by]
         end
       end
     end
@@ -60,11 +62,11 @@ module Kompetansesok
     def sort_rows(rows)
       sort_last = 'åååååå'
       rows.sort_by do |row|
-#        if sort_on == :tittel
-#          row[2]
-#        else
-          [row.last[:laereplan] || sort_last]
-#        end
+        [row.last[:laereplan] || sort_last,
+         row.last[:hovedomraade] || sort_last,
+         row.last[:kompetansemaalsett] || sort_last,
+         row.last[:fag] || sort_last,
+         row.last[:kompetansemaal] || sort_last ]
       end
     end
     
