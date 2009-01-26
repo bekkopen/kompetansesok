@@ -1,9 +1,9 @@
 module Kompetansesok
   module KompetansemaalCelleFramviser
     
-    def sorted_rows(kompetansemaal, sort_on = :tittel, max_treshold = 30)
+    def sorted_rows(kompetansemaal, max_treshold = 30)
       unsorted = generate_unsorted_rows(kompetansemaal, max_treshold) 
-      sort_rows(unsorted, sort_on)
+      sort_rows(unsorted)
     end
 
     
@@ -37,7 +37,7 @@ module Kompetansesok
       if alle_attr.empty?
         nil
       else
-        "<span class='kompetansemaal_detaljer'><a href='#'><span class='kompetansemaal_detaljer_#{attribute}'>#{alle_attr}</span></a></span>"
+        "<span class='kompetansemaal_detaljer'><span class='kompetansemaal_detaljer_#{attribute}'>#{alle_attr}</span></span>"
       end
     end
     
@@ -47,24 +47,26 @@ module Kompetansesok
           possible_sort_by = {:laereplan => laereplaner(maal), 
             :hovedomraade => hovedomraader(maal), 
             :kompetansemaalsett => kompetansemaalsett(maal),
-            :fag => fag(maal) }
+            :fag => fag(maal),
+            :kompetansemaal => maal.tittel }
           [maal.uuid, maal.kode, maal.tittel, to_detail_html(maal), possible_sort_by]
         end
       else
         kompetansemaal.map do |maal|
-          [maal.uuid, maal.kode, maal.tittel, maal.tittel.capitalize, {}]
+          possible_sort_by = {:kompetansemaal => maal.tittel}
+          [maal.uuid, maal.kode, maal.tittel, maal.tittel.capitalize, possible_sort_by]
         end
       end
     end
     
-    def sort_rows(rows, sort_on)
+    def sort_rows(rows)
       sort_last = 'åååååå'
       rows.sort_by do |row|
-        if sort_on == :tittel
-          row[2]
-        else
-          [row.last[sort_on] || sort_last, row[2] || sort_last]
-        end
+        [row.last[:laereplan] || sort_last,
+         row.last[:hovedomraade] || sort_last,
+         row.last[:kompetansemaalsett] || sort_last,
+         row.last[:fag] || sort_last,
+         row.last[:kompetansemaal] || sort_last ]
       end
     end
     

@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
-describe DbDumpsController do
+describe DbDumpController do
   before(:each) do
     @tmp_db_dumps_dir = "tmp/db_dumps_test"
     if not File.exist?(@tmp_db_dumps_dir)
