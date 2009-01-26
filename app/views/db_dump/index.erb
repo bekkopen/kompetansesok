@@ -1,0 +1,21 @@
+<h1><%=  t('overskrifter.database_eksport') %></h1>
+
+<p>
+  <%= t('tekst.database_eksport') %>
+</p>
+
+<p>
+  <% if not @db_dumps.empty?  %>
+    <ul id="db_liste">
+
+      <% @db_dumps.each do |file, path| %>
+        <li><a href="<%=  path %>"><%= file %></a></li>
+      <% end %>
+
+    </ul>
+  <%  else %>
+    <div id="ingen_db_dump">
+      <%= t('feilmelding.ingen_db_dump') %>
+    </div>
+  <% end %>
+</p>
