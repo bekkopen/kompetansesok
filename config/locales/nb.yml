@@ -52,3 +52,4 @@ nb:
 
   feilmelding:
     for_grovt_søk: "Søke du har angitt er for grovt. Detaljer for Kompetansemål vises derfor ikke."
+    ingen_db_dump: "Det er ikke opprettet databasedumps enda."

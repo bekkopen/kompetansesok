@@ -95,6 +95,12 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
     margin: 1em 0 1em 0;
 }
 
+#ingen_db_dump {
+    text-size: 1.1em;
+    color: red;
+    font-weight: bold;
+}
+
 /* Lists
 -------------------------------------------------------------- */
 

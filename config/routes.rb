@@ -17,7 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   end
  
   map.resources :info
-  map.resources :db_dumps, :only => :index
+  map.resources :db_dump, :only => :index
   
 
   # The priority is based upon order of creation: first created -> highest priority.
