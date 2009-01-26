@@ -74,6 +74,10 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
     /*color: #666666;*/
     color: #bb6666;
 }
+#brodsmulesti
+{
+    margin: 1em 0 1em 0;
+}
 
 /* Lists
 -------------------------------------------------------------- */
