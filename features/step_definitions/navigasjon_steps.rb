@@ -57,7 +57,7 @@ Så /^skal filtreringsboksene vise seksjoner:$/ do |table|
 end
 
 Så /^(?:skal jeg|jeg skal) se "(.+)" på plass "(\d+)" i brødsmulestien$/ do |tekst, plass|
-  response.should have_selector("#brodsmulesti > span:nth-child(#{plass})") do |smule|
+  response.should have_selector("#brodsmulesti > li:nth-child(#{plass})") do |smule|
     smule.should contain(tekst)
   end
 end

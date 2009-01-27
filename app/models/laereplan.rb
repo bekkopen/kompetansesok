@@ -17,11 +17,14 @@ class Laereplan < ActiveRecord::Base
     alle = gjennom_maalsett + gjennom_hovedomraade
     alle.flatten.uniq
   end
-  
+
+  def ikon_tekst
+    'LP'
+  end
+
   def to_param
     uuid
-  end
-  
+  end  
   
   private
   
