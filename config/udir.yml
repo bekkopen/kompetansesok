@@ -1,6 +1,7 @@
-#udir konfigurasion for kompetansesok
+# Konfigurasjon av applikasjon
 db_dumps:
-  path: "public/db_dumps"
+  # Det som kommer etter public
+  path: "db_dumps"
 
 maks_detalj_rader: 50
 

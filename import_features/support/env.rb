@@ -5,9 +5,3 @@ require 'cucumber/rails/world'
 Cucumber::Rails.use_transactional_fixtures
 
 require 'cucumber/rails/rspec'
-
-module Cucumber::StepMethods
-  alias_method :Gitt, :Given
-  alias_method :Naar, :When
-  alias_method :Saa, :Then
-end

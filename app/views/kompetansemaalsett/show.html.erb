@@ -1,6 +1,3 @@
-
-<h1 class="tittel"><%=h @kompetansemaalsett.tittel %></h1>
-
 <div id='sidetopp'>
   
   <div id='topp_venstre'>
@@ -16,15 +13,11 @@
 
 <hr/>
 
-<div id='resultater'>
-
-  <%= render :partial => "brodsmulesti/brodsmulesti" %>
-  
+<div id='resultater'>  
   <div id="kompetansemaal_treff">
     <h3><%= t('overskrifter.kompetansemål') %></h3>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
   </div>
-  
 </div>
 
 <p/>

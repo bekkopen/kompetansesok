@@ -1,52 +1,46 @@
-<h1><%= t('overskrifter.søk_etter_kompetansemål') %></h1>
-<div id="sidetopp">
-  <div id="topp_venstre">
-    <% form_tag(root_path, :method => :get) do %>
-      <p>
-        <label for="q"><%= t('etiketter.søk') %></label>
-        <input name="q" id="q" size="30" type="text" value="<%= params[:q] %>"/>
-        <input type="submit" value="<%= t('knapper.søk') %>" />
-      </p>
-    
-      <p>
-        <h4><%= t('overskrifter.søk_i') %></h4>
-        <input name="filter_kompetansemaal" type="checkbox" value="true" id="filter_kompetansemaal" <%= 'checked="checked"' if session['filter_kompetansemaal'] == "true" %> />
-               <input name="filter_kompetansemaal" type="hidden" value="false" />
-        <label for="filter_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
-        <br />
-        <input name="filter_laereplaner" type="checkbox" value="true" id="filter_laereplaner" <%= 'checked="checked"' if session['filter_laereplaner'] == "true" %>/>
-               <input name="filter_laereplaner" type="hidden" value="false" />
-        <label for="filter_laereplaner"><%= t('etiketter.læreplaner') %></label>
-        <br />
-        <input name="filter_hovedomraader" type="checkbox" value="true" id="filter_hovedomraader" <%= 'checked="checked"' if session['filter_hovedomraader'] == "true" %>/>
-               <input name="filter_hovedomraader" type="hidden" value="false" />
-        <label for="filter_hovedomraader"><%= t('etiketter.hovedområder') %></label>
-        <br />
-        <input name="filter_kompetansemaalsett" type="checkbox" value="true" id="filter_kompetansemaalsett" <%= 'checked="checked"' if session['filter_kompetansemaalsett'] == "true" %>/>
-               <input name="filter_kompetansemaalsett" type="hidden" value="false" />
-        <label for="filter_kompetansemaalsett"><%= t('etiketter.kompetansemålsett') %></label>
-        <br />
-        <input name="filter_fag" type="checkbox" value="true" id="filter_fag" <%= 'checked="checked"' if session['filter_fag'] == "true" %>/>
-               <input name="filter_fag" type="hidden" value="false" />
-        <label for="filter_fag"><%= t('etiketter.fag') %></label>
-      </p>
-    <% end %>
-  </div>
-
-  <div id="valgte_kompetansemaal">	
-    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-  </div>
-
+<div id="sok_input">
+  <% form_tag(root_path, :method => :get) do %>
+    <input name="q" id="q" size="30" type="text" value="<%= params[:q] %>"/>
+    <input type="submit" value="<%= t('knapper.søk') %>" />
+    <ul id="sok_filtere">
+<li>
+      	<input name="filter_kompetansemaal" type="checkbox" value="true" id="filter_kompetansemaal" <%= 'checked="checked"' if session['filter_kompetansemaal'] == "true" %> />
+      	<input name="filter_kompetansemaal" type="hidden" value="false" />
+      	<label for="filter_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
+</li>
+<li>
+      	<input name="filter_laereplaner" type="checkbox" value="true" id="filter_laereplaner" <%= 'checked="checked"' if session['filter_laereplaner'] == "true" %>/>
+      	<input name="filter_laereplaner" type="hidden" value="false" />
+      	<label for="filter_laereplaner"><%= t('etiketter.læreplaner') %></label>
+      </li>
+<li>
+      	<input name="filter_hovedomraader" type="checkbox" value="true" id="filter_hovedomraader" <%= 'checked="checked"' if session['filter_hovedomraader'] == "true" %>/>
+          <input name="filter_hovedomraader" type="hidden" value="false" />
+      	<label for="filter_hovedomraader"><%= t('etiketter.hovedområder') %></label>
+      </li>
+<li>
+      	<input name="filter_kompetansemaalsett" type="checkbox" value="true" id="filter_kompetansemaalsett" <%= 'checked="checked"' if session['filter_kompetansemaalsett'] == "true" %>/>
+      	<input name="filter_kompetansemaalsett" type="hidden" value="false" />
+      	<label for="filter_kompetansemaalsett"><%= t('etiketter.kompetansemålsett') %></label>
+      </li>
+<li>
+      	<input name="filter_fag" type="checkbox" value="true" id="filter_fag" <%= 'checked="checked"' if session['filter_fag'] == "true" %>/>
+      	<input name="filter_fag" type="hidden" value="false" />
+      	<label for="filter_fag"><%= t('etiketter.fag') %></label>
+</li>
+ </ul>
+  <% end %>
 </div>
 <hr/>
-<div id='resultater'>
-   
-  <div id="kompetansemaal_treff">
-    <h3><%= t('overskrifter.kompetansemål') %></h3>
-    <%=  render :partial => "kompetansemaal/simple_grid" %>
-  </div>
-  
-  
+<div id="valgte_kompetansemaal">	
+  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+</div>
+<hr/>
+<div id='resultater'>   
+<div id="kompetansemaal_treff">
+ <h3><%= t('overskrifter.kompetansemål') %></h3>
+ <%=  render :partial => "kompetansemaal/simple_grid" %>
+</div>
   <div id='laereplaner_treff' class='delresultat'>
     <h3><%= t('overskrifter.læreplaner') %></h3>
     <ul>
@@ -55,7 +49,6 @@
       <% end %>
     </ul>
   </div>
-  
   <div id='hovedomraader_treff' class='delresultat'>
     <h3><%= t('overskrifter.hovedområder') %></h3>
     <ul>
@@ -64,7 +57,6 @@
       <% end %>
     </ul>
   </div>
-  
   <div id='kompetansemaalsett_treff' class='delresultat'>
     <h3><%= t('overskrifter.kompetansemålsett') %></h3>
     <ul>
@@ -73,7 +65,6 @@
       <% end %>
     </ul>
   </div>
-  
   <div id='fag_treff' class='delresultat'>
     <h3><%= t('overskrifter.fag') %></h3>
     <ul>
@@ -82,7 +73,6 @@
       <% end %>
     </ul>
   </div>
-  
 </div>
 
 <script type="text/javascript">
@@ -109,6 +99,13 @@
     
     filtrerSeksjoner();
   });
-  </script>
 
+  Ext.onReady(function(){
+    new Ext.ToolTip({
+        target: 'q',
+        html: '<%= t('tooltips.søkeboks') %>'
+    });
 
+    Ext.QuickTips.init();
+  });
+</script>

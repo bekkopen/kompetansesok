@@ -27,12 +27,8 @@ class ApplicationController < ActionController::Base
     Time.now.strftime("%Y%m%d%H%M")
   end
 
-  def udir_config
-    @udir_config ||= YAML.load(File.open('config/udir.yml'))
-  end
-  
   def lag_kompetansemaalrader(kompetansemaal, ikke_vis_detaljer_for = [])
-    maks_detalj_rader = udir_config['maks_detalj_rader'] 
+    maks_detalj_rader = Udir::CONFIG['maks_detalj_rader'] 
     
     if kompetansemaal.length > maks_detalj_rader && params[:filter_kompetansemaal] == 'true'
       flash[:notice] = t('feilmelding.for_grovt_søk')

@@ -3,12 +3,9 @@ Egenskap: Vise kompetansemaalsett for en læreplan
   Må lærere, bibliotekarer og forleggere
   Kunne se kompetansemålene som hører til et kompetansemaalsett filtrert på læreplan
 
-  Scenario: Gå til kompetansemålsett
+  Scenario: Vise kompetansemål
     Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
     Når jeg velger kompetansemaalsett "Etter 10. årstrinn"
-
-  Scenario: Vise kompetansemål
-    GittScenario: Gå til kompetansemålsett
     Så skal jeg få kompetansemaalsett "uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96" nøstet under laereplan "uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd"
     Og skal jeg få opp følgende treff i kompetansemål:
       | Tittel starter med                                                                                                      |
@@ -31,6 +28,7 @@ Egenskap: Vise kompetansemaalsett for en læreplan
       | dokumentere og vurdere egen utvikling i arbeid med tekster                                                              |
 
   Scenario: Vise brødsmulesti
-    GittScenario: Gå til kompetansemålsett
-    Så jeg skal se Læreplan "Læreplan i fordypning i norsk" i brødsmulestien
-    Så jeg skal se Kompetansemaalsett "Etter 10. årstrinn" i brødsmulestien
+    Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
+    Når jeg velger kompetansemaalsett "Etter 10. årstrinn"
+    Så skal jeg se "Læreplan i fordypning i norsk" på plass "1" i brødsmulestien
+    Så skal jeg se "Etter 10. årstrinn" på plass "2" i brødsmulestien
