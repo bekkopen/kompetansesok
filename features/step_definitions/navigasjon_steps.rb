@@ -31,7 +31,7 @@ end
 Gitt /^jeg har markert følgende:$/ do |table|
   table.hashes.each do |config|
     config.each do |checkbox, value|
-      box = "filter_#{checkbox}"
+      box = "vis_#{checkbox}"
       if value == 'true'
         check box
       else
@@ -44,7 +44,7 @@ end
 Så /^skal filtreringsboksene vise seksjoner:$/ do |table|
   table.hashes.each do |config|
     config.each do |checkbox, value|
-      response.should have_selector("#filter_#{checkbox}") { |box|
+      response.should have_selector("#vis_#{checkbox}") { |box|
         if value == 'true'
           raise "Checkbox #{checkbox} should be checked" if box.attr('checked') != 'checked'
         else
@@ -57,7 +57,7 @@ Så /^skal filtreringsboksene vise seksjoner:$/ do |table|
 end
 
 Så /^(?:skal jeg|jeg skal) se "(.+)" på plass "(\d+)" i brødsmulestien$/ do |tekst, plass|
-  response.should have_selector("#brodsmulesti > span:nth-child(#{plass})") do |smule|
+  response.should have_selector("#brodsmulesti > li:nth-child(#{plass})") do |smule|
     smule.should contain(tekst)
   end
 end

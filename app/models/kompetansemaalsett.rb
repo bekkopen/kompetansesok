@@ -1,5 +1,5 @@
 class Kompetansemaalsett < ActiveRecord::Base
-  is_indexed :fields => ['tittel', 'uuid']
+  is_indexed :fields => ['tittel', 'uuid', 'kode']
   
   has_and_belongs_to_many :laereplaner
   has_and_belongs_to_many :kompetansemaal
@@ -11,7 +11,11 @@ class Kompetansemaalsett < ActiveRecord::Base
   attr_accessor_with_default :kompetansemaal_uuids, []
   attr_accessor_with_default :fag_uuids, []
   after_create :koble_kompetansemaal, :koble_trinn, :koble_fag
-  
+
+  def ikon_tekst
+    'KS'
+  end
+
   def to_param
     uuid
   end

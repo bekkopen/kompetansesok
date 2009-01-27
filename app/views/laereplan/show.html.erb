@@ -1,28 +1,15 @@
 <div id='sidetopp'>
-  
-  <div id='topp_venstre'>
-    <span class="benevning"><%= t('etiketter.uuid') %>:</span>
-    <span class="uuid"><%=h @laereplan.uuid %></span><br/>
-    <span class="benevning"><%= t('etiketter.kode') %>:</span>
-    <span class="kode"><%=h @laereplan.kode %></span>
-  </div>
-  
-  <div id="valgte_kompetansemaal">	
-    <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-  </div>
-  
+  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
 </div>
-
-<hr/>
 
 <div id='resultater'>
   <div id="kompetansemaal_treff">
-    <h3><%= t('overskrifter.kompetansemål') %></h3>
+    <h2><%= t('overskrifter.kompetansemål') %></h2>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
   </div>
   
   <p>
-    <h3><%= t("overskrifter.hovedområder") %></h3>
+    <h2><%= t("overskrifter.hovedområder") %></h2>
     <ul class="linke-liste">
       <% @laereplan.hovedomraader.each do |hovedomraade| %>
         <li><%= link_to hovedomraade.tittel, laereplan_hovedomraade_path(@laereplan, hovedomraade) %></li>
@@ -31,7 +18,7 @@
   </p>
   
   <p>
-    <h3><%= t("overskrifter.kompetansemålsett") %></h3>
+    <h2><%= t("overskrifter.kompetansemålsett") %></h2>
     <ul class="linke-liste">
       <% @laereplan.kompetansemaalsett.each do |sett| %>
         <li><%= link_to sett.tittel, laereplan_kompetansemaalsett_path(@laereplan, sett) %></li>

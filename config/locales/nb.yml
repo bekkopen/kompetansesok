@@ -25,10 +25,10 @@ nb:
     
   etiketter:
     søk: "Søk"
-    uuid: "UUID"
+    uuid: "ID"
     kode: "Kode"
     tittel: "Tittel"
-    vis_uuid: "Vis uuid"
+    vis_uuid: "Vis id"
     vis_kode: "Vis kode"
     vis_psi: "Vis PSI"
     vis_laereplan_treff: "Vis treff i læreplaner"

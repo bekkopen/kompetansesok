@@ -10,6 +10,10 @@ class Hovedomraade < ActiveRecord::Base
   
   after_create :koble_kompetansemaal
   
+  def ikon_tekst
+    'H'
+  end
+
   def to_param
     uuid
   end

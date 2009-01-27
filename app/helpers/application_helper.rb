@@ -5,7 +5,12 @@ module ApplicationHelper
   def lag_brodsmuler(elementer)
     if not elementer.empty?
       elementer.map do |element|
-        {:klasse => element.class, :tittel => element.tittel, :url => lag_path_for(element, elementer)}
+        {
+          :klasse     => element.class, 
+          :ikon_tekst => element.ikon_tekst, 
+          :tittel     => element.tittel, 
+          :url        => lag_path_for(element, elementer)
+        }
       end
     end
   end
@@ -37,4 +42,8 @@ module ApplicationHelper
     end
   end
   
+
+  def session_checked?(key)
+    session[key] == "true"
+  end
 end

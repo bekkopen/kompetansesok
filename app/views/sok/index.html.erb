@@ -1,108 +1,103 @@
-<div id="sok_input">
+<div class="sok_input">
   <% form_tag(root_path, :method => :get) do %>
+    <label for="q" style="display: none;"><%= t('etiketter.søk') %></label>
     <input name="q" id="q" size="30" type="text"/>
 	<script type="text/javascript">
 		$().ready(function() {  
 			$('#q').inputFieldText('<%= params[:q] %>', '<%= t('etiketter.søkeboks_default_tekst') %>');
 		});  
 	</script>
+
     <input type="submit" value="<%= t('knapper.søk') %>" />
-    <ul id="sok_filtere">
-<li>
-      	<input name="filter_kompetansemaal" type="checkbox" value="true" id="filter_kompetansemaal" <%= 'checked="checked"' if session['filter_kompetansemaal'] == "true" %> />
-      	<input name="filter_kompetansemaal" type="hidden" value="false" />
-      	<label for="filter_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
-</li>
-<li>
-      	<input name="filter_laereplaner" type="checkbox" value="true" id="filter_laereplaner" <%= 'checked="checked"' if session['filter_laereplaner'] == "true" %>/>
-      	<input name="filter_laereplaner" type="hidden" value="false" />
-      	<label for="filter_laereplaner"><%= t('etiketter.læreplaner') %></label>
+    <ul class="sok_filtere">
+      <li>
+      	<input name="vis_kompetansemaal" type="checkbox" value="true" id="vis_kompetansemaal" <%= 'checked="checked"' if session_checked?('vis_kompetansemaal') %> />
+      	<input name="vis_kompetansemaal" type="hidden" value="false" />
+      	<label for="vis_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
       </li>
-<li>
-      	<input name="filter_hovedomraader" type="checkbox" value="true" id="filter_hovedomraader" <%= 'checked="checked"' if session['filter_hovedomraader'] == "true" %>/>
-          <input name="filter_hovedomraader" type="hidden" value="false" />
-      	<label for="filter_hovedomraader"><%= t('etiketter.hovedområder') %></label>
+      <li>
+      	<input name="vis_laereplaner" type="checkbox" value="true" id="vis_laereplaner" <%= 'checked="checked"' if session_checked?('vis_laereplaner') %>/>
+      	<input name="vis_laereplaner" type="hidden" value="false" />
+      	<label for="vis_laereplaner"><%= t('etiketter.læreplaner') %></label>
       </li>
-<li>
-      	<input name="filter_kompetansemaalsett" type="checkbox" value="true" id="filter_kompetansemaalsett" <%= 'checked="checked"' if session['filter_kompetansemaalsett'] == "true" %>/>
-      	<input name="filter_kompetansemaalsett" type="hidden" value="false" />
-      	<label for="filter_kompetansemaalsett"><%= t('etiketter.kompetansemålsett') %></label>
+      <li>
+      	<input name="vis_hovedomraader" type="checkbox" value="true" id="vis_hovedomraader" <%= 'checked="checked"' if session_checked?('vis_hovedomraader') %>/>
+          <input name="vis_hovedomraader" type="hidden" value="false" />
+      	<label for="vis_hovedomraader"><%= t('etiketter.hovedområder') %></label>
       </li>
-<li>
-      	<input name="filter_fag" type="checkbox" value="true" id="filter_fag" <%= 'checked="checked"' if session['filter_fag'] == "true" %>/>
-      	<input name="filter_fag" type="hidden" value="false" />
-      	<label for="filter_fag"><%= t('etiketter.fag') %></label>
-</li>
- </ul>
+      <li>
+      	<input name="vis_kompetansemaalsett" type="checkbox" value="true" id="vis_kompetansemaalsett" <%= 'checked="checked"' if session_checked?('vis_kompetansemaalsett') %>/>
+      	<input name="vis_kompetansemaalsett" type="hidden" value="false" />
+      	<label for="vis_kompetansemaalsett"><%= t('etiketter.kompetansemålsett') %></label>
+      </li>
+      <li>
+      	<input name="vis_fag" type="checkbox" value="true" id="vis_fag" <%= 'checked="checked"' if session_checked?('vis_fag') %>/>
+      	<input name="vis_fag" type="hidden" value="false" />
+      	<label for="vis_fag"><%= t('etiketter.fag') %></label>
+      </li>
+    </ul>
+  <% end %>
+
+  <% if flash[:sok_tilbakemelding] %>
+    <div id="sok_tilbakemelding"> 
+      <%= flash[:sok_tilbakemelding] %>
+	  </div>  
   <% end %>
 </div>
-<hr/>
-<div id="valgte_kompetansemaal">	
-  <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
-</div>
-<hr/>
-<div id='resultater'>   
-<div id="kompetansemaal_treff">
- <h3><%= t('overskrifter.kompetansemål') %></h3>
- <%=  render :partial => "kompetansemaal/simple_grid" %>
-</div>
-  <div id='laereplaner_treff' class='delresultat'>
-    <h3><%= t('overskrifter.læreplaner') %></h3>
-    <ul>
-      <% @laereplaner_treff.each do |laereplan| %>
-        <li> <%= link_to "#{laereplan.kode}: #{laereplan.tittel}", laereplan_path(laereplan) %> </li>
-      <% end %>
-    </ul>
-  </div>
-  <div id='hovedomraader_treff' class='delresultat'>
-    <h3><%= t('overskrifter.hovedområder') %></h3>
-    <ul>
-      <% @hovedomraader_treff.each do |hovedomraade| %>
-        <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
-      <% end %>
-    </ul>
-  </div>
-  <div id='kompetansemaalsett_treff' class='delresultat'>
-    <h3><%= t('overskrifter.kompetansemålsett') %></h3>
-    <ul>
-      <% @kompetansemaalsett_treff.each do |kompetansemaalsett| %>
-        <li> <%= link_to kompetansemaalsett.tittel, kompetansemaalsett_path(kompetansemaalsett) %> </li>
-      <% end %>
-    </ul>
-  </div>
-  <div id='fag_treff' class='delresultat'>
-    <h3><%= t('overskrifter.fag') %></h3>
-    <ul>
-      <% @fag_treff.each do |fag| %>
-        <li> <%= link_to fag.tittel, fag_path(fag) %> </li>
-      <% end %>
-    </ul>
-  </div>
+
+<%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
+
+<div id='resultater'>
+  <% if session_checked?('vis_kompetansemaal') %>
+    <div id="kompetansemaal_treff">
+      <h2><%= t('overskrifter.kompetansemål') %></h2>
+      <%=  render :partial => "kompetansemaal/simple_grid" %>
+    </div>
+  <% end %>
+
+  <% if session_checked?('vis_laereplaner') %>
+    <div id='laereplaner_treff' class='delresultat'>
+      <h2><%= t('overskrifter.læreplaner') %></h2>
+      <ul>
+        <% @laereplaner_treff.each do |laereplan| %>
+          <li> <%= link_to "#{laereplan.kode}: #{laereplan.tittel}", laereplan_path(laereplan) %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if session_checked?('vis_hovedomraader') %>
+    <div id='hovedomraader_treff' class='delresultat'>
+      <h2><%= t('overskrifter.hovedområder') %></h2>
+      <ul>
+        <% @hovedomraader_treff.each do |hovedomraade| %>
+          <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <% if session_checked?('vis_kompetansemaalsett') %>
+    <div id='kompetansemaalsett_treff' class='delresultat'>
+      <h2><%= t('overskrifter.kompetansemålsett') %></h2>
+      <ul>
+        <% @kompetansemaalsett_treff.each do |kompetansemaalsett| %>
+          <li> <%= link_to kompetansemaalsett.tittel, kompetansemaalsett_path(kompetansemaalsett) %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if session_checked?('vis_fag') %>
+    <div id='fag_treff' class='delresultat'>
+      <h2><%= t('overskrifter.fag') %></h2>
+      <ul>
+        <% @fag_treff.each do |fag| %>
+          <li> <%= link_to fag.tittel, fag_path(fag) %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 </div>
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    var filtrerSeksjoner = function() {
-      if($('#filter_kompetansemaal:checked').val() == null) {
-        $('#kompetansemaal_treff').hide();
-      }
-      
-      if($('#filter_laereplaner:checked').val() == null) {
-        $('#laereplaner_treff').hide();
-      }
-      
-      if($('#filter_hovedomraader:checked').val() == null) {
-        $('#hovedomraader_treff').hide();
-      }
-      if($('#filter_kompetansemaalsett:checked').val() == null) {
-        $('#kompetansemaalsett_treff').hide();
-      }
-      if($('#filter_fag:checked').val() == null) {
-        $('#fag_treff').hide();
-      }
-    }
-    
-    filtrerSeksjoner();
-  });
-
-</script>

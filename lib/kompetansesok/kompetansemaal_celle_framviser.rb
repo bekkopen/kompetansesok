@@ -10,7 +10,7 @@ module Kompetansesok
     private    
     
     def to_detail_html(kompetansemaal, skip_details_for = [])
-      [kompetansemaal.tittel.capitalize, 
+      ["<h3>#{kompetansemaal.tittel.capitalize}</h3>", 
         skip_details_for.include?(:laereplaner) ? nil : laereplaner(kompetansemaal), 
         skip_details_for.include?(:hovedomraader) ? nil : hovedomraader(kompetansemaal), 
         skip_details_for.include?(:kompetansemaalsett) ? nil : kompetansemaalsett(kompetansemaal), 
@@ -36,13 +36,20 @@ module Kompetansesok
     
    
     def string_joined_on(kompetansemaal, attribute, tittel, join_string = ", ")
-      alle_attr = kompetansemaal.send(attribute).map do |h|
-        h.tittel
-      end.join(join_string)
-      if alle_attr.empty?
+      attributter = kompetansemaal.send(attribute).map do |h|
+        {
+          :ikon_tekst => h.ikon_tekst,
+          :tittel => h.tittel,
+          :class => h.class
+        }
+      end
+      if attributter.empty?
         nil
       else
-        "<span class='kompetansemaal_detaljer'><span class='kompetansemaal_detaljer_#{attribute}'>#{alle_attr}</span></span>"
+        # Vi må bruke enkeltfnutter for å unngå at nokogiri klager
+        ikon_span = %{<span class='ikon ikon_#{attributter[0][:class]}'>#{attributter[0][:ikon_tekst]}</span>}
+        titler = attributter.map{|a| a[:tittel]}.join(join_string)
+        %{<div class='kompetansemaal_detaljer'>#{ikon_span} #{titler}</div>}
       end
     end
     
