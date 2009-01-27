@@ -57,7 +57,7 @@ pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; } 
 
 
-/* farge koder */
+/* fargekoder */
 .element_Fag a, .kompetansemaal_detaljer_fag {
     padding-left: 24px;
     background: url('../images/f.png');
@@ -91,6 +91,11 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
     text-size: 1.1em;
     color: red;
     font-weight: bold;
+}
+
+#sok_tilbakemelding {
+	text-align: center;
+  border: 1px solid red;
 }
 
 /* Lists

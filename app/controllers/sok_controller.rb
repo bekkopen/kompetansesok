@@ -14,10 +14,10 @@ class SokController < ApplicationController
     
     if params[:q].blank?     
       if params.has_key?(:q)
-        flash[:notice] = t('meldinger.angi_kriterium')
+        flash[:sok_tilbakemelding] = t('meldinger.angi_kriterium')
       end
     else
-      flash.delete(:notice)
+      flash.delete(:sok_tilbakemelding)
       sokestreng = params[:q].gsub(';', ' or ')
       sok = Ultrasphinx::Search.new(:query => sokestreng, :per_page => Ultrasphinx::Search::MAX_MATCHES)
       treff = sok.run

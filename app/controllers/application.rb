@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
     maks_detalj_rader = Udir::CONFIG['maks_detalj_rader'] 
     
     if kompetansemaal.length > maks_detalj_rader && params[:filter_kompetansemaal] == 'true'
-      flash[:notice] = t('feilmelding.for_grovt_søk')
+      flash[:sok_tilbakemelding] = t('feilmelding.for_grovt_søk')
     end
     sorted_rows(kompetansemaal, ikke_vis_detaljer_for, maks_detalj_rader)
   end  

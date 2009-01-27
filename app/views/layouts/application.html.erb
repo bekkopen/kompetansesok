@@ -30,11 +30,6 @@
   		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
   		</ul>
 	  </div>
-	  <% if flash[:notice] %>
-	    <div id="notice"> 
-	      <%= flash[:notice] %>
-  	  </div>  
-	  <% end %>
 	  <div id="content">
       <%= render :partial => "brodsmulesti/brodsmulesti" %>
 	    <%= yield %>

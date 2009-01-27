@@ -31,13 +31,18 @@
       </li>
     </ul>
   <% end %>
+
+  <% if flash[:sok_tilbakemelding] %>
+    <div id="sok_tilbakemelding"> 
+      <%= flash[:sok_tilbakemelding] %>
+	  </div>  
+  <% end %>
 </div>
 
 <hr/>
 
 <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
 
-<hr/>
 <div id='resultater'>   
 <div id="kompetansemaal_treff">
  <h3><%= t('overskrifter.kompetansemål') %></h3>
