@@ -1,6 +1,11 @@
 <div id="sok_input">
   <% form_tag(root_path, :method => :get) do %>
-    <input name="q" id="q" size="30" type="text" value="<%= søke_boks_tekst(params[:q]) %>"/>
+    <input name="q" id="q" size="30" type="text"/>
+	<script type="text/javascript">
+		$().ready(function() {  
+			$('#q').inputFieldText('<%= params[:q] %>', '<%= t('etiketter.søkeboks_default_tekst') %>');
+		});  
+	</script>
     <input type="submit" value="<%= t('knapper.søk') %>" />
     <ul id="sok_filtere">
 <li>
