@@ -202,16 +202,16 @@ td.x-grid3-td-3 div.x-grid3-cell-inner {
     padding-left: 10px;
 }
 
-ul#sok_filtere {
+ul.sok_filtere {
 	margin-top: 5px;
 }
 
-ul#sok_filtere li {
+ul.sok_filtere li {
 	display: inline;
 	font-size: 0.8em;
 }
 
-div#sok_input {
+div.sok_input {
 	margin: 20px 0;
 	text-align: center;
 }
