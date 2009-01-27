@@ -59,5 +59,9 @@ production:
   port: 3306
   pool: 5
   timeout: 5000
+<% if defined?(JRUBY_VERSION) %>
   adapter: jdbcmysql
   driver: org.gjt.mm.mysql.Driver
+<% else %>
+  adapter: mysql
+<% end %>

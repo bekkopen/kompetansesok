@@ -1,7 +1,13 @@
 <div class="sok_input">
   <% form_tag(root_path, :method => :get) do %>
     <label for="q" style="display: none;"><%= t('etiketter.søk') %></label>
-    <input name="q" id="q" size="30" type="text" value="<%= params[:q] %>"/>
+    <input name="q" id="q" size="30" type="text"/>
+	<script type="text/javascript">
+		$().ready(function() {  
+			$('#q').inputFieldText('<%= params[:q] %>', '<%= t('etiketter.søkeboks_default_tekst') %>');
+		});  
+	</script>
+
     <input type="submit" value="<%= t('knapper.søk') %>" />
     <ul class="sok_filtere">
       <li>
@@ -71,6 +77,7 @@
     </div>
   <% end %>
 
+
   <% if session_checked?('vis_kompetansemaalsett') %>
     <div id='kompetansemaalsett_treff' class='delresultat'>
       <h2><%= t('overskrifter.kompetansemålsett') %></h2>
@@ -93,3 +100,4 @@
     </div>
   <% end %>
 </div>
+

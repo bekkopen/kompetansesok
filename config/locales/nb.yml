@@ -1,7 +1,7 @@
 nb:   
   navigasjon:
     forside: "Søk"
-    database_eksport: "Last ned databasen"
+    database_eksport: "Database eksport"
     om_kopetansemål_søk: "Om søket / hjelp"
 
   overskrifter:
@@ -42,19 +42,17 @@ nb:
     kompetansemål: "Kompetansemål"
     kompetansemålsett: "Kompetansemålsett"
     fag: "Fag"
+    søkeboks_default_tekst: "Søk på id, tittel eller kode. Bruk avkryssningsboksene nedenfor til å filtrere..."
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
 
   tekst:
-    database_eksport: "Her kan du laste ned mysql database dumps. Slik at du lett kan få tilgang til dataen denne applikasjonen bruker. Klikk på linkene under for å laste ned ønsket dump:"
+    database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på linkene under for å laste ned ønsket eksport."
 
   feilmelding:
     for_grovt_søk: "Søket du har angitt er for grovt. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
-
-  tooltips:
-    søkeboks: "Skriv inn tittel, kode eller id"
 
   csv:
     kompetansemaal_uuid: kompetansemål id 

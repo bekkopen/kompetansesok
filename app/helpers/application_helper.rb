@@ -42,6 +42,7 @@ module ApplicationHelper
     end
   end
   
+
   def session_checked?(key)
     session[key] == "true"
   end
