@@ -1,5 +1,5 @@
 <% if @brodsmulesti %>
-  <div id="brodsmulesti">
+  <ol id="brodsmulesti">
     <%= n = @brodsmulesti.length ; i = 0; @brodsmulesti.map do |element|
        i += 1
        inner = if(i != n)
@@ -7,7 +7,7 @@
        else
          "<h1>#{element[:tittel]}</h1>"
        end
-       "<span class='element_#{element[:klasse]}'>#{inner}</span>"
-     end.join(" &#187; ") %>
-  </div>
+       %{<li><span class="ikon ikon_#{element[:klasse]}">#{element[:ikon_tekst]}</span> #{inner}</li>"}
+     end.join("") %>
+  </ol>
 <% end %>

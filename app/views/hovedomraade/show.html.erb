@@ -4,12 +4,12 @@
 
 <div id='resultater'>
   <div id="kompetansemaal_treff">
-    <h3><%= t('overskrifter.kompetansemål') %></h3>
+    <h2><%= t('overskrifter.kompetansemål') %></h2>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
   </div>
 
   <p>
-    <h3><%= t("overskrifter.kompetansemålsett") %></h3>
+    <h2><%= t("overskrifter.kompetansemålsett") %></h2>
     <ul class="linke-liste">
       <% @kompetansemaalsett.each do |sett| %>
         <% if(@through_laereplan)
