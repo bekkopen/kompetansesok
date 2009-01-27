@@ -8,12 +8,16 @@ function ValgteKompetansemaal(){
 
     this.displayValgteKompetansemaal = function()
     {
+        $('#valgte_kompetansemaal').show();
         valgte_window = document.getElementById(this.tekst_id);
         
-        valgte_window.innerHTML = "";
+        var tekst = "";
+        var prefix = ""
         for(i in this.data){
-            valgte_window.innerHTML = valgte_window.innerHTML + "\n" + this.formatedKompetansemaalLinje(this.data[i]);
+            tekst += prefix + this.formatedKompetansemaalLinje(this.data[i]);
+            prefix = "\n";
         }
+        valgte_window.innerHTML = tekst;
     };
 
     this.retriveDataFromExtGrid = function(gridData)
