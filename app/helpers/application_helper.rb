@@ -36,4 +36,9 @@ module ApplicationHelper
       send(klasser.join("_") + "_path", *uuids)
     end
   end
+  
+  def søke_boks_tekst(søke_streng)
+    søke_streng.nil? ? t() : søke_streng
+  end
+  
 end
