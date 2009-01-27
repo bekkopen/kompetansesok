@@ -1,5 +1,5 @@
 module Kompetansesok
-  class DbEksport
+  class DbEksport < RunCommand
     
     def self.eksporter
       db_name = ActiveRecord::Base.configurations[Rails.env]['database']
@@ -51,5 +51,38 @@ module Kompetansesok
         end
       end
     end
+
+    def self.restore_backup
+      db_dump_zipfile = find_last_db_dump
+      db_dump = unzip_db_dump(db_dump_zipfile)
+      return DbEksport.new.run_command("mysql -uroot kompetansesok < #{db_dump}")
+    end
+
+    def self.find_last_db_dump
+      db_dumps_path = File.join(Rails.root, "public", "db_dumps")
+      time_list = {}
+      Dir.entries(db_dumps_path).each do |file|
+        if file =~ /db_dump_(.*)\.zip/
+          time_list[Time.parse($1)]= File.join(db_dumps_path, file)
+        end
+      end
+
+      time_list[time_list.keys.sort.last]
+    end
+
+    def self.unzip_db_dump(file)
+      require 'zip/zipfilesystem'
+      dump_filename = File.join(Rails.root, "tmp", "restore.sql")
+      f = File.new(dump_filename, 'w+')
+
+      Zip::ZipFile.open(file) do |zipfile|
+        f.puts zipfile.file.read("kompetansesok_mysql.dump")
+      end
+
+      f.close
+      dump_filename
+    end
+
+    
   end
 end

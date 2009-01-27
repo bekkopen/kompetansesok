@@ -23,7 +23,7 @@ describe Kompetansesok::ImportDriver do
 
   it "should give error if db import fails" do
     @importer_mock.should_receive(:importer_til_db).and_raise("test file errror")
-    @import_driver.should_receive(:restore_backup).and_return(true)
+    Kompetansesok::DbEksport.should_receive(:restore_backup).and_return(true)
 
     @import_driver.should_receive(:reindexer).and_return(true)
 
@@ -38,7 +38,7 @@ describe Kompetansesok::ImportDriver do
 
   it "should rollback when db import goes bad, followed by a reindex" do
     @importer_mock.should_receive(:importer_til_db).and_raise("test file errror")
-    @import_driver.should_receive(:run_command).with("mysql -uroot kompetansesok < #{File.join(Rails.root, "tmp", "restore.sql")}").and_return(true)
+    Kompetansesok::DbEksport.should_receive(:restore_backup).and_return(true)
     @import_driver.should_receive(:reindexer).and_return(true)
 
     lambda{
@@ -53,7 +53,7 @@ describe Kompetansesok::ImportDriver do
     tmp_file_name = File.join(Rails.root, "public", "db_dumps", "db_dump_22-01-3000-11:11.zip")
     File.new(tmp_file_name, File::CREAT)
 
-    @import_driver.find_last_db_dump.should == tmp_file_name
+    Kompetansesok::DbEksport.find_last_db_dump.should == tmp_file_name
 
     File.delete(tmp_file_name)
   end
