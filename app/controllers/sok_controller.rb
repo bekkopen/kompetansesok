@@ -30,26 +30,8 @@ class SokController < ApplicationController
   end
 
   def download_csv
-
-    valgte_kompetanse_maal = []
-    if params[:uuids]
-      params[:uuids].split(",").each do |uuid|
-        kompetansemaal = Kompetansemaal.find_by_uuid(uuid)
-        if kompetansemaal
-          valgte_kompetanse_maal << kompetansemaal
-        end
-      end
-    end
-    
-    @content = FasterCSV.generate do |csv|
-      valgte_kompetanse_maal.each do |k|
-        values = fetch_values(params, k)
-        csv << values unless values.empty?
-      end
-    end
-    
+    @content =  Kompetansesok::CsvGenerator.new.csv_for(params[:uuids])  
     send_data(@content, :filename => "#{timestamp}_kompetansemaal.csv", :disposition => 'inline')
-
   end
 
   private
@@ -61,20 +43,6 @@ class SokController < ApplicationController
       end
       klass_result.flatten
     end
-  end
-
-  def fetch_values(options, kompetansemaal)
-    values =[]
-    if options["showId"] == "on"
-      values << kompetansemaal.uuid
-    end
-    if options["showKode"] == "on"
-      values << kompetansemaal.kode
-    end
-    if options["showPsi"] == "on"
-      values << kompetansemaal.psi
-    end
-    values
   end
 
   def set_standard_filtering
