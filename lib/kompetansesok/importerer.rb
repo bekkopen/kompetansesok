@@ -59,6 +59,12 @@ module Kompetansesok
       last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
 
       @out.puts('Import ferdig.') if @out
+
+      lag_db_dump
+    end
+
+    def lag_db_dump
+      
     end
 
     def filer
