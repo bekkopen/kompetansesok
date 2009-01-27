@@ -59,6 +59,15 @@ module Kompetansesok
       last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
 
       @out.puts('Import ferdig.') if @out
+
+      lag_db_dump
+    end
+
+    def lag_db_dump
+      @out.puts('Gjør db eksport og cleanup') if @out
+      Kompetansesok::DbEksport.eksporter
+      Kompetansesok::DbEksport.cleanup
+      @out.puts('Exkort og clean up ferdig') if @out
     end
 
     def filer

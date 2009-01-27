@@ -15,8 +15,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :fag do |f|
     f.resources :kompetansemaalsett
   end
- 
-  map.resources :info
   map.resources :db_dump, :only => :index
   
 

@@ -152,7 +152,7 @@ div#container {
 
 div#branding_bar {
 	height: 40px;
-	background: #F47936 url(../images/searchBackground.gif) no-repeat fixed top right;
+	background: #F47936 url(../images/searchBackground.gif) no-repeat scroll top right;
 }
 
 div#nav_container {
@@ -176,12 +176,28 @@ div.delresultat {
 
 ul#nav_list {
   list-style-type: none;
-  overflow: auto;
+  overflow: hidden;
   font-weight: bold;
 }
 
 ul#nav_list li {
   float: right;
+}
+
+ul#nav_list li {
+  float: right;
+}
+
+body#sok li#sok_nav,
+body#db_dump li#db_dump_nav,
+body#info li#info_nav {
+  border-bottom: 2px solid #333;
+}
+
+body#sok li#sok_nav a:hover,
+body#db_dump li#db_dump_nav a:hover,
+body#info li#info_nav a:hover {
+  border-bottom: 0;
 }
 
 ul#nav_list li a {
@@ -193,6 +209,7 @@ ul#nav_list li a:hover {
   background-color: #999;
   color: #FFF;
   border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
   padding-top: 3px;
 }
 
@@ -248,6 +265,10 @@ div.sok_input {
 
 input#q {
 	width: 450px;
+}
+
+input.søke_hint {
+	color: #999;
 }
 
 
@@ -308,12 +329,4 @@ ul.linke-liste
 
 .x-panel-header {
   display:none;
-}
-
-.x-tip {
-	border: 1px solid #999;
-	padding: 5px;
-	font-size: 0.7em;
-	background-color: #FBB88B;
-	color: #000;
 }

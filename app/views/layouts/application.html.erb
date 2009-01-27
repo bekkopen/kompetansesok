@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <%= javascript_include_tag 'jquery-1.3.min', 'ext/adapter/ext/ext-base', 'ext/ext-all', 'ext-functions', 'valgte_kompetansemaal' %>
+    <%= javascript_include_tag 'jquery-1.3.min', 'ext/adapter/ext/ext-base', 'ext/ext-all', 'ext-functions', 'Valgtekompetansemaal', 'jquery.inputclear' %>
     <%= stylesheet_link_tag('screen') %>
     
     <title>Kompetansesøk</title>
   </head>
-  <body>
+  <body id="<%= params[:controller] %>">
 	<div id="container">
 	  <div id="header">
       <%= image_tag "logo.gif" %>
@@ -16,16 +16,24 @@
 	  <div id="branding_bar">
 		  <div id="spraak">
 			<% form_tag("/spraak_session") do %>
-				<%= select :spraak, :valg, [["Bokmål", "nb"], ["Nynorsk", "nn"], ["Samisk", "sa"], ["Engelsk", "en"]], :selected => session[:spraak] %>
+				<%= select :spraak, :valg,
+				[
+					["Bokmål", "nb"],
+					# uncomment nedenfor når språkfilene er klare
+					#["Nynorsk", "nn"],
+					#["Samisk", "sa"],
+					["Engelsk", "en"]
+				],
+				:selected => session[:spraak] %>
 				<%= submit_tag "Velg språk", :class => 'submit' %>
 			<% end %>
 		  </div>
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-		  <li><%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %></li>
-		  <li><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
-  		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
+		  <li id="info_nav"><%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %></li>
+		  <li id="db_dump_nav"><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
+  		  <li id="sok_nav"><%= link_to t('navigasjon.forside'), root_path %></li>
   		</ul>
 	  </div>
 	  <div id="content">
