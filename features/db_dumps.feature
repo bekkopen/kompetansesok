@@ -5,14 +5,14 @@ Feature: Laste ned database
   Scenario: Liste over filer
     Gitt at følgende databasefiler finnes:
       | navn       |
-      | fredag.zip |
       | lørdag.zip |
+      | fredag.zip |
     Og at jeg er på hovedsiden
     Når jeg klikker på linken "Last ned databasen"
     Så skal jeg se følgende liste over databasefiler
       | navn       |
-      | fredag.zip |
       | lørdag.zip |
+      | fredag.zip |
 
   Scenario: Tom liste når ingen dumps er laget
     Gitt at ingen databasefiler finnes
