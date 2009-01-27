@@ -10,7 +10,7 @@
     
     <title>Kompetansesøk</title>
   </head>
-  <body>
+  <body id="<%= params[:controller] %>">
 	<div id="container">
 	  <div id="header">
       <%= image_tag "logo.gif" %>
@@ -21,6 +21,7 @@
 				<%= select :spraak, :valg,
 				[
 					["Bokmål", "nb"],
+					# uncomment nedenfor når språkfilene er klare
 					#["Nynorsk", "nn"],
 					#["Samisk", "sa"],
 					["Engelsk", "en"]
@@ -32,9 +33,9 @@
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-		  <li><%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %></li>
-		  <li><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
-  		  <li><%= link_to t('navigasjon.forside'), root_path %></li>
+		  <li id="info_nav"><%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %></li>
+		  <li id="db_dump_nav"><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
+  		  <li id="sok_nav"><%= link_to t('navigasjon.forside'), root_path %></li>
   		</ul>
 	  </div>
 	  <% if flash[:notice] %>
