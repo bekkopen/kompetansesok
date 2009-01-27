@@ -18,7 +18,14 @@
 	  <div id="branding_bar">
 		  <div id="spraak">
 			<% form_tag("/spraak_session") do %>
-				<%= select :spraak, :valg, [["Bokmål", "nb"], ["Nynorsk", "nn"], ["Samisk", "sa"], ["Engelsk", "en"]], :selected => session[:spraak] %>
+				<%= select :spraak, :valg,
+				[
+					["Bokmål", "nb"],
+					#["Nynorsk", "nn"],
+					#["Samisk", "sa"],
+					["Engelsk", "en"]
+				],
+				:selected => session[:spraak] %>
 				<%= submit_tag "Velg språk", :class => 'submit' %>
 			<% end %>
 		  </div>

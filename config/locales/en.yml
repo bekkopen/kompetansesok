@@ -1,12 +1,72 @@
 en:
-  navigasjon:
-    forside: "Front page"
-  
-  knapper:
-    søk: "Search"
-    
-  etiketter:
-    søk: "Search"
+    navigasjon:
+      forside: "Search"
+      database_eksport: "Database Export"
+      om_kopetansemål_søk: "About / Help"
+      ofte_stillte_spørsmål: "Frequently Asked Questions"
 
-  meldinger:
-    angi_kriterium: "Please enter search criterion"
+    overskrifter:
+      resultater: "Results"
+      læreplaner: "Teaching Plans"
+      hovedområder: "Subject Areas"
+      hovedområde: "Subject Area"
+      kompetansemål: "Competence Goals"
+      kompetansemålsett: "Competence Goal Sets"
+      fag: "Subjects"
+      valgte_kompetansemål: "Chosen Competence Goals"
+      database_eksport: "Database export"
+      søk_i:  "Search in:"
+      kompetansemål_søk: "Competence Goal Search"
+      ofte_stillte_spørsmål: "Frequently Asked Questions"
+
+    knapper:
+      søk: "Search"
+      eksport_csv: "Export results to file (csv)"
+      tilbake: "Back"
+
+    etiketter:
+      søk: "Search"
+      uuid: "Id"
+      kode: "Code"
+      tittel: "Title"
+      vis_uuid: "Show Id"
+      vis_kode: "Show code"
+      vis_psi: "Show PSI"
+      vis_laereplan_treff: "Include teaching plans in results"
+      vis_hovedomraade_treff: "Include subject areas in results"
+      tom: "<no data>"
+      læreplaner: "Teaching plans"
+      læreplan: "Teaching plan"
+      hovedområder: "Subject areas"
+      hovedområde: "Subject area"
+      kompetansemål: "Competence goal"
+      kompetansemålsett: "Competence goal set"
+      fag: "Subject"
+      søkeboks_default_tekst: "Search with id, title or code. Use the checkboxes below to further filter your search..."
+
+    meldinger:
+      angi_kriterium: "Please enter a search term"
+
+    tekst:
+      database_eksport: "MySQL database exports are available for download. These database exports include all the data displayed in this application. Click on the below links til download a database export."
+
+    feilmelding:
+      for_grovt_søk: "You search is too broad to include all details for competence goal results"
+      ingen_db_dump: "No database exports have been generated."
+
+    csv:
+      kompetansemaal_uuid: "competence goal id" 
+      kompetansemaal_kode: "competence goal code"
+      kompetansemaal_tittel: "competence goal title"
+      laereplan_uuid: "teaching plan id"
+      laereplan_kode: "teaching plan code "
+      laereplan_tittel: "teaching plan title" 
+      hovedomraade_uuid: "subject area id" 
+      hovedomraade_kode: "subject area code" 
+      hovedomraade_tittel: "subject area title"
+      kompetansemaalsett_uuid: "competence goal set id" 
+      kompetansemaalsett_kode: "competence goal set code" 
+      kompetansemaalsett_tittel: "competence goal set title"
+      fag_uuid: "subject id"
+      fag_kode: "subject code"
+      fag_tittel: "subject title"
