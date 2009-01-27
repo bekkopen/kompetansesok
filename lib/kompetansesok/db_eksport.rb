@@ -1,22 +1,37 @@
 module Kompetansesok
   class DbEksport < RunCommand
-    
-    def self.eksporter
-      db_name = ActiveRecord::Base.configurations[Rails.env]['database']
-      db_user = ActiveRecord::Base.configurations[Rails.env]['username']
 
+    @@zip_path = File.join(Rails.root, 'public', 'db_dumps')
+
+    def self.db_name
+      ActiveRecord::Base.configurations[Rails.env]['database']
+    end
+    
+    def self.db_user
+      ActiveRecord::Base.configurations[Rails.env]['username']
+    end
+
+    def self.db_pass_prase
+      if ActiveRecord::Base.configurations[Rails.env]['password']
+        "-p#{ActiveRecord::Base.configurations[Rails.env]['password']}"
+      else
+        ""
+      end
+    end
+
+    def self.eksporter
       dump_filename = 'kompetansesok_mysql.dump'
       dump_filepath = File.join(Rails.root, 'tmp', dump_filename)
-      sh "mysqldump -u#{db_user} #{db_name} > #{dump_filepath}"
+      sh "mysqldump -u#{db_user} #{db_name} #{db_pass_prase} > #{dump_filepath}"
 
-      zip_path = File.join(Rails.root, 'public', 'db_dumps')
-      if not File.exist?(zip_path)
-        File.makedirs(zip_path)
+      
+      if not File.exist?(@@zip_path)
+        File.makedirs(@@zip_path)
       end
 
       time_stamp = Time.now.to_datetime.strftime("%d-%m-%Y-%H:%M")
       zip_filename = "db_dump_#{time_stamp}.zip"
-      zip_savepath = File.join(zip_path, zip_filename)
+      zip_savepath = File.join(@@zip_path, zip_filename)
 
       require 'zip/zipfilesystem'
       Zip::ZipFile.open(zip_savepath, Zip::ZipFile::CREATE) do |zipfile|
@@ -27,15 +42,15 @@ module Kompetansesok
     end
 
     def self.cleanup
-      zip_path = File.join(Rails.root, 'public', 'db_dumps')
-      if not File.exist?(zip_path)
+      if not File.exist?(@@zip_path)
         return
       end
 
+      #TODO fetch this number from the configuration
       keep_number_of_dumps = 3
 
       existing_dumps = {}
-      zip_dir = Dir.new(zip_path)
+      zip_dir = Dir.new(@@zip_path)
       while(entry =  zip_dir.read)
         if entry =~ /db_dump_(.+)\.zip/
           time_stamp = Time.parse($1)
@@ -47,7 +62,7 @@ module Kompetansesok
 
       if old_dump_keys
         old_dump_keys.each do |stamp_key|
-          File.delete(File.join(zip_path,existing_dumps[stamp_key]))
+          File.delete(File.join(@@zip_path,existing_dumps[stamp_key]))
         end
       end
     end
@@ -55,15 +70,14 @@ module Kompetansesok
     def self.restore_backup
       db_dump_zipfile = find_last_db_dump
       db_dump = unzip_db_dump(db_dump_zipfile)
-      return DbEksport.new.run_command("mysql -uroot kompetansesok < #{db_dump}")
+      return DbEksport.new.run_command("mysql -u#{db_user} #{db_name} #{db_pass_prase} < #{db_dump}")
     end
 
     def self.find_last_db_dump
-      db_dumps_path = File.join(Rails.root, "public", "db_dumps")
       time_list = {}
-      Dir.entries(db_dumps_path).each do |file|
+      Dir.entries(@@zip_path).each do |file|
         if file =~ /db_dump_(.*)\.zip/
-          time_list[Time.parse($1)]= File.join(db_dumps_path, file)
+          time_list[Time.parse($1)]= File.join(@@zip_path, file)
         end
       end
 
