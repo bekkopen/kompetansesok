@@ -26,10 +26,10 @@ nb:
     
   etiketter:
     søk: "Søk"
-    uuid: "UUID"
+    uuid: "ID"
     kode: "Kode"
     tittel: "Tittel"
-    vis_uuid: "Vis uuid"
+    vis_uuid: "Vis id"
     vis_kode: "Vis kode"
     vis_psi: "Vis PSI"
     vis_laereplan_treff: "Vis treff i læreplaner"
@@ -42,7 +42,6 @@ nb:
     kompetansemål: "Kompetansemål"
     kompetansemålsett: "Kompetansemålsett"
     fag: "Fag"
-    du_er_her: "Her er du"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
@@ -51,5 +50,26 @@ nb:
     database_eksport: "Her kan du laste ned mysql database dumps. Slik at du lett kan få tilgang til dataen denne applikasjonen bruker. Klikk på linkene under for å laste ned ønsket dump:"
 
   feilmelding:
-    for_grovt_søk: "Søke du har angitt er for grovt. Detaljer for Kompetansemål vises derfor ikke."
-    ingen_db_dump: "Det er ikke opprettet databasedumps enda."
+    for_grovt_søk: "Søket du har angitt er for grovt. Detaljer for kompetansemål vises derfor ikke."
+    ingen_db_dump: "Det er ikke opprettet databasekopier enda."
+
+  tooltips:
+    søkeboks: "Skriv inn tittel, kode eller id"
+
+  csv:
+    kompetansemaal_uuid: kompetansemål id 
+    kompetansemaal_kode: kompetansemål kode
+    kompetansemaal_tittel: kompetansemål tittel
+    laereplan_uuid: læreplan id
+    laereplan_kode: læreplan kode
+    laereplan_tittel: læreplan tittel 
+    hovedomraade_uuid: hovedområde id 
+    hovedomraade_kode: hovedområde kode 
+    hovedomraade_tittel: hovedområde tittel
+    kompetansemaalsett_uuid: kompetansemålsett id 
+    kompetansemaalsett_kode: kompetansemålsett kode 
+    kompetansemaalsett_tittel: kompetansemålsett tittel
+    fag_uuid: fag id
+    fag_kode: fag kode
+    fag_tittel: fag tittel
+    

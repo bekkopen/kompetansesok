@@ -28,4 +28,4 @@ Egenskap: Vise kompetansemaalsett
 
   Scenario: Vise brødsmulesti
     Gitt at jeg ser på kompetansemaalsett med uuid uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96
-    Så jeg skal se Kompetansemålsett "Etter 10. årstrinn" i brødsmulestien
+    Så skal jeg se "Etter 10. årstrinn" på plass "1" i brødsmulestien

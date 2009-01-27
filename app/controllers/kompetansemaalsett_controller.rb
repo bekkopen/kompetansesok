@@ -14,9 +14,8 @@ class KompetansemaalsettController < ApplicationController
       kompetansemaal = @kompetansemaalsett.kompetansemaal
     end
     @brodsmule_elementer << @kompetansemaalsett
-    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal)
-
     @brodsmulesti = lag_brodsmuler(@brodsmule_elementer)
+    @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, @brodsmule_elementer)
   end
 
   private

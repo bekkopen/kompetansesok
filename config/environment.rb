@@ -45,7 +45,7 @@ Rails::Initializer.run do |config|
     
     # Brukes kun til test
     config.gem 'nokogiri',                        :version => '1.1.0'
-    config.gem 'cucumber',                        :version => '0.1.16'
+    config.gem 'aslakhellesoy-cucumber',          :version => '0.1.99.11', :lib => 'cucumber'
   end
   
   # Only load the plugins named here, in the order given. By default, all plugins 
@@ -92,6 +92,4 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
-
-  udir_config = YAML.load(File.open('config/udir.yml'))
 end

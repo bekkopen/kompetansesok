@@ -3,15 +3,8 @@ Egenskap: Vise kompetansemaalsett for en læreplan og hovedområde
   Må lærere, bibliotekarer og forleggere
   Kunne se kompetansemålene som hører til et kompetansemaalsett filtrert på læreplan og hovedområde
 
-  Scenario: Gå til kompetansemålsett
-    Gitt at jeg ser på laereplan med uuid uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd
-    Når jeg velger hovedomraade "Utforsking av språk og tekst"
-    Og jeg velger kompetansemaalsett "Etter 10. årstrinn"
-    Så skal jeg få kompetansemaalsett "uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96" nøstet under laereplan "uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd"
-    Så skal jeg få kompetansemaalsett "uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96" nøstet under hovedomraade "uuid:9f87b126-7f07-44da-bfec-3bdffd779df2"
-
   Scenario: Vise kompetansemål
-    GittScenario: Gå til kompetansemålsett
+    Gitt at jeg har gått til LP uuid:9089 / H språk og tekst / KS etter 10. årstrinn
     Og skal jeg få opp følgende treff i kompetansemål:
       | Tittel starter med                                                                    |
       | gjøre rede for språklige virkemidler i moderne kommunikasjonsformer og                |
@@ -23,18 +16,23 @@ Egenskap: Vise kompetansemaalsett for en læreplan og hovedområde
       | oversette enkle tekster fra engelsk eller andre språk til norsk og forklare hvordan   |
       | sammenlikne ord og grammatiske former i skriftlig norsk med norsk talemål og          |
 
+  Scenario: Vise nøstede kompetansemålsett
+    Gitt at jeg har gått til LP uuid:9089 / H språk og tekst / KS etter 10. årstrinn
+    Så skal jeg få kompetansemaalsett "uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96" nøstet under laereplan "uuid:90893023-ff29-45dd-86d3-1c26bad9e3bd"
+    Så skal jeg få kompetansemaalsett "uuid:3db15da8-7acc-464d-a5d0-0b855d36bb96" nøstet under hovedomraade "uuid:9f87b126-7f07-44da-bfec-3bdffd779df2"
+
   Scenario: Vise brødsmulesti
-    GittScenario: Gå til kompetansemålsett
-    Så jeg skal se Læreplan "Læreplan i fordypning i norsk" i brødsmulestien
-    Og jeg skal se Hovedområde "Utforsking av språk og tekst" i brødsmulestien
-    Og jeg skal se Kompetansemålsett "Etter 10. årstrinn" i brødsmulestien
+    Gitt at jeg har gått til LP uuid:9089 / H språk og tekst / KS etter 10. årstrinn
+    Så skal jeg se "Læreplan i fordypning i norsk" på plass "1" i brødsmulestien
+    Og skal jeg se "Utforsking av språk og tekst" på plass "2" i brødsmulestien
+    Og skal jeg se "Etter 10. årstrinn" på plass "3" i brødsmulestien
 
   Scenario: Klikkbar brødsmulesti fra Kompetansemålsett til læreplan
-    GittScenario: Gå til kompetansemålsett
+    Gitt at jeg har gått til LP uuid:9089 / H språk og tekst / KS etter 10. årstrinn
     Når jeg klikker på linken "Læreplan i fordypning i norsk"
-    Så skal jeg se en side med overskrift "Læreplan i fordypning i norsk"
+    Så skal jeg se "Læreplan i fordypning i norsk" på plass "1" i brødsmulestien
 
   Scenario: Klikkbar brødsmulesti fra Kompetansemålsett til hovedområde
-    GittScenario: Gå til kompetansemålsett
+    Gitt at jeg har gått til LP uuid:9089 / H språk og tekst / KS etter 10. årstrinn
     Når jeg klikker på linken "Utforsking av språk og tekst"
-    Så skal jeg se en side med overskrift "Utforsking av språk og tekst"
+    Så skal jeg se "Utforsking av språk og tekst" på plass "1" i brødsmulestien

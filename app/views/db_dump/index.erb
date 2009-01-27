@@ -5,15 +5,13 @@
 </p>
 
 <p>
-  <% if not @db_dumps.empty?  %>
+  <% if @db_dumps.any?  %>
     <ul id="db_liste">
-
-      <% @db_dumps.each do |file, path| %>
-        <li><a href="<%=  path %>"><%= file %></a></li>
+      <% @db_dumps.each do |path| %>
+        <li><a href="<%= path %>"><%= File.basename(path) %></a></li>
       <% end %>
-
     </ul>
-  <%  else %>
+  <% else %>
     <div id="ingen_db_dump">
       <%= t('feilmelding.ingen_db_dump') %>
     </div>

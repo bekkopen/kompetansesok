@@ -57,23 +57,23 @@ pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; } 
 
 
-/* farge koder */
-.element_Fag a, .kompetansemaal_detaljer_fag {
+/* fargekoder */
+.element_Fag, .kompetansemaal_detaljer_fag {
     padding-left: 24px;
     background: url('../images/f.png');
     background-repeat: no-repeat;
 }
-.element_Laereplan a, .kompetansemaal_detaljer_laereplaner {
+.element_Laereplan, .kompetansemaal_detaljer_laereplaner {
     padding-left: 24px;
     background: url('../images/l.png');
     background-repeat: no-repeat;
 }
-.element_Hovedomraade a, .kompetansemaal_detaljer_hovedomraader{
+.element_Hovedomraade, .kompetansemaal_detaljer_hovedomraader{
     padding-left: 24px;
     background: url('../images/h.png');
     background-repeat: no-repeat;
 }
-.element_Kompetansemaalsett a, .kompetansemaal_detaljer_kompetansemaalsett {
+.element_Kompetansemaalsett, .kompetansemaal_detaljer_kompetansemaalsett {
     padding-left: 24px;
     background: url('../images/ks.png');
     background-repeat: no-repeat;
@@ -87,17 +87,28 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
     margin: 1em 0 1em 0;
 }
 
+#brodsmulesti h1
+{
+  font-size: 1em;
+  display: inline;
+}
+
 #ingen_db_dump {
     text-size: 1.1em;
     color: red;
     font-weight: bold;
 }
 
+#sok_tilbakemelding {
+	text-align: center;
+  border: 1px solid red;
+}
+
 /* Lists
 -------------------------------------------------------------- */
 
 ul          { list-style-type: none; }
-li          { padding: 0em 0em 0em 1em; }
+/*li          { padding: 0em 0em 0em 1em; }*/
 ol          { list-style-type: decimal; }
 
 dl          { margin: 10px 0; }
@@ -108,7 +119,7 @@ dd          { margin-left: 1.5em;}
 /* Tables
 -------------------------------------------------------------- */
 
-table       { margin-bottom: 1.4em; width: 100%; }
+/*table       { margin-bottom: 1.4em; width: 100%; }*/
 th          { font-weight: bold; }
 th,td       { padding: 4px 10px 4px 5px; }
 tr.even td  { background: #E5ECF9; }
@@ -125,20 +136,19 @@ div#container {
 }
 
 div#branding_bar {
-	text-align: right;
-	background-color: #F47936;
 	height: 40px;
+	background: #F47936 url(../images/searchBackground.gif) no-repeat fixed top right;
 }
 
 div#nav_container {
 	background-color: #DFDFDF;
 	margin: 10px 0px;
 	text-align: right;
-	padding: 5px 0px;
 }
 
 div#spraak {
 	text-align: right;
+	padding: 8px 8px 0 0;
 }
 
 div#resultater {
@@ -149,19 +159,26 @@ div.delresultat {
   padding: 1em 0em
 }
 
-ul#nav_list li, ul#spraak_liste li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 20px;
+ul#nav_list {
+  list-style-type: none;
+  overflow: auto;
+  font-weight: bold;
+}
+
+ul#nav_list li {
+  float: right;
 }
 
 ul#nav_list li a {
-	text-decoration: none;
-	color: #666;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
 }
-
 ul#nav_list li a:hover {
-	text-decoration: underline;
+  background-color: #999;
+  color: #FFF;
+  border-top: 2px solid #333;
+  padding-top: 3px;
 }
 
 select {
@@ -194,7 +211,24 @@ td.x-grid3-td-3 div.x-grid3-cell-inner {
 
 .kompetansemaal_detaljer {
     padding-left: 10px;
-    
+}
+
+ul.sok_filtere {
+	margin-top: 5px;
+}
+
+ul.sok_filtere li {
+	display: inline;
+	font-size: 0.8em;
+}
+
+div.sok_input {
+	margin: 20px 0;
+	text-align: center;
+}
+
+input#q {
+	width: 450px;
 }
 
 
@@ -236,26 +270,12 @@ ul.linke-liste
     margin-bottom: 1em;
 }
 
-#topp_venstre {
-    width: 43%;
-    float:left;
-}
-#valgte_kompetansemaal {
-    width: 55%;
-    float: right;
-}
-
-
-#sidetopp {
-    overflow:auto;
-}
-
 /*----------------- extjs style -------------*/
 
 .x-grid3 {
   border-color: gray;
   border-style: solid;
-  border-width: 1px 0px 1px 1px;
+  border-width: 1px;
 }
 
 .x-grid3-header {
@@ -264,4 +284,12 @@ ul.linke-liste
 
 .x-panel-header {
   display:none;
+}
+
+.x-tip {
+	border: 1px solid #999;
+	padding: 5px;
+	font-size: 0.7em;
+	background-color: #FBB88B;
+	color: #000;
 }

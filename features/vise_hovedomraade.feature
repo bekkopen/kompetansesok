@@ -28,4 +28,4 @@ Egenskap: Vise hovedområde
 
   Scenario: Vise brødsmulesti
     Gitt at jeg ser på hovedomraade med uuid uuid:526037ac-16a7-4bb8-aa92-b9c7c3d5acfe
-    Så jeg skal se Hovedområde "Aktivitet i ulike rørslemiljø" i brødsmulestien
+    Så skal jeg se "Aktivitet i ulike rørslemiljø" på plass "1" i brødsmulestien

@@ -33,5 +33,5 @@ Egenskap: Vise kompetansemaalsett for et fag
   Scenario: Vise brødsmulesti
     Gitt at jeg ser på fag med uuid uuid:bf2c65fc-13cf-4e6c-88db-229878c4822c
     Når jeg velger kompetansemaalsett "Etter Vg2 - studieforberedende utdanningsprogram"
-    Så jeg skal se Fag "Samisk som førstespråk, samisk 1, Vg2 studieforberedende utdanningsprogram" i brødsmulestien
-    Og jeg skal se Kompetansemålsett "Etter Vg2 - studieforberedende utdanningsprogram" i brødsmulestien
+    Så skal jeg se "Samisk som førstespråk, samisk 1, Vg2 studieforberedende utdanningsprogram" på plass "1" i brødsmulestien
+    Og jeg skal se "Etter Vg2 - studieforberedende utdanningsprogram" på plass "2" i brødsmulestien

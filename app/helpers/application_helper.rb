@@ -36,4 +36,8 @@ module ApplicationHelper
       send(klasser.join("_") + "_path", *uuids)
     end
   end
+  
+  def session_checked?(key)
+    session[key] == "true"
+  end
 end

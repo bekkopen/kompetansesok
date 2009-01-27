@@ -13,11 +13,26 @@ Egenskap: Søk
     Gitt at jeg er på hovedsiden
     Når jeg søker etter "mitt søk"
     Så skal det stå "mitt søk" i søkefeltet
+
+  Scenario: For mange treff (med visning av kompetansemål)
+    Gitt at jeg er på hovedsiden
+    Og jeg har markert følgende:
+      | kompetansemaal |
+      | true           |
+    Når jeg søker etter "engelsk"
+    Så skal jeg få advarsel om at søket er for grovt
+
+  Scenario: For mange treff (uten visning av kompetansemål)
+    Gitt at jeg er på hovedsiden
+    Og jeg har markert følgende:
+      | kompetansemaal |
+      | false          |
+    Når jeg søker etter "engelsk"
+    Så skal jeg ikke få advarsel om at søket er for grovt
   
   Scenario: Få 9 treff i kompetansemål på "samisk kultur"
     Gitt at jeg er på hovedsiden
     Når jeg søker etter "'samisk kultur'"
-    # Sjekk manuelt at de kommer alfabetisk
     Så skal jeg få opp følgende treff i kompetansemål:
       | Tittel starter med                           |
       | beskrive særtrekk ved bygninger              |

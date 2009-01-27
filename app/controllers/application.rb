@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   # See ActionController::Base for details 
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
-  # filter_parameter_logging :password
+  # vis_parameter_logging :password
   
   before_filter :set_spraak
   
@@ -27,19 +27,13 @@ class ApplicationController < ActionController::Base
     Time.now.strftime("%Y%m%d%H%M")
   end
 
-  def udir_config
-    @udir_config ||= YAML.load(File.open('config/udir.yml'))
-  end
-  
-  def lag_kompetansemaalrader(kompetansemaal)
-    maks_detalj_rader = udir_config['maks_detalj_rader'] 
+  def lag_kompetansemaalrader(kompetansemaal, ikke_vis_detaljer_for = [])
+    maks_detalj_rader = Udir::CONFIG['maks_detalj_rader'] 
     
-    if kompetansemaal.length > maks_detalj_rader
-      flash[:notice] = t('feilmelding.for_grovt_søk')
+    if kompetansemaal.length > maks_detalj_rader && params[:vis_kompetansemaal] == 'true'
+      flash[:sok_tilbakemelding] = t('feilmelding.for_grovt_søk')
     end
-    sorted_rows(kompetansemaal, maks_detalj_rader)
-  end
-
-  
+    sorted_rows(kompetansemaal, ikke_vis_detaljer_for, maks_detalj_rader)
+  end  
   
 end
