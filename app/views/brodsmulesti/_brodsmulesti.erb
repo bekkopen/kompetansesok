@@ -1,7 +1,13 @@
 <% if @brodsmulesti %>
   <div id="brodsmulesti">
-    <%= @brodsmulesti.map do |element|
-       "<span class='element_#{element[:klasse]}'><a href='#{element[:url]}'>#{element[:tittel]}</a></span>"
+    <%= n = @brodsmulesti.length ; i = 0; @brodsmulesti.map do |element|
+       i += 1
+       inner = if(i != n)
+         "<a href='#{element[:url]}'>#{element[:tittel]}</a>"
+       else
+         "<h1>#{element[:tittel]}</h1>"
+       end
+       "<span class='element_#{element[:klasse]}'>#{inner}</span>"
      end.join(" &#187; ") %>
   </div>
 <% end %>

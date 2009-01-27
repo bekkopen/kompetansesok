@@ -8,7 +8,7 @@ class SokController < ApplicationController
     @kompetansemaalsett_treff = []
     @fag_treff = []
 
-    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader filter_kompetansemaalsett filter_fag}.each do |p|
+    %w{vis_kompetansemaal vis_laereplaner vis_hovedomraader vis_kompetansemaalsett vis_fag}.each do |p|
       session[p] = params[p] if params.has_key?(p)
     end
     
@@ -25,7 +25,7 @@ class SokController < ApplicationController
       kompetansemaal, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = 
         partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
-      @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal) if params[:filter_kompetansemaal] == 'true'
+      @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal) if params[:vis_kompetansemaal] == 'true'
     end
   end
 
@@ -78,7 +78,7 @@ class SokController < ApplicationController
   end
 
   def set_standard_filtering
-    %w{filter_kompetansemaal filter_laereplaner filter_hovedomraader filter_kompetansemaalsett filter_fag}.each do |p|
+    %w{vis_kompetansemaal vis_laereplaner vis_hovedomraader vis_kompetansemaalsett vis_fag}.each do |p|
       session[p] = "true" unless session.cgi.has_key?(p) rescue nil # Ingen cgi i spec miljø
     end
   end

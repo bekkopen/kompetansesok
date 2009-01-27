@@ -58,22 +58,22 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 
 
 /* fargekoder */
-.element_Fag a, .kompetansemaal_detaljer_fag {
+.element_Fag, .kompetansemaal_detaljer_fag {
     padding-left: 24px;
     background: url('../images/f.png');
     background-repeat: no-repeat;
 }
-.element_Laereplan a, .kompetansemaal_detaljer_laereplaner {
+.element_Laereplan, .kompetansemaal_detaljer_laereplaner {
     padding-left: 24px;
     background: url('../images/l.png');
     background-repeat: no-repeat;
 }
-.element_Hovedomraade a, .kompetansemaal_detaljer_hovedomraader{
+.element_Hovedomraade, .kompetansemaal_detaljer_hovedomraader{
     padding-left: 24px;
     background: url('../images/h.png');
     background-repeat: no-repeat;
 }
-.element_Kompetansemaalsett a, .kompetansemaal_detaljer_kompetansemaalsett {
+.element_Kompetansemaalsett, .kompetansemaal_detaljer_kompetansemaalsett {
     padding-left: 24px;
     background: url('../images/ks.png');
     background-repeat: no-repeat;
@@ -85,6 +85,12 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 #brodsmulesti
 {
     margin: 1em 0 1em 0;
+}
+
+#brodsmulesti h1
+{
+  font-size: 1em;
+  display: inline;
 }
 
 #ingen_db_dump {
