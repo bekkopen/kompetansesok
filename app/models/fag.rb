@@ -3,6 +3,10 @@ class Fag < ActiveRecord::Base
   
   has_and_belongs_to_many :kompetansemaalsett
   
+  def ikon_tekst
+    'F'
+  end
+
   def to_param
     uuid
   end

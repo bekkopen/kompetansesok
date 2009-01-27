@@ -56,35 +56,43 @@ del         { color:#666; }
 pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; } 
 
+/* tekst-ikoner */
+.ikon {
+  font-size: 0.6em;
+  font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+  padding: 1px;
+  vertical-align: middle;
+}
 
-/* fargekoder */
-.element_Fag, .kompetansemaal_detaljer_fag {
-    padding-left: 24px;
-    background: url('../images/f.png');
-    background-repeat: no-repeat;
+.ikon_Fag {
+  background: orange;
 }
-.element_Laereplan, .kompetansemaal_detaljer_laereplaner {
-    padding-left: 24px;
-    background: url('../images/l.png');
-    background-repeat: no-repeat;
+
+.ikon_Laereplan {
+  background: cyan;
 }
-.element_Hovedomraade, .kompetansemaal_detaljer_hovedomraader{
-    padding-left: 24px;
-    background: url('../images/h.png');
-    background-repeat: no-repeat;
+
+.ikon_Hovedomraade {
+  background: magenta;
 }
-.element_Kompetansemaalsett, .kompetansemaal_detaljer_kompetansemaalsett {
-    padding-left: 24px;
-    background: url('../images/ks.png');
-    background-repeat: no-repeat;
+
+.ikon_Kompetansemaalsett {
+  background: blue;
 }
+
 .kompetansemaal_detaljer_hovedomraader, .kompetansemaal_detaljer_kompetansemaalsett, .kompetansemaal_detaljer_laereplaner, .kompetansemaal_detaljer_fag {
     padding-bottom: 5px;
 }
 
 #brodsmulesti
 {
-    margin: 1em 0 1em 0;
+  margin: 1em 0 1em 0;
+}
+
+#brodsmulesti li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
 }
 
 #brodsmulesti h1
