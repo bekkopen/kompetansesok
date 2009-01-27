@@ -92,7 +92,14 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 #brodsmulesti li {
   display: inline;
   list-style-type: none;
-  padding-right: 20px;
+  padding-right: 8px;
+}
+
+#brodsmulesti li.bullet {
+  padding-left: 24px;
+  background-image: url(/images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 0 .2em;
 }
 
 #brodsmulesti h1
@@ -193,6 +200,10 @@ select {
   width: 30em;
 }
 
+textarea#valgte_tekst {
+  width: 100%;
+}
+
 form#laereplan_sok label {
 	font-weight: bold;
 }
@@ -288,6 +299,11 @@ ul.linke-liste
 
 .x-grid3-header {
   display:none;
+}
+
+.x-grid3-scroller {
+  overflow-x:hidden;
+  overflow-y:auto;
 }
 
 .x-panel-header {

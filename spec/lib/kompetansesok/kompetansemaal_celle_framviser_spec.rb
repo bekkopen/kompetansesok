@@ -25,34 +25,37 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should return correct leareplan string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "plan1, plan2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "LP plan1, plan2"
     end
 
     it "should return correct hovedomraade string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "h1, h2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "H h1, h2"
     end
 
     it "should return correct Kompetansemaalsett string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:kompetansemaalsett, @kompetansemaal)).should == "k1, k2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:kompetansemaalsett, @kompetansemaal)).should == "KS k1, k2"
     end
 
     it "should return correct fag string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "f1, f2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "F f1, f2"
     end
 
     it "should produce correct html string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelplan1, plan2h1, h2k1, k2f1, f2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == 
+        "TittelLP plan1, plan2H h1, h2KS k1, k2F f1, f2"
     end
 
     it "should produce correct html string, if no fag is present" do
       @stubs[:fag] = []
       @kompetansemaal = (mock("kompetansemaal",  @stubs))
       @kompetansemaal_celle_framviser = MyView.new 
-      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == "Tittelplan1, plan2h1, h2k1, k2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == 
+        "TittelLP plan1, plan2H h1, h2KS k1, k2"
     end
 
     it "should produce correct styling around the elements" do
-      @kompetansemaal_celle_framviser.send(:fag, @kompetansemaal).should == "<span class='kompetansemaal_detaljer'><span class='kompetansemaal_detaljer_fag'>f1, f2</span></span>"
+      @kompetansemaal_celle_framviser.send(:fag, @kompetansemaal).should == 
+        "<div class='kompetansemaal_detaljer'><span class='ikon ikon_Fag'>F</span> f1, f2</div>"
     end
   
   end

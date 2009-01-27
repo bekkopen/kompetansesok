@@ -58,14 +58,22 @@
 	overflow:hidden;
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
-    padding:3px 3px 3px 5px;
-    white-space: nowrap;
+  padding:3px 3px 3px 5px;
+  white-space: nowrap;
+}
+
+.x-grid3-col {
+	font-size: 100%;
+}
+
+.x-grid3-hd-row td, .x-grid3-row td, .x-grid3-summary-row td {
+	font-size: 100%;
 }
 
 .x-grid3-hd-inner {
-    position:relative;
-	 cursor:inherit;
-	 padding:4px 3px 4px 5px;
+  position:relative;
+	cursor:inherit;
+	padding:4px 3px 4px 5px;
 }
 
 .x-grid3-row-body {
@@ -80,13 +88,10 @@
 .ext-ie .x-grid3-cell-inner, .ext-ie .x-grid3-hd-inner{
 	width:100%;
 }
+
 /* reverse above in strict mode */
 .ext-strict .x-grid3-cell-inner, .ext-strict .x-grid3-hd-inner{
 	width:auto;
-}
-
-.x-grid3-col {
-	
 }
 
 .x-grid-row-loading {

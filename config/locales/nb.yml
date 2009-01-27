@@ -26,7 +26,7 @@ nb:
     
   etiketter:
     søk: "Søk"
-    uuid: "ID"
+    uuid: "Id"
     kode: "Kode"
     tittel: "Tittel"
     vis_uuid: "Vis id"
