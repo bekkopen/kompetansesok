@@ -4,6 +4,7 @@ nb:
     database_eksport: "Database eksport"
     om_kopetansemål_søk: "Om søket / hjelp"
     ofte_stillte_spørsmål: "Ofte stillte spørsmål"
+    statistikk: "Statistikk over antall søk"
 
   overskrifter:
     resultater: "Resultater"
@@ -18,6 +19,7 @@ nb:
     søk_i:  "Søk i:"
     kompetansemål_søk: "Kompetansemål søk"
     ofte_stillte_spørsmål: "Ofte stillte spørsmål"
+    statistikk: "Antall søk den siste tiden"
   
   knapper:
     søk: "Søk"
@@ -43,6 +45,10 @@ nb:
     kompetansemålsett: "Kompetansemålsett"
     fag: "Fag"
     søkeboks_default_tekst: "Søk på id, tittel eller kode. Bruk avkryssningsboksene nedenfor til å filtrere..."
+    sok_denne_uke: "Denne uken"
+    sok_forrige_uke: "Forrige uke"
+    sok_denne_måned: "Denne måneden"
+    sok_forrige_måned: "Forrige måned"
 
   meldinger:
     angi_kriterium: "Vennligst angi et søkekriterium"
