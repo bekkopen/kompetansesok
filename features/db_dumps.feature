@@ -8,7 +8,7 @@ Feature: Laste ned database
       | lørdag.zip |
       | fredag.zip |
     Og at jeg er på hovedsiden
-    Når jeg klikker på linken "Last ned databasen"
+    Når jeg klikker på linken "Database eksport"
     Så skal jeg se følgende liste over databasefiler
       | navn       |
       | lørdag.zip |
@@ -17,5 +17,5 @@ Feature: Laste ned database
   Scenario: Tom liste når ingen dumps er laget
     Gitt at ingen databasefiler finnes
     Og at jeg er på hovedsiden
-    Når jeg klikker på linken "Last ned databasen"
+    Når jeg klikker på linken "Database eksport"
     Så skal jeg ikke se noen databasefiler

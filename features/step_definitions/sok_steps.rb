@@ -2,7 +2,6 @@
 Når /^jeg søker etter "(.*)"$/ do |sok|
   fill_in 'Søk', :with => sok
   click_button 'Søk'
-  File.open('debug.html', 'w'){|io| io.write(response.body)}
 end
 
 Så /^skal jeg få opp følgende treff i kompetansemål:$/ do |sokeresultater|
