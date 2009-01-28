@@ -23,6 +23,7 @@ nb:
     søk: "Søk"
     eksport_csv: "Lagre resultatsett til fil"
     tilbake: "Tilbake"
+    bytt_spraak: "Bytt språk"
     
   etiketter:
     søk: "Søk"
