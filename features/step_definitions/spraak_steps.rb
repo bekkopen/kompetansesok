@@ -5,7 +5,7 @@ end
 
 Når /^jeg velger (\w+) som språk$/ do |spraak|
   select spraak, :from => "spraak_valg"
-  click_button "Velg språk"
+  click_button "Bytt språk"
 end
 
 Så /^skal jeg se hovedsiden på engelsk$/ do

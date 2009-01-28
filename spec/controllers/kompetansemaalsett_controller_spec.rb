@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe KompetansemaalsettController do
 
-  def mock_kompetansemaalsett(stubs={:kompetansemaal => [], :tittel => "tittel", :uuid => "uuid"})
+  def mock_kompetansemaalsett(stubs={:kompetansemaal => [], :tittel => "tittel", :uuid => "uuid", :ikon_tekst => 'KS'})
     @mock_kompetansemaalsett ||= mock_model(Kompetansemaalsett, stubs)
   end
 
@@ -28,7 +28,7 @@ describe KompetansemaalsettController do
     
     it "should find kompetansemaal filtered by hovedomraade if it is nested under hovedomraade" do
       kompetansemaal = []
-      hovedomraade = mock_model(Hovedomraade, {:tittel => "tittel", :uuid => "uuid"})
+      hovedomraade = mock_model(Hovedomraade, {:tittel => "tittel", :uuid => "uuid", :ikon_tekst => 'H'})
       Hovedomraade.should_receive(:find_by_uuid).with("uuid-hovedomraade").and_return(hovedomraade)
       mock_kompetansemaalsett.should_receive(:kompetansemaal_for_hovedomraade).with(hovedomraade).and_return(kompetansemaal)
       

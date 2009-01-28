@@ -25,7 +25,15 @@
 					["Engelsk", "en"]
 				],
 				:selected => session[:spraak] %>
-				<%= submit_tag "Velg språk", :class => 'submit' %>
+				
+				<script type="text/javascript">
+  				$("#spraak_valg").change(function() {
+  				  $(this).parent('form').submit();
+          });
+        </script>
+        <noscript>
+				  <%= submit_tag t('knapper.bytt_spraak'), :class => 'submit' %>
+        </noscript>
 			<% end %>
 		  </div>
 	  </div>
