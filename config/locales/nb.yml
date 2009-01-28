@@ -51,7 +51,7 @@ nb:
     database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på linkene under for å laste ned ønsket eksport."
 
   feilmelding:
-    for_grovt_søk: "Søket du har angitt er for grovt. Detaljer for kompetansemål vises derfor ikke."
+    for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
 
   csv:
