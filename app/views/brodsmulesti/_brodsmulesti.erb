@@ -8,7 +8,8 @@
          "<h1>#{element[:tittel]}</h1>"
        end
        bullet_style = i == 1 ? '' : ' class="bullet"'
-       %{<li#{bullet_style}>#{inner}</li>}
+       tekst_ikon = %{<span class="ikon ikon_#{element[:klasse]}">#{element[:ikon_tekst]}</span>}
+       %{<li#{bullet_style}>#{tekst_ikon} #{inner}</li>}
      end.join("") %>
   </ol>
 <% end %>

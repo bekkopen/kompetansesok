@@ -48,12 +48,10 @@
 <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
 
 <div id='resultater'>
-  <% if session_checked?('vis_kompetansemaal') %>
     <div id="kompetansemaal_treff">
       <h2><%= t('overskrifter.kompetansemål') %></h2>
-      <%=  render :partial => "kompetansemaal/simple_grid" %>
+      <%= render :partial => "kompetansemaal/simple_grid" %>
     </div>
-  <% end %>
 
   <% if session_checked?('vis_laereplaner') %>
     <div id='laereplaner_treff' class='delresultat'>

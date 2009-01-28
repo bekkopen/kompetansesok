@@ -35,7 +35,7 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.075785828"
+     inkscape:zoom="0.30314331"
      inkscape:cx="223.09007"
      inkscape:cy="702.40868"
      inkscape:document-units="px"
@@ -68,11 +68,17 @@
        sodipodi:cy="375.21933"
        sodipodi:rx="120"
        sodipodi:ry="120"
-       d="M 451.42856,375.21933 A 120,120 0 1 1 211.42856,375.21933 A 120,120 0 1 1 451.42856,375.21933 z" />
+       d="M 451.42856,375.21933 A 120,120 0 1 1 211.42856,375.21933 A 120,120 0 1 1 451.42856,375.21933 z"
+       inkscape:export-filename="/Users/aslakhellesoy/scm/kompetansesok/public/images/arrow.png"
+       inkscape:export-xdpi="6"
+       inkscape:export-ydpi="6" />
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 336.42856,300.21933 L 336.42856,350.21933 L 251.42856,350.21933 L 251.42856,400.21933 L 336.42856,400.21933 L 336.42856,450.21933 L 411.42856,375.21933 L 336.42856,300.21933 z"
        id="rect3187"
-       sodipodi:nodetypes="cccccccc" />
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/Users/aslakhellesoy/scm/kompetansesok/public/images/arrow.png"
+       inkscape:export-xdpi="6"
+       inkscape:export-ydpi="6" />
   </g>
 </svg>

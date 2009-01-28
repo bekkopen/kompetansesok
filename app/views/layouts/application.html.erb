@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <%= javascript_include_tag 'jquery-1.3.min', 'ext/adapter/ext/ext-base', 'ext/ext-all', 'ext-functions', 'Valgtekompetansemaal', 'jquery.inputclear' %>
+    <%= javascript_include_tag 'jquery-1.3.min', 'ext/adapter/ext/ext-base', 'ext/ext-all', 'ext-functions', 'valgte_kompetansemaal', 'jquery.inputclear' %>
     <%= stylesheet_link_tag('screen') %>
     
     <title>Kompetansesøk</title>
   </head>
-  <body id="<%= params[:controller] %>">
+  <body>
 	<div id="container">
 	  <div id="header">
       <%= image_tag "logo.gif" %>
@@ -31,9 +31,15 @@
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-		  <li id="info_nav"><%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %></li>
-		  <li id="db_dump_nav"><%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %></li>
-  		  <li id="sok_nav"><%= link_to t('navigasjon.forside'), root_path %></li>
+  		  <li<%= current_page?(:controller => :info) ? ' class="current"' : ''%>>
+  		    <%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %>
+  		  </li>
+  		  <li<%= current_page?(:controller => :db_dump) ? ' class="current"' : ''%>>
+  		    <%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %>
+  		  </li>
+  		  <li<%= current_page_sok? ? ' class="current"' : ''%>>
+  		    <%= link_to t('navigasjon.forside'), root_path %>
+  		  </li>
   		</ul>
 	  </div>
 	  <div id="content">

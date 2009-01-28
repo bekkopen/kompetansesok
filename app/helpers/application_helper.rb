@@ -42,6 +42,9 @@ module ApplicationHelper
     end
   end
   
+  def current_page_sok?
+    %w{sok fag hovedomraade kompetansemaalsett laereplan}.index(params[:controller].to_s)
+  end
 
   def session_checked?(key)
     session[key] == "true"

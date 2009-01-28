@@ -105,6 +105,7 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 #brodsmulesti h1
 {
   font-size: 1em;
+  font-weight: bold;
   display: inline;
 }
 
@@ -188,15 +189,11 @@ ul#nav_list li {
   float: right;
 }
 
-body#sok li#sok_nav,
-body#db_dump li#db_dump_nav,
-body#info li#info_nav {
+ul#nav_list li.current {
   border-bottom: 2px solid #333;
 }
 
-body#sok li#sok_nav a:hover,
-body#db_dump li#db_dump_nav a:hover,
-body#info li#info_nav a:hover {
+ul#nav_list li.current a:hover {
   border-bottom: 0;
 }
 
