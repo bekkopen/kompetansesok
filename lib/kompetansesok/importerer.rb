@@ -67,7 +67,7 @@ module Kompetansesok
       @out.puts('Gjør db eksport og cleanup') if @out
       Kompetansesok::DbEksport.eksporter
       Kompetansesok::DbEksport.cleanup
-      @out.puts('Exkort og clean up ferdig') if @out
+      @out.puts('Export og clean up ferdig') if @out
     end
 
     def filer
