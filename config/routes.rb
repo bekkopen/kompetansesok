@@ -19,8 +19,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :bla_i_laereplan, :only => :index
   map.connect 'bla_i_laereplan/:id', :controller => 'bla_i_laereplan'
-  
-  
+
+  map.resources :info, :collection => {:statistikk => :get}
 
   # The priority is based upon order of creation: first created -> highest priority.
 

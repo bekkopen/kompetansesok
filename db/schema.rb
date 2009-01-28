@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090127093449) do
+ActiveRecord::Schema.define(:version => 20090128095818) do
 
   create_table "fag", :force => true do |t|
     t.string   "uuid"
@@ -58,6 +58,11 @@ ActiveRecord::Schema.define(:version => 20090127093449) do
 
   add_index "hovedomraader_laereplaner", ["hovedomraade_id"], :name => "index_hovedomraader_laereplaner_on_hovedomraade_id"
   add_index "hovedomraader_laereplaner", ["laereplan_id"], :name => "index_hovedomraader_laereplaner_on_laereplan_id"
+
+  create_table "info", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
