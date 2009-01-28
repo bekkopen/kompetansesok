@@ -22,7 +22,7 @@ module Kompetansesok
     def self.eksporter
       dump_filename = 'kompetansesok_mysql.dump'
       dump_filepath = File.join(Rails.root, 'tmp', dump_filename)
-      sh "mysqldump -u#{db_user} #{db_name} #{db_pass_prase} > #{dump_filepath}"
+      system("mysqldump -u#{db_user} #{db_name} #{db_pass_prase} > #{dump_filepath}")
 
       
       if not File.exist?(@@zip_path)
