@@ -23,6 +23,7 @@ en:
       søk: "Search"
       eksport_csv: "Export results to file (csv)"
       tilbake: "Back"
+      bytt_spraak: "Change language"
 
     etiketter:
       søk: "Search"
