@@ -16,7 +16,7 @@ ActionController::Routing::Routes.draw do |map|
     f.resources :kompetansemaalsett
   end
   map.resources :db_dump, :only => :index
-  map.resources :info, :collection => {:statistikk => :get}
+  map.resources :info, :collection => {:statistikk => :get, :faq => :get}
   
 
   # The priority is based upon order of creation: first created -> highest priority.
