@@ -21,7 +21,7 @@ module Kompetansesok
       
       rows = []
       kompetansemaal.each do |maal|
-        rows = rows_through_laereplan(maal) + rows_through_fag(maal) 
+        rows = rows + rows_through_laereplan(maal) + rows_through_fag(maal)
       end
       rows
     end
