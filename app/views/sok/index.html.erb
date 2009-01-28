@@ -52,13 +52,13 @@
 
   <div id='resultater'>
       <div id="kompetansemaal_treff">
-        <h2><%= t('overskrifter.kompetansemål') %></h2>
+        <h2><%= t('overskrifter.kompetansemål') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaal_treff.length %>)</h2>
         <%= render :partial => "kompetansemaal/simple_grid" %>
       </div>
 
     <% if session_checked?('vis_laereplaner') %>
       <div id='laereplaner_treff' class='delresultat'>
-        <h2><%= t('overskrifter.læreplaner') %></h2>
+        <h2><%= t('overskrifter.læreplaner') %> (<%= t('tekst.antall_treff') %> <%= @laereplaner_treff.length %>)</h2>
         <ul>
           <% @laereplaner_treff.each do |laereplan| %>
             <li> <%= link_to "#{laereplan.kode}: #{laereplan.tittel}", laereplan_path(laereplan) %> </li>
@@ -69,7 +69,7 @@
 
     <% if session_checked?('vis_hovedomraader') %>
       <div id='hovedomraader_treff' class='delresultat'>
-        <h2><%= t('overskrifter.hovedområder') %></h2>
+        <h2><%= t('overskrifter.hovedområder') %> (<%= t('tekst.antall_treff') %> <%= @hovedomraader_treff.length %>)</h2>
         <ul>
           <% @hovedomraader_treff.each do |hovedomraade| %>
             <li> <%= link_to hovedomraade.tittel, hovedomraade_path(hovedomraade) %> </li>
@@ -81,7 +81,7 @@
 
     <% if session_checked?('vis_kompetansemaalsett') %>
       <div id='kompetansemaalsett_treff' class='delresultat'>
-        <h2><%= t('overskrifter.kompetansemålsett') %></h2>
+        <h2><%= t('overskrifter.kompetansemålsett') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaalsett_treff.length %>)</h2>
         <ul>
           <% @kompetansemaalsett_treff.each do |kompetansemaalsett| %>
             <li> <%= link_to kompetansemaalsett.tittel, kompetansemaalsett_path(kompetansemaalsett) %> </li>
@@ -92,7 +92,7 @@
 
     <% if session_checked?('vis_fag') %>
       <div id='fag_treff' class='delresultat'>
-        <h2><%= t('overskrifter.fag') %></h2>
+        <h2><%= t('overskrifter.fag') %> (<%= t('tekst.antall_treff') %> <%= @fag_treff.length %>)</h2>
         <ul>
           <% @fag_treff.each do |fag| %>
             <li> <%= link_to fag.tittel, fag_path(fag) %> </li>

@@ -272,6 +272,9 @@ input.søke_hint {
 	color: #999;
 }
 
+div#videre_info a {
+	margin-right: 20px;
+}
 
 /*----------------- informasjon style -------------*/
 
@@ -331,3 +334,9 @@ ul.linke-liste
 .x-panel-header {
   display:none;
 }
+
+#sorter_paa_kode a, #sorter_paa_tittel a {
+  color: grey;
+  font-weight: bold;
+}
+

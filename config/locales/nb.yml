@@ -25,7 +25,10 @@ nb:
     søk: "Søk"
     eksport_csv: "Lagre resultatsett til fil"
     tilbake: "Tilbake"
+    sorter_på_tittel: "Sorter på tittel"
+    sorter_på_kode: "Sorter på kode"
     bytt_spraak: "Bytt språk"
+
     
   etiketter:
     søk: "Søk"
@@ -56,6 +59,8 @@ nb:
 
   tekst:
     database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på linkene under for å laste ned ønsket eksport."
+    bla_i_laereplan: "Her kan du bla i læreplaner. Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
+    antall_treff: "antall treff:"
 
   feilmelding:
     for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."

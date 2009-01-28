@@ -27,7 +27,7 @@ class SokController < ApplicationController
       kompetansemaal, @laereplaner_treff, @hovedomraader_treff, @kompetansemaalsett_treff, @fag_treff = 
         partition_by_class(treff, Kompetansemaal, Laereplan, Hovedomraade, Kompetansemaalsett, Fag)       
 
-      @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal) if params[:vis_kompetansemaal] == 'true'
+      @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, [], true) if params[:vis_kompetansemaal] == 'true'
     end
   end
 

@@ -1,7 +1,7 @@
 module Kompetansesok
   module KompetansemaalCelleFramviser
     
-    def sorted_rows(kompetansemaal, skip_details_for = [], max_treshold = 30)
+    def sorted_rows(kompetansemaal, skip_details_for = [], max_treshold = nil)
       unsorted = generate_unsorted_rows(kompetansemaal, plural_classnames_as_symbols(skip_details_for), max_treshold) 
       sort_rows(unsorted)
     end
@@ -53,8 +53,8 @@ module Kompetansesok
       end
     end
     
-    def generate_unsorted_rows(kompetansemaal, skip_details_for = [], max_treshold = 30)
-      if kompetansemaal.length < max_treshold
+    def generate_unsorted_rows(kompetansemaal, skip_details_for = [], max_treshold = nil)
+      if max_treshold.nil? || kompetansemaal.length < max_treshold
         kompetansemaal.map do |maal|
           possible_sort_by = {:laereplan => laereplaner(maal), 
             :hovedomraade => hovedomraader(maal), 
