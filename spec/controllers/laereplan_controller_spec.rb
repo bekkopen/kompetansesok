@@ -1,19 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe LaereplanController do
-
-  def mock_laereplan(stubs={:kompetansemaal => [], :tittel=> "tittel", :uuid => "uuid", :hovedomraader => [mock_model(Hovedomraade, {:uuid => "uuid", :tittel=>"tittel"})]})
-    @mock_fag ||= mock_model(Laereplan, stubs)
-  end
-
   describe "responding to GET show" do
-
     it "should expose the requested fag as @laereplan" do
-      Laereplan.should_receive(:find_by_uuid).with("uuid-38").and_return(mock_laereplan(:kompetansemaal => [], :tittel=>"tittel", :uuid =>"uuid"))
+      laereplan = mock_model(Laereplan, :kompetansemaal => [], :tittel=>"tittel", :uuid =>"uuid", :ikon_tekst => 'LP')
+      Laereplan.should_receive(:find_by_uuid).with("uuid-38").and_return(laereplan)
       get :show, :id => "uuid-38"
-      assigns[:laereplan].should equal(mock_laereplan)
+      assigns[:laereplan].should equal(laereplan)
     end
-    
   end
-
 end

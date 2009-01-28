@@ -84,13 +84,3 @@ function importAndDisplaySelectedKompetansemaal()
     
     valgte_grid.valgte_kompetansemaal.displayValgteKompetansemaal();
 };
-
-
-
-
-
-
-
-
-
-

@@ -23,6 +23,7 @@ en:
       søk: "Search"
       eksport_csv: "Export results to file (csv)"
       tilbake: "Back"
+      bytt_spraak: "Change language"
 
     etiketter:
       søk: "Search"
@@ -51,7 +52,7 @@ en:
       database_eksport: "MySQL database exports are available for download. These database exports include all the data displayed in this application. Click on the below links til download a database export."
 
     feilmelding:
-      for_grovt_søk: "You search is too broad to include all details for competence goal results"
+      for_grovt_søk: "You search has returned to many resulats to include all details for competence goals"
       ingen_db_dump: "No database exports have been generated."
 
     csv:
