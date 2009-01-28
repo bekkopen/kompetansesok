@@ -93,13 +93,13 @@ nb:
         åtte: "Hvordan finner jeg kompetansemål for en læreplan?"
         ni: "Hvordan kan jeg navigere opp til læreplan fra et kompetansemålsett?"
     svar:
-        en:
-        to:
-        tre:
-        fire:
-        fem:
-        seks:
-        syv:
-        åtte:
-        ni:
+        en: "Man kan søke etter id, kode eller tittel på kompetansemål, læreplan, kompetansemålsett, hovedområde og/eller fag. Resultater fra søket er basert direkte på det man søker etter (skrevet inn i søkeboks)."
+        to: "Man kan filtere søket ved å bruke avkryssningsboksene under søkeboksen. For eksempel, hvis man vil bare søke på læreplaner, krysser man bare av på læreplaner."
+        tre: "Følgende søkemuligheter eksisterer: . Videre avanserte søkemuligheter beskrives på <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">nettstedet til Sphinx (søkemotor)</a>"
+        fire: "Søk som returnerer velding mange kompetansemål resultater, viser ikke tilhørende informasjon (for eksempel tilhørende kompetansemålsett). I disse tilfelle bør søketermen endres til noe mer spesifikk, kompetansemål resultatene kan brukes til å lage søket mer spesifikk."
+        fem: "Ved å klikke på kompetansemål i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer man valgte kompetansemål i \"Valgte kompetansemål\" boksen. Man kan klikke på flere kompetansemål rader for å kopiere flere kompetansemål i \"Valgte kompetansemål\" boksen."
+        seks: "Det eksisterer primært tre muligheter til å hente data fra denne applikasjonen for videre bruk. Man kan bruke PC kopiering funksjonalitet til å kopiere fra \"Valgte kompetansemål\" boksen. Man kan eksportere valgte kompetansemål til csv fil format ved å klikke på \"Lagre resultatsett til fil\" under  \"Valgte kompetansemål\" boksen på søkesiden. Det er også mulig å laste ned en komplett eksport av underliggende database på <a href=\"/db_dump\">eksport database siden</a>."
+        syv: "Man kan endre språk ved å velge språk i \"select\" boksen øverst til høyre på siden."
+        åtte: "Søkeresultatet på søkesiden gir treff inenfor alle områder. Hvis man får treff på læreplan, klikker man på en læreplan i læreplan listen for å se alle kompetansemål for valgte læreplan. Man kan gjøre det samme for kompetansemålsett, hovedområder og fag."
+        ni: "Man kan bruke brødsmule stien på alle sider (untatt søkesiden) til å navigere seg tilbake til tilhørende områder."
             
