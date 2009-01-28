@@ -331,3 +331,9 @@ ul.linke-liste
 .x-panel-header {
   display:none;
 }
+
+#sorter_paa_kode a, #sorter_paa_tittel a {
+  color: pink;
+  font-weight: bold;
+}
+

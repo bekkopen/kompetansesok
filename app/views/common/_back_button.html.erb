@@ -1,1 +1,3 @@
-<input type="button" onclick="javascript:window.history.go(-1)" value="<%= t("knapper.tilbake") %>" />
+<form action="<%= request.referer %>" method="get">
+<input type="submit" onclick="javascript:window.history.go(-1)" value="<%= t("knapper.tilbake") %>" />
+</form>

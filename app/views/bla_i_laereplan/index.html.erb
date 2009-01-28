@@ -1,0 +1,13 @@
+<p>
+  <%=  t('tekst.bla_i_laereplan') %>
+</p>
+
+<span id="sorter_paa_kode"><a href="<%= bla_i_laereplan_index_path :sort => :kode %>"><%= t("knapper.sorter_på_kode") %></a></span> &nbsp;&nbsp;
+<span id="sorter_paa_tittel"><a href="<%= bla_i_laereplan_index_path :sort => :tittel %>"><%= t("knapper.sorter_på_tittel") %></a></span>
+<hr/>
+<ul>
+  <% @laereplaner.each do |l| %>
+    <li class="liste_element_laereplan"><%= link_to "#{l.kode } : #{l.tittel}", l %></li>
+  <%end%>
+</ul>
+
