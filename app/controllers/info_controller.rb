@@ -4,4 +4,8 @@ class InfoController < ApplicationController
   
   def show
   end
+  
+  def statistikk
+    @statistikk = Info.sok_statistikk
+  end
 end
