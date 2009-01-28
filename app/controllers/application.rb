@@ -27,10 +27,14 @@ class ApplicationController < ActionController::Base
     Time.now.strftime("%Y%m%d%H%M")
   end
 
-  def lag_kompetansemaalrader(kompetansemaal, ikke_vis_detaljer_for = [])
-    maks_detalj_rader = Udir::CONFIG['maks_detalj_rader'] 
+  def lag_kompetansemaalrader(kompetansemaal, ikke_vis_detaljer_for = [], begrens_antall_detaljrader = false)
+    maks_detalj_rader = if begrens_antall_detaljrader
+      Udir::CONFIG['maks_detalj_rader'] 
+    else
+      nil
+    end
     
-    if kompetansemaal.length > maks_detalj_rader && params[:vis_kompetansemaal] == 'true'
+    if maks_detalj_rader && kompetansemaal.length > maks_detalj_rader
       flash[:sok_tilbakemelding] = t('feilmelding.for_grovt_søk')
     end
     sorted_rows(kompetansemaal, ikke_vis_detaljer_for, maks_detalj_rader)
