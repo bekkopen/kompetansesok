@@ -17,6 +17,8 @@ class SokController < ApplicationController
         flash[:sok_tilbakemelding] = t('meldinger.angi_kriterium')
       end
     else
+      Info.create #uset to generate statistics of number of searches performed
+      
       flash.delete(:sok_tilbakemelding)
       sokestreng = params[:q].gsub(';', ' or ')
       sok = Ultrasphinx::Search.new(:query => sokestreng, :per_page => Ultrasphinx::Search::MAX_MATCHES)
