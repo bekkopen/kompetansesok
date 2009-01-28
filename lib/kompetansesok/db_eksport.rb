@@ -24,7 +24,6 @@ module Kompetansesok
       dump_filepath = File.join(Rails.root, 'tmp', dump_filename)
       system("mysqldump -u#{db_user} #{db_name} #{db_pass_prase} > #{dump_filepath}")
 
-      
       if not File.exist?(@@zip_path)
         File.makedirs(@@zip_path)
       end
