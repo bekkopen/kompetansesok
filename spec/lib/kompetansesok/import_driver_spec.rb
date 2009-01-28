@@ -51,6 +51,12 @@ describe Kompetansesok::ImportDriver do
 
   it "should give correct dbdump" do
     tmp_file_name = File.join(Rails.root, "public", "db_dumps", "db_dump_22-01-3000-11:11.zip")
+
+    dirname =File.dirname(tmp_file_name)
+    if not File.directory?(dirname)
+      Dir.mkdir(dirname)
+    end
+    
     File.new(tmp_file_name, File::CREAT)
 
     Kompetansesok::DbEksport.find_last_db_dump.should == tmp_file_name

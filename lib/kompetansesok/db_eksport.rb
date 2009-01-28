@@ -87,6 +87,11 @@ module Kompetansesok
     def self.unzip_db_dump(file)
       require 'zip/zipfilesystem'
       dump_filename = File.join(Rails.root, "tmp", "restore.sql")
+      
+      if not File.exist?(file)
+        raise "Ingen fil med navn: #{file}"
+      end
+
       f = File.new(dump_filename, 'w+')
 
       Zip::ZipFile.open(file) do |zipfile|
