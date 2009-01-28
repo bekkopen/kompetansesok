@@ -333,7 +333,7 @@ ul.linke-liste
 }
 
 #sorter_paa_kode a, #sorter_paa_tittel a {
-  color: pink;
+  color: grey;
   font-weight: bold;
 }
 
