@@ -3,9 +3,8 @@ module Kompetansesok
 
     #kaster exception hvis kommandoen feiler, returnerer utskriften fra funksjonen
     def run_command(command)
-      tekst= capture_output do
-        return_value = system(command)
-        if return_value == false
+      tekst = capture_output do
+        unless system(command)
           raise "Kunne ikke kjøre '#{command}'; feil:#{$?}"
         end
       end

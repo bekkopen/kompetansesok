@@ -65,8 +65,8 @@ module Kompetansesok
 
     def lag_db_dump
       @out.puts('Gjør db eksport og cleanup') if @out
-      Kompetansesok::DbEksport.eksporter
-      Kompetansesok::DbEksport.cleanup
+      Kompetansesok::DbEksport.new.eksporter
+      Kompetansesok::DbEksport.new.cleanup
       @out.puts('Export og clean up ferdig') if @out
     end
 
