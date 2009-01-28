@@ -65,19 +65,23 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 }
 
 .ikon_Fag {
-  background: orange;
+  background: #F47936;
+  color: white;
 }
 
 .ikon_Laereplan {
-  background: cyan;
+  background: #F47936;
+  color: white;
 }
 
 .ikon_Hovedomraade {
-  background: magenta;
+  background: #F47936;
+  color: white;
 }
 
 .ikon_Kompetansemaalsett {
-  background: blue;
+  background: #F47936;
+  color: white;
 }
 
 .kompetansemaal_detaljer_hovedomraader, .kompetansemaal_detaljer_kompetansemaalsett, .kompetansemaal_detaljer_laereplaner, .kompetansemaal_detaljer_fag {
