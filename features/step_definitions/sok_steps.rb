@@ -40,3 +40,10 @@ Så /^skal det stå "(.+)" i søkefeltet$/ do |sok|
   response.should have_tag('input[id=q][value=?]', sok)
 end
 
+Så /^skal jeg få følgende antall treff:$/ do |treff_tabell|
+  treff_tabell.hashes.each do |rad|
+    response.should have_tag('h2', "#{rad['Type']} (antall treff: #{rad['Antall']})")
+  end
+end
+
+

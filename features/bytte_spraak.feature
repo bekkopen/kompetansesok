@@ -10,6 +10,6 @@ Feature: Bytte språk
 
   Scenario: Gå til hovedside
     Gitt at jeg er på infosiden
-    Når jeg velger Nynorsk som språk
+    Når jeg velger Engelsk som språk
     Så skal jeg bli tatt til hovedsiden
 

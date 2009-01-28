@@ -272,6 +272,9 @@ input.søke_hint {
 	color: #999;
 }
 
+div#videre_info a {
+	margin-right: 20px;
+}
 
 /*----------------- informasjon style -------------*/
 

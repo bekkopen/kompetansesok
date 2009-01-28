@@ -115,4 +115,14 @@ Egenskap: Søk
       | Tittel                                                                                                                                       |
       | NOR6-01: Læreplan i fordypning i norsk                                                                                                       |
       | FOR6-01: Læreplan i samisk visuell kultur - valfritt programfag i studiespesialiserande utdanningsprogram, programområde for formgjevingsfag |
-    
+
+   Scenario: Vise antall treff
+    Gitt at jeg er på hovedsiden
+    Når jeg søker etter "engelsk"
+    Så skal jeg få følgende antall treff:
+      | Type              | Antall |
+      | Kompetansemål     | 101    |
+      | Læreplaner        | 4      |
+      | Hovedområder      | 0      |
+      | Kompetansemålsett | 2      |
+      | Fag               | 13     |
