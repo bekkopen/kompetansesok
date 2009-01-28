@@ -16,9 +16,13 @@ ActionController::Routing::Routes.draw do |map|
     f.resources :kompetansemaalsett
   end
   map.resources :db_dump, :only => :index
+
+
+  map.resources :bla_i_laereplan, :only => :index
+  map.connect 'bla_i_laereplan/:id', :controller => 'bla_i_laereplan'
+
   map.resources :info, :collection => {:statistikk => :get, :faq => :get}
   
-
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
