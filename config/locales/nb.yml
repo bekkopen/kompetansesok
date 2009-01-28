@@ -70,4 +70,25 @@ nb:
     fag_uuid: "fag id"
     fag_kode: "fag kode"
     fag_tittel: "fag tittel"
-    
+  faq:
+    spørsmål:
+        en: "Hva kan jeg søke etter?"
+        to: "Hvordan kan jeg filtrere søket?"
+        tre: "Hvilke søkemuligheter har jeg?"
+        fire: "Hvorfor inkluderes ikke alltid kompetansemål detaljer i søkeresultatet?"
+        fem: "Hvordan velger jeg kompetansemål for markering?"
+        seks: "Hvilke data eksport muligheter har jeg?"
+        syv: "Kan jeg endre språk?"
+        åtte: "Hvordan finner jeg kompetansemål for en læreplan?"
+        ni: "Hvordan kan jeg navigere opp til læreplan fra et kompetansemålsett?"
+    svar:
+        en:
+        to:
+        tre:
+        fire:
+        fem:
+        seks:
+        syv:
+        åtte:
+        ni:
+            
