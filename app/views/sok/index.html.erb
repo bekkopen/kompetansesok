@@ -95,7 +95,7 @@
         <h2><%= t('overskrifter.fag') %> (<%= t('tekst.antall_treff') %> <%= @fag_treff.length %>)</h2>
         <ul>
           <% @fag_treff.each do |fag| %>
-            <li> <%= link_to fag.tittel, fag_path(fag) %> </li>
+            <li> <%= link_to "#{fag.kode}: #{fag.tittel}", fag_path(fag) %> </li>
           <% end %>
         </ul>
       </div>

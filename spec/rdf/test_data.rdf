@@ -209,6 +209,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="uuid:7d05a3ca-6195-47a9-b516-d1a78e624e0d">
     <ns:title>anvende regelverk i den enkelte idrettsaktivitet</ns:title>
+    <grep:kode>kode naar det kommer</grep:kode>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/kompetansemaal"/>
   </rdf:Description>
   <rdf:Description rdf:about="uuid:5707af6c-03f7-4d60-94c4-4277b7785b33">
@@ -366,6 +367,7 @@
     <grep:tilhoerer_hovedomraade rdf:resource="uuid:b7e37697-2968-41e3-ae1b-9c8210a1eb15"/>
     <grep:tilhoerer_hovedomraade rdf:resource="uuid:04500c92-11df-4264-8e10-6ee1077df101"/>
     <grep:tilhoerer_hovedomraade rdf:resource="uuid:a2503251-4713-4667-8c32-e7e77ac6e4d5"/>
+    <grep:kode>kode naar det kommer</grep:kode>
     <ns:title>Basistrening</ns:title>
     <rdf:type rdf:resource="http://psi.udir.no/ontologi/hovedomraade"/>
   </rdf:Description>

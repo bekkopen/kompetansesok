@@ -7,23 +7,33 @@
     <h2><%= t('overskrifter.kompetansemål') %></h2>
     <%=  render :partial => "kompetansemaal/simple_grid" %>
   </div>
-
+  
   <p>
     <h2><%= t("overskrifter.kompetansemålsett") %></h2>
     <ul class="linke-liste">
       <% @kompetansemaalsett.each do |sett| %>
         <% if(@through_laereplan)
-          link = laereplan_hovedomraade_kompetansemaalsett_path(@laereplan, @hovedomraade, sett)
-        else
-          link = hovedomraade_kompetansemaalsett_path(@hovedomraade, sett)
-        end
-      %>
-
-
+            link = laereplan_hovedomraade_kompetansemaalsett_path(@laereplan, @hovedomraade, sett)
+          else
+            link = hovedomraade_kompetansemaalsett_path(@hovedomraade, sett)
+          end
+        %>
         <li><%= link_to sett.tittel, link %></li>
       <% end %>
     </ul>
   </p>
+  
+    <% unless @through_laereplan %>
+    <p>
+      <h2><%= t("overskrifter.filtrer_på_læreplan") %></h2>
+      <ul class="linke-liste">
+        <% @hovedomraade.laereplaner.each do |laereplan| %>
+          <li><%= link_to "#{laereplan.kode}: #{laereplan.tittel}", laereplan_hovedomraade_path(laereplan, @hovedomraade) %></li>
+        <% end %>
+      </ul>
+    </p>
+  <% end %>
+
 
 </div>
 

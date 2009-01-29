@@ -34,6 +34,12 @@ describe HovedomraadeController do
       do_get
       assigns[:kompetansemaalsett].should == kompetansemaalsett
     end
+    
+    
+    it "should not expose @throug_laereplan if not nested under laereplan" do
+      do_get
+      assigns[:through_laereplan].should be_nil
+    end
 
     describe "nested under laereplan" do
       before :each do
@@ -56,6 +62,12 @@ describe HovedomraadeController do
       
         do_get :laereplan_id => "uuid-laereplan"
         assigns[:kompetansemaalsett].should == kompetansemaalsett
+      end
+      
+      it "should expose @throug_laereplan if nested under laereplan" do
+        Laereplan.should_receive(:find_by_uuid).and_return(mock_model(Laereplan, {:tittel => "tittel", :uuid => "uuid", :ikon_tekst => 'L'}))
+        do_get :laereplan_id => "uuid-laereplan"
+        assigns[:through_laereplan].should be_true
       end
     end
   end

@@ -40,6 +40,7 @@ module Kompetansesok
           :uuid => r.to_s,
           :tittel => tittel(r),
           :kode => kode(r),
+          :psi => psi
         }
       end.sort{|a, b| a[:tittel] <=> b[:tittel]}
     end
@@ -113,11 +114,16 @@ module Kompetansesok
     
     def tittel(resource)
       tittel = property_content(resource, @title_property)
-      tittel.blank? ? "mangler tittel" : tittel
+      tittel.blank? ? "-mangler tittel-" : tittel
     end
     
     def kode(resource)
-      property_content(resource, @kode_property)
+      kode = property_content(resource, @kode_property)
+      kode.blank? ? "-mangler kode-" : kode
+    end
+    
+    def psi
+      "-mangler psi-"
     end
     
   end
