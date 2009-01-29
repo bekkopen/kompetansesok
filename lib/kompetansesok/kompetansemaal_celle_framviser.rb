@@ -15,7 +15,7 @@ module Kompetansesok
         skip_details_for.include?(:hovedomraader) ? nil : hovedomraader(kompetansemaal), 
         skip_details_for.include?(:kompetansemaalsett) ? nil : kompetansemaalsett(kompetansemaal), 
         skip_details_for.include?(:fag) ? nil : fag(kompetansemaal)
-      ].compact.join("<br/>")
+      ].compact.join
     end
 
     def laereplaner(kompetansemaal)

@@ -23,6 +23,10 @@ h1 {
 	margin-bottom: 0.5em;
 }
 
+h2 {
+	margin-bottom: 10px;
+}
+
 h2,h3,h4,h5,h6 { font-weight: bold; }
 
 h1 img, h2 img, h3 img, 
@@ -120,8 +124,10 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 }
 
 #sok_tilbakemelding {
-	text-align: center;
-  border: 1px solid red;
+  text-align: center;
+  border: 1px solid #F47936;
+  margin-top: 1em;
+  padding: 0.5em;
 }
 
 /* Lists
@@ -169,10 +175,6 @@ div#nav_container {
 div#spraak {
 	text-align: right;
 	padding: 8px 8px 0 0;
-}
-
-div#resultater {
-  padding: 1.5em 0em
 }
 
 div.delresultat {
@@ -247,7 +249,8 @@ td.x-grid3-td-3 div.x-grid3-cell-inner {
 }
 
 .kompetansemaal_detaljer {
-    padding-left: 10px;
+    padding: 0.5em 0 0 1em;
+	font-size: 0.8em;
 }
 
 ul.sok_filtere {
