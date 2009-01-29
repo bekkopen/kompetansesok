@@ -10,71 +10,92 @@ module Kompetansesok
     end
 
     def run
-      lastned_filer
-      importer_til_database
-      reindexer
+      rapport = StringIO.new
+      rapport.puts lastned_filer
+      rapport.puts importer_til_database
+      rapport.puts reindexer
       
-      puts "Planlagt import og reindexering er velykket"
+      rapport.puts "Planlagt import og reindexering er velykket"
+      send_rapport(rapport.string)
+    rescue Exception => e
+      rapport.puts(e)
+      send_rapport rapport.string
+      raise rapport.string
     end
     
     def lastned_filer
+      rapport = StringIO.new
       begin
-        print "Laster ned rdf data..."
+        rapport.print "Laster ned rdf data..."
         log = capture_output do
           @importer.importer_til_fil
         end
-        puts " ok"
+        rapport.puts " ok"
       rescue => e
-        puts "\nNedlasting av rdf feilet: #{e}"
+        rapport.puts "\nNedlasting av rdf feilet: #{e}"
         if(log && !log.empty?)
-          puts "Historie: #{log.readlines.join('\n')}"
+          rapport.puts "Historie: #{log.read}" if not log.strin.empty?
         end
-        raise e
+        rapport.puts e
+        raise rapport.string
       end
+
+      rapport.string
     end
 
     def importer_til_database
-      
-      print "Importerer til database.."
+      rapport = StringIO.new
+      rapport.print "Importerer til database.."
       log = capture_output do
         @importer.importer_til_db
       end
-      puts " ok"
+      rapport.puts " ok"
+      rapport.string
     rescue Exception => e
-      puts "\nImport til database feilet: #{e}"
+      rapport.puts "\nImport til database feilet: #{e}"
       if(log && !log.empty?)
-        puts "Historie: #{log.readlines.join('\n')}"
+        rapport.puts "Historie: #{log.read}"
       end
 
-      haandter_feil_i_import
+      rapport.puts haandter_feil_i_import
 
-      raise e
+      rapport.puts e
+      raise rapport.string
     end
 
     def haandter_feil_i_import
-      print "Restoring backup... "
+      rapport = StringIO.new
+      rapport.print "Restoring backup... "
       log = capture_output do
         @db_eksport.restore_backup
       end
-      puts " ok"
-      reindexer
+      rapport.puts " ok"
+      rapport.puts reindexer
+      rapport.string
     rescue => e
-      puts "\nForsøket på å rulle backupen tilbake feilet: #{e}"
+      rapport.puts "\nForsøket på å rulle backupen tilbake feilet: #{e}"
       if(log && !log.empty?)
-        puts "Historie: #{log.readlines.join('\n')}"
+        rapport.puts "Historie: #{log.read}" 
       end
-      raise e
+      rapport.puts e
+      raise rapport.string
     end
 
     def reindexer()
-      
-      print "Gjør reindexsering..."
+      rapport = StringIO.new
+      rapport.print "Gjør reindexsering..."
       log = run_command ULTRASPHINX_INDEXER
-      puts " ok"
+      rapport.puts " ok"
+      rapport.string
     rescue => e
-      puts "\nIndexeringen feilet: #{e}"
-      puts "Historie: #{log}"
-      raise e
+      rapport.puts "\nIndexeringen feilet: #{e}"
+      rapport.puts "Historie: #{log}" if not log.empty?
+      rapport.puts e
+      raise rapport.string
+    end
+
+    def send_rapport(rapport)
+      puts rapport
     end
 
   end
