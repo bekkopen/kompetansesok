@@ -108,8 +108,8 @@ if defined?(JRUBY_VERSION)
         @kompetansemaal[:kode].should == "kode naar det kommer"
       end
       
-      it "should have '<mangler psi>'" do
-        @kompetansemaal[:psi].should == "<mangler psi>"
+      it "should have '-mangler psi-'" do
+        @kompetansemaal[:psi].should == "-mangler psi-"
       end
 
     end
@@ -151,12 +151,12 @@ if defined?(JRUBY_VERSION)
     describe "common values" do
       it "should have 'mangler tittel' if tittel is empty" do
         @jena.stub!(:property_content).and_return("")
-        @jena.laereplaner[0][:tittel].should == "<mangler tittel>"
+        @jena.laereplaner[0][:tittel].should == "-mangler tittel-"
       end
       
       it "should have 'mangler kode' if kode is empty" do
         @jena.stub!(:property_content).and_return("")
-        @jena.laereplaner[0][:kode].should == "<mangler kode>"
+        @jena.laereplaner[0][:kode].should == "-mangler kode-"
       end
     end
 
