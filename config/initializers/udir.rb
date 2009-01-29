@@ -9,11 +9,13 @@ module Udir
   DUMP_COUNT   = CONFIG['db_dumps']['count']
 
   #Mail konfigurasjon
-  SMTP_SERVER = "server"
-  SMTP_USERNAME = "user"
-  SMTP_PASSWORD ="pass"
+  mail_config = CONFIG['mail']
+  SMTP_SERVER = mail_config['server']
+  SMTP_USERNAME = mail_config['username']
+  SMTP_PASSWORD =mail_config['password']
+  SMTP_PORT =mail_config['server_port']
 
-  RAPPORT_EMAILER= "aslakjo@bekk.no;aslakjo@ifi.uio.no"
-  KOMPETANSESOK_ADMIN_EMAIL = ""
+  RAPPORT_EMAILER= mail_config['rapport_mailser']
+  KOMPETANSESOK_ADMIN_EMAIL = mail_config['admin_mail']
 
 end

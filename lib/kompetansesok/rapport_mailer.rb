@@ -1,8 +1,7 @@
 
 module Kompetansesok
   class RapportMailer
-    
-    def send_rapport(rapport)
+    def self.send_rapport(rapport)
       send_email(Udir::KOMPETANSESOK_ADMIN_EMAIL,
          "Udir kompetansesøk admin",
          Udir::RAPPORT_EMAILER,
@@ -11,7 +10,7 @@ module Kompetansesok
     end
 
     private
-    def send_email(from, from_alias, to, subject, message)
+    def self.send_email(from, from_alias, to, subject, message)
       msg = <<END_OF_MESSAGE
 From: #{from_alias} <#{from}>
 To: #{to}>

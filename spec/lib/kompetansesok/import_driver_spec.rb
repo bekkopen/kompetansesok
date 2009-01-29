@@ -4,7 +4,7 @@ describe Kompetansesok::ImportDriver do
   before :each do
     @importer_mock = mock(Kompetansesok::Importerer, {:importer_til_fil => true, :importer_til_db => true})
     @db_eksport_mock = mock(Kompetansesok::DbEksport)
-
+    Kompetansesok::RapportMailer.stub!(:send_rapport => true)
     @import_driver = Kompetansesok::ImportDriver.new(
       :importer   => @importer_mock,
       :db_eksport => @db_eksport_mock
@@ -54,9 +54,9 @@ describe Kompetansesok::ImportDriver do
 Importerer til database.. ok
 Gjør reindexsering... ok
 Planlagt import og reindexering er velykket\n"
+    
     @import_driver.should_receive(:run_command).and_return(true)
     @import_driver.should_receive(:send_rapport).with(test_report).and_return(true)
-    
     lambda{@import_driver.run}.should_not raise_error
   end
 
@@ -74,9 +74,11 @@ test file error\n"
     @import_driver.should_receive(:reindexer).and_return("Gjør reindexering... ok(tekst fra test case)")
 
     @import_driver.should_receive(:send_rapport).with(test_report).and_return(true)
-
     lambda{@import_driver.run}.should raise_error
+    
   end
+
+
 
 
   it "should give correct dbdump" do

@@ -6,3 +6,13 @@ db_dumps:
 
 maks_detalj_rader: 50
 
+mail:
+    username: "<sett inn>"
+    password: "<sett inn>"
+    server: "<sett inn>"
+    server_port: "<sett inn>"
+    #mail addresser som mottar import rapporter, separert med ;
+    rapport_mailer: "<sett inn>"
+    #Kun en admin addresse
+    admin_mail: "<sett inn>"
+

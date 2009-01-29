@@ -95,7 +95,7 @@ module Kompetansesok
     end
 
     def send_rapport(rapport)
-      puts rapport
+      Kompetansesok::RapportMailer.send_rapport(rapport)
     end
 
   end
