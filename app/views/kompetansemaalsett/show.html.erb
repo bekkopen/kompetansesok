@@ -12,9 +12,17 @@
 <% unless @through_laereplan %>
   <p>
     <h2><%= t("overskrifter.filtrer_på_læreplan") %></h2>
-    <ul class="linke-liste">
-      <% @kompetansemaalsett.laereplaner.each do |laereplan| %>
-        <li><%= link_to "#{laereplan.kode}: #{laereplan.tittel}", laereplan_kompetansemaalsett_path(laereplan, @kompetansemaalsett) %></li>
+    <ul class="linke-liste">  
+        <% @kompetansemaalsett.laereplaner.each do |laereplan| %>
+        
+           <% if(@through_hovedomraade)
+                link = laereplan_hovedomraade_kompetansemaalsett_path(laereplan, @hovedomraade, @kompetansemaalsett)
+              else
+                link = laereplan_kompetansemaalsett_path(laereplan, @kompetansemaalsett)
+              end
+           %>
+    
+        <li><%= link_to "#{laereplan.kode}: #{laereplan.tittel}", link %></li>
       <% end %>
     </ul>
   </p>

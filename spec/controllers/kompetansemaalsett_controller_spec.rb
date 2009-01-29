@@ -35,6 +35,19 @@ describe KompetansemaalsettController do
       do_get :hovedomraade_id => "uuid-hovedomraade"
     end
     
+    it "should expose @throug_hovedomraade if nested under hovedomraade" do
+      hovedomraade = mock_model(Hovedomraade, {:tittel => "tittel", :uuid => "uuid", :ikon_tekst => 'H'})
+      Hovedomraade.should_receive(:find_by_uuid).and_return(hovedomraade)
+      mock_kompetansemaalsett.stub!(:kompetansemaal_for_hovedomraade).and_return([])
+      do_get :hovedomraade_id => "uuid-hovedomraade"
+      assigns[:through_hovedomraade].should be_true
+    end
+    
+    it "should not expose @throug_hovedomraade if not nested under hovedomraade" do
+      do_get
+      assigns[:through_hovedomraade].should be_nil
+    end
+    
     it "should expose @throug_laereplan if nested under laereplan" do
       Laereplan.should_receive(:find_by_uuid).and_return(mock_model(Laereplan, {:tittel => "tittel", :uuid => "uuid", :ikon_tekst => 'L'}))
       do_get :laereplan_id => "uuid-laereplan"
