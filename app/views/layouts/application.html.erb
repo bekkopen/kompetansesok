@@ -39,7 +39,7 @@
 	  </div>
 	  <div id="nav_container">
 	  	<ul id="nav_list">
-  		  <li<%= current_page?(:controller => :info) ? ' class="current"' : ''%>>
+  		  <li<%= params[:controller] == 'info' ? ' class="current"' : ''%>>
   		    <%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %>
   		  </li>
   		  <li<%= current_page?(:controller => :db_dump) ? ' class="current"' : ''%>>
