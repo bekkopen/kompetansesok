@@ -10,7 +10,11 @@ begin
       t.feature_pattern = "import_features/**/*.feature"
       t.step_pattern = "import_features/**/*.rb"
     end
-    task :import => 'db:test:prepare'
+    if ENV["FASTER"] != "true"
+      task :import => 'db:test:prepare'
+    else
+      task :import
+    end
 
     desc "Cucumber features for app (MRI)"
     Cucumber::Rake::Task.new(:app) do |t|

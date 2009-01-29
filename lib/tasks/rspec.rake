@@ -8,7 +8,14 @@ rspec_base = File.expand_path(File.dirname(__FILE__) + '/../../vendor/plugins/rs
 $LOAD_PATH.unshift(rspec_base) if File.exist?(rspec_base)
 require 'spec/rake/spectask'
 
-spec_prereq = File.exist?(File.join(RAILS_ROOT, 'config', 'database.yml')) ? "db:test:prepare" : :noop
+#set FASTER_SPEC to run without indexing
+spec_prereq = 
+  if File.exist?(File.join(RAILS_ROOT, 'config', 'database.yml')) && ENV["FASTER"] == "true"
+    "db:test:prepare"
+  else
+    :noop
+  end
+
 task :noop do
 end
 
@@ -114,8 +121,8 @@ namespace :spec do
         $stderr.puts "No server running."
       else
         $stderr.puts "Shutting down spec_server."
-        system("kill", "-s", "TERM", File.read(daemonized_server_pid).strip) && 
-        File.delete(daemonized_server_pid)
+        system("kill", "-s", "TERM", File.read(daemonized_server_pid).strip) &&
+          File.delete(daemonized_server_pid)
       end
     end
 
