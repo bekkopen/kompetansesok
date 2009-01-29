@@ -4,19 +4,9 @@ module Kompetansesok
     
     ULTRASPHINX_INDEXER= "jruby -S rake ultrasphinx:index"
 
-
     def initialize(params)
-      if(params[:importer])
-        @importer = params[:importer]
-      else
-        @importer = Kompetansesok::Importerer.new(Rails.root + '/tmp/import', $stdout)
-      end
-
-      begin
-        require 'stringio'
-      rescue => e
-        puts "Oppstart av skedulert_import feilet: #{e}"
-      end
+      @importer   = params[:importer]   || Kompetansesok::Importerer.new(Rails.root + '/tmp/import', $stdout)
+      @db_eksport = params[:db_eksport] || Kompetansesok::DbEksport.new
     end
 
     def run
@@ -64,7 +54,7 @@ module Kompetansesok
     def haandter_feil_i_import
       print "Restoring backup... "
       log = capture_output do
-        Kompetansesok::DbEksport.restore_backup
+        @db_eksport.restore_backup
       end
       puts " ok"
       reindexer

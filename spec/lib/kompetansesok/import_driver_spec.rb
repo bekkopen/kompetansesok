@@ -3,9 +3,11 @@ require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 describe Kompetansesok::ImportDriver do
   before :each do
     @importer_mock = mock(Kompetansesok::Importerer, {:importer_til_fil => true, :importer_til_db => true})
+    @db_eksport_mock = mock(Kompetansesok::DbEksport)
 
     @import_driver = Kompetansesok::ImportDriver.new(
-      :importer => @importer_mock
+      :importer   => @importer_mock,
+      :db_eksport => @db_eksport_mock
     )
   end
 
@@ -23,7 +25,7 @@ describe Kompetansesok::ImportDriver do
 
   it "should give error if db import fails" do
     @importer_mock.should_receive(:importer_til_db).and_raise("test file errror")
-    Kompetansesok::DbEksport.should_receive(:restore_backup).and_return(true)
+    @db_eksport_mock.should_receive(:restore_backup).and_return(true)
 
     @import_driver.should_receive(:reindexer).and_return(true)
 
@@ -38,16 +40,13 @@ describe Kompetansesok::ImportDriver do
 
   it "should rollback when db import goes bad, followed by a reindex" do
     @importer_mock.should_receive(:importer_til_db).and_raise("test file errror")
-    Kompetansesok::DbEksport.should_receive(:restore_backup).and_return(true)
+    @db_eksport_mock.should_receive(:restore_backup).and_return(true)
     @import_driver.should_receive(:reindexer).and_return(true)
 
     lambda{
       silence {@import_driver.run}
     }.should raise_error("test file errror")
   end
-
-  
-
 
   it "should give correct dbdump" do
     tmp_file_name = File.join(Rails.root, "public", "db_dumps", "db_dump_22-01-3000-11:11.zip")
@@ -58,16 +57,9 @@ describe Kompetansesok::ImportDriver do
     end
     
     File.new(tmp_file_name, File::CREAT)
-
-    Kompetansesok::DbEksport.find_last_db_dump.should == tmp_file_name
-
+    Kompetansesok::DbEksport.new.find_last_db_dump.should == tmp_file_name
     File.delete(tmp_file_name)
   end
-
-  
-  
-
-
 end
 
 #running the block, returning the output to stdout

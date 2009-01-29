@@ -2,6 +2,7 @@
 db_dumps:
   # Det som kommer etter public
   path: "db_dumps"
+  count: 3
 
 maks_detalj_rader: 50
 
