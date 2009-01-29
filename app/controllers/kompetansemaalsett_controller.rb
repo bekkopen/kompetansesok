@@ -13,6 +13,7 @@ class KompetansemaalsettController < ApplicationController
     else
       kompetansemaal = @kompetansemaalsett.kompetansemaal
     end
+    @through_laereplan = true if params[:laereplan_id]
     @brodsmule_elementer << @kompetansemaalsett
     @brodsmulesti = lag_brodsmuler(@brodsmule_elementer)
     @kompetansemaal_treff = lag_kompetansemaalrader(kompetansemaal, @brodsmule_elementer)
