@@ -7,4 +7,13 @@ module Udir
   FileUtils.mkdir_p(DB_DUMP_PATH) unless File.directory?(DB_DUMP_PATH)
 
   DUMP_COUNT   = CONFIG['db_dumps']['count']
+
+  #Mail konfigurasjon
+  SMTP_SERVER = "server"
+  SMTP_USERNAME = "user"
+  SMTP_PASSWORD ="pass"
+
+  RAPPORT_EMAILER= "aslakjo@bekk.no;aslakjo@ifi.uio.no"
+  KOMPETANSESOK_ADMIN_EMAIL = ""
+
 end
