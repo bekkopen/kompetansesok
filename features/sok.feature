@@ -83,7 +83,7 @@ Egenskap: Søk
     Når jeg søker etter "ambulansemedisin"
     Så skal jeg få opp følgende treff for Fag:
       | Tittel                    |
-      | Ambulansemedisin          |
+      | AMB2Z02: Ambulansemedisin |
 
   Scenario: Søke kun på Læreplaner
     Gitt at jeg er på hovedsiden
