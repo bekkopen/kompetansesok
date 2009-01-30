@@ -47,3 +47,8 @@ end
 Så /^skal det ikke være behov for oppdateringer$/ do
   @importerer.new_rdf_data?.should be_false
 end
+
+Så /^skal det ikke gjøres import$/ do
+  @importerer.importer_til_db.should == Kompetansesok::Importerer::INGEN_FORANDRING
+end
+

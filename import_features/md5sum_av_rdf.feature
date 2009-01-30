@@ -10,3 +10,8 @@ Feature: Sjekke om det har kommet ny rdf
     Gitt at RDF-filer er hentet til fil
     Så lagrer jeg summen
     Så skal det ikke være behov for oppdateringer
+
+  Scenario: Lese inn rdfer kun hvis det er behov
+    Gitt at RDF-filer er hentet til fil
+    Så lagrer jeg summen
+    Så skal det ikke gjøres import

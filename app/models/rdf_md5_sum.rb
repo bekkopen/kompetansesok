@@ -10,7 +10,11 @@ class RdfMd5Sum < ActiveRecord::Base
   end
 
   def self.current
-    RdfMd5Sum.find(:first).current
+    if RdfMd5Sum.find(:first)
+      RdfMd5Sum.find(:first).current
+    else
+      ""
+    end
   end
   
 end

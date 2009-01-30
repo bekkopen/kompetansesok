@@ -10,6 +10,9 @@ JRuby.objectspace = true
 module Kompetansesok
 
   class Importerer
+    INGEN_FORANDRING = "ingen_forandring"
+    IMPORT_GJORDT = "import_gjordt"
+    
     ATOM_URL = 'http://lkt.udir.no/eksport/rdf.mvc/laereplan'
     
     # Instansierer ny importerer som henter/leser RDF filer til/fra +import_dir+. Hvis
@@ -54,15 +57,21 @@ module Kompetansesok
 
     def importer_til_db(antall_filer=nil)
       @jena = Jena.new
-      
-      les_filer(antall_filer)        
-      slett_alt_i_databasen
-      last_inn_kompetansemaal
-      last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
 
-      @out.puts('Import ferdig.') if @out
+      if new_rdf_data?
+        les_filer(antall_filer)
+        slett_alt_i_databasen
+        last_inn_kompetansemaal
+        last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
+        RdfMd5Sum.current = md5sum_av_leste_filer
+        @out.puts('Import ferdig.') if @out
 
-      lag_db_dump
+        lag_db_dump
+        return IMPORT_GJORDT
+      else
+        @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
+        return INGEN_FORANDRING
+      end
     end
 
     def lag_db_dump
