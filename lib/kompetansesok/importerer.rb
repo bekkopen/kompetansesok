@@ -152,7 +152,7 @@ module Kompetansesok
         typer.each do |type|
           data = @jena.send(type.name.pluralize.downcase)
           @out.print("Importerer #{data.length} #{type.name.pluralize}...") if @out
-          type.send(:create!, data)
+          type.create!(data)
           @out.puts('OK!') if @out
         end
         @out.print('Commit...') if @out
