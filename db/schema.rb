@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090129075200) do
+ActiveRecord::Schema.define(:version => 20090130080044) do
 
   create_table "fag", :force => true do |t|
     t.string   "uuid"
@@ -124,6 +124,12 @@ ActiveRecord::Schema.define(:version => 20090129075200) do
   end
 
   add_index "laereplaner", ["uuid"], :name => "index_laereplaner_on_uuid"
+
+  create_table "rdf_md5_sumer", :force => true do |t|
+    t.string   "current"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "trinn", :force => true do |t|
     t.string   "uuid"

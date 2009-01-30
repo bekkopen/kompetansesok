@@ -50,6 +50,8 @@ module Kompetansesok
       @out.puts if @out
     end
 
+
+
     def importer_til_db(antall_filer=nil)
       @jena = Jena.new
       
@@ -74,18 +76,25 @@ module Kompetansesok
       Dir["#{@import_dir}/*.rdf"].sort
     end
     
-    
-    private
-    
     def les_filer(antall)
+      @stream = StringIO.new
+
       fil_array = antall.nil? ? filer : filer[0...antall]
-      @out.puts("Leser #{fil_array.length} RDF filer...") if @out
       fil_array.each do |rdf_fil|
-        @out.write('.') if @out
-        @jena.les_rdf_fil(rdf_fil)
+        @stream << File.open(rdf_fil, 'r').read
       end
     end
-    
+
+    def md5sum_av_leste_filer
+      Digest::MD5.md5(@stream.string)
+    end
+
+    def new_rdf_data?
+      md5sum_av_leste_filer != RdfMd5Sum.current
+    end
+
+    private
+
     def slett_alt_i_databasen
       ActiveRecord::Base.transaction do
         @out.print("\nSletter gamle data...") if @out
