@@ -76,17 +76,24 @@ module Kompetansesok
       Dir["#{@import_dir}/*.rdf"].sort
     end
     
-    def les_filer(antall)
-      @stream = StringIO.new
-
+    def les_filer(antall=nil)
       fil_array = antall.nil? ? filer : filer[0...antall]
+      @out.puts("Leser #{fil_array.length} RDF filer...") if @out
       fil_array.each do |rdf_fil|
-        @stream << File.open(rdf_fil, 'r').read
+        @out.write('.') if @out
+        @jena.les_rdf_fil(rdf_fil)
       end
     end
 
-    def md5sum_av_leste_filer
-      Digest::MD5.md5(@stream.string)
+    def md5sum_av_leste_filer(antall=nil)
+      stream = StringIO.new
+
+      fil_array = antall.nil? ? filer : filer[0...antall]
+      fil_array.each do |rdf_fil|
+        stream << File.open(rdf_fil, 'r').read
+      end
+
+      Digest::MD5.md5(stream.string)
     end
 
     def new_rdf_data?
@@ -132,7 +139,7 @@ module Kompetansesok
     end
     
     def last_inn(*typer)
-      ActiveRecord::Base.transaction do        
+      ActiveRecord::Base.transaction do
         typer.each do |type|
           data = @jena.send(type.name.pluralize.downcase)
           @out.print("Importerer #{data.length} #{type.name.pluralize}...") if @out
@@ -144,5 +151,5 @@ module Kompetansesok
       @out.puts('OK!') if @out
     end
     
-  end 
+  end
 end

@@ -36,11 +36,6 @@ Så /^(.*) skal ha relasjon til (.*)/ do |klasse, relasjonsklasse|
   instans.send(relasjon).first.should_not be_nil
 end
 
-
-Når /^jeg leser inn alle rdfene$/ do
-  @importerer.les_filer(nil)
-end
-
 Så /^skal jeg kunne se en unik nøkkel "(.+)"$/ do |md5sum|
   @importerer.md5sum_av_leste_filer.should == md5sum
 end
