@@ -7,8 +7,8 @@
         $('#q').inputFieldText('<%= t('etiketter.søkeboks_default_tekst') %>', 'søke_hint');
       });
     </script>
-
-    <input type="submit" value="<%= t('knapper.søk') %>" />
+    <input style="position:relative;top:10px;left:5px;" type="image" value="<%= t('knapper.søk') %>" src="/images/search_icon.png" alt="<%= t('knapper.søk') %>" name="<%= t('knapper.søk') %>" />
+	<p id="søk_hjelpetekst"><%= t('etiketter.søkeboks_hjelpe_tekst') %></p>
     <ul class="sok_filtere">
       <li>
       	<input name="vis_kompetansemaal" type="checkbox" value="true" id="vis_kompetansemaal" <%= 'checked="checked"' if session_checked?('vis_kompetansemaal') %> />
@@ -51,11 +51,11 @@
   <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
 
   <div id='resultater'>
-      <div id="kompetansemaal_treff">
-        <h2><%= t('overskrifter.kompetansemål') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaal_treff.length %>)</h2>
-        <%= render :partial => "kompetansemaal/simple_grid" %>
-      </div>
-
+    <div id="kompetansemaal_treff">
+	  <h2 class='kompetansemaal'><%= t('overskrifter.kompetansemål') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaal_treff.length %>)</h2>
+		<p id="søk_hjelpetekst"><%= t('etiketter.kompetansemål_hjelpe_tekst') %></p>
+	  <%=  render :partial => "kompetansemaal/simple_grid" %>
+	</div>
     <% if session_checked?('vis_laereplaner') %>
       <div id='laereplaner_treff' class='delresultat'>
         <h2><%= t('overskrifter.læreplaner') %> (<%= t('tekst.antall_treff') %> <%= @laereplaner_treff.length %>)</h2>

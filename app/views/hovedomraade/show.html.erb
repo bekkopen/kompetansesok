@@ -3,11 +3,7 @@
 </div>
 
 <div id='resultater'>
-  <div id="kompetansemaal_treff">
-    <h2><%= t('overskrifter.kompetansemål') %></h2>
-    <%=  render :partial => "kompetansemaal/simple_grid" %>
-  </div>
-  
+  <%= render :partial => 'kompetansemaal/kompetansemaal_treff' %>
   <p>
     <h2><%= t("overskrifter.kompetansemålsett") %></h2>
     <ul class="linke-liste">
