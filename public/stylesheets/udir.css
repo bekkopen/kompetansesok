@@ -27,6 +27,14 @@ h2 {
 	margin-bottom: 10px;
 }
 
+h2.kompetansemaal {
+	color: #000;
+}
+
+h3 {
+	line-height: 1.2em;
+}
+
 h2,h3,h4,h5,h6 { font-weight: bold; }
 
 h1 img, h2 img, h3 img, 
@@ -181,6 +189,18 @@ div.delresultat {
   padding: 1em 0em
 }
 
+div#kompetansemaal {
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+}
+
+div#valgte_kompetansemaal {
+	margin-bottom: 20px;
+	background-color: #E6E6E6;
+	padding: 20px;
+}
+
 ul#nav_list {
   list-style-type: none;
   overflow: hidden;
@@ -197,6 +217,10 @@ ul#nav_list li {
 
 ul#nav_list li.current {
   border-bottom: 2px solid #333;
+}
+
+ul#nav_list li.current a {
+  color: #000;
 }
 
 ul#nav_list li.current a:hover {
@@ -245,6 +269,7 @@ td.x-grid3-td-2 {
     overflow: hidden;
 }
 td.x-grid3-td-3 div.x-grid3-cell-inner {
+	line-height: 1.2em;
     white-space: normal;
 }
 
@@ -253,26 +278,43 @@ td.x-grid3-td-3 div.x-grid3-cell-inner {
 	font-size: 0.8em;
 }
 
-ul.sok_filtere {
-	margin-top: 5px;
-}
-
 ul.sok_filtere li {
 	display: inline;
 	font-size: 0.8em;
 }
 
 div.sok_input {
-	margin: 20px 0;
+	margin: 40px 0 20px 0;
 	text-align: center;
+}
+
+#TODO: Dette må fikses!!!
+input#search_icon {
+	position: relative;
+	top: 20px;
 }
 
 input#q {
 	width: 450px;
+	border: 2px solid #F47936;
+	font-weight: bold;
+	height: 24px;
+	padding-left: 12px;
+	padding-top:6px;
+	font-size: 1em;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
 }
 
 input.søke_hint {
 	color: #999;
+}
+
+p#søk_hjelpetekst {
+	margin: 0.6em 0;
+	font-size: 0.7em;
 }
 
 div#videre_info a {
@@ -320,9 +362,9 @@ ul.linke-liste
 /*----------------- extjs style -------------*/
 
 .x-grid3 {
-  border-color: gray;
+/*  border-color: #000;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px;*/
 }
 
 .x-grid3-header {

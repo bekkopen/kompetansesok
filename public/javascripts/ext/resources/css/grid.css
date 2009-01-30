@@ -28,7 +28,7 @@
 	overflow:hidden;
 }
 .x-grid3-hd-row td, .x-grid3-row td, .x-grid3-summary-row td{
-	font:normal 11px arial, tahoma, helvetica, sans-serif;
+/*	font:normal 11px arial, tahoma, helvetica, sans-serif;*/
     -moz-outline: none;
 	-moz-user-focus: normal;
 }
@@ -108,7 +108,7 @@
     width:100%;
 }
 .x-grid3-row-alt{
-	background-color:#fafafa;
+	background-color: #E6E6E6;
 }
 
 .x-grid3-row-over {
@@ -518,7 +518,7 @@ a.x-grid3-hd-btn:hover {
     background:transparent url(../images/default/grid/group-expand-sprite.gif) no-repeat 3px -47px;
     padding:4px 4px 4px 17px;
     color:#3764a0;
-    font:bold 11px tahoma, arial, helvetica, sans-serif;
+/*    font:bold 11px tahoma, arial, helvetica, sans-serif;*/
 }
 .x-grid-group-collapsed .x-grid-group-hd div {
     background-position: 3px 3px;
@@ -549,7 +549,7 @@ a.x-grid3-hd-btn:hover {
 .x-grid-empty {
     padding:10px;
     color:gray;
-    font:normal 11px tahoma, arial, helvetica, sans-serif;
+/*    font:normal 11px tahoma, arial, helvetica, sans-serif;*/
 }
 
 

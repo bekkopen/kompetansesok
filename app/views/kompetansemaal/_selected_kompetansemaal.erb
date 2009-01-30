@@ -34,28 +34,26 @@
   <h2><%= t('overskrifter.valgte_kompetansemål') %></h2>
 
   <% form_tag download_csv_sok_path, :method => :post do %>
-    <div class="sok_input">
-      <textarea id="valgte_tekst" rows="6" readonly=""> </textarea>
-    
-      <ul class="sok_filtere">
+    <div class="valgte_kompetansemaal_boks">
+	  <ul class="sok_filtere">
         <li>
           <input id="showIdCheckbox" name="showId" type="checkbox" onChange="valgte_kontroller.toggleShowId(this.checked)"/>
           <label for="showIdCheckbox"><%= t('etiketter.vis_uuid') %></label>
         </li>
-      
+
         <li>
           <input id="showKodeCheckbox" name="showKode" type="checkbox" onChange="valgte_kontroller.toggleShowKode(this.checked)"/>
           <label for="showKodeCheckbox"><%= t('etiketter.vis_kode') %></label>
         </li>
-      
+
         <li>
           <input id="showPsiCheckbox" name="showPsi" type="checkbox" onChange="valgte_kontroller.toggleShowPsi(this.checked)"/>
           <label for="showPsiCheckbox"><%= t('etiketter.vis_psi') %></label>
         </li>
       </ul>
-    </div>
-
+      <textarea id="valgte_tekst" rows="6" readonly=""> </textarea>
     <%= hidden_field_tag "uuids" %>
     <%= submit_tag t('knapper.eksport_csv'), :onclick => "addUuidsToForm(this.form)" %>
+    </div>
   <% end %>
 </div>
