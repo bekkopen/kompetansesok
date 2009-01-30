@@ -88,6 +88,12 @@ Må prøve dette igjen. I mellomtiden:
   # Indeksere:
   sudo indexer --config /usr/local/etc/sphinx.conf --all
 
+h3. Kjøre kommandoer fra eksplodert war
+Itillegg til kommandoen under trenger du å legge til loadpathen for ruby, ukjent hvordan
+
+    /glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/WEB-INF$ RAILS_ENV=production GEM_PATH=gems/ java -jar lib/jruby-complete-1.1.6.jar -S rake -R lib/tasks/  import:scheduled_import -t
+
+
 h3. Sjekke at Sphinx er oppe og har indeksert data
 
 Fra ekstern maskin
