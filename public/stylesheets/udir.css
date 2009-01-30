@@ -70,29 +70,30 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 
 /* tekst-ikoner */
 .ikon {
-  font-size: 0.6em;
-  font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
-  padding: 1px;
+  font-size: 1em;
+  font-family: monospace;
+  padding: 0.2em;
   vertical-align: middle;
+  text-align: center;
 }
 
 .ikon_Fag {
-  background: #F47936;
+  background: #000000;
   color: white;
 }
 
 .ikon_Laereplan {
-  background: #F47936;
+  background: #000000;
   color: white;
 }
 
 .ikon_Hovedomraade {
-  background: #F47936;
+  background: #000000;
   color: white;
 }
 
 .ikon_Kompetansemaalsett {
-  background: #F47936;
+  background: #000000;
   color: white;
 }
 
@@ -189,13 +190,7 @@ div.delresultat {
   padding: 1em 0em
 }
 
-div#kompetansemaal {
-  border-color: #000;
-  border-style: solid;
-  border-width: 2px;
-}
-
-div#valgte_kompetansemaal {
+div.uthevet {
 	margin-bottom: 20px;
 	background-color: #E6E6E6;
 	padding: 20px;
@@ -266,15 +261,34 @@ select#spraak_valg {
 }
 
 td.x-grid3-td-2 {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 td.x-grid3-td-3 div.x-grid3-cell-inner {
 	line-height: 1.2em;
-    white-space: normal;
+  white-space: normal;
+}
+
+.x-grid3-row {
+  font-size: 0.8em;;
+}
+
+.x-grid3-row-over {
+  background: #FFFFFF;
+}
+
+.x-grid3-row-alt {
+  background-color:#FFFFFF;
+}
+
+.x-grid3-row-selected {
+  background:#F47936 none repeat scroll 0 0 !important;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
 }
 
 .kompetansemaal_detaljer {
-    padding: 0.5em 0 0 1em;
+  padding-left: 0.4em;
 	font-size: 0.8em;
 }
 
@@ -283,15 +297,13 @@ ul.sok_filtere li {
 	font-size: 0.8em;
 }
 
-div.sok_input {
+div#sok_input {
 	margin: 40px 0 20px 0;
 	text-align: center;
 }
 
-#TODO: Dette må fikses!!!
-input#search_icon {
-	position: relative;
-	top: 20px;
+th.kode_col {
+  white-space: nowrap;
 }
 
 input#q {
@@ -384,4 +396,9 @@ ul.linke-liste
   color: grey;
   font-weight: bold;
 }
+
+
+
+
+button {vertical-align:middle; border:none; padding:0; background:none; cursor:pointer; *cursor:hand; /*alternate cursor for IE*/}
 

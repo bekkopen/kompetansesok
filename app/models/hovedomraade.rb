@@ -11,7 +11,7 @@ class Hovedomraade < ActiveRecord::Base
   after_create :koble_kompetansemaal
   
   def ikon_tekst
-    'H'
+    'H&nbsp;'
   end
 
   def to_param

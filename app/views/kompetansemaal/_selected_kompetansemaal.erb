@@ -30,12 +30,12 @@
 
 </script>
 
-<div id="valgte_kompetansemaal" style="display: none;">
+<div id="valgte_kompetansemaal" class="uthevet" style="display: none;">
   <h2><%= t('overskrifter.valgte_kompetansemål') %></h2>
 
   <% form_tag download_csv_sok_path, :method => :post do %>
     <div class="valgte_kompetansemaal_boks">
-	  <ul class="sok_filtere">
+    <ul class="sok_filtere">
         <li>
           <input id="showIdCheckbox" name="showId" type="checkbox" onChange="valgte_kontroller.toggleShowId(this.checked)"/>
           <label for="showIdCheckbox"><%= t('etiketter.vis_uuid') %></label>

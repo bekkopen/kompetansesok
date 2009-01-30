@@ -9,51 +9,54 @@
     <title>Kompetansesøk</title>
   </head>
   <body>
-	<div id="container">
-	  <div id="header">
-      <%= image_tag "logo.gif" %>
-	  </div>
-	  <div id="branding_bar">
-		  <div id="spraak">
-			<% form_tag("/spraak_session") do %>
-				<%= select :spraak, :valg,
-				[
-					["Bokmål", "nb"],
-					# uncomment nedenfor når språkfilene er klare
-					#["Nynorsk", "nn"],
-					#["Samisk", "sa"],
-					["Engelsk", "en"]
-				],
-				:selected => session[:spraak] %>
-				
-				<script type="text/javascript">
-  				$("#spraak_valg").change(function() {
-  				  $(this).parent('form').submit();
-          });
-        </script>
-        <noscript>
-				  <%= submit_tag t('knapper.bytt_spraak'), :class => 'submit' %>
-        </noscript>
-			<% end %>
-		  </div>
-	  </div>
-	  <div id="nav_container">
-	  	<ul id="nav_list">
-  		  <li<%= params[:controller] == 'info' ? ' class="current"' : ''%>>
-  		    <%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => 'info' %>
-  		  </li>
-  		  <li<%= current_page?(:controller => :db_dump) ? ' class="current"' : ''%>>
-  		    <%= link_to t('navigasjon.database_eksport'), :controller => :db_dump, :action => :index %>
-  		  </li>
-  		  <li<%= current_page_sok? ? ' class="current"' : ''%>>
-  		    <%= link_to t('navigasjon.forside'), root_path %>
-  		  </li>
-  		</ul>
-	  </div>
-	  <div id="content">
-      <%= render :partial => "brodsmulesti/brodsmulesti" %>
-	    <%= yield %>
-	  </div>
-	</div>
+    <div id="container">
+      <div id="header">
+        <%= image_tag "logo.gif" %>
+      </div>
+      <div id="branding_bar">
+        <div id="spraak">
+        <% form_tag("/spraak_session") do %>
+          <%= select :spraak, :valg,
+          [
+            ["Bokmål", "nb"],
+            # uncomment nedenfor når språkfilene er klare
+            #["Nynorsk", "nn"],
+            #["Samisk", "sa"],
+            ["Engelsk", "en"]
+          ],
+          :selected => session[:spraak] %>
+
+          <script type="text/javascript">
+            $("#spraak_valg").change(function() {
+              $(this).parent('form').submit();
+            });
+          </script>
+          <noscript>
+            <%= submit_tag t('knapper.bytt_spraak'), :class => 'submit' %>
+          </noscript>
+        <% end %>
+        </div>
+      </div>
+      <div id="nav_container">
+        <ul id="nav_list">
+          <li<%= current_page?(:controller => :db_dump) ? ' class="current"' : ''%>>
+            <%= link_to t('navigasjon.database_eksport'), :controller => :db_dump %>
+          </li>
+          <li<%= params[:controller] == 'info' ? ' class="current"' : ''%>>
+            <%= link_to t('navigasjon.om_kopetansemål_søk'), :controller => :info %>
+          </li>
+          <li<%= current_page?(:controller => :bla_i_laereplan) ? ' class="current"' : ''%>>
+            <%= link_to t('navigasjon.bla_i_laereplan'), :controller => :bla_i_laereplan %>
+          </li>
+          <li<%= current_page_sok? ? ' class="current"' : ''%>>
+            <%= link_to t('navigasjon.forside'), root_path %>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <%= render :partial => "brodsmulesti/brodsmulesti" %>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
