@@ -32,6 +32,7 @@ module Kompetansesok
     def write(out)
       @model.write(out.to_outputstream)
     end
+
     
     # Returnerer alle kompetansemaal som Array av Hash. Hver Hash er et key-value par med primitive verdier.
     def kompetansemaal

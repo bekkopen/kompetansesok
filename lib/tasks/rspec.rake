@@ -9,8 +9,7 @@ $LOAD_PATH.unshift(rspec_base) if File.exist?(rspec_base)
 require 'spec/rake/spectask'
 
 #set FASTER_SPEC to run without indexing
-spec_prereq = 
-  if File.exist?(File.join(RAILS_ROOT, 'config', 'database.yml')) && ENV["FASTER"] == "true"
+spec_prereq = if File.exist?(File.join(RAILS_ROOT, 'config', 'database.yml')) || ENV["FASTER"] == "true"
     "db:test:prepare"
   else
     :noop

@@ -10,6 +10,9 @@ JRuby.objectspace = true
 module Kompetansesok
 
   class Importerer
+    INGEN_FORANDRING = "ingen_forandring"
+    IMPORT_GJORDT = "import_gjordt"
+    
     ATOM_URL = 'http://lkt.udir.no/eksport/rdf.mvc/laereplan'
     
     # Instansierer ny importerer som henter/leser RDF filer til/fra +import_dir+. Hvis
@@ -50,17 +53,25 @@ module Kompetansesok
       @out.puts if @out
     end
 
+
+
     def importer_til_db(antall_filer=nil)
       @jena = Jena.new
-      
-      les_filer(antall_filer)        
-      slett_alt_i_databasen
-      last_inn_kompetansemaal
-      last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
 
-      @out.puts('Import ferdig.') if @out
+      if new_rdf_data?
+        les_filer(antall_filer)
+        slett_alt_i_databasen
+        last_inn_kompetansemaal
+        last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
+        RdfMd5Sum.current = md5sum_av_leste_filer
+        @out.puts('Import ferdig.') if @out
 
-      lag_db_dump
+        lag_db_dump
+        return IMPORT_GJORDT
+      else
+        @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
+        return INGEN_FORANDRING
+      end
     end
 
     def lag_db_dump
@@ -74,10 +85,7 @@ module Kompetansesok
       Dir["#{@import_dir}/*.rdf"].sort
     end
     
-    
-    private
-    
-    def les_filer(antall)
+    def les_filer(antall=nil)
       fil_array = antall.nil? ? filer : filer[0...antall]
       @out.puts("Leser #{fil_array.length} RDF filer...") if @out
       fil_array.each do |rdf_fil|
@@ -85,7 +93,24 @@ module Kompetansesok
         @jena.les_rdf_fil(rdf_fil)
       end
     end
-    
+
+    def md5sum_av_leste_filer(antall=nil)
+      stream = StringIO.new
+
+      fil_array = antall.nil? ? filer : filer[0...antall]
+      fil_array.each do |rdf_fil|
+        stream << File.open(rdf_fil, 'r').read
+      end
+
+      Digest::MD5.md5(stream.string)
+    end
+
+    def new_rdf_data?
+      md5sum_av_leste_filer != RdfMd5Sum.current
+    end
+
+    private
+
     def slett_alt_i_databasen
       ActiveRecord::Base.transaction do
         @out.print("\nSletter gamle data...") if @out
@@ -123,7 +148,7 @@ module Kompetansesok
     end
     
     def last_inn(*typer)
-      ActiveRecord::Base.transaction do        
+      ActiveRecord::Base.transaction do
         typer.each do |type|
           data = @jena.send(type.name.pluralize.downcase)
           @out.print("Importerer #{data.length} #{type.name.pluralize}...") if @out
@@ -135,5 +160,5 @@ module Kompetansesok
       @out.puts('OK!') if @out
     end
     
-  end 
+  end
 end

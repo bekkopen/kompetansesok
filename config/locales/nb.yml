@@ -67,6 +67,7 @@ nb:
   feilmelding:
     for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
+    ingen_slik_læreplan: "Beklager vi fant ingen læreplan med oppgitt uuid"
 
   csv:
     kompetansemaal_uuid: "kompetansemål id" 

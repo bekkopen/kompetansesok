@@ -66,11 +66,10 @@ h2. Starte Ultrasphinx
 h2. Kjøring av tester og miljø
 
 * specs kjøres i *testmiljøet*
-** specs kan kjøres kjappere ved å bruke miljøvariablen FASTER. Da kjøres
 ikke indexeringen, så det må du passe på selv
 * features:app kjøres i *integration_testmiljøet*
 * features:import kjøres i *testmiljøet* og med jruby
-** features:import kan kjøres raskere ved å bruke miljøvariablen FASTER.
+** features:import kan kjøres raskere ved å bruke miljøvariablen FASTER=true.
 Da kjøres ikke indexeringen, så det må du passe på selv
 
 
