@@ -70,7 +70,7 @@ nb:
   feilmelding:
     for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
-    ingen_slik_læreplan: "Beklager vi fant ingen læreplan med oppgitt uuid"
+    ingen_slik_læreplan: "Beklager vi fant ingen læreplan med oppgitt id."
 
   csv:
     kompetansemaal_uuid: "kompetansemål id" 
@@ -88,6 +88,7 @@ nb:
     fag_uuid: "fag id"
     fag_kode: "fag kode"
     fag_tittel: "fag tittel"
+    
   faq:
     spørsmål:
         en: "Hva kan jeg søke etter?"
