@@ -21,6 +21,5 @@ begin
       t.cucumber_opts = "--profile app"
     end
   end
-rescue LoadError
-  STDERR.puts "**** Ikke glem gem install cucumber ****"
+rescue LoadError => ignore
 end
