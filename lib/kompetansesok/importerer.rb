@@ -67,10 +67,10 @@ module Kompetansesok
         @out.puts('Import ferdig.') if @out
 
         lag_db_dump
-        return IMPORT_GJORDT
+        IMPORT_GJORDT
       else
         @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
-        return INGEN_FORANDRING
+        INGEN_FORANDRING
       end
     end
 
@@ -152,7 +152,7 @@ module Kompetansesok
         typer.each do |type|
           data = @jena.send(type.name.pluralize.downcase)
           @out.print("Importerer #{data.length} #{type.name.pluralize}...") if @out
-          type.send(:create!, data)
+          type.create!(data)
           @out.puts('OK!') if @out
         end
         @out.print('Commit...') if @out

@@ -9,7 +9,7 @@ Egenskap: Bla i læreplan
 
   Scenario: Gå til læreplan og tilbake
     Gitt at jeg er på "Bla i læreplan" -siden
-    Når jeg klikker på linken "BAK3-01 : Læreplan i bakerfaget Vg3 / opplæring i bedrift"
+    Når jeg klikker på linken "Læreplan i bakerfaget Vg3 / opplæring i bedrift"
     Så skal jeg kunne se Læreplanen "Læreplan i bakerfaget Vg3 / opplæring i bedrift"
     Når jeg klikker "Tilbake"
     Så skal jeg kunne se 362 læreplaner

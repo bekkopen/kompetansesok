@@ -1,4 +1,4 @@
-<div class="sok_input">
+<div id="sok_input">
   <% form_tag(root_path, :method => :get) do %>
     <label for="q" style="display: none;"><%= t('etiketter.søk') %></label>
     <input name="q" id="q" size="30" type="text" value="<%= params[:q] %>"/>
@@ -7,33 +7,35 @@
         $('#q').inputFieldText('<%= t('etiketter.søkeboks_default_tekst') %>', 'søke_hint');
       });
     </script>
-
-    <input type="submit" value="<%= t('knapper.søk') %>" />
+    <button name="submit" type="submit">
+      <%= image_tag 'search_icon.png', :alt => t('knapper.søk') %>
+    </button>
+    <p id="søk_hjelpetekst"><%= t('etiketter.søkeboks_hjelpe_tekst') %></p>
     <ul class="sok_filtere">
       <li>
-      	<input name="vis_kompetansemaal" type="checkbox" value="true" id="vis_kompetansemaal" <%= 'checked="checked"' if session_checked?('vis_kompetansemaal') %> />
-      	<input name="vis_kompetansemaal" type="hidden" value="false" />
-      	<label for="vis_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
+        <input name="vis_kompetansemaal" type="checkbox" value="true" id="vis_kompetansemaal" <%= 'checked="checked"' if session_checked?('vis_kompetansemaal') %> />
+        <input name="vis_kompetansemaal" type="hidden" value="false" />
+        <label for="vis_kompetansemaal"><%= t('etiketter.kompetansemål') %></label>
       </li>
       <li>
-      	<input name="vis_laereplaner" type="checkbox" value="true" id="vis_laereplaner" <%= 'checked="checked"' if session_checked?('vis_laereplaner') %>/>
-      	<input name="vis_laereplaner" type="hidden" value="false" />
-      	<label for="vis_laereplaner"><%= t('etiketter.læreplaner') %></label>
+        <input name="vis_laereplaner" type="checkbox" value="true" id="vis_laereplaner" <%= 'checked="checked"' if session_checked?('vis_laereplaner') %>/>
+        <input name="vis_laereplaner" type="hidden" value="false" />
+        <label for="vis_laereplaner"><%= t('etiketter.læreplaner') %></label>
       </li>
       <li>
-      	<input name="vis_hovedomraader" type="checkbox" value="true" id="vis_hovedomraader" <%= 'checked="checked"' if session_checked?('vis_hovedomraader') %>/>
+        <input name="vis_hovedomraader" type="checkbox" value="true" id="vis_hovedomraader" <%= 'checked="checked"' if session_checked?('vis_hovedomraader') %>/>
           <input name="vis_hovedomraader" type="hidden" value="false" />
-      	<label for="vis_hovedomraader"><%= t('etiketter.hovedområder') %></label>
+        <label for="vis_hovedomraader"><%= t('etiketter.hovedområder') %></label>
       </li>
       <li>
-      	<input name="vis_kompetansemaalsett" type="checkbox" value="true" id="vis_kompetansemaalsett" <%= 'checked="checked"' if session_checked?('vis_kompetansemaalsett') %>/>
-      	<input name="vis_kompetansemaalsett" type="hidden" value="false" />
-      	<label for="vis_kompetansemaalsett"><%= t('etiketter.kompetansemålsett') %></label>
+        <input name="vis_kompetansemaalsett" type="checkbox" value="true" id="vis_kompetansemaalsett" <%= 'checked="checked"' if session_checked?('vis_kompetansemaalsett') %>/>
+        <input name="vis_kompetansemaalsett" type="hidden" value="false" />
+        <label for="vis_kompetansemaalsett"><%= t('etiketter.kompetansemålsett') %></label>
       </li>
       <li>
-      	<input name="vis_fag" type="checkbox" value="true" id="vis_fag" <%= 'checked="checked"' if session_checked?('vis_fag') %>/>
-      	<input name="vis_fag" type="hidden" value="false" />
-      	<label for="vis_fag"><%= t('etiketter.fag') %></label>
+        <input name="vis_fag" type="checkbox" value="true" id="vis_fag" <%= 'checked="checked"' if session_checked?('vis_fag') %>/>
+        <input name="vis_fag" type="hidden" value="false" />
+        <label for="vis_fag"><%= t('etiketter.fag') %></label>
       </li>
     </ul>
   <% end %>
@@ -41,7 +43,7 @@
   <% if flash[:sok_tilbakemelding] %>
     <div id="sok_tilbakemelding"> 
       <%= flash[:sok_tilbakemelding] %>
-	  </div>  
+    </div>  
   <% end %>
 </div>
 
@@ -51,11 +53,11 @@
   <%= render :partial => 'kompetansemaal/selected_kompetansemaal' %>
 
   <div id='resultater'>
-      <div id="kompetansemaal_treff">
-        <h2><%= t('overskrifter.kompetansemål') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaal_treff.length %>)</h2>
-        <%= render :partial => "kompetansemaal/simple_grid" %>
-      </div>
-
+    <div id="kompetansemaal_treff" class="uthevet">
+      <h2 class='kompetansemaal'><%= t('overskrifter.kompetansemål') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaal_treff.length %>)</h2>
+      <p id="søk_hjelpetekst"><%= t('etiketter.kompetansemål_hjelpe_tekst') %></p>
+      <%=  render :partial => "kompetansemaal/simple_grid" %>
+    </div>
     <% if session_checked?('vis_laereplaner') %>
       <div id='laereplaner_treff' class='delresultat'>
         <h2><%= t('overskrifter.læreplaner') %> (<%= t('tekst.antall_treff') %> <%= @laereplaner_treff.length %>)</h2>
