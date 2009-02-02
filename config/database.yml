@@ -60,8 +60,8 @@ production:
   pool: 5
   timeout: 5000
 <% if defined?(JRUBY_VERSION) %>
-  adapter: jdbcmysql
-  driver: org.gjt.mm.mysql.Driver
+  adapter: jdbc
+  jndi: jdbc/kompetansesok
 <% else %>
   adapter: mysql
 <% end %>

@@ -53,24 +53,28 @@ module Kompetansesok
       @out.puts if @out
     end
 
-
-
     def importer_til_db(antall_filer=nil)
-      @jena = Jena.new
+      begin
+        @jena = Jena.new
 
-      if new_rdf_data?
-        les_filer(antall_filer)
-        slett_alt_i_databasen
-        last_inn_kompetansemaal
-        last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
-        RdfMd5Sum.current = md5sum_av_leste_filer
-        @out.puts('Import ferdig.') if @out
+        if new_rdf_data?
+          les_filer(antall_filer)
+          slett_alt_i_databasen
+          last_inn_kompetansemaal
+          last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
+          RdfMd5Sum.current = md5sum_av_leste_filer
+          @out.puts('Import ferdig.') if @out
 
-        lag_db_dump
-        IMPORT_GJORDT
-      else
-        @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
-        INGEN_FORANDRING
+          lag_db_dump
+          IMPORT_GJORDT
+        else
+          @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
+          INGEN_FORANDRING
+        end
+      rescue Exception => e
+        puts "************** E R R O R **************"
+        puts "#{e.message} (#{e.class})"
+        puts e.backtrace
       end
     end
 
