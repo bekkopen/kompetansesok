@@ -1,4 +1,4 @@
-<% if defined?(JRUBY_VERSION) && Rails.env != 'production' %>
+<% if defined?(JRUBY_VERSION) %>
 <% require 'ext/mysql-connector-java-5.1.7-bin.jar' %>
 <% end %>
 
@@ -60,8 +60,8 @@ production:
   pool: 5
   timeout: 5000
 <% if defined?(JRUBY_VERSION) %>
-  adapter: jdbc
-  jndi: jdbc/kompetansesok
+  adapter: jdbcmysql
+  driver: org.gjt.mm.mysql.Driver
 <% else %>
   adapter: mysql
 <% end %>
