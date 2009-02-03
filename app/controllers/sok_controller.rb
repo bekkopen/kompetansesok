@@ -33,8 +33,11 @@ class SokController < ApplicationController
   end
 
   def download_csv
-    @content =  Kompetansesok::CsvGenerator.new.csv_for(params[:uuids])  
-    send_data(@content, :filename => "#{timestamp}_kompetansemaal.csv", :disposition => 'inline')
+    c = Iconv.new('ISO-8859-15','UTF-8')
+    @content =  Kompetansesok::CsvGenerator.new.csv_for(params[:uuids])
+    @content = c.iconv(@content.gsub("–", "-"))
+
+    send_data(@content, :type => 'text/csv; charset=ISO-8859-15', :filename => "#{timestamp}_kompetansemaal.csv", :disposition => 'inline')
   end
 
   private
