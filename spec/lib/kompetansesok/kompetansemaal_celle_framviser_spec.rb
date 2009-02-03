@@ -29,7 +29,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should return correct hovedomraade string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "H h1, h2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:hovedomraader, @kompetansemaal)).should == "H&nbsp; h1, h2"
     end
 
     it "should return correct Kompetansemaalsett string" do
@@ -37,12 +37,12 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should return correct fag string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "F f1, f2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:fag, @kompetansemaal)).should == "F&nbsp; f1, f2"
     end
 
     it "should produce correct html string" do
       strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == 
-        "TittelLP plan1, plan2H h1, h2KS k1, k2F f1, f2"
+        "TittelLP plan1, plan2H&nbsp; h1, h2KS k1, k2F&nbsp; f1, f2"
     end
 
     it "should produce correct html string, if no fag is present" do
@@ -50,12 +50,12 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
       @kompetansemaal = (mock("kompetansemaal",  @stubs))
       @kompetansemaal_celle_framviser = MyView.new 
       strip_styling(@kompetansemaal_celle_framviser.send(:to_detail_html, @kompetansemaal)).should == 
-        "TittelLP plan1, plan2H h1, h2KS k1, k2"
+        "TittelLP plan1, plan2H&nbsp; h1, h2KS k1, k2"
     end
 
     it "should produce correct styling around the elements" do
       @kompetansemaal_celle_framviser.send(:fag, @kompetansemaal).should == 
-        "<div class='kompetansemaal_detaljer'><span class='ikon ikon_Fag'>F</span> f1, f2</div>"
+        "<div class='kompetansemaal_detaljer'><span class='ikon ikon_Fag'>F&nbsp;</span> f1, f2</div>"
     end
   
   end
