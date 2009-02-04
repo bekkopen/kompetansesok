@@ -14,7 +14,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     before(:each) do
       @stubs = {
         :tittel => 'tittel',
-        :laereplaner => [Laereplan.new(:tittel => "plan1"), Laereplan.new(:tittel => "plan2")],
+        :laereplaner => [Laereplan.new(:uuid=> 'uuid-1', :tittel => "plan1"), Laereplan.new(:uuid=> 'uuid-2', :tittel => "plan2")],
         :hovedomraader => [Hovedomraade.new(:tittel => "h1"), Hovedomraade.new(:tittel => "h2")],
         :kompetansemaalsett => [Kompetansemaalsett.new(:tittel => "k1"), Kompetansemaalsett.new(:tittel => 'k2')],
         :fag => [Fag.new(:tittel => "f1"), Fag.new(:tittel => 'f2')]
@@ -25,7 +25,7 @@ describe Kompetansesok::KompetansemaalCelleFramviser do
     end
 
     it "should return correct leareplan string" do
-      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "LP plan1, plan2"
+      strip_styling(@kompetansemaal_celle_framviser.send(:laereplaner, @kompetansemaal)).should == "LP <a href=''>plan1</a>, <a href=''>plan2</a>"
     end
 
     it "should return correct hovedomraade string" do
