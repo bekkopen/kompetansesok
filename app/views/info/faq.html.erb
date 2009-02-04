@@ -1,11 +1,14 @@
 <h1><%= t('overskrifter.ofte_stillte_spørsmål') %></h1>
-<dl>
+<dl id="faq">
   <dt><%= t('faq.spørsmål.en')%></dt>
   <dd><p><%= t('faq.svar.en')%></p></dd>
   <dt><%= t('faq.spørsmål.to')%></dt>
   <dd><p><%= t('faq.svar.to')%></p></dd>
   <dt><%= t('faq.spørsmål.tre')%></dt>
-  <dd><p><%= t('faq.svar.tre')%></p></dd>
+  <dd><p><%= t('faq.svar.tre.intro')%></p>
+      <%= t('faq.svar.tre.søkemuligheter')%>
+      <p><%= t('faq.svar.tre.videre_søkemuligheter')%></p>
+  </dd>
   <dt><%= t('faq.spørsmål.fire')%></dt>
   <dd><p><%= t('faq.svar.fire')%></p></dd>
   <dt><%= t('faq.spørsmål.fem')%></dt>

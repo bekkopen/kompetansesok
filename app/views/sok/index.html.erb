@@ -10,7 +10,8 @@
     <button name="submit" type="submit">
       <%= image_tag 'search_icon.png', :alt => t('knapper.søk') %>
     </button>
-    <p id="søk_hjelpetekst"><%= t('etiketter.søkeboks_hjelpe_tekst') %></p>
+    <%= link_to "Hjelp", faq_info_path, :class => 'søke_hjelp' %>
+    <p class="søk_hjelpetekst"><%= t('etiketter.søkeboks_hjelpe_tekst') %></p>
     <ul class="sok_filtere">
       <li>
         <input name="vis_kompetansemaal" type="checkbox" value="true" id="vis_kompetansemaal" <%= 'checked="checked"' if session_checked?('vis_kompetansemaal') %> />

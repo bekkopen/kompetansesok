@@ -51,7 +51,7 @@ en:
     fag: "Subject"
     søkeboks_default_tekst: "Search in id, title or code..."
     søkeboks_hjelpe_tekst: "Use the check-boxes below to limit the search"
-    kompetansemål_hjelpe_tekst: "Click on a row to select it. Ctrl-click to select mulitple rows."
+    kompetansemål_hjelpe_tekst: "Click on a row to select it. Ctrl-click to select mulitple rows or to deselect a selected row."
     sok_denne_uke: "This week"
     sok_forrige_uke: "Last week"
     sok_denne_måned: "This month"
@@ -62,7 +62,7 @@ en:
 
   tekst:
     database_eksport: "MySQL database exports are available for download. These database exports include all the data displayed in this application. Click on the below links til download a database export."
-    bla_i_laereplan: "Below is a list of all curriculums. You can sort it by code or title."
+    bla_i_laereplan: "Below is a list of all curricula. You can sort the list by code or title."
     antall_treff: "Hits:"
     info: "This site lets you search for competence aims."
     kompetansemål_kopi_info: "Use the below text box to copy competance aim details to your clipboard. You can use the checkboxes to choose if you want to include id, code or psi."
