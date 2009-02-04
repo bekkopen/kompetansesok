@@ -324,7 +324,7 @@ input.søke_hint {
 	color: #999;
 }
 
-p#søk_hjelpetekst {
+p.søk_hjelpetekst {
 	margin: 0.6em 0;
 	font-size: 0.7em;
 }

@@ -32,7 +32,7 @@
 
 <div id="valgte_kompetansemaal" class="uthevet" style="display: none;">
   <h2><%= t('overskrifter.valgte_kompetansemål') %></h2>
-
+  <p class="søk_hjelpetekst"><%= t('tekst.kompetansemål_kopi_info') %></p>
   <% form_tag download_csv_sok_path, :method => :post do %>
     <div class="valgte_kompetansemaal_boks">
     <ul class="sok_filtere">
@@ -53,6 +53,7 @@
       </ul>
       <textarea id="valgte_tekst" rows="6" readonly=""> </textarea>
     <%= hidden_field_tag "uuids" %>
+    <p class="søk_hjelpetekst"><%= t('tekst.kompetansemål_csv_eksport_info') %></p>
     <%= submit_tag t('knapper.eksport_csv'), :onclick => "addUuidsToForm(this.form)" %>
     </div>
   <% end %>

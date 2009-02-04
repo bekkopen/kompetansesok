@@ -66,6 +66,8 @@ nb:
     bla_i_laereplan: "Her kan du bla i læreplaner. Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
     antall_treff: "antall treff:"
     info: "Her kan du søke etter kompetansemål."
+    kompetansemål_kopi_info: "Bruk tekst område nedenfor til å kopiere detaljer om kompetansemål. Bruk avkryssningsboksene til å velge om du vil kopiere id, kode eller psi."
+    kompetansemål_csv_eksport_info: "Eksport til fil inkluder videre detaljer for valgte kompetansemål. Informasjon om læreplaner, hovedområder, kompetansemålsett eller fag er inkludert."
 
   feilmelding:
     for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."

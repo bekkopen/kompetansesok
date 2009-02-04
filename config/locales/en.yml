@@ -42,7 +42,7 @@ en:
     vis_laereplan_treff: "Include Curriculum in results"
     vis_hovedomraade_treff: "Include major subject description in results"
     tom: "<no data>"
-    læreplaner: "Curriculums"
+    læreplaner: "Curricula"
     læreplan: "Curriculum"
     hovedområder: "Major Subjects"
     hovedområde: "Major Subject"
@@ -65,6 +65,8 @@ en:
     bla_i_laereplan: "Below is a list of all curriculums. You can sort it by code or title."
     antall_treff: "Hits:"
     info: "This site lets you search for competence aims."
+    kompetansemål_kopi_info: "Use the below text box to copy competance aim details to your clipboard. You can use the checkboxes to choose if you want to include id, code or psi."
+    kompetansemål_csv_eksport_info: "Export to file will include further competence aim details. Associated curricula, major subjects, competence aim sets or subjects are included."
     
   feilmelding:
     for_grovt_søk: "You search is too broad to include all details for Competence aim results"

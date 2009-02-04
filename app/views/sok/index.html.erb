@@ -55,7 +55,7 @@
   <div id='resultater'>
     <div id="kompetansemaal_treff" class="uthevet">
       <h2 class='kompetansemaal'><%= t('overskrifter.kompetansemål') %> (<%= t('tekst.antall_treff') %> <%= @kompetansemaal_treff.length %>)</h2>
-      <p id="søk_hjelpetekst"><%= t('etiketter.kompetansemål_hjelpe_tekst') %></p>
+      <p class="søk_hjelpetekst"><%= t('etiketter.kompetansemål_hjelpe_tekst') %></p>
       <%=  render :partial => "kompetansemaal/simple_grid" %>
     </div>
     <% if session_checked?('vis_laereplaner') %>
