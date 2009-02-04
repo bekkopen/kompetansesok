@@ -19,7 +19,7 @@ module Kompetansesok
     end
 
     def laereplaner(kompetansemaal)
-      html_line(kompetansemaal, :laereplaner)
+      html_line(kompetansemaal, :laereplaner, true)
     end
 
     def hovedomraader(kompetansemaal)
@@ -35,11 +35,11 @@ module Kompetansesok
     end
     
    
-    def html_line(kompetansemaal, attribute)
+    def html_line(kompetansemaal, attribute, is_laereplan = false)
       attributter = kompetansemaal.send(attribute).map do |h|
         {
           :ikon_tekst => h.ikon_tekst,
-          :tittel => h.tittel,
+          :tittel => is_laereplan ? "<a href='#{laereplan_path(h)}'>#{h.tittel}</a>" : h.tittel,
           :class => h.class
         }
       end
