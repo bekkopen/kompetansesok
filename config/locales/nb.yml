@@ -63,7 +63,7 @@ nb:
 
   tekst:
     database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på linkene under for å laste ned ønsket eksport."
-    bla_i_laereplan: "Her kan du bla i læreplaner. Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
+    bla_i_laereplan: "Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
     antall_treff: "antall treff:"
     info: "Her kan du søke etter kompetansemål og relaterte læreplaner, kompetansemålsett, hovedområder og fag. Skriv inn det du søker etter i søkeboksen på <a href=\"/\">søkesiden</a>. Du kan søke etter tittel, id eller kode i alle kompetansemål, læreplaner, kompetansemålsett, hovedområder og fag. Søkeresultatene er enten rader med kompetansemål eller lister med læreplaner, kompetansemålsett, hovedområder eller fag. Når du klikker på kompetansemålene som returneres, blir videre detaljer kopert i en tekstboks hvor du kan kopiere innholdet til senere bruk (eventuellt in en annen applikasjon). Du kan også eksportere returnerte kompetansemål til fil. Returnerte læreplaner, kompetansemålsett, hovedområder eller fag gir linker til sider som viser videre detaljer. Informasjon om videre søkemuligheter finnes i \"<a href=\"/info/faq\">ofte stillte spørsmål</a>\""
     kompetansemål_kopi_info: "Bruk tekst område nedenfor til å kopiere detaljer om kompetansemål. Bruk avkryssningsboksene til å velge om du vil kopiere id, kode eller psi."
