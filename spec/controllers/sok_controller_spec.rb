@@ -34,6 +34,12 @@ describe SokController do
   
   describe "responding to Get index" do
     
+    before :each do
+      search = mock(Ultrasphinx::Search)
+      search.stub!(:run).and_return([])
+      Ultrasphinx::Search.stub!(:new).and_return(search)
+    end
+    
     it "should create an Info if a search is performed" do
       Info.should_receive(:create)
       
