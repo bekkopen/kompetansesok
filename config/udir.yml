@@ -7,12 +7,16 @@ db_dumps:
 maks_detalj_rader: 50
 
 mail:
-    username: "<sett inn>"
-    password: "<sett inn>"
-    server: "<sett inn>"
-    server_port: "<sett inn>"
-    #mail addresser som mottar import rapporter, separert med ;
-    rapport_mailer: "<sett inn>"
-    #Kun en admin addresse
-    admin_mail: "<sett inn>"
+  domain: "udir.no"
+  username: ""
+  password: ""
+  server: ""
+  server_port: 25
+  #mail addresser som mottar import rapporter, separert med ;
+  to: ""
+  #Kun en admin addresse
+  from: ""
+  from_alias: "Udir kompetansesøk"
+  subject: "Rapport: Import fra GREP"
+  
 

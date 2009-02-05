@@ -12,10 +12,13 @@ module Udir
   mail_config = CONFIG['mail']
   SMTP_SERVER = mail_config['server']
   SMTP_USERNAME = mail_config['username']
-  SMTP_PASSWORD =mail_config['password']
-  SMTP_PORT =mail_config['server_port']
+  SMTP_PASSWORD = mail_config['password']
+  SMTP_PORT = mail_config['server_port']
+  DOMAIN = mail_config['domain']
 
-  RAPPORT_EMAILER= mail_config['rapport_mailser']
-  KOMPETANSESOK_ADMIN_EMAIL = mail_config['admin_mail']
+  SEND_MAIL_TIL = mail_config['to']
+  SEND_MAIL_FRA = mail_config['from']
+  SEND_MAIL_FRA_ALIAS = mail_config['from_alias']
+  MAIL_SUBJECT = mail_config['subject']
 
 end
