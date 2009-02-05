@@ -1,7 +1,7 @@
 # Konfigurasjon av applikasjon
 db_dumps:
-  # Det som kommer etter public
-  path: "db_dumps"
+  # path for produksjonsmiljøet. Alle andre styres i initializers/udir.rb
+  path: "/usr/share/glassfish/domains/domain1/applications/j2ee-modules/kompetansesok_production/db_dumps"
   count: 3
 
 maks_detalj_rader: 50
