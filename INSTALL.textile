@@ -1,4 +1,4 @@
-h1. Installasjon av Kompetansesøk applikasjonen i produksjonsmiljø
+﻿h1. Installasjon av Kompetansesøk applikasjonen i produksjonsmiljø
 
 h2. Installer GlassFish
 
@@ -131,5 +131,13 @@ Pga. minnelekkasje feil i Glassfish må applikasjon server startes på nytt ette
 
   ssh udiradmin@10.0.100.233 sudo /usr/share/glassfish/bin/asadmin stop-domain domain1
   ssh udiradmin@10.0.100.233 sudo /usr/share/glassfish/bin/asadmin start-domain domain1
+
+
+h3. Opprette regelmessig jobb for import fra GREP (på Windows)
+  lag "sceduled task" (control panel - scheduled tasks)
+    - Ved valg av applikasjon: <kompetansesok_dir>\script\import\Windows-import_fra_grep.bat
+    - sett navn og hvor ofte jobben skal kjøres
+
+  
 
 
