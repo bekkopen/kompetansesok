@@ -80,6 +80,12 @@ Du blir spurt om Glassfish passord, skriv det inn.
 Hvis du får problemer med PermGenSpace - se her:
 http://www.nabble.com/Caused-by:-java.lang.OutOfMemoryError:-PermGen-space-td17664141.html
 
+Restart glassfish:
+
+  ssh udiradmin@10.0.100.233 sudo /usr/share/glassfish/bin/asadmin stop-domain domain1
+  ssh udiradmin@10.0.100.233 sudo /usr/share/glassfish/bin/asadmin start-domain domain1
+
+
 h3. Opprett tabeller og importere data
   
 Nå skal vi kjøre flere kommandoer, så det er best å logge inn på serveren:

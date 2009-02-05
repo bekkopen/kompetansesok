@@ -3,7 +3,7 @@ nb:
     forside: "Søk"
     database_eksport: "Database eksport"
     om_kopetansemål_søk: "Om søket / hjelp"
-    ofte_stillte_spørsmål: "Ofte stillte spørsmål"
+    ofte_stilte_spørsmål: "Ofte stilte spørsmål"
     statistikk: "Statistikk over antall søk"
     bla_i_laereplan: "Bla i læreplaner"
 
@@ -19,7 +19,7 @@ nb:
     database_eksport: "Database eksport"
     søk_i: "Søk i:"
     kompetansemål_søk: "Søk i kompetansemål"
-    ofte_stillte_spørsmål: "Ofte stillte spørsmål"
+    ofte_stilte_spørsmål: "Ofte stilte spørsmål"
     statistikk: "Antall søk den siste tiden"
     filtrer_på_læreplan: "Filtrer på læreplan"
   
@@ -51,7 +51,7 @@ nb:
     kompetansemålsett: "Kompetansemålsett"
     fag: "Fag"
     søkeboks_default_tekst: "Søk på id, tittel eller kode..."
-    søkeboks_hjelpe_tekst: "Bruk avkryssningsboksene nedenfor til å filtrere søket"
+    søkeboks_hjelpe_tekst: "Bruk avkryssingsboksene nedenfor til å filtrere søket"
     kompetansemål_hjelpe_tekst: "Klikk på kompetansemålrader for å kopiere detaljer. Ctrl-klikk for å kopiere flere rader eller for å fjerne markerte rader."
     sok_denne_uke: "Denne uken"
     sok_forrige_uke: "Forrige uke"
@@ -62,17 +62,17 @@ nb:
     angi_kriterium: "Vennligst angi et søkekriterium"
 
   tekst:
-    database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på linkene under for å laste ned ønsket eksport."
+    database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på lenkene under for å laste ned ønsket eksport."
     bla_i_laereplan: "Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
     antall_treff: "antall treff:"
-    info: "Her kan du søke etter kompetansemål og relaterte læreplaner, kompetansemålsett, hovedområder og fag. Skriv inn det du søker etter i boksen på <a href=\"/\">søkesiden</a>. Du kan søke på tittel, id eller kode. Søkeresultatene er enten rader med kompetansemål eller lister med læreplaner, kompetansemålsett, hovedområder eller fag. Når du klikker på kompetansemålene i søkeresultatet blir detaljer kopiert til en tekstboks hvor du kan kopiere videre til utklippstavle for senere bruk (for eksempel til en annen applikasjon). Du kan også eksportere returnerte kompetansemål til fil. Returnerte læreplaner, kompetansemålsett, hovedområder eller fag gir linker til sider som viser detaljer. Generell informasjon om søkemuligheter finnes i <a href=\"/info/faq\">ofte stillte spørsmål</a>"
-    kompetansemål_kopi_info: "Bruk tekst område nedenfor til å kopiere detaljer om kompetansemål. Bruk avkryssningsboksene til å velge om du vil kopiere id, kode eller psi."
+    info: "Her kan du søke etter kompetansemål og relaterte læreplaner, kompetansemålsett, hovedområder og fag. Skriv inn det du søker etter i boksen på <a href=\"/\">søkesiden</a>. Du kan søke på tittel, id eller kode. Søkeresultatene er enten rader med kompetansemål eller lister med læreplaner, kompetansemålsett, hovedområder eller fag. Når du klikker på kompetansemålene i søkeresultatet blir detaljer kopiert til en tekstboks hvor du kan kopiere videre til utklippstavle for senere bruk (for eksempel til en annen applikasjon). Du kan også eksportere returnerte kompetansemål til fil. Returnerte læreplaner, kompetansemålsett, hovedområder eller fag gir lenker til sider som viser detaljer. Generell informasjon om søkemuligheter finnes i <a href=\"/info/faq\">ofte stillte spørsmål</a>"
+    kompetansemål_kopi_info: "Bruk tekstfeltet nedenfor til å kopiere detaljer om kompetansemål. Bruk avkryssingsboksene til å velge om du vil kopiere id, kode eller psi."
     kompetansemål_csv_eksport_info: "Eksport til fil inkluder videre detaljer om valgte kompetansemål. Informasjon om tilhørende læreplaner, hovedområder, kompetansemålsett eller fag er inkludert."
 
   feilmelding:
-    for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."
+    for_grovt_søk: "Søket ga for mange treff. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
-    ingen_slik_læreplan: "Beklager vi fant ingen læreplan med oppgitt id."
+    ingen_slik_læreplan: "Beklager, vi fant ingen læreplan med oppgitt id."
 
   csv:
     kompetansemaal_uuid: "kompetansemål id" 
@@ -109,13 +109,13 @@ nb:
           intro: "Følgende søkemuligheter eksisterer:"
           søkemuligheter: "<ul>
               <li>Flere ord i søket (for eksempel samisk kultur) gir resultat når alle ord er inkludert (for eksempel Læreplan i samisk visuell kultur...).</li>
-              <li>Søk med flere ord innenfor gåsetegn (for eksempel \"samisk kultur\") gir resultat når alle ord er inkludert i den spesifiserte rekkefølgen (for eksempel \"Gjere greie for visuelle uttrykk og objekt frå samisk kultur...\").</li>
-              <li>Søk med wildcard (*) kan brukes til å estatte alt før eller etter deler av et ord. For eksempel, *misk vil returnere kompetansemål med samisk i tittel. *mis* vil også returnere kompetansemål med samisk i tittel. \"* misk\" vil ikke gi noe resultat utover det \"misk\" vil returnere. Et typisk bruk av wildcard er å filtere koder innenfor læreplaner (for eksempel FOR6*). Wildcard tegn kan ikke brukes innenfor et ord (for eksempel sam*sk)</li>
+              <li>Søk med flere ord innenfor anførselstegn (for eksempel \"samisk kultur\") gir resultat når alle ord er inkludert i den spesifiserte rekkefølgen (for eksempel \"Gjere greie for visuelle uttrykk og objekt frå samisk kultur...\").</li>
+              <li>Søk med jokertegn (*) kan brukes til å estatte alt før eller etter deler av et ord. For eksempel, *misk vil returnere kompetansemål med samisk i tittel. *mis* vil også returnere kompetansemål med samisk i tittel. \"* misk\" vil ikke gi noe resultat utover det \"misk\" vil returnere. Et typisk bruk av jokertegn er å filtere koder innenfor læreplaner (for eksempel FOR6*). Wildcard tegn kan ikke brukes innenfor et ord (for eksempel sam*sk)</li>
               <li>Du kan også ekskludere i søket. For eksempel samisk -kultur vil returnere kompetansemål med samisk men uten kultur i tittel.</li>
           </ul>"
           videre_søkemuligheter: "Videre avanserte søkemuligheter beskrives på <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">nettstedet til Sphinx (søkemotor)</a>"
         fire: "Søk som returnerer mange kompetansemål viser ikke tilhørende informasjon (for eksempel kompetansemålsett). I disse tilfellene bør søket være mer nøyaktig. Kompetansemål resultatene (tittel) kan brukes til å lage søket mer spesifikk."
-        fem: "Ved å klikke på rader i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer du kompetansemål til \"Valgte kompetansemål\". Du kan ctrl-klikke på flere kompetansemål rader for å kopiere flere kompetansemål. Bruk ctrl-klikk til å fjerne markering av et kompetansemål."
+        fem: "Ved å klikke på rader i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer du kompetansemål til \"Valgte kompetansemål\". Du kan ctrl-klikke på flere kompetansemålrader for å kopiere flere kompetansemål. Bruk ctrl-klikk til å fjerne markering av et kompetansemål."
         seks: "Det eksisterer tre muligheter til å hente/eksportere data fra denne applikasjonen for videre bruk. Du kan bruke kopiering til utklippstavle fra \"Valgte kompetansemål\". Du kan eksportere valgte kompetansemål til csv fil format ved å klikke på \"Lagre resultatsett til fil\" under  \"Valgte kompetansemål\". Denne type eksport inkluderer detaljer om kompetansemål (for eksempel tilhørende læreplan). Det er også mulig å laste ned en komplett eksport av underliggende database på <a href=\"/db_dump\">eksport database siden</a>."
         syv: "Du kan endre språk ved å velge språk i \"select boksen\" øverst til høyre."
         åtte: "Hvis du får treff på læreplan, klikker du på en læreplan i listen for å se alle kompetansemål for valgte læreplan. Du kan gjøre det samme for kompetansemålsett, hovedområder eller fag."

@@ -3,7 +3,7 @@ en:
     forside: "Search"
     database_eksport: "Database Export"
     om_kopetansemål_søk: "About / Help"
-    ofte_stillte_spørsmål: "Frequently Asked Questions"
+    ofte_stilte_spørsmål: "Frequently Asked Questions"
     statistikk: "Statistics"
     bla_i_laereplan: "Browse curriculums"  
 
@@ -19,7 +19,7 @@ en:
     database_eksport: "Database export"
     søk_i:  "Search in:"
     kompetansemål_søk: "Search for Competence aims"
-    ofte_stillte_spørsmål: "Frequently Asked Questions"
+    ofte_stilte_spørsmål: "Frequently Asked Questions"
     statistikk: "Search statistics"
     filtrer_på_læreplan: "Filter by curriculum"
 
