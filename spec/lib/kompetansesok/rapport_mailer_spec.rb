@@ -10,11 +10,5 @@ describe Kompetansesok::RapportMailer do
     @rapport_mailer.send_rapport("test rapport")
   end
 
-
-  it "send rapport when rapport is issued" do
-    pending("venter på ssl støtte, eller avklaring på at vi ikke trenger det")
-    lambda{@rapport_mailer.send_rapport("Dette er en test mail")}.should_not raise_error
-  end
-
 end
 
