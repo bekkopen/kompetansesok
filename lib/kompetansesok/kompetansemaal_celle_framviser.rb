@@ -19,27 +19,27 @@ module Kompetansesok
     end
 
     def laereplaner(kompetansemaal)
-      string_joined_on(kompetansemaal, :laereplaner, t('etiketter.læreplan'))
+      html_line(kompetansemaal, :laereplaner, true)
     end
 
     def hovedomraader(kompetansemaal)
-      string_joined_on(kompetansemaal,:hovedomraader, t('etiketter.hovedområde'))
+      html_line(kompetansemaal,:hovedomraader)
     end
 
     def kompetansemaalsett(kompetansemaal)
-      string_joined_on(kompetansemaal,:kompetansemaalsett, t('etiketter.kompetansemålsett'))
+      html_line(kompetansemaal,:kompetansemaalsett)
     end
 
     def fag(kompetansemaal)
-      string_joined_on(kompetansemaal,:fag, t('etiketter.fag'))
+      html_line(kompetansemaal,:fag)
     end
     
    
-    def string_joined_on(kompetansemaal, attribute, tittel, join_string = ", ")
+    def html_line(kompetansemaal, attribute, is_laereplan = false)
       attributter = kompetansemaal.send(attribute).map do |h|
         {
           :ikon_tekst => h.ikon_tekst,
-          :tittel => h.tittel,
+          :tittel => is_laereplan ? "<a href='#{laereplan_path(h)}'>#{h.tittel}</a>" : h.tittel,
           :class => h.class
         }
       end
@@ -48,7 +48,7 @@ module Kompetansesok
       else
         # Vi må bruke enkeltfnutter for å unngå at nokogiri klager
         ikon_span = %{<span class='ikon ikon_#{attributter[0][:class]}'>#{attributter[0][:ikon_tekst]}</span>}
-        titler = attributter.map{|a| a[:tittel]}.join(join_string)
+        titler = attributter.map{|a| a[:tittel]}.join(', ')
         %{<div class='kompetansemaal_detaljer'>#{ikon_span} #{titler}</div>}
       end
     end

@@ -4,12 +4,14 @@ module Kompetansesok
     
     ULTRASPHINX_INDEXER= "jruby -S rake ultrasphinx:index"
 
-    def initialize(params)
+    def initialize(params = {})
+      @out        = params[:out]
       @importer   = params[:importer]   || Kompetansesok::Importerer.new(Rails.root + '/tmp/import', $stdout)
       @db_eksport = params[:db_eksport] || Kompetansesok::DbEksport.new
     end
 
     def run
+      @out.puts "Starter planlagt import" if @out
       rapport = StringIO.new
       rapport.puts lastned_filer
       rapport.puts importer_til_database
@@ -95,7 +97,10 @@ module Kompetansesok
     end
 
     def send_rapport(rapport)
+      @out.puts rapport if @out
       Kompetansesok::RapportMailer.send_rapport(rapport)
+    rescue Exception => e
+      puts "Epost misslykket: #{e}"
     end
 
   end

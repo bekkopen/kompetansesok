@@ -7,6 +7,7 @@ module Kompetansesok
          Udir::RAPPORT_EMAILER,
          "Rapport fra importjoben",
          rapport)
+       
     end
 
     private

@@ -9,7 +9,8 @@ namespace :import do
 
   desc "Task som gjør henting, import og status rapportering"
   task :scheduled_import do
-    SkedulertImport::ImportDriver.new
+    require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
+    Kompetansesok::ImportDriver.new({:out => $stdout}).run
   end
 
 end

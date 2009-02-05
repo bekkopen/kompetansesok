@@ -1,73 +1,121 @@
 en:
-    navigasjon:
-      forside: "Search"
-      database_eksport: "Database Export"
-      om_kopetansemål_søk: "About / Help"
-      ofte_stillte_spørsmål: "Frequently Asked Questions"
+  navigasjon:
+    forside: "Search"
+    database_eksport: "Database Export"
+    om_kopetansemål_søk: "About / Help"
+    ofte_stillte_spørsmål: "Frequently Asked Questions"
+    statistikk: "Statistics"
+    bla_i_laereplan: "Browse curriculums"  
 
-    overskrifter:
-      resultater: "Results"
-      læreplaner: "Curriculum"
-      hovedområder: "Major Subjects"
-      hovedområde: "Major Subject"
-      kompetansemål: "Competence aim"
-      kompetansemålsett: "Set of Competence aims"
-      fag: "Subject"
-      valgte_kompetansemål: "Chosen Competence aims"
-      database_eksport: "Database export"
-      søk_i:  "Search in:"
-      kompetansemål_søk: "Search for Competence aims"
-      ofte_stillte_spørsmål: "Frequently Asked Questions"
+  overskrifter:
+    resultater: "Results"
+    læreplaner: "Curriculum"
+    hovedområder: "Major Subjects"
+    hovedområde: "Major Subject"
+    kompetansemål: "Competence aim"
+    kompetansemålsett: "Set of Competence aims"
+    fag: "Subject"
+    valgte_kompetansemål: "Chosen Competence aims"
+    database_eksport: "Database export"
+    søk_i:  "Search in:"
+    kompetansemål_søk: "Search for Competence aims"
+    ofte_stillte_spørsmål: "Frequently Asked Questions"
+    statistikk: "Search statistics"
+    filtrer_på_læreplan: "Filter by curriculum"
 
-    knapper:
-      søk: "Search"
-      eksport_csv: "Export results to file (csv)"
-      tilbake: "Back"
+  knapper:
+    søk: "Search"
+    eksport_csv: "Export results to file (csv)"
+    tilbake: "Back"
+    sorter_på_tittel: "Sort by title"
+    sorter_på_kode: "Sort by code"
+    bytt_spraak: "Change language"
 
-    etiketter:
-      søk: "Search"
-      uuid: "Id"
-      kode: "Code"
-      tittel: "Title"
-      vis_uuid: "Show Id"
-      vis_kode: "Show code"
-      vis_psi: "Show PSI"
-      vis_laereplan_treff: "Include Curriculum in results"
-      vis_hovedomraade_treff: "Include major subject description in results"
-      tom: "<no data>"
-      læreplaner: "Curriculums"
-      læreplan: "Curriculum"
-      hovedområder: "Major Subjects"
-      hovedområde: "Major Subject"
-      kompetansemål: "Competence aim"
-      kompetansemålsett: "Set of Competence aims"
-      fag: "Subject"
-      søkeboks_default_tekst: "Search in id, title or code. Use the checkboxes below to refine your search..."
+  etiketter:
+    søk: "Search"
+    uuid: "Id"
+    kode: "Code"
+    tittel: "Title"
+    vis_uuid: "Show Id"
+    vis_kode: "Show code"
+    vis_psi: "Show PSI"
+    vis_laereplan_treff: "Include Curriculum in results"
+    vis_hovedomraade_treff: "Include major subject description in results"
+    tom: "<no data>"
+    læreplaner: "Curricula"
+    læreplan: "Curriculum"
+    hovedområder: "Major Subjects"
+    hovedområde: "Major Subject"
+    kompetansemål: "Competence aim"
+    kompetansemålsett: "Set of Competence aims"
+    fag: "Subject"
+    søkeboks_default_tekst: "Search in id, title or code..."
+    søkeboks_hjelpe_tekst: "Use the check-boxes below to limit the search"
+    kompetansemål_hjelpe_tekst: "Click on a row to select it. Ctrl-click to select mulitple rows or to deselect a selected row."
+    sok_denne_uke: "This week"
+    sok_forrige_uke: "Last week"
+    sok_denne_måned: "This month"
+    sok_forrige_måned: "Last month"
+          
+  meldinger:
+    angi_kriterium: "Please enter a search term"
 
-    meldinger:
-      angi_kriterium: "Please enter a search term"
-
-    tekst:
-      database_eksport: "MySQL database exports are available for download. These database exports include all the data displayed in this application. Click on the below links til download a database export."
-      info: "This site lets you search for competence aims."
-      
-    feilmelding:
-      for_grovt_søk: "You search is too broad to include all details for Competence aim results"
-      ingen_db_dump: "No database exports have been generated."
-
-    csv:
-      kompetansemaal_uuid: "Competence aim id" 
-      kompetansemaal_kode: "Competence aim code"
-      kompetansemaal_tittel: "Competence aim title"
-      laereplan_uuid: "Curriculum id"
-      laereplan_kode: "Curriculumcode "
-      laereplan_tittel: "Curriculumtitle" 
-      hovedomraade_uuid: "Major Subject id" 
-      hovedomraade_kode: "Major Subject code" 
-      hovedomraade_tittel: "Major Subject title"
-      kompetansemaalsett_uuid: "Set of Competence aims id" 
-      kompetansemaalsett_kode: "Set of Competence aims code" 
-      kompetansemaalsett_tittel: "Set of ompetence aims title"
-      fag_uuid: "Subject id"
-      fag_kode: "Subject code"
-      fag_tittel: "Subject title"
+  tekst:
+    database_eksport: "MySQL database exports are available for download. These database exports include all the data displayed in this application. Click on the below links til download a database export."
+    bla_i_laereplan: "Below is a list of all curricula. You can sort the list by code or title."
+    antall_treff: "Hits:"
+    info: "This site lets you search for competence aims."
+    kompetansemål_kopi_info: "Use the below text box to copy competance aim details to your clipboard. You can use the checkboxes to choose if you want to include id, code or psi."
+    kompetansemål_csv_eksport_info: "Export to file will include further competence aim details. Associated curricula, major subjects, competence aim sets or subjects are included."
+    
+  feilmelding:
+    for_grovt_søk: "You search is too broad to include all details for Competence aim results"
+    ingen_db_dump: "No database exports have been generated."
+    ingen_slik_læreplan: "Sorry, we could not find a curriculum whith the given id."
+    
+  csv:
+    kompetansemaal_uuid: "Competence aim id" 
+    kompetansemaal_kode: "Competence aim code"
+    kompetansemaal_tittel: "Competence aim title"
+    laereplan_uuid: "Curriculum id"
+    laereplan_kode: "Curriculumcode "
+    laereplan_tittel: "Curriculumtitle" 
+    hovedomraade_uuid: "Major Subject id" 
+    hovedomraade_kode: "Major Subject code" 
+    hovedomraade_tittel: "Major Subject title"
+    kompetansemaalsett_uuid: "Set of Competence aims id" 
+    kompetansemaalsett_kode: "Set of Competence aims code" 
+    kompetansemaalsett_tittel: "Set of ompetence aims title"
+    fag_uuid: "Subject id"
+    fag_kode: "Subject code"
+    fag_tittel: "Subject title"
+    
+  faq:
+    spørsmål:
+      en: "What can I search for?"
+      to: "How can i limit my search?"
+      tre: "Which search options do I have?"
+      fire: "Why are the competence aim details not always shown?"
+      fem: "How do i select a competence aim?"
+      seks: "How can I export the results?"
+      syv: "Is it possible to change language?"
+      åtte: "How do I find competence aims for a curriculum?"
+      ni: "How can i navigate to a curriculum from a set of competence aims?"
+    svar:
+        en: "Du kan søke etter id, kode eller tittel på kompetansemål, læreplan, kompetansemålsett, hovedområde og/eller fag."
+        to: "Du kan filtere søket ved å bruke avkryssningsboksene under søkeboksen."
+        tre:
+          intro: "Følgende søkemuligheter eksisterer:"
+          søkemuligheter: "<ul>
+              <li>Flere ord i søket (for eksempel samisk kultur) gir resultat når alle ord er inkludert (for eksempel Læreplan i samisk visuell kultur...).</li>
+              <li>Søk med flere ord innenfor gåsetegn (for eksempel \"samisk kultur\") gir resultat når alle ord er inkludert i den spesifiserte rekkefølgen (for eksempel \"Gjere greie for visuelle uttrykk og objekt frå samisk kultur...\").</li>
+              <li>Søk med wildcard (*) kan brukes til å estatte alt før eller etter deler av et ord. For eksempel, *misk vil returnere kompetansemål med samisk i tittel. *mis* vil også returnere kompetansemål med samisk i tittel. \"* misk\" vil ikke gi noe resultat utover det \"misk\" vil returnere. Et typisk bruk av wildcard er å filtere koder innenfor læreplaner (for eksempel FOR6*). Wildcard tegn kan ikke brukes innenfor et ord (for eksempel sam*sk)</li>
+              <li>Du kan også ekskludere i søket. For eksempel samisk -kultur vil returnere kompetansemål med samisk men uten kultur i tittel.</li>
+          </ul>"
+          videre_søkemuligheter: "Videre avanserte søkemuligheter beskrives på <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">nettstedet til Sphinx (søkemotor)</a>"
+        fire: "Søk som returnerer mange kompetansemål viser ikke tilhørende informasjon (for eksempel kompetansemålsett). I disse tilfellene bør søket være mer nøyaktig. Kompetansemål resultatene (tittel) kan brukes til å lage søket mer spesifikk."
+        fem: "Ved å klikke på rader i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer du kompetansemål til \"Valgte kompetansemål\". Du kan ctrl-klikke på flere kompetansemål rader for å kopiere flere kompetansemål. Bruk ctrl-klikk til å fjerne markering av et kompetansemål."
+        seks: "Det eksisterer tre muligheter til å hente/eksportere data fra denne applikasjonen for videre bruk. Du kan bruke kopiering til utklippstavle fra \"Valgte kompetansemål\". Du kan eksportere valgte kompetansemål til csv fil format ved å klikke på \"Lagre resultatsett til fil\" under  \"Valgte kompetansemål\". Denne type eksport inkluderer detaljer om kompetansemål (for eksempel tilhørende læreplan). Det er også mulig å laste ned en komplett eksport av underliggende database på <a href=\"/db_dump\">eksport database siden</a>."
+        syv: "Du kan endre språk ved å velge språk i \"select boksen\" øverst til høyre."
+        åtte: "Hvis du får treff på læreplan, klikker du på en læreplan i listen for å se alle kompetansemål for valgte læreplan. Du kan gjøre det samme for kompetansemålsett, hovedområder eller fag."
+        ni: "Du kan bruke brødsmulestien på alle sider (untatt søkesiden) for å navigere deg tilbake til tilhørende områder (for eksempel læreplan)."

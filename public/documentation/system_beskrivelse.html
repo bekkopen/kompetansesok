@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Systembeskrivelse</title>
+	<style type="text/css">
+	    img {
+	        margin: 20px 0 0 20px;
+	    }
+	</style>
+</head>
+
+<body>
+    <img src="../images/logo.gif" />
+    <h1>Systembeskrivelse - kompetansemålsøk</h1>
+    <h2>Overordnet arkitektur</h2>
+    <img src="../images/udir_arch.png" />
+    <h3>Moduler</h3>
+    
+        <p>Det finnes tre primære moduler innenfor dette systemet. De er import av data fra RDF dokumenter (via offentlig tilgjengelig ATOM feed), søkeapplikasjon som søker i database basert på importert data og eksport av data via MySQL database dump funksjonalitet. Følgende seksjoner beskriver disse modulene i videre detalj.</p>
+        
+    <h4>Import</h4>
+        
+        <p>Import funksjonalitet må først scheduleres i hosting machine via enten Windows scheduler (Windows) eller Cron (Linux). Scheduler må kjøre rake task import:scheduled_import (lib/tasks/import.rake). Kjøring av denne tasken krever at JRuby er installert på hosting machine. JRuby kan lastes ned fra <a href="http://jruby.codehaus.org/">http://jruby.codehaus.org/</a>. Denne tasken instansierer Kompetansesok::ImportDriver klassen (lib/kompetansesok/import_driver.rb) som starter all import logikk. Hovedklassen for importfunksjonalitet ligger i Komepetansesok::Importerer klassen (lib/kompetansesok/importerer.rb).</p>
+    
+        <p>Når en import kjøres genererer systemet en e-post med detaljer fra importen. Konfigurering av e-post detaljer gjøres i config/udir.yml.</p>
+        
+    <h4>Søkeapplikasjon</h4>
+    
+    <p>Søkeapplikasjonen er en <a href="http://rubyonrails.org/">Ruby on Rails</a> applikasjon og følger standard Rails konvensjoner (dvs. mappestruktur er lik standard Rails oppsett). RESTful design brukes i stor grad, resursene er definert som vanlig i config/routes.rb. Videre informasjon on Ruby on Rails web rammeverket finnes på <a href="http://guides.rubyonrails.org/">Rails Guides</a>. I tillegg brukes <a href="http://cukes.info/">Cucumber</a> som BDD rammeverk og alle Cucumber features for søkefunksjonalitet ligger i features mappen.</p>
+    
+    <p>To JavaScript rammeverk brukes for dynamisk HTML. <a href="http://extjs.com/products/extjs/">ExtJS</a> brukes for visning og merking av kompetansemål (app/views/kompetansemaal/_simple_grid.erb). <a href="http://jquery.com/">JQuery</a> brukes for annen dynamisk innhold, for eksempel for pre-populering av text i søkeboksen (public/javascripts/jquery.inputclear.js).</p>
+    
+    <p>Språkfunksjonalitet gjøres på standard Rails 2.2 vis. Språkfiler ligger i config/locales.</p>
+    
+    <p>Alle søk gjøres ved bruk av <a href="http://www.sphinxsearch.com/">Sphinx</a> søkemotor hvor underliggende data er indekssert. Rails plugin <a href="http://blog.evanweaver.com/files/doc/fauna/ultrasphinx/files/README.html">Ultrasphinx</a> brukes mellom søkeapplikasjonen og søkemotoren slik at søkefunksjonalitet kan enkelt kalles direkte fra ActiveRecord modeller. Se app/models/kompetansemaal.rb for hvordan man definerer hvilke modell attributter som indekseres og app/controllers/sok_controller.rb (SokController#index) for hvordan søk kalles.</p>
+    
+    <p>MySQL brukes som database server. CRUD operasjoner gjøres via standard Rails ActiveRecord (modell) funksjonalitet. Database konfigurasjon er definert (som vanlig) i config/database.yml.</p>
+    
+    <h4>Data eksport</h4>
+    <p>Database eksport gjøres via mysqldump shell kommando. Dette kalles fra Rake task db:dump som ligger i lib/kompetansesok/tasks/db_dump.rake. Selve db dump logikken ligger i lib/kompetansesok/db_eksport.rb</p>
+    <p>Generering av csv fil med kompetansemål data gjøres ved bruk av Ruby gem fastercsv. Koden som genererer csv fil ligger i lib/kompetansesok/csv_generator.rb</p>
+    <h2>Forutsetninger</h2>
+    
+    <p>Det er forutsatt at personer som gjor endringer (både i kode og konfigurasjonsfiler) har følgende kompetanse:</p>
+    
+    <ul>
+        <li>God kjennskap til Ruby programmeringsspråk</li>
+        <li>God kjennskap til Ruby on Rails rammeverk</li>
+        <li>God kjennskap til web grensesnittsprogrammering (HTML, CSS, JavaScript)</li>
+        <li>God kjennskap til generell web teknologi (inkludert HTTP)</li>
+    </ul>
+    <h2>Installasjonsbeskrivelse</h2>
+    
+    <p>Komplett installasjons- og konfigurajonsbeskrivelse ligger i INSTALL.textile. Dette inkluder oppsett av applikasjonsserver (Glassfish) og pakking av war fil klar til deployment.</p>
+</body>
+</html>

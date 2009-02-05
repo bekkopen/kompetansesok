@@ -17,8 +17,8 @@ nb:
     fag: "Fag"
     valgte_kompetansemål: "Valgte kompetansemål"
     database_eksport: "Database eksport"
-    søk_i:  "Søk i:"
-    kompetansemål_søk: "Kompetansemål søk"
+    søk_i: "Søk i:"
+    kompetansemål_søk: "Søk i kompetansemål"
     ofte_stillte_spørsmål: "Ofte stillte spørsmål"
     statistikk: "Antall søk den siste tiden"
     filtrer_på_læreplan: "Filtrer på læreplan"
@@ -51,8 +51,8 @@ nb:
     kompetansemålsett: "Kompetansemålsett"
     fag: "Fag"
     søkeboks_default_tekst: "Søk på id, tittel eller kode..."
-    søkeboks_hjelpe_tekst: "Bruk avkryssningsboksene nedenfor til å filtrere"
-    kompetansemål_hjelpe_tekst: "Klikk på kompetansemålrader for å kopiere detaljer. Ctrl-klikk for å kopiere flere rader."
+    søkeboks_hjelpe_tekst: "Bruk avkryssningsboksene nedenfor til å filtrere søket"
+    kompetansemål_hjelpe_tekst: "Klikk på kompetansemålrader for å kopiere detaljer. Ctrl-klikk for å kopiere flere rader eller for å fjerne markerte rader."
     sok_denne_uke: "Denne uken"
     sok_forrige_uke: "Forrige uke"
     sok_denne_måned: "Denne måneden"
@@ -63,14 +63,16 @@ nb:
 
   tekst:
     database_eksport: "Her kan du laste ned eksporter av MySQL databasen til denne applikasjonen. Database eksportene inkluderer all data som er tilgjengelig via denne applikasjonen. Klikk på linkene under for å laste ned ønsket eksport."
-    bla_i_laereplan: "Her kan du bla i læreplaner. Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
+    bla_i_laereplan: "Under ser du en liste med alle læreplaner som kan sorteres på kode eller tittel"
     antall_treff: "antall treff:"
-    info: "Her kan du søke etter kompetansemål."
+    info: "Her kan du søke etter kompetansemål og relaterte læreplaner, kompetansemålsett, hovedområder og fag. Skriv inn det du søker etter i boksen på <a href=\"/\">søkesiden</a>. Du kan søke på tittel, id eller kode. Søkeresultatene er enten rader med kompetansemål eller lister med læreplaner, kompetansemålsett, hovedområder eller fag. Når du klikker på kompetansemålene i søkeresultatet blir detaljer kopiert til en tekstboks hvor du kan kopiere videre til utklippstavle for senere bruk (for eksempel til en annen applikasjon). Du kan også eksportere returnerte kompetansemål til fil. Returnerte læreplaner, kompetansemålsett, hovedområder eller fag gir linker til sider som viser detaljer. Generell informasjon om søkemuligheter finnes i <a href=\"/info/faq\">ofte stillte spørsmål</a>"
+    kompetansemål_kopi_info: "Bruk tekst område nedenfor til å kopiere detaljer om kompetansemål. Bruk avkryssningsboksene til å velge om du vil kopiere id, kode eller psi."
+    kompetansemål_csv_eksport_info: "Eksport til fil inkluder videre detaljer om valgte kompetansemål. Informasjon om tilhørende læreplaner, hovedområder, kompetansemålsett eller fag er inkludert."
 
   feilmelding:
     for_grovt_søk: "Søket gir for mange treff. Detaljer for kompetansemål vises derfor ikke."
     ingen_db_dump: "Det er ikke opprettet databasekopier enda."
-    ingen_slik_læreplan: "Beklager vi fant ingen læreplan med oppgitt uuid"
+    ingen_slik_læreplan: "Beklager vi fant ingen læreplan med oppgitt id."
 
   csv:
     kompetansemaal_uuid: "kompetansemål id" 
@@ -88,25 +90,33 @@ nb:
     fag_uuid: "fag id"
     fag_kode: "fag kode"
     fag_tittel: "fag tittel"
+    
   faq:
     spørsmål:
         en: "Hva kan jeg søke etter?"
         to: "Hvordan kan jeg filtrere søket?"
         tre: "Hvilke søkemuligheter har jeg?"
-        fire: "Hvorfor inkluderes ikke alltid kompetansemål detaljer i søkeresultatet?"
+        fire: "Hvorfor inkluderes ikke komplette detaljer for kompetansemål i søkeresultatet for alle søk?"
         fem: "Hvordan velger jeg kompetansemål for markering?"
-        seks: "Hvilke data eksport muligheter har jeg?"
+        seks: "Hvilke muligheter har jeg for å eksportere data?"
         syv: "Kan jeg endre språk?"
         åtte: "Hvordan finner jeg kompetansemål for en læreplan?"
-        ni: "Hvordan kan jeg navigere opp til læreplan fra et kompetansemålsett?"
+        ni: "Hvordan kan jeg navigere fra et kompetansemålsett til en læreplan?"
     svar:
-        en: "Man kan søke etter id, kode eller tittel på kompetansemål, læreplan, kompetansemålsett, hovedområde og/eller fag. Resultater fra søket er basert direkte på det man søker etter (skrevet inn i søkeboks)."
-        to: "Man kan filtere søket ved å bruke avkryssningsboksene under søkeboksen. For eksempel, hvis man vil bare søke på læreplaner, krysser man bare av på læreplaner."
-        tre: "Følgende søkemuligheter eksisterer: . Videre avanserte søkemuligheter beskrives på <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">nettstedet til Sphinx (søkemotor)</a>"
-        fire: "Søk som returnerer velding mange kompetansemål resultater, viser ikke tilhørende informasjon (for eksempel tilhørende kompetansemålsett). I disse tilfelle bør søketermen endres til noe mer spesifikk, kompetansemål resultatene kan brukes til å lage søket mer spesifikk."
-        fem: "Ved å klikke på kompetansemål i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer man valgte kompetansemål i \"Valgte kompetansemål\" boksen. Man kan klikke på flere kompetansemål rader for å kopiere flere kompetansemål i \"Valgte kompetansemål\" boksen."
-        seks: "Det eksisterer primært tre muligheter til å hente data fra denne applikasjonen for videre bruk. Man kan bruke PC kopiering funksjonalitet til å kopiere fra \"Valgte kompetansemål\" boksen. Man kan eksportere valgte kompetansemål til csv fil format ved å klikke på \"Lagre resultatsett til fil\" under  \"Valgte kompetansemål\" boksen på søkesiden. Det er også mulig å laste ned en komplett eksport av underliggende database på <a href=\"/db_dump\">eksport database siden</a>."
-        syv: "Man kan endre språk ved å velge språk i \"select\" boksen øverst til høyre på siden."
-        åtte: "Søkeresultatet på søkesiden gir treff inenfor alle områder. Hvis man får treff på læreplan, klikker man på en læreplan i læreplan listen for å se alle kompetansemål for valgte læreplan. Man kan gjøre det samme for kompetansemålsett, hovedområder og fag."
-        ni: "Man kan bruke brødsmule stien på alle sider (untatt søkesiden) til å navigere seg tilbake til tilhørende områder."
-            
+        en: "Du kan søke etter id, kode eller tittel på kompetansemål, læreplan, kompetansemålsett, hovedområde og/eller fag."
+        to: "Du kan filtere søket ved å bruke avkryssningsboksene under søkeboksen."
+        tre:
+          intro: "Følgende søkemuligheter eksisterer:"
+          søkemuligheter: "<ul>
+              <li>Flere ord i søket (for eksempel samisk kultur) gir resultat når alle ord er inkludert (for eksempel Læreplan i samisk visuell kultur...).</li>
+              <li>Søk med flere ord innenfor gåsetegn (for eksempel \"samisk kultur\") gir resultat når alle ord er inkludert i den spesifiserte rekkefølgen (for eksempel \"Gjere greie for visuelle uttrykk og objekt frå samisk kultur...\").</li>
+              <li>Søk med wildcard (*) kan brukes til å estatte alt før eller etter deler av et ord. For eksempel, *misk vil returnere kompetansemål med samisk i tittel. *mis* vil også returnere kompetansemål med samisk i tittel. \"* misk\" vil ikke gi noe resultat utover det \"misk\" vil returnere. Et typisk bruk av wildcard er å filtere koder innenfor læreplaner (for eksempel FOR6*). Wildcard tegn kan ikke brukes innenfor et ord (for eksempel sam*sk)</li>
+              <li>Du kan også ekskludere i søket. For eksempel samisk -kultur vil returnere kompetansemål med samisk men uten kultur i tittel.</li>
+          </ul>"
+          videre_søkemuligheter: "Videre avanserte søkemuligheter beskrives på <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">nettstedet til Sphinx (søkemotor)</a>"
+        fire: "Søk som returnerer mange kompetansemål viser ikke tilhørende informasjon (for eksempel kompetansemålsett). I disse tilfellene bør søket være mer nøyaktig. Kompetansemål resultatene (tittel) kan brukes til å lage søket mer spesifikk."
+        fem: "Ved å klikke på rader i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer du kompetansemål til \"Valgte kompetansemål\". Du kan ctrl-klikke på flere kompetansemål rader for å kopiere flere kompetansemål. Bruk ctrl-klikk til å fjerne markering av et kompetansemål."
+        seks: "Det eksisterer tre muligheter til å hente/eksportere data fra denne applikasjonen for videre bruk. Du kan bruke kopiering til utklippstavle fra \"Valgte kompetansemål\". Du kan eksportere valgte kompetansemål til csv fil format ved å klikke på \"Lagre resultatsett til fil\" under  \"Valgte kompetansemål\". Denne type eksport inkluderer detaljer om kompetansemål (for eksempel tilhørende læreplan). Det er også mulig å laste ned en komplett eksport av underliggende database på <a href=\"/db_dump\">eksport database siden</a>."
+        syv: "Du kan endre språk ved å velge språk i \"select boksen\" øverst til høyre."
+        åtte: "Hvis du får treff på læreplan, klikker du på en læreplan i listen for å se alle kompetansemål for valgte læreplan. Du kan gjøre det samme for kompetansemålsett, hovedområder eller fag."
+        ni: "Du kan bruke brødsmulestien på alle sider (untatt søkesiden) for å navigere deg tilbake til tilhørende områder (for eksempel læreplan)."
