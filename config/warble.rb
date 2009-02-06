@@ -3,6 +3,8 @@
 
 # Warbler web application assembly configuration file
 Warbler::Config.new do |config|
+  config.jruby_complete_jar = File.dirname(__FILE__) + '/../lib/ext/jruby-complete-1.1.6.jar'
+
   # Temporary directory where the application is staged
   # config.staging_dir = "tmp/war"
 
@@ -15,6 +17,7 @@ Warbler::Config.new do |config|
 
   # Additional files/directories to exclude
   # config.excludes = FileList["lib/ext/mysql*"]
+  config.excludes = FileList['lib/ext/jruby-complete-*.jar'] # Warbler has its own way of bundling it
 
   # Additional Java .jar files to include.  Note that if .jar files are placed
   # in lib (and not otherwise excluded) then they need not be mentioned here.

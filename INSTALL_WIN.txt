@@ -1,0 +1,47 @@
+h1. Installasjon på Windows
+
+h2. Installasjon av nødvendige programmer
+
+h3. Installer Java 1.6
+
+* Se http://java.sun.com/
+* Definer JAVA_HOME - f.eks set JAVA_HOME=C:\Program Files\Java\jdk1.6.0_11
+** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+
+h3. Installer Glassfish
+
+* Last ned og installer https://glassfish.dev.java.net/downloads/v2.1-b60e.html
+
+h3. Installer JRuby
+
+* Last ned http://dist.codehaus.org/jruby/1.1.6/jruby-bin-1.1.6.zip
+* Pakk arkivet ut til c:\
+* Legg til følgende i PATH: C:\jruby-1.1.6\bin
+** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+
+h3. Installer Ruby on Rails
+
+* Åpne et Windows Command vindu
+* jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc
+
+h3. Installer Git
+
+* Installer msysGit: http://code.google.com/p/msysgit/
+** Bruk standardinstillinger under installasjon
+* Legg Git på PATH - f.eks C:\Program Files\Git\bin
+** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+
+h3. Hent kompetansesok kildekoden
+
+* Lag en midlertidig mappe, f.eks. C:\src
+* Høyreklikk på mappen i Explorer og velg "Git Bash here"
+* I vinduet, kjør følgende kommandoer:
+** git clone git://github.com/bekkopen/kompetansesok.git
+** git submodule init
+** git submodule update
+* Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
+
+h3. Installer RubyGems
+
+* jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9
+* jruby -S rake gems:install
