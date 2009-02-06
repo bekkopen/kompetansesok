@@ -35,10 +35,8 @@ h3. Hent kompetansesok kildekoden
 
 * Lag en midlertidig mappe, f.eks. C:\src
 * Høyreklikk på mappen i Explorer og velg "Git Bash here"
-* I vinduet, kjør følgende kommandoer:
+* I vinduet, kjør følgende kommando:
 ** git clone git://github.com/bekkopen/kompetansesok.git
-** git submodule init
-** git submodule update
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
 
 h3. Installer RubyGems
