@@ -54,7 +54,7 @@ production:
   host: localhost
   username: root
   database: kompetansesok
-  password:
+  password: kompetansesok
   encoding: utf8
   port: 3306
   pool: 5

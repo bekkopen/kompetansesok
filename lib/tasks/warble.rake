@@ -5,12 +5,11 @@ if defined?(JRUBY_VERSION)
   Warbler::Task.new
 end
 
-task :clean_war => ['clobber', 'submodules:install', 'war']
-
 namespace :war do
   desc "create production war"
   task :production do
-    sh('jruby -S rake clean_war RAILS_ENV=production SKIP_SETUP_DATA=true')
+    sh('jruby -S rake clobber submodules:install RAILS_ENV=production SKIP_SETUP_DATA=true')
+    sh('jruby -S rake war RAILS_ENV=production SKIP_SETUP_DATA=true')
   end
    
 end

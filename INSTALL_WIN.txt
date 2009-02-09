@@ -7,10 +7,34 @@ h3. Installer Java 1.6
 * Se http://java.sun.com/
 * Definer JAVA_HOME - f.eks set JAVA_HOME=C:\Program Files\Java\jdk1.6.0_11
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+* Legg Javas bin directory på PATH, f.eks %JAVA_HOME%\bin
+** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 
 h3. Installer Glassfish
 
-* Last ned og installer https://glassfish.dev.java.net/downloads/v2.1-b60e.html
+* Last ned og installer https://glassfish.dev.java.net/downloads/v3-prelude.html
+** Legg inn adminbruker og passord
+** Bruk standardverdier på resten 
+** Installer oppdateringer hvis du før spørsmål om det
+* Legg <glassfish_install_dir>\bin på PATH - f.eks C:\glassfishv3-prelude\bin
+** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+
+h3. Installer MySql
+
+* Last ned og installer http://dev.mysql.com/downloads/mysql/6.0.html
+** Windows ZIP/Setup.EXE (x86)
+** Kjør installer og velg standard instillinger
+** Velg å konfigurere serveren nå (er valgt som standard)
+*** Velg "detailed configuration"
+*** Velg type maskin
+*** Bruk standard instillinger til du kommer til valg av tegnsett. 
+*** Velg UTF8 som tegnsett
+*** Kryss av for å inkludere bin i PATH
+*** Sett root passord
+
+h4. Opprett database
+* mysqladmin create kompetansesok -u root -p
+
 
 h3. Installer JRuby
 
@@ -19,10 +43,12 @@ h3. Installer JRuby
 * Legg til følgende i PATH: C:\jruby-1.1.6\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 
-h3. Installer Ruby on Rails
+h3. Installer Ruby gems
 
 * Åpne et Windows Command vindu
 * jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc
+* jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc
+* jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc
 
 h3. Installer Git
 
@@ -39,7 +65,30 @@ h3. Hent kompetansesok kildekoden
 ** git clone git://github.com/bekkopen/kompetansesok.git
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
 
-h3. Installer RubyGems
+h3. Installer Sphinx
 
-* jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9
-* jruby -S rake gems:install
+* Hent windows binaries fra http://www.sphinxsearch.com/downloads.html
+* Pakk ut til c:\Sphinx
+* Legg til C:\Sphinx\bin i PATH
+** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+
+
+
+h3. Oprett databasetabeller
+
+* jruby -S rake db:migrate RAILS_ENV=production
+
+h3. Installer Glassfish som Windows Service
+
+* Åpne et command vindu
+* Installer Windows service (OBS: mellomrom, backslash og " må skrives nøyaktig som under).
+
+  sc.exe create GlassFish_Kompetansesok binPath= "C:\src\kompetansesok\bin\appservService.exe \"C:\glassfishv3-prelude\bin\asadmin.bat start-domain domain1\" \"C:\glassfishv3-prelude\bin\asadmin.bat stop-domain domain1\"" DisplayName= "GlassFish_Kompetansesok"
+
+(Sjekk at stiene er riktige)
+
+* Konfigurer service til å starte automatisk når Windows starter
+** Administrative tools -> Services -> GlassFish_Kompetansesok
+*** Properties -> Startup type: Automatic
+*** Start tjenesten
+
