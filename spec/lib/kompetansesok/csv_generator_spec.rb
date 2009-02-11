@@ -89,8 +89,8 @@ describe Kompetansesok::CsvGenerator do
 
       describe "with hovedomraade info" do
       
-        it "should have one row for each hovedomraade through laereplan" do
-          @laereplan.hovedomraader << Hovedomraade.new(:kompetansemaal => [@maal])
+        it "should have one row for each hovedomraade" do
+          @maal.hovedomraader << Hovedomraade.new(:kompetansemaal => [@maal], :laereplaner => [@laereplan])
           rows = @generator.send(:rows_for, 'maal_uuid')
           rows.length.should == 2
         end
