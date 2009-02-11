@@ -36,9 +36,9 @@ module Kompetansesok
     
     def rows_through_laereplan(maal)
       rows = []
-      maal.laereplaner.each do |laereplan|
-        laereplan.hovedomraader.each do |hovedomraade|
-          hovedomraade.kompetansemaalsett.each do |sett|               
+      maal.kompetansemaalsett.each do |sett|
+        maal.hovedomraader.each do |hovedomraade|
+          hovedomraade.laereplaner.each do |laereplan|
             row_info = uuid_kode_and_tittel(maal, laereplan, hovedomraade, sett) 
             rows << KompetansemaalRad.new(row_info).to_a
           end
@@ -49,8 +49,9 @@ module Kompetansesok
     
     def rows_through_fag(maal) 
       rows = []
-      maal.fag.each do |f|
-        f.kompetansemaalsett.each do |sett|
+      
+      maal.kompetansemaalsett.each do |sett|
+        sett.fag.each do |f|
           row_info = uuid_kode_and_tittel(maal, f, sett) 
           rows << KompetansemaalRad.new(row_info).to_a
         end
