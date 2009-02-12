@@ -21,7 +21,7 @@ module Kompetansesok
       dump_filepath = File.join(Rails.root, 'tmp', dump_filename)
       run_command("mysqldump -u#{db_user} #{db_name} #{db_pass_prase} > #{dump_filepath}")
 
-      time_stamp = Time.now.to_datetime.strftime("%d-%m-%Y-%H:%M")
+      time_stamp = Time.now.to_datetime.strftime("%d%m%Y%H%M")
       zip_filename = "db_dump_#{time_stamp}.zip"
       zip_savepath = File.join(Udir::DB_DUMP_PATH, zip_filename)
 
@@ -36,13 +36,14 @@ module Kompetansesok
     def cleanup
       existing_dumps = {}
       zip_dir = Dir.new(Udir::DB_DUMP_PATH)
+      
       while(entry =  zip_dir.read)
         if entry =~ /db_dump_(.+)\.zip/
-          time_stamp = Time.parse($1)
+          time_stamp = ($1)
           existing_dumps[time_stamp] = entry
         end
       end
-
+      
       old_dump_keys = existing_dumps.keys.sort.reverse.slice(Udir::DUMP_COUNT, existing_dumps.keys.length)
 
       if old_dump_keys

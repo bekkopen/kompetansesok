@@ -145,12 +145,7 @@ module Kompetansesok
         n += batch_size
       end
 
-      if @out
-        pbar.finish 
-        @out.puts
-        @out.puts "Importert #{n} Kompetansemål"
-        @out.flush
-       end
+      pbar.finish if @out
     end
     
     def last_inn(*typer)

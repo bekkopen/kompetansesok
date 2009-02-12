@@ -74,6 +74,8 @@ h3. Hent kompetansesok kildekoden
 * I vinduet, kjør følgende kommando:
 ** git clone git://github.com/bekkopen/kompetansesok.git
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
+* Sjekk at config/udir.yml har riktig sti for db_dumps path. 
+** Endre stien ved behov slik at begynnelsen av path stemmer med Glassfish installasjon
 
 h3. Opprett databasetabeller
 
@@ -81,6 +83,8 @@ h3. Opprett databasetabeller
 ** Opprett filen config/database.password
 ** Skriv inn databasens passord og lagre fila
 * jruby -S rake db:migrate RAILS_ENV=production
+
+Hvis kommandoen feiler - kjør den en gang til. Feilen skal ikke oppstå igjen.
 
 Hvis du får en Ultrasphinx feil, kjør kommandoen på nytt. Da skal ikke feilen oppstå.
 
@@ -97,7 +101,7 @@ h4. Konfigurer Sphinx
 
 * jruby -S rake ultrasphinx:configure RAILS_ENV=production
 * Kjør en 1. gangs import av data fra GREP
-** jruby -S rake import:scheduled_import RAILS_ENV=production
+** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 
 h4. Installer Sphinx som en service
 
