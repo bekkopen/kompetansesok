@@ -1,6 +1,9 @@
+
 h1. Installasjon på Windows
 
 h2. Installasjon av nødvendige programmer
+
+Om passord: Bruk samme passord for Glassfish og MySQL. Det er enklere.
 
 h3. Installer Java 1.6
 
@@ -19,10 +22,12 @@ h3. Installer Glassfish
 * Legg <glassfish_install_dir>\bin på PATH - f.eks C:\glassfishv3-prelude\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 
-h3. Installer MySql
+h3. Installer MySql   
 
-* Last ned og installer http://dev.mysql.com/downloads/mysql/6.0.html
-** Windows ZIP/Setup.EXE (x86)
+Pga en bug relatert til max-length pa indekser kan ikke nyeste MySQL versjon brukes.
+
+* http://downloads.mysql.com/archives.php?p=mysql-5.0&v=5.0.4
+** Windows ZIP/Setup.EXE (x86) - http://downloads.mysql.com/archives/mysql-5.0/mysql-essential-5.0.45-win32.msi
 ** Kjør installer og velg standard instillinger
 ** Velg å konfigurere serveren nå (er valgt som standard)
 *** Velg "detailed configuration"
@@ -30,11 +35,15 @@ h3. Installer MySql
 *** Bruk standard instillinger til du kommer til valg av tegnsett. 
 *** Velg UTF8 som tegnsett
 *** Kryss av for å inkludere bin i PATH
-*** Sett root passord
+*** Sett root passord til det samme som Glassfish (enkelte spesialtegn ser ut til å ikke fungere i passord (feks £))
 
 h4. Opprett database
 * mysqladmin create kompetansesok -u root -p
-
+* Opptett bruker og gi tilgang
+** mysql -u root -p
+** create user 'udiradmin'@'localhost' identified by '<passord>';
+** grant usage on *.* to udiradmin@localhost identified by '<passord>';
+** grant all privileges on kompetansesok.* to udiradmin@localhost;
 
 h3. Installer JRuby
 
@@ -49,6 +58,7 @@ h3. Installer Ruby gems
 * jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc
 * jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc
 * jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc
+* jruby -S gems:install
 
 h3. Installer Git
 
@@ -65,18 +75,35 @@ h3. Hent kompetansesok kildekoden
 ** git clone git://github.com/bekkopen/kompetansesok.git
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
 
+h3. Opprett databasetabeller
+
+* Lag en fil med database passord
+** Opprett filen config/database.password
+** Skriv inn databasens passord og lagre fila
+* jruby -S rake db:migrate RAILS_ENV=production
+
+Hvis du får en Ultrasphinx feil, kjør kommandoen på nytt. Da skal ikke feilen oppstå.
+
 h3. Installer Sphinx
 
 * Hent windows binaries fra http://www.sphinxsearch.com/downloads.html
-* Pakk ut til c:\Sphinx
+* Pakk ut til C:\Sphinx
 * Legg til C:\Sphinx\bin i PATH
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 
+h4. Konfigurer Sphinx
 
+Åpne et command vindu og stå i <APP_ROOT>
 
-h3. Oprett databasetabeller
+* jruby -S rake ultrasphinx:configure RAILS_ENV=production
+* Kjør en 1. gangs import av data fra GREP
+** jruby -S rake import:scheduled_import RAILS_ENV=production
 
-* jruby -S rake db:migrate RAILS_ENV=production
+h4. Installer Sphinx som en service
+
+* Opprett <APP_ROOT>\tmp\sphinx_productionlog mappen
+* searchd.exe --install --servicename SphinxKompetansesok --config C:\src\kompetansesok\config\ultrasphinx\production.conf
+* Start tjenesten i Windows Services og aktiver Automatisk start
 
 h3. Installer Glassfish som Windows Service
 
@@ -92,3 +119,34 @@ h3. Installer Glassfish som Windows Service
 *** Properties -> Startup type: Automatic
 *** Start tjenesten
 
+Stop av servicen fungerer ikke. Bruk "asadmin stop-domain domain1"
+
+h3. Konfigurere Glassfish
+
+* Hent MySql connector
+** Last ned connector fra http://dev.mysql.com/downloads/connector/j/5.1.html
+** kopier mysql-connector-java-5.1.7-bin.jar til <glassfish_home>\domains\domain1\lib\ext
+** start opp glassfish
+* Sett opp connection pool
+** Resources -> JDBC -> Connection Pools -> new
+** Navn: kompetansesok
+** Resource type: javax.sql.DataSource
+** Database vendor: MySql
+** Kryss av Connection validation
+** Databasename: kompetansesok
+** User: udiradmin
+** Password: <passordet for udiradmin>
+** ServerName: 127.0.0.1
+* Opprett jdbc resource
+** Resources -> JDBC -> JDBC Resources -> new
+** JNDI name: jdbc/kompetansesok
+** Pool name: kompetansesok
+
+h2. Installasjon av Kompetanseøk web applikasjon
+
+* jruby -S rake war:production
+
+h2. Oppgradering av Kompetanseøk web applikasjon
+
+* Git
+* Migrate

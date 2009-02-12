@@ -51,17 +51,18 @@ integration_test:
 <% end %>
 
 production:
+<% if defined?($servlet_context) %>
+  adapter: jdbc
+  jndi: jdbc/kompetansesok
+<% else %>
+  adapter: jdbcmysql
+  driver: org.gjt.mm.mysql.Driver
   host: localhost
-  username: root
   database: kompetansesok
-  password: kompetansesok
+  username: udiradmin
+  password: <%= IO.read(Rails.root + '/config/database.password').strip %>
   encoding: utf8
   port: 3306
   pool: 5
   timeout: 5000
-<% if defined?(JRUBY_VERSION) %>
-  adapter: jdbcmysql
-  driver: org.gjt.mm.mysql.Driver
-<% else %>
-  adapter: mysql
 <% end %>

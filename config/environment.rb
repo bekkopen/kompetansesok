@@ -40,7 +40,7 @@ Rails::Initializer.run do |config|
     config.gem 'activerecord-jdbcmysql-adapter',  :version => '0.9',    :lib => 'active_record/connection_adapters/jdbcmysql_adapter'
     config.gem 'atom-tools',                      :version => '2.0.1',  :lib => 'atom/tools'
     config.gem 'rake',                            :version => '0.8.3'
-    config.gem 'aslakhellesoy-warbler',           :version => '0.9.13', :source => 'http://gems.github.com/'
+    config.gem 'aslakhellesoy-warbler',           :version => '0.9.13', :lib => 'warbler', :source => 'http://gems.github.com/'
   else
     config.gem 'mysql',                           :version => '2.7' 
     

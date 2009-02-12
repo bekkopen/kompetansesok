@@ -67,7 +67,7 @@ module Kompetansesok
 
     def haandter_feil_i_import
       rapport = StringIO.new
-      rapport.print "Restoring backup... "
+      rapport.print "Gjenoppretter sikkerhetskopi... "
       log = capture_output do
         @db_eksport.restore_backup
       end
@@ -85,7 +85,7 @@ module Kompetansesok
 
     def reindexer()
       rapport = StringIO.new
-      rapport.print "Gjør reindexsering..."
+      rapport.print "Reindekserer..."
       log = run_command ULTRASPHINX_INDEXER
       rapport.puts " ok"
       rapport.string
@@ -100,7 +100,7 @@ module Kompetansesok
       @out.puts rapport if @out
       Kompetansesok::RapportMailer.send_rapport(rapport)
     rescue Exception => e
-      puts "Epost misslykket: #{e}"
+      STDERR.puts "Epost mislykket: #{e.message}"
     end
 
   end
