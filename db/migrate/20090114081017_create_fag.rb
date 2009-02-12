@@ -3,7 +3,7 @@ class CreateFag < ActiveRecord::Migration
     create_table :fag do |t|
       t.string :uuid
       t.string :kode
-      t.string :tittel
+      t.text :tittel
 
       t.timestamps
     end

@@ -54,27 +54,20 @@ module Kompetansesok
     end
 
     def importer_til_db(antall_filer=nil)
-      begin
-        @jena = Jena.new
+      @jena = Jena.new
+      if new_rdf_data?
+        les_filer(antall_filer)
+        slett_alt_i_databasen
+        last_inn_kompetansemaal
+        last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
+        RdfMd5Sum.current = md5sum_av_leste_filer
+        @out.puts('Import ferdig.') if @out
 
-        if new_rdf_data?
-          les_filer(antall_filer)
-          slett_alt_i_databasen
-          last_inn_kompetansemaal
-          last_inn(Trinn, Fag, Kompetansemaalsett, Hovedomraade, Laereplan)
-          RdfMd5Sum.current = md5sum_av_leste_filer
-          @out.puts('Import ferdig.') if @out
-
-          lag_db_dump
-          IMPORT_GJORDT
-        else
-          @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
-          INGEN_FORANDRING
-        end
-      rescue Exception => e
-        puts "************** E R R O R **************"
-        puts "#{e.message} (#{e.class})"
-        puts e.backtrace
+        lag_db_dump
+        IMPORT_GJORDT
+      else
+        @out.puts('Intet behov for å lese in data, ingen edringer på rdfene') if @out
+        INGEN_FORANDRING
       end
     end
 
@@ -144,11 +137,20 @@ module Kompetansesok
         
         ActiveRecord::Base.transaction do
           Kompetansemaal.create!(batch)
-          pbar.inc(batch.length) if @out
+          if @out
+            pbar.inc(batch.length) 
+            @out.flush
+          end
         end
         n += batch_size
       end
-      pbar.finish if @out
+
+      if @out
+        pbar.finish 
+        @out.puts
+        @out.puts "Importert #{n} Kompetansemål"
+        @out.flush
+       end
     end
     
     def last_inn(*typer)

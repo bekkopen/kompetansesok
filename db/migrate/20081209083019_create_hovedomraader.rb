@@ -2,7 +2,7 @@ class CreateHovedomraader < ActiveRecord::Migration
   def self.up
     create_table :hovedomraader do |t|
       t.string :uuid
-      t.string :tittel
+      t.text :tittel
       t.timestamps
     end
     add_index :hovedomraader, :uuid

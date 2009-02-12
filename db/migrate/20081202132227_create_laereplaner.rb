@@ -2,7 +2,7 @@ class CreateLaereplaner < ActiveRecord::Migration
   def self.up
     create_table :laereplaner do |t|
       t.string :kode
-      t.string :tittle
+      t.text :tittle
 
       t.timestamps
     end

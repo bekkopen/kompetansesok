@@ -2,7 +2,7 @@ class CreateTrinn < ActiveRecord::Migration
   def self.up
     create_table :trinn do |t|
       t.string :uuid
-      t.string :tittel
+      t.text :tittel
       t.timestamps
     end
     

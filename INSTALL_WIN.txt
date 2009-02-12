@@ -146,6 +146,7 @@ h2. Installasjon av Kompetanseøk web applikasjon
 
 * jruby -S rake war:production
 
+
 h2. Oppgradering av Kompetanseøk web applikasjon
 
 * Git

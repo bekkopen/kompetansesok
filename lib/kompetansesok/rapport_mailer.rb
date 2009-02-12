@@ -7,7 +7,6 @@ module Kompetansesok
         Udir::SEND_MAIL_TIL,
         Udir::MAIL_SUBJECT,
         rapport)
-       
     end
 
     private
@@ -23,7 +22,7 @@ Date: #{Time.now}
 END_OF_MESSAGE
 
       Net::SMTP.start(Udir::SMTP_SERVER, Udir::SMTP_PORT, Udir::DOMAIN,
-                    Udir::SMTP_USERNAME, Udir::SMTP_PASSWORD, :login) do |smtp|
+        Udir::SMTP_USERNAME, Udir::SMTP_PASSWORD, :login) do |smtp|
         smtp.send_message msg, from, to
       end
 
