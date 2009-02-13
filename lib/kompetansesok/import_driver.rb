@@ -34,7 +34,7 @@ module Kompetansesok
       rapport.puts " ok"
       rapport.string
     rescue Exception => e
-      append_and_raise(e, "Nedlasting av rdf feilet", log)
+      append_and_raise(e, "Nedlasting av rdf feilet:", log)
     end
 
     def importer_til_database
@@ -46,7 +46,7 @@ module Kompetansesok
       rapport.puts " ok"
       rapport.string
     rescue Exception => e
-      append_and_raise(e, "Import til database feilet", log)
+      append_and_raise(e, "Import til database feilet:", log)
     end
 
     def haandter_feil_i_import
@@ -59,7 +59,7 @@ module Kompetansesok
       rapport.puts reindexer
       rapport.string
     rescue => e
-      append_and_raise(e, "Forsøket på å rulle backupen tilbake feilet", log)
+      append_and_raise(e, "Forsøket på å rulle backupen tilbake feilet:", log)
     end
 
     def reindexer
@@ -69,14 +69,20 @@ module Kompetansesok
       rapport.puts " ok"
       rapport.string
     rescue => e
-      append_and_raise(e, "Indeksering feilet", log)
+      append_and_raise(e, "Indeksering feilet:", log)
     end
 
     def send_rapport(rapport)
       @out.puts rapport if @out
       Kompetansesok::RapportMailer.send_rapport(rapport)
     rescue Exception => e
-      append_and_raise(e, "Epost mislykket", e.message)
+      #logger feilende mailsending
+      @out.puts "Epostsending feilet" if @out
+      e.message << "\nEpost mislykket:\n#{e.message}"
+      log_file_path = File.join(Rails.root, 'log', 'mail_error.log')
+      File.open(log_file_path, 'w+') do |log_file|
+        log_file << "\n\n#{Time.now}:\n#{e.mesage}\n"
+      end
     end
 
     def append_and_raise(e, label, log)

@@ -21,6 +21,8 @@ h3. Installer Glassfish
 ** Installer oppdateringer hvis du før spørsmål om det
 * Legg <glassfish_install_dir>\bin på PATH - f.eks C:\glassfishv3-prelude\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+* Sett Glassfish til å lytte på port 80
+** asadmin set server.http-service.http-listener.http-listener-1.port=80
 
 h3. Installer MySql   
 
@@ -98,10 +100,7 @@ h3. Installer Sphinx
 h4. Konfigurer Sphinx
 
 Åpne et command vindu og stå i <APP_ROOT>
-
 * jruby -S rake ultrasphinx:configure RAILS_ENV=production
-* Kjør en 1. gangs import av data fra GREP
-** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 
 h4. Installer Sphinx som en service
 
@@ -149,9 +148,18 @@ h3. Konfigurere Glassfish
 h2. Installasjon av Kompetanseøk web applikasjon
 
 * jruby -S rake war:production
+* asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war
+* Kjør en 1. gangs import av data fra GREP
+** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 
 
 h2. Oppgradering av Kompetanseøk web applikasjon
 
+* Ta vare på databasedumps
+** hvor disse ligger er definert i <APP_ROOT>/config/udir.yml
 * Git
 * Migrate
+* Bygg og deploy til Glassfish
+** jruby -S rake war:production
+** asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war
+* Legg tilbake databasedumps
