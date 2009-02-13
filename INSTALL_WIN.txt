@@ -145,6 +145,14 @@ h3. Konfigurere Glassfish
 ** JNDI name: jdbc/kompetansesok
 ** Pool name: kompetansesok
 
+
+h3. Opprette regelmessig jobb for import fra GREP
+
+* Lag "sceduled task" (control panel -> scheduled tasks)
+** Ved valg av applikasjon: <kompetansesok_dir>\script\import\Windows-import_fra_grep.bat
+** Sett navn og hvor ofte jobben skal kjøres
+
+
 h2. Installasjon av Kompetanseøk web applikasjon
 
 * jruby -S rake war:production
@@ -163,3 +171,5 @@ h2. Oppgradering av Kompetanseøk web applikasjon
 ** jruby -S rake war:production
 ** asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war
 * Legg tilbake databasedumps
+
+
