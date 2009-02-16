@@ -1,7 +1,7 @@
 # Konfigurasjon av applikasjon
 db_dumps:
   # path for produksjonsmiljøet. Alle andre styres i initializers/udir.rb
-  path: 'C:\glassfishv3-prelude\glassfish\domains\domain1\docroot\db_dumps'
+  path: 'C:\glassfishv3-prelude\glassfish\domains\domain1\applications\kompetansesok_production\db_dumps'
   count: 3
 
 maks_detalj_rader: 50

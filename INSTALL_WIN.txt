@@ -166,10 +166,16 @@ h2. Oppgradering av Kompetanseøk web applikasjon
 * Ta vare på databasedumps
 ** hvor disse ligger er definert i <APP_ROOT>/config/udir.yml
 * Git
-* Migrate
+* Migrate (fra <APP_ROOT>)
+** jruby -S rake db:migrate RAILS_ENV=production
+* Hvis nødvendig, gjør import av data
+** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 * Bygg og deploy til Glassfish
 ** jruby -S rake war:production
-** asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war
+** asadmin deploy --user udiradmin --contextroot / --force=true kompetansesok_production.war
 * Legg tilbake databasedumps
+* Restart Glassfish
+** asadmin stop-domain domain1
+** asadmin start-domain domain1
 
 
