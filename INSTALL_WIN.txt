@@ -23,6 +23,9 @@ h3. Installer Glassfish
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 * Sett Glassfish til å lytte på port 80
 ** asadmin set server.http-service.http-listener.http-listener-1.port=80
+* Endre maks minne glassfish kan bruke:
+** Logg inn i adminkonsollet -> Application Server -> JVM Settings -> JVM Options
+** Sett ønsket minne i parameteren "-Xmx" (feks -Xmx1024m)
 
 h3. Installer MySql   
 

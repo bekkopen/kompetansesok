@@ -83,7 +83,7 @@ module Kompetansesok
       e.message << "\nEpost mislykket:\n#{e.message}"
       log_file_path = File.join(Rails.root, 'log', 'mail_error.log')
       File.open(log_file_path, 'w+') do |log_file|
-        log_file << "\n\n#{Time.now}:\n#{e.mesage}\n"
+        log_file << "\n\n#{Time.now}:\n#{e.message}\n"
       end
     end
 
