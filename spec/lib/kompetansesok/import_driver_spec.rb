@@ -52,7 +52,7 @@ describe Kompetansesok::ImportDriver do
     test_report =
       "Laster ned rdf data... ok
 Importerer til database.. ok
-Gjør reindexsering... ok
+Reindekserer... ok
 Planlagt import og reindexering er velykket\n"
     
     @import_driver.should_receive(:run_command).and_return(true)
@@ -60,14 +60,11 @@ Planlagt import og reindexering er velykket\n"
     lambda{@import_driver.run}.should_not raise_error
   end
 
-  it "should give correct email report on failed db import" do
+  it "should give correct email report importer_til_dbeport on failed db import" do
     test_report =
       "Laster ned rdf data... ok
-Importerer til database..
-Import til database feilet: test file error
-Restoring backup...  ok
-Gjør reindexering... ok(tekst fra test case)
-test file error\n"
+test file error
+Import til database feilet:\n"
 
     @importer_mock.should_receive(:importer_til_db).and_raise("test file error")
     @db_eksport_mock.should_receive(:restore_backup).and_return(true)

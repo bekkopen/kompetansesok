@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20090130080044) do
   create_table "fag", :force => true do |t|
     t.string   "uuid"
     t.string   "kode"
-    t.text     "tittel"
+    t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20090130080044) do
 
   create_table "hovedomraader", :force => true do |t|
     t.string   "uuid"
-    t.text     "tittel"
+    t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "kode"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(:version => 20090130080044) do
   create_table "kompetansemaal", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "tittel"
+    t.string   "tittel"
     t.string   "uuid"
     t.string   "kode"
     t.string   "psi"
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(:version => 20090130080044) do
 
   create_table "kompetansemaalsett", :force => true do |t|
     t.string   "uuid"
-    t.text     "tittel"
+    t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "kode"
@@ -117,7 +117,7 @@ ActiveRecord::Schema.define(:version => 20090130080044) do
 
   create_table "laereplaner", :force => true do |t|
     t.string   "kode"
-    t.text     "tittel"
+    t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "uuid"
@@ -133,7 +133,7 @@ ActiveRecord::Schema.define(:version => 20090130080044) do
 
   create_table "trinn", :force => true do |t|
     t.string   "uuid"
-    t.text     "tittel"
+    t.string   "tittel"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

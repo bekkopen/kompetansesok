@@ -21,6 +21,7 @@ module Kompetansesok
       send_rapport(rapport.string)
     rescue Exception => e
       rapport.puts(e)
+      puts "\n\n#{rapport.string}\n\n"
       send_rapport rapport.string
       raise rapport.string
     end
@@ -46,6 +47,7 @@ module Kompetansesok
       rapport.puts " ok"
       rapport.string
     rescue Exception => e
+      haandter_feil_i_import
       append_and_raise(e, "Import til database feilet:", log)
     end
 
