@@ -1,7 +1,7 @@
 
-h1. Installasjon på Windows
+h1. Installasjon pÃ¥ Windows
 
-h2. Installasjon av nødvendige programmer
+h2. Installasjon av nÃ¸dvendige programmer
 
 Om passord: Bruk samme passord for Glassfish og MySQL. Det er enklere.
 
@@ -9,23 +9,23 @@ h3. Installer Java 1.6
 
 * Last ned og installer Java SDK 1.6 fra "Sun":http://java.sun.com/
 * Definer JAVA_HOME - f.eks set JAVA_HOME=C:\Program Files\Java\jdk1.6.0_11
-** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
-* Legg Javas bin directory på PATH, f.eks %JAVA_HOME%\bin
-** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+** GjÃ¸r dette i My Computer -> Properties -> Advanced -> Environment Variables
+* Legg Javas bin directory pÃ¥ PATH, f.eks %JAVA_HOME%\bin
+** GjÃ¸r dette i My Computer -> Properties -> Advanced -> Environment Variables
 
 h3. Installer Glassfish
 
 * Last ned og installer "GlassFish v3":https://glassfish.dev.java.net/downloads/v3-prelude.html
 ** Legg inn adminbruker og passord
-** Bruk standardverdier på resten 
-** Installer oppdateringer hvis du før spørsmål om det
-* Legg <glassfish_install_dir>\bin på PATH - f.eks C:\glassfishv3-prelude\bin
-** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
-* Sett Glassfish til å lytte på port 80
+** Bruk standardverdier pÃ¥ resten 
+** Installer oppdateringer hvis du fÃ¸r spÃ¸rsmÃ¥l om det
+* Legg <glassfish_install_dir>\bin pÃ¥ PATH - f.eks C:\glassfishv3-prelude\bin
+** GjÃ¸r dette i My Computer -> Properties -> Advanced -> Environment Variables
+* Sett Glassfish til Ã¥ lytte pÃ¥ port 80
 ** asadmin set server.http-service.http-listener.http-listener-1.port=80
 * Endre maks minne glassfish kan bruke:
 ** Logg inn i adminkonsollet -> Application Server -> JVM Settings -> JVM Options
-** Sett ønsket minne i parameteren "-Xmx" (feks -Xmx1024m)
+** Sett Ã¸nsket minne i parameteren "-Xmx" (feks -Xmx1024m)
 
 h3. Installer MySql   
 
@@ -33,14 +33,14 @@ Pga en bug relatert til max-length pa indekser kan ikke nyeste MySQL versjon bru
 
 * MySQL kan lastes ned "her":http://downloads.mysql.com/archives.php?p=mysql-5.0&v=5.0.4
 ** Bruk "Windows ZIP/Setup.EXE (x86)":http://downloads.mysql.com/archives/mysql-5.0/mysql-essential-5.0.45-win32.msi
-** Kjør installer og velg standard instillinger
-** Velg å konfigurere serveren nå (er valgt som standard)
+** KjÃ¸r installer og velg standard instillinger
+** Velg Ã¥ konfigurere serveren nÃ¥ (er valgt som standard)
 *** Velg "detailed configuration"
 *** Velg type maskin
 *** Bruk standard instillinger til du kommer til valg av tegnsett. 
 *** Velg UTF8 som tegnsett
-*** Kryss av for å inkludere bin i PATH
-*** Sett root passord til det samme som Glassfish (enkelte spesialtegn ser ut til å ikke fungere i passord (feks £))
+*** Kryss av for Ã¥ inkludere bin i PATH
+*** Sett root passord til det samme som Glassfish (enkelte spesialtegn ser ut til Ã¥ ikke fungere i passord (feks Â£))
 
 h4. Opprett database
 * mysqladmin create kompetansesok -u root -p
@@ -54,12 +54,12 @@ h3. Installer JRuby
 
 * Last ned "JRuby 1.1.6":http://dist.codehaus.org/jruby/1.1.6/jruby-bin-1.1.6.zip
 * Pakk arkivet ut til c:\
-* Legg til følgende i PATH: C:\jruby-1.1.6\bin
-** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+* Legg til fÃ¸lgende i PATH: C:\jruby-1.1.6\bin
+** GjÃ¸r dette i My Computer -> Properties -> Advanced -> Environment Variables
 
 h3. Installer Ruby gems
 
-* Åpne et Windows Command vindu
+* Ã…pne et Windows Command vindu
 * jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc
 * jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc
 * jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc
@@ -69,16 +69,16 @@ h3. Installer Git
 
 * Installer "msysGit":http://code.google.com/p/msysgit/
 ** Bruk standardinstillinger under installasjon
-* Legg Git på PATH - f.eks C:\Program Files\Git\bin
-** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+* Legg Git pÃ¥ PATH - f.eks C:\Program Files\Git\bin
+** GjÃ¸r dette i My Computer -> Properties -> Advanced -> Environment Variables
 
 h3. Hent kompetansesok kildekoden
 
 * Lag en midlertidig mappe, f.eks. C:\src
-* Høyreklikk på mappen i Explorer og velg "Git Bash here"
-* I vinduet, kjør følgende kommando:
+* HÃ¸yreklikk pÃ¥ mappen i Explorer og velg "Git Bash here"
+* I vinduet, kjÃ¸r fÃ¸lgende kommando:
 ** git clone git://github.com/bekkopen/kompetansesok.git
-* Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
+* Dersom du fÃ¥r connect problemer - sjekk at port 9418 er Ã¥pen mot Internett
 * Sjekk at config/udir.yml har riktig sti for db_dumps path. 
 ** Endre stien ved behov slik at begynnelsen av path stemmer med Glassfish installasjon
 
@@ -89,20 +89,20 @@ h3. Opprett databasetabeller
 ** Skriv inn databasens passord og lagre fila
 * jruby -S rake db:migrate RAILS_ENV=production
 
-Hvis kommandoen feiler - kjør den en gang til. Feilen skal ikke oppstå igjen.
+Hvis kommandoen feiler - kjÃ¸r den en gang til. Feilen skal ikke oppstÃ¥ igjen.
 
-Hvis du får en Ultrasphinx feil, kjør kommandoen på nytt. Da skal ikke feilen oppstå.
+Hvis du fÃ¥r en Ultrasphinx feil, kjÃ¸r kommandoen pÃ¥ nytt. Da skal ikke feilen oppstÃ¥.
 
 h3. Installer Sphinx
 
 * Hent "Sphinx windows binaries":http://www.sphinxsearch.com/downloads.html
 * Pakk ut til C:\Sphinx
 * Legg til C:\Sphinx\bin i PATH
-** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
+** GjÃ¸r dette i My Computer -> Properties -> Advanced -> Environment Variables
 
 h4. Konfigurer Sphinx
 
-Åpne et command vindu og stå i <APP_ROOT>
+Ã…pne et command vindu og stÃ¥ i <APP_ROOT>
 * jruby -S rake ultrasphinx:configure RAILS_ENV=production
 
 h4. Installer Sphinx som en service
@@ -113,14 +113,14 @@ h4. Installer Sphinx som en service
 
 h3. Installer Glassfish som Windows Service
 
-* Åpne et command vindu
-* Installer Windows service (OBS: mellomrom, backslash og " må skrives nøyaktig som under).
+* Ã…pne et command vindu
+* Installer Windows service (OBS: mellomrom, backslash og " mÃ¥ skrives nÃ¸yaktig som under).
 
   sc.exe create GlassFish_Kompetansesok binPath= "C:\src\kompetansesok\bin\appservService.exe \"C:\glassfishv3-prelude\bin\asadmin.bat start-domain domain1\" \"C:\glassfishv3-prelude\bin\asadmin.bat stop-domain domain1\"" DisplayName= "GlassFish_Kompetansesok"
 
 (Sjekk at stiene er riktige)
 
-* Konfigurer service til å starte automatisk når Windows starter
+* Konfigurer service til Ã¥ starte automatisk nÃ¥r Windows starter
 ** Administrative tools -> Services -> GlassFish_Kompetansesok
 *** Properties -> Startup type: Automatic
 *** Start tjenesten
@@ -152,22 +152,22 @@ h3. Opprette regelmessig jobb for import fra GREP
 
 * Lag "scheduled task" (control panel -> scheduled tasks)
 ** Ved valg av applikasjon: <kompetansesok_dir>\script\import\Windows-import_fra_grep.bat
-** Sett navn og hvor ofte jobben skal kjøres
+** Sett navn og hvor ofte jobben skal kjÃ¸res
 
-h2. Installasjon av Kompetanseøk web applikasjon
+h2. Installasjon av KompetanseÃ¸k web applikasjon
 
 * jruby -S rake war:production
 * asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war
-* Kjør en 1. gangs import av data fra GREP
+* KjÃ¸r en 1. gangs import av data fra GREP
 ** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 
-h2. Oppgradering av Kompetanseøk web applikasjon
+h2. Oppgradering av KompetanseÃ¸k web applikasjon
 
-Koden som installeres skal alltid være en TAG i Git. Liste over tilgjengelige tagger
-finner du på "GitHub":http://github.com/bekkopen/kompetansesok
+Koden som installeres skal alltid vÃ¦re en TAG i Git. Liste over tilgjengelige tagger
+finner du pÃ¥ "GitHub":http://github.com/bekkopen/kompetansesok
 
 * Flytt databasedumps til en mappe utenfor prosjekter
-** Se <APP_ROOT>/config/udir.yml for å finne ut hvor de ligger.
+** Se <APP_ROOT>/config/udir.yml for Ã¥ finne ut hvor de ligger.
 * Hent koden som skal deployes
 ** git pull origin master --tags
 ** git checkout <TAG>
@@ -186,7 +186,7 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 
 h2. Tagging av release
 
-For å se eksisterende tags: git tag -l
+For Ã¥ se eksisterende tags: git tag -l
 
 * git tag -a "v0.1.0" -m "Release 0.1.0"
 * git push bekkopen master
