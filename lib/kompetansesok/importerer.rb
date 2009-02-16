@@ -99,7 +99,7 @@ module Kompetansesok
         stream << File.open(rdf_fil, 'r').read
       end
 
-      Digest::MD5.md5(stream.string)
+      Digest::MD5.md5(stream.string).to_s
     end
 
     def new_rdf_data?
