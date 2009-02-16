@@ -168,6 +168,7 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 * Hent koden som skal deployes
 ** git pull origin master
 ** git checkout <TAG>
+** git submodule update
 * Oppdater databasedefinisjoner (hvis det finnes noen)
 ** jruby -S rake db:migrate RAILS_ENV=production
 * Importer data
