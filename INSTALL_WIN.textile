@@ -22,7 +22,7 @@ h3. Installer Glassfish
 * Legg <glassfish_install_dir>\bin på PATH - f.eks C:\glassfishv3-prelude\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 * Sett Glassfish til å lytte på port 80
-** asadmin set server.http-service.http-listener.http-listener-1.port=80
+** <code>asadmin set server.http-service.http-listener.http-listener-1.port=80</code>
 * Endre maks minne glassfish kan bruke:
 ** Logg inn i adminkonsollet -> Application Server -> JVM Settings -> JVM Options
 ** Sett ønsket minne i parameteren "-Xmx" (feks -Xmx1024m)
@@ -43,12 +43,12 @@ Pga en bug relatert til max-length pa indekser kan ikke nyeste MySQL versjon bru
 *** Sett root passord til det samme som Glassfish (enkelte spesialtegn ser ut til å ikke fungere i passord (feks £))
 
 h4. Opprett database
-* mysqladmin create kompetansesok -u root -p
+* <code>mysqladmin create kompetansesok -u root -p</code>
 * Opptett bruker og gi tilgang
-** mysql -u root -p
-** create user 'udiradmin'@'localhost' identified by '<passord>';
-** grant usage on *.* to udiradmin@localhost identified by '<passord>';
-** grant all privileges on kompetansesok.* to udiradmin@localhost;
+** <code>mysql -u root -p</code>
+** <code>create user 'udiradmin'@'localhost' identified by '<passord>';</code>
+** <code>grant usage on *.* to udiradmin@localhost identified by '<passord>';</code>
+** <code>grant all privileges on kompetansesok.* to udiradmin@localhost;</code>
 
 h3. Installer JRuby
 
@@ -60,10 +60,10 @@ h3. Installer JRuby
 h3. Installer Ruby gems
 
 * Åpne et Windows Command vindu
-* jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc
-* jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc
-* jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc
-* jruby -S gems:install
+* <code>jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
+* <code>jruby -S gems:install</code>
 
 h3. Installer Git
 
@@ -77,7 +77,7 @@ h3. Hent kompetansesok kildekoden
 * Lag en midlertidig mappe, f.eks. C:\src
 * Høyreklikk på mappen i Explorer og velg "Git Bash here"
 * I vinduet, kjør følgende kommando:
-** git clone git://github.com/bekkopen/kompetansesok.git
+** <code>git clone git://github.com/bekkopen/kompetansesok.git</code>
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
 * Sjekk at config/udir.yml har riktig sti for db_dumps path. 
 ** Endre stien ved behov slik at begynnelsen av path stemmer med Glassfish installasjon
@@ -87,7 +87,7 @@ h3. Opprett databasetabeller
 * Lag en fil med database passord
 ** Opprett filen config/database.password
 ** Skriv inn databasens passord og lagre fila
-* jruby -S rake db:migrate RAILS_ENV=production
+* <code>jruby -S rake db:migrate RAILS_ENV=production</code>
 
 Hvis kommandoen feiler - kjør den en gang til. Feilen skal ikke oppstå igjen.
 
@@ -103,20 +103,19 @@ h3. Installer Sphinx
 h4. Konfigurer Sphinx
 
 Åpne et command vindu og stå i <APP_ROOT>
-* jruby -S rake ultrasphinx:configure RAILS_ENV=production
+* <code>jruby -S rake ultrasphinx:configure RAILS_ENV=production</code>
 
 h4. Installer Sphinx som en service
 
 * Opprett <APP_ROOT>\tmp\sphinx_productionlog mappen
-* searchd.exe --install --servicename SphinxKompetansesok --config C:\src\kompetansesok\config\ultrasphinx\production.conf
+* <code>searchd.exe --install --servicename SphinxKompetansesok --config C:\src\kompetansesok\config\ultrasphinx\production.conf</code>
 * Start tjenesten i Windows Services og aktiver Automatisk start
 
 h3. Installer Glassfish som Windows Service
 
 * Åpne et command vindu
 * Installer Windows service (OBS: mellomrom, backslash og " må skrives nøyaktig som under).
-
-  sc.exe create GlassFish_Kompetansesok binPath= "C:\src\kompetansesok\bin\appservService.exe \"C:\glassfishv3-prelude\bin\asadmin.bat start-domain domain1\" \"C:\glassfishv3-prelude\bin\asadmin.bat stop-domain domain1\"" DisplayName= "GlassFish_Kompetansesok"
+** <code>sc.exe create GlassFish_Kompetansesok binPath= "C:\src\kompetansesok\bin\appservService.exe \"C:\glassfishv3-prelude\bin\asadmin.bat start-domain domain1\" \"C:\glassfishv3-prelude\bin\asadmin.bat stop-domain domain1\"" DisplayName= "GlassFish_Kompetansesok"</code>
 
 (Sjekk at stiene er riktige)
 
@@ -125,7 +124,7 @@ h3. Installer Glassfish som Windows Service
 *** Properties -> Startup type: Automatic
 *** Start tjenesten
 
-Stop av servicen fungerer ikke. Bruk "asadmin stop-domain domain1"
+Stop av servicen fungerer ikke. Bruk "<code>asadmin stop-domain domain1</code>"
 
 h3. Konfigurere Glassfish
 
@@ -156,10 +155,10 @@ h3. Opprette regelmessig jobb for import fra GREP
 
 h2. Installasjon av Kompetanseøk web applikasjon
 
-* jruby -S rake war:production
-* asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war
+* <code>jruby -S rake war:production</code>
+* <code>asadmin deploy --user udiradmin --contextroot / kompetansesok_production.war</code>
 * Kjør en 1. gangs import av data fra GREP
-** jruby -S rake import:scheduled_import_win RAILS_ENV=production
+** <code>jruby -S rake import:scheduled_import_win RAILS_ENV=production</code>
 
 h2. Oppgradering av Kompetanseøk web applikasjon
 
@@ -169,20 +168,20 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 * Flytt databasedumps til en mappe utenfor prosjekter
 ** Se <APP_ROOT>/config/udir.yml for å finne ut hvor de ligger.
 * Hent koden som skal deployes
-** git pull origin master --tags
-** git checkout <TAG>
-** git submodule update
+** <code>git pull origin master --tags</code>
+** <code>git checkout <TAG></code>
+** <code>git submodule update</code>
 * Oppdater databasedefinisjoner 
-** jruby -S rake db:migrate RAILS_ENV=production
+** <code>jruby -S rake db:migrate RAILS_ENV=production</code>
 * Importer data
-** jruby -S rake import:scheduled_import_win RAILS_ENV=production
+** <code>jruby -S rake import:scheduled_import_win RAILS_ENV=production</code>
 * Bygg og deploy til Glassfish
-** jruby -S rake war:production
-** asadmin deploy --user udiradmin --contextroot / --force=true kompetansesok_production.war
+** <code>jruby -S rake war:production</code>
+** <code>asadmin deploy --user udiradmin --contextroot / --force=true kompetansesok_production.war</code>
 * Flytt databasedumps tilbake
 * Restart Glassfish
-** asadmin stop-domain domain1
-** asadmin start-domain domain1
+** <code>asadmin stop-domain domain1</code>
+** <code>asadmin start-domain domain1</code>
 
 h2. Tagging av release
 
