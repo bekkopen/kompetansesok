@@ -63,7 +63,7 @@ module Kompetansesok
       time_list = {}
       Dir.entries(Udir::DB_DUMP_PATH).each do |file|
         if file =~ /db_dump_(.*)\.zip/
-          time_list[Time.parse($1)]= File.join(Udir::DB_DUMP_PATH, file)
+          time_list[($1)]= File.join(Udir::DB_DUMP_PATH, file)
         end
       end
 
