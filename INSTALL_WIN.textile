@@ -7,7 +7,7 @@ Om passord: Bruk samme passord for Glassfish og MySQL. Det er enklere.
 
 h3. Installer Java 1.6
 
-* Se http://java.sun.com/
+* Last ned og installer Java SDK 1.6 fra "Sun":http://java.sun.com/
 * Definer JAVA_HOME - f.eks set JAVA_HOME=C:\Program Files\Java\jdk1.6.0_11
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 * Legg Javas bin directory på PATH, f.eks %JAVA_HOME%\bin
@@ -15,7 +15,7 @@ h3. Installer Java 1.6
 
 h3. Installer Glassfish
 
-* Last ned og installer https://glassfish.dev.java.net/downloads/v3-prelude.html
+* Last ned og installer "GlassFish v3":https://glassfish.dev.java.net/downloads/v3-prelude.html
 ** Legg inn adminbruker og passord
 ** Bruk standardverdier på resten 
 ** Installer oppdateringer hvis du før spørsmål om det
@@ -31,8 +31,8 @@ h3. Installer MySql
 
 Pga en bug relatert til max-length pa indekser kan ikke nyeste MySQL versjon brukes.
 
-* http://downloads.mysql.com/archives.php?p=mysql-5.0&v=5.0.4
-** Windows ZIP/Setup.EXE (x86) - http://downloads.mysql.com/archives/mysql-5.0/mysql-essential-5.0.45-win32.msi
+* MySQL kan lastes ned "her":http://downloads.mysql.com/archives.php?p=mysql-5.0&v=5.0.4
+** Bruk "Windows ZIP/Setup.EXE (x86)":http://downloads.mysql.com/archives/mysql-5.0/mysql-essential-5.0.45-win32.msi
 ** Kjør installer og velg standard instillinger
 ** Velg å konfigurere serveren nå (er valgt som standard)
 *** Velg "detailed configuration"
@@ -52,7 +52,7 @@ h4. Opprett database
 
 h3. Installer JRuby
 
-* Last ned http://dist.codehaus.org/jruby/1.1.6/jruby-bin-1.1.6.zip
+* Last ned "JRuby 1.1.6":http://dist.codehaus.org/jruby/1.1.6/jruby-bin-1.1.6.zip
 * Pakk arkivet ut til c:\
 * Legg til følgende i PATH: C:\jruby-1.1.6\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
@@ -67,7 +67,7 @@ h3. Installer Ruby gems
 
 h3. Installer Git
 
-* Installer msysGit: http://code.google.com/p/msysgit/
+* Installer "msysGit":http://code.google.com/p/msysgit/
 ** Bruk standardinstillinger under installasjon
 * Legg Git på PATH - f.eks C:\Program Files\Git\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
@@ -95,7 +95,7 @@ Hvis du får en Ultrasphinx feil, kjør kommandoen på nytt. Da skal ikke feilen op
 
 h3. Installer Sphinx
 
-* Hent windows binaries fra http://www.sphinxsearch.com/downloads.html
+* Hent "Sphinx windows binaries":http://www.sphinxsearch.com/downloads.html
 * Pakk ut til C:\Sphinx
 * Legg til C:\Sphinx\bin i PATH
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
@@ -129,8 +129,8 @@ Stop av servicen fungerer ikke. Bruk "asadmin stop-domain domain1"
 
 h3. Konfigurere Glassfish
 
-* Hent MySql connector
-** Last ned connector fra http://dev.mysql.com/downloads/connector/j/5.1.html
+* Installer MySql connector
+** Last ned "MySql connector":http://dev.mysql.com/downloads/connector/j/5.1.html
 ** kopier mysql-connector-java-5.1.7-bin.jar til <glassfish_home>\domains\domain1\lib\ext
 ** start opp glassfish
 * Sett opp connection pool
@@ -148,13 +148,11 @@ h3. Konfigurere Glassfish
 ** JNDI name: jdbc/kompetansesok
 ** Pool name: kompetansesok
 
-
 h3. Opprette regelmessig jobb for import fra GREP
 
-* Lag "sceduled task" (control panel -> scheduled tasks)
+* Lag "scheduled task" (control panel -> scheduled tasks)
 ** Ved valg av applikasjon: <kompetansesok_dir>\script\import\Windows-import_fra_grep.bat
 ** Sett navn og hvor ofte jobben skal kjøres
-
 
 h2. Installasjon av Kompetanseøk web applikasjon
 
@@ -163,22 +161,26 @@ h2. Installasjon av Kompetanseøk web applikasjon
 * Kjør en 1. gangs import av data fra GREP
 ** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 
-
 h2. Oppgradering av Kompetanseøk web applikasjon
 
-* Ta vare på databasedumps
-** hvor disse ligger er definert i <APP_ROOT>/config/udir.yml
-* Git
-* Migrate (fra <APP_ROOT>)
+Koden som installeres skal alltid være en TAG i Git. Liste over tilgjengelige tagger
+finner du på "GitHub":http://github.com/bekkopen/kompetansesok
+
+* Flytt databasedumps til en mappe utenfor prosjekter
+** Se <APP_ROOT>/config/udir.yml for å finne ut hvor de ligger.
+* Hent koden som skal deployes
+** git pull origin master
+** git checkout <TAG>
+* Oppdater databasedefinisjoner (hvis det finnes noen)
 ** jruby -S rake db:migrate RAILS_ENV=production
-* Hvis nødvendig, gjør import av data
+* Importer data
 ** jruby -S rake import:scheduled_import_win RAILS_ENV=production
 * Bygg og deploy til Glassfish
 ** jruby -S rake war:production
 ** asadmin deploy --user udiradmin --contextroot / --force=true kompetansesok_production.war
-* Legg tilbake databasedumps
+* Flytt databasedumps tilbake
 * Restart Glassfish
 ** asadmin stop-domain domain1
 ** asadmin start-domain domain1
 
-
+h2. Tagging av release
