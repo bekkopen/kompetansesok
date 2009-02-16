@@ -21,40 +21,54 @@
     <h3>Moduler</h3>
     
         <p>Det finnes tre primære moduler innenfor dette systemet. De er import av data fra RDF dokumenter (via offentlig tilgjengelig ATOM feed), søkeapplikasjon som søker i database basert på importert data og eksport av data via MySQL database dump funksjonalitet. Følgende seksjoner beskriver disse modulene i videre detalj.</p>
+        <p>Systemet tar i bruk diverse Ruby gems. Ruby gems som er i bruk er definert i config/environment.rb</p>
         
     <h4>Import</h4>
         
-        <p>Import funksjonalitet må først scheduleres i hosting machine via enten Windows scheduler (Windows) eller Cron (Linux). Scheduler må kjøre rake task import:scheduled_import (lib/tasks/import.rake). Kjøring av denne tasken krever at JRuby er installert på hosting machine. JRuby kan lastes ned fra <a href="http://jruby.codehaus.org/">http://jruby.codehaus.org/</a>. Denne tasken instansierer Kompetansesok::ImportDriver klassen (lib/kompetansesok/import_driver.rb) som starter all import logikk. Hovedklassen for importfunksjonalitet ligger i Komepetansesok::Importerer klassen (lib/kompetansesok/importerer.rb).</p>
+        <p>Import funksjonalitet må først scheduleres i host maskin via enten Windows scheduler (Windows) eller Cron (Linux). Scheduler må kjøre <a href="http://rake.rubyforge.org/">rake</a> task import:scheduled_import (lib/tasks/import.rake). Kjøring av denne tasken krever at JRuby er installert på host maskin (rake biblioteket er inkludert i JRuby). JRuby kan lastes ned fra <a href="http://jruby.codehaus.org/">http://jruby.codehaus.org/</a>. Denne tasken instansierer Kompetansesok::ImportDriver klassen (lib/kompetansesok/import_driver.rb) som starter all import logikk. Hovedklassen for importfunksjonalitet ligger i Komepetansesok::Importerer klassen (lib/kompetansesok/importerer.rb).</p>
     
         <p>Når en import kjøres genererer systemet en e-post med detaljer fra importen. Konfigurering av e-post detaljer gjøres i config/udir.yml.</p>
         
     <h4>Søkeapplikasjon</h4>
     
-    <p>Søkeapplikasjonen er en <a href="http://rubyonrails.org/">Ruby on Rails</a> applikasjon og følger standard Rails konvensjoner (dvs. mappestruktur er lik standard Rails oppsett). RESTful design brukes i stor grad, resursene er definert som vanlig i config/routes.rb. Videre informasjon on Ruby on Rails web rammeverket finnes på <a href="http://guides.rubyonrails.org/">Rails Guides</a>. I tillegg brukes <a href="http://cukes.info/">Cucumber</a> som BDD rammeverk og alle Cucumber features for søkefunksjonalitet ligger i features mappen.</p>
+    <p>Søkeapplikasjonen er en <a href="http://rubyonrails.org/">Ruby on Rails</a> MVC applikasjon og følger standard Rails konvensjoner (dvs. <a href="http://guides.rubyonrails.org/getting_started_with_rails.html#_creating_the_blog_application">mappestruktur</a> er lik standard Rails oppsett). RESTful design brukes i stor grad, ressursene er definert som vanlig i config/routes.rb. Videre informasjon on Ruby on Rails web rammeverket finnes på <a href="http://guides.rubyonrails.org/">Rails Guides</a>. I tillegg brukes <a href="http://cukes.info/">Cucumber</a> til funksjonelle tester og alle Cucumber features/tester for søkefunksjonalitet ligger i features mappen.</p>
     
-    <p>To JavaScript rammeverk brukes for dynamisk HTML. <a href="http://extjs.com/products/extjs/">ExtJS</a> brukes for visning og merking av kompetansemål (app/views/kompetansemaal/_simple_grid.erb). <a href="http://jquery.com/">JQuery</a> brukes for annen dynamisk innhold, for eksempel for pre-populering av text i søkeboksen (public/javascripts/jquery.inputclear.js).</p>
+    <p>To JavaScript rammeverk brukes for dynamisk HTML. <a href="http://extjs.com/products/extjs/">ExtJS</a> brukes for visning og merking av kompetansemål (app/views/kompetansemaal/_simple_grid.erb). <a href="http://jquery.com/">JQuery</a> brukes for annen dynamisk innhold, for eksempel for pre-populering av tekst i søkeboksen (public/javascripts/jquery.inputclear.js).</p>
     
     <p>Språkfunksjonalitet gjøres på standard Rails 2.2 vis. Språkfiler ligger i config/locales.</p>
     
-    <p>Alle søk gjøres ved bruk av <a href="http://www.sphinxsearch.com/">Sphinx</a> søkemotor hvor underliggende data er indekssert. Rails plugin <a href="http://blog.evanweaver.com/files/doc/fauna/ultrasphinx/files/README.html">Ultrasphinx</a> brukes mellom søkeapplikasjonen og søkemotoren slik at søkefunksjonalitet kan enkelt kalles direkte fra ActiveRecord modeller. Se app/models/kompetansemaal.rb for hvordan man definerer hvilke modell attributter som indekseres og app/controllers/sok_controller.rb (SokController#index) for hvordan søk kalles.</p>
+    <p>Alle søk gjøres ved bruk av <a href="http://www.sphinxsearch.com/">Sphinx</a> søkemotor hvor underliggende data er indekssert. Rails plugin <a href="http://blog.evanweaver.com/files/doc/fauna/ultrasphinx/files/README.html">Ultrasphinx</a> brukes mellom søkeapplikasjonen og søkemotoren slik at søkefunksjonalitet kan enkelt kalles direkte fra Rails domene objekter (ActiveRecord modeller). Se app/models/kompetansemaal.rb for hvordan man definerer hvilke modell attributter som indekseres (man definerer hvilke attributter som indekseres ved bruk av is_indexed metoden) og app/controllers/sok_controller.rb (SokController#index) for hvordan søk kalles ( Ultrasphinx::Search.new() ).</p>
     
     <p>MySQL brukes som database server. CRUD operasjoner gjøres via standard Rails ActiveRecord (modell) funksjonalitet. Database konfigurasjon er definert (som vanlig) i config/database.yml.</p>
     
     <h4>Data eksport</h4>
-    <p>Database eksport gjøres via mysqldump shell kommando. Dette kalles fra Rake task db:dump som ligger i lib/kompetansesok/tasks/db_dump.rake. Selve db dump logikken ligger i lib/kompetansesok/db_eksport.rb</p>
-    <p>Generering av csv fil med kompetansemål data gjøres ved bruk av Ruby gem fastercsv. Koden som genererer csv fil ligger i lib/kompetansesok/csv_generator.rb</p>
+    <p>Utover kopi/lim funksjonalitet, finnes det to metoder for å eksportere data fra applikasjonen.</p>
+    <ul>
+        <li>Eksport av underliggende database kjøres basert på skedulering på host maskin. Database eksport gjøres via mysqldump shell kommando. Dette kalles fra Rake task db:dump som ligger i lib/kompetansesok/tasks/db_dump.rake. Selve db dump logikken ligger i lib/kompetansesok/db_eksport.rb.</li>
+        <li>Valgt data i applikasjonen kan eksporteres til csv fil. Generering av csv fil med kompetansemål data gjøres ved bruk av Ruby gem fastercsv. Koden som genererer csv fil ligger i lib/kompetansesok/csv_generator.rb. Dette er funksjonalitet som kjøres av bruker fra web grensesnitt.</li>
+    </ul>
+    
+    <h3>Annen funksjonalitet</h3>
+    <h4>Statistikk</h4>
+    <p>Det er mulig å se statistikk av antall søk utført. Fire typer statistikk genereres: denne uken, forrige uke, denne måneden, forrige månede.</p>
+    <ul>
+        <li>"Denne uken" henter antall søk fra mandag 00:00:00 frem til når man genererer statistikken.</li>
+        <li>"Forrige uke" henter antall søk fra mandag 00:00:00 forrige uke frem til sist mandag 00:00:00.</li>
+        <li>"Denne måneden" henter antall søk fra første dagen i måneden 00:00:00 frem til når man genererer statistikken.</li>
+        <li>"Forrige måned" henter antall søk fra første dagen i forrige måned 00:00:00 frem til første dagen dene måned 00:00:00.</li>
+    </ul>    
     <h2>Forutsetninger</h2>
     
     <p>Det er forutsatt at personer som gjor endringer (både i kode og konfigurasjonsfiler) har følgende kompetanse:</p>
     
     <ul>
-        <li>God kjennskap til Ruby programmeringsspråk</li>
+        <li>God kjennskap til <a href="http://www.ruby-lang.org/en/">Ruby</a> programmeringsspråk</li>
         <li>God kjennskap til Ruby on Rails rammeverk</li>
         <li>God kjennskap til web grensesnittsprogrammering (HTML, CSS, JavaScript)</li>
         <li>God kjennskap til generell web teknologi (inkludert HTTP)</li>
     </ul>
     <h2>Installasjonsbeskrivelse</h2>
     
-    <p>Komplett installasjons- og konfigurajonsbeskrivelse ligger i INSTALL.textile. Dette inkluder oppsett av applikasjonsserver (Glassfish) og pakking av war fil klar til deployment.</p>
+    <p>Komplett installasjons- og konfigurajonsbeskrivelse ligger i INSTALL_WIN.txt som ligger på ROOT i applikasjonen. Dette dokumentet inkluderer detaljer om både installasjon av nødvendig programvare og oppsett av miljø slik at søkeapplikasjonen kan kjøres.</p>
 </body>
 </html>
