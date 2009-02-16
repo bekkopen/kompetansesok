@@ -169,10 +169,10 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 * Flytt databasedumps til en mappe utenfor prosjekter
 ** Se <APP_ROOT>/config/udir.yml for å finne ut hvor de ligger.
 * Hent koden som skal deployes
-** git pull origin master
+** git pull origin master --tags
 ** git checkout <TAG>
 ** git submodule update
-* Oppdater databasedefinisjoner (hvis det finnes noen)
+* Oppdater databasedefinisjoner 
 ** jruby -S rake db:migrate RAILS_ENV=production
 * Importer data
 ** jruby -S rake import:scheduled_import_win RAILS_ENV=production
@@ -185,6 +185,8 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 ** asadmin start-domain domain1
 
 h2. Tagging av release
+
+For å se eksisterende tags: git tag -l
 
 * git tag -a "v0.1.0" -m "Release 0.1.0"
 * git push bekkopen master
