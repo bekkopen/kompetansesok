@@ -64,7 +64,7 @@ en:
     database_eksport: "MySQL database exports are available for download. These database exports include all the data displayed in this application. Click on the below links til download a database export."
     bla_i_laereplan: "Below is a list of all curricula. You can sort the list by code or title."
     antall_treff: "Hits:"
-    info: "This site lets you search for competence aims."
+    info: "This site lets you search for competence aims and related curricula, competence aim sets, major subjects and subjects. Simply type in what you would like to search for in the search box on the <a href=\"/\">search page</a>. You can search for title, id or code. The search results are either rows og competence aims or lists of curricula, competence aim sets, major subjects or subjects. When you click on returned competence aims, they are copied to a tekst box where you can copy the data for use in other applications. You can also export returned competence aims to file. Returned curricula, competence aim sets, major subjects and subjects provide links to pages which give further details. General informasjon regarding search possibilities are located on the <a href=\"/info/faq\">frequently asked questions</a> page"
     kompetansemål_kopi_info: "Use the below text box to copy competance aim details to your clipboard. You can use the checkboxes to choose if you want to include id, code or psi."
     kompetansemål_csv_eksport_info: "Export to file will include further competence aim details. Associated curricula, major subjects, competence aim sets or subjects are included."
     
@@ -78,7 +78,7 @@ en:
     kompetansemaal_kode: "Competence aim code"
     kompetansemaal_tittel: "Competence aim title"
     laereplan_uuid: "Curriculum id"
-    laereplan_kode: "Curriculumcode "
+    laereplan_kode: "Curriculum code "
     laereplan_tittel: "Curriculumtitle" 
     hovedomraade_uuid: "Major Subject id" 
     hovedomraade_kode: "Major Subject code" 
@@ -101,21 +101,22 @@ en:
       syv: "Is it possible to change language?"
       åtte: "How do I find competence aims for a curriculum?"
       ni: "How can i navigate to a curriculum from a set of competence aims?"
+
     svar:
-        en: "Du kan søke etter id, kode eller tittel på kompetansemål, læreplan, kompetansemålsett, hovedområde og/eller fag."
-        to: "Du kan filtere søket ved å bruke avkryssningsboksene under søkeboksen."
+        en: "You can search for id, code or title for competence aim, curriculum, competence aim set, major subject and/or subject."
+        to: "You can limt your search by using the checkboxes underneath the search box."
         tre:
-          intro: "Følgende søkemuligheter eksisterer:"
+          intro: "The following search possibilities exist:"
           søkemuligheter: "<ul>
-              <li>Flere ord i søket (for eksempel samisk kultur) gir resultat når alle ord er inkludert (for eksempel Læreplan i samisk visuell kultur...).</li>
-              <li>Søk med flere ord innenfor gåsetegn (for eksempel \"samisk kultur\") gir resultat når alle ord er inkludert i den spesifiserte rekkefølgen (for eksempel \"Gjere greie for visuelle uttrykk og objekt frå samisk kultur...\").</li>
-              <li>Søk med wildcard (*) kan brukes til å estatte alt før eller etter deler av et ord. For eksempel, *misk vil returnere kompetansemål med samisk i tittel. *mis* vil også returnere kompetansemål med samisk i tittel. \"* misk\" vil ikke gi noe resultat utover det \"misk\" vil returnere. Et typisk bruk av wildcard er å filtere koder innenfor læreplaner (for eksempel FOR6*). Wildcard tegn kan ikke brukes innenfor et ord (for eksempel sam*sk)</li>
-              <li>Du kan også ekskludere i søket. For eksempel samisk -kultur vil returnere kompetansemål med samisk men uten kultur i tittel.</li>
+              <li>Multiple words in the search (for example samisk kultur) will return results when all words are inkluded (for example Læreplan i samisk visuell kultur)</li>
+              <li>Search with multiple works within quotation marks (for example \"samisk kultur\") will return results when all words are inkluded in the specified order (for example \"Gjere greie for visuelle uttrykk og objekt frå samisk kultur...\").</li>
+              <li>Search with wildcard (*) can be used to substitute anything before or after parts of a word. For example, *misk will return a competence aim with samisk in the title. *mis* will also return competence aims with samisk in the title. \"* misk\" will return the same results as \"misk\". Typical use of wilcard would be to filter codes within curricula (for example FOR6*). Wildcards cannot be used within a word (for example sam*sk)</li>
+              <li>You can also exclude terms in your search. For example, samisk -kultur will return competence aims with samisk but without kultur in the title.</li>
           </ul>"
-          videre_søkemuligheter: "Videre avanserte søkemuligheter beskrives på <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">nettstedet til Sphinx (søkemotor)</a>"
-        fire: "Søk som returnerer mange kompetansemål viser ikke tilhørende informasjon (for eksempel kompetansemålsett). I disse tilfellene bør søket være mer nøyaktig. Kompetansemål resultatene (tittel) kan brukes til å lage søket mer spesifikk."
-        fem: "Ved å klikke på rader i \"Kompetansemål\" tabellen på <a href=\"/\">søkesiden</a>, kopierer du kompetansemål til \"Valgte kompetansemål\". Du kan ctrl-klikke på flere kompetansemål rader for å kopiere flere kompetansemål. Bruk ctrl-klikk til å fjerne markering av et kompetansemål."
-        seks: "Det eksisterer tre muligheter til å hente/eksportere data fra denne applikasjonen for videre bruk. Du kan bruke kopiering til utklippstavle fra \"Valgte kompetansemål\". Du kan eksportere valgte kompetansemål til csv fil format ved å klikke på \"Lagre resultatsett til fil\" under  \"Valgte kompetansemål\". Denne type eksport inkluderer detaljer om kompetansemål (for eksempel tilhørende læreplan). Det er også mulig å laste ned en komplett eksport av underliggende database på <a href=\"/db_dump\">eksport database siden</a>."
-        syv: "Du kan endre språk ved å velge språk i \"select boksen\" øverst til høyre."
-        åtte: "Hvis du får treff på læreplan, klikker du på en læreplan i listen for å se alle kompetansemål for valgte læreplan. Du kan gjøre det samme for kompetansemålsett, hovedområder eller fag."
-        ni: "Du kan bruke brødsmulestien på alle sider (untatt søkesiden) for å navigere deg tilbake til tilhørende områder (for eksempel læreplan)."
+          videre_søkemuligheter: "Further search possibilities are described in the <a href=\"http://www.sphinxsearch.com/docs/current.html#searching\">Sphinx</a> web-site."
+        fire: "Searches that return a high number of competence aims will not return associated information in the results. In these cases, make the search more precise. The title of the returned competence aims can be used to make the serach more precise."
+        fem: "By clinking on the rows in the \"Competence aim\" table on <a href=\"/\">the search page</a>, you copy the competence aims to \"Chosen Competence aims\". You can ctrl-click multiple competence aims to copt multiple competence aims. You can also use ctrl-clink to deselect competence aims."
+        seks: "The are three ways in which you can export data. You can use copy to clipboard from \"Chosen Competence aims\". You can export chosen competence aims to csv file format by clicking on \"Export results to file (csv)\". It is also possible to download a complete export og the underlying database on the <a href=\"/db_dump\">Database export</a> page"
+        syv: "You can change language by using the select box located top right."
+        åtte: "You can click on curriculum to see all competence aims for that curriculum. You can do the same for competence aim sets, major subjects or subjects."
+        ni: "You can use the breadcrumbs on all pages (except the serach page) to navigate back to associated data (for example curriculum)"
