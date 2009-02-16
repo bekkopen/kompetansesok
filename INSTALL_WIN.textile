@@ -188,6 +188,6 @@ h2. Tagging av release
 
 For å se eksisterende tags: git tag -l
 
-* git tag -a "v0.1.0" -m "Release 0.1.0"
-* git push bekkopen master
-* git push bekkopen master --tags
+* <code>git tag -a "v0.1.0" -m "Release 0.1.0"</code>
+* <code>git push bekkopen master</code>
+* <code>git push bekkopen master --tags</code>
