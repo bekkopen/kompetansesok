@@ -111,12 +111,12 @@ module Kompetansesok
     def slett_alt_i_databasen
       ActiveRecord::Base.transaction do
         @out.print("\nSletter gamle data...") if @out
-        Laereplan.delete_all
-        Hovedomraade.delete_all
-        Kompetansemaalsett.delete_all
-        Fag.delete_all
-        Trinn.delete_all
-        Kompetansemaal.delete_all
+        Laereplan.destroy_all
+        Hovedomraade.destroy_all
+        Kompetansemaalsett.destroy_all
+        Fag.destroy_all
+        Trinn.destroy_all
+        Kompetansemaal.destroy_all
         @out.print('Commit...') if @out
       end
       @out.puts('OK!') if @out
