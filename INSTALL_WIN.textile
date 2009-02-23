@@ -173,8 +173,6 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 ** <code>git submodule update</code>
 * Oppdater databasedefinisjoner 
 ** <code>jruby -S rake db:migrate RAILS_ENV=production</code>
-* Importer data
-** <code>jruby -S rake import:scheduled_import_win RAILS_ENV=production</code>
 * Bygg og deploy til Glassfish
 ** <code>jruby -S rake war:production</code>
 ** <code>asadmin deploy --user udiradmin --contextroot / --force=true kompetansesok_production.war</code>
@@ -182,6 +180,8 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 * Restart Glassfish
 ** <code>asadmin stop-domain domain1</code>
 ** <code>asadmin start-domain domain1</code>
+* Importer data
+** <code>jruby -S rake import:scheduled_import_win RAILS_ENV=production</code>
 
 h2. Tagging av release
 
