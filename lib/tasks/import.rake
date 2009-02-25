@@ -15,7 +15,10 @@ namespace :import do
   desc "Henter RDF fra GREP, importer til DB og rapporterer status via epost"
   task :scheduled_import_win do
     system "net.exe stop SphinxKompetansesok"
-    Rake::Task['import:rdf_fetch'].invoke
-    system "net.exe start SphinxKompetansesok"
+    begin 
+      Rake::Task['import:rdf_fetch'].invoke
+    ensure
+      system "net.exe start SphinxKompetansesok"
+    end
   end
 end
