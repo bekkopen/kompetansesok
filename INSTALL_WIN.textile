@@ -178,8 +178,7 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 ** <code>asadmin deploy --user udiradmin --contextroot / --force=true kompetansesok_production.war</code>
 * Flytt databasedumps tilbake
 * Restart Glassfish
-** <code>asadmin stop-domain domain1</code>
-** <code>asadmin start-domain domain1</code>
+** Administrative tools -> Services -> GlassFish_Kompetanseso
 * Importer data
 ** <code>jruby -S rake import:scheduled_import_win RAILS_ENV=production</code>
 
