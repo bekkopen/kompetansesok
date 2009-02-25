@@ -79,7 +79,7 @@ Import til database feilet:\n"
 
 
   it "should give correct dbdump" do
-    tmp_file_name = File.join(Rails.root, "public", "db_dumps", "db_dump_22-01-3000-11:11.zip")
+    tmp_file_name = File.join(Rails.root, "public", "db_dumps", "db_dump_230220090902.zip")
 
     dirname =File.dirname(tmp_file_name)
     if not File.directory?(dirname)
