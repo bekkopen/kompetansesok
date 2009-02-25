@@ -21,7 +21,13 @@ module Kompetansesok
       
       rows = []
       kompetansemaal.each do |maal|
-        rows = rows + rows_through_laereplan(maal) + rows_through_fag(maal)
+        laereplan_rows = rows_through_laereplan(maal)
+        fag_rows = rows_through_fag(maal)
+        if(laereplan_rows.length == 1 && fag_rows.length == 1)
+          rows = rows + as_one_row(laereplan_rows.first, fag_rows.first)
+        else
+          rows = rows + laereplan_rows + fag_rows
+        end
       end
       rows
     end
@@ -69,7 +75,13 @@ module Kompetansesok
       end
       all_models_info
     end
-   
+    
+    def as_one_row(laereplan_row, fag_row)
+      laereplan_row.each_with_index do |column, index|
+        laereplan_row[index] = fag_row[index]  if column.blank?
+      end
+      [laereplan_row]
+    end
         
   end
 

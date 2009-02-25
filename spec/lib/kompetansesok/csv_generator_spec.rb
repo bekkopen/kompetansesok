@@ -24,6 +24,28 @@ describe Kompetansesok::CsvGenerator do
       @maal = Kompetansemaal.new(:uuid => 'maal_uuid')
       Kompetansemaal.should_receive(:find_by_uuid).with('maal_uuid').and_return(@maal)
     end
+    
+    it "should only create one row for a kompetansemaal with one laereplan and one fag" do
+      laereplan = Laereplan.new
+      fag = Fag.new
+      hoved = Hovedomraade.new(:laereplaner => [laereplan])
+      sett = Kompetansemaalsett.new(:laereplaner => [laereplan], :fag => [fag])
+      laereplan.hovedomraader << hoved
+      laereplan.kompetansemaalsett << sett
+      fag.kompetansemaalsett << sett
+      hoved.kompetansemaal << @maal
+      sett.kompetansemaal << @maal
+      @maal.hovedomraader << hoved
+      @maal.kompetansemaalsett << sett
+      
+      laereplan.uuid = 'laereplan_uuid'
+      fag.uuid = 'fag_uuid'
+      
+      rows = @generator.send(:rows_for, 'maal_uuid')
+      rows.length.should == 1
+      rows.first[3].should == 'laereplan_uuid'
+      rows.first[12].should == 'fag_uuid'
+    end
         
     describe "through laereplan" do
       before :each do
@@ -230,10 +252,9 @@ describe Kompetansesok::CsvGenerator do
           rows = @generator.send(:rows_for, 'maal_uuid')
           rows.first[11].should == 'sett_tittel'
         end
+        
       end
-      
-      
-      
+     
     end
     
   end
