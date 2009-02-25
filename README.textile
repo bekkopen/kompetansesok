@@ -72,4 +72,11 @@ ikke indexeringen, så det må du passe på selv
 ** features:import kan kjøres raskere ved å bruke miljøvariablen FASTER=true.
 Da kjøres ikke indexeringen, så det må du passe på selv
 
+h2. Lisensering
+
+Denne applikasjonen er dual-licensed GPLv3 og MIT
+"GPLv3":http://www.opensource.org/licenses/gpl-3.0.html
+"MIT":http://www.opensource.org/licenses/mit-license.php
+
+
 
