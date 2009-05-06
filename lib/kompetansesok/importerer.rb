@@ -38,8 +38,8 @@ module Kompetansesok
       @out.puts("Importerer #{entries.length} RDF filer...") if @out
       entries.each do |entry|
         @out.write('.') if @out
-        if entry.id =~ /uuid:(.*);id=(.*)/
-          id = $2
+        if entry.id =~ /uuid:(.*)/
+          id = $1
           jena = Jena.new
           jena.les_rdf_url(entry.links.last.href)
 
