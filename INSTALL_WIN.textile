@@ -181,11 +181,3 @@ finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 ** Administrative tools -> Services -> GlassFish_Kompetanseso
 * Importer data
 ** <code>jruby -S rake import:scheduled_import_win RAILS_ENV=production</code>
-
-h2. Tagging av release
-
-For å se eksisterende tags: git tag -l
-
-* <code>git tag -a "v0.1.0" -m "Release 0.1.0"</code>
-* <code>git push bekkopen master</code>
-* <code>git push bekkopen master --tags</code>
