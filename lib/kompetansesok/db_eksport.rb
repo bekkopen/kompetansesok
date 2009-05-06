@@ -21,7 +21,7 @@ module Kompetansesok
       dump_filepath = File.join(Rails.root, 'tmp', dump_filename)
       run_command("mysqldump -u#{db_user} #{db_name} #{db_pass_prase} > #{dump_filepath}")
 
-      time_stamp = Time.now.to_datetime.strftime("%d%m%Y%H%M")
+      time_stamp = Time.now.to_datetime.strftime("%Y%m%d%H%M")
       zip_filename = "db_dump_#{time_stamp}.zip"
       zip_savepath = File.join(Udir::DB_DUMP_PATH, zip_filename)
 
