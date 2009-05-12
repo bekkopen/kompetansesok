@@ -1,4 +1,3 @@
-
 h1. Installasjon på Windows
 
 h2. Installasjon av nødvendige programmer
@@ -63,7 +62,7 @@ h3. Installer Ruby gems
 * <code>jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
-* <code>jruby -S gems:install</code>
+* <code>jruby -S rake gems:install</code>
 
 h3. Installer Git
 
