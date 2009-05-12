@@ -56,14 +56,6 @@ h3. Installer JRuby
 * Legg til følgende i PATH: C:\jruby-1.1.6\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 
-h3. Installer Ruby gems
-
-* Åpne et Windows Command vindu
-* <code>jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc</code>
-* <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
-* <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
-* <code>jruby -S rake gems:install</code>
-
 h3. Installer Git
 
 * Installer "msysGit":http://code.google.com/p/msysgit/
@@ -80,6 +72,14 @@ h3. Hent kompetansesok kildekoden
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
 * Sjekk at config/udir.yml har riktig sti for db_dumps path. 
 ** Endre stien ved behov slik at begynnelsen av path stemmer med Glassfish installasjon
+
+h3. Installer Ruby gems
+
+* Åpne et Windows Command vindu og naviger til der du sjekket ut kildekoden
+* <code>jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
+* <code>jruby -S rake gems:install</code>
 
 h3. Opprett databasetabeller
 
