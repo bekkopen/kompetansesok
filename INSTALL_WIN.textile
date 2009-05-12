@@ -76,6 +76,7 @@ h3. Hent kompetansesok kildekoden
 h3. Installer Ruby gems
 
 * Åpne et Windows Command vindu og naviger til der du sjekket ut kildekoden
+* <code>jruby -S gem sources -a http://gems.github.com</code>
 * <code>jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
