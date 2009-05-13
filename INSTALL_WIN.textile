@@ -21,6 +21,7 @@ h3. Installer Glassfish
 * Legg <glassfish_install_dir>\bin på PATH - f.eks C:\glassfishv3-prelude\bin
 ** Gjør dette i My Computer -> Properties -> Advanced -> Environment Variables
 * Sett Glassfish til å lytte på port 80
+** Hvis dette feiler er det sannsynligvis fordi ikke domains er opprettet. Opprett da først et domene manuelt
 ** <code>asadmin set server.http-service.http-listener.http-listener-1.port=80</code>
 * Endre maks minne glassfish kan bruke:
 ** Logg inn i adminkonsollet -> Application Server -> JVM Settings -> JVM Options
@@ -80,6 +81,7 @@ h3. Installer Ruby gems
 * <code>jruby -S gem install rails -v 2.2.2 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install aslakhellesoy-warbler -v 0.9.13 --no-ri --no-rdoc</code>
 * <code>jruby -S rake gems:install</code>
 
 h3. Opprett databasetabeller
