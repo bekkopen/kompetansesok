@@ -71,6 +71,8 @@ h3. Hent kompetansesok kildekoden
 * I vinduet, kjør følgende kommando:
 ** <code>git clone git://github.com/bekkopen/kompetansesok.git</code>
 * Dersom du får connect problemer - sjekk at port 9418 er åpen mot Internett
+* Kjør <code>git submodule init</code>
+* Kjør <code>git submodule update</code>
 * Sjekk at config/udir.yml har riktig sti for db_dumps path. 
 ** Endre stien ved behov slik at begynnelsen av path stemmer med Glassfish installasjon
 
@@ -82,6 +84,10 @@ h3. Installer Ruby gems
 * <code>jruby -S gem install activerecord-jdbcmysql-adapter -v 0.9 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install chronic -v 0.2.3 --no-ri --no-rdoc</code>
 * <code>jruby -S gem install aslakhellesoy-warbler -v 0.9.13 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install fastercsv -v 1.4.0 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install progressbar -v 0.0.3 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install rubyzip -v 0.9.1 --no-ri --no-rdoc</code>
+* <code>jruby -S gem install atom-tools -v 2.0.1 --no-ri --no-rdoc</code>
 * <code>jruby -S rake gems:install</code>
 
 h3. Opprett databasetabeller
