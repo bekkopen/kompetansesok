@@ -115,7 +115,7 @@ h4. Konfigurer Sphinx
 
 h4. Installer Sphinx som en service
 
-* Opprett <APP_ROOT>\tmp\sphinx_productionlog mappen
+* Opprett \tmp\sphinx_productionlog mappen
 * <code>searchd.exe --install --servicename SphinxKompetansesok --config C:\src\kompetansesok\config\ultrasphinx\production.conf</code>
 * Start tjenesten i Windows Services og aktiver Automatisk start
 
@@ -174,7 +174,7 @@ Koden som installeres skal alltid være en TAG i Git. Liste over tilgjengelige t
 finner du på "GitHub":http://github.com/bekkopen/kompetansesok
 
 * Flytt databasedumps til en mappe utenfor prosjekter
-** Se <APP_ROOT>/config/udir.yml for å finne ut hvor de ligger.
+** Se /config/udir.yml for å finne ut hvor de ligger.
 * Hent koden som skal deployes
 ** <code>git pull origin master --tags</code>
 ** <code>git checkout <TAG></code>
