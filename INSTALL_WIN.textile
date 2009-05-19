@@ -110,7 +110,7 @@ h3. Installer Sphinx
 
 h4. Konfigurer Sphinx
 
-Åpne et command vindu og stå i <APP_ROOT>
+Åpne et command vindu og stå i kildekodemappen (feks c:\src\kompetansesok)
 * <code>jruby -S rake ultrasphinx:configure RAILS_ENV=production</code>
 
 h4. Installer Sphinx som en service
